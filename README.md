@@ -1,4 +1,4 @@
-<h1 align="center">Modern Warfare Cubed</h1>
+<h1 align="center">Go switch to the active branch, this is branch is just MWC so I can evaluate compatiblity with my changes before merging or syncing the branch with MWC's updates</h1>
 
 <h5 align="center">A well optimized, open source Modern Warfare fork, made in light of Vic's Modern Warfare!</h5>
 
