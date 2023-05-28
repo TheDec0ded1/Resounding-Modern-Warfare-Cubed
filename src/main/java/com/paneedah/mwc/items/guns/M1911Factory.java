@@ -42,7 +42,7 @@ public class M1911Factory implements GunFactory {
         .withFlashOffsetX(() -> 0.13f)
         .withFlashOffsetY(() -> 0.12f)
 //      .withShellCasingForwardOffset(0.001f)
-        .withInaccuracy(3)
+       
         .withCreativeTab(ModernWarfareMod.AssaultRiflesTab)
         .withInformationProvider(stack -> Arrays.asList(
         "Type: Semi-Automatic Pistol", 
