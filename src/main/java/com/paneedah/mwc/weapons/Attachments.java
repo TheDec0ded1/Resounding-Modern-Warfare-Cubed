@@ -16,13 +16,16 @@ public class Attachments {
 
     public static ItemAttachment<Weapon> OKP7;
     public static ItemAttachment<Weapon> PSO1;
+    public static ItemAttachment<Weapon> NSPU;
+    public static ItemAttachment<Weapon> PKAA;
     public static ItemAttachment<Weapon> FMG9Sight;
     public static ItemAttachment<Weapon> Reflex;
     public static ItemAttachment<Weapon> BijiaReflex;
     public static ItemAttachment<Weapon> Holographic;
     public static ItemAttachment<Weapon> HolographicAlt;
+    public static ItemAttachment<Weapon> PK120;
     public static ItemAttachment<Weapon> EotechHybrid2;
-    //public static ItemAttachment<Weapon> Vortex;
+//    public static ItemAttachment<Weapon> Vortex;
     public static ItemAttachment<Weapon> VortexRedux;
     public static ItemAttachment<Weapon> Kobra;
     public static ItemAttachment<Weapon> KobraGen3;
@@ -30,6 +33,7 @@ public class Attachments {
     public static ItemAttachment<Weapon> MicroReflex;
     public static ItemAttachment<Weapon> ACOG;
     public static ItemAttachment<Weapon> Specter; 
+    public static ItemAttachment<Weapon> HKV; 
     public static ItemAttachment<Weapon> HP;
     public static ItemAttachment<Weapon> LeupoldRailScope;
     public static ItemAttachment<Weapon> AX50Scope;
@@ -57,6 +61,7 @@ public class Attachments {
     public static ItemAttachment<Weapon> SilencerMP7;
     public static ItemAttachment<Weapon> Silencer9x39mm;
     public static ItemAttachment<Weapon> SuppressorKBP9A91;
+    public static ItemAttachment<Weapon> SuppressorSR3M;
     public static ItemAttachment<Weapon> Laser;
     public static ItemAttachment<Weapon> Laser2;
     public static ItemAttachment<Weapon> SCCYCPX2Laser;
@@ -68,6 +73,7 @@ public class Attachments {
     public static ItemAttachment<Weapon> StubbyGrip;
     public static ItemAttachment<Weapon> VGrip;
     public static ItemAttachment<Weapon> Bipod;
+    public static ItemAttachment<Weapon> M14Bipod;
     public static ItemAttachment<Weapon> AUGgrip;
     public static ItemAttachment<Weapon> USPMatchCompensator;
     public static ItemAttachment<Weapon> AKMIron;
@@ -101,6 +107,7 @@ public class Attachments {
     
     public static ItemAttachment<Weapon> AK47DustCover;
     public static ItemAttachment<Weapon> AKMDustCover;
+    public static ItemAttachment<Weapon> AKSUDustCover;
     public static ItemAttachment<Weapon> VeprDustCover;
     public static ItemAttachment<Weapon> AK101DustCover;
     public static ItemAttachment<Weapon> AK15DustCover;
@@ -113,6 +120,7 @@ public class Attachments {
     
     public static ItemAttachment<Weapon> VSSVintorezDustCover;
     public static ItemAttachment<Weapon> VSSMDustCover;
+    public static ItemAttachment<Weapon> SR3VikhrDC;
     
     public static ItemAttachment<Weapon> FNFALDustCover;
     public static ItemAttachment<Weapon> FNFALGrip;
@@ -122,16 +130,26 @@ public class Attachments {
     public static ItemAttachment<Weapon> FNFALPARAHandguard;
     
     public static ItemAttachment<Weapon> AK47HandleGuard;
+    public static ItemAttachment<Weapon> AKSUHandguard;
+    public static ItemAttachment<Weapon> TantalHandGuard;
+    public static ItemAttachment<Weapon> AIMHandGuard;
     public static ItemAttachment<Weapon> AK101HandGuard;
+    public static ItemAttachment<Weapon> AK101GreenHandGuard;
+    public static ItemAttachment<Weapon> AK101PearlHandGuard;
+    public static ItemAttachment<Weapon> AK101PlumHandGuard;
+    public static ItemAttachment<Weapon> AK101WhiteHandGuard;
     public static ItemAttachment<Weapon> AK74Handguard;
+    public static ItemAttachment<Weapon> AK74GreenHandguard;
     public static ItemAttachment<Weapon> AKMagpulHandleGuard;
     public static ItemAttachment<Weapon> AKMagpulHandleGuardTan;
     public static ItemAttachment<Weapon> MLOKHandguard;
     public static ItemAttachment<Weapon> MLOKExtendedHandguard;
     public static ItemAttachment<Weapon> AK15HandleGuard;
     public static ItemAttachment<Weapon> AK12kalHandguard;
+    public static ItemAttachment<Weapon> AK12kalTanHandguard;
     public static ItemAttachment<Weapon> RPK16Handguard;
     public static ItemAttachment<Weapon> DragunovHandguard;
+    public static ItemAttachment<Weapon> DragunovDarkHandguard;
     public static ItemAttachment<Weapon> Dragunov98Handguard;
     
     public static ItemAttachment<Weapon> AK12Handguard;
@@ -143,6 +161,9 @@ public class Attachments {
     
     public static ItemAttachment<Weapon> VSSVintorezHandguard;
     public static ItemAttachment<Weapon> ASValHandguard;
+    public static ItemAttachment<Weapon> SR3MHG;
+    public static ItemAttachment<Weapon> SR3MHGF;
+    public static ItemAttachment<Weapon> SR3VikhrHG;
     
     public static ItemAttachment<Weapon> VSSVintorezTriRailMount;
     
@@ -191,6 +212,7 @@ public class Attachments {
     public static ItemAttachment<Weapon> MPXHandguardExtended;
     
     public static ItemAttachment<Weapon> K2C1Handguard;
+    public static ItemAttachment<Weapon> K1AHG;
     
     public static ItemAttachment<Weapon> MP5NavyHandGuard;
     public static ItemAttachment<Weapon> MP5A5HandGuard;
@@ -302,19 +324,31 @@ public class Attachments {
     public static ItemAttachment<Weapon> AK47Stock;
     public static ItemAttachment<Weapon> RPKStock;
     public static ItemAttachment<Weapon> AK101Stock;
+    public static ItemAttachment<Weapon> AK101GreenStock;
+    public static ItemAttachment<Weapon> AK101PearlStock;
+    public static ItemAttachment<Weapon> AK101PlumStock;
+    public static ItemAttachment<Weapon> AK101WhiteStock;
+    public static ItemAttachment<Weapon> AKSUStock;
+    public static ItemAttachment<Weapon> AKRStock;
     public static ItemAttachment<Weapon> AK74Stock;
+    public static ItemAttachment<Weapon> AK74GreenStock;
     public static ItemAttachment<Weapon> DragunovGripStock;
+    public static ItemAttachment<Weapon> DragunovDarkGripStock;
     public static ItemAttachment<Weapon> Dragunov98Stock;
     
     public static ItemAttachment<Weapon> AK12Stock;
     public static ItemAttachment<Weapon> AK12ZenitcoStock;
     
     public static ItemAttachment<Weapon> VSSVintorezStock;
+    public static ItemAttachment<Weapon> VSSMStock;
     public static ItemAttachment<Weapon> ASValStock;
+    public static ItemAttachment<Weapon> SR3VikhrStock;
     public static ItemAttachment<Weapon> VSSVintorezMilspecStock;
     
     public static ItemAttachment<Weapon> CollapsableMOEStock;
+    public static ItemAttachment<Weapon> K1AStock;
     public static ItemAttachment<Weapon> CollapsableMOEStockGreen;
+    public static ItemAttachment<Weapon> CollapsableMOEStockTan;
     public static ItemAttachment<Weapon> MagpulCTRStock;
     public static ItemAttachment<Weapon> MilSpecStock;
     
@@ -372,6 +406,8 @@ public class Attachments {
     public static ItemAttachment<Weapon> VectorStockAdapter;
     
     public static ItemAttachment<Weapon> UMP45Receiver;
+    public static ItemAttachment<Weapon> UMP40Receiver;
+    public static ItemAttachment<Weapon> UMP10Receiver;
     public static ItemAttachment<Weapon> UMP9Receiver;
     public static ItemAttachment<Weapon> UMP45Stock;
     
@@ -396,11 +432,18 @@ public class Attachments {
     public static ItemAttachment<Weapon> M1A1CarbineBody;
     
     public static ItemAttachment<Weapon> M14Body;
+    public static ItemAttachment<Weapon> M14WoodBody;
+    public static ItemAttachment<Weapon> M14A1Body;
+    public static ItemAttachment<Weapon> M14ClassicBody;
+    public static ItemAttachment<Weapon> M305Body;
     public static ItemAttachment<Weapon> M14SOCOMChassis;
+    public static ItemAttachment<Weapon> M14WoodChassis;
     public static ItemAttachment<Weapon> Mk14TanBody;
     public static ItemAttachment<Weapon> Mk14SnowBody;
     public static ItemAttachment<Weapon> Mk14BlackBody;
     public static ItemAttachment<Weapon> M14Cover;
+    public static ItemAttachment<Weapon> M305Cover;
+    public static ItemAttachment<Weapon> M14BrownCover;
     public static ItemAttachment<Weapon> M14TriRailCover;
     public static ItemAttachment<Weapon> M14Rail;
     
@@ -411,10 +454,16 @@ public class Attachments {
     public static ItemAttachment<Weapon> MAC21Stock;
     
     public static ItemAttachment<Weapon> AK47Grip;
+    public static ItemAttachment<Weapon> TantalGrip;
     public static ItemAttachment<Weapon> AK101Grip;
+    public static ItemAttachment<Weapon> AK101GreenGrip;
+    public static ItemAttachment<Weapon> AK101PearlGrip;
+    public static ItemAttachment<Weapon> AK101PlumGrip;
+    public static ItemAttachment<Weapon> AK101WhiteGrip;
     public static ItemAttachment<Weapon> AKErgoGrip;
     public static ItemAttachment<Weapon> AKErgoGripGreen;
     public static ItemAttachment<Weapon> AKErgoGripTan;
+    public static ItemAttachment<Weapon> AK12GripTan;
     
     public static ItemAttachment<Weapon> M4Grip;
     public static ItemAttachment<Weapon> M4GripTan;
@@ -436,6 +485,7 @@ public class Attachments {
     public static ItemAttachment<Weapon> Origin12Grip;
     public static ItemAttachment<Weapon> HKS20Grip;
     public static ItemAttachment<Weapon> K2C1Grip;
+    public static ItemAttachment<Weapon> K1AG;
     public static ItemAttachment<Weapon> MAC10Grip;
     public static ItemAttachment<Weapon> AK12Grip;
     public static ItemAttachment<Weapon> AK12ErgoGrip;
@@ -478,6 +528,28 @@ public class Attachments {
     public static ItemAttachment<Weapon> M16A1PicatinnyRail;
     public static ItemAttachment<Weapon> FamasF1PicatinnyRail;
     public static ItemAttachment<Weapon> NGSWRRail;
+    public static ItemAttachment<Weapon> G36S;
+    public static ItemAttachment<Weapon> G36CHG;
+    public static ItemAttachment<Weapon> G36CCH;
+    public static ItemAttachment<Weapon> G36CRHG;
+    public static ItemAttachment<Weapon> G36IDZS;
+    public static ItemAttachment<Weapon> G36IDZCH;
+    public static ItemAttachment<Weapon> G36KVS;
+    public static ItemAttachment<Weapon> G36CH;
+    public static ItemAttachment<Weapon> G36SRAL;
+    public static ItemAttachment<Weapon> G36CHGRAL;
+    public static ItemAttachment<Weapon> G36CRHGRAL;
+    public static ItemAttachment<Weapon> G36IDZSRAL;
+    public static ItemAttachment<Weapon> G36KVSRAL;
+    public static ItemAttachment<Weapon> G36CHRAL;
+    public static ItemAttachment<Weapon> G36KHG;
+    public static ItemAttachment<Weapon> G36EHG;
+    public static ItemAttachment<Weapon> G36ERHG;
+    public static ItemAttachment<Weapon> G36KHGRAL;
+    public static ItemAttachment<Weapon> G36EHGRAL;
+    public static ItemAttachment<Weapon> G36ERHGRAL;
+    public static ItemAttachment<Weapon> G36KRHG;
+    public static ItemAttachment<Weapon> G36KRHGRAL;
     public static ItemAttachment<Weapon> RailRiser;
     public static ItemAttachment<Weapon> M1911Slide;
     public static ItemAttachment<Weapon> M1911Body;
@@ -489,10 +561,14 @@ public class Attachments {
     public static ItemAttachment<Weapon> SamuraiEdgeBody;
     public static ItemAttachment<Weapon> SamuraiEdgeMount;
     public static ItemAttachment<Weapon> DesertEagleBody;
+    public static ItemAttachment<Weapon> DesertEagleL6Body;
+    public static ItemAttachment<Weapon> DesertEagleXIVBody;
     public static ItemAttachment<Weapon> DesertEagleSlide;
+    public static ItemAttachment<Weapon> DesertEagleSlideS;
+    public static ItemAttachment<Weapon> DesertEagleSlideFS;
     public static ItemAttachment<Weapon> DesertEagleLongBody;
     public static ItemAttachment<Weapon> Glock19Body;
-//    public static ItemAttachment<Weapon> Glock18CBody;
+    public static ItemAttachment<Weapon> Glock18CBody;
     public static ItemAttachment<Weapon> Glock19XBody;
     public static ItemAttachment<Weapon> Glock19RazorbackBody;
     public static ItemAttachment<Weapon> Glock19Slide;
@@ -894,7 +970,7 @@ public class Attachments {
                 .withModel(new com.paneedah.mwc.models.ScarMidWestIndustriesHandguard(), "scarl.png")
                 .withModernRecipe(
                     	CraftingGroup.ATTACHMENT_MODIFICATION,
-                    	new CraftingEntry(MWCItems.gunmetalIngot, 3),
+                    	new CraftingEntry(MWCItems.gunmetalIngot, 3), 
                     	new CraftingEntry(MWCItems.steelIngot, 1))
                 .withInventoryModelPositioning((model, s) -> {
                     if (model instanceof com.paneedah.mwc.models.ScarMidWestIndustriesHandguard) {
@@ -1017,7 +1093,7 @@ public class Attachments {
                 .withModel(new com.paneedah.mwc.models.SIG556HandguardRailed(), "sig556.png")
                 .withModernRecipe(
                     	CraftingGroup.ATTACHMENT_MODIFICATION,
-                    	new CraftingEntry(MWCItems.gunmetalIngot, 3),
+                    	new CraftingEntry(MWCItems.gunmetalIngot, 3), 
                     	new CraftingEntry(MWCItems.steelIngot, 1))
                 .withInventoryModelPositioning((model, s) -> {
                     if (model instanceof com.paneedah.mwc.models.SIG556HandguardRailed) {
@@ -1059,7 +1135,7 @@ public class Attachments {
                 .withModel(new com.paneedah.mwc.models.SIG556HandguardKA(), "sig556.png")
                 .withModernRecipe(
                     	CraftingGroup.ATTACHMENT_MODIFICATION,
-                    	new CraftingEntry(MWCItems.gunmetalIngot, 3),
+                    	new CraftingEntry(MWCItems.gunmetalIngot, 3), 
                     	new CraftingEntry(MWCItems.steelIngot, 1))
                 .withInventoryModelPositioning((model, s) -> {
                     if (model instanceof com.paneedah.mwc.models.SIG556HandguardKA) {
@@ -1217,7 +1293,7 @@ public class Attachments {
                 .withModel(new com.paneedah.mwc.models.KrissVectorModified(), "krissvector.png")
                 .withModernRecipe(
                     	CraftingGroup.ATTACHMENT_MODIFICATION,
-                    	new CraftingEntry(MWCItems.gunmetalIngot, 4),
+                    	new CraftingEntry(MWCItems.gunmetalIngot, 4), 
                     	new CraftingEntry(MWCItems.steelIngot, 5),
                     	new CraftingEntry(Items.STRING, 4),
                     	new CraftingEntry(Items.PAPER, 5))
@@ -1258,7 +1334,7 @@ public class Attachments {
                 .withModel(new com.paneedah.mwc.models.KrissVectorMk1ModularGuard(), "krissvector.png")
                 .withModernRecipe(
                     	CraftingGroup.ATTACHMENT_MODIFICATION,
-                    	new CraftingEntry(MWCItems.gunmetalIngot, 3),
+                    	new CraftingEntry(MWCItems.gunmetalIngot, 3), 
                     	new CraftingEntry(MWCItems.steelIngot, 2))
                 .withInventoryModelPositioning((model, s) -> {
                     if (model instanceof com.paneedah.mwc.models.KrissVectorMk1ModularGuard) {
@@ -1297,7 +1373,7 @@ public class Attachments {
                 .withModel(new com.paneedah.mwc.models.KrissVectorCarbineGuard(), "krissvector.png")
                 .withModernRecipe(
                     	CraftingGroup.ATTACHMENT_MODIFICATION,
-                    	new CraftingEntry(MWCItems.gunmetalIngot, 3),
+                    	new CraftingEntry(MWCItems.gunmetalIngot, 3), 
                     	new CraftingEntry(MWCItems.steelIngot, 2))
                 .withInventoryModelPositioning((model, s) -> {
                     if (model instanceof com.paneedah.mwc.models.KrissVectorCarbineGuard) {
@@ -1378,7 +1454,7 @@ public class Attachments {
                 .withModel(new com.paneedah.mwc.models.AKRail2(), "akrail.png")
                 .withModernRecipe(
                     	CraftingGroup.ATTACHMENT_MODIFICATION,
-                    	new CraftingEntry(MWCItems.gunmetalIngot, 3),
+                    	new CraftingEntry(MWCItems.gunmetalIngot, 3), 
                     	new CraftingEntry(MWCItems.steelIngot, 2))
                 .withInventoryModelPositioning((model, s) -> {
                     if (model instanceof com.paneedah.mwc.models.Origin12Handguard) {
@@ -1595,7 +1671,7 @@ public class Attachments {
                 .withModel(new com.paneedah.mwc.models.ARX160(), "arx160.png")
                 .withModernRecipe(
                     	CraftingGroup.ATTACHMENT_MODIFICATION,
-                    	new CraftingEntry(MWCItems.gunmetalIngot, 6),
+                    	new CraftingEntry(MWCItems.gunmetalIngot, 6), 
                     	new CraftingEntry(MWCItems.steelIngot, 3))
                 .withInventoryModelPositioning((model, s) -> {
                     if (model instanceof com.paneedah.mwc.models.ARX160) {
@@ -1783,7 +1859,7 @@ public class Attachments {
                 .withModel(new com.paneedah.mwc.models.Origin12Grip(), "origin12.png")
                 .withModernRecipe(
                     	CraftingGroup.ATTACHMENT_MODIFICATION,
-                    	new CraftingEntry(MWCItems.gunmetalIngot, 2),
+                    	new CraftingEntry(MWCItems.gunmetalIngot, 2), 
                     	new CraftingEntry(MWCItems.steelIngot, 1))
                 .withInventoryModelPositioning((model, s) -> {
                     if (model instanceof com.paneedah.mwc.models.Origin12Grip) {
@@ -1857,7 +1933,7 @@ public class Attachments {
                 .withModel(new com.paneedah.mwc.models.Origin12Stock(), "origin12.png")
                 .withModernRecipe(
                     	CraftingGroup.ATTACHMENT_MODIFICATION,
-                    	new CraftingEntry(MWCItems.gunmetalIngot, 3),
+                    	new CraftingEntry(MWCItems.gunmetalIngot, 3), 
                     	new CraftingEntry(MWCItems.steelIngot, 1))
                 .withRequiredAttachments(Origin12Grip)
                 .withInventoryModelPositioning((model, s) -> {
@@ -1977,7 +2053,7 @@ public class Attachments {
                 .withModel(new com.paneedah.mwc.models.AKRail3(), "akrail.png")
                 .withModernRecipe(
                     	CraftingGroup.ATTACHMENT_MODIFICATION,
-                    	new CraftingEntry(MWCItems.gunmetalIngot, 2),
+                    	new CraftingEntry(MWCItems.gunmetalIngot, 2), 
                     	new CraftingEntry(MWCItems.steelIngot, 1))
                 .withInventoryModelPositioning((model, s) -> {
                     if (model instanceof com.paneedah.mwc.models.ACRHandGuard) {
@@ -2017,7 +2093,7 @@ public class Attachments {
                 .withModel(new com.paneedah.mwc.models.AKRail(), "akrail.png")
                 .withModernRecipe(
                     	CraftingGroup.ATTACHMENT_MODIFICATION,
-                    	new CraftingEntry(MWCItems.gunmetalIngot, 2),
+                    	new CraftingEntry(MWCItems.gunmetalIngot, 2), 
                     	new CraftingEntry(MWCItems.steelIngot, 1))
                 .withInventoryModelPositioning((model, s) -> {
                     if (model instanceof com.paneedah.mwc.models.ACRWEMSKHandguard) {
@@ -3196,7 +3272,7 @@ public class Attachments {
                 .withModel(new com.paneedah.mwc.models.G3A1Handguard(), "g3.png")
                 .withModernRecipe(
                     	CraftingGroup.ATTACHMENT_MODIFICATION,
-                    	new CraftingEntry(MWCItems.gunmetalIngot, 3),
+                    	new CraftingEntry(MWCItems.gunmetalIngot, 3), 
                     	new CraftingEntry(MWCItems.steelIngot, 1))
                 .withInventoryModelPositioning((model, s) -> {
                     if (model instanceof com.paneedah.mwc.models.G3A1Handguard) {
@@ -3238,7 +3314,7 @@ public class Attachments {
                 .withModel(new com.paneedah.mwc.models.AKRail3(), "akrail.png")
                 .withModernRecipe(
                     	CraftingGroup.ATTACHMENT_MODIFICATION,
-                    	new CraftingEntry(MWCItems.gunmetalIngot, 4),
+                    	new CraftingEntry(MWCItems.gunmetalIngot, 4), 
                     	new CraftingEntry(MWCItems.steelIngot, 2))
                 .withInventoryModelPositioning((model, s) -> {
                     if (model instanceof com.paneedah.mwc.models.G3HandguardRailed) {
@@ -3417,7 +3493,7 @@ public class Attachments {
                 .withModel(new com.paneedah.mwc.models.M14Body(), "m14dmr.png")
                 .withModernRecipe(
                     	CraftingGroup.ATTACHMENT_MODIFICATION,
-                    	new CraftingEntry(MWCItems.gunmetalIngot, 4),
+                    	new CraftingEntry(MWCItems.gunmetalIngot, 4), 
                     	new CraftingEntry(MWCItems.steelIngot, 3))
                 .withModel(new FALIron(), "gun.png")
                 .withInventoryModelPositioning((model, s) -> {
@@ -3452,6 +3528,166 @@ public class Attachments {
                 .withName("M14Body").withTextureName("Dummy.png")
                 .build(ModernWarfareMod.MOD_CONTEXT);
         
+        M14WoodBody = new AttachmentBuilder<Weapon>().withCategory(AttachmentCategory.BACKGRIP)
+                .withCreativeTab(ModernWarfareMod.AttachmentsTab)
+                .withModel(new com.paneedah.mwc.models.M14Body(), "m14dmrwood.png")
+                .withModernRecipe(
+                    	CraftingGroup.ATTACHMENT_MODIFICATION,
+                    	new CraftingEntry(MWCItems.gunmetalIngot, 4), 
+                    	new CraftingEntry(MWCItems.steelIngot, 3))
+                .withModel(new FALIron(), "gun.png")
+                .withInventoryModelPositioning((model, s) -> {
+                    if (model instanceof com.paneedah.mwc.models.M14Body) {
+                        GL11.glTranslatef(-0.6F, -0.2F, -0F);
+                        GL11.glRotatef(10F, 1f, 0f, 0f);
+                        GL11.glRotatef(-190F, 0f, 1f, 0f);
+                        GL11.glRotatef(0F, 0f, 0f, 1f);
+                        GL11.glScaled(0.5F, 0.5F, 0.5f);
+                    } else {
+                        GL11.glScalef(0f, 0f, 0f);
+                    }
+                }).withFirstPersonModelPositioning((model, itemStack) -> {
+                    if (model instanceof com.paneedah.mwc.models.M14Body) {
+                        GL11.glTranslatef(0.1F, -0.8F, 0.4F);
+                        GL11.glRotatef(30F, 0f, 1f, 0f);
+                        GL11.glScaled(0.7F, 0.7F, 0.7F);
+                    } else {
+                        GL11.glScaled(0F, 0F, 0F);
+                    }
+
+                }).withThirdPersonModelPositioning((model, itemStack) -> {
+                    if (model instanceof com.paneedah.mwc.models.M14Body) {
+                        GL11.glTranslatef(-0.8F, -0.5F, 0.8F);
+                        GL11.glRotatef(-50F, 0f, 1f, 0f);
+                        GL11.glRotatef(80F, 1f, 0f, 0f);
+                        GL11.glScaled(0.5F, 0.5F, 0.5F);
+                    } else {
+                        GL11.glScaled(0F, 0F, 0F);
+                    }
+                })
+                .withName("M14WoodBody").withTextureName("Dummy.png")
+                .build(ModernWarfareMod.MOD_CONTEXT);
+        
+        M14A1Body = new AttachmentBuilder<Weapon>().withCategory(AttachmentCategory.BACKGRIP)
+                .withCreativeTab(ModernWarfareMod.AttachmentsTab)
+                .withModel(new com.paneedah.mwc.models.M14A1Body(), "m14dmrwood.png")
+                .withModernRecipe(
+                    	CraftingGroup.ATTACHMENT_MODIFICATION,
+                    	new CraftingEntry(MWCItems.gunmetalIngot, 4), 
+                    	new CraftingEntry(MWCItems.steelIngot, 3))
+                .withModel(new FALIron(), "gun.png")
+                .withInventoryModelPositioning((model, s) -> {
+                    if (model instanceof com.paneedah.mwc.models.M14A1Body) {
+                        GL11.glTranslatef(-0.6F, -0.2F, -0F);
+                        GL11.glRotatef(10F, 1f, 0f, 0f);
+                        GL11.glRotatef(-190F, 0f, 1f, 0f);
+                        GL11.glRotatef(0F, 0f, 0f, 1f);
+                        GL11.glScaled(0.5F, 0.5F, 0.5f);
+                    } else {
+                        GL11.glScalef(0f, 0f, 0f);
+                    }
+                }).withFirstPersonModelPositioning((model, itemStack) -> {
+                    if (model instanceof com.paneedah.mwc.models.M14A1Body) {
+                        GL11.glTranslatef(0.1F, -0.8F, 0.4F);
+                        GL11.glRotatef(30F, 0f, 1f, 0f);
+                        GL11.glScaled(0.7F, 0.7F, 0.7F);
+                    } else {
+                        GL11.glScaled(0F, 0F, 0F);
+                    }
+
+                }).withThirdPersonModelPositioning((model, itemStack) -> {
+                    if (model instanceof com.paneedah.mwc.models.M14A1Body) {
+                        GL11.glTranslatef(-0.8F, -0.5F, 0.8F);
+                        GL11.glRotatef(-50F, 0f, 1f, 0f);
+                        GL11.glRotatef(80F, 1f, 0f, 0f);
+                        GL11.glScaled(0.5F, 0.5F, 0.5F);
+                    } else {
+                        GL11.glScaled(0F, 0F, 0F);
+                    }
+                })
+                .withName("M14A1Body").withTextureName("Dummy.png")
+                .build(ModernWarfareMod.MOD_CONTEXT);
+        
+        M14ClassicBody = new AttachmentBuilder<Weapon>().withCategory(AttachmentCategory.BACKGRIP)
+                .withCreativeTab(ModernWarfareMod.AttachmentsTab)
+                .withModel(new com.paneedah.mwc.models.M14ClassicBody(), "m14dmrwood.png")
+                .withModernRecipe(
+                    	CraftingGroup.ATTACHMENT_MODIFICATION,
+                    	new CraftingEntry(MWCItems.gunmetalIngot, 4), 
+                    	new CraftingEntry(MWCItems.steelIngot, 3))
+                .withModel(new FALIron(), "gun.png")
+                .withInventoryModelPositioning((model, s) -> {
+                    if (model instanceof com.paneedah.mwc.models.M14ClassicBody) {
+                        GL11.glTranslatef(-0.6F, -0.2F, -0F);
+                        GL11.glRotatef(10F, 1f, 0f, 0f);
+                        GL11.glRotatef(-190F, 0f, 1f, 0f);
+                        GL11.glRotatef(0F, 0f, 0f, 1f);
+                        GL11.glScaled(0.5F, 0.5F, 0.5f);
+                    } else {
+                        GL11.glScalef(0f, 0f, 0f);
+                    }
+                }).withFirstPersonModelPositioning((model, itemStack) -> {
+                    if (model instanceof com.paneedah.mwc.models.M14ClassicBody) {
+                        GL11.glTranslatef(0.1F, -0.8F, 0.4F);
+                        GL11.glRotatef(30F, 0f, 1f, 0f);
+                        GL11.glScaled(0.7F, 0.7F, 0.7F);
+                    } else {
+                        GL11.glScaled(0F, 0F, 0F);
+                    }
+
+                }).withThirdPersonModelPositioning((model, itemStack) -> {
+                    if (model instanceof com.paneedah.mwc.models.M14ClassicBody) {
+                        GL11.glTranslatef(-0.8F, -0.5F, 0.8F);
+                        GL11.glRotatef(-50F, 0f, 1f, 0f);
+                        GL11.glRotatef(80F, 1f, 0f, 0f);
+                        GL11.glScaled(0.5F, 0.5F, 0.5F);
+                    } else {
+                        GL11.glScaled(0F, 0F, 0F);
+                    }
+                })
+                .withName("M14ClassicBody").withTextureName("Dummy.png")
+                .build(ModernWarfareMod.MOD_CONTEXT);
+
+        M305Body = new AttachmentBuilder<Weapon>().withCategory(AttachmentCategory.BACKGRIP)
+                .withCreativeTab(ModernWarfareMod.AttachmentsTab)
+                .withModel(new com.paneedah.mwc.models.M14ClassicBody(), "m14dmrblack.png")
+                .withModernRecipe(
+                    	CraftingGroup.ATTACHMENT_MODIFICATION,
+                    	new CraftingEntry(MWCItems.gunmetalIngot, 4), 
+                    	new CraftingEntry(MWCItems.steelIngot, 3))
+                .withModel(new FALIron(), "gun.png")
+                .withInventoryModelPositioning((model, s) -> {
+                    if (model instanceof com.paneedah.mwc.models.M14ClassicBody) {
+                        GL11.glTranslatef(-0.6F, -0.2F, -0F);
+                        GL11.glRotatef(10F, 1f, 0f, 0f);
+                        GL11.glRotatef(-190F, 0f, 1f, 0f);
+                        GL11.glRotatef(0F, 0f, 0f, 1f);
+                        GL11.glScaled(0.5F, 0.5F, 0.5f);
+                    } else {
+                        GL11.glScalef(0f, 0f, 0f);
+                    }
+                }).withFirstPersonModelPositioning((model, itemStack) -> {
+                    if (model instanceof com.paneedah.mwc.models.M14ClassicBody) {
+                        GL11.glTranslatef(0.1F, -0.8F, 0.4F);
+                        GL11.glRotatef(30F, 0f, 1f, 0f);
+                        GL11.glScaled(0.7F, 0.7F, 0.7F);
+                    } else {
+                        GL11.glScaled(0F, 0F, 0F);
+                    }
+
+                }).withThirdPersonModelPositioning((model, itemStack) -> {
+                    if (model instanceof com.paneedah.mwc.models.M14ClassicBody) {
+                        GL11.glTranslatef(-0.8F, -0.5F, 0.8F);
+                        GL11.glRotatef(-50F, 0f, 1f, 0f);
+                        GL11.glRotatef(80F, 1f, 0f, 0f);
+                        GL11.glScaled(0.5F, 0.5F, 0.5F);
+                    } else {
+                        GL11.glScaled(0F, 0F, 0F);
+                    }
+                })
+                .withName("M305Body").withTextureName("Dummy.png")
+                .build(ModernWarfareMod.MOD_CONTEXT);
+
         M14SOCOMChassis = new AttachmentBuilder<Weapon>().withCategory(AttachmentCategory.BACKGRIP)
                 .withCreativeTab(ModernWarfareMod.AttachmentsTab)
                 .withModel(new com.paneedah.mwc.models.M14DMRSocomChassis(), "m14dmr.png")
@@ -3459,7 +3695,7 @@ public class Attachments {
                 .withModel(new com.paneedah.mwc.models.AKRail(), "akrail.png")
                 .withModernRecipe(
                     	CraftingGroup.ATTACHMENT_MODIFICATION,
-                    	new CraftingEntry(MWCItems.gunmetalIngot, 4),
+                    	new CraftingEntry(MWCItems.gunmetalIngot, 4), 
                     	new CraftingEntry(MWCItems.steelIngot, 4))
                 .withInventoryModelPositioning((model, s) -> {
                     if (model instanceof com.paneedah.mwc.models.M14DMRSocomChassis) {
@@ -3492,6 +3728,46 @@ public class Attachments {
                 })
                 .withName("M14DMRSocomChassis").withTextureName("Dummy.png")
                 .build(ModernWarfareMod.MOD_CONTEXT);
+
+        M14WoodChassis = new AttachmentBuilder<Weapon>().withCategory(AttachmentCategory.BACKGRIP)
+                .withCreativeTab(ModernWarfareMod.AttachmentsTab)
+                .withModel(new com.paneedah.mwc.models.M14DMRSocomChassis(), "m14dmrwood.png")
+                .withModel(new FALIron(), "gun.png")
+                .withModernRecipe(
+                    	CraftingGroup.ATTACHMENT_MODIFICATION,
+                    	new CraftingEntry(MWCItems.gunmetalIngot, 4), 
+                    	new CraftingEntry(MWCItems.steelIngot, 4))
+                .withInventoryModelPositioning((model, s) -> {
+                    if (model instanceof com.paneedah.mwc.models.M14DMRSocomChassis) {
+                        GL11.glTranslatef(-0.6F, -0.2F, -0F);
+                        GL11.glRotatef(10F, 1f, 0f, 0f);
+                        GL11.glRotatef(-190F, 0f, 1f, 0f);
+                        GL11.glRotatef(0F, 0f, 0f, 1f);
+                        GL11.glScaled(0.5F, 0.5F, 0.5f);
+                    } else {
+                        GL11.glScalef(0f, 0f, 0f);
+                    }
+                }).withFirstPersonModelPositioning((model, itemStack) -> {
+                    if (model instanceof com.paneedah.mwc.models.M14DMRSocomChassis) {
+                        GL11.glTranslatef(0.1F, -0.8F, 0.4F);
+                        GL11.glRotatef(30F, 0f, 1f, 0f);
+                        GL11.glScaled(0.7F, 0.7F, 0.7F);
+                    } else {
+                        GL11.glScaled(0F, 0F, 0F);
+                    }
+
+                }).withThirdPersonModelPositioning((model, itemStack) -> {
+                    if (model instanceof com.paneedah.mwc.models.M14DMRSocomChassis) {
+                        GL11.glTranslatef(-0.8F, -0.5F, 0.8F);
+                        GL11.glRotatef(-50F, 0f, 1f, 0f);
+                        GL11.glRotatef(80F, 1f, 0f, 0f);
+                        GL11.glScaled(0.5F, 0.5F, 0.5F);
+                    } else {
+                        GL11.glScaled(0F, 0F, 0F);
+                    }
+                })
+                .withName("M14DMRWoodChassis").withTextureName("Dummy.png")
+                .build(ModernWarfareMod.MOD_CONTEXT);
         
         Mk14TanBody = new AttachmentBuilder<Weapon>().withCategory(AttachmentCategory.BACKGRIP)
                 .withCreativeTab(ModernWarfareMod.AttachmentsTab)
@@ -3500,7 +3776,7 @@ public class Attachments {
                 .withModel(new com.paneedah.mwc.models.AKRail2(), "akrail.png")
                 .withModernRecipe(
                     	CraftingGroup.ATTACHMENT_MODIFICATION,
-                    	new CraftingEntry(MWCItems.gunmetalIngot, 4),
+                    	new CraftingEntry(MWCItems.gunmetalIngot, 4), 
                     	new CraftingEntry(MWCItems.steelIngot, 4))
                 .withInventoryModelPositioning((model, s) -> {
                     if (model instanceof com.paneedah.mwc.models.Mk14Body) {
@@ -3541,7 +3817,7 @@ public class Attachments {
                 .withModel(new com.paneedah.mwc.models.AKRail2(), "akrail.png")
                 .withModernRecipe(
                     	CraftingGroup.ATTACHMENT_MODIFICATION,
-                    	new CraftingEntry(MWCItems.gunmetalIngot, 4),
+                    	new CraftingEntry(MWCItems.gunmetalIngot, 4), 
                     	new CraftingEntry(MWCItems.steelIngot, 4))
                 .withInventoryModelPositioning((model, s) -> {
                     if (model instanceof com.paneedah.mwc.models.Mk14Body) {
@@ -3582,7 +3858,7 @@ public class Attachments {
                 .withModel(new com.paneedah.mwc.models.AKRail2(), "akrail.png")
                 .withModernRecipe(
                     	CraftingGroup.ATTACHMENT_MODIFICATION,
-                    	new CraftingEntry(MWCItems.gunmetalIngot, 4),
+                    	new CraftingEntry(MWCItems.gunmetalIngot, 4), 
                     	new CraftingEntry(MWCItems.steelIngot, 4))
                 .withInventoryModelPositioning((model, s) -> {
                     if (model instanceof com.paneedah.mwc.models.Mk14Body) {
@@ -3621,9 +3897,9 @@ public class Attachments {
                 .withModel(new com.paneedah.mwc.models.M14Cover(), "m14dmr.png")
                 .withModernRecipe(
                     	CraftingGroup.ATTACHMENT_MODIFICATION,
-                    	new CraftingEntry(MWCItems.gunmetalIngot, 3),
+                    	new CraftingEntry(MWCItems.gunmetalIngot, 3), 
                     	new CraftingEntry(MWCItems.steelIngot, 2))
-                .withRequiredAttachments(M14Body, M14SOCOMChassis)
+                .withRequiredAttachments(M14Body, M14SOCOMChassis, M305Body, M14WoodBody, M14WoodChassis, M14A1Body, M14ClassicBody)
                 .withInventoryModelPositioning((model, s) -> {
                     if (model instanceof com.paneedah.mwc.models.M14Cover) {
                         GL11.glTranslatef(-0.6F, 0.4F, -2.3F);
@@ -3655,6 +3931,86 @@ public class Attachments {
                 })
                 .withName("M14Cover").withTextureName("Dummy.png")
                 .build(ModernWarfareMod.MOD_CONTEXT);
+
+        M305Cover = new AttachmentBuilder<Weapon>().withCategory(AttachmentCategory.GUARD)
+                .withCreativeTab(ModernWarfareMod.AttachmentsTab)
+                .withModel(new com.paneedah.mwc.models.M14Cover(), "m14dmrblack.png")
+                .withModernRecipe(
+                    	CraftingGroup.ATTACHMENT_MODIFICATION,
+                    	new CraftingEntry(MWCItems.gunmetalIngot, 3), 
+                    	new CraftingEntry(MWCItems.steelIngot, 2))
+                .withRequiredAttachments(M14Body, M14SOCOMChassis, M305Body, M14WoodBody, M14WoodChassis, M14A1Body, M14ClassicBody)
+                .withInventoryModelPositioning((model, s) -> {
+                    if (model instanceof com.paneedah.mwc.models.M14Cover) {
+                        GL11.glTranslatef(-0.6F, 0.4F, -2.3F);
+                        GL11.glRotatef(10F, 1f, 0f, 0f);
+                        GL11.glRotatef(-190F, 0f, 1f, 0f);
+                        GL11.glRotatef(0F, 0f, 0f, 1f);
+                        GL11.glScaled(0.8F, 0.8F, 0.8f);
+                    } else {
+                        GL11.glScalef(0f, 0f, 0f);
+                    }
+                }).withFirstPersonModelPositioning((model, itemStack) -> {
+                    if (model instanceof com.paneedah.mwc.models.M14Cover) {
+                        GL11.glTranslatef(1.5F, -0.2F, 3F);
+                        GL11.glRotatef(30F, 0f, 1f, 0f);
+                        GL11.glScaled(0.7F, 0.7F, 0.7F);
+                    } else {
+                        GL11.glScaled(0F, 0F, 0F);
+                    }
+
+                }).withThirdPersonModelPositioning((model, itemStack) -> {
+                    if (model instanceof com.paneedah.mwc.models.M14Cover) {
+                        GL11.glTranslatef(-1.5F, -2F, 1.5F);
+                        GL11.glRotatef(-50F, 0f, 1f, 0f);
+                        GL11.glRotatef(80F, 1f, 0f, 0f);
+                        GL11.glScaled(0.5F, 0.5F, 0.5F);
+                    } else {
+                        GL11.glScaled(0F, 0F, 0F);
+                    }
+                })
+                .withName("M305Cover").withTextureName("Dummy.png")
+                .build(ModernWarfareMod.MOD_CONTEXT);
+
+        M14BrownCover = new AttachmentBuilder<Weapon>().withCategory(AttachmentCategory.GUARD)
+                .withCreativeTab(ModernWarfareMod.AttachmentsTab)
+                .withModel(new com.paneedah.mwc.models.M14Cover(), "m14dmrwood.png")
+                .withModernRecipe(
+                    	CraftingGroup.ATTACHMENT_MODIFICATION,
+                    	new CraftingEntry(MWCItems.gunmetalIngot, 3), 
+                    	new CraftingEntry(MWCItems.steelIngot, 2))
+                .withRequiredAttachments(M14Body, M14SOCOMChassis, M305Body, M14WoodBody, M14WoodChassis, M14A1Body, M14ClassicBody)
+                .withInventoryModelPositioning((model, s) -> {
+                    if (model instanceof com.paneedah.mwc.models.M14Cover) {
+                        GL11.glTranslatef(-0.6F, 0.4F, -2.3F);
+                        GL11.glRotatef(10F, 1f, 0f, 0f);
+                        GL11.glRotatef(-190F, 0f, 1f, 0f);
+                        GL11.glRotatef(0F, 0f, 0f, 1f);
+                        GL11.glScaled(0.8F, 0.8F, 0.8f);
+                    } else {
+                        GL11.glScalef(0f, 0f, 0f);
+                    }
+                }).withFirstPersonModelPositioning((model, itemStack) -> {
+                    if (model instanceof com.paneedah.mwc.models.M14Cover) {
+                        GL11.glTranslatef(1.5F, -0.2F, 3F);
+                        GL11.glRotatef(30F, 0f, 1f, 0f);
+                        GL11.glScaled(0.7F, 0.7F, 0.7F);
+                    } else {
+                        GL11.glScaled(0F, 0F, 0F);
+                    }
+
+                }).withThirdPersonModelPositioning((model, itemStack) -> {
+                    if (model instanceof com.paneedah.mwc.models.M14Cover) {
+                        GL11.glTranslatef(-1.5F, -2F, 1.5F);
+                        GL11.glRotatef(-50F, 0f, 1f, 0f);
+                        GL11.glRotatef(80F, 1f, 0f, 0f);
+                        GL11.glScaled(0.5F, 0.5F, 0.5F);
+                    } else {
+                        GL11.glScaled(0F, 0F, 0F);
+                    }
+                })
+                .withName("M14BrownCover").withTextureName("Dummy.png")
+                .build(ModernWarfareMod.MOD_CONTEXT);
         
         M14TriRailCover = new AttachmentBuilder<Weapon>().withCategory(AttachmentCategory.GUARD)
                 .withCreativeTab(ModernWarfareMod.AttachmentsTab)
@@ -3664,9 +4020,9 @@ public class Attachments {
                 .withModel(new com.paneedah.mwc.models.AKRail3(), "akrail.png")
                 .withModernRecipe(
                     	CraftingGroup.ATTACHMENT_MODIFICATION,
-                    	new CraftingEntry(MWCItems.gunmetalIngot, 3),
+                    	new CraftingEntry(MWCItems.gunmetalIngot, 3), 
                     	new CraftingEntry(MWCItems.steelIngot, 2))
-                .withRequiredAttachments(M14Body, M14SOCOMChassis)
+                .withRequiredAttachments(M14Body, M14SOCOMChassis, M305Body, M14WoodBody, M14WoodChassis, M14A1Body, M14ClassicBody)
                 .withInventoryModelPositioning((model, s) -> {
                     if (model instanceof com.paneedah.mwc.models.M14TriRailCover) {
                     	 GL11.glTranslatef(-0.6F, 0.4F, -2.3F);
@@ -3701,7 +4057,7 @@ public class Attachments {
         
         M14Rail = new AttachmentBuilder<Weapon>().withCategory(AttachmentCategory.RAILING)
                 .withCreativeTab(ModernWarfareMod.AttachmentsTab)
-                .withRequiredAttachments(M14Body, Mk14TanBody, Mk14SnowBody, Mk14BlackBody, M14SOCOMChassis)
+                .withRequiredAttachments(M14Body, M14SOCOMChassis, M305Body, M14WoodBody, M14WoodChassis, M14A1Body, M14ClassicBody, Mk14TanBody, Mk14SnowBody, Mk14BlackBody)
                 .withModel(new com.paneedah.mwc.models.M14DMRRail(), "gun.png")
                 .withModernRecipe(
                     	CraftingGroup.ATTACHMENT_MODIFICATION,
@@ -3820,7 +4176,7 @@ public class Attachments {
                 .withModel(new com.paneedah.mwc.models.MilSpecStock(), "MilSpecStock.png")
                 .withModernRecipe(
                     	CraftingGroup.ATTACHMENT_MODIFICATION,
-                    	new CraftingEntry(MWCItems.gunmetalIngot, 5),
+                    	new CraftingEntry(MWCItems.gunmetalIngot, 5), 
                     	new CraftingEntry(MWCItems.steelIngot, 2))
                 .withInventoryModelPositioning((model, s) -> {
                     if (model instanceof com.paneedah.mwc.models.ScarAdapterStock) {
@@ -3899,7 +4255,7 @@ public class Attachments {
                 .withModel(new com.paneedah.mwc.models.KrissVectorStock(), "krissvector.png")
                 .withModernRecipe(
                     	CraftingGroup.ATTACHMENT_MODIFICATION,
-                    	new CraftingEntry(MWCItems.gunmetalIngot, 2),
+                    	new CraftingEntry(MWCItems.gunmetalIngot, 2), 
                     	new CraftingEntry(MWCItems.steelIngot, 1))
                 .withInventoryModelPositioning((model, s) -> {
                     if (model instanceof com.paneedah.mwc.models.KrissVectorStock) {
@@ -3939,7 +4295,7 @@ public class Attachments {
                 .withModel(new com.paneedah.mwc.models.MilSpecStock(), "MilSpecStock.png")
                 .withModernRecipe(
                     	CraftingGroup.ATTACHMENT_MODIFICATION,
-                    	new CraftingEntry(MWCItems.gunmetalIngot, 5),
+                    	new CraftingEntry(MWCItems.gunmetalIngot, 5), 
                     	new CraftingEntry(MWCItems.steelIngot, 2))
                 .withInventoryModelPositioning((model, s) -> {
                     if (model instanceof com.paneedah.mwc.models.KrissVectorStockAdapter) {
@@ -4006,6 +4362,76 @@ public class Attachments {
                     }
                 })
                 .withName("UMP45Receiver").withTextureName("Dummy.png")
+                .build(ModernWarfareMod.MOD_CONTEXT);
+
+        UMP40Receiver = new AttachmentBuilder<Weapon>().withCategory(AttachmentCategory.RECEIVER)
+                .withCreativeTab(ModernWarfareMod.AttachmentsTab)
+                .withModel(new com.paneedah.mwc.models.UMP45Receiver(), "ump45.png")
+                .withInventoryModelPositioning((model, s) -> {
+                    if (model instanceof com.paneedah.mwc.models.UMP45Receiver) {
+                        GL11.glTranslatef(-0.6F, 0.0F, -0.1F);
+                        GL11.glRotatef(10F, 1f, 0f, 0f);
+                        GL11.glRotatef(-190F, 0f, 1f, 0f);
+                        GL11.glRotatef(0F, 0f, 0f, 1f);
+                        GL11.glScaled(0.6F, 0.6F, 0.6f);
+                    } else {
+                        GL11.glScalef(0f, 0f, 0f);
+                    }
+                }).withFirstPersonModelPositioning((model, itemStack) -> {
+                    if (model instanceof com.paneedah.mwc.models.UMP45Receiver) {
+                        GL11.glTranslatef(0.1F, -0.8F, 0.4F);
+                        GL11.glRotatef(30F, 0f, 1f, 0f);
+                        GL11.glScaled(0.7F, 0.7F, 0.7F);
+                    } else {
+                        GL11.glScaled(0F, 0F, 0F);
+                    }
+
+                }).withThirdPersonModelPositioning((model, itemStack) -> {
+                    if (model instanceof com.paneedah.mwc.models.UMP45Receiver) {
+                        GL11.glTranslatef(-0.8F, -0.5F, 0.8F);
+                        GL11.glRotatef(-50F, 0f, 1f, 0f);
+                        GL11.glRotatef(80F, 1f, 0f, 0f);
+                        GL11.glScaled(0.5F, 0.5F, 0.5F);
+                    } else {
+                        GL11.glScaled(0F, 0F, 0F);
+                    }
+                })
+                .withName("UMP40Receiver").withTextureName("Dummy.png")
+                .build(ModernWarfareMod.MOD_CONTEXT);
+
+        UMP10Receiver = new AttachmentBuilder<Weapon>().withCategory(AttachmentCategory.RECEIVER)
+                .withCreativeTab(ModernWarfareMod.AttachmentsTab)
+                .withModel(new com.paneedah.mwc.models.UMP45Receiver(), "ump45.png")
+                .withInventoryModelPositioning((model, s) -> {
+                    if (model instanceof com.paneedah.mwc.models.UMP45Receiver) {
+                        GL11.glTranslatef(-0.6F, 0.0F, -0.1F);
+                        GL11.glRotatef(10F, 1f, 0f, 0f);
+                        GL11.glRotatef(-190F, 0f, 1f, 0f);
+                        GL11.glRotatef(0F, 0f, 0f, 1f);
+                        GL11.glScaled(0.6F, 0.6F, 0.6f);
+                    } else {
+                        GL11.glScalef(0f, 0f, 0f);
+                    }
+                }).withFirstPersonModelPositioning((model, itemStack) -> {
+                    if (model instanceof com.paneedah.mwc.models.UMP45Receiver) {
+                        GL11.glTranslatef(0.1F, -0.8F, 0.4F);
+                        GL11.glRotatef(30F, 0f, 1f, 0f);
+                        GL11.glScaled(0.7F, 0.7F, 0.7F);
+                    } else {
+                        GL11.glScaled(0F, 0F, 0F);
+                    }
+
+                }).withThirdPersonModelPositioning((model, itemStack) -> {
+                    if (model instanceof com.paneedah.mwc.models.UMP45Receiver) {
+                        GL11.glTranslatef(-0.8F, -0.5F, 0.8F);
+                        GL11.glRotatef(-50F, 0f, 1f, 0f);
+                        GL11.glRotatef(80F, 1f, 0f, 0f);
+                        GL11.glScaled(0.5F, 0.5F, 0.5F);
+                    } else {
+                        GL11.glScaled(0F, 0F, 0F);
+                    }
+                })
+                .withName("UMP10Receiver").withTextureName("Dummy.png")
                 .build(ModernWarfareMod.MOD_CONTEXT);
         
         UMP9Receiver = new AttachmentBuilder<Weapon>().withCategory(AttachmentCategory.RECEIVER)
@@ -4121,7 +4547,7 @@ public class Attachments {
                 .withModel(new com.paneedah.mwc.models.Mac10stockwithrail(), "Mac10stockwithrail.png")
                 .withModernRecipe(
                     	CraftingGroup.ATTACHMENT_MODIFICATION,
-                    	new CraftingEntry(MWCItems.gunmetalIngot, 2),
+                    	new CraftingEntry(MWCItems.gunmetalIngot, 2), 
                     	new CraftingEntry(MWCItems.steelIngot, 1))
                 .withInventoryModelPositioning((model, s) -> {
                     if (model instanceof com.paneedah.mwc.models.Mac10stockwithrail) {
@@ -4388,7 +4814,7 @@ public class Attachments {
                 .withModel(new com.paneedah.mwc.models.ACRLongRangeStock(), "ACRLongRangeStock.png")
                 .withModernRecipe(
                     	CraftingGroup.ATTACHMENT_MODIFICATION,
-                    	new CraftingEntry(MWCItems.gunmetalIngot, 3),
+                    	new CraftingEntry(MWCItems.gunmetalIngot, 3), 
                     	new CraftingEntry(MWCItems.steelIngot, 1))
                 .withInventoryModelPositioning((model, s) -> {
                     if (model instanceof com.paneedah.mwc.models.ACRLongRangeStock) {
@@ -4754,7 +5180,7 @@ public class Attachments {
                 .withModel(new com.paneedah.mwc.models.AKRail3(), "akrail.png")
                 .withModernRecipe(
                     	CraftingGroup.ATTACHMENT_MODIFICATION,
-                    	new CraftingEntry(MWCItems.gunmetalIngot, 4),
+                    	new CraftingEntry(MWCItems.gunmetalIngot, 4), 
                     	new CraftingEntry(MWCItems.steelIngot, 1))
                 .withInventoryModelPositioning((model, s) -> {
                     if (model instanceof com.paneedah.mwc.models.UTGTriRailHandGuard) {
@@ -4796,7 +5222,7 @@ public class Attachments {
                 .withModel(new com.paneedah.mwc.models.AKRail3(), "akrail.png")
                 .withModernRecipe(
                     	CraftingGroup.ATTACHMENT_MODIFICATION,
-                    	new CraftingEntry(MWCItems.gunmetalIngot, 3),
+                    	new CraftingEntry(MWCItems.gunmetalIngot, 3), 
                     	new CraftingEntry(MWCItems.steelIngot, 1))
                 .withInventoryModelPositioning((model, s) -> {
                     if (model instanceof com.paneedah.mwc.models.MP5BMHandGuard) {
@@ -4948,6 +5374,7 @@ public class Attachments {
                 })
                 .withName("ScorpionEVO3A1HandguardLong").withTextureName("Dummy.png")
                 .build(ModernWarfareMod.MOD_CONTEXT);
+
         
         MIMP5TRRail = new AttachmentBuilder<Weapon>().withCategory(AttachmentCategory.RAILING)
                 .withCreativeTab(ModernWarfareMod.AttachmentsTab)
@@ -5332,6 +5759,802 @@ public class Attachments {
                 })
                 .withName("NGSWRRail").withTextureName("Dummy.png")
                 .build(ModernWarfareMod.MOD_CONTEXT);
+
+G36S = new AttachmentBuilder<Weapon>().withCategory(AttachmentCategory.STOCK)
+                .withCreativeTab(ModernWarfareMod.AttachmentsTab)
+                .withRenderablePart()
+                .withModel(new com.paneedah.mwc.models.G36S(), "g36c.png")
+                .withInventoryModelPositioning((model, s) -> {
+                    if (model instanceof com.paneedah.mwc.models.G36S) {
+                        GL11.glTranslatef(-0.6F, 0.4F, -1.3F);
+                        GL11.glRotatef(10F, 1f, 0f, 0f);
+                        GL11.glRotatef(-190F, 0f, 1f, 0f);
+                        GL11.glRotatef(0F, 0f, 0f, 1f);
+                        GL11.glScaled(1F, 1F, 1f);
+                    } else {
+                        GL11.glScalef(0f, 0f, 0f);
+                    }
+                }).withFirstPersonModelPositioning((model, itemStack) -> {
+                    if (model instanceof com.paneedah.mwc.models.G36S) {
+                        GL11.glTranslatef(0.1F, -0.8F, 0.4F);
+                        GL11.glRotatef(30F, 0f, 1f, 0f);
+                        GL11.glScaled(0.7F, 0.7F, 0.7F);
+                    } else {
+                        GL11.glScaled(0F, 0F, 0F);
+                    }
+
+                }).withThirdPersonModelPositioning((model, itemStack) -> {
+                    if (model instanceof com.paneedah.mwc.models.G36S) {
+                        GL11.glTranslatef(-0.8F, -0.5F, 0.8F);
+                        GL11.glRotatef(-50F, 0f, 1f, 0f);
+                        GL11.glRotatef(80F, 1f, 0f, 0f);
+                        GL11.glScaled(0.5F, 0.5F, 0.5F);
+                    } else {
+                        GL11.glScaled(0F, 0F, 0F);
+                    }
+                })
+                .withName("G36S").withTextureName("Dummy.png")
+                .build(ModernWarfareMod.MOD_CONTEXT);
+
+G36CHG = new AttachmentBuilder<Weapon>().withCategory(AttachmentCategory.GUARD)
+                .withCreativeTab(ModernWarfareMod.AttachmentsTab)
+                .withRenderablePart()
+                .withModel(new com.paneedah.mwc.models.G36CHG(), "g36c.png")
+                .withInventoryModelPositioning((model, s) -> {
+                    if (model instanceof com.paneedah.mwc.models.G36CHG) {
+                        GL11.glTranslatef(-0.6F, 0.4F, -1.3F);
+                        GL11.glRotatef(10F, 1f, 0f, 0f);
+                        GL11.glRotatef(-190F, 0f, 1f, 0f);
+                        GL11.glRotatef(0F, 0f, 0f, 1f);
+                        GL11.glScaled(1F, 1F, 1f);
+                    } else {
+                        GL11.glScalef(0f, 0f, 0f);
+                    }
+                }).withFirstPersonModelPositioning((model, itemStack) -> {
+                    if (model instanceof com.paneedah.mwc.models.G36CHG) {
+                        GL11.glTranslatef(0.1F, -0.8F, 0.4F);
+                        GL11.glRotatef(30F, 0f, 1f, 0f);
+                        GL11.glScaled(0.7F, 0.7F, 0.7F);
+                    } else {
+                        GL11.glScaled(0F, 0F, 0F);
+                    }
+
+                }).withThirdPersonModelPositioning((model, itemStack) -> {
+                    if (model instanceof com.paneedah.mwc.models.G36CHG) {
+                        GL11.glTranslatef(-0.8F, -0.5F, 0.8F);
+                        GL11.glRotatef(-50F, 0f, 1f, 0f);
+                        GL11.glRotatef(80F, 1f, 0f, 0f);
+                        GL11.glScaled(0.5F, 0.5F, 0.5F);
+                    } else {
+                        GL11.glScaled(0F, 0F, 0F);
+                    }
+                })
+                .withName("G36CHG").withTextureName("Dummy.png")
+                .build(ModernWarfareMod.MOD_CONTEXT);
+
+G36CCH = new AttachmentBuilder<Weapon>().withCategory(AttachmentCategory.RECEIVER)
+                .withCreativeTab(ModernWarfareMod.AttachmentsTab)
+                .withRenderablePart()
+                .withModel(new com.paneedah.mwc.models.G36CCH(), "g36c.png")
+                .withInventoryModelPositioning((model, s) -> {
+                    if (model instanceof com.paneedah.mwc.models.G36CCH) {
+                        GL11.glTranslatef(-0.6F, 0.4F, -1.3F);
+                        GL11.glRotatef(10F, 1f, 0f, 0f);
+                        GL11.glRotatef(-190F, 0f, 1f, 0f);
+                        GL11.glRotatef(0F, 0f, 0f, 1f);
+                        GL11.glScaled(1F, 1F, 1f);
+                    } else {
+                        GL11.glScalef(0f, 0f, 0f);
+                    }
+                }).withFirstPersonModelPositioning((model, itemStack) -> {
+                    if (model instanceof com.paneedah.mwc.models.G36CCH) {
+                        GL11.glTranslatef(0.1F, -0.8F, 0.4F);
+                        GL11.glRotatef(30F, 0f, 1f, 0f);
+                        GL11.glScaled(0.7F, 0.7F, 0.7F);
+                    } else {
+                        GL11.glScaled(0F, 0F, 0F);
+                    }
+
+                }).withThirdPersonModelPositioning((model, itemStack) -> {
+                    if (model instanceof com.paneedah.mwc.models.G36CCH) {
+                        GL11.glTranslatef(-0.8F, -0.5F, 0.8F);
+                        GL11.glRotatef(-50F, 0f, 1f, 0f);
+                        GL11.glRotatef(80F, 1f, 0f, 0f);
+                        GL11.glScaled(0.5F, 0.5F, 0.5F);
+                    } else {
+                        GL11.glScaled(0F, 0F, 0F);
+                    }
+                })
+                .withName("G36CCH").withTextureName("Dummy.png")
+                .build(ModernWarfareMod.MOD_CONTEXT);
+
+G36CRHG = new AttachmentBuilder<Weapon>().withCategory(AttachmentCategory.GUARD)
+                .withCreativeTab(ModernWarfareMod.AttachmentsTab)
+                .withRenderablePart()
+                .withModel(new com.paneedah.mwc.models.G36CRHG(), "g36c.png")
+                .withInventoryModelPositioning((model, s) -> {
+                    if (model instanceof com.paneedah.mwc.models.G36CRHG) {
+                        GL11.glTranslatef(-0.6F, 0.4F, -1.3F);
+                        GL11.glRotatef(10F, 1f, 0f, 0f);
+                        GL11.glRotatef(-190F, 0f, 1f, 0f);
+                        GL11.glRotatef(0F, 0f, 0f, 1f);
+                        GL11.glScaled(1F, 1F, 1f);
+                    } else {
+                        GL11.glScalef(0f, 0f, 0f);
+                    }
+                }).withFirstPersonModelPositioning((model, itemStack) -> {
+                    if (model instanceof com.paneedah.mwc.models.G36CRHG) {
+                        GL11.glTranslatef(0.1F, -0.8F, 0.4F);
+                        GL11.glRotatef(30F, 0f, 1f, 0f);
+                        GL11.glScaled(0.7F, 0.7F, 0.7F);
+                    } else {
+                        GL11.glScaled(0F, 0F, 0F);
+                    }
+
+                }).withThirdPersonModelPositioning((model, itemStack) -> {
+                    if (model instanceof com.paneedah.mwc.models.G36CRHG) {
+                        GL11.glTranslatef(-0.8F, -0.5F, 0.8F);
+                        GL11.glRotatef(-50F, 0f, 1f, 0f);
+                        GL11.glRotatef(80F, 1f, 0f, 0f);
+                        GL11.glScaled(0.5F, 0.5F, 0.5F);
+                    } else {
+                        GL11.glScaled(0F, 0F, 0F);
+                    }
+                })
+                .withName("G36CRHG").withTextureName("Dummy.png")
+                .build(ModernWarfareMod.MOD_CONTEXT);
+
+G36IDZS = new AttachmentBuilder<Weapon>().withCategory(AttachmentCategory.STOCK)
+                .withCreativeTab(ModernWarfareMod.AttachmentsTab)
+                .withRenderablePart()
+                .withModel(new com.paneedah.mwc.models.G36IDZS(), "g36c.png")
+                .withInventoryModelPositioning((model, s) -> {
+                    if (model instanceof com.paneedah.mwc.models.G36IDZS) {
+                        GL11.glTranslatef(-0.6F, 0.4F, -1.3F);
+                        GL11.glRotatef(10F, 1f, 0f, 0f);
+                        GL11.glRotatef(-190F, 0f, 1f, 0f);
+                        GL11.glRotatef(0F, 0f, 0f, 1f);
+                        GL11.glScaled(1F, 1F, 1f);
+                    } else {
+                        GL11.glScalef(0f, 0f, 0f);
+                    }
+                }).withFirstPersonModelPositioning((model, itemStack) -> {
+                    if (model instanceof com.paneedah.mwc.models.G36IDZS) {
+                        GL11.glTranslatef(0.1F, -0.8F, 0.4F);
+                        GL11.glRotatef(30F, 0f, 1f, 0f);
+                        GL11.glScaled(0.7F, 0.7F, 0.7F);
+                    } else {
+                        GL11.glScaled(0F, 0F, 0F);
+                    }
+
+                }).withThirdPersonModelPositioning((model, itemStack) -> {
+                    if (model instanceof com.paneedah.mwc.models.G36IDZS) {
+                        GL11.glTranslatef(-0.8F, -0.5F, 0.8F);
+                        GL11.glRotatef(-50F, 0f, 1f, 0f);
+                        GL11.glRotatef(80F, 1f, 0f, 0f);
+                        GL11.glScaled(0.5F, 0.5F, 0.5F);
+                    } else {
+                        GL11.glScaled(0F, 0F, 0F);
+                    }
+                })
+                .withName("G36IDZS").withTextureName("Dummy.png")
+                .build(ModernWarfareMod.MOD_CONTEXT);
+
+G36IDZCH = new AttachmentBuilder<Weapon>().withCategory(AttachmentCategory.RECEIVER)
+                .withCreativeTab(ModernWarfareMod.AttachmentsTab)
+                .withRenderablePart()
+                .withModel(new com.paneedah.mwc.models.G36IDZCH(), "g36c.png")
+                .withInventoryModelPositioning((model, s) -> {
+                    if (model instanceof com.paneedah.mwc.models.G36IDZCH) {
+                        GL11.glTranslatef(-0.6F, 0.4F, -1.3F);
+                        GL11.glRotatef(10F, 1f, 0f, 0f);
+                        GL11.glRotatef(-190F, 0f, 1f, 0f);
+                        GL11.glRotatef(0F, 0f, 0f, 1f);
+                        GL11.glScaled(1F, 1F, 1f);
+                    } else {
+                        GL11.glScalef(0f, 0f, 0f);
+                    }
+                }).withFirstPersonModelPositioning((model, itemStack) -> {
+                    if (model instanceof com.paneedah.mwc.models.G36IDZCH) {
+                        GL11.glTranslatef(0.1F, -0.8F, 0.4F);
+                        GL11.glRotatef(30F, 0f, 1f, 0f);
+                        GL11.glScaled(0.7F, 0.7F, 0.7F);
+                    } else {
+                        GL11.glScaled(0F, 0F, 0F);
+                    }
+
+                }).withThirdPersonModelPositioning((model, itemStack) -> {
+                    if (model instanceof com.paneedah.mwc.models.G36IDZCH) {
+                        GL11.glTranslatef(-0.8F, -0.5F, 0.8F);
+                        GL11.glRotatef(-50F, 0f, 1f, 0f);
+                        GL11.glRotatef(80F, 1f, 0f, 0f);
+                        GL11.glScaled(0.5F, 0.5F, 0.5F);
+                    } else {
+                        GL11.glScaled(0F, 0F, 0F);
+                    }
+                })
+                .withName("G36IDZCH").withTextureName("Dummy.png")
+                .build(ModernWarfareMod.MOD_CONTEXT);
+
+G36KVS = new AttachmentBuilder<Weapon>().withCategory(AttachmentCategory.STOCK)
+                .withCreativeTab(ModernWarfareMod.AttachmentsTab)
+                .withRenderablePart()
+                .withModel(new com.paneedah.mwc.models.G36KVS(), "g36c.png")
+                .withInventoryModelPositioning((model, s) -> {
+                    if (model instanceof com.paneedah.mwc.models.G36KVS) {
+                        GL11.glTranslatef(-0.6F, 0.4F, -1.3F);
+                        GL11.glRotatef(10F, 1f, 0f, 0f);
+                        GL11.glRotatef(-190F, 0f, 1f, 0f);
+                        GL11.glRotatef(0F, 0f, 0f, 1f);
+                        GL11.glScaled(1F, 1F, 1f);
+                    } else {
+                        GL11.glScalef(0f, 0f, 0f);
+                    }
+                }).withFirstPersonModelPositioning((model, itemStack) -> {
+                    if (model instanceof com.paneedah.mwc.models.G36KVS) {
+                        GL11.glTranslatef(0.1F, -0.8F, 0.4F);
+                        GL11.glRotatef(30F, 0f, 1f, 0f);
+                        GL11.glScaled(0.7F, 0.7F, 0.7F);
+                    } else {
+                        GL11.glScaled(0F, 0F, 0F);
+                    }
+
+                }).withThirdPersonModelPositioning((model, itemStack) -> {
+                    if (model instanceof com.paneedah.mwc.models.G36KVS) {
+                        GL11.glTranslatef(-0.8F, -0.5F, 0.8F);
+                        GL11.glRotatef(-50F, 0f, 1f, 0f);
+                        GL11.glRotatef(80F, 1f, 0f, 0f);
+                        GL11.glScaled(0.5F, 0.5F, 0.5F);
+                    } else {
+                        GL11.glScaled(0F, 0F, 0F);
+                    }
+                })
+                .withName("G36KVS").withTextureName("Dummy.png")
+                .build(ModernWarfareMod.MOD_CONTEXT);
+
+G36CH = new AttachmentBuilder<Weapon>().withCategory(AttachmentCategory.RECEIVER)
+                .withCreativeTab(ModernWarfareMod.AttachmentsTab)
+                .withRenderablePart()
+                .withModel(new com.paneedah.mwc.models.G36CH(), "g36c.png")
+                .withInventoryModelPositioning((model, s) -> {
+                    if (model instanceof com.paneedah.mwc.models.G36CH) {
+                        GL11.glTranslatef(-0.6F, 0.4F, -1.3F);
+                        GL11.glRotatef(10F, 1f, 0f, 0f);
+                        GL11.glRotatef(-190F, 0f, 1f, 0f);
+                        GL11.glRotatef(0F, 0f, 0f, 1f);
+                        GL11.glScaled(1F, 1F, 1f);
+                    } else {
+                        GL11.glScalef(0f, 0f, 0f);
+                    }
+                }).withFirstPersonModelPositioning((model, itemStack) -> {
+                    if (model instanceof com.paneedah.mwc.models.G36CH) {
+                        GL11.glTranslatef(0.1F, -0.8F, 0.4F);
+                        GL11.glRotatef(30F, 0f, 1f, 0f);
+                        GL11.glScaled(0.7F, 0.7F, 0.7F);
+                    } else {
+                        GL11.glScaled(0F, 0F, 0F);
+                    }
+
+                }).withThirdPersonModelPositioning((model, itemStack) -> {
+                    if (model instanceof com.paneedah.mwc.models.G36CH) {
+                        GL11.glTranslatef(-0.8F, -0.5F, 0.8F);
+                        GL11.glRotatef(-50F, 0f, 1f, 0f);
+                        GL11.glRotatef(80F, 1f, 0f, 0f);
+                        GL11.glScaled(0.5F, 0.5F, 0.5F);
+                    } else {
+                        GL11.glScaled(0F, 0F, 0F);
+                    }
+                })
+                .withName("G36CH").withTextureName("Dummy.png")
+                .build(ModernWarfareMod.MOD_CONTEXT);
+
+G36SRAL = new AttachmentBuilder<Weapon>().withCategory(AttachmentCategory.STOCK)
+                .withCreativeTab(ModernWarfareMod.AttachmentsTab)
+                .withRenderablePart()
+                .withModel(new com.paneedah.mwc.models.G36S(), "g36cral8k.png")
+                .withInventoryModelPositioning((model, s) -> {
+                    if (model instanceof com.paneedah.mwc.models.G36S) {
+                        GL11.glTranslatef(-0.6F, 0.4F, -1.3F);
+                        GL11.glRotatef(10F, 1f, 0f, 0f);
+                        GL11.glRotatef(-190F, 0f, 1f, 0f);
+                        GL11.glRotatef(0F, 0f, 0f, 1f);
+                        GL11.glScaled(1F, 1F, 1f);
+                    } else {
+                        GL11.glScalef(0f, 0f, 0f);
+                    }
+                }).withFirstPersonModelPositioning((model, itemStack) -> {
+                    if (model instanceof com.paneedah.mwc.models.G36S) {
+                        GL11.glTranslatef(0.1F, -0.8F, 0.4F);
+                        GL11.glRotatef(30F, 0f, 1f, 0f);
+                        GL11.glScaled(0.7F, 0.7F, 0.7F);
+                    } else {
+                        GL11.glScaled(0F, 0F, 0F);
+                    }
+
+                }).withThirdPersonModelPositioning((model, itemStack) -> {
+                    if (model instanceof com.paneedah.mwc.models.G36S) {
+                        GL11.glTranslatef(-0.8F, -0.5F, 0.8F);
+                        GL11.glRotatef(-50F, 0f, 1f, 0f);
+                        GL11.glRotatef(80F, 1f, 0f, 0f);
+                        GL11.glScaled(0.5F, 0.5F, 0.5F);
+                    } else {
+                        GL11.glScaled(0F, 0F, 0F);
+                    }
+                })
+                .withName("G36SRAL").withTextureName("Dummy.png")
+                .build(ModernWarfareMod.MOD_CONTEXT);
+
+G36CHGRAL = new AttachmentBuilder<Weapon>().withCategory(AttachmentCategory.GUARD)
+                .withCreativeTab(ModernWarfareMod.AttachmentsTab)
+                .withRenderablePart()
+                .withModel(new com.paneedah.mwc.models.G36CHG(), "g36cral8k.png")
+                .withInventoryModelPositioning((model, s) -> {
+                    if (model instanceof com.paneedah.mwc.models.G36CHG) {
+                        GL11.glTranslatef(-0.6F, 0.4F, -1.3F);
+                        GL11.glRotatef(10F, 1f, 0f, 0f);
+                        GL11.glRotatef(-190F, 0f, 1f, 0f);
+                        GL11.glRotatef(0F, 0f, 0f, 1f);
+                        GL11.glScaled(1F, 1F, 1f);
+                    } else {
+                        GL11.glScalef(0f, 0f, 0f);
+                    }
+                }).withFirstPersonModelPositioning((model, itemStack) -> {
+                    if (model instanceof com.paneedah.mwc.models.G36CHG) {
+                        GL11.glTranslatef(0.1F, -0.8F, 0.4F);
+                        GL11.glRotatef(30F, 0f, 1f, 0f);
+                        GL11.glScaled(0.7F, 0.7F, 0.7F);
+                    } else {
+                        GL11.glScaled(0F, 0F, 0F);
+                    }
+
+                }).withThirdPersonModelPositioning((model, itemStack) -> {
+                    if (model instanceof com.paneedah.mwc.models.G36CHG) {
+                        GL11.glTranslatef(-0.8F, -0.5F, 0.8F);
+                        GL11.glRotatef(-50F, 0f, 1f, 0f);
+                        GL11.glRotatef(80F, 1f, 0f, 0f);
+                        GL11.glScaled(0.5F, 0.5F, 0.5F);
+                    } else {
+                        GL11.glScaled(0F, 0F, 0F);
+                    }
+                })
+                .withName("G36CHGRAL").withTextureName("Dummy.png")
+                .build(ModernWarfareMod.MOD_CONTEXT);
+
+
+G36CRHGRAL = new AttachmentBuilder<Weapon>().withCategory(AttachmentCategory.GUARD)
+                .withCreativeTab(ModernWarfareMod.AttachmentsTab)
+                .withRenderablePart()
+                .withModel(new com.paneedah.mwc.models.G36CRHG(), "g36cral8k.png")
+                .withInventoryModelPositioning((model, s) -> {
+                    if (model instanceof com.paneedah.mwc.models.G36CRHG) {
+                        GL11.glTranslatef(-0.6F, 0.4F, -1.3F);
+                        GL11.glRotatef(10F, 1f, 0f, 0f);
+                        GL11.glRotatef(-190F, 0f, 1f, 0f);
+                        GL11.glRotatef(0F, 0f, 0f, 1f);
+                        GL11.glScaled(1F, 1F, 1f);
+                    } else {
+                        GL11.glScalef(0f, 0f, 0f);
+                    }
+                }).withFirstPersonModelPositioning((model, itemStack) -> {
+                    if (model instanceof com.paneedah.mwc.models.G36CRHG) {
+                        GL11.glTranslatef(0.1F, -0.8F, 0.4F);
+                        GL11.glRotatef(30F, 0f, 1f, 0f);
+                        GL11.glScaled(0.7F, 0.7F, 0.7F);
+                    } else {
+                        GL11.glScaled(0F, 0F, 0F);
+                    }
+
+                }).withThirdPersonModelPositioning((model, itemStack) -> {
+                    if (model instanceof com.paneedah.mwc.models.G36CRHG) {
+                        GL11.glTranslatef(-0.8F, -0.5F, 0.8F);
+                        GL11.glRotatef(-50F, 0f, 1f, 0f);
+                        GL11.glRotatef(80F, 1f, 0f, 0f);
+                        GL11.glScaled(0.5F, 0.5F, 0.5F);
+                    } else {
+                        GL11.glScaled(0F, 0F, 0F);
+                    }
+                })
+                .withName("G36CRHGRAL").withTextureName("Dummy.png")
+                .build(ModernWarfareMod.MOD_CONTEXT);
+
+G36IDZSRAL = new AttachmentBuilder<Weapon>().withCategory(AttachmentCategory.STOCK)
+                .withCreativeTab(ModernWarfareMod.AttachmentsTab)
+                .withRenderablePart()
+                .withModel(new com.paneedah.mwc.models.G36IDZS(), "g36cral8k.png")
+                .withInventoryModelPositioning((model, s) -> {
+                    if (model instanceof com.paneedah.mwc.models.G36IDZS) {
+                        GL11.glTranslatef(-0.6F, 0.4F, -1.3F);
+                        GL11.glRotatef(10F, 1f, 0f, 0f);
+                        GL11.glRotatef(-190F, 0f, 1f, 0f);
+                        GL11.glRotatef(0F, 0f, 0f, 1f);
+                        GL11.glScaled(1F, 1F, 1f);
+                    } else {
+                        GL11.glScalef(0f, 0f, 0f);
+                    }
+                }).withFirstPersonModelPositioning((model, itemStack) -> {
+                    if (model instanceof com.paneedah.mwc.models.G36IDZS) {
+                        GL11.glTranslatef(0.1F, -0.8F, 0.4F);
+                        GL11.glRotatef(30F, 0f, 1f, 0f);
+                        GL11.glScaled(0.7F, 0.7F, 0.7F);
+                    } else {
+                        GL11.glScaled(0F, 0F, 0F);
+                    }
+
+                }).withThirdPersonModelPositioning((model, itemStack) -> {
+                    if (model instanceof com.paneedah.mwc.models.G36IDZS) {
+                        GL11.glTranslatef(-0.8F, -0.5F, 0.8F);
+                        GL11.glRotatef(-50F, 0f, 1f, 0f);
+                        GL11.glRotatef(80F, 1f, 0f, 0f);
+                        GL11.glScaled(0.5F, 0.5F, 0.5F);
+                    } else {
+                        GL11.glScaled(0F, 0F, 0F);
+                    }
+                })
+                .withName("G36IDZSRAL").withTextureName("Dummy.png")
+                .build(ModernWarfareMod.MOD_CONTEXT);
+
+
+G36KVSRAL = new AttachmentBuilder<Weapon>().withCategory(AttachmentCategory.STOCK)
+                .withCreativeTab(ModernWarfareMod.AttachmentsTab)
+                .withRenderablePart()
+                .withModel(new com.paneedah.mwc.models.G36KVS(), "g36cral8k.png")
+                .withInventoryModelPositioning((model, s) -> {
+                    if (model instanceof com.paneedah.mwc.models.G36KVS) {
+                        GL11.glTranslatef(-0.6F, 0.4F, -1.3F);
+                        GL11.glRotatef(10F, 1f, 0f, 0f);
+                        GL11.glRotatef(-190F, 0f, 1f, 0f);
+                        GL11.glRotatef(0F, 0f, 0f, 1f);
+                        GL11.glScaled(1F, 1F, 1f);
+                    } else {
+                        GL11.glScalef(0f, 0f, 0f);
+                    }
+                }).withFirstPersonModelPositioning((model, itemStack) -> {
+                    if (model instanceof com.paneedah.mwc.models.G36KVS) {
+                        GL11.glTranslatef(0.1F, -0.8F, 0.4F);
+                        GL11.glRotatef(30F, 0f, 1f, 0f);
+                        GL11.glScaled(0.7F, 0.7F, 0.7F);
+                    } else {
+                        GL11.glScaled(0F, 0F, 0F);
+                    }
+
+                }).withThirdPersonModelPositioning((model, itemStack) -> {
+                    if (model instanceof com.paneedah.mwc.models.G36KVS) {
+                        GL11.glTranslatef(-0.8F, -0.5F, 0.8F);
+                        GL11.glRotatef(-50F, 0f, 1f, 0f);
+                        GL11.glRotatef(80F, 1f, 0f, 0f);
+                        GL11.glScaled(0.5F, 0.5F, 0.5F);
+                    } else {
+                        GL11.glScaled(0F, 0F, 0F);
+                    }
+                })
+                .withName("G36KVSRAL").withTextureName("Dummy.png")
+                .build(ModernWarfareMod.MOD_CONTEXT);
+
+G36CHRAL = new AttachmentBuilder<Weapon>().withCategory(AttachmentCategory.RECEIVER)
+                .withCreativeTab(ModernWarfareMod.AttachmentsTab)
+                .withRenderablePart()
+                .withModel(new com.paneedah.mwc.models.G36CH(), "g36cral8k.png")
+                .withInventoryModelPositioning((model, s) -> {
+                    if (model instanceof com.paneedah.mwc.models.G36CH) {
+                        GL11.glTranslatef(-0.6F, 0.4F, -1.3F);
+                        GL11.glRotatef(10F, 1f, 0f, 0f);
+                        GL11.glRotatef(-190F, 0f, 1f, 0f);
+                        GL11.glRotatef(0F, 0f, 0f, 1f);
+                        GL11.glScaled(1F, 1F, 1f);
+                    } else {
+                        GL11.glScalef(0f, 0f, 0f);
+                    }
+                }).withFirstPersonModelPositioning((model, itemStack) -> {
+                    if (model instanceof com.paneedah.mwc.models.G36CH) {
+                        GL11.glTranslatef(0.1F, -0.8F, 0.4F);
+                        GL11.glRotatef(30F, 0f, 1f, 0f);
+                        GL11.glScaled(0.7F, 0.7F, 0.7F);
+                    } else {
+                        GL11.glScaled(0F, 0F, 0F);
+                    }
+
+                }).withThirdPersonModelPositioning((model, itemStack) -> {
+                    if (model instanceof com.paneedah.mwc.models.G36CH) {
+                        GL11.glTranslatef(-0.8F, -0.5F, 0.8F);
+                        GL11.glRotatef(-50F, 0f, 1f, 0f);
+                        GL11.glRotatef(80F, 1f, 0f, 0f);
+                        GL11.glScaled(0.5F, 0.5F, 0.5F);
+                    } else {
+                        GL11.glScaled(0F, 0F, 0F);
+                    }
+                })
+                .withName("G36CHRAL").withTextureName("Dummy.png")
+                .build(ModernWarfareMod.MOD_CONTEXT);
+
+G36KHG = new AttachmentBuilder<Weapon>().withCategory(AttachmentCategory.GUARD)
+                .withCreativeTab(ModernWarfareMod.AttachmentsTab)
+                .withRenderablePart()
+                .withModel(new com.paneedah.mwc.models.G36KHG(), "g36c.png")
+                .withInventoryModelPositioning((model, s) -> {
+                    if (model instanceof com.paneedah.mwc.models.G36KHG) {
+                        GL11.glTranslatef(-0.6F, 0.4F, -1.3F);
+                        GL11.glRotatef(10F, 1f, 0f, 0f);
+                        GL11.glRotatef(-190F, 0f, 1f, 0f);
+                        GL11.glRotatef(0F, 0f, 0f, 1f);
+                        GL11.glScaled(1F, 1F, 1f);
+                    } else {
+                        GL11.glScalef(0f, 0f, 0f);
+                    }
+                }).withFirstPersonModelPositioning((model, itemStack) -> {
+                    if (model instanceof com.paneedah.mwc.models.G36KHG) {
+                        GL11.glTranslatef(0.1F, -0.8F, 0.4F);
+                        GL11.glRotatef(30F, 0f, 1f, 0f);
+                        GL11.glScaled(0.7F, 0.7F, 0.7F);
+                    } else {
+                        GL11.glScaled(0F, 0F, 0F);
+                    }
+
+                }).withThirdPersonModelPositioning((model, itemStack) -> {
+                    if (model instanceof com.paneedah.mwc.models.G36KHG) {
+                        GL11.glTranslatef(-0.8F, -0.5F, 0.8F);
+                        GL11.glRotatef(-50F, 0f, 1f, 0f);
+                        GL11.glRotatef(80F, 1f, 0f, 0f);
+                        GL11.glScaled(0.5F, 0.5F, 0.5F);
+                    } else {
+                        GL11.glScaled(0F, 0F, 0F);
+                    }
+                })
+                .withName("G36KHG").withTextureName("Dummy.png")
+                .build(ModernWarfareMod.MOD_CONTEXT);
+
+G36EHG = new AttachmentBuilder<Weapon>().withCategory(AttachmentCategory.GUARD)
+                .withCreativeTab(ModernWarfareMod.AttachmentsTab)
+                .withRenderablePart()
+                .withModel(new com.paneedah.mwc.models.G36EHG(), "g36c.png")
+                .withInventoryModelPositioning((model, s) -> {
+                    if (model instanceof com.paneedah.mwc.models.G36EHG) {
+                        GL11.glTranslatef(-0.6F, 0.4F, -1.3F);
+                        GL11.glRotatef(10F, 1f, 0f, 0f);
+                        GL11.glRotatef(-190F, 0f, 1f, 0f);
+                        GL11.glRotatef(0F, 0f, 0f, 1f);
+                        GL11.glScaled(1F, 1F, 1f);
+                    } else {
+                        GL11.glScalef(0f, 0f, 0f);
+                    }
+                }).withFirstPersonModelPositioning((model, itemStack) -> {
+                    if (model instanceof com.paneedah.mwc.models.G36EHG) {
+                        GL11.glTranslatef(0.1F, -0.8F, 0.4F);
+                        GL11.glRotatef(30F, 0f, 1f, 0f);
+                        GL11.glScaled(0.7F, 0.7F, 0.7F);
+                    } else {
+                        GL11.glScaled(0F, 0F, 0F);
+                    }
+
+                }).withThirdPersonModelPositioning((model, itemStack) -> {
+                    if (model instanceof com.paneedah.mwc.models.G36EHG) {
+                        GL11.glTranslatef(-0.8F, -0.5F, 0.8F);
+                        GL11.glRotatef(-50F, 0f, 1f, 0f);
+                        GL11.glRotatef(80F, 1f, 0f, 0f);
+                        GL11.glScaled(0.5F, 0.5F, 0.5F);
+                    } else {
+                        GL11.glScaled(0F, 0F, 0F);
+                    }
+                })
+                .withName("G36EHG").withTextureName("Dummy.png")
+                .build(ModernWarfareMod.MOD_CONTEXT);
+
+
+G36ERHG = new AttachmentBuilder<Weapon>().withCategory(AttachmentCategory.GUARD)
+                .withCreativeTab(ModernWarfareMod.AttachmentsTab)
+                .withRenderablePart()
+                .withModel(new com.paneedah.mwc.models.G36ERHG(), "g36c.png")
+                .withInventoryModelPositioning((model, s) -> {
+                    if (model instanceof com.paneedah.mwc.models.G36ERHG) {
+                        GL11.glTranslatef(-0.6F, 0.4F, -1.3F);
+                        GL11.glRotatef(10F, 1f, 0f, 0f);
+                        GL11.glRotatef(-190F, 0f, 1f, 0f);
+                        GL11.glRotatef(0F, 0f, 0f, 1f);
+                        GL11.glScaled(1F, 1F, 1f);
+                    } else {
+                        GL11.glScalef(0f, 0f, 0f);
+                    }
+                }).withFirstPersonModelPositioning((model, itemStack) -> {
+                    if (model instanceof com.paneedah.mwc.models.G36ERHG) {
+                        GL11.glTranslatef(0.1F, -0.8F, 0.4F);
+                        GL11.glRotatef(30F, 0f, 1f, 0f);
+                        GL11.glScaled(0.7F, 0.7F, 0.7F);
+                    } else {
+                        GL11.glScaled(0F, 0F, 0F);
+                    }
+
+                }).withThirdPersonModelPositioning((model, itemStack) -> {
+                    if (model instanceof com.paneedah.mwc.models.G36ERHG) {
+                        GL11.glTranslatef(-0.8F, -0.5F, 0.8F);
+                        GL11.glRotatef(-50F, 0f, 1f, 0f);
+                        GL11.glRotatef(80F, 1f, 0f, 0f);
+                        GL11.glScaled(0.5F, 0.5F, 0.5F);
+                    } else {
+                        GL11.glScaled(0F, 0F, 0F);
+                    }
+                })
+                .withName("G36ERHG").withTextureName("Dummy.png")
+                .build(ModernWarfareMod.MOD_CONTEXT);
+
+G36KHGRAL = new AttachmentBuilder<Weapon>().withCategory(AttachmentCategory.GUARD)
+                .withCreativeTab(ModernWarfareMod.AttachmentsTab)
+                .withRenderablePart()
+                .withModel(new com.paneedah.mwc.models.G36KHG(), "g36cral8k.png")
+                .withInventoryModelPositioning((model, s) -> {
+                    if (model instanceof com.paneedah.mwc.models.G36KHG) {
+                        GL11.glTranslatef(-0.6F, 0.4F, -1.3F);
+                        GL11.glRotatef(10F, 1f, 0f, 0f);
+                        GL11.glRotatef(-190F, 0f, 1f, 0f);
+                        GL11.glRotatef(0F, 0f, 0f, 1f);
+                        GL11.glScaled(1F, 1F, 1f);
+                    } else {
+                        GL11.glScalef(0f, 0f, 0f);
+                    }
+                }).withFirstPersonModelPositioning((model, itemStack) -> {
+                    if (model instanceof com.paneedah.mwc.models.G36KHG) {
+                        GL11.glTranslatef(0.1F, -0.8F, 0.4F);
+                        GL11.glRotatef(30F, 0f, 1f, 0f);
+                        GL11.glScaled(0.7F, 0.7F, 0.7F);
+                    } else {
+                        GL11.glScaled(0F, 0F, 0F);
+                    }
+
+                }).withThirdPersonModelPositioning((model, itemStack) -> {
+                    if (model instanceof com.paneedah.mwc.models.G36KHG) {
+                        GL11.glTranslatef(-0.8F, -0.5F, 0.8F);
+                        GL11.glRotatef(-50F, 0f, 1f, 0f);
+                        GL11.glRotatef(80F, 1f, 0f, 0f);
+                        GL11.glScaled(0.5F, 0.5F, 0.5F);
+                    } else {
+                        GL11.glScaled(0F, 0F, 0F);
+                    }
+                })
+                .withName("G36KHGRAL").withTextureName("Dummy.png")
+                .build(ModernWarfareMod.MOD_CONTEXT);
+
+G36EHGRAL = new AttachmentBuilder<Weapon>().withCategory(AttachmentCategory.GUARD)
+                .withCreativeTab(ModernWarfareMod.AttachmentsTab)
+                .withRenderablePart()
+                .withModel(new com.paneedah.mwc.models.G36EHG(), "g36cral8k.png")
+                .withInventoryModelPositioning((model, s) -> {
+                    if (model instanceof com.paneedah.mwc.models.G36EHG) {
+                        GL11.glTranslatef(-0.6F, 0.4F, -1.3F);
+                        GL11.glRotatef(10F, 1f, 0f, 0f);
+                        GL11.glRotatef(-190F, 0f, 1f, 0f);
+                        GL11.glRotatef(0F, 0f, 0f, 1f);
+                        GL11.glScaled(1F, 1F, 1f);
+                    } else {
+                        GL11.glScalef(0f, 0f, 0f);
+                    }
+                }).withFirstPersonModelPositioning((model, itemStack) -> {
+                    if (model instanceof com.paneedah.mwc.models.G36EHG) {
+                        GL11.glTranslatef(0.1F, -0.8F, 0.4F);
+                        GL11.glRotatef(30F, 0f, 1f, 0f);
+                        GL11.glScaled(0.7F, 0.7F, 0.7F);
+                    } else {
+                        GL11.glScaled(0F, 0F, 0F);
+                    }
+
+                }).withThirdPersonModelPositioning((model, itemStack) -> {
+                    if (model instanceof com.paneedah.mwc.models.G36EHG) {
+                        GL11.glTranslatef(-0.8F, -0.5F, 0.8F);
+                        GL11.glRotatef(-50F, 0f, 1f, 0f);
+                        GL11.glRotatef(80F, 1f, 0f, 0f);
+                        GL11.glScaled(0.5F, 0.5F, 0.5F);
+                    } else {
+                        GL11.glScaled(0F, 0F, 0F);
+                    }
+                })
+                .withName("G36EHGRAL").withTextureName("Dummy.png")
+                .build(ModernWarfareMod.MOD_CONTEXT);
+
+
+G36ERHGRAL = new AttachmentBuilder<Weapon>().withCategory(AttachmentCategory.GUARD)
+                .withCreativeTab(ModernWarfareMod.AttachmentsTab)
+                .withRenderablePart()
+                .withModel(new com.paneedah.mwc.models.G36ERHG(), "g36cral8k.png")
+                .withInventoryModelPositioning((model, s) -> {
+                    if (model instanceof com.paneedah.mwc.models.G36ERHG) {
+                        GL11.glTranslatef(-0.6F, 0.4F, -1.3F);
+                        GL11.glRotatef(10F, 1f, 0f, 0f);
+                        GL11.glRotatef(-190F, 0f, 1f, 0f);
+                        GL11.glRotatef(0F, 0f, 0f, 1f);
+                        GL11.glScaled(1F, 1F, 1f);
+                    } else {
+                        GL11.glScalef(0f, 0f, 0f);
+                    }
+                }).withFirstPersonModelPositioning((model, itemStack) -> {
+                    if (model instanceof com.paneedah.mwc.models.G36ERHG) {
+                        GL11.glTranslatef(0.1F, -0.8F, 0.4F);
+                        GL11.glRotatef(30F, 0f, 1f, 0f);
+                        GL11.glScaled(0.7F, 0.7F, 0.7F);
+                    } else {
+                        GL11.glScaled(0F, 0F, 0F);
+                    }
+
+                }).withThirdPersonModelPositioning((model, itemStack) -> {
+                    if (model instanceof com.paneedah.mwc.models.G36ERHG) {
+                        GL11.glTranslatef(-0.8F, -0.5F, 0.8F);
+                        GL11.glRotatef(-50F, 0f, 1f, 0f);
+                        GL11.glRotatef(80F, 1f, 0f, 0f);
+                        GL11.glScaled(0.5F, 0.5F, 0.5F);
+                    } else {
+                        GL11.glScaled(0F, 0F, 0F);
+                    }
+                })
+                .withName("G36ERHGRAL").withTextureName("Dummy.png")
+                .build(ModernWarfareMod.MOD_CONTEXT);
+
+G36KRHG = new AttachmentBuilder<Weapon>().withCategory(AttachmentCategory.GUARD)
+                .withCreativeTab(ModernWarfareMod.AttachmentsTab)
+                .withRenderablePart()
+                .withModel(new com.paneedah.mwc.models.G36KRHG(), "g36c.png")
+                .withInventoryModelPositioning((model, s) -> {
+                    if (model instanceof com.paneedah.mwc.models.G36KRHG) {
+                        GL11.glTranslatef(-0.6F, 0.4F, -1.3F);
+                        GL11.glRotatef(10F, 1f, 0f, 0f);
+                        GL11.glRotatef(-190F, 0f, 1f, 0f);
+                        GL11.glRotatef(0F, 0f, 0f, 1f);
+                        GL11.glScaled(1F, 1F, 1f);
+                    } else {
+                        GL11.glScalef(0f, 0f, 0f);
+                    }
+                }).withFirstPersonModelPositioning((model, itemStack) -> {
+                    if (model instanceof com.paneedah.mwc.models.G36KRHG) {
+                        GL11.glTranslatef(0.1F, -0.8F, 0.4F);
+                        GL11.glRotatef(30F, 0f, 1f, 0f);
+                        GL11.glScaled(0.7F, 0.7F, 0.7F);
+                    } else {
+                        GL11.glScaled(0F, 0F, 0F);
+                    }
+
+                }).withThirdPersonModelPositioning((model, itemStack) -> {
+                    if (model instanceof com.paneedah.mwc.models.G36KRHG) {
+                        GL11.glTranslatef(-0.8F, -0.5F, 0.8F);
+                        GL11.glRotatef(-50F, 0f, 1f, 0f);
+                        GL11.glRotatef(80F, 1f, 0f, 0f);
+                        GL11.glScaled(0.5F, 0.5F, 0.5F);
+                    } else {
+                        GL11.glScaled(0F, 0F, 0F);
+                    }
+                })
+                .withName("G36KRHG").withTextureName("Dummy.png")
+                .build(ModernWarfareMod.MOD_CONTEXT);
+
+G36KRHGRAL = new AttachmentBuilder<Weapon>().withCategory(AttachmentCategory.GUARD)
+                .withCreativeTab(ModernWarfareMod.AttachmentsTab)
+                .withRenderablePart()
+                .withModel(new com.paneedah.mwc.models.G36KRHG(), "g36cral8k.png")
+                .withInventoryModelPositioning((model, s) -> {
+                    if (model instanceof com.paneedah.mwc.models.G36KRHG) {
+                        GL11.glTranslatef(-0.6F, 0.4F, -1.3F);
+                        GL11.glRotatef(10F, 1f, 0f, 0f);
+                        GL11.glRotatef(-190F, 0f, 1f, 0f);
+                        GL11.glRotatef(0F, 0f, 0f, 1f);
+                        GL11.glScaled(1F, 1F, 1f);
+                    } else {
+                        GL11.glScalef(0f, 0f, 0f);
+                    }
+                }).withFirstPersonModelPositioning((model, itemStack) -> {
+                    if (model instanceof com.paneedah.mwc.models.G36KRHG) {
+                        GL11.glTranslatef(0.1F, -0.8F, 0.4F);
+                        GL11.glRotatef(30F, 0f, 1f, 0f);
+                        GL11.glScaled(0.7F, 0.7F, 0.7F);
+                    } else {
+                        GL11.glScaled(0F, 0F, 0F);
+                    }
+
+                }).withThirdPersonModelPositioning((model, itemStack) -> {
+                    if (model instanceof com.paneedah.mwc.models.G36KRHG) {
+                        GL11.glTranslatef(-0.8F, -0.5F, 0.8F);
+                        GL11.glRotatef(-50F, 0f, 1f, 0f);
+                        GL11.glRotatef(80F, 1f, 0f, 0f);
+                        GL11.glScaled(0.5F, 0.5F, 0.5F);
+                    } else {
+                        GL11.glScaled(0F, 0F, 0F);
+                    }
+                })
+                .withName("G36KRHGRAL").withTextureName("Dummy.png")
+                .build(ModernWarfareMod.MOD_CONTEXT);
         
         RailRiser = new AttachmentBuilder<Weapon>().withCategory(AttachmentCategory.RAILING)
                 .withCreativeTab(ModernWarfareMod.AttachmentsTab)
@@ -5612,7 +6835,7 @@ public class Attachments {
                 .withModel(new com.paneedah.mwc.models.M9A1rearsight(), "M9A1rearsight")
                 .withModernRecipe(
                     	CraftingGroup.ATTACHMENT_MODIFICATION,
-                    	new CraftingEntry(MWCItems.gunmetalIngot, 3),
+                    	new CraftingEntry(MWCItems.gunmetalIngot, 3), 
                     	new CraftingEntry(MWCItems.steelIngot, 1))
                 .withInventoryModelPositioning((model, s) -> {
                     if (model instanceof com.paneedah.mwc.models.SamuraiEdgeSlide) {
@@ -5653,7 +6876,7 @@ public class Attachments {
                 .withModel(new com.paneedah.mwc.models.SamuraiEdge(), "samuraiedge.png")
                 .withModernRecipe(
                     	CraftingGroup.ATTACHMENT_MODIFICATION,
-                    	new CraftingEntry(MWCItems.gunmetalIngot, 3),
+                    	new CraftingEntry(MWCItems.gunmetalIngot, 3), 
                     	new CraftingEntry(MWCItems.steelIngot, 2))
                 .withInventoryModelPositioning((model, s) -> {
                     if (model instanceof com.paneedah.mwc.models.SamuraiEdge) {
@@ -5761,6 +6984,78 @@ public class Attachments {
                 .withName("DesertEagleSlide")
                 .withRenderablePart().withTextureName("Dummy.png")
                 .build(ModernWarfareMod.MOD_CONTEXT);
+
+        DesertEagleSlideS = new AttachmentBuilder<Weapon>()
+                .withCategory(AttachmentCategory.FRONTSIGHT)
+                .withModel(new com.paneedah.mwc.models.DesertEagleSlideS(), "deagles.png")
+                .withInventoryModelPositioning((model, s) -> {
+                    if (model instanceof com.paneedah.mwc.models.DesertEagleSlideS) {
+                        GL11.glTranslatef(-0.6F, 0.2F, -0.4F);
+                        GL11.glRotatef(10F, 1f, 0f, 0f);
+                        GL11.glRotatef(-190F, 0f, 1f, 0f);
+                        GL11.glRotatef(0F, 0f, 0f, 1f);
+                        GL11.glScaled(0.9F, 0.9F, 0.9f);
+                    } else {
+                        GL11.glScalef(0f, 0f, 0f);
+                    }
+                }).withFirstPersonModelPositioning((model, itemStack) -> {
+                    if (model instanceof com.paneedah.mwc.models.DesertEagleSlideS) {
+                        GL11.glTranslatef(0.1F, -0.8F, 0.4F);
+                        GL11.glRotatef(30F, 0f, 1f, 0f);
+                        GL11.glScaled(0.7F, 0.7F, 0.7F);
+                    } else {
+                        GL11.glScaled(0F, 0F, 0F);
+                    }
+
+                }).withThirdPersonModelPositioning((model, itemStack) -> {
+                    if (model instanceof com.paneedah.mwc.models.DesertEagleSlideS) {
+                        GL11.glTranslatef(-0.8F, -0.5F, 0.8F);
+                        GL11.glRotatef(-50F, 0f, 1f, 0f);
+                        GL11.glRotatef(80F, 1f, 0f, 0f);
+                        GL11.glScaled(0.5F, 0.5F, 0.5F);
+                    } else {
+                        GL11.glScaled(0F, 0F, 0F);
+                    }
+                })
+                .withName("DesertEagleSlideS")
+                .withRenderablePart().withTextureName("Dummy.png")
+                .build(ModernWarfareMod.MOD_CONTEXT);
+
+        DesertEagleSlideFS = new AttachmentBuilder<Weapon>()
+                .withCategory(AttachmentCategory.FRONTSIGHT)
+                .withModel(new com.paneedah.mwc.models.DesertEagleSlideS(), "deaglefs.png")
+                .withInventoryModelPositioning((model, s) -> {
+                    if (model instanceof com.paneedah.mwc.models.DesertEagleSlideS) {
+                        GL11.glTranslatef(-0.6F, 0.2F, -0.4F);
+                        GL11.glRotatef(10F, 1f, 0f, 0f);
+                        GL11.glRotatef(-190F, 0f, 1f, 0f);
+                        GL11.glRotatef(0F, 0f, 0f, 1f);
+                        GL11.glScaled(0.9F, 0.9F, 0.9f);
+                    } else {
+                        GL11.glScalef(0f, 0f, 0f);
+                    }
+                }).withFirstPersonModelPositioning((model, itemStack) -> {
+                    if (model instanceof com.paneedah.mwc.models.DesertEagleSlideS) {
+                        GL11.glTranslatef(0.1F, -0.8F, 0.4F);
+                        GL11.glRotatef(30F, 0f, 1f, 0f);
+                        GL11.glScaled(0.7F, 0.7F, 0.7F);
+                    } else {
+                        GL11.glScaled(0F, 0F, 0F);
+                    }
+
+                }).withThirdPersonModelPositioning((model, itemStack) -> {
+                    if (model instanceof com.paneedah.mwc.models.DesertEagleSlideS) {
+                        GL11.glTranslatef(-0.8F, -0.5F, 0.8F);
+                        GL11.glRotatef(-50F, 0f, 1f, 0f);
+                        GL11.glRotatef(80F, 1f, 0f, 0f);
+                        GL11.glScaled(0.5F, 0.5F, 0.5F);
+                    } else {
+                        GL11.glScaled(0F, 0F, 0F);
+                    }
+                })
+                .withName("DesertEagleSlideFS")
+                .withRenderablePart().withTextureName("Dummy.png")
+                .build(ModernWarfareMod.MOD_CONTEXT);
         
         DesertEagleBody = new AttachmentBuilder<Weapon>()
                 .withCategory(AttachmentCategory.BACKGRIP)
@@ -5796,6 +7091,80 @@ public class Attachments {
                     }
                 })
                 .withName("DesertEagleBody")
+                .withRenderablePart().withTextureName("Dummy.png")
+                .build(ModernWarfareMod.MOD_CONTEXT);
+
+        DesertEagleL6Body = new AttachmentBuilder<Weapon>()
+                .withCategory(AttachmentCategory.BACKGRIP)
+                .withCreativeTab(ModernWarfareMod.AttachmentsTab)
+                .withModel(new com.paneedah.mwc.models.DesertEagleL6(), "deagles.png")
+                .withInventoryModelPositioning((model, s) -> {
+                    if (model instanceof com.paneedah.mwc.models.DesertEagleL6) {
+                        GL11.glTranslatef(-0.6F, -0.1F, -0.3F);
+                        GL11.glRotatef(10F, 1f, 0f, 0f);
+                        GL11.glRotatef(-190F, 0f, 1f, 0f);
+                        GL11.glRotatef(0F, 0f, 0f, 1f);
+                        GL11.glScaled(0.9F, 0.9F, 0.9f);
+                    } else {
+                        GL11.glScalef(0f, 0f, 0f);
+                    }
+                }).withFirstPersonModelPositioning((model, itemStack) -> {
+                    if (model instanceof com.paneedah.mwc.models.DesertEagleL6) {
+                        GL11.glTranslatef(0.1F, -0.8F, 0.4F);
+                        GL11.glRotatef(30F, 0f, 1f, 0f);
+                        GL11.glScaled(0.7F, 0.7F, 0.7F);
+                    } else {
+                        GL11.glScaled(0F, 0F, 0F);
+                    }
+
+                }).withThirdPersonModelPositioning((model, itemStack) -> {
+                    if (model instanceof com.paneedah.mwc.models.DesertEagleL6) {
+                        GL11.glTranslatef(-0.8F, -0.5F, 0.8F);
+                        GL11.glRotatef(-50F, 0f, 1f, 0f);
+                        GL11.glRotatef(80F, 1f, 0f, 0f);
+                        GL11.glScaled(0.5F, 0.5F, 0.5F);
+                    } else {
+                        GL11.glScaled(0F, 0F, 0F);
+                    }
+                })
+                .withName("DesertEagleL6Body")
+                .withRenderablePart().withTextureName("Dummy.png")
+                .build(ModernWarfareMod.MOD_CONTEXT);
+
+        DesertEagleXIVBody = new AttachmentBuilder<Weapon>()
+                .withCategory(AttachmentCategory.BACKGRIP)
+                .withCreativeTab(ModernWarfareMod.AttachmentsTab)
+                .withModel(new com.paneedah.mwc.models.DesertEagleXIV(), "deaglefs.png")
+                .withInventoryModelPositioning((model, s) -> {
+                    if (model instanceof com.paneedah.mwc.models.DesertEagleXIV) {
+                        GL11.glTranslatef(-0.6F, -0.1F, -0.3F);
+                        GL11.glRotatef(10F, 1f, 0f, 0f);
+                        GL11.glRotatef(-190F, 0f, 1f, 0f);
+                        GL11.glRotatef(0F, 0f, 0f, 1f);
+                        GL11.glScaled(0.9F, 0.9F, 0.9f);
+                    } else {
+                        GL11.glScalef(0f, 0f, 0f);
+                    }
+                }).withFirstPersonModelPositioning((model, itemStack) -> {
+                    if (model instanceof com.paneedah.mwc.models.DesertEagleXIV) {
+                        GL11.glTranslatef(0.1F, -0.8F, 0.4F);
+                        GL11.glRotatef(30F, 0f, 1f, 0f);
+                        GL11.glScaled(0.7F, 0.7F, 0.7F);
+                    } else {
+                        GL11.glScaled(0F, 0F, 0F);
+                    }
+
+                }).withThirdPersonModelPositioning((model, itemStack) -> {
+                    if (model instanceof com.paneedah.mwc.models.DesertEagleXIV) {
+                        GL11.glTranslatef(-0.8F, -0.5F, 0.8F);
+                        GL11.glRotatef(-50F, 0f, 1f, 0f);
+                        GL11.glRotatef(80F, 1f, 0f, 0f);
+                        GL11.glScaled(0.5F, 0.5F, 0.5F);
+                    } else {
+                        GL11.glScaled(0F, 0F, 0F);
+                    }
+                })
+                .withName("DesertEagleXIVBody")
                 .withRenderablePart().withTextureName("Dummy.png")
                 .build(ModernWarfareMod.MOD_CONTEXT);
         
@@ -6662,7 +8031,7 @@ public class Attachments {
                 .withModel(new com.paneedah.mwc.models.makarovrearsight(), "gun.png")
                 .withModernRecipe(
                     	CraftingGroup.ATTACHMENT_MODIFICATION,
-                    	new CraftingEntry(MWCItems.gunmetalIngot, 2),
+                    	new CraftingEntry(MWCItems.gunmetalIngot, 2), 
                     	new CraftingEntry(MWCItems.steelIngot, 1))
                 .withInventoryModelPositioning((model, s) -> {
                     if (model instanceof com.paneedah.mwc.models.MakarovPBSSlide) {
@@ -6745,7 +8114,7 @@ public class Attachments {
                 .withModel(new com.paneedah.mwc.models.makarovfrontsight(), "gun.png")
                 .withModernRecipe(
                     	CraftingGroup.ATTACHMENT_MODIFICATION,
-                    	new CraftingEntry(MWCItems.gunmetalIngot, 3),
+                    	new CraftingEntry(MWCItems.gunmetalIngot, 3), 
                     	new CraftingEntry(MWCItems.steelIngot, 1))
                 .withInventoryModelPositioning((model, s) -> {
                     if (model instanceof com.paneedah.mwc.models.MakarovPBBody) {
@@ -6940,7 +8309,7 @@ public class Attachments {
                 .withModel(new com.paneedah.mwc.models.MP5SDHandGuard(), "mp5.png")
                 .withModernRecipe(
                     	CraftingGroup.ATTACHMENT_MODIFICATION,
-                    	new CraftingEntry(MWCItems.gunmetalIngot, 3),
+                    	new CraftingEntry(MWCItems.gunmetalIngot, 3), 
                     	new CraftingEntry(MWCItems.steelIngot, 1))
                 .withInventoryModelPositioning((model, s) -> {
                     if (model instanceof com.paneedah.mwc.models.MP5SDHandGuard) {
@@ -7052,7 +8421,7 @@ public class Attachments {
                 .withModel(new com.paneedah.mwc.models.GlockHogueGrip(), "tan.png")
 //                .withModernRecipe(
 //                    	CraftingGroup.ATTACHMENT_MODIFICATION,
-//                    	new CraftingEntry(MwItems.gunmetalIngot, 3))
+//                    	new CraftingEntry(MWCItems.gunmetalIngot, 3))
                 .withInventoryModelPositioning((model, s) -> {
                     if (model instanceof com.paneedah.mwc.models.GlockHogueGrip) {
                         GL11.glTranslatef(-0.6F, -0.4F, 0.4F);
@@ -7090,7 +8459,7 @@ public class Attachments {
                 .withModel(new com.paneedah.mwc.models.APSgrip(), "aps.png")
                 .withModernRecipe(
                     	CraftingGroup.ATTACHMENT_MODIFICATION,
-                    	new CraftingEntry(MWCItems.gunmetalIngot, 2),
+                    	new CraftingEntry(MWCItems.gunmetalIngot, 2), 
                     	new CraftingEntry(Blocks.PLANKS, 1))
                 .withInventoryModelPositioning((model, s) -> {
                     if (model instanceof com.paneedah.mwc.models.APSgrip) {
@@ -7129,7 +8498,7 @@ public class Attachments {
                 .withModel(new com.paneedah.mwc.models.APSstock(), "aps.png")
                 .withModernRecipe(
                     	CraftingGroup.ATTACHMENT_MODIFICATION,
-                    	new CraftingEntry(MWCItems.gunmetalIngot, 2),
+                    	new CraftingEntry(MWCItems.gunmetalIngot, 2), 
                     	new CraftingEntry(Blocks.PLANKS, 1))
                 .withInventoryModelPositioning((model, s) -> {
                     if (model instanceof com.paneedah.mwc.models.APSstock) {
@@ -7321,7 +8690,7 @@ public class Attachments {
                 .withModel(new com.paneedah.mwc.models.MilSpecStock(), "MilSpecStock.png")
                 .withModernRecipe(
                     	CraftingGroup.ATTACHMENT_MODIFICATION,
-                    	new CraftingEntry(MWCItems.gunmetalIngot, 3),
+                    	new CraftingEntry(MWCItems.gunmetalIngot, 3), 
                     	new CraftingEntry(MWCItems.steelIngot, 1))
                 .withInventoryModelPositioning((model, s) -> {
                     if (model instanceof com.paneedah.mwc.models.MP5StockAdapter) {
@@ -7696,7 +9065,7 @@ public class Attachments {
                 .withModel(new com.paneedah.mwc.models.AKRail5(), "akrail.png")
                 .withModernRecipe(
                     	CraftingGroup.ATTACHMENT_MODIFICATION,
-                    	new CraftingEntry(MWCItems.gunmetalIngot, 3),
+                    	new CraftingEntry(MWCItems.gunmetalIngot, 3), 
                     	new CraftingEntry(MWCItems.steelIngot, 1))
                 .withInventoryModelPositioning((model, s) -> {
                     if (model instanceof com.paneedah.mwc.models.Block2SOCOMHandguard) {
@@ -8192,7 +9561,7 @@ public class Attachments {
                 .withModel(new com.paneedah.mwc.models.AKRail(), "akrail.png")
                 .withModernRecipe(
                     	CraftingGroup.ATTACHMENT_MODIFICATION,
-                    	new CraftingEntry(MWCItems.gunmetalIngot, 3),
+                    	new CraftingEntry(MWCItems.gunmetalIngot, 3), 
                     	new CraftingEntry(MWCItems.steelIngot, 2))
                 .withInventoryModelPositioning((model, s) -> {
                     if (model instanceof com.paneedah.mwc.models.Beowulf50CalReceiver) {
@@ -9016,6 +10385,8 @@ public class Attachments {
                 .withName("AR10SuperSASSHandguard").withTextureName("Dummy.png")
                 .build(ModernWarfareMod.MOD_CONTEXT);
         
+
+        
         S710Handguard = new AttachmentBuilder<Weapon>().withCategory(AttachmentCategory.GUARD)
                 .withCreativeTab(ModernWarfareMod.AttachmentsTab)
                 .withModel(new com.paneedah.mwc.models.S710TricunHandguard(), "s710tricun.png")
@@ -9050,6 +10421,7 @@ public class Attachments {
                 })
                 .withName("S710Handguard").withTextureName("Dummy.png")
                 .build(ModernWarfareMod.MOD_CONTEXT);
+        
         SIGMCXHandguard = new AttachmentBuilder<Weapon>().withCategory(AttachmentCategory.GUARD)
                 .withCreativeTab(ModernWarfareMod.AttachmentsTab)
                 .withModel(new com.paneedah.mwc.models.SIGMCXHandguard(), "sigmcx.png")
@@ -9134,7 +10506,7 @@ public class Attachments {
                 .withModel(new com.paneedah.mwc.models.MPXHandguard(), "mpx.png")
                 .withModernRecipe(
                     	CraftingGroup.ATTACHMENT_MODIFICATION,
-                    	new CraftingEntry(MWCItems.gunmetalIngot, 2),
+                    	new CraftingEntry(MWCItems.gunmetalIngot, 2), 
                     	new CraftingEntry(MWCItems.steelIngot, 1))
                 .withInventoryModelPositioning((model, s) -> {
                     if (model instanceof com.paneedah.mwc.models.MPXHandguard) {
@@ -9173,7 +10545,7 @@ public class Attachments {
                 .withModel(new com.paneedah.mwc.models.MPXHandguardExtended(), "mpx.png")
                 .withModernRecipe(
                     	CraftingGroup.ATTACHMENT_MODIFICATION,
-                    	new CraftingEntry(MWCItems.gunmetalIngot, 3),
+                    	new CraftingEntry(MWCItems.gunmetalIngot, 3), 
                     	new CraftingEntry(MWCItems.steelIngot, 1))
                 .withInventoryModelPositioning((model, s) -> {
                     if (model instanceof com.paneedah.mwc.models.MPXHandguardExtended) {
@@ -9212,7 +10584,7 @@ public class Attachments {
                 .withModel(new com.paneedah.mwc.models.MPXHandguardRailed(), "mpx.png")
                 .withModernRecipe(
                     	CraftingGroup.ATTACHMENT_MODIFICATION,
-                    	new CraftingEntry(MWCItems.gunmetalIngot, 2),
+                    	new CraftingEntry(MWCItems.gunmetalIngot, 2), 
                     	new CraftingEntry(MWCItems.steelIngot, 2))
                 .withInventoryModelPositioning((model, s) -> {
                     if (model instanceof com.paneedah.mwc.models.MPXHandguardRailed) {
@@ -9284,6 +10656,44 @@ public class Attachments {
                     }
                 })
                 .withName("K2C1Handguard").withTextureName("Dummy.png")
+                .build(ModernWarfareMod.MOD_CONTEXT);
+
+        K1AHG = new AttachmentBuilder<Weapon>().withCategory(AttachmentCategory.GUARD)
+                .withCreativeTab(ModernWarfareMod.AttachmentsTab)
+                .withModel(new com.paneedah.mwc.models.K1AHG(), "vssm.png")
+                .withModernRecipe(
+                    	CraftingGroup.ATTACHMENT_MODIFICATION,
+                    	new CraftingEntry(MWCItems.gunmetalIngot, 2))
+                .withInventoryModelPositioning((model, s) -> {
+                    if (model instanceof com.paneedah.mwc.models.K1AHG) {
+                        GL11.glTranslatef(-0.6F, 0.5F, -1.8F);
+                        GL11.glRotatef(10F, 1f, 0f, 0f);
+                        GL11.glRotatef(-190F, 0f, 1f, 0f);
+                        GL11.glRotatef(0F, 0f, 0f, 1f);
+                        GL11.glScaled(0.9F, 0.9F, 0.9f);
+                    } else {
+                        GL11.glScalef(0f, 0f, 0f);
+                    }
+                }).withFirstPersonModelPositioning((model, itemStack) -> {
+                    if (model instanceof com.paneedah.mwc.models.K1AHG) {
+                        GL11.glTranslatef(0.1F, -0.8F, 0.4F);
+                        GL11.glRotatef(30F, 0f, 1f, 0f);
+                        GL11.glScaled(0.7F, 0.7F, 0.7F);
+                    } else {
+                        GL11.glScaled(0F, 0F, 0F);
+                    }
+
+                }).withThirdPersonModelPositioning((model, itemStack) -> {
+                    if (model instanceof com.paneedah.mwc.models.K1AHG) {
+                        GL11.glTranslatef(-0.8F, -0.5F, 0.8F);
+                        GL11.glRotatef(-50F, 0f, 1f, 0f);
+                        GL11.glRotatef(80F, 1f, 0f, 0f);
+                        GL11.glScaled(0.5F, 0.5F, 0.5F);
+                    } else {
+                        GL11.glScaled(0F, 0F, 0F);
+                    }
+                })
+                .withName("K1AHG").withTextureName("Dummy.png")
                 .build(ModernWarfareMod.MOD_CONTEXT);
         
         HeraArmsGrip = new AttachmentBuilder<Weapon>().withCategory(AttachmentCategory.BACKGRIP)
@@ -9659,13 +11069,89 @@ public class Attachments {
                 })
                 .withName("K2C1Grip").withTextureName("Dummy.png")
                 .build(ModernWarfareMod.MOD_CONTEXT);
+
+        K1AG = new AttachmentBuilder<Weapon>().withCategory(AttachmentCategory.BACKGRIP)
+                .withCreativeTab(ModernWarfareMod.AttachmentsTab)
+                .withModel(new com.paneedah.mwc.models.K1AG(), "vssm.png")
+                .withModernRecipe(
+                    	CraftingGroup.ATTACHMENT_MODIFICATION,
+                    	new CraftingEntry(MWCItems.gunmetalIngot, 2))
+                .withInventoryModelPositioning((model, s) -> {
+                    if (model instanceof com.paneedah.mwc.models.K1AG) {
+                        GL11.glTranslatef(-0.6F, -0F, 0F);
+                        GL11.glRotatef(10F, 1f, 0f, 0f);
+                        GL11.glRotatef(-190F, 0f, 1f, 0f);
+                        GL11.glRotatef(0F, 0f, 0f, 1f);
+                        GL11.glScaled(0.8F, 0.8F, 0.8f);
+                    } else {
+                        GL11.glScalef(0f, 0f, 0f);
+                    }
+                }).withFirstPersonModelPositioning((model, itemStack) -> {
+                    if (model instanceof com.paneedah.mwc.models.K1AG) {
+                        GL11.glTranslatef(0.1F, -0.8F, 0.4F);
+                        GL11.glRotatef(30F, 0f, 1f, 0f);
+                        GL11.glScaled(0.7F, 0.7F, 0.7F);
+                    } else {
+                        GL11.glScaled(0F, 0F, 0F);
+                    }
+
+                }).withThirdPersonModelPositioning((model, itemStack) -> {
+                    if (model instanceof com.paneedah.mwc.models.K1AG) {
+                        GL11.glTranslatef(-0.8F, -0.5F, 0.8F);
+                        GL11.glRotatef(-50F, 0f, 1f, 0f);
+                        GL11.glRotatef(80F, 1f, 0f, 0f);
+                        GL11.glScaled(0.5F, 0.5F, 0.5F);
+                    } else {
+                        GL11.glScaled(0F, 0F, 0F);
+                    }
+                })
+                .withName("K1AG").withTextureName("Dummy.png")
+                .build(ModernWarfareMod.MOD_CONTEXT);
+
+        K1AStock = new AttachmentBuilder<Weapon>().withCategory(AttachmentCategory.STOCK)
+                .withCreativeTab(ModernWarfareMod.AttachmentsTab)
+                .withModel(new com.paneedah.mwc.models.K1AStock(), "vssm.png")
+                .withModernRecipe(
+                    	CraftingGroup.ATTACHMENT_MODIFICATION,
+                    	new CraftingEntry(MWCItems.gunmetalIngot, 2))
+                .withInventoryModelPositioning((model, s) -> {
+                    if (model instanceof com.paneedah.mwc.models.K1AStock) {
+                        GL11.glTranslatef(-0.6F, -0F, 0F);
+                        GL11.glRotatef(10F, 1f, 0f, 0f);
+                        GL11.glRotatef(-190F, 0f, 1f, 0f);
+                        GL11.glRotatef(0F, 0f, 0f, 1f);
+                        GL11.glScaled(0.8F, 0.8F, 0.8f);
+                    } else {
+                        GL11.glScalef(0f, 0f, 0f);
+                    }
+                }).withFirstPersonModelPositioning((model, itemStack) -> {
+                    if (model instanceof com.paneedah.mwc.models.K1AStock) {
+                        GL11.glTranslatef(0.1F, -0.8F, 0.4F);
+                        GL11.glRotatef(30F, 0f, 1f, 0f);
+                        GL11.glScaled(0.7F, 0.7F, 0.7F);
+                    } else {
+                        GL11.glScaled(0F, 0F, 0F);
+                    }
+
+                }).withThirdPersonModelPositioning((model, itemStack) -> {
+                    if (model instanceof com.paneedah.mwc.models.K1AStock) {
+                        GL11.glTranslatef(-0.8F, -0.5F, 0.8F);
+                        GL11.glRotatef(-50F, 0f, 1f, 0f);
+                        GL11.glRotatef(80F, 1f, 0f, 0f);
+                        GL11.glScaled(0.5F, 0.5F, 0.5F);
+                    } else {
+                        GL11.glScaled(0F, 0F, 0F);
+                    }
+                })
+                .withName("K1AStock").withTextureName("Dummy.png")
+                .build(ModernWarfareMod.MOD_CONTEXT);
         
         AK47Grip = new AttachmentBuilder<Weapon>().withCategory(AttachmentCategory.BACKGRIP)
                 .withCreativeTab(ModernWarfareMod.AttachmentsTab)
                 .withModel(new com.paneedah.mwc.models.AKGrip(), "ak47.png")
                 .withModernRecipe(
                     	CraftingGroup.ATTACHMENT_MODIFICATION,
-                    	new CraftingEntry(MWCItems.gunmetalIngot, 2),
+                    	new CraftingEntry(MWCItems.gunmetalIngot, 2), 
                     	new CraftingEntry(Blocks.PLANKS, 1))
                 .withInventoryModelPositioning((model, s) -> {
                     if (model instanceof com.paneedah.mwc.models.AKGrip) {
@@ -9697,6 +11183,46 @@ public class Attachments {
                     }
                 })
                 .withName("AK47Grip").withTextureName("Dummy.png")
+
+                .build(ModernWarfareMod.MOD_CONTEXT);
+        
+        TantalGrip = new AttachmentBuilder<Weapon>().withCategory(AttachmentCategory.BACKGRIP)
+                .withCreativeTab(ModernWarfareMod.AttachmentsTab)
+                .withModel(new com.paneedah.mwc.models.TantalGrip(), "ak74.png")
+                .withModernRecipe(
+                    	CraftingGroup.ATTACHMENT_MODIFICATION,
+                    	new CraftingEntry(MWCItems.gunmetalIngot, 2), 
+                    	new CraftingEntry(Blocks.PLANKS, 1))
+                .withInventoryModelPositioning((model, s) -> {
+                    if (model instanceof com.paneedah.mwc.models.TantalGrip) {
+                        GL11.glTranslatef(-0.6F, -0.6F, 0.4F);
+                        GL11.glRotatef(10F, 1f, 0f, 0f);
+                        GL11.glRotatef(-190F, 0f, 1f, 0f);
+                        GL11.glRotatef(0F, 0f, 0f, 1f);
+                        GL11.glScaled(0.9F, 0.9F, 0.9f);
+                    } else {
+                        GL11.glScalef(0f, 0f, 0f);
+                    }
+                }).withFirstPersonModelPositioning((model, itemStack) -> {
+                    if (model instanceof com.paneedah.mwc.models.TantalGrip) {
+                        GL11.glTranslatef(0.1F, -0.8F, 0.4F);
+                        GL11.glRotatef(30F, 0f, 1f, 0f);
+                        GL11.glScaled(0.7F, 0.7F, 0.7F);
+                    } else {
+                        GL11.glScaled(0F, 0F, 0F);
+                    }
+
+                }).withThirdPersonModelPositioning((model, itemStack) -> {
+                    if (model instanceof com.paneedah.mwc.models.TantalGrip) {
+                        GL11.glTranslatef(-0.8F, -0.5F, 0.8F);
+                        GL11.glRotatef(-50F, 0f, 1f, 0f);
+                        GL11.glRotatef(80F, 1f, 0f, 0f);
+                        GL11.glScaled(0.5F, 0.5F, 0.5F);
+                    } else {
+                        GL11.glScaled(0F, 0F, 0F);
+                    }
+                })
+                .withName("TantalGrip").withTextureName("Dummy.png")
                 .build(ModernWarfareMod.MOD_CONTEXT);
         
         AK101Grip = new AttachmentBuilder<Weapon>().withCategory(AttachmentCategory.BACKGRIP)
@@ -9736,7 +11262,154 @@ public class Attachments {
                 })
                 .withName("AK101Grip").withTextureName("Dummy.png")
                 .build(ModernWarfareMod.MOD_CONTEXT);
-        
+ AK101GreenGrip = new AttachmentBuilder<Weapon>().withCategory(AttachmentCategory.BACKGRIP)
+                .withCreativeTab(ModernWarfareMod.AttachmentsTab)
+                .withModel(new com.paneedah.mwc.models.AK101Grip(), "AK101GreenGrip.png")
+                .withModernRecipe(
+                    	CraftingGroup.ATTACHMENT_MODIFICATION,
+                    	new CraftingEntry(MWCItems.gunmetalIngot, 2))
+                .withInventoryModelPositioning((model, s) -> {
+                    if (model instanceof com.paneedah.mwc.models.AK101Grip) {
+                        GL11.glTranslatef(-0.6F, -0.6F, 0.4F);
+                        GL11.glRotatef(10F, 1f, 0f, 0f);
+                        GL11.glRotatef(-190F, 0f, 1f, 0f);
+                        GL11.glRotatef(0F, 0f, 0f, 1f);
+                        GL11.glScaled(0.9F, 0.9F, 0.9f);
+                    } else {
+                        GL11.glScalef(0f, 0f, 0f);
+                    }
+                }).withFirstPersonModelPositioning((model, itemStack) -> {
+                    if (model instanceof com.paneedah.mwc.models.AK101Grip) {
+                        GL11.glTranslatef(0.1F, -0.8F, 0.4F);
+                        GL11.glRotatef(30F, 0f, 1f, 0f);
+                        GL11.glScaled(0.7F, 0.7F, 0.7F);
+                    } else {
+                        GL11.glScaled(0F, 0F, 0F);
+                    }
+
+                }).withThirdPersonModelPositioning((model, itemStack) -> {
+                    if (model instanceof com.paneedah.mwc.models.AK101Grip) {
+                        GL11.glTranslatef(-0.8F, -0.5F, 0.8F);
+                        GL11.glRotatef(-50F, 0f, 1f, 0f);
+                        GL11.glRotatef(80F, 1f, 0f, 0f);
+                        GL11.glScaled(0.5F, 0.5F, 0.5F);
+                    } else {
+                        GL11.glScaled(0F, 0F, 0F);
+                    }
+                })
+                .withName("AK101GreenGrip").withTextureName("Dummy.png")
+                .build(ModernWarfareMod.MOD_CONTEXT);
+         AK101PearlGrip = new AttachmentBuilder<Weapon>().withCategory(AttachmentCategory.BACKGRIP)
+                .withCreativeTab(ModernWarfareMod.AttachmentsTab)
+                .withModel(new com.paneedah.mwc.models.AK101Grip(), "AK101PearlGrip.png")
+                .withModernRecipe(
+                    	CraftingGroup.ATTACHMENT_MODIFICATION,
+                    	new CraftingEntry(MWCItems.gunmetalIngot, 2))
+                .withInventoryModelPositioning((model, s) -> {
+                    if (model instanceof com.paneedah.mwc.models.AK101Grip) {
+                        GL11.glTranslatef(-0.6F, -0.6F, 0.4F);
+                        GL11.glRotatef(10F, 1f, 0f, 0f);
+                        GL11.glRotatef(-190F, 0f, 1f, 0f);
+                        GL11.glRotatef(0F, 0f, 0f, 1f);
+                        GL11.glScaled(0.9F, 0.9F, 0.9f);
+                    } else {
+                        GL11.glScalef(0f, 0f, 0f);
+                    }
+                }).withFirstPersonModelPositioning((model, itemStack) -> {
+                    if (model instanceof com.paneedah.mwc.models.AK101Grip) {
+                        GL11.glTranslatef(0.1F, -0.8F, 0.4F);
+                        GL11.glRotatef(30F, 0f, 1f, 0f);
+                        GL11.glScaled(0.7F, 0.7F, 0.7F);
+                    } else {
+                        GL11.glScaled(0F, 0F, 0F);
+                    }
+
+                }).withThirdPersonModelPositioning((model, itemStack) -> {
+                    if (model instanceof com.paneedah.mwc.models.AK101Grip) {
+                        GL11.glTranslatef(-0.8F, -0.5F, 0.8F);
+                        GL11.glRotatef(-50F, 0f, 1f, 0f);
+                        GL11.glRotatef(80F, 1f, 0f, 0f);
+                        GL11.glScaled(0.5F, 0.5F, 0.5F);
+                    } else {
+                        GL11.glScaled(0F, 0F, 0F);
+                    }
+                })
+                .withName("AK101PearlGrip").withTextureName("Dummy.png")
+                .build(ModernWarfareMod.MOD_CONTEXT);
+ AK101PlumGrip = new AttachmentBuilder<Weapon>().withCategory(AttachmentCategory.BACKGRIP)
+                .withCreativeTab(ModernWarfareMod.AttachmentsTab)
+                .withModel(new com.paneedah.mwc.models.AK101Grip(), "AK101PlumGrip.png")
+                .withModernRecipe(
+                    	CraftingGroup.ATTACHMENT_MODIFICATION,
+                    	new CraftingEntry(MWCItems.gunmetalIngot, 2))
+                .withInventoryModelPositioning((model, s) -> {
+                    if (model instanceof com.paneedah.mwc.models.AK101Grip) {
+                        GL11.glTranslatef(-0.6F, -0.6F, 0.4F);
+                        GL11.glRotatef(10F, 1f, 0f, 0f);
+                        GL11.glRotatef(-190F, 0f, 1f, 0f);
+                        GL11.glRotatef(0F, 0f, 0f, 1f);
+                        GL11.glScaled(0.9F, 0.9F, 0.9f);
+                    } else {
+                        GL11.glScalef(0f, 0f, 0f);
+                    }
+                }).withFirstPersonModelPositioning((model, itemStack) -> {
+                    if (model instanceof com.paneedah.mwc.models.AK101Grip) {
+                        GL11.glTranslatef(0.1F, -0.8F, 0.4F);
+                        GL11.glRotatef(30F, 0f, 1f, 0f);
+                        GL11.glScaled(0.7F, 0.7F, 0.7F);
+                    } else {
+                        GL11.glScaled(0F, 0F, 0F);
+                    }
+
+                }).withThirdPersonModelPositioning((model, itemStack) -> {
+                    if (model instanceof com.paneedah.mwc.models.AK101Grip) {
+                        GL11.glTranslatef(-0.8F, -0.5F, 0.8F);
+                        GL11.glRotatef(-50F, 0f, 1f, 0f);
+                        GL11.glRotatef(80F, 1f, 0f, 0f);
+                        GL11.glScaled(0.5F, 0.5F, 0.5F);
+                    } else {
+                        GL11.glScaled(0F, 0F, 0F);
+                    }
+                })
+                .withName("AK101PlumGrip").withTextureName("Dummy.png")
+                .build(ModernWarfareMod.MOD_CONTEXT);
+ AK101WhiteGrip = new AttachmentBuilder<Weapon>().withCategory(AttachmentCategory.BACKGRIP)
+                .withCreativeTab(ModernWarfareMod.AttachmentsTab)
+                .withModel(new com.paneedah.mwc.models.AK101Grip(), "AK101WhiteGrip.png")
+                .withModernRecipe(
+                    	CraftingGroup.ATTACHMENT_MODIFICATION,
+                    	new CraftingEntry(MWCItems.gunmetalIngot, 2))
+                .withInventoryModelPositioning((model, s) -> {
+                    if (model instanceof com.paneedah.mwc.models.AK101Grip) {
+                        GL11.glTranslatef(-0.6F, -0.6F, 0.4F);
+                        GL11.glRotatef(10F, 1f, 0f, 0f);
+                        GL11.glRotatef(-190F, 0f, 1f, 0f);
+                        GL11.glRotatef(0F, 0f, 0f, 1f);
+                        GL11.glScaled(0.9F, 0.9F, 0.9f);
+                    } else {
+                        GL11.glScalef(0f, 0f, 0f);
+                    }
+                }).withFirstPersonModelPositioning((model, itemStack) -> {
+                    if (model instanceof com.paneedah.mwc.models.AK101Grip) {
+                        GL11.glTranslatef(0.1F, -0.8F, 0.4F);
+                        GL11.glRotatef(30F, 0f, 1f, 0f);
+                        GL11.glScaled(0.7F, 0.7F, 0.7F);
+                    } else {
+                        GL11.glScaled(0F, 0F, 0F);
+                    }
+
+                }).withThirdPersonModelPositioning((model, itemStack) -> {
+                    if (model instanceof com.paneedah.mwc.models.AK101Grip) {
+                        GL11.glTranslatef(-0.8F, -0.5F, 0.8F);
+                        GL11.glRotatef(-50F, 0f, 1f, 0f);
+                        GL11.glRotatef(80F, 1f, 0f, 0f);
+                        GL11.glScaled(0.5F, 0.5F, 0.5F);
+                    } else {
+                        GL11.glScaled(0F, 0F, 0F);
+                    }
+                })
+                .withName("AK101WhiteGrip").withTextureName("Dummy.png")
+                .build(ModernWarfareMod.MOD_CONTEXT);
         AKErgoGrip = new AttachmentBuilder<Weapon>().withCategory(AttachmentCategory.BACKGRIP)
                 .withCreativeTab(ModernWarfareMod.AttachmentsTab)
                 .withModel(new com.paneedah.mwc.models.AKErgoGrip(), "akergogrip.png")
@@ -9811,6 +11484,44 @@ public class Attachments {
                     }
                 })
                 .withName("AKErgoGripGreen").withTextureName("Dummy.png")
+                .build(ModernWarfareMod.MOD_CONTEXT);
+        
+        AK12GripTan = new AttachmentBuilder<Weapon>().withCategory(AttachmentCategory.BACKGRIP)
+                .withCreativeTab(ModernWarfareMod.AttachmentsTab)
+                .withModel(new com.paneedah.mwc.models.AKErgoGrip(), "ak12tangrip.png")
+                .withModernRecipe(
+                    	CraftingGroup.ATTACHMENT_MODIFICATION,
+                    	new CraftingEntry(MWCItems.gunmetalIngot, 2))
+                .withInventoryModelPositioning((model, s) -> {
+                    if (model instanceof com.paneedah.mwc.models.AKErgoGrip) {
+                        GL11.glTranslatef(-0.6F, -0.6F, 0.4F);
+                        GL11.glRotatef(10F, 1f, 0f, 0f);
+                        GL11.glRotatef(-190F, 0f, 1f, 0f);
+                        GL11.glRotatef(0F, 0f, 0f, 1f);
+                        GL11.glScaled(0.9F, 0.9F, 0.9f);
+                    } else {
+                        GL11.glScalef(0f, 0f, 0f);
+                    }
+                }).withFirstPersonModelPositioning((model, itemStack) -> {
+                    if (model instanceof com.paneedah.mwc.models.AKErgoGrip) {
+                        GL11.glTranslatef(0.1F, -0.8F, 0.4F);
+                        GL11.glRotatef(30F, 0f, 1f, 0f);
+                        GL11.glScaled(0.7F, 0.7F, 0.7F);
+                    } else {
+                        GL11.glScaled(0F, 0F, 0F);
+                    }
+
+                }).withThirdPersonModelPositioning((model, itemStack) -> {
+                    if (model instanceof com.paneedah.mwc.models.AKErgoGrip) {
+                        GL11.glTranslatef(-0.8F, -0.5F, 0.8F);
+                        GL11.glRotatef(-50F, 0f, 1f, 0f);
+                        GL11.glRotatef(80F, 1f, 0f, 0f);
+                        GL11.glScaled(0.5F, 0.5F, 0.5F);
+                    } else {
+                        GL11.glScaled(0F, 0F, 0F);
+                    }
+                })
+                .withName("AK12GripTan").withTextureName("Dummy.png")
                 .build(ModernWarfareMod.MOD_CONTEXT);
         
         AKErgoGripTan = new AttachmentBuilder<Weapon>().withCategory(AttachmentCategory.BACKGRIP)
@@ -10005,7 +11716,7 @@ public class Attachments {
                 .withModel(new com.paneedah.mwc.models.G3Stock(), "g3.png")
                 .withModernRecipe(
                     	CraftingGroup.ATTACHMENT_MODIFICATION,
-                    	new CraftingEntry(MWCItems.gunmetalIngot, 4),
+                    	new CraftingEntry(MWCItems.gunmetalIngot, 4), 
                     	new CraftingEntry(MWCItems.steelIngot, 2))
                 .withInventoryModelPositioning((model, s) -> {
                     if (model instanceof com.paneedah.mwc.models.G3Stock) {
@@ -10045,7 +11756,7 @@ public class Attachments {
                 .withModel(new com.paneedah.mwc.models.MP7Stock(), "mp7.png")
                 .withModernRecipe(
                     	CraftingGroup.ATTACHMENT_MODIFICATION,
-                    	new CraftingEntry(MWCItems.gunmetalIngot, 3),
+                    	new CraftingEntry(MWCItems.gunmetalIngot, 3), 
                     	new CraftingEntry(MWCItems.steelIngot, 1))
                 .withInventoryModelPositioning((model, s) -> {
                     if (model instanceof com.paneedah.mwc.models.MP7Stock) {
@@ -10086,7 +11797,7 @@ public class Attachments {
                 .withModel(new com.paneedah.mwc.models.MilSpecStock(), "MilSpecStock.png")
                 .withModernRecipe(
                     	CraftingGroup.ATTACHMENT_MODIFICATION,
-                    	new CraftingEntry(MWCItems.gunmetalIngot, 3),
+                    	new CraftingEntry(MWCItems.gunmetalIngot, 3), 
                     	new CraftingEntry(MWCItems.steelIngot, 1))
                 .withInventoryModelPositioning((model, s) -> {
                     if (model instanceof com.paneedah.mwc.models.MP7MilSpecStock) {
@@ -10130,11 +11841,11 @@ public class Attachments {
                 .withModel(new com.paneedah.mwc.models.AK47stock(), "ak47.png")
                 .withModernRecipe(
                 	CraftingGroup.ATTACHMENT_MODIFICATION,
-                	new CraftingEntry(MWCItems.gunmetalIngot, 3),
+                	new CraftingEntry(MWCItems.gunmetalIngot, 3), 
                 	new CraftingEntry(Blocks.PLANKS, 2))
-//                .withModernRecipe(new ItemStack(MwItems.steelIngot, 8), new
-//                		ItemStack(MwItems.carbonComposite, 8), new
-//                		ItemStack(MwItems.gunmetalPlate, 12), new
+//                .withModernRecipe(new ItemStack(MWCItems.steelIngot, 8), new
+//                		ItemStack(Ores.CarbonComposite, 8), new
+//                		ItemStack(Ores.GunmetalPlate, 12), new
 //                		ItemStack(Blocks.PLANKS, 4))
                 .withInventoryModelPositioning((model, s) -> {
                     if (model instanceof com.paneedah.mwc.models.AK47stock) {
@@ -10174,11 +11885,11 @@ public class Attachments {
                 .withModel(new com.paneedah.mwc.models.DragunovStock(), "dragunov.png")
                 .withModernRecipe(
                     	CraftingGroup.ATTACHMENT_MODIFICATION,
-                    	new CraftingEntry(MWCItems.gunmetalIngot, 5),
+                    	new CraftingEntry(MWCItems.gunmetalIngot, 5), 
                     	new CraftingEntry(Blocks.PLANKS, 4))
-//                .withModernRecipe(new ItemStack(MwItems.steelIngot, 8), new
-//                		ItemStack(MwItems.carbonComposite, 8), new
-//                		ItemStack(MwItems.gunmetalPlate, 12), new
+//                .withModernRecipe(new ItemStack(MWCItems.steelIngot, 8), new
+//                		ItemStack(Ores.CarbonComposite, 8), new
+//                		ItemStack(Ores.GunmetalPlate, 12), new
 //                		ItemStack(Blocks.PLANKS, 4))
                 .withInventoryModelPositioning((model, s) -> {
                     if (model instanceof com.paneedah.mwc.models.DragunovStock) {
@@ -10212,6 +11923,50 @@ public class Attachments {
                 .withName("DragunovGripStock").withTextureName("Dummy.png")
                 .build(ModernWarfareMod.MOD_CONTEXT);
 
+ DragunovDarkGripStock = new AttachmentBuilder<Weapon>()
+        		.withCategory(AttachmentCategory.STOCK)
+                .withCreativeTab(ModernWarfareMod.AttachmentsTab)
+                .withModel(new com.paneedah.mwc.models.DragunovStock(), "dragunovdark.png")
+                .withModernRecipe(
+                    	CraftingGroup.ATTACHMENT_MODIFICATION,
+                    	new CraftingEntry(MWCItems.gunmetalIngot, 5), 
+                    	new CraftingEntry(Blocks.PLANKS, 4))
+//                .withModernRecipe(new ItemStack(MWCItems.steelIngot, 8), new
+//                		ItemStack(Ores.CarbonComposite, 8), new
+//                		ItemStack(Ores.GunmetalPlate, 12), new
+//                		ItemStack(Blocks.PLANKS, 4))
+                .withInventoryModelPositioning((model, s) -> {
+                    if (model instanceof com.paneedah.mwc.models.DragunovStock) {
+                        GL11.glTranslatef(-0.6F, 0F, 1.6F);
+                        GL11.glRotatef(10F, 1f, 0f, 0f);
+                        GL11.glRotatef(-190F, 0f, 1f, 0f);
+                        GL11.glRotatef(0F, 0f, 0f, 1f);
+                        GL11.glScaled(0.9F, 0.9F, 0.9f);
+                    } else {
+                        GL11.glScalef(0f, 0f, 0f);
+                    }
+                }).withFirstPersonModelPositioning((model, itemStack) -> {
+                    if (model instanceof com.paneedah.mwc.models.DragunovStock) {
+                        GL11.glTranslatef(0.1F, -0.8F, 0.4F);
+                        GL11.glRotatef(30F, 0f, 1f, 0f);
+                        GL11.glScaled(0.7F, 0.7F, 0.7F);
+                    } else {
+                        GL11.glScaled(0F, 0F, 0F);
+                    }
+
+                }).withThirdPersonModelPositioning((model, itemStack) -> {
+                    if (model instanceof com.paneedah.mwc.models.DragunovStock) {
+                        GL11.glTranslatef(-0.8F, -0.5F, 0.8F);
+                        GL11.glRotatef(-50F, 0f, 1f, 0f);
+                        GL11.glRotatef(80F, 1f, 0f, 0f);
+                        GL11.glScaled(0.5F, 0.5F, 0.5F);
+                    } else {
+                        GL11.glScaled(0F, 0F, 0F);
+                    }
+                })
+                .withName("DragunovDarkGripStock").withTextureName("Dummy.png")
+                .build(ModernWarfareMod.MOD_CONTEXT);
+
         Dragunov98Stock = new AttachmentBuilder<Weapon>()
         		.withCategory(AttachmentCategory.STOCK)
                 .withCreativeTab(ModernWarfareMod.AttachmentsTab)
@@ -10219,9 +11974,9 @@ public class Attachments {
                 .withModernRecipe(
                     	CraftingGroup.ATTACHMENT_MODIFICATION,
                     	new CraftingEntry(MWCItems.gunmetalIngot, 6))
-//                .withModernRecipe(new ItemStack(MwItems.steelIngot, 8), new
-//                		ItemStack(MwItems.carbonComposite, 8), new
-//                		ItemStack(MwItems.gunmetalPlate, 12), new
+//                .withModernRecipe(new ItemStack(MWCItems.steelIngot, 8), new
+//                		ItemStack(Ores.CarbonComposite, 8), new
+//                		ItemStack(Ores.GunmetalPlate, 12), new
 //                		ItemStack(Blocks.PLANKS, 4))
                 .withInventoryModelPositioning((model, s) -> {
                     if (model instanceof com.paneedah.mwc.models.Dragunov98Stock) {
@@ -10326,6 +12081,237 @@ public class Attachments {
                     }
                 })
                 .withName("AK101Stock").withTextureName("Dummy.png")
+
+                .build(ModernWarfareMod.MOD_CONTEXT);
+        AK101GreenStock = new AttachmentBuilder<Weapon>().withCategory(AttachmentCategory.STOCK)
+                .withCreativeTab(ModernWarfareMod.AttachmentsTab)
+                .withModel(new com.paneedah.mwc.models.AK101Stock(), "ak101greenstock.png")
+                .withModernRecipe(
+                    	CraftingGroup.ATTACHMENT_MODIFICATION,
+                    	new CraftingEntry(MWCItems.gunmetalIngot, 4))
+                .withInventoryModelPositioning((model, s) -> {
+                    if (model instanceof com.paneedah.mwc.models.AK101Stock) {
+                        GL11.glTranslatef(-0.6F, 0F, 1.6F);
+                        GL11.glRotatef(10F, 1f, 0f, 0f);
+                        GL11.glRotatef(-190F, 0f, 1f, 0f);
+                        GL11.glRotatef(0F, 0f, 0f, 1f);
+                        GL11.glScaled(0.9F, 0.9F, 0.9f);
+                    } else {
+                        GL11.glScalef(0f, 0f, 0f);
+                    }
+                }).withFirstPersonModelPositioning((model, itemStack) -> {
+                    if (model instanceof com.paneedah.mwc.models.AK101Stock) {
+                        GL11.glTranslatef(0.1F, -0.8F, 0.4F);
+                        GL11.glRotatef(30F, 0f, 1f, 0f);
+                        GL11.glScaled(0.7F, 0.7F, 0.7F);
+                    } else {
+                        GL11.glScaled(0F, 0F, 0F);
+                    }
+
+                }).withThirdPersonModelPositioning((model, itemStack) -> {
+                    if (model instanceof com.paneedah.mwc.models.AK101Stock) {
+                        GL11.glTranslatef(-0.8F, -0.5F, 0.8F);
+                        GL11.glRotatef(-50F, 0f, 1f, 0f);
+                        GL11.glRotatef(80F, 1f, 0f, 0f);
+                        GL11.glScaled(0.5F, 0.5F, 0.5F);
+                    } else {
+                        GL11.glScaled(0F, 0F, 0F);
+                    }
+                })
+                .withName("AK101GreenStock").withTextureName("Dummy.png")
+
+                .build(ModernWarfareMod.MOD_CONTEXT);
+        AK101PearlStock = new AttachmentBuilder<Weapon>().withCategory(AttachmentCategory.STOCK)
+                .withCreativeTab(ModernWarfareMod.AttachmentsTab)
+                .withModel(new com.paneedah.mwc.models.AK101Stock(), "ak101pearlstock.png")
+                .withModernRecipe(
+                    	CraftingGroup.ATTACHMENT_MODIFICATION,
+                    	new CraftingEntry(MWCItems.gunmetalIngot, 4))
+                .withInventoryModelPositioning((model, s) -> {
+                    if (model instanceof com.paneedah.mwc.models.AK101Stock) {
+                        GL11.glTranslatef(-0.6F, 0F, 1.6F);
+                        GL11.glRotatef(10F, 1f, 0f, 0f);
+                        GL11.glRotatef(-190F, 0f, 1f, 0f);
+                        GL11.glRotatef(0F, 0f, 0f, 1f);
+                        GL11.glScaled(0.9F, 0.9F, 0.9f);
+                    } else {
+                        GL11.glScalef(0f, 0f, 0f);
+                    }
+                }).withFirstPersonModelPositioning((model, itemStack) -> {
+                    if (model instanceof com.paneedah.mwc.models.AK101Stock) {
+                        GL11.glTranslatef(0.1F, -0.8F, 0.4F);
+                        GL11.glRotatef(30F, 0f, 1f, 0f);
+                        GL11.glScaled(0.7F, 0.7F, 0.7F);
+                    } else {
+                        GL11.glScaled(0F, 0F, 0F);
+                    }
+
+                }).withThirdPersonModelPositioning((model, itemStack) -> {
+                    if (model instanceof com.paneedah.mwc.models.AK101Stock) {
+                        GL11.glTranslatef(-0.8F, -0.5F, 0.8F);
+                        GL11.glRotatef(-50F, 0f, 1f, 0f);
+                        GL11.glRotatef(80F, 1f, 0f, 0f);
+                        GL11.glScaled(0.5F, 0.5F, 0.5F);
+                    } else {
+                        GL11.glScaled(0F, 0F, 0F);
+                    }
+                })
+                .withName("AK101PearlStock").withTextureName("Dummy.png")
+
+                .build(ModernWarfareMod.MOD_CONTEXT);
+        AK101PlumStock = new AttachmentBuilder<Weapon>().withCategory(AttachmentCategory.STOCK)
+                .withCreativeTab(ModernWarfareMod.AttachmentsTab)
+                .withModel(new com.paneedah.mwc.models.AK101Stock(), "ak101plumstock.png")
+                .withModernRecipe(
+                    	CraftingGroup.ATTACHMENT_MODIFICATION,
+                    	new CraftingEntry(MWCItems.gunmetalIngot, 4))
+                .withInventoryModelPositioning((model, s) -> {
+                    if (model instanceof com.paneedah.mwc.models.AK101Stock) {
+                        GL11.glTranslatef(-0.6F, 0F, 1.6F);
+                        GL11.glRotatef(10F, 1f, 0f, 0f);
+                        GL11.glRotatef(-190F, 0f, 1f, 0f);
+                        GL11.glRotatef(0F, 0f, 0f, 1f);
+                        GL11.glScaled(0.9F, 0.9F, 0.9f);
+                    } else {
+                        GL11.glScalef(0f, 0f, 0f);
+                    }
+                }).withFirstPersonModelPositioning((model, itemStack) -> {
+                    if (model instanceof com.paneedah.mwc.models.AK101Stock) {
+                        GL11.glTranslatef(0.1F, -0.8F, 0.4F);
+                        GL11.glRotatef(30F, 0f, 1f, 0f);
+                        GL11.glScaled(0.7F, 0.7F, 0.7F);
+                    } else {
+                        GL11.glScaled(0F, 0F, 0F);
+                    }
+
+                }).withThirdPersonModelPositioning((model, itemStack) -> {
+                    if (model instanceof com.paneedah.mwc.models.AK101Stock) {
+                        GL11.glTranslatef(-0.8F, -0.5F, 0.8F);
+                        GL11.glRotatef(-50F, 0f, 1f, 0f);
+                        GL11.glRotatef(80F, 1f, 0f, 0f);
+                        GL11.glScaled(0.5F, 0.5F, 0.5F);
+                    } else {
+                        GL11.glScaled(0F, 0F, 0F);
+                    }
+                })
+                .withName("AK101PlumStock").withTextureName("Dummy.png")
+
+                .build(ModernWarfareMod.MOD_CONTEXT);
+        AK101WhiteStock = new AttachmentBuilder<Weapon>().withCategory(AttachmentCategory.STOCK)
+                .withCreativeTab(ModernWarfareMod.AttachmentsTab)
+                .withModel(new com.paneedah.mwc.models.AK101Stock(), "ak101whitestock.png")
+                .withModernRecipe(
+                    	CraftingGroup.ATTACHMENT_MODIFICATION,
+                    	new CraftingEntry(MWCItems.gunmetalIngot, 4))
+                .withInventoryModelPositioning((model, s) -> {
+                    if (model instanceof com.paneedah.mwc.models.AK101Stock) {
+                        GL11.glTranslatef(-0.6F, 0F, 1.6F);
+                        GL11.glRotatef(10F, 1f, 0f, 0f);
+                        GL11.glRotatef(-190F, 0f, 1f, 0f);
+                        GL11.glRotatef(0F, 0f, 0f, 1f);
+                        GL11.glScaled(0.9F, 0.9F, 0.9f);
+                    } else {
+                        GL11.glScalef(0f, 0f, 0f);
+                    }
+                }).withFirstPersonModelPositioning((model, itemStack) -> {
+                    if (model instanceof com.paneedah.mwc.models.AK101Stock) {
+                        GL11.glTranslatef(0.1F, -0.8F, 0.4F);
+                        GL11.glRotatef(30F, 0f, 1f, 0f);
+                        GL11.glScaled(0.7F, 0.7F, 0.7F);
+                    } else {
+                        GL11.glScaled(0F, 0F, 0F);
+                    }
+
+                }).withThirdPersonModelPositioning((model, itemStack) -> {
+                    if (model instanceof com.paneedah.mwc.models.AK101Stock) {
+                        GL11.glTranslatef(-0.8F, -0.5F, 0.8F);
+                        GL11.glRotatef(-50F, 0f, 1f, 0f);
+                        GL11.glRotatef(80F, 1f, 0f, 0f);
+                        GL11.glScaled(0.5F, 0.5F, 0.5F);
+                    } else {
+                        GL11.glScaled(0F, 0F, 0F);
+                    }
+                })
+                .withName("AK101WhiteStock").withTextureName("Dummy.png")
+
+                .build(ModernWarfareMod.MOD_CONTEXT);
+
+        AKSUStock = new AttachmentBuilder<Weapon>().withCategory(AttachmentCategory.STOCK)
+                .withCreativeTab(ModernWarfareMod.AttachmentsTab)
+                .withModel(new com.paneedah.mwc.models.AKSUStock(), "ak74.png")
+                .withModernRecipe(
+                    	CraftingGroup.ATTACHMENT_MODIFICATION,
+                    	new CraftingEntry(MWCItems.gunmetalIngot, 4))
+                .withInventoryModelPositioning((model, s) -> {
+                    if (model instanceof com.paneedah.mwc.models.AKSUStock) {
+                        GL11.glTranslatef(-0.6F, 0F, 1.6F);
+                        GL11.glRotatef(10F, 1f, 0f, 0f);
+                        GL11.glRotatef(-190F, 0f, 1f, 0f);
+                        GL11.glRotatef(0F, 0f, 0f, 1f);
+                        GL11.glScaled(0.9F, 0.9F, 0.9f);
+                    } else {
+                        GL11.glScalef(0f, 0f, 0f);
+                    }
+                }).withFirstPersonModelPositioning((model, itemStack) -> {
+                    if (model instanceof com.paneedah.mwc.models.AKSUStock) {
+                        GL11.glTranslatef(0.1F, -0.8F, 0.4F);
+                        GL11.glRotatef(30F, 0f, 1f, 0f);
+                        GL11.glScaled(0.7F, 0.7F, 0.7F);
+                    } else {
+                        GL11.glScaled(0F, 0F, 0F);
+                    }
+
+                }).withThirdPersonModelPositioning((model, itemStack) -> {
+                    if (model instanceof com.paneedah.mwc.models.AKSUStock) {
+                        GL11.glTranslatef(-0.8F, -0.5F, 0.8F);
+                        GL11.glRotatef(-50F, 0f, 1f, 0f);
+                        GL11.glRotatef(80F, 1f, 0f, 0f);
+                        GL11.glScaled(0.5F, 0.5F, 0.5F);
+                    } else {
+                        GL11.glScaled(0F, 0F, 0F);
+                    }
+                })
+                .withName("AKSUStock").withTextureName("Dummy.png")
+
+                .build(ModernWarfareMod.MOD_CONTEXT);
+
+ AKRStock = new AttachmentBuilder<Weapon>().withCategory(AttachmentCategory.STOCK)
+                .withCreativeTab(ModernWarfareMod.AttachmentsTab)
+                .withModel(new com.paneedah.mwc.models.AKRStock(), "ak74.png")
+                .withModernRecipe(
+                    	CraftingGroup.ATTACHMENT_MODIFICATION,
+                    	new CraftingEntry(MWCItems.gunmetalIngot, 4))
+                .withInventoryModelPositioning((model, s) -> {
+                    if (model instanceof com.paneedah.mwc.models.AKRStock) {
+                        GL11.glTranslatef(-0.6F, 0F, 1.6F);
+                        GL11.glRotatef(10F, 1f, 0f, 0f);
+                        GL11.glRotatef(-190F, 0f, 1f, 0f);
+                        GL11.glRotatef(0F, 0f, 0f, 1f);
+                        GL11.glScaled(0.9F, 0.9F, 0.9f);
+                    } else {
+                        GL11.glScalef(0f, 0f, 0f);
+                    }
+                }).withFirstPersonModelPositioning((model, itemStack) -> {
+                    if (model instanceof com.paneedah.mwc.models.AKRStock) {
+                        GL11.glTranslatef(0.1F, -0.8F, 0.4F);
+                        GL11.glRotatef(30F, 0f, 1f, 0f);
+                        GL11.glScaled(0.7F, 0.7F, 0.7F);
+                    } else {
+                        GL11.glScaled(0F, 0F, 0F);
+                    }
+
+                }).withThirdPersonModelPositioning((model, itemStack) -> {
+                    if (model instanceof com.paneedah.mwc.models.AKRStock) {
+                        GL11.glTranslatef(-0.8F, -0.5F, 0.8F);
+                        GL11.glRotatef(-50F, 0f, 1f, 0f);
+                        GL11.glRotatef(80F, 1f, 0f, 0f);
+                        GL11.glScaled(0.5F, 0.5F, 0.5F);
+                    } else {
+                        GL11.glScaled(0F, 0F, 0F);
+                    }
+                })
+                .withName("AKRStock").withTextureName("Dummy.png")
+
                 .build(ModernWarfareMod.MOD_CONTEXT);
         
         AK74Stock = new AttachmentBuilder<Weapon>().withCategory(AttachmentCategory.STOCK)
@@ -10364,6 +12350,44 @@ public class Attachments {
                     }
                 })
                 .withName("AK74Stock").withTextureName("Dummy.png")
+                .build(ModernWarfareMod.MOD_CONTEXT);
+        
+      AK74GreenStock = new AttachmentBuilder<Weapon>().withCategory(AttachmentCategory.STOCK)
+                .withCreativeTab(ModernWarfareMod.AttachmentsTab)
+                .withModel(new com.paneedah.mwc.models.AK74Stock(), "AK74greenStock.png")
+                .withModernRecipe(
+                    	CraftingGroup.ATTACHMENT_MODIFICATION,
+                    	new CraftingEntry(MWCItems.gunmetalIngot, 4))
+                .withInventoryModelPositioning((model, s) -> {
+                    if (model instanceof com.paneedah.mwc.models.AK74Stock) {
+                        GL11.glTranslatef(-0.6F, 0F, 1.6F);
+                        GL11.glRotatef(10F, 1f, 0f, 0f);
+                        GL11.glRotatef(-190F, 0f, 1f, 0f);
+                        GL11.glRotatef(0F, 0f, 0f, 1f);
+                        GL11.glScaled(0.9F, 0.9F, 0.9f);
+                    } else {
+                        GL11.glScalef(0f, 0f, 0f);
+                    }
+                }).withFirstPersonModelPositioning((model, itemStack) -> {
+                    if (model instanceof com.paneedah.mwc.models.AK74Stock) {
+                        GL11.glTranslatef(0.1F, -0.8F, 0.4F);
+                        GL11.glRotatef(30F, 0f, 1f, 0f);
+                        GL11.glScaled(0.7F, 0.7F, 0.7F);
+                    } else {
+                        GL11.glScaled(0F, 0F, 0F);
+                    }
+
+                }).withThirdPersonModelPositioning((model, itemStack) -> {
+                    if (model instanceof com.paneedah.mwc.models.AK74Stock) {
+                        GL11.glTranslatef(-0.8F, -0.5F, 0.8F);
+                        GL11.glRotatef(-50F, 0f, 1f, 0f);
+                        GL11.glRotatef(80F, 1f, 0f, 0f);
+                        GL11.glScaled(0.5F, 0.5F, 0.5F);
+                    } else {
+                        GL11.glScaled(0F, 0F, 0F);
+                    }
+                })
+                .withName("AK74GreenStock").withTextureName("Dummy.png")
                 .build(ModernWarfareMod.MOD_CONTEXT);
         
         AK12Stock = new AttachmentBuilder<Weapon>().withCategory(AttachmentCategory.STOCK)
@@ -10447,7 +12471,7 @@ public class Attachments {
                 .withModel(new com.paneedah.mwc.models.VSSVintorezStock(), "vssvintorez.png")
                 .withModernRecipe(
                     	CraftingGroup.ATTACHMENT_MODIFICATION,
-                    	new CraftingEntry(MWCItems.gunmetalIngot, 3),
+                    	new CraftingEntry(MWCItems.gunmetalIngot, 3), 
                     	new CraftingEntry(Blocks.PLANKS, 2))
                 .withInventoryModelPositioning((model, s) -> {
                     if (model instanceof com.paneedah.mwc.models.VSSVintorezStock) {
@@ -10481,12 +12505,51 @@ public class Attachments {
                 .withName("VSSVintorezStock").withTextureName("Dummy.png")
                 .build(ModernWarfareMod.MOD_CONTEXT);
         
+        VSSMStock = new AttachmentBuilder<Weapon>().withCategory(AttachmentCategory.STOCK)
+                .withCreativeTab(ModernWarfareMod.AttachmentsTab)
+                .withModel(new com.paneedah.mwc.models.VSSMStock(), "vssm.png")
+                .withModernRecipe(
+                    	CraftingGroup.ATTACHMENT_MODIFICATION,
+                    	new CraftingEntry(MWCItems.gunmetalIngot, 3), 
+                    	new CraftingEntry(Blocks.PLANKS, 2))
+                .withInventoryModelPositioning((model, s) -> {
+                    if (model instanceof com.paneedah.mwc.models.VSSMStock) {
+                        GL11.glTranslatef(-0.6F, -0.6F, 1.2F);
+                        GL11.glRotatef(10F, 1f, 0f, 0f);
+                        GL11.glRotatef(-190F, 0f, 1f, 0f);
+                        GL11.glRotatef(0F, 0f, 0f, 1f);
+                        GL11.glScaled(0.7F, 0.7F, 0.7f);
+                    } else {
+                        GL11.glScalef(0f, 0f, 0f);
+                    }
+                }).withFirstPersonModelPositioning((model, itemStack) -> {
+                    if (model instanceof com.paneedah.mwc.models.VSSMStock) {
+                        GL11.glTranslatef(0.1F, -0.8F, 0.4F);
+                        GL11.glRotatef(30F, 0f, 1f, 0f);
+                        GL11.glScaled(0.7F, 0.7F, 0.7F);
+                    } else {
+                        GL11.glScaled(0F, 0F, 0F);
+                    }
+
+                }).withThirdPersonModelPositioning((model, itemStack) -> {
+                    if (model instanceof com.paneedah.mwc.models.VSSMStock) {
+                        GL11.glTranslatef(-0.8F, -0.5F, 0.8F);
+                        GL11.glRotatef(-50F, 0f, 1f, 0f);
+                        GL11.glRotatef(80F, 1f, 0f, 0f);
+                        GL11.glScaled(0.5F, 0.5F, 0.5F);
+                    } else {
+                        GL11.glScaled(0F, 0F, 0F);
+                    }
+                })
+                .withName("VSSMStock").withTextureName("Dummy.png")
+                .build(ModernWarfareMod.MOD_CONTEXT);
+
         ASValStock = new AttachmentBuilder<Weapon>().withCategory(AttachmentCategory.STOCK)
                 .withCreativeTab(ModernWarfareMod.AttachmentsTab)
                 .withModel(new com.paneedah.mwc.models.ASValStock(), "vssvintorez.png")
                 .withModernRecipe(
                     	CraftingGroup.ATTACHMENT_MODIFICATION,
-                    	new CraftingEntry(MWCItems.gunmetalIngot, 3),
+                    	new CraftingEntry(MWCItems.gunmetalIngot, 3), 
                     	new CraftingEntry(MWCItems.steelIngot, 2))
                 .withInventoryModelPositioning((model, s) -> {
                     if (model instanceof com.paneedah.mwc.models.ASValStock) {
@@ -10519,6 +12582,45 @@ public class Attachments {
                 })
                 .withName("ASValStock").withTextureName("Dummy.png")
                 .build(ModernWarfareMod.MOD_CONTEXT);
+
+        SR3VikhrStock = new AttachmentBuilder<Weapon>().withCategory(AttachmentCategory.STOCK)
+                .withCreativeTab(ModernWarfareMod.AttachmentsTab)
+                .withModel(new com.paneedah.mwc.models.SR3VikhrStock(), "vssvintorez.png")
+                .withModernRecipe(
+                    	CraftingGroup.ATTACHMENT_MODIFICATION,
+                    	new CraftingEntry(MWCItems.gunmetalIngot, 3), 
+                    	new CraftingEntry(MWCItems.steelIngot, 2))
+                .withInventoryModelPositioning((model, s) -> {
+                    if (model instanceof com.paneedah.mwc.models.SR3VikhrStock) {
+                    	GL11.glTranslatef(-0.6F, -0.6F, 1.2F);
+                        GL11.glRotatef(10F, 1f, 0f, 0f);
+                        GL11.glRotatef(-190F, 0f, 1f, 0f);
+                        GL11.glRotatef(0F, 0f, 0f, 1f);
+                        GL11.glScaled(0.7F, 0.7F, 0.7f);
+                    } else {
+                        GL11.glScalef(0f, 0f, 0f);
+                    }
+                }).withFirstPersonModelPositioning((model, itemStack) -> {
+                    if (model instanceof com.paneedah.mwc.models.SR3VikhrStock) {
+                        GL11.glTranslatef(0.1F, -0.8F, 0.4F);
+                        GL11.glRotatef(30F, 0f, 1f, 0f);
+                        GL11.glScaled(0.7F, 0.7F, 0.7F);
+                    } else {
+                        GL11.glScaled(0F, 0F, 0F);
+                    }
+
+                }).withThirdPersonModelPositioning((model, itemStack) -> {
+                    if (model instanceof com.paneedah.mwc.models.SR3VikhrStock) {
+                        GL11.glTranslatef(-0.8F, -0.5F, 0.8F);
+                        GL11.glRotatef(-50F, 0f, 1f, 0f);
+                        GL11.glRotatef(80F, 1f, 0f, 0f);
+                        GL11.glScaled(0.5F, 0.5F, 0.5F);
+                    } else {
+                        GL11.glScaled(0F, 0F, 0F);
+                    }
+                })
+                .withName("SR3VikhrStock").withTextureName("Dummy.png")
+                .build(ModernWarfareMod.MOD_CONTEXT);
         
         VSSVintorezMilspecStock = new AttachmentBuilder<Weapon>().withCategory(AttachmentCategory.STOCK)
                 .withCreativeTab(ModernWarfareMod.AttachmentsTab)
@@ -10526,7 +12628,7 @@ public class Attachments {
                 .withModel(new com.paneedah.mwc.models.MilSpecStock(), "MilSpecStock.png")
                 .withModernRecipe(
                     	CraftingGroup.ATTACHMENT_MODIFICATION,
-                    	new CraftingEntry(MWCItems.gunmetalIngot, 5),
+                    	new CraftingEntry(MWCItems.gunmetalIngot, 5), 
                     	new CraftingEntry(MWCItems.steelIngot, 3))
                 .withInventoryModelPositioning((model, s) -> {
                     if (model instanceof com.paneedah.mwc.models.VSSVintorezKulaTacStock) {
@@ -10642,6 +12744,46 @@ public class Attachments {
                     }
                 })
                 .withName("CollapsableMOEStockGreen").withTextureName("Dummy.png")
+                .build(ModernWarfareMod.MOD_CONTEXT);
+
+        CollapsableMOEStockTan = new AttachmentBuilder<Weapon>()
+                .withRenderablePart()
+                .withCategory(AttachmentCategory.STOCK)
+                .withCreativeTab(ModernWarfareMod.AttachmentsTab)
+                .withModel(new com.paneedah.mwc.models.CollapsableMOEStock(), "ak12tanstock.png")
+                .withModernRecipe(
+                    	CraftingGroup.ATTACHMENT_MODIFICATION,
+                    	new CraftingEntry(MWCItems.gunmetalIngot, 3))
+                .withInventoryModelPositioning((model, s) -> {
+                    if (model instanceof com.paneedah.mwc.models.CollapsableMOEStock) {
+                        GL11.glTranslatef(-0.6F, 0F, 1.4F);
+                        GL11.glRotatef(10F, 1f, 0f, 0f);
+                        GL11.glRotatef(-190F, 0f, 1f, 0f);
+                        GL11.glRotatef(0F, 0f, 0f, 1f);
+                        GL11.glScaled(0.9F, 0.9F, 0.9f);
+                    } else {
+                        GL11.glScalef(0f, 0f, 0f);
+                    }
+                }).withFirstPersonModelPositioning((model, itemStack) -> {
+                    if (model instanceof com.paneedah.mwc.models.CollapsableMOEStock) {
+                        GL11.glTranslatef(0.1F, -0.8F, 0.4F);
+                        GL11.glRotatef(30F, 0f, 1f, 0f);
+                        GL11.glScaled(0.7F, 0.7F, 0.7F);
+                    } else {
+                        GL11.glScaled(0F, 0F, 0F);
+                    }
+
+                }).withThirdPersonModelPositioning((model, itemStack) -> {
+                    if (model instanceof com.paneedah.mwc.models.CollapsableMOEStock) {
+                        GL11.glTranslatef(-0.8F, -0.5F, 0.8F);
+                        GL11.glRotatef(-50F, 0f, 1f, 0f);
+                        GL11.glRotatef(80F, 1f, 0f, 0f);
+                        GL11.glScaled(0.5F, 0.5F, 0.5F);
+                    } else {
+                        GL11.glScaled(0F, 0F, 0F);
+                    }
+                })
+                .withName("CollapsableMOEStockTan").withTextureName("Dummy.png")
                 .build(ModernWarfareMod.MOD_CONTEXT);
         
         MagpulCTRStock = new AttachmentBuilder<Weapon>().withCategory(AttachmentCategory.STOCK)
@@ -11027,6 +13169,7 @@ public class Attachments {
                 })
                 .withName("SOCOM_Stock").withTextureName("Dummy.png")
                 .build(ModernWarfareMod.MOD_CONTEXT);
+
         
         M16Stock = new AttachmentBuilder<Weapon>().withCategory(AttachmentCategory.STOCK)
                 .withCreativeTab(ModernWarfareMod.AttachmentsTab)
@@ -11110,7 +13253,7 @@ public class Attachments {
                 .withModel(new com.paneedah.mwc.models.M110Stock(), "m110.png")
                 .withModernRecipe(
                     	CraftingGroup.ATTACHMENT_MODIFICATION,
-                    	new CraftingEntry(MWCItems.gunmetalIngot, 4),
+                    	new CraftingEntry(MWCItems.gunmetalIngot, 4), 
                     	new CraftingEntry(MWCItems.steelIngot, 3))
                 .withInventoryModelPositioning((model, s) -> {
                     if (model instanceof com.paneedah.mwc.models.M110Stock) {
@@ -11149,7 +13292,7 @@ public class Attachments {
                 .withModel(new com.paneedah.mwc.models.ARPRSPrecisionStock(), "gun.png")
                 .withModernRecipe(
                     	CraftingGroup.ATTACHMENT_MODIFICATION,
-                    	new CraftingEntry(MWCItems.gunmetalIngot, 4),
+                    	new CraftingEntry(MWCItems.gunmetalIngot, 4), 
                     	new CraftingEntry(MWCItems.steelIngot, 3))
                 .withInventoryModelPositioning((model, s) -> {
                     if (model instanceof com.paneedah.mwc.models.ARPRSPrecisionStock) {
@@ -11188,7 +13331,7 @@ public class Attachments {
                 .withModel(new com.paneedah.mwc.models.AK47HandleGuard(), "ak47.png")
                 .withModernRecipe(
                     	CraftingGroup.ATTACHMENT_MODIFICATION,
-                    	new CraftingEntry(MWCItems.gunmetalIngot, 3),
+                    	new CraftingEntry(MWCItems.gunmetalIngot, 3), 
                     	new CraftingEntry(Blocks.PLANKS, 2))
                 .withInventoryModelPositioning((model, s) -> {
                     if (model instanceof com.paneedah.mwc.models.AK47HandleGuard) {
@@ -11220,6 +13363,126 @@ public class Attachments {
                     }
                 })
                 .withName("AK47HandleGuard").withTextureName("Dummy.png")
+
+ .build(ModernWarfareMod.MOD_CONTEXT);
+        
+        TantalHandGuard = new AttachmentBuilder<Weapon>().withCategory(AttachmentCategory.GUARD)
+                .withCreativeTab(ModernWarfareMod.AttachmentsTab)
+                .withModel(new com.paneedah.mwc.models.TantalHandGuard(), "ak74.png")
+                .withModernRecipe(
+                    	CraftingGroup.ATTACHMENT_MODIFICATION,
+                    	new CraftingEntry(MWCItems.gunmetalIngot, 3), 
+                    	new CraftingEntry(Blocks.PLANKS, 2))
+                .withInventoryModelPositioning((model, s) -> {
+                    if (model instanceof com.paneedah.mwc.models.TantalHandGuard) {
+                        GL11.glTranslatef(-0.6F, 0.4F, -2F);
+                        GL11.glRotatef(10F, 1f, 0f, 0f);
+                        GL11.glRotatef(-190F, 0f, 1f, 0f);
+                        GL11.glRotatef(0F, 0f, 0f, 1f);
+                        GL11.glScaled(0.9F, 0.9F, 0.9f);
+                    } else {
+                        GL11.glScalef(0f, 0f, 0f);
+                    }
+                }).withFirstPersonModelPositioning((model, itemStack) -> {
+                    if (model instanceof com.paneedah.mwc.models.TantalHandGuard) {
+                        GL11.glTranslatef(0.1F, -0.8F, 0.4F);
+                        GL11.glRotatef(30F, 0f, 1f, 0f);
+                        GL11.glScaled(0.7F, 0.7F, 0.7F);
+                    } else {
+                        GL11.glScaled(0F, 0F, 0F);
+                    }
+
+                }).withThirdPersonModelPositioning((model, itemStack) -> {
+                    if (model instanceof com.paneedah.mwc.models.TantalHandGuard) {
+                        GL11.glTranslatef(-0.8F, -0.5F, 0.8F);
+                        GL11.glRotatef(-50F, 0f, 1f, 0f);
+                        GL11.glRotatef(80F, 1f, 0f, 0f);
+                        GL11.glScaled(0.5F, 0.5F, 0.5F);
+                    } else {
+                        GL11.glScaled(0F, 0F, 0F);
+                    }
+                })
+                .withName("TantalHandGuard").withTextureName("Dummy.png")
+
+
+ .build(ModernWarfareMod.MOD_CONTEXT);
+        
+        AIMHandGuard = new AttachmentBuilder<Weapon>().withCategory(AttachmentCategory.GUARD)
+                .withCreativeTab(ModernWarfareMod.AttachmentsTab)
+                .withModel(new com.paneedah.mwc.models.AIMHandGuard(), "ak47.png")
+                .withModernRecipe(
+                    	CraftingGroup.ATTACHMENT_MODIFICATION,
+                    	new CraftingEntry(MWCItems.gunmetalIngot, 3), 
+                    	new CraftingEntry(Blocks.PLANKS, 2))
+                .withInventoryModelPositioning((model, s) -> {
+                    if (model instanceof com.paneedah.mwc.models.AIMHandGuard) {
+                        GL11.glTranslatef(-0.6F, 0.4F, -2F);
+                        GL11.glRotatef(10F, 1f, 0f, 0f);
+                        GL11.glRotatef(-190F, 0f, 1f, 0f);
+                        GL11.glRotatef(0F, 0f, 0f, 1f);
+                        GL11.glScaled(0.9F, 0.9F, 0.9f);
+                    } else {
+                        GL11.glScalef(0f, 0f, 0f);
+                    }
+                }).withFirstPersonModelPositioning((model, itemStack) -> {
+                    if (model instanceof com.paneedah.mwc.models.AIMHandGuard) {
+                        GL11.glTranslatef(0.1F, -0.8F, 0.4F);
+                        GL11.glRotatef(30F, 0f, 1f, 0f);
+                        GL11.glScaled(0.7F, 0.7F, 0.7F);
+                    } else {
+                        GL11.glScaled(0F, 0F, 0F);
+                    }
+
+                }).withThirdPersonModelPositioning((model, itemStack) -> {
+                    if (model instanceof com.paneedah.mwc.models.AIMHandGuard) {
+                        GL11.glTranslatef(-0.8F, -0.5F, 0.8F);
+                        GL11.glRotatef(-50F, 0f, 1f, 0f);
+                        GL11.glRotatef(80F, 1f, 0f, 0f);
+                        GL11.glScaled(0.5F, 0.5F, 0.5F);
+                    } else {
+                        GL11.glScaled(0F, 0F, 0F);
+                    }
+                })
+                .withName("AIMHandGuard").withTextureName("Dummy.png")
+                .build(ModernWarfareMod.MOD_CONTEXT);
+
+        AKSUHandguard = new AttachmentBuilder<Weapon>().withCategory(AttachmentCategory.GUARD)
+                .withCreativeTab(ModernWarfareMod.AttachmentsTab)
+                .withModel(new com.paneedah.mwc.models.AKSUHandguard(), "aksu.png")
+                .withModernRecipe(
+                    	CraftingGroup.ATTACHMENT_MODIFICATION,
+                    	new CraftingEntry(MWCItems.gunmetalIngot, 3), 
+                    	new CraftingEntry(Blocks.PLANKS, 2))
+                .withInventoryModelPositioning((model, s) -> {
+                    if (model instanceof com.paneedah.mwc.models.AKSUHandguard) {
+                        GL11.glTranslatef(-0.6F, 0.4F, -2F);
+                        GL11.glRotatef(10F, 1f, 0f, 0f);
+                        GL11.glRotatef(-190F, 0f, 1f, 0f);
+                        GL11.glRotatef(0F, 0f, 0f, 1f);
+                        GL11.glScaled(0.9F, 0.9F, 0.9f);
+                    } else {
+                        GL11.glScalef(0f, 0f, 0f);
+                    }
+                }).withFirstPersonModelPositioning((model, itemStack) -> {
+                    if (model instanceof com.paneedah.mwc.models.AKSUHandguard) {
+                        GL11.glTranslatef(0.1F, -0.8F, 0.4F);
+                        GL11.glRotatef(30F, 0f, 1f, 0f);
+                        GL11.glScaled(0.7F, 0.7F, 0.7F);
+                    } else {
+                        GL11.glScaled(0F, 0F, 0F);
+                    }
+
+                }).withThirdPersonModelPositioning((model, itemStack) -> {
+                    if (model instanceof com.paneedah.mwc.models.AKSUHandguard) {
+                        GL11.glTranslatef(-0.8F, -0.5F, 0.8F);
+                        GL11.glRotatef(-50F, 0f, 1f, 0f);
+                        GL11.glRotatef(80F, 1f, 0f, 0f);
+                        GL11.glScaled(0.5F, 0.5F, 0.5F);
+                    } else {
+                        GL11.glScaled(0F, 0F, 0F);
+                    }
+                })
+                .withName("AKSUHandguard").withTextureName("Dummy.png")
                 .build(ModernWarfareMod.MOD_CONTEXT);
         
         DragunovHandguard = new AttachmentBuilder<Weapon>().withCategory(AttachmentCategory.GUARD)
@@ -11229,7 +13492,7 @@ public class Attachments {
                 .withModel(new com.paneedah.mwc.models.AK47iron(), "gun.png")
                 .withModernRecipe(
                     	CraftingGroup.ATTACHMENT_MODIFICATION,
-                    	new CraftingEntry(MWCItems.gunmetalIngot, 5),
+                    	new CraftingEntry(MWCItems.gunmetalIngot, 5), 
                     	new CraftingEntry(Blocks.PLANKS, 4))
                 .withInventoryModelPositioning((model, s) -> {
                     if (model instanceof com.paneedah.mwc.models.DragunovHandguard) {
@@ -11262,13 +13525,54 @@ public class Attachments {
                 })
                 .withName("DragunovHandguard").withTextureName("Dummy.png")
                 .build(ModernWarfareMod.MOD_CONTEXT);
+
+        DragunovDarkHandguard = new AttachmentBuilder<Weapon>().withCategory(AttachmentCategory.GUARD)
+                .withCreativeTab(ModernWarfareMod.AttachmentsTab)
+                .withModel(new com.paneedah.mwc.models.DragunovHandguard(), "dragunovdark.png")
+                .withModel(new com.paneedah.mwc.models.AKMiron2(), "gun.png")
+                .withModel(new com.paneedah.mwc.models.AK47iron(), "gun.png")
+                .withModernRecipe(
+                    	CraftingGroup.ATTACHMENT_MODIFICATION,
+                    	new CraftingEntry(MWCItems.gunmetalIngot, 5), 
+                    	new CraftingEntry(Blocks.PLANKS, 4))
+                .withInventoryModelPositioning((model, s) -> {
+                    if (model instanceof com.paneedah.mwc.models.DragunovHandguard) {
+                        GL11.glTranslatef(-0.6F, 0.4F, -2F);
+                        GL11.glRotatef(10F, 1f, 0f, 0f);
+                        GL11.glRotatef(-190F, 0f, 1f, 0f);
+                        GL11.glRotatef(0F, 0f, 0f, 1f);
+                        GL11.glScaled(0.9F, 0.9F, 0.9f);
+                    } else {
+                        GL11.glScalef(0f, 0f, 0f);
+                    }
+                }).withFirstPersonModelPositioning((model, itemStack) -> {
+                    if (model instanceof com.paneedah.mwc.models.DragunovHandguard) {
+                        GL11.glTranslatef(0.1F, -0.8F, 0.4F);
+                        GL11.glRotatef(30F, 0f, 1f, 0f);
+                        GL11.glScaled(0.7F, 0.7F, 0.7F);
+                    } else {
+                        GL11.glScaled(0F, 0F, 0F);
+                    }
+
+                }).withThirdPersonModelPositioning((model, itemStack) -> {
+                    if (model instanceof com.paneedah.mwc.models.DragunovHandguard) {
+                        GL11.glTranslatef(-0.8F, -0.5F, 0.8F);
+                        GL11.glRotatef(-50F, 0f, 1f, 0f);
+                        GL11.glRotatef(80F, 1f, 0f, 0f);
+                        GL11.glScaled(0.5F, 0.5F, 0.5F);
+                    } else {
+                        GL11.glScaled(0F, 0F, 0F);
+                    }
+                })
+                .withName("DragunovDarkHandguard").withTextureName("Dummy.png")
+                .build(ModernWarfareMod.MOD_CONTEXT);
         
         Dragunov98Handguard = new AttachmentBuilder<Weapon>().withCategory(AttachmentCategory.GUARD)
                 .withCreativeTab(ModernWarfareMod.AttachmentsTab)
                 .withModel(new com.paneedah.mwc.models.Dragunov98Handguard(), "dragunov98.png")
                 .withModernRecipe(
                     	CraftingGroup.ATTACHMENT_MODIFICATION,
-                    	new CraftingEntry(MWCItems.gunmetalIngot, 6),
+                    	new CraftingEntry(MWCItems.gunmetalIngot, 6), 
                     	new CraftingEntry(MWCItems.steelIngot, 4))
                 .withInventoryModelPositioning((model, s) -> {
                     if (model instanceof com.paneedah.mwc.models.Dragunov98Handguard) {
@@ -11339,6 +13643,158 @@ public class Attachments {
                 })
                 .withName("AK101HandGuard").withTextureName("Dummy.png")
                 .build(ModernWarfareMod.MOD_CONTEXT);
+
+ AK101GreenHandGuard = new AttachmentBuilder<Weapon>().withCategory(AttachmentCategory.GUARD)
+                .withCreativeTab(ModernWarfareMod.AttachmentsTab)
+                .withModel(new com.paneedah.mwc.models.AK101HandGuard(), "ak101greenhandguard.png")
+                .withModernRecipe(
+                    	CraftingGroup.ATTACHMENT_MODIFICATION,
+                    	new CraftingEntry(MWCItems.gunmetalIngot, 3))
+                .withInventoryModelPositioning((model, s) -> {
+                    if (model instanceof com.paneedah.mwc.models.AK101HandGuard) {
+                        GL11.glTranslatef(-0.6F, 0.4F, -2F);
+                        GL11.glRotatef(10F, 1f, 0f, 0f);
+                        GL11.glRotatef(-190F, 0f, 1f, 0f);
+                        GL11.glRotatef(0F, 0f, 0f, 1f);
+                        GL11.glScaled(0.9F, 0.9F, 0.9f);
+                    } else {
+                        GL11.glScalef(0f, 0f, 0f);
+                    }
+                }).withFirstPersonModelPositioning((model, itemStack) -> {
+                    if (model instanceof com.paneedah.mwc.models.AK101HandGuard) {
+                        GL11.glTranslatef(0.1F, -0.8F, 0.4F);
+                        GL11.glRotatef(30F, 0f, 1f, 0f);
+                        GL11.glScaled(0.7F, 0.7F, 0.7F);
+                    } else {
+                        GL11.glScaled(0F, 0F, 0F);
+                    }
+
+                }).withThirdPersonModelPositioning((model, itemStack) -> {
+                    if (model instanceof com.paneedah.mwc.models.AK101HandGuard) {
+                        GL11.glTranslatef(-0.8F, -0.5F, 0.8F);
+                        GL11.glRotatef(-50F, 0f, 1f, 0f);
+                        GL11.glRotatef(80F, 1f, 0f, 0f);
+                        GL11.glScaled(0.5F, 0.5F, 0.5F);
+                    } else {
+                        GL11.glScaled(0F, 0F, 0F);
+                    }
+                })
+                .withName("AK101GreenHandGuard").withTextureName("Dummy.png")
+                .build(ModernWarfareMod.MOD_CONTEXT);
+
+ AK101PearlHandGuard = new AttachmentBuilder<Weapon>().withCategory(AttachmentCategory.GUARD)
+                .withCreativeTab(ModernWarfareMod.AttachmentsTab)
+                .withModel(new com.paneedah.mwc.models.AK101HandGuard(), "ak101pearlhandguard.png")
+                .withModernRecipe(
+                    	CraftingGroup.ATTACHMENT_MODIFICATION,
+                    	new CraftingEntry(MWCItems.gunmetalIngot, 3))
+                .withInventoryModelPositioning((model, s) -> {
+                    if (model instanceof com.paneedah.mwc.models.AK101HandGuard) {
+                        GL11.glTranslatef(-0.6F, 0.4F, -2F);
+                        GL11.glRotatef(10F, 1f, 0f, 0f);
+                        GL11.glRotatef(-190F, 0f, 1f, 0f);
+                        GL11.glRotatef(0F, 0f, 0f, 1f);
+                        GL11.glScaled(0.9F, 0.9F, 0.9f);
+                    } else {
+                        GL11.glScalef(0f, 0f, 0f);
+                    }
+                }).withFirstPersonModelPositioning((model, itemStack) -> {
+                    if (model instanceof com.paneedah.mwc.models.AK101HandGuard) {
+                        GL11.glTranslatef(0.1F, -0.8F, 0.4F);
+                        GL11.glRotatef(30F, 0f, 1f, 0f);
+                        GL11.glScaled(0.7F, 0.7F, 0.7F);
+                    } else {
+                        GL11.glScaled(0F, 0F, 0F);
+                    }
+
+                }).withThirdPersonModelPositioning((model, itemStack) -> {
+                    if (model instanceof com.paneedah.mwc.models.AK101HandGuard) {
+                        GL11.glTranslatef(-0.8F, -0.5F, 0.8F);
+                        GL11.glRotatef(-50F, 0f, 1f, 0f);
+                        GL11.glRotatef(80F, 1f, 0f, 0f);
+                        GL11.glScaled(0.5F, 0.5F, 0.5F);
+                    } else {
+                        GL11.glScaled(0F, 0F, 0F);
+                    }
+                })
+                .withName("AK101PearlHandGuard").withTextureName("Dummy.png")
+                .build(ModernWarfareMod.MOD_CONTEXT);
+
+ AK101PlumHandGuard = new AttachmentBuilder<Weapon>().withCategory(AttachmentCategory.GUARD)
+                .withCreativeTab(ModernWarfareMod.AttachmentsTab)
+                .withModel(new com.paneedah.mwc.models.AK101HandGuard(), "ak101plumhandguard.png")
+                .withModernRecipe(
+                    	CraftingGroup.ATTACHMENT_MODIFICATION,
+                    	new CraftingEntry(MWCItems.gunmetalIngot, 3))
+                .withInventoryModelPositioning((model, s) -> {
+                    if (model instanceof com.paneedah.mwc.models.AK101HandGuard) {
+                        GL11.glTranslatef(-0.6F, 0.4F, -2F);
+                        GL11.glRotatef(10F, 1f, 0f, 0f);
+                        GL11.glRotatef(-190F, 0f, 1f, 0f);
+                        GL11.glRotatef(0F, 0f, 0f, 1f);
+                        GL11.glScaled(0.9F, 0.9F, 0.9f);
+                    } else {
+                        GL11.glScalef(0f, 0f, 0f);
+                    }
+                }).withFirstPersonModelPositioning((model, itemStack) -> {
+                    if (model instanceof com.paneedah.mwc.models.AK101HandGuard) {
+                        GL11.glTranslatef(0.1F, -0.8F, 0.4F);
+                        GL11.glRotatef(30F, 0f, 1f, 0f);
+                        GL11.glScaled(0.7F, 0.7F, 0.7F);
+                    } else {
+                        GL11.glScaled(0F, 0F, 0F);
+                    }
+
+                }).withThirdPersonModelPositioning((model, itemStack) -> {
+                    if (model instanceof com.paneedah.mwc.models.AK101HandGuard) {
+                        GL11.glTranslatef(-0.8F, -0.5F, 0.8F);
+                        GL11.glRotatef(-50F, 0f, 1f, 0f);
+                        GL11.glRotatef(80F, 1f, 0f, 0f);
+                        GL11.glScaled(0.5F, 0.5F, 0.5F);
+                    } else {
+                        GL11.glScaled(0F, 0F, 0F);
+                    }
+                })
+                .withName("AK101PlumHandGuard").withTextureName("Dummy.png")
+                .build(ModernWarfareMod.MOD_CONTEXT);
+
+ AK101WhiteHandGuard = new AttachmentBuilder<Weapon>().withCategory(AttachmentCategory.GUARD)
+                .withCreativeTab(ModernWarfareMod.AttachmentsTab)
+                .withModel(new com.paneedah.mwc.models.AK101HandGuard(), "ak101whitehandguard.png")
+                .withModernRecipe(
+                    	CraftingGroup.ATTACHMENT_MODIFICATION,
+                    	new CraftingEntry(MWCItems.gunmetalIngot, 3))
+                .withInventoryModelPositioning((model, s) -> {
+                    if (model instanceof com.paneedah.mwc.models.AK101HandGuard) {
+                        GL11.glTranslatef(-0.6F, 0.4F, -2F);
+                        GL11.glRotatef(10F, 1f, 0f, 0f);
+                        GL11.glRotatef(-190F, 0f, 1f, 0f);
+                        GL11.glRotatef(0F, 0f, 0f, 1f);
+                        GL11.glScaled(0.9F, 0.9F, 0.9f);
+                    } else {
+                        GL11.glScalef(0f, 0f, 0f);
+                    }
+                }).withFirstPersonModelPositioning((model, itemStack) -> {
+                    if (model instanceof com.paneedah.mwc.models.AK101HandGuard) {
+                        GL11.glTranslatef(0.1F, -0.8F, 0.4F);
+                        GL11.glRotatef(30F, 0f, 1f, 0f);
+                        GL11.glScaled(0.7F, 0.7F, 0.7F);
+                    } else {
+                        GL11.glScaled(0F, 0F, 0F);
+                    }
+
+                }).withThirdPersonModelPositioning((model, itemStack) -> {
+                    if (model instanceof com.paneedah.mwc.models.AK101HandGuard) {
+                        GL11.glTranslatef(-0.8F, -0.5F, 0.8F);
+                        GL11.glRotatef(-50F, 0f, 1f, 0f);
+                        GL11.glRotatef(80F, 1f, 0f, 0f);
+                        GL11.glScaled(0.5F, 0.5F, 0.5F);
+                    } else {
+                        GL11.glScaled(0F, 0F, 0F);
+                    }
+                })
+                .withName("AK101WhiteHandGuard").withTextureName("Dummy.png")
+                .build(ModernWarfareMod.MOD_CONTEXT);
         
         AK74Handguard = new AttachmentBuilder<Weapon>().withCategory(AttachmentCategory.GUARD)
                 .withCreativeTab(ModernWarfareMod.AttachmentsTab)
@@ -11377,7 +13833,45 @@ public class Attachments {
                 })
                 .withName("AK74Handguard").withTextureName("Dummy.png")
                 .build(ModernWarfareMod.MOD_CONTEXT);
-        
+                
+        AK74GreenHandguard = new AttachmentBuilder<Weapon>().withCategory(AttachmentCategory.GUARD)
+                .withCreativeTab(ModernWarfareMod.AttachmentsTab)
+                .withModel(new com.paneedah.mwc.models.AK74Handguard(), "AK74GreenHandguard.png")
+                .withModernRecipe(
+                    	CraftingGroup.ATTACHMENT_MODIFICATION,
+                    	new CraftingEntry(MWCItems.gunmetalIngot, 3))
+                .withInventoryModelPositioning((model, s) -> {
+                    if (model instanceof com.paneedah.mwc.models.AK74Handguard) {
+                        GL11.glTranslatef(-0.6F, 0.4F, -2F);
+                        GL11.glRotatef(10F, 1f, 0f, 0f);
+                        GL11.glRotatef(-190F, 0f, 1f, 0f);
+                        GL11.glRotatef(0F, 0f, 0f, 1f);
+                        GL11.glScaled(0.9F, 0.9F, 0.9f);
+                    } else {
+                        GL11.glScalef(0f, 0f, 0f);
+                    }
+                }).withFirstPersonModelPositioning((model, itemStack) -> {
+                    if (model instanceof com.paneedah.mwc.models.AK74Handguard) {
+                        GL11.glTranslatef(0.1F, -0.8F, 0.4F);
+                        GL11.glRotatef(30F, 0f, 1f, 0f);
+                        GL11.glScaled(0.7F, 0.7F, 0.7F);
+                    } else {
+                        GL11.glScaled(0F, 0F, 0F);
+                    }
+
+                }).withThirdPersonModelPositioning((model, itemStack) -> {
+                    if (model instanceof com.paneedah.mwc.models.AK74Handguard) {
+                        GL11.glTranslatef(-0.8F, -0.5F, 0.8F);
+                        GL11.glRotatef(-50F, 0f, 1f, 0f);
+                        GL11.glRotatef(80F, 1f, 0f, 0f);
+                        GL11.glScaled(0.5F, 0.5F, 0.5F);
+                    } else {
+                        GL11.glScaled(0F, 0F, 0F);
+                    }
+                })
+                .withName("AK74GreenHandguard").withTextureName("Dummy.png")
+                .build(ModernWarfareMod.MOD_CONTEXT);
+
         AKMagpulHandleGuard = new AttachmentBuilder<Weapon>().withCategory(AttachmentCategory.GUARD)
                 .withCreativeTab(ModernWarfareMod.AttachmentsTab)
                 .withModel(new com.paneedah.mwc.models.MagpulHandleGuard(), "MagpulHandleGuard.png")
@@ -11610,6 +14104,45 @@ public class Attachments {
                     }
                 })
                 .withName("AK12kalHandguard").withTextureName("Dummy.png")
+                .build(ModernWarfareMod.MOD_CONTEXT);
+        
+        AK12kalTanHandguard = new AttachmentBuilder<Weapon>().withCategory(AttachmentCategory.GUARD)
+                .withCreativeTab(ModernWarfareMod.AttachmentsTab)
+                .withModel(new com.paneedah.mwc.models.AK15HandleGuard(), "ak12tanhandguard.png")
+                .withModel(new com.paneedah.mwc.models.AKRail(), "AKRailtan.png")
+                .withModernRecipe(
+                    	CraftingGroup.ATTACHMENT_MODIFICATION,
+                    	new CraftingEntry(MWCItems.gunmetalIngot, 3))
+                .withInventoryModelPositioning((model, s) -> {
+                    if (model instanceof com.paneedah.mwc.models.AK15HandleGuard) {
+                        GL11.glTranslatef(-0.6F, 0.4F, -2F);
+                        GL11.glRotatef(10F, 1f, 0f, 0f);
+                        GL11.glRotatef(-190F, 0f, 1f, 0f);
+                        GL11.glRotatef(0F, 0f, 0f, 1f);
+                        GL11.glScaled(0.9F, 0.9F, 0.9f);
+                    } else {
+                        GL11.glScalef(0f, 0f, 0f);
+                    }
+                }).withFirstPersonModelPositioning((model, itemStack) -> {
+                    if (model instanceof com.paneedah.mwc.models.AK15HandleGuard) {
+                        GL11.glTranslatef(0.1F, -0.8F, 0.4F);
+                        GL11.glRotatef(30F, 0f, 1f, 0f);
+                        GL11.glScaled(0.7F, 0.7F, 0.7F);
+                    } else {
+                        GL11.glScaled(0F, 0F, 0F);
+                    }
+
+                }).withThirdPersonModelPositioning((model, itemStack) -> {
+                    if (model instanceof com.paneedah.mwc.models.AK15HandleGuard) {
+                        GL11.glTranslatef(-0.8F, -0.5F, 0.8F);
+                        GL11.glRotatef(-50F, 0f, 1f, 0f);
+                        GL11.glRotatef(80F, 1f, 0f, 0f);
+                        GL11.glScaled(0.5F, 0.5F, 0.5F);
+                    } else {
+                        GL11.glScaled(0F, 0F, 0F);
+                    }
+                })
+                .withName("AK12kalTanHandguard").withTextureName("Dummy.png")
                 .build(ModernWarfareMod.MOD_CONTEXT);
         
         RPK16Handguard = new AttachmentBuilder<Weapon>().withCategory(AttachmentCategory.GUARD)
@@ -11846,7 +14379,7 @@ public class Attachments {
                 .withModel(new com.paneedah.mwc.models.VSSVintorezHandguard(), "vssvintorez.png")
                 .withModernRecipe(
                     	CraftingGroup.ATTACHMENT_MODIFICATION,
-                    	new CraftingEntry(MWCItems.gunmetalIngot, 3),
+                    	new CraftingEntry(MWCItems.gunmetalIngot, 3), 
                     	new CraftingEntry(Blocks.PLANKS, 3))
                 .withInventoryModelPositioning((model, s) -> {
                     if (model instanceof com.paneedah.mwc.models.VSSVintorezHandguard) {
@@ -11918,6 +14451,122 @@ public class Attachments {
                 .withName("ASValHandguard").withTextureName("Dummy.png")
                 .build(ModernWarfareMod.MOD_CONTEXT);
         
+        SR3MHG = new AttachmentBuilder<Weapon>().withCategory(AttachmentCategory.GUARD)
+                .withCreativeTab(ModernWarfareMod.AttachmentsTab)
+                .withModel(new com.paneedah.mwc.models.SR3MHG(), "vssvintorez.png")
+                .withModernRecipe(
+                    	CraftingGroup.ATTACHMENT_MODIFICATION,
+                    	new CraftingEntry(MWCItems.gunmetalIngot, 3))
+                .withInventoryModelPositioning((model, s) -> {
+                    if (model instanceof com.paneedah.mwc.models.SR3MHG) {
+                    	GL11.glTranslatef(-0.6F, 0.3F, -1.4F);
+                        GL11.glRotatef(10F, 1f, 0f, 0f);
+                        GL11.glRotatef(-190F, 0f, 1f, 0f);
+                        GL11.glRotatef(0F, 0f, 0f, 1f);
+                        GL11.glScaled(0.9F, 0.9F, 0.9f);
+                    } else {
+                        GL11.glScalef(0f, 0f, 0f);
+                    }
+                }).withFirstPersonModelPositioning((model, itemStack) -> {
+                    if (model instanceof com.paneedah.mwc.models.SR3MHG) {
+                        GL11.glTranslatef(0.1F, -0.8F, 0.4F);
+                        GL11.glRotatef(30F, 0f, 1f, 0f);
+                        GL11.glScaled(0.7F, 0.7F, 0.7F);
+                    } else {
+                        GL11.glScaled(0F, 0F, 0F);
+                    }
+
+                }).withThirdPersonModelPositioning((model, itemStack) -> {
+                    if (model instanceof com.paneedah.mwc.models.SR3MHG) {
+                        GL11.glTranslatef(-0.8F, -0.5F, 0.8F);
+                        GL11.glRotatef(-50F, 0f, 1f, 0f);
+                        GL11.glRotatef(80F, 1f, 0f, 0f);
+                        GL11.glScaled(0.5F, 0.5F, 0.5F);
+                    } else {
+                        GL11.glScaled(0F, 0F, 0F);
+                    }
+                })
+                .withName("SR3MHG").withTextureName("Dummy.png")
+
+                .build(ModernWarfareMod.MOD_CONTEXT);
+        
+        SR3MHGF = new AttachmentBuilder<Weapon>().withCategory(AttachmentCategory.GUARD)
+                .withCreativeTab(ModernWarfareMod.AttachmentsTab)
+                .withModel(new com.paneedah.mwc.models.SR3MHGF(), "vssvintorez.png")
+                .withModernRecipe(
+                    	CraftingGroup.ATTACHMENT_MODIFICATION,
+                    	new CraftingEntry(MWCItems.gunmetalIngot, 3))
+                .withInventoryModelPositioning((model, s) -> {
+                    if (model instanceof com.paneedah.mwc.models.SR3MHGF) {
+                    	GL11.glTranslatef(-0.6F, 0.3F, -1.4F);
+                        GL11.glRotatef(10F, 1f, 0f, 0f);
+                        GL11.glRotatef(-190F, 0f, 1f, 0f);
+                        GL11.glRotatef(0F, 0f, 0f, 1f);
+                        GL11.glScaled(0.9F, 0.9F, 0.9f);
+                    } else {
+                        GL11.glScalef(0f, 0f, 0f);
+                    }
+                }).withFirstPersonModelPositioning((model, itemStack) -> {
+                    if (model instanceof com.paneedah.mwc.models.SR3MHGF) {
+                        GL11.glTranslatef(0.1F, -0.8F, 0.4F);
+                        GL11.glRotatef(30F, 0f, 1f, 0f);
+                        GL11.glScaled(0.7F, 0.7F, 0.7F);
+                    } else {
+                        GL11.glScaled(0F, 0F, 0F);
+                    }
+
+                }).withThirdPersonModelPositioning((model, itemStack) -> {
+                    if (model instanceof com.paneedah.mwc.models.SR3MHGF) {
+                        GL11.glTranslatef(-0.8F, -0.5F, 0.8F);
+                        GL11.glRotatef(-50F, 0f, 1f, 0f);
+                        GL11.glRotatef(80F, 1f, 0f, 0f);
+                        GL11.glScaled(0.5F, 0.5F, 0.5F);
+                    } else {
+                        GL11.glScaled(0F, 0F, 0F);
+                    }
+                })
+                .withName("SR3MHGF").withTextureName("Dummy.png")
+                .build(ModernWarfareMod.MOD_CONTEXT);
+
+        SR3VikhrHG = new AttachmentBuilder<Weapon>().withCategory(AttachmentCategory.GUARD)
+                .withCreativeTab(ModernWarfareMod.AttachmentsTab)
+                .withModel(new com.paneedah.mwc.models.SR3VikhrHG(), "vssvintorez.png")
+                .withModernRecipe(
+                    	CraftingGroup.ATTACHMENT_MODIFICATION,
+                    	new CraftingEntry(MWCItems.gunmetalIngot, 3))
+                .withInventoryModelPositioning((model, s) -> {
+                    if (model instanceof com.paneedah.mwc.models.SR3VikhrHG) {
+                    	GL11.glTranslatef(-0.6F, 0.3F, -1.4F);
+                        GL11.glRotatef(10F, 1f, 0f, 0f);
+                        GL11.glRotatef(-190F, 0f, 1f, 0f);
+                        GL11.glRotatef(0F, 0f, 0f, 1f);
+                        GL11.glScaled(0.9F, 0.9F, 0.9f);
+                    } else {
+                        GL11.glScalef(0f, 0f, 0f);
+                    }
+                }).withFirstPersonModelPositioning((model, itemStack) -> {
+                    if (model instanceof com.paneedah.mwc.models.SR3VikhrHG) {
+                        GL11.glTranslatef(0.1F, -0.8F, 0.4F);
+                        GL11.glRotatef(30F, 0f, 1f, 0f);
+                        GL11.glScaled(0.7F, 0.7F, 0.7F);
+                    } else {
+                        GL11.glScaled(0F, 0F, 0F);
+                    }
+
+                }).withThirdPersonModelPositioning((model, itemStack) -> {
+                    if (model instanceof com.paneedah.mwc.models.SR3VikhrHG) {
+                        GL11.glTranslatef(-0.8F, -0.5F, 0.8F);
+                        GL11.glRotatef(-50F, 0f, 1f, 0f);
+                        GL11.glRotatef(80F, 1f, 0f, 0f);
+                        GL11.glScaled(0.5F, 0.5F, 0.5F);
+                    } else {
+                        GL11.glScaled(0F, 0F, 0F);
+                    }
+                })
+                .withName("SR3VikhrHG").withTextureName("Dummy.png")
+
+                .build(ModernWarfareMod.MOD_CONTEXT);
+
         VSSVintorezTriRailMount = new AttachmentBuilder<Weapon>().withCategory(AttachmentCategory.FRONTSIGHT)
                 .withCreativeTab(ModernWarfareMod.AttachmentsTab)
                 .withModel(new com.paneedah.mwc.models.VSSVintorezTriRailMount(), "vssvintorez.png")
@@ -12106,6 +14755,44 @@ public class Attachments {
                     }
                 })
                 .withName("AKMDustcover").withTextureName("Dummy.png")
+                .build(ModernWarfareMod.MOD_CONTEXT);
+        
+        AKSUDustCover = new AttachmentBuilder<Weapon>().withCategory(AttachmentCategory.RAILING)
+                .withCreativeTab(ModernWarfareMod.AttachmentsTab)
+                .withModel(new com.paneedah.mwc.models.AKSUDustCover(), "AKMDustCover.png")
+                .withModernRecipe(
+                    	CraftingGroup.ATTACHMENT_MODIFICATION,
+                    	new CraftingEntry(MWCItems.gunmetalIngot, 3))
+                .withInventoryModelPositioning((model, s) -> {
+                    if (model instanceof com.paneedah.mwc.models.AKSUDustCover) {
+                        GL11.glTranslatef(-0.6F, 0.4F, -0.2F);
+                        GL11.glRotatef(10F, 1f, 0f, 0f);
+                        GL11.glRotatef(-190F, 0f, 1f, 0f);
+                        GL11.glRotatef(0F, 0f, 0f, 1f);
+                        GL11.glScaled(0.9F, 0.9F, 0.9f);
+                    } else {
+                        GL11.glScalef(0f, 0f, 0f);
+                    }
+                }).withFirstPersonModelPositioning((model, itemStack) -> {
+                    if (model instanceof com.paneedah.mwc.models.AKSUDustCover) {
+                        GL11.glTranslatef(0.1F, -0.8F, 0.4F);
+                        GL11.glRotatef(30F, 0f, 1f, 0f);
+                        GL11.glScaled(0.7F, 0.7F, 0.7F);
+                    } else {
+                        GL11.glScaled(0F, 0F, 0F);
+                    }
+
+                }).withThirdPersonModelPositioning((model, itemStack) -> {
+                    if (model instanceof com.paneedah.mwc.models.AKSUDustCover) {
+                        GL11.glTranslatef(-0.8F, -0.5F, 0.8F);
+                        GL11.glRotatef(-50F, 0f, 1f, 0f);
+                        GL11.glRotatef(80F, 1f, 0f, 0f);
+                        GL11.glScaled(0.5F, 0.5F, 0.5F);
+                    } else {
+                        GL11.glScaled(0F, 0F, 0F);
+                    }
+                })
+                .withName("AKSUDustcover").withTextureName("Dummy.png")
                 .build(ModernWarfareMod.MOD_CONTEXT);
         
         AK101DustCover = new AttachmentBuilder<Weapon>().withCategory(AttachmentCategory.RAILING)
@@ -12374,6 +15061,44 @@ public class Attachments {
                     }
                 })
                 .withName("VSSMDustCover").withTextureName("Dummy.png")
+                .build(ModernWarfareMod.MOD_CONTEXT);
+
+        SR3VikhrDC = new AttachmentBuilder<Weapon>().withCategory(AttachmentCategory.RAILING)
+                .withCreativeTab(ModernWarfareMod.AttachmentsTab)
+                .withModel(new com.paneedah.mwc.models.SR3VikhrDC(), "vssvintorez.png")
+                .withModernRecipe(
+                    	CraftingGroup.ATTACHMENT_MODIFICATION,
+                    	new CraftingEntry(MWCItems.gunmetalIngot, 3))
+                .withInventoryModelPositioning((model, s) -> {
+                    if (model instanceof com.paneedah.mwc.models.SR3VikhrDC) {
+                        GL11.glTranslatef(-0.6F, 0.4F, -0.2F);
+                        GL11.glRotatef(10F, 1f, 0f, 0f);
+                        GL11.glRotatef(-190F, 0f, 1f, 0f);
+                        GL11.glRotatef(0F, 0f, 0f, 1f);
+                        GL11.glScaled(0.9F, 0.9F, 0.9f);
+                    } else {
+                        GL11.glScalef(0f, 0f, 0f);
+                    }
+                }).withFirstPersonModelPositioning((model, itemStack) -> {
+                    if (model instanceof com.paneedah.mwc.models.SR3VikhrDC) {
+                        GL11.glTranslatef(0.1F, -0.8F, 0.4F);
+                        GL11.glRotatef(30F, 0f, 1f, 0f);
+                        GL11.glScaled(0.7F, 0.7F, 0.7F);
+                    } else {
+                        GL11.glScaled(0F, 0F, 0F);
+                    }
+
+                }).withThirdPersonModelPositioning((model, itemStack) -> {
+                    if (model instanceof com.paneedah.mwc.models.SR3VikhrDC) {
+                        GL11.glTranslatef(-0.8F, -0.5F, 0.8F);
+                        GL11.glRotatef(-50F, 0f, 1f, 0f);
+                        GL11.glRotatef(80F, 1f, 0f, 0f);
+                        GL11.glScaled(0.5F, 0.5F, 0.5F);
+                    } else {
+                        GL11.glScaled(0F, 0F, 0F);
+                    }
+                })
+                .withName("SR3VikhrDC").withTextureName("Dummy.png")
                 .build(ModernWarfareMod.MOD_CONTEXT);
         
         FNFALDustCover = new AttachmentBuilder<Weapon>().withCategory(AttachmentCategory.RAILING)
@@ -12818,7 +15543,7 @@ public class Attachments {
                         Vector556Handguard, M1CarbineScoutHandguard, Origin12Grip, HKS20Grip, G2ContenderBarrelLong,
                         HK417Receiver, HK417ReceiverTan)
         		.withCrosshair("LP")
-                .withModel(new com.paneedah.mwc.models.Leupold(), "leupold.png")
+                .withModel(new com.paneedah.mwc.models.Leupold(), "gun.png")
                 .withModel(new com.paneedah.mwc.models.JPUreticle(), "black.png")
                 .withFirstPersonModelPositioning((model, itemStack) -> {
                     if (model instanceof com.paneedah.mwc.models.Leupold) {
@@ -12869,11 +15594,11 @@ public class Attachments {
                     GL11.glScalef(1.15f, 1.15f, 1.1f);
                     GL11.glTranslatef(-0.299f, 0.215f, 1.15f);
                 }).withCategory(AttachmentCategory.SCOPE).withCreativeTab(ModernWarfareMod.AttachmentsTab).withCrosshair("LP")
-                .withModel(new com.paneedah.mwc.models.PSO1(), "gun.png")
+                .withModel(new com.paneedah.mwc.models.PSO1(), "dsr1.png")
                 .withModel(new com.paneedah.mwc.models.PSO12(), "gun.png")
                 .withModernRecipe(
                     	CraftingGroup.ATTACHMENT_NORMAL,
-                    	new CraftingEntry(MWCItems.gunmetalIngot, 4),
+                    	new CraftingEntry(MWCItems.gunmetalIngot, 4), 
                     	new CraftingEntry(MWCItems.steelIngot, 5))
                 .withFirstPersonModelPositioning((model, itemStack) -> {
                     if (model instanceof com.paneedah.mwc.models.PSO1) {
@@ -12923,7 +15648,115 @@ public class Attachments {
                 })
                 .withName("PSO1")
                 .withTextureName("Dummy.png").build(ModernWarfareMod.MOD_CONTEXT);
-        
+    
+
+        NSPU = new ItemScope.Builder()
+                .withSniperReticle(Reticles.RETICLE_NSPU)
+        		.withOpticalZoom()
+                        .withNightVision()
+        		.withZoomRange(0.22f, 0.06f)
+                .withViewfinderPositioning((p, s) -> {
+                    GL11.glScalef(1.15f, 1.15f, 1.1f);
+                    GL11.glTranslatef(-0.299f, 0.215f, 1.15f);
+                }).withCategory(AttachmentCategory.SCOPE).withCreativeTab(ModernWarfareMod.AttachmentsTab).withCrosshair("LP")
+                .withModel(new com.paneedah.mwc.models.NSPU(), "vssm.png")
+                .withModel(new com.paneedah.mwc.models.PSO12(), "gun.png")
+                .withModernRecipe(
+                    	CraftingGroup.ATTACHMENT_NORMAL,
+                    	new CraftingEntry(MWCItems.gunmetalIngot, 4), 
+                    	new CraftingEntry(MWCItems.steelIngot, 5))
+                .withFirstPersonModelPositioning((model, itemStack) -> {
+                    if (model instanceof com.paneedah.mwc.models.NSPU) {
+                        GL11.glTranslatef(0.1F, -0.8F, 0.4F);
+                        GL11.glRotatef(30F, 0f, 1f, 0f);
+                        GL11.glScaled(0.7F, 0.7F, 0.7F);
+                    } else if (model instanceof com.paneedah.mwc.models.PSO1reticle) {
+                        GL11.glScaled(0F, 0F, 0F);
+                    } else if (model instanceof com.paneedah.mwc.models.PSO12) {
+                        GL11.glScaled(0F, 0F, 0F);
+                    }
+
+                }).withThirdPersonModelPositioning((model, itemStack) -> {
+                    if (model instanceof com.paneedah.mwc.models.NSPU) {
+                        GL11.glTranslatef(-0.8F, -0.5F, 0.8F);
+                        GL11.glRotatef(-50F, 0f, 1f, 0f);
+                        GL11.glRotatef(80F, 1f, 0f, 0f);
+                        GL11.glScaled(0.5F, 0.5F, 0.5F);
+                    } else if (model instanceof com.paneedah.mwc.models.PSO1reticle) {
+                        GL11.glScaled(0F, 0F, 0F);
+                    } else if (model instanceof com.paneedah.mwc.models.PSO12) {
+                        GL11.glScaled(0F, 0F, 0F);
+                    }
+
+                }).withInventoryModelPositioning((model, itemStack) -> {
+                    if (model instanceof com.paneedah.mwc.models.NSPU) {
+                        GL11.glTranslatef(-0.6F, -0.3F, 0.7F);
+                        GL11.glRotatef(10F, 1f, 0f, 0f);
+                        GL11.glRotatef(-190F, 0f, 1f, 0f);
+                        GL11.glRotatef(0F, 0f, 0f, 1f);
+                        GL11.glScaled(1F, 1F, 1f);
+                    } else if (model instanceof com.paneedah.mwc.models.PSO1reticle) {
+                        GL11.glScaled(0F, 0F, 0F);
+                    } else if (model instanceof com.paneedah.mwc.models.PSO12) {
+                        GL11.glScaled(0F, 0F, 0F);
+                    }
+                }).withEntityModelPositioning((model, itemStack) -> {
+                    if (model instanceof com.paneedah.mwc.models.NSPU) {
+                        GL11.glTranslatef(0.1F, 0.2F, 0.4F);
+                        GL11.glRotatef(90F, 0f, 0f, 1f);
+                        GL11.glScaled(0.4F, 0.4F, 0.4F);
+                    } else if (model instanceof com.paneedah.mwc.models.PSO1reticle) {
+                        GL11.glScaled(0F, 0F, 0F);
+                    } else if (model instanceof com.paneedah.mwc.models.PSO12) {
+                        GL11.glScaled(0F, 0F, 0F);
+                    }
+                })
+                .withName("NSPU")
+                .withTextureName("Dummy.png").build(ModernWarfareMod.MOD_CONTEXT);
+        PKAA = new ItemScope.Builder()
+          .withHolographicReticles(Reticles.REFLEX)
+        .withReticlePositioning((model, itemStack) -> {
+        	GlStateManager.translate(-0.299, 0.215,  2.15);
+       		GlStateManager.scale(1, 1, 1);
+                }).withCategory(AttachmentCategory.SCOPE).withCreativeTab(ModernWarfareMod.AttachmentsTab)
+                .withModel(new com.paneedah.mwc.models.PKAA(), "dsr1.png")
+                .withModernRecipe(
+                    	CraftingGroup.ATTACHMENT_NORMAL,
+                    	new CraftingEntry(MWCItems.gunmetalIngot, 4), 
+                    	new CraftingEntry(MWCItems.steelIngot, 5))
+                .withFirstPersonModelPositioning((model, itemStack) -> {
+                    if (model instanceof com.paneedah.mwc.models.PKAA) {
+                        GL11.glTranslatef(0.1F, -0.8F, 0.4F);
+                        GL11.glRotatef(30F, 0f, 1f, 0f);
+                        GL11.glScaled(0.7F, 0.7F, 0.7F);
+                    }
+
+                }).withThirdPersonModelPositioning((model, itemStack) -> {
+                    if (model instanceof com.paneedah.mwc.models.PKAA) {
+                        GL11.glTranslatef(-0.8F, -0.5F, 0.8F);
+                        GL11.glRotatef(-50F, 0f, 1f, 0f);
+                        GL11.glRotatef(80F, 1f, 0f, 0f);
+                        GL11.glScaled(0.5F, 0.5F, 0.5F);
+                    }
+
+                }).withInventoryModelPositioning((model, itemStack) -> {
+                    if (model instanceof com.paneedah.mwc.models.PKAA) {
+                        GL11.glTranslatef(-0.6F, -0.3F, 0.7F);
+                        GL11.glRotatef(10F, 1f, 0f, 0f);
+                        GL11.glRotatef(-190F, 0f, 1f, 0f);
+                        GL11.glRotatef(0F, 0f, 0f, 1f);
+                        GL11.glScaled(1F, 1F, 1f);
+                    }
+                }).withEntityModelPositioning((model, itemStack) -> {
+                    if (model instanceof com.paneedah.mwc.models.PKAA) {
+                        GL11.glTranslatef(0.1F, 0.2F, 0.4F);
+                        GL11.glRotatef(90F, 0f, 0f, 1f);
+                        GL11.glScaled(0.4F, 0.4F, 0.4F);
+                    }
+                })
+                .withName("PKAA")
+                .withTextureName("Dummy.png").build(ModernWarfareMod.MOD_CONTEXT);        
+    
         OKP7 = new ItemScope.Builder()
         		.withHolographicReticles(Reticles.OKP)
         		.withRadialCut(0.1f)
@@ -12936,7 +15769,7 @@ public class Attachments {
                 .withModel(new com.paneedah.mwc.models.OKP7(), "gun.png")
                 .withModernRecipe(
                     	CraftingGroup.ATTACHMENT_NORMAL,
-                    	new CraftingEntry(MWCItems.gunmetalIngot, 3),
+                    	new CraftingEntry(MWCItems.gunmetalIngot, 3), 
                     	new CraftingEntry(MWCItems.steelIngot, 3))
 //                .withModel(new com.paneedah.mwc.models.OKP7reticle(), "green.png")
                 .withFirstPersonModelPositioning((model, itemStack) -> {
@@ -12987,7 +15820,7 @@ public class Attachments {
                 .withModel(new com.paneedah.mwc.models.FMG9Carryhandle(), "fmg9.png")
                 .withModernRecipe(
                     	CraftingGroup.ATTACHMENT_NORMAL,
-                    	new CraftingEntry(MWCItems.gunmetalIngot, 2),
+                    	new CraftingEntry(MWCItems.gunmetalIngot, 2), 
                     	new CraftingEntry(MWCItems.steelIngot, 1))
                 .withFirstPersonModelPositioning((model, itemStack) -> {
                     if (model instanceof com.paneedah.mwc.models.FMG9Carryhandle) {
@@ -13042,7 +15875,7 @@ public class Attachments {
                 .withModel(new com.paneedah.mwc.models.Reflex(), "Reflex.png")
                 .withModernRecipe(
                     	CraftingGroup.ATTACHMENT_NORMAL,
-                    	new CraftingEntry(MWCItems.gunmetalIngot, 2),
+                    	new CraftingEntry(MWCItems.gunmetalIngot, 2), 
                     	new CraftingEntry(MWCItems.steelIngot, 2))
 //                .withModel(new com.paneedah.mwc.models.Reflex2(), "Reflex2.png")
                 .withRequiredAttachments(VeprDustCover, AK15DustCover, Placeholder, 
@@ -13111,7 +15944,7 @@ public class Attachments {
                 .withModel(new com.paneedah.mwc.models.BijiaReflex(), "gun.png")
                 .withModernRecipe(
                     	CraftingGroup.ATTACHMENT_NORMAL,
-                    	new CraftingEntry(MWCItems.gunmetalIngot, 2),
+                    	new CraftingEntry(MWCItems.gunmetalIngot, 2), 
                     	new CraftingEntry(MWCItems.steelIngot, 2))
                 .withRequiredAttachments(VeprDustCover, AK15DustCover, Placeholder, 
                         MIMP5TRRail, MIMP5MRail, ShotgunRail, FABDefenseMount, 
@@ -13180,7 +16013,7 @@ public class Attachments {
                 .withModel(new com.paneedah.mwc.models.SightMount(), "gun.png")
                 .withModernRecipe(
                     	CraftingGroup.ATTACHMENT_NORMAL,
-                    	new CraftingEntry(MWCItems.gunmetalIngot, 2),
+                    	new CraftingEntry(MWCItems.gunmetalIngot, 2), 
                     	new CraftingEntry(MWCItems.steelIngot, 2))
                 .withPostRender(new LaserBeamRenderer((p, s) -> {
                     GL11.glTranslatef(-0F, 2.3F, 1.8F);
@@ -13255,7 +16088,7 @@ public class Attachments {
                 .withModel(new com.paneedah.mwc.models.ACOG(), "Acog.png")
                 .withModernRecipe(
                     	CraftingGroup.ATTACHMENT_NORMAL,
-                    	new CraftingEntry(MWCItems.gunmetalIngot, 4),
+                    	new CraftingEntry(MWCItems.gunmetalIngot, 4), 
                     	new CraftingEntry(MWCItems.steelIngot, 3))
 //                .withModel(new com.paneedah.mwc.models.AcogScope2(), "gun.png")
 //                .withModel(new com.paneedah.mwc.models.AcogReticle(), "acogreticle.png")
@@ -13341,7 +16174,7 @@ public class Attachments {
                 .withModel(new com.paneedah.mwc.models.SpecterSight(), "SpecterSight.png")
                 .withModernRecipe(
                     	CraftingGroup.ATTACHMENT_NORMAL,
-                    	new CraftingEntry(MWCItems.gunmetalIngot, 4),
+                    	new CraftingEntry(MWCItems.gunmetalIngot, 4), 
                     	new CraftingEntry(MWCItems.steelIngot, 3))
 //                .withModel(new com.paneedah.mwc.models.Acog2(), "Acog2.png")
                 .withRequiredAttachments(VeprDustCover, AK15DustCover, Placeholder, MIMP5TRRail, 
@@ -13399,6 +16232,60 @@ public class Attachments {
                 .withRotationPoint(-0.12079999459981924, -1.4240000168085098, -2.392400065904859)
                 .build(ModernWarfareMod.MOD_CONTEXT);
 
+        HKV = new ItemScope.Builder()
+        		.withSniperReticle(Reticles.RETICLE_HKV)
+        		.withOpticalZoom()
+        		.withZoomRange(0.22f, 0.1f)
+                .withViewfinderPositioning((p, s) -> {
+                    GL11.glScalef(3.7f, 3.7f, 3.7f);
+                    GL11.glTranslatef(-0.075f, 0.38f, 0.42f);
+                })
+                .withRenderablePart()
+                .withCreativeTab(ModernWarfareMod.AttachmentsTab)
+                .withModernRecipe(
+                    	CraftingGroup.ATTACHMENT_NORMAL,
+                    	new CraftingEntry(MWCItems.gunmetalIngot, 4), 
+                    	new CraftingEntry(MWCItems.steelIngot, 3))
+                .withRequiredAttachments(G36CH, G36CHRAL)
+                .withFirstPersonModelPositioning((model, itemStack) -> {
+                    if (model instanceof com.paneedah.mwc.models.SpecterSight) {
+                        GL11.glTranslatef(0.1F, -0.8F, 0.4F);
+                        GL11.glRotatef(30F, 0f, 1f, 0f);
+                        GL11.glScaled(0F, 0F, 0F);
+                    } else if (model instanceof com.paneedah.mwc.models.Acog2) {
+                        GL11.glScaled(0F, 0F, 0F);
+                    }
+
+                }).withThirdPersonModelPositioning((model, itemStack) -> {
+                    if (model instanceof com.paneedah.mwc.models.SpecterSight) {
+                        GL11.glTranslatef(-0.8F, -0.5F, 0.8F);
+                        GL11.glRotatef(-50F, 0f, 1f, 0f);
+                        GL11.glScaled(0F, 0F, 0F);
+                    } else if (model instanceof com.paneedah.mwc.models.Acog2) {
+                        GL11.glScaled(0F, 0F, 0F);
+                    }
+                }).withInventoryModelPositioning((model, itemStack) -> {
+                    if (model instanceof com.paneedah.mwc.models.SpecterSight) {
+                        GL11.glTranslatef(-0.6F, -0.1F, 0.95F);
+                        GL11.glRotatef(10F, 1f, 0f, 0f);
+                        GL11.glScaled(0F, 0F, 0f);
+                    } else if (model instanceof com.paneedah.mwc.models.Acog2) {
+                        GL11.glScaled(0F, 0F, 0F);
+
+                    }
+                }).withEntityModelPositioning((model, itemStack) -> {
+                    if (model instanceof com.paneedah.mwc.models.SpecterSight) {
+                        GL11.glTranslatef(0.1F, 0.2F, 0.4F);
+                        GL11.glRotatef(90F, 0f, 0f, 1f);
+                        GL11.glScaled(0F, 0F, 0F);
+                    } else if (model instanceof com.paneedah.mwc.models.Acog2) {
+                        GL11.glScaled(0F, 0F, 0F);
+                    }
+                })
+                .withName("HKV").withTextureName("Dummy.png")
+                .withRotationPoint(-0.12079999459981924, -1.4240000168085098, -2.392400065904859)
+                .build(ModernWarfareMod.MOD_CONTEXT);
+
         Holographic = new ItemScope.Builder()
         		.withHolographicReticles(Reticles.HOLO_ONE)
         		.withReticlePositioning((model, itemStack) -> {
@@ -13411,7 +16298,7 @@ public class Attachments {
                 .withModel(new com.paneedah.mwc.models.Holographic2(), "Holographic2.png")
                 .withModernRecipe(
                     	CraftingGroup.ATTACHMENT_NORMAL,
-                    	new CraftingEntry(MWCItems.gunmetalIngot, 2),
+                    	new CraftingEntry(MWCItems.gunmetalIngot, 2), 
                     	new CraftingEntry(MWCItems.steelIngot, 2))
 //                .withModel(new com.paneedah.mwc.models.Holo2(), "Holo3.png")
                 .withRequiredAttachments(VeprDustCover, AK15DustCover, Placeholder,
@@ -13482,7 +16369,7 @@ public class Attachments {
                 .withModel(new com.paneedah.mwc.models.Holographic(), "Holographic.png")
                 .withModernRecipe(
                     	CraftingGroup.ATTACHMENT_NORMAL,
-                    	new CraftingEntry(MWCItems.gunmetalIngot, 2),
+                    	new CraftingEntry(MWCItems.gunmetalIngot, 2), 
                     	new CraftingEntry(MWCItems.steelIngot, 2))
 //                .withModel(new com.paneedah.mwc.models.Holo2(), "Holo3.png")
                 .withRequiredAttachments(VeprDustCover, AK15DustCover, Placeholder, MIMP5TRRail,
@@ -13539,6 +16426,77 @@ public class Attachments {
                 })
                 .withName("HolographicAlt").withTextureName("Dummy.png")
                 .build(ModernWarfareMod.MOD_CONTEXT);
+
+        PK120 = new ItemScope.Builder()
+        		.withHolographicReticles(Reticles.PK120)
+        		.withReticlePositioning((model, itemStack) -> {
+        			GlStateManager.translate(-0.1, -2.7, 0.3);
+        			GlStateManager.scale(1.4, 1.4, 1.4);
+        		})
+        		.withCategory(AttachmentCategory.SCOPE)
+                .withCreativeTab(ModernWarfareMod.AttachmentsTab)
+                .withRenderablePart()
+                .withModel(new com.paneedah.mwc.models.PK120(), "PK120.png")
+                .withModernRecipe(
+                    	CraftingGroup.ATTACHMENT_NORMAL,
+                    	new CraftingEntry(MWCItems.gunmetalIngot, 2), 
+                    	new CraftingEntry(MWCItems.steelIngot, 2))
+//                .withModel(new com.paneedah.mwc.models.Holo2(), "Holo3.png")
+                .withRequiredAttachments(VeprDustCover, AK15DustCover, Placeholder,
+                        MIMP5TRRail, MIMP5MRail, ShotgunRail, Kar98Krail, M60Rail, 
+                        P90Placeholder, AUGA2handguard, AUGA3handguard, 
+                        M4Receiver, VLTORReceiver, AR57Receiver, NTW20HandguardRAIL, 
+                        Attachments.EF88Handguard, KrissVectorReceiver,
+                        Vector556Handguard, M1CarbineScoutHandguard, Origin12Grip, HKS20Grip,
+                        HoneyBadgerKnightsReceiver, HoneyBadgerKnightsReceiverBlack, 
+                        M14TriRailCover, Mk14TanBody, Mk14SnowBody, Mk14BlackBody, SSG08Chassis,
+                        SA58DustCover, M16A1ScopeMount, UMP45Receiver, UMP9Receiver, 
+                        G2ContenderBarrelLong, S710Receiver, Beowulf50CalReceiver, FamasF1ScopeMount,
+                        HK417Receiver, HK417ReceiverTan, AK12DustCover, AK12BDustCover, CZ805BrenReceiver, 
+                        HK416Receiver, M110Receiver, ScarLReceiver, Remington700Chassis, Remington700APACChassis,
+                        Remington700MDTXRSChassis, DSR1Handguard, DSR1HandguardRailed, Z10Receiver, MAC21Stock, 
+                        VSSMDustCover, Dragunov98DustCover)
+                .withFirstPersonModelPositioning((model, itemStack) -> {
+                    if (model instanceof com.paneedah.mwc.models.PK120) {
+                        GL11.glTranslatef(0.1F, -0.8F, 0.2F);
+                        GL11.glRotatef(30F, 0f, 1f, 0f);
+                        GL11.glScaled(0.6F, 0.6F, 0.6F);
+                    } else if (model instanceof com.paneedah.mwc.models.Holo2) {
+                        GL11.glScaled(0F, 0F, 0F);
+                    }
+
+                }).withThirdPersonModelPositioning((model, itemStack) -> {
+                    if (model instanceof com.paneedah.mwc.models.PK120) {
+                        GL11.glTranslatef(-0.8F, -0.5F, 0.8F);
+                        GL11.glRotatef(-50F, 0f, 1f, 0f);
+                        GL11.glRotatef(80F, 1f, 0f, 0f);
+                        GL11.glScaled(0.5F, 0.5F, 0.5F);
+                    } else if (model instanceof com.paneedah.mwc.models.Holo2) {
+                        GL11.glScaled(0F, 0F, 0F);
+                    }
+                }).withInventoryModelPositioning((model, itemStack) -> {
+                    if (model instanceof com.paneedah.mwc.models.PK120) {
+                        GL11.glTranslatef(-0.6F, -0.1F, 0.7F);
+                        // GL11.glRotatef(10F, 1f, 0f, 0f);
+                        GL11.glRotatef(-180F, 0f, 1f, 0f);
+                        GL11.glRotatef(0F, 0f, 0f, 1f);
+                        GL11.glScaled(1F, 1F, 1f);
+                    } else if (model instanceof com.paneedah.mwc.models.Holo2) {
+                        GL11.glScaled(0F, 0F, 0F);
+
+                    }
+                }).withEntityModelPositioning((model, itemStack) -> {
+                    if (model instanceof com.paneedah.mwc.models.PK120) {
+                        GL11.glTranslatef(0.1F, 0.2F, 0.4F);
+                        GL11.glRotatef(90F, 0f, 0f, 1f);
+                        GL11.glScaled(0.4F, 0.4F, 0.4F);
+                    } else if (model instanceof com.paneedah.mwc.models.Holo2) {
+                        GL11.glScaled(0F, 0F, 0F);
+                    }
+                })
+                .withName("PK120").withTextureName("Dummy.png")
+                .withRotationPoint(-0.12079999459981924, -1.4240000168085098, -2.392400065904859)
+                .build(ModernWarfareMod.MOD_CONTEXT);
         
         EotechHybrid2 = new ItemScope.Builder()
         		.withSniperReticle(Reticles.RETICLE_HOLO)
@@ -13555,7 +16513,7 @@ public class Attachments {
                 .withModel(new com.paneedah.mwc.models.EotechScopeRing(), "gun.png")
                 .withModernRecipe(
                     	CraftingGroup.ATTACHMENT_NORMAL,
-                    	new CraftingEntry(MWCItems.gunmetalIngot, 3),
+                    	new CraftingEntry(MWCItems.gunmetalIngot, 3), 
                     	new CraftingEntry(MWCItems.steelIngot, 2))
                 .withRequiredAttachments(VeprDustCover, AK15DustCover, Placeholder,
                         MIMP5TRRail, MIMP5MRail, ShotgunRail, Kar98Krail, M60Rail, 
@@ -13630,7 +16588,7 @@ public class Attachments {
                 .withModel(new com.paneedah.mwc.models.VortexSight(), "vortexsight.png")
                 .withModernRecipe(
                     	CraftingGroup.ATTACHMENT_NORMAL,
-                    	new CraftingEntry(MWCItems.gunmetalIngot, 2),
+                    	new CraftingEntry(MWCItems.gunmetalIngot, 2), 
                     	new CraftingEntry(MWCItems.steelIngot, 2))
                 .withRequiredAttachments(VeprDustCover, AK15DustCover, Placeholder,
                         MIMP5TRRail, MIMP5MRail, ShotgunRail, Kar98Krail, M60Rail,
@@ -13700,7 +16658,7 @@ public class Attachments {
                 .withModel(new com.paneedah.mwc.models.MicroT1(), "gun.png")
                 .withModernRecipe(
                     	CraftingGroup.ATTACHMENT_NORMAL,
-                    	new CraftingEntry(MWCItems.gunmetalIngot, 2),
+                    	new CraftingEntry(MWCItems.gunmetalIngot, 2), 
                     	new CraftingEntry(MWCItems.steelIngot, 2))
                 .withRequiredAttachments(VeprDustCover, AK15DustCover, Placeholder, 
                         MIMP5TRRail, MIMP5MRail, ShotgunRail, Kar98Krail, M60Rail,
@@ -13770,7 +16728,7 @@ public class Attachments {
                 .withModel(new com.paneedah.mwc.models.AimpointCompM2(), "AimpointCompM2.png")
                 .withModernRecipe(
                     	CraftingGroup.ATTACHMENT_NORMAL,
-                    	new CraftingEntry(MWCItems.gunmetalIngot, 2),
+                    	new CraftingEntry(MWCItems.gunmetalIngot, 2), 
                     	new CraftingEntry(MWCItems.steelIngot, 2))
                 .withRequiredAttachments(VeprDustCover, AK15DustCover, Placeholder,
                         MIMP5TRRail, MIMP5MRail, ShotgunRail, Kar98Krail, M60Rail, 
@@ -13841,7 +16799,7 @@ public class Attachments {
                 .withModel(new com.paneedah.mwc.models.AimpointCompM5(), "aimpointcompm5.png")
                 .withModernRecipe(
                     	CraftingGroup.ATTACHMENT_NORMAL,
-                    	new CraftingEntry(MWCItems.gunmetalIngot, 2),
+                    	new CraftingEntry(MWCItems.gunmetalIngot, 2), 
                     	new CraftingEntry(MWCItems.steelIngot, 2))
                 .withRequiredAttachments(VeprDustCover, AK15DustCover, Placeholder,
                         MIMP5TRRail, MIMP5MRail, ShotgunRail, Kar98Krail, M60Rail, 
@@ -13910,7 +16868,7 @@ public class Attachments {
                 .withModel(new com.paneedah.mwc.models.RMRsight(), "RMRsight.png")
                 .withModernRecipe(
                     	CraftingGroup.ATTACHMENT_NORMAL,
-                    	new CraftingEntry(MWCItems.gunmetalIngot, 1),
+                    	new CraftingEntry(MWCItems.gunmetalIngot, 1), 
                     	new CraftingEntry(MWCItems.steelIngot, 2))
 //                .withModel(new com.paneedah.mwc.models.Reflex2(), "Reflex2.png")
                 .withRequiredAttachments(FABDefenseMount, VeprDustCover, AK15DustCover,
@@ -13974,7 +16932,7 @@ public class Attachments {
                 .withModel(new com.paneedah.mwc.models.Kobra(), "gunmetaltexture.png")
                 .withModernRecipe(
                     	CraftingGroup.ATTACHMENT_NORMAL,
-                    	new CraftingEntry(MWCItems.gunmetalIngot, 2),
+                    	new CraftingEntry(MWCItems.gunmetalIngot, 2), 
                     	new CraftingEntry(MWCItems.steelIngot, 2))
                 .withRequiredAttachments(VeprDustCover, AK15DustCover, Placeholder, 
                         MIMP5TRRail, MIMP5MRail, ShotgunRail, Kar98Krail, M60Rail,
@@ -14044,7 +17002,7 @@ public class Attachments {
                 .withModel(new com.paneedah.mwc.models.KobraGen3(), "gun.png")
                 .withModernRecipe(
                     	CraftingGroup.ATTACHMENT_NORMAL,
-                    	new CraftingEntry(MWCItems.gunmetalIngot, 2),
+                    	new CraftingEntry(MWCItems.gunmetalIngot, 2), 
                     	new CraftingEntry(MWCItems.steelIngot, 2))
                 .withRequiredAttachments(VeprDustCover, AK15DustCover, Placeholder, 
                         MIMP5TRRail, MIMP5MRail, ShotgunRail, Kar98Krail, M60Rail,
@@ -14114,7 +17072,7 @@ public class Attachments {
                 .withModel(new com.paneedah.mwc.models.KobraMount(), "kobramount.png")
                 .withModernRecipe(
                     	CraftingGroup.ATTACHMENT_NORMAL,
-                    	new CraftingEntry(MWCItems.gunmetalIngot, 2),
+                    	new CraftingEntry(MWCItems.gunmetalIngot, 2), 
                     	new CraftingEntry(MWCItems.steelIngot, 2))
                 .withRenderablePart()
                 .withFirstPersonModelPositioning((model, itemStack) -> {
@@ -14232,7 +17190,7 @@ public class Attachments {
                         VSSMDustCover, Dragunov98DustCover)
         		.withModernRecipe(
                     	CraftingGroup.ATTACHMENT_NORMAL,
-                    	new CraftingEntry(MWCItems.gunmetalIngot, 5),
+                    	new CraftingEntry(MWCItems.gunmetalIngot, 5), 
                     	new CraftingEntry(MWCItems.steelIngot, 5))
         		.withCrosshair("LP")
         		.withRenderablePart()
@@ -14279,6 +17237,7 @@ public class Attachments {
                 .withName("LeupoldRailScope")
                 .withRotationPoint(-0.12079999459981924, -1.4240000168085098, -2.392400065904859)
                 .withTextureName("Dummy.png").build(ModernWarfareMod.MOD_CONTEXT);
+
         
         NightRaider = new ItemScope.Builder()
                 .withNightVision()
@@ -14294,7 +17253,7 @@ public class Attachments {
                 .withModel(new com.paneedah.mwc.models.NightRaiderScope(), "gun.png")
                 .withModernRecipe(
                     	CraftingGroup.ATTACHMENT_NORMAL,
-                    	new CraftingEntry(MWCItems.gunmetalIngot, 6),
+                    	new CraftingEntry(MWCItems.gunmetalIngot, 6), 
                     	new CraftingEntry(MWCItems.steelIngot, 5))
                 .withRequiredAttachments(VeprDustCover, AK15DustCover, Placeholder, MIMP5TRRail,
                         MIMP5MRail, ShotgunRail, Kar98Krail, M60Rail, P90Placeholder, AUGA2handguard, AUGA3handguard, 
@@ -14510,7 +17469,6 @@ public class Attachments {
                     GL11.glTranslatef(-0.23f, -0.77f, 0.65f);
                 })
                 .withCreativeTab(ModernWarfareMod.AttachmentsTab)
-                .withCrosshair("HP")
                 .withModel(new com.paneedah.mwc.models.AUGScope_scope(), "gun.png")
                 .withModel(new com.paneedah.mwc.models.JPUreticle(), "black.png")
                 .withModel(new com.paneedah.mwc.models.AUGScope(), "gun.png")
@@ -14565,13 +17523,15 @@ public class Attachments {
                 .withTextureName("Dummy.png")
                 .build(ModernWarfareMod.MOD_CONTEXT);
         
+
+        
         Silencer556x45 = new AttachmentBuilder<Weapon>()
         		.withCategory(AttachmentCategory.SILENCER)
                 .withCreativeTab(ModernWarfareMod.AttachmentsTab)
                 .withModel(new com.paneedah.mwc.models.Suppressor556x45(), "gun.png")
                 .withModernRecipe(
                     	CraftingGroup.ATTACHMENT_NORMAL,
-                    	new CraftingEntry(MWCItems.gunmetalIngot, 2),
+                    	new CraftingEntry(MWCItems.gunmetalIngot, 2), 
                     	new CraftingEntry(MWCItems.steelIngot, 1))
                 .withFirstPersonModelPositioning((model, itemStack) -> {
                     if (model instanceof com.paneedah.mwc.models.Suppressor556x45) {
@@ -14611,7 +17571,7 @@ public class Attachments {
                 .withModel(new com.paneedah.mwc.models.Suppressor556x39(), "gun.png")
                 .withModernRecipe(
                     	CraftingGroup.ATTACHMENT_NORMAL,
-                    	new CraftingEntry(MWCItems.gunmetalIngot, 2),
+                    	new CraftingEntry(MWCItems.gunmetalIngot, 2), 
                     	new CraftingEntry(MWCItems.steelIngot, 1))
                 .withFirstPersonModelPositioning((model, itemStack) -> {
                     if (model instanceof com.paneedah.mwc.models.Suppressor556x39) {
@@ -14651,7 +17611,7 @@ public class Attachments {
                 .withModel(new com.paneedah.mwc.models.Suppressor762x39(), "gun.png")
                 .withModernRecipe(
                     	CraftingGroup.ATTACHMENT_NORMAL,
-                    	new CraftingEntry(MWCItems.gunmetalIngot, 2),
+                    	new CraftingEntry(MWCItems.gunmetalIngot, 2), 
                     	new CraftingEntry(MWCItems.steelIngot, 1))
                 .withFirstPersonModelPositioning((model, itemStack) -> {
                     if (model instanceof com.paneedah.mwc.models.Suppressor762x39) {
@@ -15410,7 +18370,7 @@ public class Attachments {
                 .withModel(new com.paneedah.mwc.models.AKMiron2(), "gun")
                 .withModernRecipe(
                     	CraftingGroup.ATTACHMENT_MODIFICATION,
-                    	new CraftingEntry(MWCItems.gunmetalIngot, 1),
+                    	new CraftingEntry(MWCItems.gunmetalIngot, 1), 
                     	new CraftingEntry(MWCItems.steelIngot, 3))
                 .withFirstPersonModelPositioning((model, itemStack) -> {
                     if (model instanceof com.paneedah.mwc.models.RPKbarrel) {
@@ -15531,7 +18491,7 @@ public class Attachments {
                 .withModel(new com.paneedah.mwc.models.MakarovPBSSilencer(), "MakarovPBSSilencer.png")
                 .withModernRecipe(
                     	CraftingGroup.ATTACHMENT_NORMAL,
-                    	new CraftingEntry(MWCItems.gunmetalIngot, 2),
+                    	new CraftingEntry(MWCItems.gunmetalIngot, 2), 
                     	new CraftingEntry(MWCItems.steelIngot, 1))
                 .withFirstPersonModelPositioning((model, itemStack) -> {
                     if (model instanceof com.paneedah.mwc.models.MakarovPBSSilencer) {
@@ -15575,7 +18535,7 @@ public class Attachments {
                 .withModel(new com.paneedah.mwc.models.Suppressor(), "GunmetalTexture.png")
                 .withModernRecipe(
                     	CraftingGroup.ATTACHMENT_NORMAL,
-                    	new CraftingEntry(MWCItems.gunmetalIngot, 2),
+                    	new CraftingEntry(MWCItems.gunmetalIngot, 2), 
                     	new CraftingEntry(MWCItems.steelIngot, 1))
                 .withFirstPersonModelPositioning((model, itemStack) -> {
                     if (model instanceof com.paneedah.mwc.models.Suppressor) {
@@ -15617,7 +18577,7 @@ public class Attachments {
                 .withModel(new com.paneedah.mwc.models.SamuraiEdgeSuppressor(), "samuraiedge.png")
                 .withModernRecipe(
                     	CraftingGroup.ATTACHMENT_NORMAL,
-                    	new CraftingEntry(MWCItems.gunmetalIngot, 2),
+                    	new CraftingEntry(MWCItems.gunmetalIngot, 2), 
                     	new CraftingEntry(MWCItems.steelIngot, 1))
                 .withFirstPersonModelPositioning((model, itemStack) -> {
                     if (model instanceof com.paneedah.mwc.models.SamuraiEdgeSuppressor) {
@@ -15658,7 +18618,7 @@ public class Attachments {
                 .withModel(new com.paneedah.mwc.models.Suppressor(), "GunmetalTexture.png")
                 .withModernRecipe(
                     	CraftingGroup.ATTACHMENT_NORMAL,
-                    	new CraftingEntry(MWCItems.gunmetalIngot, 2),
+                    	new CraftingEntry(MWCItems.gunmetalIngot, 2), 
                     	new CraftingEntry(MWCItems.steelIngot, 1))
                 .withFirstPersonModelPositioning((model, itemStack) -> {
                     if (model instanceof com.paneedah.mwc.models.Suppressor) {
@@ -15699,7 +18659,7 @@ public class Attachments {
                 .withModel(new com.paneedah.mwc.models.KBP9A91Suppressor(), "kbp9a91.png")
                 .withModernRecipe(
                     	CraftingGroup.ATTACHMENT_NORMAL,
-                    	new CraftingEntry(MWCItems.gunmetalIngot, 2),
+                    	new CraftingEntry(MWCItems.gunmetalIngot, 2), 
                     	new CraftingEntry(MWCItems.steelIngot, 1))
                 .withFirstPersonModelPositioning((model, itemStack) -> {
                     if (model instanceof com.paneedah.mwc.models.KBP9A91Suppressor) {
@@ -15734,6 +18694,47 @@ public class Attachments {
                 
                 .withTextureName("Dummy.png")
                 .build(ModernWarfareMod.MOD_CONTEXT);
+
+        SuppressorSR3M = new AttachmentBuilder<Weapon>().withCategory(AttachmentCategory.SILENCER)
+                .withCreativeTab(ModernWarfareMod.AttachmentsTab)
+                .withModel(new com.paneedah.mwc.models.SR3MSilencer(), "vssvintorez.png")
+                .withModernRecipe(
+                    	CraftingGroup.ATTACHMENT_NORMAL,
+                    	new CraftingEntry(MWCItems.gunmetalIngot, 2), 
+                    	new CraftingEntry(MWCItems.steelIngot, 1))
+                .withFirstPersonModelPositioning((model, itemStack) -> {
+                    if (model instanceof com.paneedah.mwc.models.SR3MSilencer) {
+                        GL11.glTranslatef(0.5F, -1.3F, -0.1F);
+                        GL11.glRotatef(30F, 0f, 1f, 0f);
+                        GL11.glScaled(0.6F, 0.6F, 0.6F);
+                    }
+
+                }).withThirdPersonModelPositioning((model, itemStack) -> {
+                    if (model instanceof com.paneedah.mwc.models.SR3MSilencer) {
+                        GL11.glTranslatef(-0.7F, -0.5F, 0.6F);
+                        GL11.glRotatef(-50F, 0f, 1f, 0f);
+                        GL11.glRotatef(80F, 1f, 0f, 0f);
+                        GL11.glScaled(0.5F, 0.5F, 0.5F);
+                    }
+                }).withInventoryModelPositioning((model, itemStack) -> {
+                    if (model instanceof com.paneedah.mwc.models.SR3MSilencer) {
+                        GL11.glTranslatef(0.6F, 1.3F, -5.3F);
+                        // GL11.glRotatef(10F, 1f, 0f, 0f);
+                        GL11.glRotatef(-180F, 0f, 1f, 0f);
+                        GL11.glRotatef(0F, 0f, 0f, 1f);
+                        GL11.glScaled(0.8F, 0.8F, 0.8f);
+
+                    }
+                }).withEntityModelPositioning((model, itemStack) -> {
+                    if (model instanceof com.paneedah.mwc.models.SR3MSilencer) {
+                        GL11.glTranslatef(0.1F, 0.2F, 0.4F);
+                        GL11.glRotatef(90F, 0f, 0f, 1f);
+                        GL11.glScaled(0.4F, 0.4F, 0.4F);
+                    }
+                }).withName("SR3MSuppressor")
+                
+                .withTextureName("Dummy.png")
+                .build(ModernWarfareMod.MOD_CONTEXT);
         
         Silencer45ACP = new AttachmentBuilder<Weapon>().withCategory(AttachmentCategory.SILENCER)
                 .withCreativeTab(ModernWarfareMod.AttachmentsTab)
@@ -15741,7 +18742,7 @@ public class Attachments {
                 .withModel(new com.paneedah.mwc.models.Suppressor45ACP(), "gun.png")
                 .withModernRecipe(
                     	CraftingGroup.ATTACHMENT_NORMAL,
-                    	new CraftingEntry(MWCItems.gunmetalIngot, 2),
+                    	new CraftingEntry(MWCItems.gunmetalIngot, 2), 
                     	new CraftingEntry(MWCItems.steelIngot, 1))
                 .withFirstPersonModelPositioning((model, itemStack) -> {
                     if (model instanceof com.paneedah.mwc.models.Suppressor45ACP) {
@@ -15815,7 +18816,7 @@ public class Attachments {
                 .withModel(new com.paneedah.mwc.models.Suppressor(), "gun.png")
                 .withModernRecipe(
                     	CraftingGroup.ATTACHMENT_NORMAL,
-                    	new CraftingEntry(MWCItems.gunmetalIngot, 3),
+                    	new CraftingEntry(MWCItems.gunmetalIngot, 3), 
                     	new CraftingEntry(MWCItems.steelIngot, 2))
                 .withFirstPersonModelPositioning((model, itemStack) -> {
                     if (model instanceof com.paneedah.mwc.models.Suppressor) {
@@ -15855,7 +18856,7 @@ public class Attachments {
                 .withModel(new com.paneedah.mwc.models.Suppressor762x51(), "gun.png")
                 .withModernRecipe(
                     	CraftingGroup.ATTACHMENT_NORMAL,
-                    	new CraftingEntry(MWCItems.gunmetalIngot, 3),
+                    	new CraftingEntry(MWCItems.gunmetalIngot, 3), 
                     	new CraftingEntry(MWCItems.steelIngot, 2))
                 .withFirstPersonModelPositioning((model, itemStack) -> {
                     if (model instanceof com.paneedah.mwc.models.Suppressor762x51) {
@@ -15895,7 +18896,7 @@ public class Attachments {
                 .withModel(new com.paneedah.mwc.models.Suppressor(), "GunmetalTexture.png")
                 .withModernRecipe(
                     	CraftingGroup.ATTACHMENT_NORMAL,
-                    	new CraftingEntry(MWCItems.gunmetalIngot, 4),
+                    	new CraftingEntry(MWCItems.gunmetalIngot, 4), 
                     	new CraftingEntry(MWCItems.steelIngot, 4))
                 .withFirstPersonModelPositioning((model, itemStack) -> {
                     if (model instanceof com.paneedah.mwc.models.Suppressor) {
@@ -15936,7 +18937,7 @@ public class Attachments {
                 .withModel(new com.paneedah.mwc.models.Suppressor556x39(), "gun.png")
                 .withModernRecipe(
                     	CraftingGroup.ATTACHMENT_NORMAL,
-                    	new CraftingEntry(MWCItems.gunmetalIngot, 2),
+                    	new CraftingEntry(MWCItems.gunmetalIngot, 2), 
                     	new CraftingEntry(MWCItems.steelIngot, 1))
                 .withFirstPersonModelPositioning((model, itemStack) -> {
                     if (model instanceof com.paneedah.mwc.models.Suppressor556x39) {
@@ -16035,7 +19036,7 @@ public class Attachments {
                         M110Receiver, Z10Receiver)
                 .withModernRecipe(
                     	CraftingGroup.ATTACHMENT_NORMAL,
-                    	new CraftingEntry(MWCItems.gunmetalIngot, 2),
+                    	new CraftingEntry(MWCItems.gunmetalIngot, 2), 
                     	new CraftingEntry(MWCItems.steelIngot, 1))
                 .withInventoryModelPositioning((model, s) -> {
                     if (model instanceof com.paneedah.mwc.models.TritiumRearSights) {
@@ -16083,7 +19084,7 @@ public class Attachments {
                         M110Receiver, Z10Receiver)
                 .withModernRecipe(
                     	CraftingGroup.ATTACHMENT_NORMAL,
-                    	new CraftingEntry(MWCItems.gunmetalIngot, 2),
+                    	new CraftingEntry(MWCItems.gunmetalIngot, 2), 
                     	new CraftingEntry(MWCItems.steelIngot, 1))
                 .withInventoryModelPositioning((model, s) -> {
                     if (model instanceof com.paneedah.mwc.models.MBUSRearSight) {
@@ -16130,7 +19131,7 @@ public class Attachments {
                         HK416Receiver, M110Receiver, DSR1Handguard, DSR1HandguardRailed, Z10Receiver)
                 .withModernRecipe(
                     	CraftingGroup.ATTACHMENT_NORMAL,
-                    	new CraftingEntry(MWCItems.gunmetalIngot, 2),
+                    	new CraftingEntry(MWCItems.gunmetalIngot, 2), 
                     	new CraftingEntry(MWCItems.steelIngot, 1))
                 .withInventoryModelPositioning((model, s) -> {
                     if (model instanceof com.paneedah.mwc.models.G95_upright_rearsights) {
@@ -16541,7 +19542,7 @@ public class Attachments {
                 .withModel(new com.paneedah.mwc.models.Suppressor(), "gun.png")
                 .withModernRecipe(
                     	CraftingGroup.ATTACHMENT_NORMAL,
-                    	new CraftingEntry(MWCItems.gunmetalIngot, 2),
+                    	new CraftingEntry(MWCItems.gunmetalIngot, 2), 
                     	new CraftingEntry(MWCItems.steelIngot, 1))
                 .withFirstPersonModelPositioning((model, itemStack) -> {
                     if (model instanceof com.paneedah.mwc.models.Suppressor) {
@@ -16615,7 +19616,7 @@ public class Attachments {
                 .withModel(new com.paneedah.mwc.models.Suppressor(), "gun.png")
                 .withModernRecipe(
                     	CraftingGroup.ATTACHMENT_NORMAL,
-                    	new CraftingEntry(MWCItems.gunmetalIngot, 1),
+                    	new CraftingEntry(MWCItems.gunmetalIngot, 1), 
                     	new CraftingEntry(MWCItems.steelIngot, 1))
                 .withFirstPersonModelPositioning((model, itemStack) -> {
                     if (model instanceof com.paneedah.mwc.models.Suppressor) {
@@ -16655,7 +19656,7 @@ public class Attachments {
                 .withModel(new com.paneedah.mwc.models.Suppressor45ACP(), "GunmetalTexture.png")
                 .withModernRecipe(
                     	CraftingGroup.ATTACHMENT_NORMAL,
-                    	new CraftingEntry(MWCItems.gunmetalIngot, 3),
+                    	new CraftingEntry(MWCItems.gunmetalIngot, 3), 
                     	new CraftingEntry(MWCItems.steelIngot, 2))
                 .withFirstPersonModelPositioning((model, itemStack) -> {
                     if (model instanceof com.paneedah.mwc.models.Suppressor45ACP) {
@@ -16695,7 +19696,7 @@ public class Attachments {
                 .withModel(new com.paneedah.mwc.models.Suppressor300AACBlackout(), "gun.png")
                 .withModernRecipe(
                     	CraftingGroup.ATTACHMENT_NORMAL,
-                    	new CraftingEntry(MWCItems.gunmetalIngot, 2),
+                    	new CraftingEntry(MWCItems.gunmetalIngot, 2), 
                     	new CraftingEntry(MWCItems.steelIngot, 1))
                 .withFirstPersonModelPositioning((model, itemStack) -> {
                     if (model instanceof com.paneedah.mwc.models.Suppressor300AACBlackout) {
@@ -16770,7 +19771,7 @@ public class Attachments {
                 .withModel(new com.paneedah.mwc.models.Suppressor556x39(), "gun.png")
                 .withModernRecipe(
                     	CraftingGroup.ATTACHMENT_NORMAL,
-                    	new CraftingEntry(MWCItems.gunmetalIngot, 1),
+                    	new CraftingEntry(MWCItems.gunmetalIngot, 1), 
                     	new CraftingEntry(MWCItems.steelIngot, 1))
                 .withFirstPersonModelPositioning((model, itemStack) -> {
                     if (model instanceof com.paneedah.mwc.models.Suppressor556x39) {
@@ -16823,7 +19824,7 @@ public class Attachments {
                         SIG556HandguardKA, SIG556HandguardRailed, Type20Handguard)
                 .withModernRecipe(
                     	CraftingGroup.ATTACHMENT_NORMAL,
-                    	new CraftingEntry(MWCItems.gunmetalIngot, 2),
+                    	new CraftingEntry(MWCItems.gunmetalIngot, 2), 
                     	new CraftingEntry(MWCItems.steelIngot, 1))
                 .withModel(new com.paneedah.mwc.models.Laser(), "gun.png")
                 .withPostRender(new LaserBeamRenderer((p, s) -> {
@@ -16889,7 +19890,7 @@ public class Attachments {
                         SIG556HandguardKA, SIG556HandguardRailed, Type20Handguard)
                 .withModernRecipe(
                     	CraftingGroup.ATTACHMENT_NORMAL,
-                    	new CraftingEntry(MWCItems.gunmetalIngot, 2),
+                    	new CraftingEntry(MWCItems.gunmetalIngot, 2), 
                     	new CraftingEntry(MWCItems.steelIngot, 1))
                 .withPostRender(new LaserBeamRenderer((p, s) -> {
                     GL11.glTranslatef(-0.2F, 1.3F, 1.8F);
@@ -16935,7 +19936,7 @@ public class Attachments {
                 .withModel(new com.paneedah.mwc.models.SCCYCPX2Laser(), "sccycpx2.png")
                 .withModernRecipe(
                     	CraftingGroup.ATTACHMENT_NORMAL,
-                    	new CraftingEntry(MWCItems.gunmetalIngot, 2),
+                    	new CraftingEntry(MWCItems.gunmetalIngot, 2), 
                     	new CraftingEntry(MWCItems.steelIngot, 1))
                 .withPostRender(new LaserBeamRenderer((p, s) -> {
                     GL11.glTranslatef(-0.62F, 0.82F, 0.5F);
@@ -17028,6 +20029,7 @@ public class Attachments {
                 .withRenderablePart()
                 .withName("DanWessonLaser").withTextureName("Dummy.png")
                 .build(ModernWarfareMod.MOD_CONTEXT);
+
         
         M1928Grip = new AttachmentBuilder<Weapon>().withCategory(AttachmentCategory.GRIP)
                 .withRenderablePart()
@@ -17534,6 +20536,47 @@ public class Attachments {
                     }
                 })
                 .withName("Bipod").withTextureName("Dummy.png")
+                .build(ModernWarfareMod.MOD_CONTEXT);
+
+ M14Bipod = new AttachmentBuilder<Weapon>().withCategory(AttachmentCategory.GRIP)
+                .withCreativeTab(ModernWarfareMod.AttachmentsTab).withModel(new com.paneedah.mwc.models.M14Bipod(), "bipod.png")
+                .withRequiredAttachments(M14SOCOMChassis, M14Body, M14WoodBody, M14WoodChassis, M14ClassicBody, M14A1Body)
+                .withModernRecipe(
+                    	CraftingGroup.ATTACHMENT_NORMAL,
+                    	new CraftingEntry(MWCItems.gunmetalIngot, 2))
+                .withApply((a, i) -> {
+                    i.setRecoil(i.getWeapon().getRecoil() * 0.4f);
+                }).withFirstPersonModelPositioning((model, itemStack) -> {
+                    if (model instanceof com.paneedah.mwc.models.M14Bipod) {
+                        GL11.glTranslatef(0.7F, -1.1F, 0.5F);
+                        GL11.glRotatef(30F, 0f, 1f, 0f);
+                        GL11.glScaled(0.5F, 0.5F, 0.5F);
+                    }
+
+                }).withThirdPersonModelPositioning((model, itemStack) -> {
+                    if (model instanceof com.paneedah.mwc.models.M14Bipod) {
+                        GL11.glTranslatef(-0.7F, -0.5F, 0.6F);
+                        GL11.glRotatef(-50F, 0f, 1f, 0f);
+                        GL11.glRotatef(80F, 1f, 0f, 0f);
+                        GL11.glScaled(0.5F, 0.5F, 0.5F);
+                    }
+                }).withInventoryModelPositioning((model, itemStack) -> {
+                    if (model instanceof com.paneedah.mwc.models.M14Bipod) {
+                        GL11.glTranslatef(0.6F, 0.05F, -0.85F);
+                        // GL11.glRotatef(10F, 1f, 0f, 0f);
+                        GL11.glRotatef(-180F, 0f, 1f, 0f);
+                        GL11.glRotatef(0F, 0f, 0f, 1f);
+                        GL11.glScaled(0.7F, 0.7F, 0.7f);
+
+                    }
+                }).withEntityModelPositioning((model, itemStack) -> {
+                    if (model instanceof com.paneedah.mwc.models.M14Bipod) {
+                        GL11.glTranslatef(0.1F, 0.2F, 0.4F);
+                        GL11.glRotatef(90F, 0f, 0f, 1f);
+                        GL11.glScaled(0.6F, 0.6F, 0.6F);
+                    }
+                })
+                .withName("M14Bipod").withTextureName("Dummy.png")
                 .build(ModernWarfareMod.MOD_CONTEXT);
         
         AUGgrip = new AttachmentBuilder<Weapon>().withCategory(AttachmentCategory.GRIP)

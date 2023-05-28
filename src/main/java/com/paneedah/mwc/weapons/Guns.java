@@ -165,6 +165,28 @@ public class Guns {
     public static Item Remington700;
     
     public static Item Chainsaw;
+    public static Item PGMHecateII;
+    public static Item ACRBlack;
+    public static Item AKS74U;
+    public static Item AKMSU;
+    public static Item AK102;
+    public static Item AK103;
+    public static Item AK104;
+    public static Item AK105;
+    public static Item Tantal;
+    public static Item VSK94;
+    public static Item SR3M;
+    public static Item ScarLCQC;
+    public static Item Klin;
+    public static Item SR3Vikhr;
+    public static Item Malyuk545;
+    public static Item K1A;
+    public static Item G36CRAL;
+    public static Item FiveSevenAuto;
+    public static Item Thunderbird;
+    public static Item LAPAFA03;
+    public static Item MP510;
+    public static Item MP540;
     
     public static void init(Object mod, CompatibleFmlPreInitializationEvent event, CommonProxy proxy) {
      // Try not to change the order of the guns to ensure stable recipes
@@ -307,6 +329,28 @@ public class Guns {
 //        NinthSin = new NinthSinFactory().createGun(proxy);
         
         Chainsaw = new ChainsawFactory().createGun(proxy);
+        PGMHecateII = new PGMHecateIIFactory().createGun(proxy);
+        ACRBlack = new ACRBlackFactory().createGun(proxy);
+        AKS74U = new AKS74UFactory().createGun(proxy);
+        AKMSU = new AKMSUFactory().createGun(proxy);
+        AK102 = new AK102Factory().createGun(proxy);
+        AK103 = new AK103Factory().createGun(proxy);
+        AK104 = new AK104Factory().createGun(proxy);
+        AK105 = new AK105Factory().createGun(proxy);
+        Tantal = new TantalFactory().createGun(proxy);
+        VSK94 = new VSK94Factory().createGun(proxy);
+        SR3M = new SR3MFactory().createGun(proxy);
+        ScarLCQC = new ScarLCQCFactory().createGun(proxy);
+        Klin = new KlinFactory().createGun(proxy);
+        SR3Vikhr = new SR3VikhrFactory().createGun(proxy);
+        Malyuk545 = new Malyuk545Factory().createGun(proxy);
+        K1A = new K1AFactory().createGun(proxy);
+        G36CRAL = new G36CRALFactory().createGun(proxy);
+        FiveSevenAuto = new FiveSevenAutoFactory().createGun(proxy);
+        Thunderbird = new ThunderbirdFactory().createGun(proxy);
+        LAPAFA03 = new LAPAFA03Factory().createGun(proxy);
+        MP510 = new MP510Factory().createGun(proxy);
+        MP540 = new MP540Factory().createGun(proxy);
        
     }
 }

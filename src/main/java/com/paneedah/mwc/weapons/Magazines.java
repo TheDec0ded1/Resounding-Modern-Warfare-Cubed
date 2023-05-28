@@ -16,7 +16,9 @@ public class Magazines {
     public static ItemMagazine S710TricunMag;
     public static ItemMagazine M4A1Mag;
     public static ItemMagazine NGSWRMag;
+    public static ItemMagazine NGSWR25RDMag;
     public static ItemMagazine FamasF1Mag;
+    public static ItemMagazine LAPAFA03Mag;
     public static ItemMagazine BeowulfMag;
     public static ItemMagazine M4AsiimovMag;
     public static ItemMagazine M38Mag;
@@ -29,7 +31,16 @@ public class Magazines {
     public static ItemMagazine Stanag100;
     public static ItemMagazine AK101Mag;
     public static ItemMagazine AK74Mag;
+    public static ItemMagazine RPK74Mag;
+    public static ItemMagazine AK74BlackMag;
+    public static ItemMagazine RPK74MBlackMag;
+    public static ItemMagazine AK74GreenMag;
+    public static ItemMagazine AK74PearlMag;
+    public static ItemMagazine AK74PlumMag;
+    public static ItemMagazine RPK74MPlumMag;
+    public static ItemMagazine AK74WhiteMag;
     public static ItemMagazine AK74Mag60;
+    public static ItemMagazine AKMVulcanMag;
     public static ItemMagazine AK60Mag;
     public static ItemMagazine AK15Mag;
     public static ItemMagazine AK12Mag;
@@ -37,12 +48,19 @@ public class Magazines {
     public static ItemMagazine AK75Mag545x39;
     public static ItemMagazine AK47PMAGTan;
     public static ItemMagazine AK47Mag;
+    public static ItemMagazine AKMMag;
+    public static ItemMagazine AKMGreenMag;
+    public static ItemMagazine AK103Mag;
     public static ItemMagazine DragunovMag;
+    public static ItemMagazine Dragunov20Mag;
+    public static ItemMagazine DragunovBakeMag;
     public static ItemMagazine AK50Mag;
     public static ItemMagazine AK75Mag;
     public static ItemMagazine AK100Mag;
     public static ItemMagazine M9A1Mag;
     public static ItemMagazine FiveSevenMag;
+    public static ItemMagazine FiveSeven30Mag;
+    public static ItemMagazine FiveSevenDrumMag;
     public static ItemMagazine SamuraiEdgeMag;
     public static ItemMagazine SCCYCPX2Mag;
     public static ItemMagazine SCCYCPX2MagExt;
@@ -63,12 +81,14 @@ public class Magazines {
     public static ItemMagazine NTW20Mag;
     public static ItemMagazine FrommerStopMag;
     public static ItemMagazine G36CMag;
+    public static ItemMagazine G36CMagRAL;
     public static ItemMagazine GlockMag13;
     public static ItemMagazine Glock18CMag;
     public static ItemMagazine GlockMag50;
     public static ItemMagazine L131A1Mag;
     public static ItemMagazine KBP9A91Mag;
     public static ItemMagazine KedrMag;
+    public static ItemMagazine Kedr30Mag;
     public static ItemMagazine L96A1Mag;
     public static ItemMagazine DSR1Mag;
     public static ItemMagazine DSR1MagExt;
@@ -93,10 +113,16 @@ public class Magazines {
     public static ItemMagazine M14Drum50;
     public static ItemMagazine MP40Mag;
     public static ItemMagazine MP5A5Mag;
+    public static ItemMagazine MP510Mag;
+    public static ItemMagazine MP540Mag;
+    public static ItemMagazine MP510PaleMag;
+    public static ItemMagazine MP540PaleMag;
     public static ItemMagazine HK50Drum;
     public static ItemMagazine MP7Mag;
     public static ItemMagazine MP7Mag20;
     public static ItemMagazine UMP45Mag;
+    public static ItemMagazine UMP40Mag;
+    public static ItemMagazine UMP10Mag;
     public static ItemMagazine UMP9Mag;
     public static ItemMagazine MPXMag;
     public static ItemMagazine APC9Mag;
@@ -113,6 +139,8 @@ public class Magazines {
     public static ItemMagazine Scar60Mag;
     public static ItemMagazine VSSVintorezMag;
     public static ItemMagazine ASValMag;
+    public static ItemMagazine Val30Mag;
+    public static ItemMagazine SR3MMag;
     public static ItemMagazine STG44Mag;
     public static ItemMagazine G43GewehrMag;
     public static ItemMagazine BrenMag;
@@ -156,14 +184,14 @@ public class Magazines {
                 })
                 .withMaxStackSize(6)
 //                .withCrafting(CraftingComplexity.MEDIUM,
-//                          MwItems.steelIngot,
-//                          MwItems.gunmetalIngot)
+//                          MWCItems.steelIngot,
+//                          MWCItems.gunmetalIngot)
                 .withTextureName("Dummy.png").build(ModernWarfareMod.MOD_CONTEXT, ItemMagazine.class);
-/*
+        
         Magazines.NinthSinMag = new ItemMagazine.Builder()
         		.withAmmo(100)
                 .withName("NinthSinMag")
-
+                
                 .withCreativeTab(ModernWarfareMod.AmmoTab)
                 .withModel(new com.paneedah.mwc.models.NinthSinMagazine(), "ninthsin.png")
 
@@ -185,15 +213,15 @@ public class Magazines {
                 })
                 .withMaxStackSize(6)
 //                .withCrafting(CraftingComplexity.MEDIUM,
-//                          MwItems.steelIngot,
-//                          MwItems.gunmetalIngot)
+//                          MWCItems.steelIngot,
+//                          MWCItems.gunmetalIngot)
                 .withTextureName("Dummy.png").build(ModernWarfareMod.MOD_CONTEXT, ItemMagazine.class);
-*/
+
         Magazines.BrenMag = new ItemMagazine.Builder()
         		.withAmmo(30)
         		.withCompatibleBullet(Bullets.Bullet762x51)
         		.withName("BrenMag")
-
+                
                 .withCreativeTab(ModernWarfareMod.AmmoTab)
                 .withModel(new com.paneedah.mwc.models.BrenMkIIMag(), "gun.png")
 
@@ -244,7 +272,7 @@ public class Magazines {
                 })
                 .withMaxStackSize(6)
                 .withCrafting(CraftingComplexity.MEDIUM,
-                          MWCItems.steelIngot,
+                              MWCItems.steelIngot,
                           MWCItems.gunmetalIngot)
                 .withTextureName("Dummy.png").build(ModernWarfareMod.MOD_CONTEXT, ItemMagazine.class);
         
@@ -253,7 +281,7 @@ public class Magazines {
         		.withCompatibleBullet(Bullets.Bullet45ACP)
         		.withName("VectorMag")
         		.withRotationPoint(-0.12000000357627871, 1.0400000309944155, -2.0400000607967383)
-
+                
                 .withCreativeTab(ModernWarfareMod.AmmoTab)
                 .withModel(new com.paneedah.mwc.models.KrissVectorMagazine(), "krissvector.png")
                 .withRequiredAttachments(Attachments.KrissVectorReceiver)
@@ -281,7 +309,7 @@ public class Magazines {
         		.withCompatibleBullet(Bullets.Bullet45ACP)
         		.withName("VectorDrumMag")
         		.withRotationPoint(-0.12000000357627871, 1.0400000309944155, -2.0400000607967383)
-
+                
                 .withCreativeTab(ModernWarfareMod.AmmoTab)
                 .withModel(new com.paneedah.mwc.models.KrissVectorMagazineDrum(), "krissvector.png")
                 .withRequiredAttachments(Attachments.KrissVectorReceiver)
@@ -309,7 +337,7 @@ public class Magazines {
         		.withCompatibleBullet(Bullets.Bullet556x45)
         		.withName("M4A1Mag_2")
         		.withRotationPoint(-0.16000000476837162, -0.16000000476837162, -1.5200000452995304)
-
+                
                 .withCreativeTab(ModernWarfareMod.AmmoTab)
                 .withModel(new com.paneedah.mwc.models.M4A1Mag(), "M4A1Magazine.png")
                 .withRequiredAttachments(Attachments.Placeholder, Attachments.M4Receiver, Attachments.VLTORReceiver, 
@@ -337,10 +365,10 @@ public class Magazines {
         
         Magazines.NGSWRMag = new ItemMagazine.Builder()
         		.withAmmo(20)
-        		.withCompatibleBullet(Bullets.Bullet556x45)
+        		.withCompatibleBullet(Bullets.Bullet65)
         		.withName("NGSWR_Mag")
         		.withRotationPoint(-0.16000000476837162, -0.44000001311302195, -1.4800000441074375)
-
+                
                 .withCreativeTab(ModernWarfareMod.AmmoTab)
                 .withModel(new com.paneedah.mwc.models.NGSWRMag(), "ngswr.png")
                 .withFirstPersonPositioning((player, itemStack) -> {
@@ -361,16 +389,70 @@ public class Magazines {
                 })
                 .withMaxStackSize(6)
                 .withTextureName("Dummy.png").build(ModernWarfareMod.MOD_CONTEXT, ItemMagazine.class);
+
+        Magazines.NGSWR25RDMag = new ItemMagazine.Builder()
+        		.withAmmo(25)
+        		.withCompatibleBullet(Bullets.Bullet65)
+        		.withName("NGSWR25_Mag")
+        		.withRotationPoint(-0.16000000476837162, -0.44000001311302195, -1.4800000441074375)
+                
+                .withCreativeTab(ModernWarfareMod.AmmoTab)
+                .withModel(new com.paneedah.mwc.models.NGSWR25RDMag(), "ngswr.png")
+                .withFirstPersonPositioning((player, itemStack) -> {
+                    GL11.glTranslatef(0.1F, -0.3F, 0.4F);
+                    GL11.glRotatef(30F, 0f, 1f, 0f);
+                    GL11.glScaled(0.7F, 0.7F, 0.7F);
+                }).withThirdPersonPositioning((player, itemStack) -> {
+                    GL11.glTranslatef(-0.3F, 0.5F, 0.1F);
+                    GL11.glRotatef(-50F, 0f, 1f, 0f);
+                    GL11.glRotatef(10F, 1f, 0f, 0f);
+                    GL11.glScaled(0.7F, 0.7F, 0.7F);
+                }).withInventoryPositioning((itemStack) -> {
+                    GL11.glTranslatef(0.3F, 1.3F, -2.8F);
+                    GL11.glRotatef(-150F, 0f, 1f, 0f);
+                    GL11.glRotatef(-6F, 1f, 0f, 0f);
+                    GL11.glRotatef(-15F, 0f, 0f, 1f);
+                    GL11.glScaled(1F, 1F, 1f);
+                })
+                .withMaxStackSize(6)
+                .withTextureName("Dummy.png").build(ModernWarfareMod.MOD_CONTEXT, ItemMagazine.class);
         
         Magazines.FamasF1Mag = new ItemMagazine.Builder()
-        		.withAmmo(30)
+        		.withAmmo(25)
         		.withCompatibleBullet(Bullets.Bullet556x45)
         		.withName("FamasF1Mag")
         		.withRotationPoint(-0.12000000357627871, 1.0400000309944155, -2.0400000607967383)
-
+                
                 .withCreativeTab(ModernWarfareMod.AmmoTab)
                 .withRequiredAttachments(Attachments.FamasPlaceholder, Attachments.Vector556Handguard)
                 .withModel(new com.paneedah.mwc.models.FamasF1Mag(), "famasf1.png")
+                .withFirstPersonPositioning((player, itemStack) -> {
+                    GL11.glTranslatef(0.1F, -0.3F, 0.4F);
+                    GL11.glRotatef(30F, 0f, 1f, 0f);
+                    GL11.glScaled(0.7F, 0.7F, 0.7F);
+                }).withThirdPersonPositioning((player, itemStack) -> {
+                    GL11.glTranslatef(-0.3F, 0.5F, 0.1F);
+                    GL11.glRotatef(-50F, 0f, 1f, 0f);
+                    GL11.glRotatef(10F, 1f, 0f, 0f);
+                    GL11.glScaled(0.7F, 0.7F, 0.7F);
+                }).withInventoryPositioning((itemStack) -> {
+                    GL11.glTranslatef(0.3F, -0.2F, 1.1F);
+                    GL11.glRotatef(-150F, 0f, 1f, 0f);
+                    GL11.glRotatef(-6F, 1f, 0f, 0f);
+                    GL11.glRotatef(-15F, 0f, 0f, 1f);
+                    GL11.glScaled(1F, 1F, 1f);
+                })
+                .withMaxStackSize(6)
+                .withTextureName("Dummy.png").build(ModernWarfareMod.MOD_CONTEXT, ItemMagazine.class);
+
+        Magazines.LAPAFA03Mag = new ItemMagazine.Builder()
+        		.withAmmo(20)
+        		.withCompatibleBullet(Bullets.Bullet556x45)
+        		.withName("LAPAFA03Mag")
+        		.withRotationPoint(-0.12000000357627871, 1.0400000309944155, -2.0400000607967383)
+                
+                .withCreativeTab(ModernWarfareMod.AmmoTab)
+                .withModel(new com.paneedah.mwc.models.LAPAFA03Mag(), "famasf1.png")
                 .withFirstPersonPositioning((player, itemStack) -> {
                     GL11.glTranslatef(0.1F, -0.3F, 0.4F);
                     GL11.glRotatef(30F, 0f, 1f, 0f);
@@ -394,7 +476,7 @@ public class Magazines {
         		.withAmmo(13)
         		.withCompatibleBullet(Bullets.Bullet50Beowulf)
         		.withName("BeowulfMag")
-
+                
                 .withCreativeTab(ModernWarfareMod.AmmoTab)
                 .withModel(new com.paneedah.mwc.models.Beowulf50CalMagazine(), "Beowulf50CalMagazine.png")
                 .withRequiredAttachments(Attachments.Placeholder, Attachments.M4Receiver, Attachments.VLTORReceiver, 
@@ -418,12 +500,13 @@ public class Magazines {
                 })
                 .withMaxStackSize(6)
                 .withTextureName("Dummy.png").build(ModernWarfareMod.MOD_CONTEXT, ItemMagazine.class);
+
         
         Magazines.SA80Mag = new ItemMagazine.Builder()
         		.withAmmo(60)
         		.withCompatibleBullet(Bullets.Bullet556x45)
         		.withName("SA80Mag")
-
+                
                 .withCreativeTab(ModernWarfareMod.AmmoTab)
                 .withModel(new com.paneedah.mwc.models.NATOMag60rnd(), "M4A1Mag.png")
                 .withRequiredAttachments(Attachments.Placeholder, Attachments.M4Receiver, Attachments.VLTORReceiver, 
@@ -562,7 +645,7 @@ public class Magazines {
         		.withCompatibleBullet(Bullets.Bullet556x45)
         		.withName("M249Mag")
         		.withRotationPoint(0.8812000082910061, 0.8648000418066975, -1.40640004143715)
-
+                
                 .withCreativeTab(ModernWarfareMod.AmmoTab)
                 .withModel(new com.paneedah.mwc.models.M249Mag(), "m249.png")
 
@@ -619,7 +702,7 @@ public class Magazines {
         		.withCompatibleBullet(Bullets.Bullet762x35)
         		.withName("HoneyBadgerMag_2")
         		.withRotationPoint(-0.16000000476837162, -0.16000000476837162, -1.5200000452995304)
-
+                
                 .withCreativeTab(ModernWarfareMod.AmmoTab)
                 .withModel(new com.paneedah.mwc.models.M4A1Mag(), "M4A1Mag.png")
 
@@ -648,7 +731,7 @@ public class Magazines {
         		.withCompatibleBullet(Bullets.Bullet556x45)
         		.withName("M38Mag_2")
         		.withRotationPoint(-0.16000000476837162, -0.16000000476837162, -1.5200000452995304)
-
+                
                 .withCreativeTab(ModernWarfareMod.AmmoTab)
                 .withModel(new com.paneedah.mwc.models.M38Mag(), "M38Mag.png")
                 .withRequiredAttachments(Attachments.Placeholder, Attachments.M4Receiver, Attachments.VLTORReceiver, 
@@ -731,29 +814,7 @@ public class Magazines {
                 .withMaxStackSize(6)
                 .withTextureName("Dummy.png").build(ModernWarfareMod.MOD_CONTEXT, ItemMagazine.class);
         
-        Magazines.C8Mag = new ItemMagazine.Builder().withAmmo(30).withCompatibleBullet(Bullets.Bullet556x45).withName("C8Mag")
-                .withCreativeTab(ModernWarfareMod.AmmoTab)
-                .withModel(new com.paneedah.mwc.models.C8Mag(), "c8mag.png")
-                .withRequiredAttachments(Attachments.Placeholder, Attachments.M4Receiver, Attachments.VLTORReceiver, 
-                        Attachments.AUGDefaultKit, Attachments.Vector556Handguard, Attachments.C8SFWReceiver)
-                .withFirstPersonPositioning((player, itemStack) -> {
-                    GL11.glTranslatef(0.1F, -0.3F, 0.4F);
-                    GL11.glRotatef(30F, 0f, 1f, 0f);
-                    GL11.glScaled(0.7F, 0.7F, 0.7F);
-                }).withThirdPersonPositioning((player, itemStack) -> {
-                    GL11.glTranslatef(-0.3F, 0.5F, 0.1F);
-                    GL11.glRotatef(-50F, 0f, 1f, 0f);
-                    GL11.glRotatef(10F, 1f, 0f, 0f);
-                    GL11.glScaled(0.7F, 0.7F, 0.7F);
-                }).withInventoryPositioning((itemStack) -> {
-                    GL11.glTranslatef(0.3F, 0.6F, -0.6F);
-                    GL11.glRotatef(-150F, 0f, 1f, 0f);
-                    GL11.glRotatef(-6F, 1f, 0f, 0f);
-                    GL11.glRotatef(-15F, 0f, 0f, 1f);
-                    GL11.glScaled(1.1F, 1.1F, 1.1f);
-                })
-                .withMaxStackSize(6)
-                .withTextureName("Dummy.png").build(ModernWarfareMod.MOD_CONTEXT, ItemMagazine.class);
+
         
         Magazines.Stanag50 = new ItemMagazine.Builder()
         		.withAmmo(50)
@@ -791,7 +852,7 @@ public class Magazines {
         		.withCompatibleBullet(Bullets.Bullet556x45)
         		.withName("Stanag60")
         		.withRotationPoint(-0.16000000476837162, -0.16000000476837162, -1.5200000452995304)
-
+                
                 .withCreativeTab(ModernWarfareMod.AmmoTab)
                 .withModel(new com.paneedah.mwc.models.Stanag60(), "gun.png")
                 .withRequiredAttachments(Attachments.Placeholder, Attachments.M4Receiver, Attachments.VLTORReceiver, 
@@ -852,7 +913,7 @@ public class Magazines {
         		.withCompatibleBullet(Bullets.Bullet556x45)
         		.withName("G36CMag_2")
         		.withRotationPoint(-0.040000001192092904, -0.28000000834465033, -1.4400000429153446)
-
+                
                 .withCreativeTab(ModernWarfareMod.AmmoTab)
                 .withModel(new com.paneedah.mwc.models.G36CMag(), "g36c.png")
 
@@ -874,13 +935,42 @@ public class Magazines {
                 })
                 .withMaxStackSize(6)
                 .withTextureName("Dummy.png").build(ModernWarfareMod.MOD_CONTEXT, ItemMagazine.class);
-        
+
+        Magazines.G36CMagRAL = new ItemMagazine.Builder()
+        		.withAmmo(30)
+        		.withCompatibleBullet(Bullets.Bullet556x45)
+        		.withName("G36CMagRAL")
+        		.withRotationPoint(-0.040000001192092904, -0.28000000834465033, -1.4400000429153446)
+                
+                .withCreativeTab(ModernWarfareMod.AmmoTab)
+                .withModel(new com.paneedah.mwc.models.G36CMag(), "g36cral8k.png")
+
+                .withFirstPersonPositioning((player, itemStack) -> {
+                    GL11.glTranslatef(0.1F, -0.3F, 0.4F);
+                    GL11.glRotatef(30F, 0f, 1f, 0f);
+                    GL11.glScaled(0.7F, 0.7F, 0.7F);
+                }).withThirdPersonPositioning((player, itemStack) -> {
+                    GL11.glTranslatef(-0.3F, 0.5F, 0.1F);
+                    GL11.glRotatef(-50F, 0f, 1f, 0f);
+                    GL11.glRotatef(10F, 1f, 0f, 0f);
+                    GL11.glScaled(0.7F, 0.7F, 0.7F);
+                }).withInventoryPositioning((itemStack) -> {
+                    GL11.glTranslatef(0.3F, 1F, -2.5F);
+                    GL11.glRotatef(-150F, 0f, 1f, 0f);
+                    GL11.glRotatef(-6F, 1f, 0f, 0f);
+                    GL11.glRotatef(-15F, 0f, 0f, 1f);
+                    GL11.glScaled(0.8F, 0.8F, 0.8f);
+                })
+                .withMaxStackSize(6)
+                .withTextureName("Dummy.png").build(ModernWarfareMod.MOD_CONTEXT, ItemMagazine.class);
+
+
         Magazines.AK101Mag = new ItemMagazine.Builder()
         		.withAmmo(30)
         		.withCompatibleBullet(Bullets.Bullet556x45)
         		.withName("AK101Mag_2")
         		.withRotationPoint(-0.12000000357627871, 0.28000000834465033, -1.8800000560283665)
-
+                
                 .withCreativeTab(ModernWarfareMod.AmmoTab)
                 .withModel(new com.paneedah.mwc.models.AK101Mag(), "ak101mag.png")
 
@@ -908,9 +998,233 @@ public class Magazines {
         		.withCompatibleBullet(Bullets.Bullet545x39)
         		.withName("AK74Mag")
         		.withRotationPoint(-0.12000000357627871, 0.28000000834465033, -1.8800000560283665)
-
+                
                 .withCreativeTab(ModernWarfareMod.AmmoTab)
                 .withModel(new com.paneedah.mwc.models.AK74Mag(), "ak74mag.png")
+
+                .withFirstPersonPositioning((player, itemStack) -> {
+                    GL11.glTranslatef(0.1F, -0.3F, 0.4F);
+                    GL11.glRotatef(30F, 0f, 1f, 0f);
+                    GL11.glScaled(0.7F, 0.7F, 0.7F);
+                }).withThirdPersonPositioning((player, itemStack) -> {
+                    GL11.glTranslatef(-0.3F, 0.5F, 0.1F);
+                    GL11.glRotatef(-50F, 0f, 1f, 0f);
+                    GL11.glRotatef(10F, 1f, 0f, 0f);
+                    GL11.glScaled(0.7F, 0.7F, 0.7F);
+                }).withInventoryPositioning((itemStack) -> {
+                    GL11.glTranslatef(0.3F, 0.7F, -2.7F);
+                    GL11.glRotatef(-150F, 0f, 1f, 0f);
+                    GL11.glRotatef(0F, 1f, 0f, 0f);
+                    GL11.glRotatef(-5F, 0f, 0f, 1f);
+                    GL11.glScaled(0.8F, 0.8F, 0.8f);
+                })
+                .withMaxStackSize(6)
+                .withTextureName("Dummy.png").build(ModernWarfareMod.MOD_CONTEXT, ItemMagazine.class);
+ 
+Magazines.RPK74Mag = new ItemMagazine.Builder()
+        		.withAmmo(45)
+        		.withCompatibleBullet(Bullets.Bullet545x39)
+        		.withName("RPK74Mag")
+        		.withRotationPoint(-0.12000000357627871, 0.28000000834465033, -1.8800000560283665)
+                
+                .withCreativeTab(ModernWarfareMod.AmmoTab)
+                .withModel(new com.paneedah.mwc.models.RPK74Mag(), "ak74mag.png")
+
+                .withFirstPersonPositioning((player, itemStack) -> {
+                    GL11.glTranslatef(0.1F, -0.3F, 0.4F);
+                    GL11.glRotatef(30F, 0f, 1f, 0f);
+                    GL11.glScaled(0.7F, 0.7F, 0.7F);
+                }).withThirdPersonPositioning((player, itemStack) -> {
+                    GL11.glTranslatef(-0.3F, 0.5F, 0.1F);
+                    GL11.glRotatef(-50F, 0f, 1f, 0f);
+                    GL11.glRotatef(10F, 1f, 0f, 0f);
+                    GL11.glScaled(0.7F, 0.7F, 0.7F);
+                }).withInventoryPositioning((itemStack) -> {
+                    GL11.glTranslatef(0.3F, 0.7F, -2.7F);
+                    GL11.glRotatef(-150F, 0f, 1f, 0f);
+                    GL11.glRotatef(0F, 1f, 0f, 0f);
+                    GL11.glRotatef(-5F, 0f, 0f, 1f);
+                    GL11.glScaled(0.8F, 0.8F, 0.8f);
+                })
+                .withMaxStackSize(6)
+                .withTextureName("Dummy.png").build(ModernWarfareMod.MOD_CONTEXT, ItemMagazine.class);
+
+        Magazines.AK74BlackMag = new ItemMagazine.Builder()
+        		.withAmmo(30)
+        		.withCompatibleBullet(Bullets.Bullet545x39)
+        		.withName("AK74BlackMag")
+        		.withRotationPoint(-0.12000000357627871, 0.28000000834465033, -1.8800000560283665)
+                
+                .withCreativeTab(ModernWarfareMod.AmmoTab)
+                .withModel(new com.paneedah.mwc.models.AK74Mag(), "ak74blackmag.png")
+
+                .withFirstPersonPositioning((player, itemStack) -> {
+                    GL11.glTranslatef(0.1F, -0.3F, 0.4F);
+                    GL11.glRotatef(30F, 0f, 1f, 0f);
+                    GL11.glScaled(0.7F, 0.7F, 0.7F);
+                }).withThirdPersonPositioning((player, itemStack) -> {
+                    GL11.glTranslatef(-0.3F, 0.5F, 0.1F);
+                    GL11.glRotatef(-50F, 0f, 1f, 0f);
+                    GL11.glRotatef(10F, 1f, 0f, 0f);
+                    GL11.glScaled(0.7F, 0.7F, 0.7F);
+                }).withInventoryPositioning((itemStack) -> {
+                    GL11.glTranslatef(0.3F, 0.7F, -2.7F);
+                    GL11.glRotatef(-150F, 0f, 1f, 0f);
+                    GL11.glRotatef(0F, 1f, 0f, 0f);
+                    GL11.glRotatef(-5F, 0f, 0f, 1f);
+                    GL11.glScaled(0.8F, 0.8F, 0.8f);
+                })
+                .withMaxStackSize(6)
+                .withTextureName("Dummy.png").build(ModernWarfareMod.MOD_CONTEXT, ItemMagazine.class);
+
+        Magazines.RPK74MBlackMag = new ItemMagazine.Builder()
+        		.withAmmo(45)
+        		.withCompatibleBullet(Bullets.Bullet545x39)
+        		.withName("RPK74MBlackMag")
+        		.withRotationPoint(-0.12000000357627871, 0.28000000834465033, -1.8800000560283665)
+                
+                .withCreativeTab(ModernWarfareMod.AmmoTab)
+                .withModel(new com.paneedah.mwc.models.RPK74MMag(), "ak74blackmag.png")
+
+                .withFirstPersonPositioning((player, itemStack) -> {
+                    GL11.glTranslatef(0.1F, -0.3F, 0.4F);
+                    GL11.glRotatef(30F, 0f, 1f, 0f);
+                    GL11.glScaled(0.7F, 0.7F, 0.7F);
+                }).withThirdPersonPositioning((player, itemStack) -> {
+                    GL11.glTranslatef(-0.3F, 0.5F, 0.1F);
+                    GL11.glRotatef(-50F, 0f, 1f, 0f);
+                    GL11.glRotatef(10F, 1f, 0f, 0f);
+                    GL11.glScaled(0.7F, 0.7F, 0.7F);
+                }).withInventoryPositioning((itemStack) -> {
+                    GL11.glTranslatef(0.3F, 0.7F, -2.7F);
+                    GL11.glRotatef(-150F, 0f, 1f, 0f);
+                    GL11.glRotatef(0F, 1f, 0f, 0f);
+                    GL11.glRotatef(-5F, 0f, 0f, 1f);
+                    GL11.glScaled(0.8F, 0.8F, 0.8f);
+                })
+                .withMaxStackSize(6)
+                .withTextureName("Dummy.png").build(ModernWarfareMod.MOD_CONTEXT, ItemMagazine.class);
+
+        Magazines.AK74GreenMag = new ItemMagazine.Builder()
+        		.withAmmo(30)
+        		.withCompatibleBullet(Bullets.Bullet545x39)
+        		.withName("AK74GreenMag")
+        		.withRotationPoint(-0.12000000357627871, 0.28000000834465033, -1.8800000560283665)
+                
+                .withCreativeTab(ModernWarfareMod.AmmoTab)
+                .withModel(new com.paneedah.mwc.models.AK74Mag(), "ak74greenmag.png")
+
+                .withFirstPersonPositioning((player, itemStack) -> {
+                    GL11.glTranslatef(0.1F, -0.3F, 0.4F);
+                    GL11.glRotatef(30F, 0f, 1f, 0f);
+                    GL11.glScaled(0.7F, 0.7F, 0.7F);
+                }).withThirdPersonPositioning((player, itemStack) -> {
+                    GL11.glTranslatef(-0.3F, 0.5F, 0.1F);
+                    GL11.glRotatef(-50F, 0f, 1f, 0f);
+                    GL11.glRotatef(10F, 1f, 0f, 0f);
+                    GL11.glScaled(0.7F, 0.7F, 0.7F);
+                }).withInventoryPositioning((itemStack) -> {
+                    GL11.glTranslatef(0.3F, 0.7F, -2.7F);
+                    GL11.glRotatef(-150F, 0f, 1f, 0f);
+                    GL11.glRotatef(0F, 1f, 0f, 0f);
+                    GL11.glRotatef(-5F, 0f, 0f, 1f);
+                    GL11.glScaled(0.8F, 0.8F, 0.8f);
+                })
+                .withMaxStackSize(6)
+                .withTextureName("Dummy.png").build(ModernWarfareMod.MOD_CONTEXT, ItemMagazine.class);
+
+        Magazines.AK74PearlMag = new ItemMagazine.Builder()
+        		.withAmmo(30)
+        		.withCompatibleBullet(Bullets.Bullet545x39)
+        		.withName("AK74PearlMag")
+        		.withRotationPoint(-0.12000000357627871, 0.28000000834465033, -1.8800000560283665)
+                
+                .withCreativeTab(ModernWarfareMod.AmmoTab)
+                .withModel(new com.paneedah.mwc.models.AK74Mag(), "ak74pearlmag.png")
+
+                .withFirstPersonPositioning((player, itemStack) -> {
+                    GL11.glTranslatef(0.1F, -0.3F, 0.4F);
+                    GL11.glRotatef(30F, 0f, 1f, 0f);
+                    GL11.glScaled(0.7F, 0.7F, 0.7F);
+                }).withThirdPersonPositioning((player, itemStack) -> {
+                    GL11.glTranslatef(-0.3F, 0.5F, 0.1F);
+                    GL11.glRotatef(-50F, 0f, 1f, 0f);
+                    GL11.glRotatef(10F, 1f, 0f, 0f);
+                    GL11.glScaled(0.7F, 0.7F, 0.7F);
+                }).withInventoryPositioning((itemStack) -> {
+                    GL11.glTranslatef(0.3F, 0.7F, -2.7F);
+                    GL11.glRotatef(-150F, 0f, 1f, 0f);
+                    GL11.glRotatef(0F, 1f, 0f, 0f);
+                    GL11.glRotatef(-5F, 0f, 0f, 1f);
+                    GL11.glScaled(0.8F, 0.8F, 0.8f);
+                })
+                .withMaxStackSize(6)
+                .withTextureName("Dummy.png").build(ModernWarfareMod.MOD_CONTEXT, ItemMagazine.class);
+
+        Magazines.AK74PlumMag = new ItemMagazine.Builder()
+        		.withAmmo(30)
+        		.withCompatibleBullet(Bullets.Bullet545x39)
+        		.withName("AK74PlumMag")
+        		.withRotationPoint(-0.12000000357627871, 0.28000000834465033, -1.8800000560283665)
+                
+                .withCreativeTab(ModernWarfareMod.AmmoTab)
+                .withModel(new com.paneedah.mwc.models.AK74Mag(), "ak74plummag.png")
+
+                .withFirstPersonPositioning((player, itemStack) -> {
+                    GL11.glTranslatef(0.1F, -0.3F, 0.4F);
+                    GL11.glRotatef(30F, 0f, 1f, 0f);
+                    GL11.glScaled(0.7F, 0.7F, 0.7F);
+                }).withThirdPersonPositioning((player, itemStack) -> {
+                    GL11.glTranslatef(-0.3F, 0.5F, 0.1F);
+                    GL11.glRotatef(-50F, 0f, 1f, 0f);
+                    GL11.glRotatef(10F, 1f, 0f, 0f);
+                    GL11.glScaled(0.7F, 0.7F, 0.7F);
+                }).withInventoryPositioning((itemStack) -> {
+                    GL11.glTranslatef(0.3F, 0.7F, -2.7F);
+                    GL11.glRotatef(-150F, 0f, 1f, 0f);
+                    GL11.glRotatef(0F, 1f, 0f, 0f);
+                    GL11.glRotatef(-5F, 0f, 0f, 1f);
+                    GL11.glScaled(0.8F, 0.8F, 0.8f);
+                })
+                .withMaxStackSize(6)
+                .withTextureName("Dummy.png").build(ModernWarfareMod.MOD_CONTEXT, ItemMagazine.class);
+
+        Magazines.RPK74MPlumMag = new ItemMagazine.Builder()
+        		.withAmmo(45)
+        		.withCompatibleBullet(Bullets.Bullet545x39)
+        		.withName("RPK74MPLumMag")
+        		.withRotationPoint(-0.12000000357627871, 0.28000000834465033, -1.8800000560283665)
+                
+                .withCreativeTab(ModernWarfareMod.AmmoTab)
+                .withModel(new com.paneedah.mwc.models.RPK74MMag(), "ak74plummag.png")
+
+                .withFirstPersonPositioning((player, itemStack) -> {
+                    GL11.glTranslatef(0.1F, -0.3F, 0.4F);
+                    GL11.glRotatef(30F, 0f, 1f, 0f);
+                    GL11.glScaled(0.7F, 0.7F, 0.7F);
+                }).withThirdPersonPositioning((player, itemStack) -> {
+                    GL11.glTranslatef(-0.3F, 0.5F, 0.1F);
+                    GL11.glRotatef(-50F, 0f, 1f, 0f);
+                    GL11.glRotatef(10F, 1f, 0f, 0f);
+                    GL11.glScaled(0.7F, 0.7F, 0.7F);
+                }).withInventoryPositioning((itemStack) -> {
+                    GL11.glTranslatef(0.3F, 0.7F, -2.7F);
+                    GL11.glRotatef(-150F, 0f, 1f, 0f);
+                    GL11.glRotatef(0F, 1f, 0f, 0f);
+                    GL11.glRotatef(-5F, 0f, 0f, 1f);
+                    GL11.glScaled(0.8F, 0.8F, 0.8f);
+                })
+                .withMaxStackSize(6)
+                .withTextureName("Dummy.png").build(ModernWarfareMod.MOD_CONTEXT, ItemMagazine.class);
+
+        Magazines.AK74WhiteMag = new ItemMagazine.Builder()
+        		.withAmmo(30)
+        		.withCompatibleBullet(Bullets.Bullet545x39)
+        		.withName("AK74WhiteMag")
+        		.withRotationPoint(-0.12000000357627871, 0.28000000834465033, -1.8800000560283665)
+                
+                .withCreativeTab(ModernWarfareMod.AmmoTab)
+                .withModel(new com.paneedah.mwc.models.AK74Mag(), "ak74whitemag.png")
 
                 .withFirstPersonPositioning((player, itemStack) -> {
                     GL11.glTranslatef(0.1F, -0.3F, 0.4F);
@@ -936,7 +1250,7 @@ public class Magazines {
         		.withCompatibleBullet(Bullets.Bullet545x39)
         		.withName("AK74Mag60")
         		.withRotationPoint(-0.12000000357627871, 0.28000000834465033, -1.8800000560283665)
-
+                
                 .withCreativeTab(ModernWarfareMod.AmmoTab)
                 .withModel(new com.paneedah.mwc.models.AK60Mag(), "gun.png")
 
@@ -959,12 +1273,13 @@ public class Magazines {
                 .withMaxStackSize(6)
                 .withTextureName("Dummy.png").build(ModernWarfareMod.MOD_CONTEXT, ItemMagazine.class);
         
+
         Magazines.AK60Mag = new ItemMagazine.Builder()
         		.withAmmo(60)
         		.withCompatibleBullet(Bullets.Bullet556x45)
         		.withName("AK60Mag")
         		.withRotationPoint(-0.12000000357627871, 0.28000000834465033, -1.8800000560283665)
-
+                
                 .withCreativeTab(ModernWarfareMod.AmmoTab)
                 .withModel(new com.paneedah.mwc.models.AK60Mag(), "gun.png")
 
@@ -992,7 +1307,7 @@ public class Magazines {
         		.withCompatibleBullet(Bullets.Bullet762x39)
         		.withName("AK15Mag_2")
         		.withRotationPoint(-0.12000000357627871, 0.28000000834465033, -1.8800000560283665)
-
+                
                 .withCreativeTab(ModernWarfareMod.AmmoTab)
                 .withModel(new com.paneedah.mwc.models.AK15Mag(), "gun.png")
 
@@ -1020,7 +1335,7 @@ public class Magazines {
         		.withCompatibleBullet(Bullets.Bullet545x39)
         		.withName("AK12Mag_2")
         		.withRotationPoint(-0.12000000357627871, 0.28000000834465033, -1.8800000560283665)
-
+                
                 .withCreativeTab(ModernWarfareMod.AmmoTab)
                 .withModel(new com.paneedah.mwc.models.AK15Mag(), "gun.png")
 
@@ -1048,7 +1363,7 @@ public class Magazines {
         		.withCompatibleBullet(Bullets.Bullet545x39)
         		.withName("AK75Mag545x39")
         		.withRotationPoint(-0.12000000357627871, 0.28000000834465033, -1.8800000560283665)
-
+                
                 .withCreativeTab(ModernWarfareMod.AmmoTab)
                 .withModel(new com.paneedah.mwc.models.Mag75rnd(), "gun.png")
                 .withFirstPersonPositioning((player, itemStack) -> {
@@ -1102,7 +1417,7 @@ public class Magazines {
         		.withCompatibleBullet(Bullets.Bullet762x39)
         		.withName("AK47PMAGTan")
         		.withRotationPoint(-0.12000000357627871, 0.28000000834465033, -1.8800000560283665)
-
+                
                 .withCreativeTab(ModernWarfareMod.AmmoTab)
                 .withModel(new com.paneedah.mwc.models.AK15Mag(), "tan.png")
 
@@ -1130,9 +1445,93 @@ public class Magazines {
         		.withCompatibleBullet(Bullets.Bullet762x39)
         		.withName("AK47Mag")
         		.withRotationPoint(-0.12000000357627871, 0.28000000834465033, -1.880000056028367)
-
+                
                 .withCreativeTab(ModernWarfareMod.AmmoTab)
                 .withModel(new com.paneedah.mwc.models.Magazine762x39(), "ak47mag.png")
+
+                .withFirstPersonPositioning((player, itemStack) -> {
+                    GL11.glTranslatef(0.1F, -0.3F, 0.4F);
+                    GL11.glRotatef(30F, 0f, 1f, 0f);
+                    GL11.glScaled(0.7F, 0.7F, 0.7F);
+                }).withThirdPersonPositioning((player, itemStack) -> {
+                    GL11.glTranslatef(-0.3F, 0.5F, 0.1F);
+                    GL11.glRotatef(-50F, 0f, 1f, 0f);
+                    GL11.glRotatef(10F, 1f, 0f, 0f);
+                    GL11.glScaled(0.7F, 0.7F, 0.7F);
+                }).withInventoryPositioning((itemStack) -> {
+                    GL11.glTranslatef(0.3F, 0.7f, -2.7F);
+                    GL11.glRotatef(-150F, 0f, 1f, 0f);
+                    GL11.glRotatef(0F, 1f, 0f, 0f);
+                    GL11.glRotatef(-5F, 0f, 0f, 1f);
+                    GL11.glScaled(0.7F, 0.7F, 0.7f);
+                })
+                .withMaxStackSize(6)
+                .withTextureName("Dummy.png").build(ModernWarfareMod.MOD_CONTEXT, ItemMagazine.class);
+
+        Magazines.AKMMag = new ItemMagazine.Builder()
+        		.withAmmo(30)
+        		.withCompatibleBullet(Bullets.Bullet762x39)
+        		.withName("AKMMag")
+        		.withRotationPoint(-0.12000000357627871, 0.28000000834465033, -1.880000056028367)
+                
+                .withCreativeTab(ModernWarfareMod.AmmoTab)
+                .withModel(new com.paneedah.mwc.models.AKMmag(), "ak74mag.png")
+
+                .withFirstPersonPositioning((player, itemStack) -> {
+                    GL11.glTranslatef(0.1F, -0.3F, 0.4F);
+                    GL11.glRotatef(30F, 0f, 1f, 0f);
+                    GL11.glScaled(0.7F, 0.7F, 0.7F);
+                }).withThirdPersonPositioning((player, itemStack) -> {
+                    GL11.glTranslatef(-0.3F, 0.5F, 0.1F);
+                    GL11.glRotatef(-50F, 0f, 1f, 0f);
+                    GL11.glRotatef(10F, 1f, 0f, 0f);
+                    GL11.glScaled(0.7F, 0.7F, 0.7F);
+                }).withInventoryPositioning((itemStack) -> {
+                    GL11.glTranslatef(0.3F, 0.7f, -2.7F);
+                    GL11.glRotatef(-150F, 0f, 1f, 0f);
+                    GL11.glRotatef(0F, 1f, 0f, 0f);
+                    GL11.glRotatef(-5F, 0f, 0f, 1f);
+                    GL11.glScaled(0.7F, 0.7F, 0.7f);
+                })
+                .withMaxStackSize(6)
+                .withTextureName("Dummy.png").build(ModernWarfareMod.MOD_CONTEXT, ItemMagazine.class);
+
+        Magazines.AKMGreenMag = new ItemMagazine.Builder()
+        		.withAmmo(30)
+        		.withCompatibleBullet(Bullets.Bullet762x39)
+        		.withName("AKMGreenMag")
+        		.withRotationPoint(-0.12000000357627871, 0.28000000834465033, -1.880000056028367)
+                
+                .withCreativeTab(ModernWarfareMod.AmmoTab)
+                .withModel(new com.paneedah.mwc.models.AKMmag(), "akmmag.png")
+
+                .withFirstPersonPositioning((player, itemStack) -> {
+                    GL11.glTranslatef(0.1F, -0.3F, 0.4F);
+                    GL11.glRotatef(30F, 0f, 1f, 0f);
+                    GL11.glScaled(0.7F, 0.7F, 0.7F);
+                }).withThirdPersonPositioning((player, itemStack) -> {
+                    GL11.glTranslatef(-0.3F, 0.5F, 0.1F);
+                    GL11.glRotatef(-50F, 0f, 1f, 0f);
+                    GL11.glRotatef(10F, 1f, 0f, 0f);
+                    GL11.glScaled(0.7F, 0.7F, 0.7F);
+                }).withInventoryPositioning((itemStack) -> {
+                    GL11.glTranslatef(0.3F, 0.7f, -2.7F);
+                    GL11.glRotatef(-150F, 0f, 1f, 0f);
+                    GL11.glRotatef(0F, 1f, 0f, 0f);
+                    GL11.glRotatef(-5F, 0f, 0f, 1f);
+                    GL11.glScaled(0.7F, 0.7F, 0.7f);
+                })
+                .withMaxStackSize(6)
+                .withTextureName("Dummy.png").build(ModernWarfareMod.MOD_CONTEXT, ItemMagazine.class);
+
+        Magazines.AK103Mag = new ItemMagazine.Builder()
+        		.withAmmo(30)
+        		.withCompatibleBullet(Bullets.Bullet762x39)
+        		.withName("AK103Mag")
+        		.withRotationPoint(-0.12000000357627871, 0.28000000834465033, -1.880000056028367)
+                
+                .withCreativeTab(ModernWarfareMod.AmmoTab)
+                .withModel(new com.paneedah.mwc.models.AKMmag(), "ak74blackmag.png")
 
                 .withFirstPersonPositioning((player, itemStack) -> {
                     GL11.glTranslatef(0.1F, -0.3F, 0.4F);
@@ -1158,7 +1557,7 @@ public class Magazines {
         		.withCompatibleBullet(Bullets.Bullet762x39)
         		.withName("AK50Mag")
         		.withRotationPoint(-0.12000000357627871, 0.28000000834465033, -1.8800000560283665)
-
+                
                 .withCreativeTab(ModernWarfareMod.AmmoTab)
                 .withModel(new com.paneedah.mwc.models.Drum50AK(), "gun.png")
 
@@ -1186,7 +1585,7 @@ public class Magazines {
         		.withCompatibleBullet(Bullets.Bullet762x39)
         		.withName("AK75Mag")
         		.withRotationPoint(-0.12000000357627871, 0.28000000834465033, -1.8800000560283665)
-
+                
                 .withCreativeTab(ModernWarfareMod.AmmoTab)
                 .withModel(new com.paneedah.mwc.models.Mag75rnd(), "gun.png")
                 .withFirstPersonPositioning((player, itemStack) -> {
@@ -1213,7 +1612,7 @@ public class Magazines {
         		.withCompatibleBullet(Bullets.Bullet762x39)
         		.withName("AK100Mag")
         		.withRotationPoint(-0.12000000357627871, 0.28000000834465033, -1.8800000560283665)
-
+                
                 .withCreativeTab(ModernWarfareMod.AmmoTab)
                 .withModel(new com.paneedah.mwc.models.AKDrum100(), "gun.png")
 
@@ -1238,12 +1637,70 @@ public class Magazines {
         
         Magazines.DragunovMag = new ItemMagazine.Builder()
         		.withAmmo(10)
-        		.withCompatibleBullet(Bullets.Bullet762x39)
+        		.withCompatibleBullet(Bullets.Bullet762x54)
         		.withName("DragunovMag")
         		.withRotationPoint(-0.12000000357627871, 0.28000000834465033, -1.880000056028367)
-
+                
                 .withCreativeTab(ModernWarfareMod.AmmoTab)
                 .withModel(new com.paneedah.mwc.models.DragunovMag(), "dragunov.png")
+
+                .withFirstPersonPositioning((player, itemStack) -> {
+                    GL11.glTranslatef(0.1F, -0.3F, 0.4F);
+                    GL11.glRotatef(30F, 0f, 1f, 0f);
+                    GL11.glScaled(0.7F, 0.7F, 0.7F);
+                }).withThirdPersonPositioning((player, itemStack) -> {
+                    GL11.glTranslatef(-0.3F, 0.5F, 0.1F);
+                    GL11.glRotatef(-50F, 0f, 1f, 0f);
+                    GL11.glRotatef(10F, 1f, 0f, 0f);
+                    GL11.glScaled(0.7F, 0.7F, 0.7F);
+                }).withInventoryPositioning((itemStack) -> {
+                    GL11.glTranslatef(0.3F, 0.7f, -2.7F);
+                    GL11.glRotatef(-150F, 0f, 1f, 0f);
+                    GL11.glRotatef(0F, 1f, 0f, 0f);
+                    GL11.glRotatef(-5F, 0f, 0f, 1f);
+                    GL11.glScaled(0.7F, 0.7F, 0.7f);
+                })
+                .withMaxStackSize(6)
+                .withTextureName("Dummy.png")
+                .build(ModernWarfareMod.MOD_CONTEXT, ItemMagazine.class);
+
+        Magazines.Dragunov20Mag = new ItemMagazine.Builder()
+        		.withAmmo(20)
+        		.withCompatibleBullet(Bullets.Bullet762x54)
+        		.withName("Dragunov20Mag")
+        		.withRotationPoint(-0.12000000357627871, 0.28000000834465033, -1.880000056028367)
+                
+                .withCreativeTab(ModernWarfareMod.AmmoTab)
+                .withModel(new com.paneedah.mwc.models.Dragunov20Mag(), "dragunov.png")
+
+                .withFirstPersonPositioning((player, itemStack) -> {
+                    GL11.glTranslatef(0.1F, -0.3F, 0.4F);
+                    GL11.glRotatef(30F, 0f, 1f, 0f);
+                    GL11.glScaled(0.7F, 0.7F, 0.7F);
+                }).withThirdPersonPositioning((player, itemStack) -> {
+                    GL11.glTranslatef(-0.3F, 0.5F, 0.1F);
+                    GL11.glRotatef(-50F, 0f, 1f, 0f);
+                    GL11.glRotatef(10F, 1f, 0f, 0f);
+                    GL11.glScaled(0.7F, 0.7F, 0.7F);
+                }).withInventoryPositioning((itemStack) -> {
+                    GL11.glTranslatef(0.3F, 0.7f, -2.7F);
+                    GL11.glRotatef(-150F, 0f, 1f, 0f);
+                    GL11.glRotatef(0F, 1f, 0f, 0f);
+                    GL11.glRotatef(-5F, 0f, 0f, 1f);
+                    GL11.glScaled(0.7F, 0.7F, 0.7f);
+                })
+                .withMaxStackSize(6)
+                .withTextureName("Dummy.png")
+                .build(ModernWarfareMod.MOD_CONTEXT, ItemMagazine.class);
+
+        Magazines.DragunovBakeMag = new ItemMagazine.Builder()
+        		.withAmmo(20)
+        		.withCompatibleBullet(Bullets.Bullet762x54)
+        		.withName("DragunovBakeMag")
+        		.withRotationPoint(-0.12000000357627871, 0.28000000834465033, -1.880000056028367)
+                
+                .withCreativeTab(ModernWarfareMod.AmmoTab)
+                .withModel(new com.paneedah.mwc.models.DragunovBakeMag(), "ak74mag.png")
 
                 .withFirstPersonPositioning((player, itemStack) -> {
                     GL11.glTranslatef(0.1F, -0.3F, 0.4F);
@@ -1350,7 +1807,7 @@ public class Magazines {
         		.withCompatibleBullet(Bullets.Bullet9x19mm)
         		.withName("M9Mag_2")
         		.withRotationPoint(-0.16000000476837162, 0.5600000166893007, 0.040000001192092904)
-
+                
                 .withCreativeTab(ModernWarfareMod.AmmoTab)
                 .withModel(new com.paneedah.mwc.models.M9A1mag(), "m9a1.png")
                 .withRequiredAttachments(Attachments.M9A1Body, Attachments.P226Slide)
@@ -1378,9 +1835,63 @@ public class Magazines {
         		.withCompatibleBullet(Bullets.Bullet57x28mm)
         		.withName("FiveSevenMag")
         		.withRotationPoint(-0.16000000476837162, 0.5600000166893007, 0.040000001192092904)
-
+                
                 .withCreativeTab(ModernWarfareMod.AmmoTab)
                 .withModel(new com.paneedah.mwc.models.FiveSevenMagazine(), "fiveseven.png")
+                .withFirstPersonPositioning((player, itemStack) -> {
+                    GL11.glTranslatef(0.1F, -0.3F, 0.4F);
+                    GL11.glRotatef(30F, 0f, 1f, 0f);
+                    GL11.glScaled(0.7F, 0.7F, 0.7F);
+                }).withThirdPersonPositioning((player, itemStack) -> {
+                    GL11.glTranslatef(-0.3F, 0.5F, 0.1F);
+                    GL11.glRotatef(-50F, 0f, 1f, 0f);
+                    GL11.glRotatef(10F, 1f, 0f, 0f);
+                    GL11.glScaled(0.7F, 0.7F, 0.7F);
+                }).withInventoryPositioning((itemStack) -> {
+                    GL11.glTranslatef(0.3F, 0.5f, -1F);
+                    GL11.glRotatef(-150F, 0f, 1f, 0f);
+                    GL11.glRotatef(0F, 1f, 0f, 0f);
+                    GL11.glRotatef(-5F, 0f, 0f, 1f);
+                    GL11.glScaled(0.9F, 0.9F, 0.9f);
+                })
+                .withMaxStackSize(6)
+                .withTextureName("Dummy.png").build(ModernWarfareMod.MOD_CONTEXT, ItemMagazine.class);
+
+        Magazines.FiveSeven30Mag = new ItemMagazine.Builder()
+        		.withAmmo(30)
+        		.withCompatibleBullet(Bullets.Bullet57x28mm)
+        		.withName("FiveSeven30Mag")
+        		.withRotationPoint(-0.16000000476837162, 0.5600000166893007, 0.040000001192092904)
+                
+                .withCreativeTab(ModernWarfareMod.AmmoTab)
+                .withModel(new com.paneedah.mwc.models.FiveSeven30Magazine(), "fiveseven.png")
+                .withFirstPersonPositioning((player, itemStack) -> {
+                    GL11.glTranslatef(0.1F, -0.3F, 0.4F);
+                    GL11.glRotatef(30F, 0f, 1f, 0f);
+                    GL11.glScaled(0.7F, 0.7F, 0.7F);
+                }).withThirdPersonPositioning((player, itemStack) -> {
+                    GL11.glTranslatef(-0.3F, 0.5F, 0.1F);
+                    GL11.glRotatef(-50F, 0f, 1f, 0f);
+                    GL11.glRotatef(10F, 1f, 0f, 0f);
+                    GL11.glScaled(0.7F, 0.7F, 0.7F);
+                }).withInventoryPositioning((itemStack) -> {
+                    GL11.glTranslatef(0.3F, 0.5f, -1F);
+                    GL11.glRotatef(-150F, 0f, 1f, 0f);
+                    GL11.glRotatef(0F, 1f, 0f, 0f);
+                    GL11.glRotatef(-5F, 0f, 0f, 1f);
+                    GL11.glScaled(0.9F, 0.9F, 0.9f);
+                })
+                .withMaxStackSize(6)
+                .withTextureName("Dummy.png").build(ModernWarfareMod.MOD_CONTEXT, ItemMagazine.class);
+
+        Magazines.FiveSevenDrumMag = new ItemMagazine.Builder()
+        		.withAmmo(55)
+        		.withCompatibleBullet(Bullets.Bullet57x28mm)
+        		.withName("FiveSevenDrumMag")
+        		.withRotationPoint(-0.16000000476837162, 0.5600000166893007, 0.040000001192092904)
+                
+                .withCreativeTab(ModernWarfareMod.AmmoTab)
+                .withModel(new com.paneedah.mwc.models.FiveSevenDrumMagazine(), "fiveseven.png")
                 .withFirstPersonPositioning((player, itemStack) -> {
                     GL11.glTranslatef(0.1F, -0.3F, 0.4F);
                     GL11.glRotatef(30F, 0f, 1f, 0f);
@@ -1429,7 +1940,7 @@ public class Magazines {
         		.withCompatibleBullet(Bullets.Bullet9x19mm)
         		.withName("sccycpx2mag")
         		.withRotationPoint(-0.16000000476837162, 0.5600000166893007, 0.040000001192092904)
-
+                
                 .withCreativeTab(ModernWarfareMod.AmmoTab)
                 .withModel(new com.paneedah.mwc.models.SCCYCPX2Mag(), "sccycpx2.png")
 
@@ -1457,7 +1968,7 @@ public class Magazines {
         		.withCompatibleBullet(Bullets.Bullet9x19mm)
         		.withName("sccycpx2magext")
         		.withRotationPoint(-0.16000000476837162, 0.5600000166893007, 0.040000001192092904)
-
+                
                 .withCreativeTab(ModernWarfareMod.AmmoTab)
                 .withModel(new com.paneedah.mwc.models.SCCYCPX2MagExt(), "sccycpx2.png")
 
@@ -1485,7 +1996,7 @@ public class Magazines {
         		.withCompatibleBullet(Bullets.Bullet50AE)
         		.withName("DesertEagleMag")
         		.withRotationPoint(-0.16000000476837162, 0.5600000166893007, 0.040000001192092904)
-
+                
                 .withCreativeTab(ModernWarfareMod.AmmoTab)
                 .withModel(new com.paneedah.mwc.models.DesertEagleMag(), "deagle.png")
 
@@ -1714,6 +2225,7 @@ public class Magazines {
                 })
                 .withMaxStackSize(6)
                 .withTextureName("Dummy.png").build(ModernWarfareMod.MOD_CONTEXT, ItemMagazine.class);
+
         
         Magazines.USP45Mag = new ItemMagazine.Builder().withAmmo(8).withCompatibleBullet(Bullets.Bullet45ACP).withName("USP45Mag")
                 .withCreativeTab(ModernWarfareMod.AmmoTab)
@@ -1839,6 +2351,7 @@ public class Magazines {
                 .withMaxStackSize(6)
                 .withTextureName("Dummy.png").build(ModernWarfareMod.MOD_CONTEXT, ItemMagazine.class);
         
+
         Magazines.Glock18CMag = new ItemMagazine.Builder().withAmmo(20).withCompatibleBullet(Bullets.Bullet9x19mm).withName("Glock18Cmag_2")
                 .withCreativeTab(ModernWarfareMod.AmmoTab)
                 .withModel(new com.paneedah.mwc.models.Glock18Cmag(), "glock18c.png")
@@ -1916,7 +2429,7 @@ public class Magazines {
         		.withCompatibleBullet(Bullets.Bullet50BMG)
         		.withName("M82Mag_2")
         		.withRotationPoint(-0.12000000357627871, 0.40000001192092904, -2.4800000739097605)
-
+                
                 .withCreativeTab(ModernWarfareMod.AmmoTab)
                 .withModel(new com.paneedah.mwc.models.M82Mag(), "m82.png")
 
@@ -1992,9 +2505,32 @@ public class Magazines {
                 .withMaxStackSize(6)
                 .withTextureName("Dummy.png").build(ModernWarfareMod.MOD_CONTEXT, ItemMagazine.class);
         
-        Magazines.KedrMag = new ItemMagazine.Builder().withAmmo(20).withCompatibleBullet(Bullets.Bullet9x19mm).withName("KedrMag_2")
+        Magazines.KedrMag = new ItemMagazine.Builder().withAmmo(20).withCompatibleBullet(Bullets.Bullet9x18mm).withName("KedrMag_2")
                 .withCreativeTab(ModernWarfareMod.AmmoTab)
                 .withModel(new com.paneedah.mwc.models.KedrMag(), "kedr.png")
+
+                .withFirstPersonPositioning((player, itemStack) -> {
+                    GL11.glTranslatef(0.1F, -0.3F, 0.4F);
+                    GL11.glRotatef(30F, 0f, 1f, 0f);
+                    GL11.glScaled(0.7F, 0.7F, 0.7F);
+                }).withThirdPersonPositioning((player, itemStack) -> {
+                    GL11.glTranslatef(-0.3F, 0.5F, 0.1F);
+                    GL11.glRotatef(-50F, 0f, 1f, 0f);
+                    GL11.glRotatef(10F, 1f, 0f, 0f);
+                    GL11.glScaled(0.7F, 0.7F, 0.7F);
+                }).withInventoryPositioning((itemStack) -> {
+                    GL11.glTranslatef(0.3F, 0.8f, -2.2F);
+                    GL11.glRotatef(-150F, 0f, 1f, 0f);
+                    GL11.glRotatef(0F, 1f, 0f, 0f);
+                    GL11.glRotatef(-5F, 0f, 0f, 1f);
+                    GL11.glScaled(0.8F, 0.8F, 0.8f);
+                })
+                .withMaxStackSize(6)
+                .withTextureName("Dummy.png").build(ModernWarfareMod.MOD_CONTEXT, ItemMagazine.class);
+
+        Magazines.Kedr30Mag = new ItemMagazine.Builder().withAmmo(30).withCompatibleBullet(Bullets.Bullet9x18mm).withName("Kedr30Mag")
+                .withCreativeTab(ModernWarfareMod.AmmoTab)
+                .withModel(new com.paneedah.mwc.models.Kedr30Mag(), "kedr.png")
 
                 .withFirstPersonPositioning((player, itemStack) -> {
                     GL11.glTranslatef(0.1F, -0.3F, 0.4F);
@@ -2045,7 +2581,7 @@ public class Magazines {
         		.withAmmo(5)
         		.withCompatibleBullet(Bullets.Bullet762x54)
         		.withName("DSR1Mag")
-
+                
                 .withCreativeTab(ModernWarfareMod.AmmoTab)
                 .withModel(new com.paneedah.mwc.models.DSR1Mag(), "dsr1.png")
 
@@ -2075,7 +2611,7 @@ public class Magazines {
         		.withAmmo(10)
         		.withCompatibleBullet(Bullets.Bullet762x54)
         		.withName("DSR1MagExt")
-
+                
                 .withCreativeTab(ModernWarfareMod.AmmoTab)
                 .withModel(new com.paneedah.mwc.models.DSR1MagExt(), "dsr1.png")
 
@@ -2134,7 +2670,7 @@ public class Magazines {
         		.withAmmo(7)
         		.withCompatibleBullet(Bullets.Bullet308Winchester)
         		.withName("M40A6Mag_2")
-
+                
                 .withCreativeTab(ModernWarfareMod.AmmoTab)
                 .withModel(new com.paneedah.mwc.models.M40A6Mag(), "gunwerkshamr.png")
 
@@ -2160,6 +2696,7 @@ public class Magazines {
                           MWCItems.gunmetalIngot)
                 .withTextureName("Dummy.png").build(ModernWarfareMod.MOD_CONTEXT, ItemMagazine.class);
         
+
         Magazines.R700Mag = new ItemMagazine.Builder().withAmmo(5).withCompatibleBullet(Bullets.Bullet762x54).withName("R700Mag")
                 .withCreativeTab(ModernWarfareMod.AmmoTab)
                 .withModel(new com.paneedah.mwc.models.Remington700Mag(), "remington700.png")
@@ -2241,11 +2778,40 @@ public class Magazines {
                           MWCItems.gunmetalIngot)
                 .withTextureName("Dummy.png").build(ModernWarfareMod.MOD_CONTEXT, ItemMagazine.class);
         
+        Magazines.HecateIIMag = new ItemMagazine.Builder()
+        		.withAmmo(7)
+        		.withCompatibleBullet(Bullets.Bullet50BMG)
+        		.withName("HecateIIMag")
+                .withCreativeTab(ModernWarfareMod.AmmoTab)
+                .withModel(new com.paneedah.mwc.models.PGMHecateIIMagazine(), "pgmhecateii.png")
+
+                .withFirstPersonPositioning((player, itemStack) -> {
+                    GL11.glTranslatef(0.1F, -0.3F, 0.4F);
+                    GL11.glRotatef(30F, 0f, 1f, 0f);
+                    GL11.glScaled(0.7F, 0.7F, 0.7F);
+                }).withThirdPersonPositioning((player, itemStack) -> {
+                    GL11.glTranslatef(-0.3F, 0.5F, 0.1F);
+                    GL11.glRotatef(-50F, 0f, 1f, 0f);
+                    GL11.glRotatef(10F, 1f, 0f, 0f);
+                    GL11.glScaled(0.7F, 0.7F, 0.7F);
+                }).withInventoryPositioning((itemStack) -> {
+                    GL11.glTranslatef(0.3F, 1.8f, -3.9F);
+                    GL11.glRotatef(-150F, 0f, 1f, 0f);
+                    GL11.glRotatef(0F, 1f, 0f, 0f);
+                    GL11.glRotatef(-5F, 0f, 0f, 1f);
+                    GL11.glScaled(1.1F, 1.1F, 1.1f);
+                })
+                .withMaxStackSize(6)
+                .withCrafting(CraftingComplexity.MEDIUM,
+                          MWCItems.steelIngot,
+                          MWCItems.gunmetalIngot)
+                .withTextureName("Dummy.png").build(ModernWarfareMod.MOD_CONTEXT, ItemMagazine.class);
+        
         Magazines.M110Mag = new ItemMagazine.Builder()
         		.withAmmo(10)
         		.withCompatibleBullet(Bullets.Bullet762x51)
         		.withName("M110Mag_2")
-
+                
                 .withCreativeTab(ModernWarfareMod.AmmoTab)
                 .withModel(new com.paneedah.mwc.models.M110Mag(), "m110.png")
                 .withFirstPersonPositioning((player, itemStack) -> {
@@ -2272,7 +2838,7 @@ public class Magazines {
         		.withCompatibleBullet(Bullets.Bullet762x51)
         		.withName("Z10Mag")
         		.withRotationPoint(-0.1, 0.0, -1.4000000000000001)
-
+                
                 .withCreativeTab(ModernWarfareMod.AmmoTab)
                 .withModel(new com.paneedah.mwc.models.Z10Mag(), "z10.png")
                 .withFirstPersonPositioning((player, itemStack) -> {
@@ -2429,7 +2995,7 @@ public class Magazines {
         		.withAmmo(15)
         		.withCompatibleBullet(Bullets.Bullet762x51)
         		.withName("M1CarbineMag")
-
+                
                 .withCreativeTab(ModernWarfareMod.AmmoTab)
                 .withModel(new com.paneedah.mwc.models.Mk14EBRmag(), "m14dmr.png")
 
@@ -2460,7 +3026,7 @@ public class Magazines {
         		.withCompatibleBullet(Bullets.Bullet762x51)
         		.withName("FNFALMag")
         		.withRotationPoint(-0.12000000357627871, -0.6800000202655794, -2.36000007033348)
-
+                
                 .withCreativeTab(ModernWarfareMod.AmmoTab)
                 .withModel(new com.paneedah.mwc.models.FNFALMag(), "fnfal.png")
 
@@ -2488,7 +3054,7 @@ public class Magazines {
         		.withCompatibleBullet(Bullets.Bullet762x51)
         		.withName("G3Mag")
         		.withRotationPoint(0.0, -0.6400000190734865, -1.4000000417232517)
-
+                
                 .withCreativeTab(ModernWarfareMod.AmmoTab)
                 .withModel(new com.paneedah.mwc.models.G3Mag(), "G3.png")
 
@@ -2516,7 +3082,7 @@ public class Magazines {
         		.withCompatibleBullet(Bullets.Bullet762x51)
         		.withName("Mk14EBRmag_2")
         		.withRotationPoint(-0.12000000357627871, 0.5600000166893007, -3.000000089406967)
-
+                
                 .withCreativeTab(ModernWarfareMod.AmmoTab)
                 .withModel(new com.paneedah.mwc.models.Mk14EBRmag(), "m14dmr.png")
 
@@ -2544,7 +3110,7 @@ public class Magazines {
         		.withCompatibleBullet(Bullets.Bullet762x51)
         		.withName("M14Drum50")
         		.withRotationPoint(-0.12000000357627871, 0.5600000166893007, -3.000000089406967)
-
+                
                 .withCreativeTab(ModernWarfareMod.AmmoTab)
                 .withModel(new com.paneedah.mwc.models.M14Drum50(), "gun.png")
 
@@ -2598,9 +3164,121 @@ public class Magazines {
         		.withCompatibleBullet(Bullets.Bullet9x19mm)
         		.withName("MP5A5Mag")
         		.withRotationPoint(0.0, 0.20000000596046452, -1.5600000464916233)
-
+                
                 .withCreativeTab(ModernWarfareMod.AmmoTab)
                 .withModel(new com.paneedah.mwc.models.HKMP5Mag(), "mp5.png")
+
+                .withFirstPersonPositioning((player, itemStack) -> {
+                    GL11.glTranslatef(0.1F, -0.3F, 0.4F);
+                    GL11.glRotatef(30F, 0f, 1f, 0f);
+                    GL11.glScaled(0.7F, 0.7F, 0.7F);
+                }).withThirdPersonPositioning((player, itemStack) -> {
+                    GL11.glTranslatef(-0.3F, 0.5F, 0.1F);
+                    GL11.glRotatef(-50F, 0f, 1f, 0f);
+                    GL11.glRotatef(10F, 1f, 0f, 0f);
+                    GL11.glScaled(0.7F, 0.7F, 0.7F);
+                }).withInventoryPositioning((itemStack) -> {
+                    GL11.glTranslatef(0.3F, 0.9F, -2.2F);
+                    GL11.glRotatef(-150F, 0f, 1f, 0f);
+                    GL11.glRotatef(-6F, 1f, 0f, 0f);
+                    GL11.glRotatef(-15F, 0f, 0f, 1f);
+                    GL11.glScaled(0.7F, 0.7F, 0.7f);
+                })
+                .withMaxStackSize(6)
+                .withTextureName("Dummy.png").build(ModernWarfareMod.MOD_CONTEXT, ItemMagazine.class);
+       
+ Magazines.MP510Mag = new ItemMagazine.Builder()
+        		.withAmmo(30)
+        		.withCompatibleBullet(Bullets.Bullet10mm)
+        		.withName("MP510Mag")
+        		.withRotationPoint(0.0, 0.20000000596046452, -1.5600000464916233)
+                
+                .withCreativeTab(ModernWarfareMod.AmmoTab)
+                .withModel(new com.paneedah.mwc.models.MP540Mag(), "mp5smokemag.png")
+
+                .withFirstPersonPositioning((player, itemStack) -> {
+                    GL11.glTranslatef(0.1F, -0.3F, 0.4F);
+                    GL11.glRotatef(30F, 0f, 1f, 0f);
+                    GL11.glScaled(0.7F, 0.7F, 0.7F);
+                }).withThirdPersonPositioning((player, itemStack) -> {
+                    GL11.glTranslatef(-0.3F, 0.5F, 0.1F);
+                    GL11.glRotatef(-50F, 0f, 1f, 0f);
+                    GL11.glRotatef(10F, 1f, 0f, 0f);
+                    GL11.glScaled(0.7F, 0.7F, 0.7F);
+                }).withInventoryPositioning((itemStack) -> {
+                    GL11.glTranslatef(0.3F, 0.9F, -2.2F);
+                    GL11.glRotatef(-150F, 0f, 1f, 0f);
+                    GL11.glRotatef(-6F, 1f, 0f, 0f);
+                    GL11.glRotatef(-15F, 0f, 0f, 1f);
+                    GL11.glScaled(0.7F, 0.7F, 0.7f);
+                })
+                .withMaxStackSize(6)
+                .withTextureName("Dummy.png").build(ModernWarfareMod.MOD_CONTEXT, ItemMagazine.class);
+
+ Magazines.MP540Mag = new ItemMagazine.Builder()
+        		.withAmmo(30)
+        		.withCompatibleBullet(Bullets.Bullet40SW)
+        		.withName("MP540Mag")
+        		.withRotationPoint(0.0, 0.20000000596046452, -1.5600000464916233)
+                
+                .withCreativeTab(ModernWarfareMod.AmmoTab)
+                .withModel(new com.paneedah.mwc.models.MP540Mag(), "mp5smokemag.png")
+
+                .withFirstPersonPositioning((player, itemStack) -> {
+                    GL11.glTranslatef(0.1F, -0.3F, 0.4F);
+                    GL11.glRotatef(30F, 0f, 1f, 0f);
+                    GL11.glScaled(0.7F, 0.7F, 0.7F);
+                }).withThirdPersonPositioning((player, itemStack) -> {
+                    GL11.glTranslatef(-0.3F, 0.5F, 0.1F);
+                    GL11.glRotatef(-50F, 0f, 1f, 0f);
+                    GL11.glRotatef(10F, 1f, 0f, 0f);
+                    GL11.glScaled(0.7F, 0.7F, 0.7F);
+                }).withInventoryPositioning((itemStack) -> {
+                    GL11.glTranslatef(0.3F, 0.9F, -2.2F);
+                    GL11.glRotatef(-150F, 0f, 1f, 0f);
+                    GL11.glRotatef(-6F, 1f, 0f, 0f);
+                    GL11.glRotatef(-15F, 0f, 0f, 1f);
+                    GL11.glScaled(0.7F, 0.7F, 0.7f);
+                })
+                .withMaxStackSize(6)
+                .withTextureName("Dummy.png").build(ModernWarfareMod.MOD_CONTEXT, ItemMagazine.class);
+
+ Magazines.MP510PaleMag = new ItemMagazine.Builder()
+        		.withAmmo(30)
+        		.withCompatibleBullet(Bullets.Bullet10mm)
+        		.withName("MP510PaleMag")
+        		.withRotationPoint(0.0, 0.20000000596046452, -1.5600000464916233)
+                
+                .withCreativeTab(ModernWarfareMod.AmmoTab)
+                .withModel(new com.paneedah.mwc.models.MP510Mag(), "mp5palemag.png")
+
+                .withFirstPersonPositioning((player, itemStack) -> {
+                    GL11.glTranslatef(0.1F, -0.3F, 0.4F);
+                    GL11.glRotatef(30F, 0f, 1f, 0f);
+                    GL11.glScaled(0.7F, 0.7F, 0.7F);
+                }).withThirdPersonPositioning((player, itemStack) -> {
+                    GL11.glTranslatef(-0.3F, 0.5F, 0.1F);
+                    GL11.glRotatef(-50F, 0f, 1f, 0f);
+                    GL11.glRotatef(10F, 1f, 0f, 0f);
+                    GL11.glScaled(0.7F, 0.7F, 0.7F);
+                }).withInventoryPositioning((itemStack) -> {
+                    GL11.glTranslatef(0.3F, 0.9F, -2.2F);
+                    GL11.glRotatef(-150F, 0f, 1f, 0f);
+                    GL11.glRotatef(-6F, 1f, 0f, 0f);
+                    GL11.glRotatef(-15F, 0f, 0f, 1f);
+                    GL11.glScaled(0.7F, 0.7F, 0.7f);
+                })
+                .withMaxStackSize(6)
+                .withTextureName("Dummy.png").build(ModernWarfareMod.MOD_CONTEXT, ItemMagazine.class);
+
+ Magazines.MP540PaleMag = new ItemMagazine.Builder()
+        		.withAmmo(30)
+        		.withCompatibleBullet(Bullets.Bullet40SW)
+        		.withName("MP540PaleMag")
+        		.withRotationPoint(0.0, 0.20000000596046452, -1.5600000464916233)
+                
+                .withCreativeTab(ModernWarfareMod.AmmoTab)
+                .withModel(new com.paneedah.mwc.models.MP510Mag(), "mp5palemag.png")
 
                 .withFirstPersonPositioning((player, itemStack) -> {
                     GL11.glTranslatef(0.1F, -0.3F, 0.4F);
@@ -2626,7 +3304,7 @@ public class Magazines {
         		.withCompatibleBullet(Bullets.Bullet9x19mm)
         		.withName("HK50Drum")
         		.withRotationPoint(0.0, 0.20000000596046452, -1.5600000464916233)
-
+                
                 .withCreativeTab(ModernWarfareMod.AmmoTab)
                 .withModel(new com.paneedah.mwc.models.HK50Drum(), "mp5.png")
 
@@ -2654,7 +3332,7 @@ public class Magazines {
         		.withCompatibleBullet(Bullets.Bullet46x30mm)
         		.withName("MP7Mag")
         		.withRotationPoint(-0.12000000357627871, 0.6400000190734865, -0.08000000238418581)
-
+                
                 .withCreativeTab(ModernWarfareMod.AmmoTab)
                 .withModel(new com.paneedah.mwc.models.MP7Mag(), "mp7.png")
 //                .withRequiredAttachments(Attachments.VeprDustCover)
@@ -2682,7 +3360,7 @@ public class Magazines {
         		.withCompatibleBullet(Bullets.Bullet46x30mm)
         		.withName("MP7Mag20")
         		.withRotationPoint(-0.12000000357627871, 0.6400000190734865, -0.08000000238418581)
-
+                
                 .withCreativeTab(ModernWarfareMod.AmmoTab)
                 .withModel(new com.paneedah.mwc.models.MP7Mag20(), "mp7.png")
 //                .withRequiredAttachments(Attachments.VeprDustCover)
@@ -2711,6 +3389,62 @@ public class Magazines {
         		.withName("UMP45Mag")
         		.withRotationPoint(-0.12000000357627871, 0.32000000953674324, -1.280000038146973)
         		.withRequiredAttachments(Attachments.UMP45Receiver)
+                .withCreativeTab(ModernWarfareMod.AmmoTab)
+                .withModel(new UMP45mag(), "ump45.png")
+
+                .withFirstPersonPositioning((player, itemStack) -> {
+                    GL11.glTranslatef(0.1F, -0.3F, 0.4F);
+                    GL11.glRotatef(30F, 0f, 1f, 0f);
+                    GL11.glScaled(0.7F, 0.7F, 0.7F);
+                }).withThirdPersonPositioning((player, itemStack) -> {
+                    GL11.glTranslatef(-0.3F, 0.5F, 0.1F);
+                    GL11.glRotatef(-50F, 0f, 1f, 0f);
+                    GL11.glRotatef(10F, 1f, 0f, 0f);
+                    GL11.glScaled(0.7F, 0.7F, 0.7F);
+                }).withInventoryPositioning((itemStack) -> {
+                    GL11.glTranslatef(0.3F, 0.9F, -2.2F);
+                    GL11.glRotatef(-150F, 0f, 1f, 0f);
+                    GL11.glRotatef(-6F, 1f, 0f, 0f);
+                    GL11.glRotatef(-15F, 0f, 0f, 1f);
+                    GL11.glScaled(0.7F, 0.7F, 0.7f);
+                })
+                .withMaxStackSize(6)
+                .withTextureName("Dummy.png").build(ModernWarfareMod.MOD_CONTEXT, ItemMagazine.class);
+
+        Magazines.UMP40Mag = new ItemMagazine.Builder()
+        		.withAmmo(30)
+        		.withCompatibleBullet(Bullets.Bullet40SW)
+        		.withName("UMP40Mag")
+        		.withRotationPoint(-0.12000000357627871, 0.32000000953674324, -1.280000038146973)
+        		.withRequiredAttachments(Attachments.UMP40Receiver)
+                .withCreativeTab(ModernWarfareMod.AmmoTab)
+                .withModel(new UMP45mag(), "ump45.png")
+
+                .withFirstPersonPositioning((player, itemStack) -> {
+                    GL11.glTranslatef(0.1F, -0.3F, 0.4F);
+                    GL11.glRotatef(30F, 0f, 1f, 0f);
+                    GL11.glScaled(0.7F, 0.7F, 0.7F);
+                }).withThirdPersonPositioning((player, itemStack) -> {
+                    GL11.glTranslatef(-0.3F, 0.5F, 0.1F);
+                    GL11.glRotatef(-50F, 0f, 1f, 0f);
+                    GL11.glRotatef(10F, 1f, 0f, 0f);
+                    GL11.glScaled(0.7F, 0.7F, 0.7F);
+                }).withInventoryPositioning((itemStack) -> {
+                    GL11.glTranslatef(0.3F, 0.9F, -2.2F);
+                    GL11.glRotatef(-150F, 0f, 1f, 0f);
+                    GL11.glRotatef(-6F, 1f, 0f, 0f);
+                    GL11.glRotatef(-15F, 0f, 0f, 1f);
+                    GL11.glScaled(0.7F, 0.7F, 0.7f);
+                })
+                .withMaxStackSize(6)
+                .withTextureName("Dummy.png").build(ModernWarfareMod.MOD_CONTEXT, ItemMagazine.class);
+
+        Magazines.UMP10Mag = new ItemMagazine.Builder()
+        		.withAmmo(30)
+        		.withCompatibleBullet(Bullets.Bullet10mm)
+        		.withName("UMP10Mag")
+        		.withRotationPoint(-0.12000000357627871, 0.32000000953674324, -1.280000038146973)
+        		.withRequiredAttachments(Attachments.UMP10Receiver)
                 .withCreativeTab(ModernWarfareMod.AmmoTab)
                 .withModel(new UMP45mag(), "ump45.png")
 
@@ -2766,7 +3500,7 @@ public class Magazines {
         		.withCompatibleBullet(Bullets.Bullet9x19mm)
         		.withName("MPXMag")
         		.withRotationPoint(-0.040000001192092904, 0.44000001311302195, -1.24000003695488)
-
+                
                 .withCreativeTab(ModernWarfareMod.AmmoTab)
                 .withModel(new com.paneedah.mwc.models.MPXMag(), "mpx.png")
 
@@ -2792,7 +3526,7 @@ public class Magazines {
         Magazines.APC9Mag = new ItemMagazine.Builder().withAmmo(30)
         		.withCompatibleBullet(Bullets.Bullet9x19mm)
         		.withName("APC9Mag")
-
+                
                 .withCreativeTab(ModernWarfareMod.AmmoTab)
                 .withModel(new com.paneedah.mwc.models.APC9Mag(), "apc9.png")
                 .withFirstPersonPositioning((player, itemStack) -> {
@@ -2822,7 +3556,7 @@ public class Magazines {
         		.withCompatibleBullet(Bullets.Bullet9x19mm)
         		.withName("ScorpionMag")
         		.withRotationPoint(-0.12000000357627871, 1.0000000298023226, -1.680000050067902)
-
+                
                 .withCreativeTab(ModernWarfareMod.AmmoTab)
                 .withModel(new com.paneedah.mwc.models.ScorpionEVO3A1Magazine(), "scorpionevo3a1.png")
 
@@ -2850,7 +3584,7 @@ public class Magazines {
         		.withCompatibleBullet(Bullets.Bullet57x28mm)
         		.withName("P90Mag")
         		.withRotationPoint(-0.12000000357627871, -1.1200000333786013, 1.8400000548362736)
-
+                
                 .withCreativeTab(ModernWarfareMod.AmmoTab)
                 .withModel(new com.paneedah.mwc.models.P90Mag(), "p90.png")
                 .withRequiredAttachments(Attachments.P90DefaultKit, Attachments.AR57Receiver)
@@ -2930,7 +3664,7 @@ public class Magazines {
         		.withCompatibleBullet(Bullets.Bullet473x33mm)
                 .withName("G11Mag")
                 .withRotationPoint(-0.12000000357627871, -1.5200000452995304, -3.8800001156330115)
-
+                
                 .withCreativeTab(ModernWarfareMod.AmmoTab)
                 .withModel(new com.paneedah.mwc.models.G11Mag(), "gun.png")
                 .withFirstPersonPositioning((player, itemStack) -> {
@@ -2960,7 +3694,7 @@ public class Magazines {
         		.withCompatibleBullet(Bullets.Bullet762x51)
         		.withName("ScarHMag_2")
         		.withRotationPoint(-0.16000000476837162, -0.16000000476837162, -1.5200000452995304)
-
+                
                 .withCreativeTab(ModernWarfareMod.AmmoTab)
                 .withModel(new com.paneedah.mwc.models.ScarHMag(), "scarh.png")
 
@@ -2988,7 +3722,7 @@ public class Magazines {
         		.withCompatibleBullet(Bullets.Bullet762x51)
         		.withName("Scar40Mag")
         		.withRotationPoint(-0.16000000476837162, -0.16000000476837162, -1.5200000452995304)
-
+                
                 .withCreativeTab(ModernWarfareMod.AmmoTab)
                 .withModel(new com.paneedah.mwc.models.Scar40Mag(), "gun.png")
 
@@ -3016,7 +3750,7 @@ public class Magazines {
         		.withCompatibleBullet(Bullets.Bullet762x51)
         		.withName("Scar60Mag")
         		.withRotationPoint(-0.16000000476837162, -0.16000000476837162, -1.5200000452995304)
-
+                
                 .withCreativeTab(ModernWarfareMod.AmmoTab)
                 .withModel(new com.paneedah.mwc.models.Stanag50(), "gun.png")
 
@@ -3044,7 +3778,7 @@ public class Magazines {
         		.withCompatibleBullet(Bullets.Bullet9x39mm)
         		.withName("VSSVintorezMag_2")
         		.withRotationPoint(-0.040000001192092904, -0.28000000834465033, -1.3600000405311587)
-
+                
                 .withCreativeTab(ModernWarfareMod.AmmoTab)
                 .withModel(new com.paneedah.mwc.models.VSSVintorezMag(), "vssvintorez.png")
 
@@ -3072,9 +3806,66 @@ public class Magazines {
         		.withCompatibleBullet(Bullets.Bullet9x39mm)
         		.withName("ASValMag")
         		.withRotationPoint(-0.040000001192092904, -0.28000000834465033, -1.3600000405311587)
-
+                
                 .withCreativeTab(ModernWarfareMod.AmmoTab)
                 .withModel(new com.paneedah.mwc.models.ASValMag(), "vssvintorez.png")
+
+                .withFirstPersonPositioning((player, itemStack) -> {
+                    GL11.glTranslatef(0.1F, -0.3F, 0.4F);
+                    GL11.glRotatef(30F, 0f, 1f, 0f);
+                    GL11.glScaled(0.7F, 0.7F, 0.7F);
+                }).withThirdPersonPositioning((player, itemStack) -> {
+                    GL11.glTranslatef(-0.3F, 0.5F, 0.1F);
+                    GL11.glRotatef(-50F, 0f, 1f, 0f);
+                    GL11.glRotatef(10F, 1f, 0f, 0f);
+                    GL11.glScaled(0.7F, 0.7F, 0.7F);
+                }).withInventoryPositioning((itemStack) -> {
+                    GL11.glTranslatef(0.3F, 0.8F, -2.6F);
+                    GL11.glRotatef(-150F, 0f, 1f, 0f);
+                    GL11.glRotatef(-6F, 1f, 0f, 0f);
+                    GL11.glRotatef(-15F, 0f, 0f, 1f);
+                    GL11.glScaled(0.75F, 0.75F, 0.75f);
+                })
+                .withMaxStackSize(6)
+                .withTextureName("Dummy.png").build(ModernWarfareMod.MOD_CONTEXT, ItemMagazine.class);
+        
+
+                   Magazines.Val30Mag = new ItemMagazine.Builder()
+        		.withAmmo(30)
+        		.withCompatibleBullet(Bullets.Bullet9x39mm)
+        		.withName("Val30Mag")
+        		.withRotationPoint(-0.040000001192092904, -0.28000000834465033, -1.3600000405311587)
+                
+                .withCreativeTab(ModernWarfareMod.AmmoTab)
+                .withModel(new com.paneedah.mwc.models.Val30Mag(), "vssvintorez.png")
+
+                .withFirstPersonPositioning((player, itemStack) -> {
+                    GL11.glTranslatef(0.1F, -0.3F, 0.4F);
+                    GL11.glRotatef(30F, 0f, 1f, 0f);
+                    GL11.glScaled(0.7F, 0.7F, 0.7F);
+                }).withThirdPersonPositioning((player, itemStack) -> {
+                    GL11.glTranslatef(-0.3F, 0.5F, 0.1F);
+                    GL11.glRotatef(-50F, 0f, 1f, 0f);
+                    GL11.glRotatef(10F, 1f, 0f, 0f);
+                    GL11.glScaled(0.7F, 0.7F, 0.7F);
+                }).withInventoryPositioning((itemStack) -> {
+                    GL11.glTranslatef(0.3F, 0.8F, -2.6F);
+                    GL11.glRotatef(-150F, 0f, 1f, 0f);
+                    GL11.glRotatef(-6F, 1f, 0f, 0f);
+                    GL11.glRotatef(-15F, 0f, 0f, 1f);
+                    GL11.glScaled(0.75F, 0.75F, 0.75f);
+                })
+                .withMaxStackSize(6)
+                .withTextureName("Dummy.png").build(ModernWarfareMod.MOD_CONTEXT, ItemMagazine.class);
+
+                   Magazines.SR3MMag = new ItemMagazine.Builder()
+        		.withAmmo(30)
+        		.withCompatibleBullet(Bullets.Bullet9x39mm)
+        		.withName("SR3MMag")
+        		.withRotationPoint(-0.040000001192092904, -0.28000000834465033, -1.3600000405311587)
+                
+                .withCreativeTab(ModernWarfareMod.AmmoTab)
+                .withModel(new com.paneedah.mwc.models.SR3MMag(), "vssm.png")
 
                 .withFirstPersonPositioning((player, itemStack) -> {
                     GL11.glTranslatef(0.1F, -0.3F, 0.4F);
@@ -3178,7 +3969,7 @@ public class Magazines {
         		.withCompatibleBullet(Bullets.Bullet9x19mm)
         		.withName("UziMag_2")
         		.withRotationPoint(-0.040000001192092904, 0.7200000214576723, -0.40000001192092904)
-
+                
                 .withCreativeTab(ModernWarfareMod.AmmoTab)
                 .withModel(new com.paneedah.mwc.models.UziMag(), "gun.png")
 
@@ -3209,7 +4000,7 @@ public class Magazines {
         		.withCompatibleBullet(Bullets.Bullet9x19mm)
         		.withName("VP70mag_2")
         		.withRotationPoint(-0.12000000357627871, 0.24000000715255743, 0.08000000238418581)
-
+                
                 .withCreativeTab(ModernWarfareMod.AmmoTab)
                 .withModel(new com.paneedah.mwc.models.VP70mag(), "gun.png")
                 .withFirstPersonPositioning((player, itemStack) -> {

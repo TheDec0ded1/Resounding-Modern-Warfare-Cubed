@@ -35,6 +35,14 @@ public class UniversalSoundRegistry {
 		UniversalSoundLookup.registerSoundToLookup("akmag_insert");
 		UniversalSoundLookup.registerSoundToLookup("akmag_touchgun");
 		UniversalSoundLookup.registerSoundToLookup("akmag_unload");
+                UniversalSoundLookup.registerSoundToLookup("svdaction_back");
+		UniversalSoundLookup.registerSoundToLookup("svdaction_forward");
+		UniversalSoundLookup.registerSoundToLookup("svdmag_insert");
+		UniversalSoundLookup.registerSoundToLookup("svdmag_touchgun");
+		UniversalSoundLookup.registerSoundToLookup("svdmag_unload");
+		UniversalSoundLookup.registerSoundToLookup("vssmag_insert");
+		UniversalSoundLookup.registerSoundToLookup("vssmag_touchgun");
+		UniversalSoundLookup.registerSoundToLookup("vssmag_unload");
 		UniversalSoundLookup.registerSoundToLookup("pistolmag_insert");
 		UniversalSoundLookup.registerSoundToLookup("pistolmag_touchgun");
 		UniversalSoundLookup.registerSoundToLookup("pistolmag_unload");
@@ -49,5 +57,26 @@ public class UniversalSoundRegistry {
 		UniversalSoundLookup.registerSoundToLookup("smallmag_unload");
 		UniversalSoundLookup.registerSoundToLookup("attachmenton");
 		UniversalSoundLookup.registerSoundToLookup("attachmentoff");
+		UniversalSoundLookup.registerSoundToLookup("ngswr_mag_insert");
+		UniversalSoundLookup.registerSoundToLookup("ngswr_mag_smack");
+		UniversalSoundLookup.registerSoundToLookup("ngswr_mag_unload");
+		UniversalSoundLookup.registerSoundToLookup("ngswr_bolt_press");
+		UniversalSoundLookup.registerSoundToLookup("ngswr_bolt_smack");
+		UniversalSoundLookup.registerSoundToLookup("ngswr_chargehandle_back");
+		UniversalSoundLookup.registerSoundToLookup("ngswr_chargehandle_forward");
+		UniversalSoundLookup.registerSoundToLookup("mcx_mag_insert");
+		UniversalSoundLookup.registerSoundToLookup("mcx_mag_smack");
+		UniversalSoundLookup.registerSoundToLookup("mcx_mag_unload");
+		UniversalSoundLookup.registerSoundToLookup("mcx_bolt_press");
+		UniversalSoundLookup.registerSoundToLookup("mcx_bolt_smack");
+		UniversalSoundLookup.registerSoundToLookup("mcx_chargehandle_back");
+		UniversalSoundLookup.registerSoundToLookup("mcx_chargehandle_forward");
+		UniversalSoundLookup.registerSoundToLookup("mpx_mag_insert");
+		UniversalSoundLookup.registerSoundToLookup("mpx_mag_smack");
+		UniversalSoundLookup.registerSoundToLookup("mpx_mag_unload");
+		UniversalSoundLookup.registerSoundToLookup("mpx_bolt_press");
+		UniversalSoundLookup.registerSoundToLookup("mpx_bolt_smack");
+		UniversalSoundLookup.registerSoundToLookup("mpx_chargehandle_back");
+		UniversalSoundLookup.registerSoundToLookup("mpx_chargehandle_forward");
 	}
 }
