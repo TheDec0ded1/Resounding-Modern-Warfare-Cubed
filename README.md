@@ -13,12 +13,10 @@ I am experimenting with adding attachments, magazines, and hopefully guns. At th
 ---
 
 ### How do I compile?
-1. Install [Java 1.8 JDK](https://adoptium.net/en-GB/temurin/releases/?version=8). Verify you're running it in console using `java -version`.
-2. Clone the repository.
-4. Run `./gradlew build` to compile the mod.
-5. The compiled jar file will be in the `build/libs` folder.
-6. Enjoy the mod!
-
-**Warning:** _Ensure that you build (step 3) it __before__ trying to open the project or it __WONT WORK__!_
+1. Install Intellij IDEA
+2. (Optional) Rename the 'Resounding-Modern-Warfare-active' Folder to RMWC to shorten the compiled file name.
+3. Open Intellij IDEA, click Open Project, and select the RMWC folder.
+4. Click the 'Gradle' icon on the right side of the window, then navigate to tasks/build/build.
+5. Run the build task, the finished mod will be in RWMC/build/libs/.
 
 ---
