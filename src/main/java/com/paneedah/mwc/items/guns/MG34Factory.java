@@ -43,7 +43,7 @@ public class MG34Factory {
         .withFlashScale(() -> 0.6f)
         .withFlashOffsetX(() -> 0.11f)
         .withFlashOffsetY(() -> 0.14f)
-        .withInaccuracy(1f)
+        //         .withInaccuracy(1f)
         .withCreativeTab(ModernWarfareMod.AssaultRiflesTab)
         .withInformationProvider(stack -> Arrays.asList(
         "Type: General-Purpose Machine Gun",

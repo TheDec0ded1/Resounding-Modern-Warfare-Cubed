@@ -1,4 +1,7 @@
 package com.paneedah.mwc.items.guns;
+// Package
+
+// IMPORT LIST START
 
 import com.paneedah.mwc.ModernWarfareMod;
 import com.paneedah.mwc.init.MWCItems;
@@ -7,27 +10,24 @@ import com.paneedah.mwc.proxies.CommonProxy;
 import com.paneedah.mwc.weapons.Attachments;
 import com.paneedah.mwc.weapons.AuxiliaryAttachments;
 import com.paneedah.mwc.weapons.Magazines;
-import com.paneedah.weaponlib.AttachmentCategory;
-import com.paneedah.weaponlib.RenderableState;
-import com.paneedah.weaponlib.Weapon;
-import com.paneedah.weaponlib.WeaponRenderer;
+import com.paneedah.weaponlib.*;
 import com.paneedah.weaponlib.animation.Transform;
 import com.paneedah.weaponlib.animation.Transition;
 import com.paneedah.weaponlib.compatibility.RecoilParam;
 import com.paneedah.weaponlib.config.BalancePackManager.GunConfigurationGroup;
-import com.paneedah.weaponlib.crafting.CraftingComplexity;
 import com.paneedah.weaponlib.crafting.CraftingEntry;
 import net.minecraft.item.Item;
 import net.minecraft.util.math.Vec3d;
 import org.lwjgl.opengl.GL11;
 
 import java.util.Arrays;
+// IMPORT LIST END
 
 public class AK74Factory {
 
     public Item createGun(CommonProxy commonProxy) {
         return new Weapon.Builder()
-
+        
         .withName("ak74")
 //        .withAmmoCapacity(30)
         .withFireRate(0.6f)
@@ -38,7 +38,7 @@ public class AK74Factory {
         .withMaxShots(1, Integer.MAX_VALUE)
         .withMuzzlePosition(new Vec3d(-0.16400000488758082, -1.0, -6.5))
         //.withMaxShots(5)
-        .withShootSound("ak101")
+        .withShootSound("ak74")
         .withSilencedShootSound("ak15_silenced")
         .withReloadSound("ak_reload")
         .withUnloadSound("ak_unload")
@@ -90,25 +90,46 @@ public class AK74Factory {
                 3f, // y
                 3f) // z
         
-        .withModernRecipe( new
+         .withModernRecipe( new
         		CraftingEntry(MWCItems.carbonComposite, 8), new
         		CraftingEntry(MWCItems.gunmetalPlate, 12), new
-        		CraftingEntry(MWCItems.steelIngot, 5))
+        		CraftingEntry(MWCItems.steelIngot, 3))
         
         .withUnremovableAttachmentCategories(AttachmentCategory.GUARD)
         .withUnremovableAttachmentCategories(AttachmentCategory.BACKGRIP)
-        .withCrafting(CraftingComplexity.MEDIUM,
-                MWCItems.gunmetalIngot,
-                MWCItems.gunmetalPlate)
 //        .withUnremovableAttachmentCategories(AttachmentCategory.RAILING)
         .withCompatibleAttachment(Attachments.AK47Stock, (model) -> {
 //            GL11.glTranslatef(0f, 0f, 1f);
         })
+        .withCompatibleAttachment(Attachments.RPKStock, (model) -> {
+//          GL11.glTranslatef(0f, 0f, 1f);
+        })
         .withCompatibleAttachment(Attachments.AK101Stock, (model) -> {
+//            GL11.glTranslatef(0f, 0f, 1f);
+        })
+        .withCompatibleAttachment(Attachments.AK101GreenStock, (model) -> {
+//            GL11.glTranslatef(0f, 0f, 1f);
+        })
+        .withCompatibleAttachment(Attachments.AK101PearlStock, (model) -> {
+//            GL11.glTranslatef(0f, 0f, 1f);
+        })
+        .withCompatibleAttachment(Attachments.AK101PlumStock, (model) -> {
+//            GL11.glTranslatef(0f, 0f, 1f);
+        })
+        .withCompatibleAttachment(Attachments.AK101WhiteStock, (model) -> {
 //            GL11.glTranslatef(0f, 0f, 1f);
         })
         .withCompatibleAttachment(Attachments.AK74Stock, true, (model) -> {
 //          GL11.glTranslatef(0f, 0f, 1f);
+        })
+        .withCompatibleAttachment(Attachments.AK74GreenStock, (model) -> {
+//          GL11.glTranslatef(0f, 0f, 1f);
+        })
+        .withCompatibleAttachment(Attachments.AKSUStock, (model) -> {
+//            GL11.glTranslatef(0f, 0f, 1f);
+        })
+        .withCompatibleAttachment(Attachments.AKRStock, (model) -> {
+//            GL11.glTranslatef(0f, 0f, 1f);
         })
         .withCompatibleAttachment(Attachments.AK47DustCover, (model) -> {
 //            GL11.glTranslatef(0f, 0f, 1f);
@@ -122,7 +143,28 @@ public class AK74Factory {
         .withCompatibleAttachment(Attachments.AK101HandGuard, (model) -> {
 //            GL11.glTranslatef(0f, 0f, 1f);
         })
+        .withCompatibleAttachment(Attachments.AK101PearlHandGuard, (model) -> {
+//            GL11.glTranslatef(0f, 0f, 1f);
+        })
+        .withCompatibleAttachment(Attachments.AK101PlumHandGuard, (model) -> {
+//            GL11.glTranslatef(0f, 0f, 1f);
+        })
+        .withCompatibleAttachment(Attachments.AK101WhiteHandGuard, (model) -> {
+//            GL11.glTranslatef(0f, 0f, 1f);
+        })
+        .withCompatibleAttachment(Attachments.AK101GreenHandGuard, (model) -> {
+//            GL11.glTranslatef(0f, 0f, 1f);
+        })
+        .withCompatibleAttachment(Attachments.AIMHandGuard, (model) -> {
+//            GL11.glTranslatef(0f, 0f, 1f);
+        })
+        .withCompatibleAttachment(Attachments.TantalHandGuard, (model) -> {
+//            GL11.glTranslatef(0f, 0f, 1f);
+        })
         .withCompatibleAttachment(Attachments.AK74Handguard, true, (model) -> {
+//          GL11.glTranslatef(0f, 0f, 1f);
+      })
+        .withCompatibleAttachment(Attachments.AK74GreenHandguard, (model) -> {
 //          GL11.glTranslatef(0f, 0f, 1f);
       })
         .withCompatibleAttachment(Attachments.AKMagpulHandleGuard, (model) -> {
@@ -194,7 +236,27 @@ public class AK74Factory {
 //            GL11.glTranslatef(0.02f, 0.2f, -0.4f);
 //            GL11.glScaled(1.2F, 1.2F, 1.2F);
         })
+        .withCompatibleAttachment(Attachments.TantalGrip, (model) -> {
+//            GL11.glTranslatef(0.02f, 0.2f, -0.4f);
+//            GL11.glScaled(1.2F, 1.2F, 1.2F);
+        })
         .withCompatibleAttachment(Attachments.AK101Grip, true, (model) -> {
+//            GL11.glTranslatef(0.02f, 0.2f, -0.4f);
+//            GL11.glScaled(1.2F, 1.2F, 1.2F);
+        })
+        .withCompatibleAttachment(Attachments.AK101GreenGrip, (model) -> {
+//            GL11.glTranslatef(0.02f, 0.2f, -0.4f);
+//            GL11.glScaled(1.2F, 1.2F, 1.2F);
+        })
+        .withCompatibleAttachment(Attachments.AK101PearlGrip, (model) -> {
+//            GL11.glTranslatef(0.02f, 0.2f, -0.4f);
+//            GL11.glScaled(1.2F, 1.2F, 1.2F);
+        })
+        .withCompatibleAttachment(Attachments.AK101PlumGrip, (model) -> {
+//            GL11.glTranslatef(0.02f, 0.2f, -0.4f);
+//            GL11.glScaled(1.2F, 1.2F, 1.2F);
+        })
+        .withCompatibleAttachment(Attachments.AK101WhiteGrip, (model) -> {
 //            GL11.glTranslatef(0.02f, 0.2f, -0.4f);
 //            GL11.glScaled(1.2F, 1.2F, 1.2F);
         })
@@ -225,7 +287,49 @@ public class AK74Factory {
                 GL11.glScaled(0.55F, 0.55F, 0.68F);
             }
         })
+        .withCompatibleAttachment(Attachments.RPKBarrel, (model) -> {
+            if(model instanceof RPKbarrel) {
+            } else if(model instanceof AKiron3) {
+                GL11.glTranslatef(-0.195F, -1.06F, -7.16F);
+                GL11.glScaled(0.9F, 0.55F, 0.5F);
+            } else if(model instanceof AKMiron2) {
+                GL11.glTranslatef(-0.185F, -1.32F, -7.15F);
+                GL11.glScaled(0.55F, 0.55F, 0.68F);
+            }
+        })
         .withCompatibleAttachment(Magazines.AK74Mag, (model) -> {
+//          GL11.glTranslatef(-0.35F, 0.5F, -1.25F);
+//            GL11.glScaled(1.15F, 1.2F, 1.15F);
+        })
+        .withCompatibleAttachment(Magazines.RPK74Mag, (model) -> {
+//          GL11.glTranslatef(-0.35F, 0.5F, -1.25F);
+//            GL11.glScaled(1.15F, 1.2F, 1.15F);
+        })
+        .withCompatibleAttachment(Magazines.AK74BlackMag, (model) -> {
+//          GL11.glTranslatef(-0.35F, 0.5F, -1.25F);
+//            GL11.glScaled(1.15F, 1.2F, 1.15F);
+        })
+        .withCompatibleAttachment(Magazines.RPK74MBlackMag, (model) -> {
+//          GL11.glTranslatef(-0.35F, 0.5F, -1.25F);
+//            GL11.glScaled(1.15F, 1.2F, 1.15F);
+        })
+        .withCompatibleAttachment(Magazines.AK74GreenMag, (model) -> {
+//          GL11.glTranslatef(-0.35F, 0.5F, -1.25F);
+//            GL11.glScaled(1.15F, 1.2F, 1.15F);
+        })
+        .withCompatibleAttachment(Magazines.AK74PearlMag, (model) -> {
+//          GL11.glTranslatef(-0.35F, 0.5F, -1.25F);
+//            GL11.glScaled(1.15F, 1.2F, 1.15F);
+        })
+        .withCompatibleAttachment(Magazines.AK74PlumMag, (model) -> {
+//          GL11.glTranslatef(-0.35F, 0.5F, -1.25F);
+//            GL11.glScaled(1.15F, 1.2F, 1.15F);
+        })
+        .withCompatibleAttachment(Magazines.RPK74MPlumMag, (model) -> {
+//          GL11.glTranslatef(-0.35F, 0.5F, -1.25F);
+//            GL11.glScaled(1.15F, 1.2F, 1.15F);
+        })
+        .withCompatibleAttachment(Magazines.AK74WhiteMag, (model) -> {
 //          GL11.glTranslatef(-0.35F, 0.5F, -1.25F);
 //            GL11.glScaled(1.15F, 1.2F, 1.15F);
         })
@@ -481,7 +585,7 @@ public class AK74Factory {
 	    })
         .withTextureNames("bareak")
         .withRenderer(new WeaponRenderer.Builder()
-        
+                
                 .withModel(new AK101())
                 .withActionPiece(AuxiliaryAttachments.AK15action)
                 .withActionTransform(new Transform().withPosition(0, 0, 1))
@@ -536,6 +640,14 @@ public class AK74Factory {
                     .setupModernAnimations("ak47", AuxiliaryAttachments.AK15action)
                     .setupModernMagazineAnimations("ak47", 
                     		Magazines.AK74Mag,
+                    		Magazines.RPK74Mag,
+                    		Magazines.AK74BlackMag,
+                    		Magazines.RPK74MBlackMag,
+                    		Magazines.AK74GreenMag,
+                    		Magazines.AK74PearlMag,
+                    		Magazines.AK74PlumMag,
+                    		Magazines.RPK74MPlumMag,
+                    		Magazines.AK74WhiteMag,
                     		Magazines.AK74Mag60,
                     		Magazines.AK12Mag545x39,
                     		Magazines.AK75Mag545x39)

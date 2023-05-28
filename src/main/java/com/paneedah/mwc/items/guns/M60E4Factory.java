@@ -41,7 +41,7 @@ public class M60E4Factory {
         .withFlashScale(() -> 0.6f)
         .withFlashOffsetX(() -> 0.1f)
         .withFlashOffsetY(() -> 0.16f)
-        .withInaccuracy(1f)
+        //         .withInaccuracy(1f)
         .withCreativeTab(ModernWarfareMod.AssaultRiflesTab)
         .withInformationProvider(stack -> Arrays.asList(
         "Type: General-Purpose Machine Gun",

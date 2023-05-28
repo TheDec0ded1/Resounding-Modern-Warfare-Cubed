@@ -1,4 +1,7 @@
 package com.paneedah.mwc.items.guns;
+// Package
+
+// IMPORT LIST START
 
 import com.paneedah.mwc.ModernWarfareMod;
 import com.paneedah.mwc.init.MWCItems;
@@ -7,32 +10,31 @@ import com.paneedah.mwc.proxies.CommonProxy;
 import com.paneedah.mwc.weapons.Attachments;
 import com.paneedah.mwc.weapons.AuxiliaryAttachments;
 import com.paneedah.mwc.weapons.Magazines;
-import com.paneedah.weaponlib.AttachmentCategory;
-import com.paneedah.weaponlib.RenderableState;
-import com.paneedah.weaponlib.Weapon;
-import com.paneedah.weaponlib.WeaponRenderer;
+import com.paneedah.weaponlib.*;
 import com.paneedah.weaponlib.animation.Transform;
 import com.paneedah.weaponlib.animation.Transition;
 import com.paneedah.weaponlib.compatibility.RecoilParam;
 import com.paneedah.weaponlib.config.BalancePackManager.GunConfigurationGroup;
 import com.paneedah.weaponlib.crafting.CraftingEntry;
 import net.minecraft.item.Item;
+import net.minecraft.util.math.Vec3d;
 import org.lwjgl.opengl.GL11;
 
 import java.util.Arrays;
+// IMPORT LIST END
 
 public class AK12Factory {
 
     public Item createGun(CommonProxy commonProxy) {
         return new Weapon.Builder()
-
+        
         .withName("izhmash_ak12")
         .withFireRate(0.7f)
         .withRecoil(3f)
         .withZoom(0.9f)
         .withConfigGroup(GunConfigurationGroup.RIFLES)
         .hasFlashPedals()
-        .withMaxShots(1, Integer.MAX_VALUE)
+        .withMaxShots(1, 2, Integer.MAX_VALUE)
         //.withMaxShots(5)
         .withShootSound("ak12")
         .withSilencedShootSound("ak15_silenced")
@@ -50,7 +52,7 @@ public class AK12Factory {
         .withFlashOffsetY(() -> 0.16f)
         .withShellCasingVerticalOffset(-0.05f)
 //        .withShellCasingForwardOffset(-0.2f)
-        .withInaccuracy(1f)
+//         .withInaccuracy(1f)
         .withCreativeTab(ModernWarfareMod.AssaultRiflesTab)
         .useNewSystem()
         .withRecoilParam(new RecoilParam(
@@ -88,8 +90,8 @@ public class AK12Factory {
         .withModernRecipe( new
         		CraftingEntry(MWCItems.carbonComposite, 8), new
         		CraftingEntry(MWCItems.gunmetalPlate, 12), new
-        		CraftingEntry(MWCItems.steelIngot, 4))
-        
+        		CraftingEntry(MWCItems.steelIngot, 3))
+
         .withUnremovableAttachmentCategories(AttachmentCategory.GUARD)
         .withUnremovableAttachmentCategories(AttachmentCategory.RECEIVER)
         .withUnremovableAttachmentCategories(AttachmentCategory.RAILING)
@@ -330,7 +332,7 @@ public class AK12Factory {
         })
         .withTextureNames("ak12kal")
         .withRenderer(new WeaponRenderer.Builder()
-    
+            
             .withModel(new AK12())
             .withActionPiece(AuxiliaryAttachments.AK12action)
             .withActionTransform(new Transform().withPosition(0, 0, 1))
@@ -802,6 +804,5 @@ public class AK12Factory {
                 
         .build(ModernWarfareMod.MOD_CONTEXT);
     }
-
 }
 

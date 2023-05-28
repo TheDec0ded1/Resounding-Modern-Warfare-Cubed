@@ -1,4 +1,7 @@
 package com.paneedah.mwc.items.guns;
+// Package
+
+// IMPORT LIST START
 
 import com.paneedah.mwc.ModernWarfareMod;
 import com.paneedah.mwc.init.MWCItems;
@@ -7,10 +10,7 @@ import com.paneedah.mwc.proxies.CommonProxy;
 import com.paneedah.mwc.weapons.Attachments;
 import com.paneedah.mwc.weapons.AuxiliaryAttachments;
 import com.paneedah.mwc.weapons.Magazines;
-import com.paneedah.weaponlib.AttachmentCategory;
-import com.paneedah.weaponlib.RenderableState;
-import com.paneedah.weaponlib.Weapon;
-import com.paneedah.weaponlib.WeaponRenderer;
+import com.paneedah.weaponlib.*;
 import com.paneedah.weaponlib.animation.Transform;
 import com.paneedah.weaponlib.animation.Transition;
 import com.paneedah.weaponlib.compatibility.RecoilParam;
@@ -21,6 +21,7 @@ import net.minecraft.util.math.Vec3d;
 import org.lwjgl.opengl.GL11;
 
 import java.util.Arrays;
+// IMPORT LIST END
 
 public class FMG9Factory implements GunFactory {
 
@@ -34,10 +35,10 @@ public class FMG9Factory implements GunFactory {
 		.withZoom(0.9f)
 		.withConfigGroup(GunConfigurationGroup.RIFLES)
 		.hasFlashPedals()
-		.withMaxShots(1, 3, Integer.MAX_VALUE)
+		.withMaxShots(1, Integer.MAX_VALUE)
 		.withMuzzlePosition(new Vec3d(-0.06400000190734866, -0.8879999966621398, -3.099999898672101))
-		.withShootSound("m16a4")
-		.withSilencedShootSound("m4a1_silenced")
+		.withShootSound("glock")
+		.withSilencedShootSound("m9a1_silenced")
 		.withReloadSound("m4a1_reload")
 		.withUnloadSound("m4a1_unload")
 		.withEndOfShootSound("gun_click")
@@ -89,10 +90,10 @@ public class FMG9Factory implements GunFactory {
 	                2f, // y
 	                4f) // z
 		 
-		 .withModernRecipe( new
-	        		CraftingEntry(MWCItems.carbonComposite, 5), new
-	        		CraftingEntry(MWCItems.gunmetalPlate, 8), new
-	        		CraftingEntry(MWCItems.steelIngot, 3))
+        .withModernRecipe( new
+        		CraftingEntry(MWCItems.carbonComposite, 8), new
+        		CraftingEntry(MWCItems.gunmetalPlate, 12), new
+        		CraftingEntry(MWCItems.steelIngot, 3))
 		 
         .withUnremovableAttachmentCategories(AttachmentCategory.GUARD)
         .withUnremovableAttachmentCategories(AttachmentCategory.BACKGRIP)

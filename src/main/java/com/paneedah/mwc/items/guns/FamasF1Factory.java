@@ -34,8 +34,8 @@ public class FamasF1Factory {
         .hasFlashPedals()
         .withMaxShots(1, 3, Integer.MAX_VALUE)
         //.withMaxShots(5)
-        .withShootSound("fnfal")
-        .withSilencedShootSound("ak15_silenced")
+        .withShootSound("famas")
+        .withSilencedShootSound("m4a1_silenced")
         .withReloadSound("fnfal_reload")
         .withUnloadSound("fnfal_unload")
         .withInspectSound("inspection")
@@ -306,7 +306,6 @@ public class FamasF1Factory {
         .withRenderer(new WeaponRenderer.Builder()
 
             .withModel(new FamasF1())
-            // Todo: Load model using WavefrontLoader.java
 //            .withActionPiece(AuxiliaryAttachments.FamasF1Action)
 //            .withActionTransform(new Transform().withPosition(0, 0, 1))
             //.withTextureName("AK47")

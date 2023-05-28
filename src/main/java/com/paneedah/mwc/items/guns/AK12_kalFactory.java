@@ -1,4 +1,7 @@
 package com.paneedah.mwc.items.guns;
+// Package
+
+// IMPORT LIST START
 
 import com.paneedah.mwc.ModernWarfareMod;
 import com.paneedah.mwc.init.MWCItems;
@@ -7,10 +10,7 @@ import com.paneedah.mwc.proxies.CommonProxy;
 import com.paneedah.mwc.weapons.Attachments;
 import com.paneedah.mwc.weapons.AuxiliaryAttachments;
 import com.paneedah.mwc.weapons.Magazines;
-import com.paneedah.weaponlib.AttachmentCategory;
-import com.paneedah.weaponlib.RenderableState;
-import com.paneedah.weaponlib.Weapon;
-import com.paneedah.weaponlib.WeaponRenderer;
+import com.paneedah.weaponlib.*;
 import com.paneedah.weaponlib.animation.Transform;
 import com.paneedah.weaponlib.animation.Transition;
 import com.paneedah.weaponlib.compatibility.RecoilParam;
@@ -21,22 +21,23 @@ import net.minecraft.util.math.Vec3d;
 import org.lwjgl.opengl.GL11;
 
 import java.util.Arrays;
+// IMPORT LIST END
 
 public class AK12_kalFactory {
 
     public Item createGun(CommonProxy commonProxy) {
         return new Weapon.Builder()
-
+        
         .withName("ak12_kal")
         .withFireRate(0.6f)
         .withRecoil(3.5f)
         .withZoom(0.9f)
         .withConfigGroup(GunConfigurationGroup.RIFLES)
         .hasFlashPedals()
-        .withMaxShots(1, Integer.MAX_VALUE)
+        .withMaxShots(1, 2, Integer.MAX_VALUE)
         .withMuzzlePosition(new Vec3d(-0.16400000488758082, -1.0, -6.5))
         //.withMaxShots(5)
-        .withShootSound("ak15")
+        .withShootSound("ka_ak12")
         .withSilencedShootSound("ak15_silenced")
         .withReloadSound("ak_reload")
         .withUnloadSound("ak_unload")
@@ -77,12 +78,9 @@ public class AK12_kalFactory {
         "Fire Rate: SEMI, AUTO",
         "Rate of Fire: 60/100",
         "Magazines:",
-        "30rnd 7.62x39mm Magazine",
-        "30rnd 7.62x39mm PMAG Magazine",
-        "30rnd 7.62x39mm PMAG Magazine (Tan)",
-        "50rnd 7.62x39mm Drum Magazine",
-        "75rnd 7.62x39mm Drum Magazine",
-        "100rnd 7.62x39mm Drum Magazine"))
+        "30rnd 5.45x39mm Magazine",
+        "60rnd 5.45x39mm Casket Magazine",
+        "75rnd 5.45x39mm Drum Magazine"))
         
         .withScreenShaking(RenderableState.SHOOTING, 
                 1.5f, // x 
@@ -92,23 +90,11 @@ public class AK12_kalFactory {
         .withModernRecipe( new
         		CraftingEntry(MWCItems.carbonComposite, 8), new
         		CraftingEntry(MWCItems.gunmetalPlate, 12), new
-        		CraftingEntry(MWCItems.steelIngot, 4))
+        		CraftingEntry(MWCItems.steelIngot, 3))
         
         .withUnremovableAttachmentCategories(AttachmentCategory.GUARD)
         .withUnremovableAttachmentCategories(AttachmentCategory.BACKGRIP)
         
-        .withCompatibleAttachment(Attachments.AK47Stock, (model) -> {
-//            GL11.glTranslatef(0f, 0f, 1f);
-        })
-        .withCompatibleAttachment(Attachments.AK101Stock, (model) -> {
-//            GL11.glTranslatef(0f, 0f, 1f);
-        })
-        .withCompatibleAttachment(Attachments.AK47DustCover, (model) -> {
-//            GL11.glTranslatef(0f, 0f, 1f);
-        })
-        .withCompatibleAttachment(Attachments.AKMDustCover, (model) -> {
-//          GL11.glTranslatef(0f, 0f, 1f);
-        })
         .withCompatibleAttachment(Attachments.AK15HandleGuard, (model) -> {
             if(model instanceof AK15HandleGuard) {
 //                GL11.glScaled(1F, 0.98F, 1);
@@ -118,6 +104,14 @@ public class AK12_kalFactory {
             } 
         })
         .withCompatibleAttachment(Attachments.AK12kalHandguard, true, (model) -> {
+            if(model instanceof AK15HandleGuard) {
+//                GL11.glScaled(1F, 0.98F, 1);
+            } else if(model instanceof AKRail) {
+                GL11.glTranslatef(-0.22F, -1.3F, -4.3f);
+                GL11.glScaled(0.7F, 0.8F, 0.45F);
+            } 
+        })
+        .withCompatibleAttachment(Attachments.AK12kalTanHandguard, (model) -> {
             if(model instanceof AK15HandleGuard) {
 //                GL11.glScaled(1F, 0.98F, 1);
             } else if(model instanceof AKRail) {
@@ -149,6 +143,10 @@ public class AK12_kalFactory {
             GL11.glTranslatef(0.02f, 0.2f, -0.2f);
             GL11.glScaled(1.2F, 1.2F, 1.2F);
         })
+       .withCompatibleAttachment(Attachments.CollapsableMOEStockTan, (model) -> {
+            GL11.glTranslatef(0.02f, 0.2f, -0.2f);
+            GL11.glScaled(1.2F, 1.2F, 1.2F);
+        })
         .withCompatibleAttachment(Attachments.MagpulCTRStock, (model) -> {
             GL11.glTranslatef(0.02f, 0.2f, -0.4f);
             GL11.glScaled(1.2F, 1.2F, 1.2F);
@@ -173,6 +171,10 @@ public class AK12_kalFactory {
 //          GL11.glTranslatef(0.02f, 0.2f, -0.4f);
 //          GL11.glScaled(1.2F, 1.2F, 1.2F);
       })
+        .withCompatibleAttachment(Attachments.AK12GripTan, (model) -> {
+//          GL11.glTranslatef(0.02f, 0.2f, -0.4f);
+//          GL11.glScaled(1.2F, 1.2F, 1.2F);
+      })
         .withCompatibleAttachment(Attachments.AKErgoGripTan, (model) -> {
 //          GL11.glTranslatef(0.02f, 0.2f, -0.4f);
 //          GL11.glScaled(1.2F, 1.2F, 1.2F);
@@ -188,6 +190,38 @@ public class AK12_kalFactory {
             GL11.glScaled(1.2F, 1.2F, 1.2F);
         })
         .withCompatibleAttachment(Magazines.AK74Mag, (model) -> {
+//          GL11.glTranslatef(-0.35F, 0.5F, -1.25F);
+//            GL11.glScaled(1.15F, 1.2F, 1.15F);
+        })
+        .withCompatibleAttachment(Magazines.RPK74Mag, (model) -> {
+//          GL11.glTranslatef(-0.35F, 0.5F, -1.25F);
+//            GL11.glScaled(1.15F, 1.2F, 1.15F);
+        })
+        .withCompatibleAttachment(Magazines.AK74BlackMag, (model) -> {
+//          GL11.glTranslatef(-0.35F, 0.5F, -1.25F);
+//            GL11.glScaled(1.15F, 1.2F, 1.15F);
+        })
+        .withCompatibleAttachment(Magazines.RPK74MBlackMag, (model) -> {
+//          GL11.glTranslatef(-0.35F, 0.5F, -1.25F);
+//            GL11.glScaled(1.15F, 1.2F, 1.15F);
+        })
+        .withCompatibleAttachment(Magazines.AK74GreenMag, (model) -> {
+//          GL11.glTranslatef(-0.35F, 0.5F, -1.25F);
+//            GL11.glScaled(1.15F, 1.2F, 1.15F);
+        })
+        .withCompatibleAttachment(Magazines.AK74PearlMag, (model) -> {
+//          GL11.glTranslatef(-0.35F, 0.5F, -1.25F);
+//            GL11.glScaled(1.15F, 1.2F, 1.15F);
+        })
+        .withCompatibleAttachment(Magazines.AK74PlumMag, (model) -> {
+//          GL11.glTranslatef(-0.35F, 0.5F, -1.25F);
+//            GL11.glScaled(1.15F, 1.2F, 1.15F);
+        })
+        .withCompatibleAttachment(Magazines.RPK74MPlumMag, (model) -> {
+//          GL11.glTranslatef(-0.35F, 0.5F, -1.25F);
+//            GL11.glScaled(1.15F, 1.2F, 1.15F);
+        })
+        .withCompatibleAttachment(Magazines.AK74WhiteMag, (model) -> {
 //          GL11.glTranslatef(-0.35F, 0.5F, -1.25F);
 //            GL11.glScaled(1.15F, 1.2F, 1.15F);
         })
@@ -420,7 +454,7 @@ public class AK12_kalFactory {
         })
         .withTextureNames("ak15")
         .withRenderer(new WeaponRenderer.Builder()
-        
+                
                 .withModel(new AK15())
                 .withActionPiece(AuxiliaryAttachments.AK15action)
                 .withActionTransform(new Transform().withPosition(0, 0, 1))
@@ -477,6 +511,14 @@ public class AK12_kalFactory {
                     		Magazines.AK12Mag545x39,
                     		Magazines.AK75Mag545x39,
                     		Magazines.AK74Mag,
+                    		Magazines.RPK74Mag,
+                    		Magazines.AK74BlackMag,
+                    		Magazines.RPK74MBlackMag,
+                    		Magazines.AK74GreenMag,
+                    		Magazines.AK74PearlMag,
+                    		Magazines.AK74PlumMag,
+                    		Magazines.RPK74MPlumMag,
+                    		Magazines.AK74WhiteMag,
                     		Magazines.AK74Mag60)
                 
                 .withFirstPersonPositioningCustomRecoiled(AuxiliaryAttachments.AK15action.getRenderablePart(), (renderContext) -> {
@@ -901,6 +943,5 @@ public class AK12_kalFactory {
                     
             .build(ModernWarfareMod.MOD_CONTEXT);
         }
-
     }
 

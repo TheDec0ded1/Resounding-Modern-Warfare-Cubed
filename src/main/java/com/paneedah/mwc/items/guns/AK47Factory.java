@@ -1,4 +1,7 @@
 package com.paneedah.mwc.items.guns;
+// Package
+
+// IMPORT LIST START
 
 import com.paneedah.mwc.ModernWarfareMod;
 import com.paneedah.mwc.init.MWCItems;
@@ -13,18 +16,18 @@ import com.paneedah.weaponlib.animation.Transition;
 import com.paneedah.weaponlib.compatibility.RecoilParam;
 import com.paneedah.weaponlib.config.BalancePackManager.GunConfigurationGroup;
 import com.paneedah.weaponlib.crafting.CraftingEntry;
-import net.minecraft.init.Blocks;
 import net.minecraft.item.Item;
 import net.minecraft.util.math.Vec3d;
 import org.lwjgl.opengl.GL11;
 
 import java.util.Arrays;
+// IMPORT LIST END
 
 public class AK47Factory {
 
     public Item createGun(CommonProxy commonProxy) {
         return new Weapon.Builder()
-
+        
         .withName("ak47")
         .withFireRate(0.6f)
         .withRecoil(4f)
@@ -91,9 +94,8 @@ public class AK47Factory {
         .withUnremovableAttachmentCategories(AttachmentCategory.BACKGRIP)
         
         .withModernRecipe( new
-        		CraftingEntry(MWCItems.carbonComposite, 8), new
         		CraftingEntry(MWCItems.gunmetalPlate, 12), new
-        		CraftingEntry(Blocks.PLANKS, 4))
+        		CraftingEntry(MWCItems.steelIngot, 3))
         
         .withCompatibleAttachment(Attachments.AK47Stock, true, (model) -> {
 //            GL11.glTranslatef(0f, 0f, 1f);
@@ -104,7 +106,22 @@ public class AK47Factory {
         .withCompatibleAttachment(Attachments.AK101Stock, (model) -> {
 //            GL11.glTranslatef(0f, 0f, 1f);
         })
+        .withCompatibleAttachment(Attachments.AK101GreenStock, (model) -> {
+//            GL11.glTranslatef(0f, 0f, 1f);
+        })
+        .withCompatibleAttachment(Attachments.AK101PearlStock, (model) -> {
+//            GL11.glTranslatef(0f, 0f, 1f);
+        })
+        .withCompatibleAttachment(Attachments.AK101PlumStock, (model) -> {
+//            GL11.glTranslatef(0f, 0f, 1f);
+        })
+        .withCompatibleAttachment(Attachments.AK101WhiteStock, (model) -> {
+//            GL11.glTranslatef(0f, 0f, 1f);
+        })
         .withCompatibleAttachment(Attachments.AK74Stock, (model) -> {
+//          GL11.glTranslatef(0f, 0f, 1f);
+        })
+        .withCompatibleAttachment(Attachments.AK74GreenStock, (model) -> {
 //          GL11.glTranslatef(0f, 0f, 1f);
         })
         .withCompatibleAttachment(Attachments.AK47DustCover, true, (model) -> {
@@ -116,10 +133,31 @@ public class AK47Factory {
         .withCompatibleAttachment(Attachments.AK47HandleGuard, true, (model) -> {
 //            GL11.glTranslatef(0f, 0f, 1f);
         })
+        .withCompatibleAttachment(Attachments.AIMHandGuard, (model) -> {
+//            GL11.glTranslatef(0f, 0f, 1f);
+        })
+        .withCompatibleAttachment(Attachments.TantalHandGuard, (model) -> {
+//            GL11.glTranslatef(0f, 0f, 1f);
+        })
         .withCompatibleAttachment(Attachments.AK101HandGuard, (model) -> {
 //            GL11.glTranslatef(0f, 0f, 1f);
         })
+        .withCompatibleAttachment(Attachments.AK101GreenHandGuard, (model) -> {
+//            GL11.glTranslatef(0f, 0f, 1f);
+        })
+        .withCompatibleAttachment(Attachments.AK101PearlHandGuard, (model) -> {
+//            GL11.glTranslatef(0f, 0f, 1f);
+        })
+        .withCompatibleAttachment(Attachments.AK101PlumHandGuard, (model) -> {
+//            GL11.glTranslatef(0f, 0f, 1f);
+        })
+        .withCompatibleAttachment(Attachments.AK101WhiteHandGuard, (model) -> {
+//            GL11.glTranslatef(0f, 0f, 1f);
+        })
         .withCompatibleAttachment(Attachments.AK74Handguard, (model) -> {
+//          GL11.glTranslatef(0f, 0f, 1f);
+        })
+        .withCompatibleAttachment(Attachments.AK74GreenHandguard, (model) -> {
 //          GL11.glTranslatef(0f, 0f, 1f);
         })
         .withCompatibleAttachment(Attachments.AKMagpulHandleGuard, (model) -> {
@@ -195,7 +233,27 @@ public class AK47Factory {
 //            GL11.glTranslatef(0.02f, 0.2f, -0.4f);
 //            GL11.glScaled(1.2F, 1.2F, 1.2F);
         })
+        .withCompatibleAttachment(Attachments.TantalGrip, (model) -> {
+//            GL11.glTranslatef(0.02f, 0.2f, -0.4f);
+//            GL11.glScaled(1.2F, 1.2F, 1.2F);
+        })
         .withCompatibleAttachment(Attachments.AK101Grip, (model) -> {
+//            GL11.glTranslatef(0.02f, 0.2f, -0.4f);
+//            GL11.glScaled(1.2F, 1.2F, 1.2F);
+        })
+        .withCompatibleAttachment(Attachments.AK101GreenGrip, (model) -> {
+//            GL11.glTranslatef(0.02f, 0.2f, -0.4f);
+//            GL11.glScaled(1.2F, 1.2F, 1.2F);
+        })
+        .withCompatibleAttachment(Attachments.AK101PearlGrip, (model) -> {
+//            GL11.glTranslatef(0.02f, 0.2f, -0.4f);
+//            GL11.glScaled(1.2F, 1.2F, 1.2F);
+        })
+        .withCompatibleAttachment(Attachments.AK101PlumGrip, (model) -> {
+//            GL11.glTranslatef(0.02f, 0.2f, -0.4f);
+//            GL11.glScaled(1.2F, 1.2F, 1.2F);
+        })
+        .withCompatibleAttachment(Attachments.AK101WhiteGrip, (model) -> {
 //            GL11.glTranslatef(0.02f, 0.2f, -0.4f);
 //            GL11.glScaled(1.2F, 1.2F, 1.2F);
         })
@@ -239,6 +297,18 @@ public class AK47Factory {
         .withCompatibleAttachment(Magazines.AK47PMAGTan, (model) -> {
         })
         .withCompatibleAttachment(Magazines.AK47Mag, (model) -> {
+//        	GL11.glTranslatef(0F, 2F, 0.2F);
+//            GL11.glRotatef(-10F, 1f, 0f, 0f);
+        })
+        .withCompatibleAttachment(Magazines.AKMMag, (model) -> {
+//        	GL11.glTranslatef(0F, 2F, 0.2F);
+//            GL11.glRotatef(-10F, 1f, 0f, 0f);
+        })
+        .withCompatibleAttachment(Magazines.AKMGreenMag, (model) -> {
+//        	GL11.glTranslatef(0F, 2F, 0.2F);
+//            GL11.glRotatef(-10F, 1f, 0f, 0f);
+        })
+        .withCompatibleAttachment(Magazines.AK103Mag, (model) -> {
 //        	GL11.glTranslatef(0F, 2F, 0.2F);
 //            GL11.glRotatef(-10F, 1f, 0f, 0f);
         })
@@ -494,7 +564,7 @@ public class AK47Factory {
         }, false, false)
         .withTextureNames("ak47")
         .withRenderer(new WeaponRenderer.Builder()
-    
+            
             .withModel(new AK47())
             .withActionPiece(AuxiliaryAttachments.AKaction)
             .withActionTransform(new Transform().withPosition(0, 0, 1))
@@ -549,6 +619,9 @@ public class AK47Factory {
                 .setupModernAnimations("ak47", AuxiliaryAttachments.AKaction)
                 .setupModernMagazineAnimations("ak47", 
                 		Magazines.AK47Mag, 
+                		Magazines.AKMMag,
+                		Magazines.AKMGreenMag,
+                		Magazines.AK103Mag,
                 		Magazines.AK15Mag, 
                 		Magazines.AK47PMAGTan,
                 		Magazines.AK50Mag,

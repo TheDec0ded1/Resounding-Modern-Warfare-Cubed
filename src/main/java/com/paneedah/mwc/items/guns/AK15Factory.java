@@ -1,4 +1,7 @@
 package com.paneedah.mwc.items.guns;
+// Package
+
+// IMPORT LIST START
 
 import com.paneedah.mwc.ModernWarfareMod;
 import com.paneedah.mwc.init.MWCItems;
@@ -7,10 +10,7 @@ import com.paneedah.mwc.proxies.CommonProxy;
 import com.paneedah.mwc.weapons.Attachments;
 import com.paneedah.mwc.weapons.AuxiliaryAttachments;
 import com.paneedah.mwc.weapons.Magazines;
-import com.paneedah.weaponlib.AttachmentCategory;
-import com.paneedah.weaponlib.RenderableState;
-import com.paneedah.weaponlib.Weapon;
-import com.paneedah.weaponlib.WeaponRenderer;
+import com.paneedah.weaponlib.*;
 import com.paneedah.weaponlib.animation.Transform;
 import com.paneedah.weaponlib.animation.Transition;
 import com.paneedah.weaponlib.compatibility.RecoilParam;
@@ -21,19 +21,20 @@ import net.minecraft.util.math.Vec3d;
 import org.lwjgl.opengl.GL11;
 
 import java.util.Arrays;
+// IMPORT LIST END
 
 public class AK15Factory {
 
     public Item createGun(CommonProxy commonProxy) {
         return new Weapon.Builder()
-
+        
         .withName("ak15")
         .withFireRate(0.6f)
         .withRecoil(3.5f)
         .withZoom(0.9f)
         .withConfigGroup(GunConfigurationGroup.RIFLES)
         .hasFlashPedals()
-        .withMaxShots(1, Integer.MAX_VALUE)
+        .withMaxShots(1, 2, Integer.MAX_VALUE)
         .withMuzzlePosition(new Vec3d(-0.16400000488758082, -1.0, -6.5))
         //.withMaxShots(5)
         .withShootSound("ak15")
@@ -92,24 +93,28 @@ public class AK15Factory {
         .withModernRecipe( new
         		CraftingEntry(MWCItems.carbonComposite, 8), new
         		CraftingEntry(MWCItems.gunmetalPlate, 12), new
-        		CraftingEntry(MWCItems.steelIngot, 4))
+        		CraftingEntry(MWCItems.steelIngot, 3))
         
         .withUnremovableAttachmentCategories(AttachmentCategory.GUARD)
         .withUnremovableAttachmentCategories(AttachmentCategory.BACKGRIP)
-        
-        .withCompatibleAttachment(Attachments.AK47Stock, (model) -> {
-//            GL11.glTranslatef(0f, 0f, 1f);
-        })
-        .withCompatibleAttachment(Attachments.AK101Stock, (model) -> {
-//            GL11.glTranslatef(0f, 0f, 1f);
-        })
-        .withCompatibleAttachment(Attachments.AK47DustCover, (model) -> {
-//            GL11.glTranslatef(0f, 0f, 1f);
-        })
-        .withCompatibleAttachment(Attachments.AKMDustCover, (model) -> {
-//          GL11.glTranslatef(0f, 0f, 1f);
-        })
+
         .withCompatibleAttachment(Attachments.AK15HandleGuard, true, (model) -> {
+            if(model instanceof AK15HandleGuard) {
+//                GL11.glScaled(1F, 0.98F, 1);
+            } else if(model instanceof AKRail) {
+                GL11.glTranslatef(-0.22F, -1.3F, -4.3f);
+                GL11.glScaled(0.7F, 0.8F, 0.45F);
+            } 
+        })
+        .withCompatibleAttachment(Attachments.AK12kalHandguard, (model) -> {
+            if(model instanceof AK15HandleGuard) {
+//                GL11.glScaled(1F, 0.98F, 1);
+            } else if(model instanceof AKRail) {
+                GL11.glTranslatef(-0.22F, -1.3F, -4.3f);
+                GL11.glScaled(0.7F, 0.8F, 0.45F);
+            } 
+        })
+        .withCompatibleAttachment(Attachments.AK12kalTanHandguard, (model) -> {
             if(model instanceof AK15HandleGuard) {
 //                GL11.glScaled(1F, 0.98F, 1);
             } else if(model instanceof AKRail) {
@@ -137,6 +142,10 @@ public class AK15Factory {
             GL11.glTranslatef(0.02f, 0.2f, -0.2f);
             GL11.glScaled(1.2F, 1.2F, 1.2F);
         })
+        .withCompatibleAttachment(Attachments.CollapsableMOEStockTan, (model) -> {
+            GL11.glTranslatef(0.02f, 0.2f, -0.2f);
+            GL11.glScaled(1.2F, 1.2F, 1.2F);
+        })
         .withCompatibleAttachment(Attachments.MagpulCTRStock, (model) -> {
             GL11.glTranslatef(0.02f, 0.2f, -0.4f);
             GL11.glScaled(1.2F, 1.2F, 1.2F);
@@ -157,6 +166,14 @@ public class AK15Factory {
 //            GL11.glTranslatef(0.02f, 0.2f, -0.4f);
 //            GL11.glScaled(1.2F, 1.2F, 1.2F);
         })
+        .withCompatibleAttachment(Attachments.AK12GripTan, (model) -> {
+//          GL11.glTranslatef(0.02f, 0.2f, -0.4f);
+//          GL11.glScaled(1.2F, 1.2F, 1.2F);
+	})
+        .withCompatibleAttachment(Attachments.AKErgoGripGreen, (model) -> {
+//          GL11.glTranslatef(0.02f, 0.2f, -0.4f);
+//          GL11.glScaled(1.2F, 1.2F, 1.2F);
+      })
         .withCompatibleAttachment(Attachments.AKErgoGripTan, (model) -> {
 //          GL11.glTranslatef(0.02f, 0.2f, -0.4f);
 //          GL11.glScaled(1.2F, 1.2F, 1.2F);
@@ -167,6 +184,12 @@ public class AK15Factory {
         .withCompatibleAttachment(Magazines.AK15Mag, (model) -> {
         })
         .withCompatibleAttachment(Magazines.AK47Mag, (model) -> {
+        })
+        .withCompatibleAttachment(Magazines.AKMMag, (model) -> {
+        })
+        .withCompatibleAttachment(Magazines.AKMGreenMag, (model) -> {
+        })
+        .withCompatibleAttachment(Magazines.AK103Mag, (model) -> {
         })
         .withCompatibleAttachment(Magazines.AK47PMAGTan, (model) -> {
         })
@@ -408,7 +431,7 @@ public class AK15Factory {
         })
         .withTextureNames("ak15")
         .withRenderer(new WeaponRenderer.Builder()
-        
+                
                 .withModel(new AK15())
                 .withActionPiece(AuxiliaryAttachments.AK15action)
                 .withActionTransform(new Transform().withPosition(0, 0, 1))
@@ -463,6 +486,9 @@ public class AK15Factory {
                     .setupModernAnimations("ak47", AuxiliaryAttachments.AK15action)
                     .setupModernMagazineAnimations("ak47", 
                     		Magazines.AK47Mag, 
+                    		Magazines.AKMMag,
+                    		Magazines.AKMGreenMag,
+                    		Magazines.AK103Mag,
                     		Magazines.AK15Mag, 
                     		Magazines.AK47PMAGTan,
                     		Magazines.AK50Mag,
@@ -891,6 +917,5 @@ public class AK15Factory {
                     
             .build(ModernWarfareMod.MOD_CONTEXT);
         }
-
     }
 

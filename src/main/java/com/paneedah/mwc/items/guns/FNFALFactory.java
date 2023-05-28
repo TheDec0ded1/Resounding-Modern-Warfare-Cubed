@@ -1,30 +1,33 @@
 package com.paneedah.mwc.items.guns;
+// Package
+
+// IMPORT LIST START
 
 import com.paneedah.mwc.ModernWarfareMod;
+import com.paneedah.mwc.init.MWCItems;
 import com.paneedah.mwc.models.*;
 import com.paneedah.mwc.proxies.CommonProxy;
 import com.paneedah.mwc.weapons.Attachments;
 import com.paneedah.mwc.weapons.AuxiliaryAttachments;
 import com.paneedah.mwc.weapons.Magazines;
-import com.paneedah.weaponlib.AttachmentCategory;
-import com.paneedah.weaponlib.RenderableState;
-import com.paneedah.weaponlib.Weapon;
-import com.paneedah.weaponlib.WeaponRenderer;
+import com.paneedah.weaponlib.*;
 import com.paneedah.weaponlib.animation.Transform;
 import com.paneedah.weaponlib.animation.Transition;
 import com.paneedah.weaponlib.compatibility.RecoilParam;
 import com.paneedah.weaponlib.config.BalancePackManager.GunConfigurationGroup;
+import com.paneedah.weaponlib.crafting.CraftingEntry;
 import net.minecraft.item.Item;
 import net.minecraft.util.math.Vec3d;
 import org.lwjgl.opengl.GL11;
 
 import java.util.Arrays;
+// IMPORT LIST END
 
 public class FNFALFactory {
 
     public Item createGun(CommonProxy commonProxy) {
         return new Weapon.Builder()
-
+        
         .withName("fnfal")
         .withFireRate(0.6f)
         .withRecoil(5f)
@@ -34,7 +37,7 @@ public class FNFALFactory {
         .withMaxShots(1, Integer.MAX_VALUE)
         //.withMaxShots(5)
         .withShootSound("fnfal")
-        .withSilencedShootSound("ak15_silenced")
+        .withSilencedShootSound("m110_silenced")
         .withReloadSound("fnfal_reload")
         .withUnloadSound("fnfal_unload")
         .withInspectSound("inspection")
@@ -351,7 +354,7 @@ public class FNFALFactory {
         })
         .withTextureNames("fnfal")
         .withRenderer(new WeaponRenderer.Builder()
-    
+            
             .withModel(new FNFAL())
             .withActionPiece(AuxiliaryAttachments.FNFALAction)
             .withActionTransform(new Transform().withPosition(0, 0, 1))

@@ -1,4 +1,7 @@
 package com.paneedah.mwc.items.guns;
+// Package
+
+// IMPORT LIST START
 
 import com.paneedah.mwc.ModernWarfareMod;
 import com.paneedah.mwc.init.MWCItems;
@@ -18,6 +21,7 @@ import net.minecraft.util.math.Vec3d;
 import org.lwjgl.opengl.GL11;
 
 import java.util.Arrays;
+// IMPORT LIST END
 
 public class SIGMCXFactory implements GunFactory {
 
@@ -32,8 +36,8 @@ public class SIGMCXFactory implements GunFactory {
 		.withConfigGroup(GunConfigurationGroup.RIFLES)
 		.hasFlashPedals()
 		.withMaxShots(1, Integer.MAX_VALUE)
-		.withShootSound("m38_dmr")
-		.withSilencedShootSound("m4a1_silenced")
+		.withShootSound("mcx")
+		.withSilencedShootSound("mcx_silenced")
 		.withReloadSound("m4a1_reload")
 		.withUnloadSound("m4a1_unload")
 		.withEndOfShootSound("gun_click")
@@ -88,10 +92,10 @@ public class SIGMCXFactory implements GunFactory {
 	                1f, // y
 	                3f) // z
 		 
-		 .withModernRecipe( new
-	        		CraftingEntry(MWCItems.carbonComposite, 9), new
-	        		CraftingEntry(MWCItems.gunmetalPlate, 11), new
-	        		CraftingEntry(MWCItems.steelIngot, 3))
+        .withModernRecipe( new
+        		CraftingEntry(MWCItems.carbonComposite, 8), new
+        		CraftingEntry(MWCItems.gunmetalPlate, 12), new
+        		CraftingEntry(MWCItems.steelIngot, 3))
 		 
         .withUnremovableAttachmentCategories(AttachmentCategory.GUARD)
         .withUnremovableAttachmentCategories(AttachmentCategory.BACKGRIP)
@@ -716,7 +720,7 @@ public class SIGMCXFactory implements GunFactory {
                         GL11.glTranslatef(-0.003F, -0.025f, 0.4f);
                 } 
 
-				// HP Zoomw
+				// HP Zoomwc
 				if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.LeupoldRailScope)) {
                         GL11.glTranslatef(0.001F, -0.0f, 0.2f);
 				} 

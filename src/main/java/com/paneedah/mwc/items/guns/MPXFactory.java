@@ -1,4 +1,7 @@
 package com.paneedah.mwc.items.guns;
+// Package
+
+// IMPORT LIST START
 
 import com.paneedah.mwc.ModernWarfareMod;
 import com.paneedah.mwc.init.MWCItems;
@@ -13,11 +16,13 @@ import com.paneedah.weaponlib.animation.Transition;
 import com.paneedah.weaponlib.compatibility.RecoilParam;
 import com.paneedah.weaponlib.config.BalancePackManager.GunConfigurationGroup;
 import com.paneedah.weaponlib.crafting.CraftingEntry;
-import com.paneedah.weaponlib.render.shells.ShellParticleSimulator.Shell.Type;
+import com.paneedah.weaponlib.render.shells.ShellParticleSimulator;
 import net.minecraft.item.Item;
+import net.minecraft.util.math.Vec3d;
 import org.lwjgl.opengl.GL11;
 
 import java.util.Arrays;
+// IMPORT LIST END
 
 public class MPXFactory implements GunFactory {
 
@@ -30,10 +35,10 @@ public class MPXFactory implements GunFactory {
 		.withRecoil(1.5f)
 		.withZoom(0.9f)
 		.withConfigGroup(GunConfigurationGroup.SIDEARM)
-		.withShellType(Type.PISTOL)
-		.withMaxShots(1, Integer.MAX_VALUE)
+                .withShellType(ShellParticleSimulator.Shell.Type.PISTOL)
+                .withMaxShots(1, Integer.MAX_VALUE)
 		.withShootSound("mpx")
-		.withSilencedShootSound("m4a1_silenced")
+		.withSilencedShootSound("mpx_silenced")
 		.withReloadSound("mpx_reload")
 		.withUnloadSound("mpx_unload")
 		.withEndOfShootSound("gun_click")
@@ -85,10 +90,10 @@ public class MPXFactory implements GunFactory {
                  0.1f, // y
                  3f) // z
 		 
-		 .withModernRecipe( new
-	        		CraftingEntry(MWCItems.carbonComposite, 7), new
-	        		CraftingEntry(MWCItems.gunmetalPlate, 5), new
-	        		CraftingEntry(MWCItems.steelIngot, 4))
+        .withModernRecipe( new
+        		CraftingEntry(MWCItems.carbonComposite, 8), new
+        		CraftingEntry(MWCItems.gunmetalPlate, 12), new
+        		CraftingEntry(MWCItems.steelIngot, 3))
 		 
         .withUnremovableAttachmentCategories(AttachmentCategory.GUARD)
         .withUnremovableAttachmentCategories(AttachmentCategory.BACKGRIP)

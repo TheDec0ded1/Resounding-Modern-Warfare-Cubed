@@ -42,7 +42,7 @@ public class MP40Factory {
         .withFlashScale(() -> 0.6f)
         .withFlashOffsetX(() -> 0.1f)
         .withFlashOffsetY(() -> 0.13f)
-        .withInaccuracy(2f)
+        //         .withInaccuracy(2f)
         .withCreativeTab(ModernWarfareMod.AssaultRiflesTab)
         .withInformationProvider(stack -> Arrays.asList(
         "Type: Sub Machine Gun",

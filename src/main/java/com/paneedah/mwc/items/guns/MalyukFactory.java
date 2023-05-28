@@ -1,4 +1,7 @@
 package com.paneedah.mwc.items.guns;
+// Package
+
+// IMPORT LIST START
 
 import com.paneedah.mwc.ModernWarfareMod;
 import com.paneedah.mwc.init.MWCItems;
@@ -7,10 +10,7 @@ import com.paneedah.mwc.proxies.CommonProxy;
 import com.paneedah.mwc.weapons.Attachments;
 import com.paneedah.mwc.weapons.AuxiliaryAttachments;
 import com.paneedah.mwc.weapons.Magazines;
-import com.paneedah.weaponlib.AttachmentCategory;
-import com.paneedah.weaponlib.RenderableState;
-import com.paneedah.weaponlib.Weapon;
-import com.paneedah.weaponlib.WeaponRenderer;
+import com.paneedah.weaponlib.*;
 import com.paneedah.weaponlib.animation.Transform;
 import com.paneedah.weaponlib.animation.Transition;
 import com.paneedah.weaponlib.compatibility.RecoilParam;
@@ -21,12 +21,12 @@ import net.minecraft.util.math.Vec3d;
 import org.lwjgl.opengl.GL11;
 
 import java.util.Arrays;
-
+// IMPORT LIST END
 public class MalyukFactory {
 
     public Item createGun(CommonProxy commonProxy) {
         return new Weapon.Builder()
-
+        
         .withName("malyuk")
         .withFireRate(0.6f)
         .withRecoil(3.5f)
@@ -91,7 +91,7 @@ public class MalyukFactory {
         
         .withModernRecipe( new
         		CraftingEntry(MWCItems.carbonComposite, 8), new
-        		CraftingEntry(MWCItems.gunmetalPlate, 10), new
+        		CraftingEntry(MWCItems.gunmetalPlate, 12), new
         		CraftingEntry(MWCItems.steelIngot, 3))
         
         .withUnremovableAttachmentCategories(AttachmentCategory.RAILING)
@@ -112,18 +112,17 @@ public class MalyukFactory {
         	GL11.glTranslatef(0F, 0.2F, 3.1F);
 //            GL11.glRotatef(-10F, 1f, 0f, 0f);
         })
-        .withCompatibleAttachment(Magazines.AK50Mag, (model) -> {
-            GL11.glRotatef(-20.000000f, 1f, 0f, 0f);
-            GL11.glTranslatef(0f, 0.35f, 3.0f);
+        .withCompatibleAttachment(Magazines.AKMMag, (model) -> {
+        	GL11.glTranslatef(0F, 0.2F, 3.1F);
+//            GL11.glRotatef(-10F, 1f, 0f, 0f);
         })
-        .withCompatibleAttachment(Magazines.AK75Mag, (model) -> {
-            GL11.glRotatef(-10.000000f, 1f, 0f, 0f);
-            GL11.glTranslatef(0f, 0.35f, 3.0f);
-            GL11.glScaled(1.2F, 1.2F, 1.2F);
+        .withCompatibleAttachment(Magazines.AKMGreenMag, (model) -> {
+        	GL11.glTranslatef(0F, 0.2F, 3.1F);
+//            GL11.glRotatef(-10F, 1f, 0f, 0f);
         })
-        .withCompatibleAttachment(Magazines.AK100Mag, (model) -> {
-            GL11.glRotatef(-20.000000f, 1f, 0f, 0f);
-            GL11.glTranslatef(0f, 0.35f, 3.0f);
+        .withCompatibleAttachment(Magazines.AK103Mag, (model) -> {
+        	GL11.glTranslatef(0F, 0.2F, 3.1F);
+//            GL11.glRotatef(-10F, 1f, 0f, 0f);
         })
         .withCompatibleAttachment(Attachments.NightRaider, (player, stack) -> {
             GL11.glTranslatef(-0.21F, -1.4F, -1.2F);
@@ -315,7 +314,7 @@ public class MalyukFactory {
         })
         .withTextureNames("malyuk")
         .withRenderer(new WeaponRenderer.Builder()
-
+            
             .withModel(new Malyuk())
             .withActionPiece(AuxiliaryAttachments.Malyukaction)
             .withActionTransform(new Transform().withPosition(0, 0, 1))
@@ -372,9 +371,9 @@ public class MalyukFactory {
                 		Magazines.AK47Mag, 
                 		Magazines.AK15Mag, 
                 		Magazines.AK47PMAGTan,
-                		Magazines.AK50Mag,
-                		Magazines.AK75Mag,
-                		Magazines.AK100Mag)
+                		Magazines.AKMMag,
+                		Magazines.AKMGreenMag,
+                		Magazines.AK103Mag)
                     
             .withThirdPersonPositioningReloading(
 //                    new Transition((renderContext) -> { // Reload position

@@ -50,7 +50,7 @@ public class Glock18CFactory implements GunFactory {
         .withFlashOffsetX(() -> 0.14f)
         .withFlashOffsetY(() -> 0.14f)
 //      .withShellCasingForwardOffset(0.001f)
-        .withInaccuracy(3)
+        //         .withInaccuracy(3)
         .withCreativeTab(ModernWarfareMod.AssaultRiflesTab)
         .useNewSystem()
         .withRecoilParam(new RecoilParam(

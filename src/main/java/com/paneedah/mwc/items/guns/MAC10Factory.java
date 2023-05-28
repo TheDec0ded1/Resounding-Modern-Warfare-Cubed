@@ -51,7 +51,7 @@ public class MAC10Factory {
         .withFlashScale(() -> 0.6f)
         .withFlashOffsetX(() -> 0.16f)
         .withFlashOffsetY(() -> 0.16f)
-        .withInaccuracy(3f)
+        //         .withInaccuracy(3f)
         .withCreativeTab(ModernWarfareMod.AssaultRiflesTab)
         .useNewSystem()
         .withRecoilParam(new RecoilParam(

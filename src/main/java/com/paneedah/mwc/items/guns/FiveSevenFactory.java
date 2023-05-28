@@ -1,39 +1,43 @@
 package com.paneedah.mwc.items.guns;
+// Package
+
+// IMPORT LIST START
 
 import com.paneedah.mwc.ModernWarfareMod;
+import com.paneedah.mwc.init.MWCItems;
 import com.paneedah.mwc.models.*;
 import com.paneedah.mwc.proxies.CommonProxy;
 import com.paneedah.mwc.weapons.Attachments;
+import com.paneedah.mwc.weapons.AuxiliaryAttachments;
 import com.paneedah.mwc.weapons.Magazines;
-import com.paneedah.weaponlib.AttachmentCategory;
-import com.paneedah.weaponlib.RenderableState;
-import com.paneedah.weaponlib.Weapon;
-import com.paneedah.weaponlib.WeaponRenderer;
+import com.paneedah.weaponlib.*;
 import com.paneedah.weaponlib.animation.Transform;
 import com.paneedah.weaponlib.animation.Transition;
 import com.paneedah.weaponlib.compatibility.RecoilParam;
 import com.paneedah.weaponlib.config.BalancePackManager.GunConfigurationGroup;
-import com.paneedah.weaponlib.render.shells.ShellParticleSimulator.Shell.Type;
+import com.paneedah.weaponlib.crafting.CraftingEntry;
+import com.paneedah.weaponlib.render.shells.ShellParticleSimulator;
 import net.minecraft.item.Item;
 import net.minecraft.util.math.Vec3d;
 import org.lwjgl.opengl.GL11;
 
 import java.util.Arrays;
+// IMPORT LIST END
 
 public class FiveSevenFactory implements GunFactory {
 
     public Item createGun(CommonProxy commonProxy) {
         return new Weapon.Builder()
-
+        
         .withName("fiveseven")
         .withFireRate(0.5f)
         .withRecoil(2f)
         .withZoom(0.9f)
         .withConfigGroup(GunConfigurationGroup.SIDEARM)
         .withMuzzlePosition(new Vec3d(-0.14400000429153445, -0.8639999959468836, -2.355999876499175))
-        .withShellType(Type.PISTOL)
+                .withShellType(ShellParticleSimulator.Shell.Type.PISTOL)
         .withMaxShots(1)
-        .withShootSound("p226")
+        .withShootSound("fn57")
         .withSilencedShootSound("m9a1_silenced")
         .withReloadSound("m9a1_reload")
         .withUnloadSound("pistol_unload")
@@ -48,7 +52,7 @@ public class FiveSevenFactory implements GunFactory {
         .withFlashOffsetX(() -> 0.11f)
         .withFlashOffsetY(() -> 0.13f)
 //      .withShellCasingForwardOffset(0.001f)
-        .withInaccuracy(3)
+//         .withInaccuracy(3)
         .withCreativeTab(ModernWarfareMod.AssaultRiflesTab)
         .useNewSystem()
         .withRecoilParam(new RecoilParam(
@@ -107,6 +111,12 @@ public class FiveSevenFactory implements GunFactory {
         .withCompatibleAttachment(Magazines.FiveSevenMag, (model) -> {
            GL11.glTranslatef(0F, 0F, 0F);
         })
+        .withCompatibleAttachment(Magazines.FiveSeven30Mag, (model) -> {
+           GL11.glTranslatef(0F, 0F, 0F);
+        })
+        .withCompatibleAttachment(Magazines.FiveSevenDrumMag, (model) -> {
+           GL11.glTranslatef(0F, 0F, 0F);
+        })
         .withCompatibleAttachment(Attachments.Laser, (p, s) -> {
             GL11.glTranslatef(0.01F, -0.65F, -2.1F);
             GL11.glScaled(1.1F, 1.1F, 1.1F);
@@ -140,7 +150,7 @@ public class FiveSevenFactory implements GunFactory {
         })
         .withTextureNames("fiveseven")
         .withRenderer(new WeaponRenderer.Builder()
-    
+            
             .withModel(new FiveSeven())
             .withActionPiece(
             		Attachments.FiveSevenSlide)
@@ -194,7 +204,7 @@ public class FiveSevenFactory implements GunFactory {
                 
                 .setupModernAnimations("fiveseven", Attachments.FiveSevenSlide)
                 .setupModernMagazineAnimations("fiveseven", 
-                		Magazines.FiveSevenMag)
+                		Magazines.FiveSevenMag, Magazines.FiveSeven30Mag, Magazines.FiveSevenDrumMag)
                 
             .withFirstPersonCustomPositioning(Attachments.FiveSevenSlide.getRenderablePart(), (renderContext) -> {
                 if(renderContext.getWeaponInstance().getAmmo() == 0) {

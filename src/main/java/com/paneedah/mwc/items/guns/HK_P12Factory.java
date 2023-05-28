@@ -48,7 +48,7 @@ public class HK_P12Factory implements GunFactory {
         .withFlashOffsetX(() -> 0.1f)
         .withFlashOffsetY(() -> 0.17f)
 //      .withShellCasingForwardOffset(0.001f)
-        .withInaccuracy(3)
+        //         .withInaccuracy(3)
         .withCreativeTab(ModernWarfareMod.AssaultRiflesTab)
         .useNewSystem()
         .withRecoilParam(new RecoilParam(

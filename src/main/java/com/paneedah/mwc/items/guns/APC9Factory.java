@@ -43,7 +43,7 @@ public class APC9Factory implements GunFactory {
 		.withFlashOffsetY(() -> 0.15f)
 		.withShellCasingForwardOffset(0.05f)
 		.withShellCasingVerticalOffset(-0.03f)
-		.withInaccuracy(1f)
+		//         .withInaccuracy(1f)
 //		.withShellCasingEjectEnabled(false)
 		.withCreativeTab(ModernWarfareMod.AssaultRiflesTab)
 		.withInformationProvider(stack -> Arrays.asList(

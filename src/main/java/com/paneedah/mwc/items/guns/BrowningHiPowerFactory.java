@@ -46,7 +46,7 @@ public class BrowningHiPowerFactory implements GunFactory {
         .withFlashOffsetX(() -> 0.13f)
         .withFlashOffsetY(() -> 0.12f)
 //      .withShellCasingForwardOffset(0.001f)
-        .withInaccuracy(3)
+        //         .withInaccuracy(3)
         .withCreativeTab(ModernWarfareMod.AssaultRiflesTab)
         .withInformationProvider(stack -> Arrays.asList(
         "Type: Single Action Semi-Automatic Pistol", 

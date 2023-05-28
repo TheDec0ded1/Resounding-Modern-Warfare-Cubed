@@ -1,26 +1,33 @@
 package com.paneedah.mwc.items.guns;
+// Package
+
+// IMPORT LIST START
 
 import com.paneedah.mwc.ModernWarfareMod;
-import com.paneedah.mwc.models.Kedr;
+import com.paneedah.mwc.init.MWCItems;
+import com.paneedah.mwc.models.*;
 import com.paneedah.mwc.proxies.CommonProxy;
 import com.paneedah.mwc.weapons.Attachments;
 import com.paneedah.mwc.weapons.AuxiliaryAttachments;
 import com.paneedah.mwc.weapons.Magazines;
-import com.paneedah.weaponlib.RenderableState;
-import com.paneedah.weaponlib.Weapon;
-import com.paneedah.weaponlib.WeaponRenderer;
+import com.paneedah.weaponlib.*;
+import com.paneedah.weaponlib.animation.Transform;
 import com.paneedah.weaponlib.animation.Transition;
+import com.paneedah.weaponlib.compatibility.RecoilParam;
 import com.paneedah.weaponlib.config.BalancePackManager.GunConfigurationGroup;
+import com.paneedah.weaponlib.crafting.CraftingEntry;
 import net.minecraft.item.Item;
+import net.minecraft.util.math.Vec3d;
 import org.lwjgl.opengl.GL11;
 
 import java.util.Arrays;
+// IMPORT LIST END
 
 public class KedrFactory {
 
     public Item createGun(CommonProxy commonProxy) {
         return new Weapon.Builder()
-
+        
         .withName("pp91_kedr")
         .withFireRate(0.7f)
         .withRecoil(2f)
@@ -29,7 +36,7 @@ public class KedrFactory {
         .withMaxShots(1, Integer.MAX_VALUE)
         //.withMaxShots(5)
         .withShootSound("kedr")
-        .withSilencedShootSound("kbp9a91_silenced")
+        .withSilencedShootSound("kedr_silenced")
         .withReloadSound("kedr_reload")
         .withUnloadSound("kedr_unload")
         .withInspectSound("inspection")
@@ -42,12 +49,12 @@ public class KedrFactory {
         .withFlashScale(() -> 0.6f)
         .withFlashOffsetX(() -> 0.12f)
         .withFlashOffsetY(() -> 0.18f)
-        .withInaccuracy(2f)
+        //         .withInaccuracy(2f)
         .withCreativeTab(ModernWarfareMod.AssaultRiflesTab)
         .withInformationProvider(stack -> Arrays.asList(
         "Type: Submachine Gun",
         "Damage: 5", 
-        "Cartridge: 9x19mm",
+        "Cartridge: 9x18mm",
         "Fire Rate: SEMI, AUTO",
         "Rate of Fire: 70/100",
         "Magazines:",
@@ -68,13 +75,17 @@ public class KedrFactory {
 //        	GL11.glTranslatef(0F, 0.25F, 0F);
 //            GL11.glRotatef(5F, 0f, 0f, 1f);
         })
+        .withCompatibleAttachment(Magazines.Kedr30Mag, (model) -> {
+//        	GL11.glTranslatef(0F, 0.25F, 0F);
+//            GL11.glRotatef(5F, 0f, 0f, 1f);
+        })
         .withCompatibleAttachment(Attachments.Silencer9mm, (model) -> {
           GL11.glTranslatef(-0.25F, -1.1F, -4.8F);
           GL11.glScaled(1.5F, 1.5F, 1.5F);
         })
         .withTextureNames("kedr")
         .withRenderer(new WeaponRenderer.Builder()
-    
+            
             .withModel(new Kedr())
             //.withTextureName("AK47")
             //.withWeaponProximity(0.99F)

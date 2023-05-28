@@ -1,4 +1,7 @@
 package com.paneedah.mwc.items.guns;
+// Package
+
+// IMPORT LIST START
 
 import com.paneedah.mwc.ModernWarfareMod;
 import com.paneedah.mwc.init.MWCItems;
@@ -7,25 +10,24 @@ import com.paneedah.mwc.proxies.CommonProxy;
 import com.paneedah.mwc.weapons.Attachments;
 import com.paneedah.mwc.weapons.AuxiliaryAttachments;
 import com.paneedah.mwc.weapons.Magazines;
-import com.paneedah.weaponlib.AttachmentCategory;
-import com.paneedah.weaponlib.RenderableState;
-import com.paneedah.weaponlib.Weapon;
-import com.paneedah.weaponlib.WeaponRenderer;
+import com.paneedah.weaponlib.*;
 import com.paneedah.weaponlib.animation.Transform;
 import com.paneedah.weaponlib.animation.Transition;
 import com.paneedah.weaponlib.compatibility.RecoilParam;
 import com.paneedah.weaponlib.config.BalancePackManager.GunConfigurationGroup;
 import com.paneedah.weaponlib.crafting.CraftingEntry;
 import net.minecraft.item.Item;
+import net.minecraft.util.math.Vec3d;
 import org.lwjgl.opengl.GL11;
 
 import java.util.Arrays;
+// IMPORT LIST END
 
 public class ScarHFactory implements GunFactory {
 
     public Item createGun(CommonProxy commonProxy) {
         return new Weapon.Builder()
-
+        
         .withName("scar_h_cqc")
         .withFireRate(0.55f)
         .withRecoil(4f)
@@ -33,7 +35,7 @@ public class ScarHFactory implements GunFactory {
         .withConfigGroup(GunConfigurationGroup.RIFLES)
         .withMaxShots(1, Integer.MAX_VALUE)
         .withShootSound("scar_h")
-        .withSilencedShootSound("m4a1_silenced")
+        .withSilencedShootSound("scarh_silenced")
         .withReloadSound("scar_reload")
         .withUnloadSound("scar_unload")
         .withEndOfShootSound("gun_click")
@@ -82,8 +84,8 @@ public class ScarHFactory implements GunFactory {
         
         .withModernRecipe( new
         		CraftingEntry(MWCItems.carbonComposite, 8), new
-        		CraftingEntry(MWCItems.gunmetalPlate, 15), new
-        		CraftingEntry(MWCItems.steelIngot, 5))
+        		CraftingEntry(MWCItems.gunmetalPlate, 12), new
+        		CraftingEntry(MWCItems.steelIngot, 3))
          
          .withScreenShaking(RenderableState.SHOOTING, 
                  1.5f, // x 
@@ -391,7 +393,7 @@ public class ScarHFactory implements GunFactory {
         })
         .withTextureNames("scarh")
         .withRenderer(new WeaponRenderer.Builder()
-    
+            
             .withModel(new ScarH())
             .withActionPiece(AuxiliaryAttachments.ScarHAction)
             .withActionTransform(new Transform().withPosition(0, 0, 1.3))

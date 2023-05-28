@@ -1,4 +1,7 @@
 package com.paneedah.mwc.items.guns;
+// Package
+
+// IMPORT LIST START
 
 import com.paneedah.mwc.ModernWarfareMod;
 import com.paneedah.mwc.init.MWCItems;
@@ -7,10 +10,7 @@ import com.paneedah.mwc.proxies.CommonProxy;
 import com.paneedah.mwc.weapons.Attachments;
 import com.paneedah.mwc.weapons.AuxiliaryAttachments;
 import com.paneedah.mwc.weapons.Magazines;
-import com.paneedah.weaponlib.AttachmentCategory;
-import com.paneedah.weaponlib.RenderableState;
-import com.paneedah.weaponlib.Weapon;
-import com.paneedah.weaponlib.WeaponRenderer;
+import com.paneedah.weaponlib.*;
 import com.paneedah.weaponlib.animation.Transform;
 import com.paneedah.weaponlib.animation.Transition;
 import com.paneedah.weaponlib.compatibility.RecoilParam;
@@ -21,12 +21,13 @@ import net.minecraft.util.math.Vec3d;
 import org.lwjgl.opengl.GL11;
 
 import java.util.Arrays;
+// IMPORT LIST END
 
 public class VSSVintorezFactory {
 
     public Item createGun(CommonProxy commonProxy) {
         return new Weapon.Builder()
-
+        
         .withName("vss_vintorez")
         .withFireRate(0.7f)
         .withRecoil(1.5f)
@@ -84,10 +85,10 @@ public class VSSVintorezFactory {
                  0.1f, // y
                  3f) // z
          
-         .withModernRecipe( new
-	        		CraftingEntry(MWCItems.carbonComposite, 10), new
-	        		CraftingEntry(MWCItems.gunmetalPlate, 15), new
-	        		CraftingEntry(MWCItems.steelIngot, 4))
+        .withModernRecipe( new
+        		CraftingEntry(MWCItems.carbonComposite, 8), new
+        		CraftingEntry(MWCItems.gunmetalPlate, 12), new
+        		CraftingEntry(MWCItems.steelIngot, 3))
          
          .withUnremovableAttachmentCategories(AttachmentCategory.GUARD)
          .withUnremovableAttachmentCategories(AttachmentCategory.STOCK)
@@ -100,6 +101,8 @@ public class VSSVintorezFactory {
         .withCompatibleAttachment(Attachments.VSSMDustCover, (model) -> {
         })
         .withCompatibleAttachment(Attachments.VSSVintorezStock, true, (model) -> {
+        })
+        .withCompatibleAttachment(Attachments.VSSMStock,(model) -> {
         })
         .withCompatibleAttachment(Attachments.ASValStock, (model) -> {
         })
@@ -122,7 +125,24 @@ public class VSSVintorezFactory {
         })
         .withCompatibleAttachment(Magazines.ASValMag, (model) -> {
         })
+        .withCompatibleAttachment(Magazines.Val30Mag, (model) -> {
+        })
+        .withCompatibleAttachment(Magazines.SR3MMag, (model) -> {
+        })
         .withCompatibleAttachment(Attachments.PSO1, (player, stack) -> {
+            GL11.glTranslatef(0.14F, -0.9F, -1.2F);
+            GL11.glScaled(1.2F, 1.2F, 1.2F);
+        },(model) -> {
+            if(model instanceof PSO1reticle) {
+                GL11.glTranslatef(-0.212F, -0.486F, 1.27F);
+                GL11.glScaled(0.017F, 0.017F, 0.017F);
+            }
+             else if(model instanceof PSO12) {
+                 GL11.glTranslatef(-0.27F, -0.6F, 1.21F);
+                 GL11.glScaled(0.8F, 0.8F, 0.8F);
+             }
+        })
+        .withCompatibleAttachment(Attachments.NSPU, (player, stack) -> {
             GL11.glTranslatef(0.14F, -0.9F, -1.2F);
             GL11.glScaled(1.2F, 1.2F, 1.2F);
         },(model) -> {
@@ -353,7 +373,7 @@ public class VSSVintorezFactory {
         })
         .withTextureNames("vssvintorez")
         .withRenderer(new WeaponRenderer.Builder()
-
+            
             .withModel(new VSSVintorez())
             //.withTextureName("AK47")
             //.withWeaponProximity(0.99F)
@@ -403,7 +423,7 @@ public class VSSVintorezFactory {
                 )
                 
                 .setupModernAnimations("vssvintorez", AuxiliaryAttachments.VSSVintorezAction)
-                .setupModernMagazineAnimations("vssvintorez", Magazines.ASValMag, Magazines.VSSVintorezMag)
+                .setupModernMagazineAnimations("vssvintorez", Magazines.ASValMag, Magazines.Val30Mag, Magazines.SR3MMag, Magazines.VSSVintorezMag)
             
             .withFirstPersonPositioningCustomRecoiled(AuxiliaryAttachments.VSSVintorezAction.getRenderablePart(), (renderContext) -> {
                 GL11.glTranslatef(0f, 0f, 1f);
@@ -517,6 +537,12 @@ public class VSSVintorezFactory {
                 
                 // ACOG Zoom
                 if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.PSO1)) {
+                    //System.out.println("Position me for Acog");
+                    GL11.glTranslatef(-0.015F, 0.28f, -0.1f);
+                } 
+
+                // ACOG Zoom
+                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.NSPU)) {
                     //System.out.println("Position me for Acog");
                     GL11.glTranslatef(-0.015F, 0.28f, -0.1f);
                 } 
@@ -843,7 +869,7 @@ public class VSSVintorezFactory {
                     }, 280, 0))
              
             .build())
-        .withSpawnEntityDamage(13f)
+        .withSpawnEntityDamage(7f)
         .withSpawnEntityGravityVelocity(0.0118f)
                 
         .build(ModernWarfareMod.MOD_CONTEXT);

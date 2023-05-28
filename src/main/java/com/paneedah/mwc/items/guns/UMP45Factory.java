@@ -1,38 +1,42 @@
 package com.paneedah.mwc.items.guns;
+// Package
+
+// IMPORT LIST START
 
 import com.paneedah.mwc.ModernWarfareMod;
+import com.paneedah.mwc.init.MWCItems;
 import com.paneedah.mwc.models.*;
 import com.paneedah.mwc.proxies.CommonProxy;
 import com.paneedah.mwc.weapons.Attachments;
 import com.paneedah.mwc.weapons.AuxiliaryAttachments;
 import com.paneedah.mwc.weapons.Magazines;
-import com.paneedah.weaponlib.AttachmentCategory;
-import com.paneedah.weaponlib.RenderableState;
-import com.paneedah.weaponlib.Weapon;
-import com.paneedah.weaponlib.WeaponRenderer;
+import com.paneedah.weaponlib.*;
 import com.paneedah.weaponlib.animation.Transform;
 import com.paneedah.weaponlib.animation.Transition;
 import com.paneedah.weaponlib.compatibility.RecoilParam;
 import com.paneedah.weaponlib.config.BalancePackManager.GunConfigurationGroup;
-import com.paneedah.weaponlib.render.shells.ShellParticleSimulator.Shell.Type;
+import com.paneedah.weaponlib.crafting.CraftingEntry;
+import com.paneedah.weaponlib.render.shells.ShellParticleSimulator;
 import net.minecraft.item.Item;
+import net.minecraft.util.math.Vec3d;
 import org.lwjgl.opengl.GL11;
 
 import java.util.Arrays;
+// IMPORT LIST END
 
 public class UMP45Factory {
 
     public Item createGun(CommonProxy commonProxy) {
         return new Weapon.Builder()
-
+        
         .withName("ump_45")
         .withFireRate(0.6f)
         .withRecoil(2f)
         .withZoom(0.9f)
         .withConfigGroup(GunConfigurationGroup.SIDEARM)
-        .withShellType(Type.PISTOL)
+                .withShellType(ShellParticleSimulator.Shell.Type.PISTOL)
         .hasFlashPedals()
-        .withMaxShots(1, Integer.MAX_VALUE)
+        .withMaxShots(1, 2, Integer.MAX_VALUE)
         //.withMaxShots(5)
         .withShootSound("ump45")
         .withSilencedShootSound("mp5_silenced")
@@ -48,7 +52,7 @@ public class UMP45Factory {
         .withFlashScale(() -> 0.6f)
         .withFlashOffsetX(() -> 0.13f)
         .withFlashOffsetY(() -> 0.17f)
-        .withInaccuracy(2f)
+//         .withInaccuracy(2f)
         .withCreativeTab(ModernWarfareMod.AssaultRiflesTab)
         .useNewSystem()
         .withRecoilParam(new RecoilParam(
@@ -93,6 +97,10 @@ public class UMP45Factory {
          })
          .withCompatibleAttachment(Attachments.UMP45Receiver, true, (model) -> {
          })
+         .withCompatibleAttachment(Attachments.UMP40Receiver, (model) -> {
+         })
+         .withCompatibleAttachment(Attachments.UMP10Receiver, (model) -> {
+         })
          .withCompatibleAttachment(Attachments.UMP9Receiver, (model) -> {
          })
          .withCompatibleAttachment(AuxiliaryAttachments.UMP45action, true, (model) -> {
@@ -100,6 +108,10 @@ public class UMP45Factory {
 //           GL11.glScaled(0F, 0F, 0F);
        })
 	        .withCompatibleAttachment(Magazines.UMP45Mag, (model) -> {
+	        })
+	        .withCompatibleAttachment(Magazines.UMP40Mag, (model) -> {
+	        })
+	        .withCompatibleAttachment(Magazines.UMP10Mag, (model) -> {
 	        })
 	        .withCompatibleAttachment(Magazines.UMP9Mag, (model) -> {
 	        })
@@ -308,7 +320,7 @@ public class UMP45Factory {
         })
         .withTextureNames("ump45")
         .withRenderer(new WeaponRenderer.Builder()
-    
+            
             .withModel(new UMP45())
             //.withTextureName("AK47")
             //.withWeaponProximity(0.99F)

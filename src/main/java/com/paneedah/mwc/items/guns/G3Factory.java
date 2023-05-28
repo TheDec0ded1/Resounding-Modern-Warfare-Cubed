@@ -1,4 +1,7 @@
 package com.paneedah.mwc.items.guns;
+// Package
+
+// IMPORT LIST START
 
 import com.paneedah.mwc.ModernWarfareMod;
 import com.paneedah.mwc.init.MWCItems;
@@ -7,25 +10,24 @@ import com.paneedah.mwc.proxies.CommonProxy;
 import com.paneedah.mwc.weapons.Attachments;
 import com.paneedah.mwc.weapons.AuxiliaryAttachments;
 import com.paneedah.mwc.weapons.Magazines;
-import com.paneedah.weaponlib.AttachmentCategory;
-import com.paneedah.weaponlib.RenderableState;
-import com.paneedah.weaponlib.Weapon;
-import com.paneedah.weaponlib.WeaponRenderer;
+import com.paneedah.weaponlib.*;
 import com.paneedah.weaponlib.animation.Transform;
 import com.paneedah.weaponlib.animation.Transition;
 import com.paneedah.weaponlib.compatibility.RecoilParam;
 import com.paneedah.weaponlib.config.BalancePackManager.GunConfigurationGroup;
 import com.paneedah.weaponlib.crafting.CraftingEntry;
 import net.minecraft.item.Item;
+import net.minecraft.util.math.Vec3d;
 import org.lwjgl.opengl.GL11;
 
 import java.util.Arrays;
+// IMPORT LIST END
 
 public class G3Factory {
 
     public Item createGun(CommonProxy commonProxy) {
         return new Weapon.Builder()
-
+        
         .withName("g3")
         .withFireRate(0.5f)
         .withRecoil(3f)
@@ -33,8 +35,8 @@ public class G3Factory {
         .withConfigGroup(GunConfigurationGroup.DMR)
         .withMaxShots(1, Integer.MAX_VALUE)
         //.withMaxShots(5)
-        .withShootSound("mp5")
-        .withSilencedShootSound("mp5_silenced")
+        .withShootSound("g3")
+        .withSilencedShootSound("m110_silenced")
         .withReloadSound("mp5_reload")
         .withUnloadSound("mp5_unload")
         .withInspectSound("inspection")
@@ -81,10 +83,10 @@ public class G3Factory {
                  2f, // y
                  4f) // z
          
-         .withModernRecipe( new
-	        		CraftingEntry(MWCItems.carbonComposite, 9), new
-	        		CraftingEntry(MWCItems.gunmetalPlate, 13), new
-	        		CraftingEntry(MWCItems.steelIngot, 5))
+        .withModernRecipe( new
+        		CraftingEntry(MWCItems.carbonComposite, 8), new
+        		CraftingEntry(MWCItems.gunmetalPlate, 12), new
+        		CraftingEntry(MWCItems.steelIngot, 3))
          
         .withUnremovableAttachmentCategories(AttachmentCategory.GUARD)
         .withUnremovableAttachmentCategories(AttachmentCategory.STOCK)
@@ -364,7 +366,7 @@ public class G3Factory {
         })
         .withTextureNames("g3")
         .withRenderer(new WeaponRenderer.Builder()
-    
+            
             .withModel(new G3())
             //.withTextureName("AK47")
             //.withWeaponProximity(0.99F)

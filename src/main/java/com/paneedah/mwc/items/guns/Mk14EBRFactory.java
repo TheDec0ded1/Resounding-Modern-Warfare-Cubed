@@ -46,7 +46,6 @@ public class Mk14EBRFactory {
         .withFlashScale(() -> 0.6f)
         .withFlashOffsetX(() -> 0.08f)
         .withFlashOffsetY(() -> 0.10f)
-        .withInaccuracy(1f)
         .withCreativeTab(ModernWarfareMod.AssaultRiflesTab)
         .useNewSystem()
         .withRecoilParam(new RecoilParam(
@@ -105,6 +104,42 @@ public class Mk14EBRFactory {
                   GL11.glScaled(0F, 0F, 0F);
               }
           })
+        .withCompatibleAttachment(Attachments.M14WoodBody, (model) -> {
+        	if(model instanceof M14Body) {
+//                GL11.glTranslatef(0F, 0F, 0F);
+//                GL11.glScaled(1F, 1F, 1F);
+              } else if(model instanceof FALIron) {
+                  GL11.glTranslatef(-0.19F, -1.34F, -8.5F);
+                  GL11.glScaled(0F, 0F, 0F);
+              }
+          })
+        .withCompatibleAttachment(Attachments.M14A1Body, (model) -> {
+        	if(model instanceof M14A1Body) {
+//                GL11.glTranslatef(0F, 0F, 0F);
+//                GL11.glScaled(1F, 1F, 1F);
+              } else if(model instanceof FALIron) {
+                  GL11.glTranslatef(-0.19F, -1.34F, -8.5F);
+                  GL11.glScaled(0F, 0F, 0F);
+              }
+          })
+        .withCompatibleAttachment(Attachments.M14ClassicBody, (model) -> {
+        	if(model instanceof M14ClassicBody) {
+//                GL11.glTranslatef(0F, 0F, 0F);
+//                GL11.glScaled(1F, 1F, 1F);
+              } else if(model instanceof FALIron) {
+                  GL11.glTranslatef(-0.19F, -1.34F, -8.5F);
+                  GL11.glScaled(0F, 0F, 0F);
+              }
+          })
+        .withCompatibleAttachment(Attachments.M305Body, (model) -> {
+        	if(model instanceof M14ClassicBody) {
+//                GL11.glTranslatef(0F, 0F, 0F);
+//                GL11.glScaled(1F, 1F, 1F);
+              } else if(model instanceof FALIron) {
+                  GL11.glTranslatef(-0.19F, -1.34F, -8.5F);
+                  GL11.glScaled(0F, 0F, 0F);
+              }
+          })
         .withCompatibleAttachment(Attachments.M14SOCOMChassis, (model) -> {
         	if(model instanceof M14DMRSocomChassis) {
 	                GL11.glTranslatef(0F, 0F, 0F);
@@ -118,6 +153,15 @@ public class Mk14EBRFactory {
                   GL11.glScaled(0.75F, 0.8F, 1F);
                   GL11.glRotatef(180F, 0f, 0f, 1f);
               } 
+        })
+        .withCompatibleAttachment(Attachments.M14WoodChassis, (model) -> {
+        	if(model instanceof M14DMRSocomChassis) {
+	                GL11.glTranslatef(0F, 0F, 0F);
+	                GL11.glScaled(1F, 1F, 1F);
+	        	} else if(model instanceof FALIron) {
+	                GL11.glTranslatef(-0.19F, -1.34F, -8.5F);
+	                GL11.glScaled(0F, 0F, 0F);
+	            } 
         })
         .withCompatibleAttachment(Attachments.Mk14TanBody, (model) -> {
         	if(model instanceof Mk14Body) {
@@ -159,6 +203,14 @@ public class Mk14EBRFactory {
               }
         })
         .withCompatibleAttachment(Attachments.M14Cover, true, (model) -> {
+//          GL11.glTranslatef(-0.2F, -1.3F, -9F);
+//          GL11.glScaled(1F, 1F, 1F);
+        })
+        .withCompatibleAttachment(Attachments.M305Cover, (model) -> {
+//          GL11.glTranslatef(-0.2F, -1.3F, -9F);
+//          GL11.glScaled(1F, 1F, 1F);
+        })
+        .withCompatibleAttachment(Attachments.M14BrownCover, (model) -> {
 //          GL11.glTranslatef(-0.2F, -1.3F, -9F);
 //          GL11.glScaled(1F, 1F, 1F);
         })
@@ -434,6 +486,8 @@ public class Mk14EBRFactory {
         .withCompatibleAttachment(Attachments.Bipod, (model) -> {
         	GL11.glTranslatef(-0.21F, -0.07F, -5.3F);
             GL11.glScaled(1.2F, 1.2F, 1.2F);
+        })
+        .withCompatibleAttachment(Attachments.M14Bipod, (model) -> {
         })
         .withCompatibleAttachment(Attachments.VGrip, (model) -> {
         	GL11.glTranslatef(-0.21F, -0.07F, -4.8F);

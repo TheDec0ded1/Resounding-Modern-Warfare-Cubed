@@ -1,4 +1,7 @@
 package com.paneedah.mwc.items.guns;
+// Package
+
+// IMPORT LIST START
 
 import com.paneedah.mwc.ModernWarfareMod;
 import com.paneedah.mwc.init.MWCItems;
@@ -13,18 +16,18 @@ import com.paneedah.weaponlib.animation.Transition;
 import com.paneedah.weaponlib.compatibility.RecoilParam;
 import com.paneedah.weaponlib.config.BalancePackManager.GunConfigurationGroup;
 import com.paneedah.weaponlib.crafting.CraftingEntry;
-import net.minecraft.init.Blocks;
 import net.minecraft.item.Item;
 import net.minecraft.util.math.Vec3d;
 import org.lwjgl.opengl.GL11;
 
 import java.util.Arrays;
+// IMPORT LIST END
 
 public class SVDDragunovFactory {
 
     public Item createGun(CommonProxy commonProxy) {
         return new Weapon.Builder()
-
+        
         .withName("svd_dragunov")
         .withFireRate(0.3f)
         .withRecoil(4f)
@@ -33,8 +36,8 @@ public class SVDDragunovFactory {
         .hasFlashPedals()
         .withMaxShots(1)
         //.withMaxShots(5)
-        .withShootSound("ak47")
-        .withSilencedShootSound("ak15_silenced")
+        .withShootSound("svd")
+        .withSilencedShootSound("m110_silenced")
         .withReloadSound("ak_reload")
         .withUnloadSound("ak_unload")
         .withInspectSound("inspection")
@@ -85,12 +88,15 @@ public class SVDDragunovFactory {
         .withUnremovableAttachmentCategories(AttachmentCategory.STOCK)
         .withUnremovableAttachmentCategories(AttachmentCategory.RAILING)
         
-        .withModernRecipe(new CraftingEntry(MWCItems.steelIngot, 12), new
-        		CraftingEntry(MWCItems.carbonComposite, 14), new
-        		CraftingEntry(MWCItems.gunmetalPlate, 18), new
-        		CraftingEntry(Blocks.PLANKS, 10))
+                .withModernRecipe( new
+        		CraftingEntry(MWCItems.carbonComposite, 8), new
+        		CraftingEntry(MWCItems.gunmetalPlate, 12), new
+        		CraftingEntry(MWCItems.steelIngot, 3))
         
         .withCompatibleAttachment(Attachments.DragunovGripStock, true, (model) -> {
+//            GL11.glTranslatef(0f, 0f, 1f);
+        })
+        .withCompatibleAttachment(Attachments.DragunovDarkGripStock, (model) -> {
 //            GL11.glTranslatef(0f, 0f, 1f);
         })
         .withCompatibleAttachment(Attachments.Dragunov98Stock, (model) -> {
@@ -111,6 +117,15 @@ public class SVDDragunovFactory {
                 GL11.glScaled(0.8F, 0.7F, 0.7F);
             }
         })
+        .withCompatibleAttachment(Attachments.DragunovDarkHandguard, (model) -> {
+        	if(model instanceof AKMiron2) {
+            	GL11.glTranslatef(-0.185F, -1.39F, -10.35F);
+                GL11.glScaled(0.55F, 0.55F, 1.2F);
+            } else if(model instanceof AK47iron) {
+                GL11.glTranslatef(-0.25F, -1.7F, -3.9F);
+                GL11.glScaled(0.8F, 0.7F, 0.7F);
+            }
+        })
         .withCompatibleAttachment(Attachments.Dragunov98Handguard, (model) -> {
 //          GL11.glTranslatef(0f, 0f, 1f);
         })
@@ -118,6 +133,14 @@ public class SVDDragunovFactory {
 //            GL11.glTranslatef(0f, 0f, 1f);
         })
         .withCompatibleAttachment(Magazines.DragunovMag, (model) -> {
+//        	GL11.glTranslatef(0F, 2F, 0.2F);
+//            GL11.glRotatef(-10F, 1f, 0f, 0f);
+        })
+        .withCompatibleAttachment(Magazines.Dragunov20Mag, (model) -> {
+//        	GL11.glTranslatef(0F, 2F, 0.2F);
+//            GL11.glRotatef(-10F, 1f, 0f, 0f);
+        })
+        .withCompatibleAttachment(Magazines.DragunovBakeMag, (model) -> {
 //        	GL11.glTranslatef(0F, 2F, 0.2F);
 //            GL11.glRotatef(-10F, 1f, 0f, 0f);
         })
@@ -286,6 +309,19 @@ public class SVDDragunovFactory {
                  GL11.glScaled(0.8F, 0.8F, 0.8F);
              }
         })
+        .withCompatibleAttachment(Attachments.NSPU, (player, stack) -> {
+            GL11.glTranslatef(0.14F, -0.9F, -1.5F);
+            GL11.glScaled(1.2F, 1.2F, 1.2F);
+        },(model) -> {
+            if(model instanceof PSO1reticle) {
+                GL11.glTranslatef(-0.212F, -0.486F, 1.27F);
+                GL11.glScaled(0.017F, 0.017F, 0.017F);
+            }
+             else if(model instanceof PSO12) {
+                 GL11.glTranslatef(-0.27F, -0.6F, 1.21F);
+                 GL11.glScaled(0.8F, 0.8F, 0.8F);
+             }
+        })
         .withCompatibleAttachment(Attachments.OKP7, (player, stack) -> {
                 GL11.glTranslatef(-0.2F, -0.65F, -1F);
                 GL11.glScaled(0.7F, 0.7F, 0.7F);
@@ -325,7 +361,7 @@ public class SVDDragunovFactory {
         }, false, false)
         .withTextureNames("dragunov")
         .withRenderer(new WeaponRenderer.Builder()
-    
+            
             .withModel(new Dragunov())
             .withActionPiece(AuxiliaryAttachments.DragunovAction)
             .withActionTransform(new Transform().withPosition(0, 0, 1))
@@ -379,7 +415,7 @@ public class SVDDragunovFactory {
                 
                 .setupModernAnimations("dragunov", AuxiliaryAttachments.DragunovAction)
                 .setupModernMagazineAnimations("dragunov", 
-                		Magazines.DragunovMag)
+                		Magazines.DragunovMag, Magazines.DragunovBakeMag, Magazines.Dragunov20Mag)
             
             .withFirstPersonPositioningCustomRecoiled(AuxiliaryAttachments.AKaction.getRenderablePart(), (renderContext) -> {
                 GL11.glTranslatef(0f, 0f, 1f);
@@ -598,6 +634,11 @@ public class SVDDragunovFactory {
                 
              // ACOG Zoom
                 if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.PSO1)) {
+                    //System.out.println("Position me for Acog");
+                    GL11.glTranslatef(-0.01F, 0.13f, -0.4f);
+                } 
+             // ACOG Zoom
+                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.NSPU)) {
                     //System.out.println("Position me for Acog");
                     GL11.glTranslatef(-0.01F, 0.13f, -0.4f);
                 } 

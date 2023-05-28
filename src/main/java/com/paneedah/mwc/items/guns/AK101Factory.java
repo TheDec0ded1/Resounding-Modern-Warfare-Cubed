@@ -1,4 +1,7 @@
 package com.paneedah.mwc.items.guns;
+// Package
+
+// IMPORT LIST START
 
 import com.paneedah.mwc.ModernWarfareMod;
 import com.paneedah.mwc.init.MWCItems;
@@ -7,27 +10,24 @@ import com.paneedah.mwc.proxies.CommonProxy;
 import com.paneedah.mwc.weapons.Attachments;
 import com.paneedah.mwc.weapons.AuxiliaryAttachments;
 import com.paneedah.mwc.weapons.Magazines;
-import com.paneedah.weaponlib.AttachmentCategory;
-import com.paneedah.weaponlib.RenderableState;
-import com.paneedah.weaponlib.Weapon;
-import com.paneedah.weaponlib.WeaponRenderer;
+import com.paneedah.weaponlib.*;
 import com.paneedah.weaponlib.animation.Transform;
 import com.paneedah.weaponlib.animation.Transition;
 import com.paneedah.weaponlib.compatibility.RecoilParam;
 import com.paneedah.weaponlib.config.BalancePackManager.GunConfigurationGroup;
-import com.paneedah.weaponlib.crafting.CraftingComplexity;
 import com.paneedah.weaponlib.crafting.CraftingEntry;
 import net.minecraft.item.Item;
 import net.minecraft.util.math.Vec3d;
 import org.lwjgl.opengl.GL11;
 
 import java.util.Arrays;
+// IMPORT LIST END
 
 public class AK101Factory {
 
     public Item createGun(CommonProxy commonProxy) {
         return new Weapon.Builder()
-
+        
         .withName("ak101")
 //        .withAmmoCapacity(30)
         .withFireRate(0.6f)
@@ -92,23 +92,41 @@ public class AK101Factory {
         .withModernRecipe( new
         		CraftingEntry(MWCItems.carbonComposite, 8), new
         		CraftingEntry(MWCItems.gunmetalPlate, 12), new
-        		CraftingEntry(MWCItems.steelIngot, 5))
+        		CraftingEntry(MWCItems.steelIngot, 3))
         
         .withUnremovableAttachmentCategories(AttachmentCategory.GUARD)
         .withUnremovableAttachmentCategories(AttachmentCategory.BACKGRIP)
-        .withCrafting(CraftingComplexity.MEDIUM,
-                MWCItems.gunmetalIngot,
-                MWCItems.gunmetalPlate)
 //        .withUnremovableAttachmentCategories(AttachmentCategory.RAILING)
         .withCompatibleAttachment(Attachments.AK47Stock, (model) -> {
 //            GL11.glTranslatef(0f, 0f, 1f);
         })
         .withCompatibleAttachment(Attachments.AK101Stock, true, (model) -> {
 //            GL11.glTranslatef(0f, 0f, 1f);
+	})
+        .withCompatibleAttachment(Attachments.AK101GreenStock, (model) -> {
+//            GL11.glTranslatef(0f, 0f, 1f);
+	})
+        .withCompatibleAttachment(Attachments.AK101PearlStock, (model) -> {
+//            GL11.glTranslatef(0f, 0f, 1f);
+        })
+        .withCompatibleAttachment(Attachments.AK101PlumStock, (model) -> {
+//            GL11.glTranslatef(0f, 0f, 1f);
+        })
+        .withCompatibleAttachment(Attachments.AK101WhiteStock, (model) -> {
+//            GL11.glTranslatef(0f, 0f, 1f);
         })
         .withCompatibleAttachment(Attachments.AK74Stock, (model) -> {
 //          GL11.glTranslatef(0f, 0f, 1f);
         })
+        .withCompatibleAttachment(Attachments.AK74GreenStock, (model) -> {
+//          GL11.glTranslatef(0f, 0f, 1f);
+        })
+	 .withCompatibleAttachment(Attachments.AKSUStock, (model) -> {
+//            GL11.glTranslatef(0f, 0f, 1f);
+	})
+	 .withCompatibleAttachment(Attachments.AKRStock, (model) -> {
+//            GL11.glTranslatef(0f, 0f, 1f);
+	})
         .withCompatibleAttachment(Attachments.AK47DustCover, (model) -> {
 //            GL11.glTranslatef(0f, 0f, 1f);
         })
@@ -120,10 +138,31 @@ public class AK101Factory {
         })
         .withCompatibleAttachment(Attachments.AK101HandGuard, true, (model) -> {
 //            GL11.glTranslatef(0f, 0f, 1f);
+	})
+        .withCompatibleAttachment(Attachments.AK101GreenHandGuard, (model) -> {
+//            GL11.glTranslatef(0f, 0f, 1f);
+        })
+        .withCompatibleAttachment(Attachments.AK101PearlHandGuard, (model) -> {
+//            GL11.glTranslatef(0f, 0f, 1f);
+        })
+        .withCompatibleAttachment(Attachments.AK101PlumHandGuard, (model) -> {
+//            GL11.glTranslatef(0f, 0f, 1f);
+        })
+        .withCompatibleAttachment(Attachments.AK101WhiteHandGuard, (model) -> {
+//            GL11.glTranslatef(0f, 0f, 1f);
         })
         .withCompatibleAttachment(Attachments.AK74Handguard, (model) -> {
 //          GL11.glTranslatef(0f, 0f, 1f);
         })
+        .withCompatibleAttachment(Attachments.AK74GreenHandguard, (model) -> {
+//          GL11.glTranslatef(0f, 0f, 1f);
+        })
+        .withCompatibleAttachment(Attachments.AIMHandGuard, (model) -> {
+//            GL11.glTranslatef(0f, 0f, 1f);
+	})
+        .withCompatibleAttachment(Attachments.TantalHandGuard, (model) -> {
+//            GL11.glTranslatef(0f, 0f, 1f);
+	})
         .withCompatibleAttachment(Attachments.AKMagpulHandleGuard, (model) -> {
 //            GL11.glTranslatef(0f, 0f, 1f);
         })
@@ -193,7 +232,27 @@ public class AK101Factory {
 //            GL11.glTranslatef(0.02f, 0.2f, -0.4f);
 //            GL11.glScaled(1.2F, 1.2F, 1.2F);
         })
+        .withCompatibleAttachment(Attachments.TantalGrip, (model) -> {
+//            GL11.glTranslatef(0.02f, 0.2f, -0.4f);
+//            GL11.glScaled(1.2F, 1.2F, 1.2F);
+        })
         .withCompatibleAttachment(Attachments.AK101Grip, true, (model) -> {
+//            GL11.glTranslatef(0.02f, 0.2f, -0.4f);
+//            GL11.glScaled(1.2F, 1.2F, 1.2F);
+        })
+        .withCompatibleAttachment(Attachments.AK101GreenGrip, (model) -> {
+//            GL11.glTranslatef(0.02f, 0.2f, -0.4f);
+//            GL11.glScaled(1.2F, 1.2F, 1.2F);
+        })
+        .withCompatibleAttachment(Attachments.AK101PearlGrip, (model) -> {
+//            GL11.glTranslatef(0.02f, 0.2f, -0.4f);
+//            GL11.glScaled(1.2F, 1.2F, 1.2F);
+        })
+        .withCompatibleAttachment(Attachments.AK101PlumGrip, (model) -> {
+//            GL11.glTranslatef(0.02f, 0.2f, -0.4f);
+//            GL11.glScaled(1.2F, 1.2F, 1.2F);
+        })
+        .withCompatibleAttachment(Attachments.AK101WhiteGrip, (model) -> {
 //            GL11.glTranslatef(0.02f, 0.2f, -0.4f);
 //            GL11.glScaled(1.2F, 1.2F, 1.2F);
         })
@@ -473,7 +532,7 @@ public class AK101Factory {
 	    })
         .withTextureNames("bareak")
         .withRenderer(new WeaponRenderer.Builder()
-        
+                
                 .withModel(new AK101())
                 .withActionPiece(AuxiliaryAttachments.AK15action)
                 .withActionTransform(new Transform().withPosition(0, 0, 1))

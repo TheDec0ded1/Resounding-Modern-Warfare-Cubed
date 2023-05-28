@@ -1,4 +1,7 @@
 package com.paneedah.mwc.items.guns;
+// Package
+
+// IMPORT LIST START
 
 import com.paneedah.mwc.ModernWarfareMod;
 import com.paneedah.mwc.init.MWCItems;
@@ -7,33 +10,29 @@ import com.paneedah.mwc.proxies.CommonProxy;
 import com.paneedah.mwc.weapons.Attachments;
 import com.paneedah.mwc.weapons.AuxiliaryAttachments;
 import com.paneedah.mwc.weapons.Magazines;
-import com.paneedah.weaponlib.AttachmentCategory;
-import com.paneedah.weaponlib.RenderableState;
-import com.paneedah.weaponlib.Weapon;
-import com.paneedah.weaponlib.WeaponRenderer;
+import com.paneedah.weaponlib.*;
 import com.paneedah.weaponlib.animation.Transform;
 import com.paneedah.weaponlib.animation.Transition;
 import com.paneedah.weaponlib.compatibility.RecoilParam;
 import com.paneedah.weaponlib.config.BalancePackManager.GunConfigurationGroup;
 import com.paneedah.weaponlib.crafting.CraftingEntry;
-import com.paneedah.weaponlib.render.shells.ShellParticleSimulator.Shell.Type;
 import net.minecraft.item.Item;
 import net.minecraft.util.math.Vec3d;
 import org.lwjgl.opengl.GL11;
 
 import java.util.Arrays;
+// IMPORT LIST END
 
 public class KBP9A91Factory {
 
     public Item createGun(CommonProxy commonProxy) {
         return new Weapon.Builder()
-
+        
         .withName("kbp_9a91")
         .withFireRate(0.7f)
         .withRecoil(2f)
         .withZoom(0.9f)
         .withConfigGroup(GunConfigurationGroup.SIDEARM)
-        .withShellType(Type.PISTOL)
         .hasFlashPedals()
         .withMaxShots(1, Integer.MAX_VALUE)
         //.withMaxShots(5)
@@ -50,7 +49,7 @@ public class KBP9A91Factory {
         .withFlashScale(() -> 0.6f)
         .withFlashOffsetX(() -> 0.1f)
         .withFlashOffsetY(() -> 0.15f)
-        .withInaccuracy(2f)
+//         .withInaccuracy(2f)
         .withCreativeTab(ModernWarfareMod.AssaultRiflesTab)
         .useNewSystem()
         .withRecoilParam(new RecoilParam(
@@ -86,8 +85,8 @@ public class KBP9A91Factory {
                 3f) // z
         
         .withModernRecipe( new
-        		CraftingEntry(MWCItems.carbonComposite, 6), new
-        		CraftingEntry(MWCItems.gunmetalPlate, 7), new
+        		CraftingEntry(MWCItems.carbonComposite, 8), new
+        		CraftingEntry(MWCItems.gunmetalPlate, 12), new
         		CraftingEntry(MWCItems.steelIngot, 3))
         
         .withUnremovableAttachmentCategories(AttachmentCategory.GUARD)
@@ -144,6 +143,20 @@ public class KBP9A91Factory {
                  GL11.glScaled(0.8F, 0.8F, 0.8F);
              }
         })
+        .withCompatibleAttachment(Attachments.NSPU, (player, stack) -> {
+            
+            GL11.glTranslatef(0.14F, -0.9F, -1.2F);
+            GL11.glScaled(1.2F, 1.2F, 1.2F);
+        },(model) -> {
+            if(model instanceof PSO1reticle) {
+                GL11.glTranslatef(-0.212F, -0.486F, 1.27F);
+                GL11.glScaled(0.017F, 0.017F, 0.017F);
+            }
+             else if(model instanceof PSO12) {
+                 GL11.glTranslatef(-0.27F, -0.6F, 1.21F);
+                 GL11.glScaled(0.8F, 0.8F, 0.8F);
+             }
+        })
         .withCompatibleAttachment(Attachments.Grip2, (model) -> {
             GL11.glTranslatef(-0.2F, -0.15F, -3.3F);
             GL11.glScaled(1F, 1F, 1F);
@@ -158,7 +171,7 @@ public class KBP9A91Factory {
         })
         .withTextureNames("kbp9a91")
         .withRenderer(new WeaponRenderer.Builder()
-    
+            
             .withModel(new KBP9A91())
             .withActionPiece(AuxiliaryAttachments.KBP9A91action)
             .withActionTransform(new Transform().withPosition(0, 0, 0.8))
@@ -327,6 +340,11 @@ public class KBP9A91Factory {
                 
              // ACOG Zoom
                 if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.PSO1)) {
+                    //System.out.println("Position me for Acog");
+                    GL11.glTranslatef(-0.015F, 0.22f, 0.25f);
+                } 
+             // ACOG Zoom
+                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.NSPU)) {
                     //System.out.println("Position me for Acog");
                     GL11.glTranslatef(-0.015F, 0.22f, 0.25f);
                 } 

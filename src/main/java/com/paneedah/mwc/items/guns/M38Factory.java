@@ -1,4 +1,7 @@
 package com.paneedah.mwc.items.guns;
+// Package
+
+// IMPORT LIST START
 
 import com.paneedah.mwc.ModernWarfareMod;
 import com.paneedah.mwc.init.MWCItems;
@@ -18,12 +21,13 @@ import net.minecraft.util.math.Vec3d;
 import org.lwjgl.opengl.GL11;
 
 import java.util.Arrays;
+// IMPORT LIST END
 
 public class M38Factory implements GunFactory {
 
 	public Item createGun(CommonProxy commonProxy) {
 		return new Weapon.Builder()
-		
+
 		.withName("m38_dmr")
 		//.withAmmoCapacity(30)
 		.withFireRate(0.75f)
@@ -33,7 +37,7 @@ public class M38Factory implements GunFactory {
 		.hasFlashPedals()
 		.withMaxShots(1, Integer.MAX_VALUE)
 		.withShootSound("m38_dmr")
-		.withSilencedShootSound("m4a1_silenced")
+		.withSilencedShootSound("hk416_silenced")
 		.withReloadSound("m4a1_reload")
 		.withUnloadSound("m4a1_unload")
 		.withEndOfShootSound("gun_click")
@@ -88,10 +92,10 @@ public class M38Factory implements GunFactory {
 	                1f, // y
 	                3f) // z
 		 
-		 .withModernRecipe( new
-	        		CraftingEntry(MWCItems.carbonComposite, 8), new
-	        		CraftingEntry(MWCItems.gunmetalPlate, 12), new
-	        		CraftingEntry(MWCItems.steelIngot, 3))
+        .withModernRecipe( new
+        		CraftingEntry(MWCItems.carbonComposite, 8), new
+        		CraftingEntry(MWCItems.gunmetalPlate, 12), new
+        		CraftingEntry(MWCItems.steelIngot, 3))
 		 
         .withUnremovableAttachmentCategories(AttachmentCategory.GUARD)
         .withUnremovableAttachmentCategories(AttachmentCategory.BACKGRIP)
@@ -513,7 +517,7 @@ public class M38Factory implements GunFactory {
 		})
 		.withTextureNames("hk416")
 		.withRenderer(new WeaponRenderer.Builder()
-			
+	
 			.withModel(new HK416())
 			.withADSBeizer(new Vec3d(0.2, 1.7, 0.5))
 			.withEntityPositioning(itemStack -> {
@@ -704,7 +708,7 @@ public class M38Factory implements GunFactory {
                         GL11.glTranslatef(-0.003F, -0.025f, 0.8f);
                 } 
 
-				// HP Zoomw
+				// HP Zoomwc
 				if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.LeupoldRailScope)) {
                         GL11.glTranslatef(0.001F, -0.027f, 0.2f);
 				} 

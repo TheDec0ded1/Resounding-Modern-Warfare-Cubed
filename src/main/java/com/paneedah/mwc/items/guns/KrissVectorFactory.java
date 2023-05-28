@@ -1,4 +1,7 @@
 package com.paneedah.mwc.items.guns;
+// Package
+
+// IMPORT LIST START
 
 import com.paneedah.mwc.ModernWarfareMod;
 import com.paneedah.mwc.init.MWCItems;
@@ -13,25 +16,26 @@ import com.paneedah.weaponlib.animation.Transition;
 import com.paneedah.weaponlib.compatibility.RecoilParam;
 import com.paneedah.weaponlib.config.BalancePackManager.GunConfigurationGroup;
 import com.paneedah.weaponlib.crafting.CraftingEntry;
-import com.paneedah.weaponlib.render.shells.ShellParticleSimulator.Shell.Type;
+import com.paneedah.weaponlib.render.shells.ShellParticleSimulator;
 import net.minecraft.item.Item;
 import net.minecraft.util.math.Vec3d;
 import org.lwjgl.opengl.GL11;
 
 import java.util.Arrays;
+// IMPORT LIST END
 
 public class KrissVectorFactory {
 
     public Item createGun(CommonProxy commonProxy) {
         return new Weapon.Builder()
-
+        
         .withName("kriss_vector")
         .withFireRate(0.999f)
         .withRecoil(2.5f)
         .withZoom(0.9f)
         .withConfigGroup(GunConfigurationGroup.SIDEARM)
-        .withShellType(Type.PISTOL)
-        .withMaxShots(1, Integer.MAX_VALUE)
+                .withShellType(ShellParticleSimulator.Shell.Type.PISTOL)
+        .withMaxShots(1, 2, Integer.MAX_VALUE)
         .withMuzzlePosition(new Vec3d(-0.09600000286102293, -0.13599997425079366, -4.6919999461174))
         //.withMaxShots(5)
         .withShootSound("vector")
@@ -48,7 +52,7 @@ public class KrissVectorFactory {
         .withFlashScale(() -> 0.5f)
         .withFlashOffsetX(() -> 0.12f)
         .withFlashOffsetY(() -> 0.22f)
-        .withInaccuracy(2f)
+//         .withInaccuracy(2f)
         .withCreativeTab(ModernWarfareMod.AssaultRiflesTab)
         .useNewSystem()
         .withRecoilParam(new RecoilParam(
@@ -77,11 +81,8 @@ public class KrissVectorFactory {
         "Rate of Fire: 99/100",
         "Magazines:",
         "25rnd .45 ACP Vector Magazine",
-        "30rnd 5.56x45mm NATO STANAG Magazine (w/ Vector 5.56 Handguard)",
-        "30rnd 5.56x45mm NATO PMAG Magazine (w/ Vector 5.56 Handguard)",
-        "50rnd 5.56x45mm NATO STANAG Drum Magazine (w/ Vector 5.56 Handguard)",
-        "60rnd 5.56x45mm NATO STANAG Drum Magazine (w/ Vector 5.56 Handguard)",
-        "100rnd 5.56x45mm NATO STANAG Drum Magazine (w/ Vector 5.56 Handguard)"))
+        "50rd .45 ACP Vector Drum Magazine",
+        "25rnd 5.56x45mm NATO FAMAS Magazine (w/ Vector 5.56 Handguard)"))
         .withUnremovableAttachmentCategories(AttachmentCategory.RECEIVER)
         
         
@@ -91,8 +92,8 @@ public class KrissVectorFactory {
                 3f) // z
         
         .withModernRecipe( new
-        		CraftingEntry(MWCItems.carbonComposite, 5), new
-        		CraftingEntry(MWCItems.gunmetalPlate, 8), new
+        		CraftingEntry(MWCItems.carbonComposite, 8), new
+        		CraftingEntry(MWCItems.gunmetalPlate, 12), new
         		CraftingEntry(MWCItems.steelIngot, 3))
         
         .withCompatibleAttachment(Attachments.RailRiser, (model) -> {
@@ -526,7 +527,7 @@ public class KrissVectorFactory {
 		})
         .withTextureNames("krissvector")
         .withRenderer(new WeaponRenderer.Builder()
-    
+            
             .withModel(new KrissVector())
             .withADSBeizer(new Vec3d(0.2, 1.7, 0.5))
             //.withTextureName("AK47")

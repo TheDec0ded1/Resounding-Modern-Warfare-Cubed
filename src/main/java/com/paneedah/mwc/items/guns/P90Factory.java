@@ -51,7 +51,7 @@ public class P90Factory {
         .withFlashOffsetX(() -> 0.2f)
         .withFlashOffsetY(() -> 0.27f)
         .withShellCasingEjectEnabled(false)
-        .withInaccuracy(2f)
+        //         .withInaccuracy(2f)
         .withCreativeTab(ModernWarfareMod.AssaultRiflesTab)
         .useNewSystem()
         .withRecoilParam(new RecoilParam(

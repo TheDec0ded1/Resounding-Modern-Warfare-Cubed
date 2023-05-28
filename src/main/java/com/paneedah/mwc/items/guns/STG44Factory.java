@@ -42,7 +42,7 @@ public class STG44Factory {
         .withFlashScale(() -> 0.6f)
         .withFlashOffsetX(() -> 0.12f)
         .withFlashOffsetY(() -> 0.14f)
-        .withInaccuracy(1f)
+        //         .withInaccuracy(1f)
         .withCreativeTab(ModernWarfareMod.AssaultRiflesTab)
         .withInformationProvider(stack -> Arrays.asList(
         "Type: Assault rifle",

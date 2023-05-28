@@ -44,7 +44,7 @@ public class ChiappaRhinoFactory implements GunFactory {
         .withFlashScale(() -> 0.6f)
         .withFlashOffsetX(() -> 0.1f)
         .withFlashOffsetY(() -> 0.15f)
-        .withInaccuracy(3)
+        //         .withInaccuracy(3)
         .withShellCasingEjectEnabled(false)
         .withCreativeTab(ModernWarfareMod.AssaultRiflesTab) 
         

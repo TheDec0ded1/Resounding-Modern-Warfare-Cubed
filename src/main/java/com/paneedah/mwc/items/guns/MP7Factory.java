@@ -52,7 +52,7 @@ public class MP7Factory {
         .withFlashScale(() -> 0.6f)
         .withFlashOffsetX(() -> 0.16f)
         .withFlashOffsetY(() -> 0.23f)
-        .withInaccuracy(2f)
+        //         .withInaccuracy(2f)
         .withCreativeTab(ModernWarfareMod.AssaultRiflesTab)
         .useNewSystem()
         .withRecoilParam(new RecoilParam(
