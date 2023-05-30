@@ -227,7 +227,7 @@ public class AuxiliaryAttachments {
     public static ItemAttachment<Weapon> ChainA;
     public static ItemAttachment<Weapon> ChainB;
     
-    public static void init(Object mod) {
+    public static void init(Object mod, CompatibleFmlPreInitializationEvent event) {
         
 /*
     	PanelUpper = new AttachmentBuilder<Weapon>()

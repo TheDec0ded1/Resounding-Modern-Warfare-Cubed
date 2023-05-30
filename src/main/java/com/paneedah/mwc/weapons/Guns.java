@@ -32,7 +32,6 @@ public class Guns {
     public static Item turretgunsilenced;
     
     public static Item MP443;
-    //public static Item AK12_kal;
     public static Item AK15;
     public static Item KBP9A91;
     public static Item Kedr;
@@ -124,14 +123,14 @@ public class Guns {
     public static Item M200Intervention;
     public static Item AS50;
     public static Item M82;
-//    public static Item NTW20;
+
     public static Item GL06;
     public static Item M79;
     public static Item M32MGL;
     public static Item RPG7;
     public static Item M202;
     public static Item M134;
-//    public static Item NinthSin;
+
     
     
     // TDM
@@ -139,7 +138,6 @@ public class Guns {
     // Marine Assault
     public static Item M17;
     
-    public static Item AsiimovM4A1;
     
     // German Assault
     public static Item HK_P12;
@@ -171,6 +169,7 @@ public class Guns {
     public static Item AK102;
     public static Item AK103;
     public static Item AK104;
+    public static Item CAR15;
     public static Item AK105;
     public static Item Tantal;
     public static Item VSK94;
@@ -186,8 +185,12 @@ public class Guns {
     public static Item LAPAFA03;
     public static Item MP510;
     public static Item MP540;
+    public static Item SP1;
+    public static Item FALI;
+    public static Item FNFALPARA;
+
     
-    public static void init(Object mod, CommonProxy proxy) {
+    public static void init(Object mod, CompatibleFmlPreInitializationEvent event, CommonProxy proxy) {
      // Try not to change the order of the guns to ensure stable recipes
 
         M249 = new M249Factory().createGun(proxy);
@@ -318,14 +321,14 @@ public class Guns {
         M200Intervention = new M200InterventionFactory().createGun(proxy);
         AS50 = new AS50Factory().createGun(proxy);
         M82 = new M82Factory().createGun(proxy);
-//        NTW20 = new NTW20Factory().createGun(proxy);
+
         GL06 = new GL06Factory().createGun(proxy);
         M79 = new M79Factory().createGun(proxy);
         M32MGL = new M32MGLFactory().createGun(proxy);
         RPG7 = new RPG7Factory().createGun(proxy);
         M202 = new M202Factory().createGun(proxy);
         M134 = new M134Factory().createGun(proxy);
-//        NinthSin = new NinthSinFactory().createGun(proxy);
+
         
         Chainsaw = new ChainsawFactory().createGun(proxy);
         PGMHecateII = new PGMHecateIIFactory().createGun(proxy);
@@ -335,6 +338,7 @@ public class Guns {
         AK102 = new AK102Factory().createGun(proxy);
         AK103 = new AK103Factory().createGun(proxy);
         AK104 = new AK104Factory().createGun(proxy);
+        CAR15 = new CAR15Factory().createGun(proxy);
         AK105 = new AK105Factory().createGun(proxy);
         Tantal = new TantalFactory().createGun(proxy);
         VSK94 = new VSK94Factory().createGun(proxy);
@@ -350,6 +354,10 @@ public class Guns {
         LAPAFA03 = new LAPAFA03Factory().createGun(proxy);
         MP510 = new MP510Factory().createGun(proxy);
         MP540 = new MP540Factory().createGun(proxy);
+        SP1 = new SP1Factory().createGun(proxy);
+        FNFALPARA = new FNFALPARAFactory().createGun(proxy);
+        FALI = new FALIFactory().createGun(proxy);
+
        
     }
 }
