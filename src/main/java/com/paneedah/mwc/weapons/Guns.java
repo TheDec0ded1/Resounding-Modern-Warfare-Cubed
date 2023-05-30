@@ -190,7 +190,7 @@ public class Guns {
     public static Item FNFALPARA;
 
     
-    public static void init(Object mod, CompatibleFmlPreInitializationEvent event, CommonProxy proxy) {
+    public static void init(Object mod, CommonProxy proxy) {
      // Try not to change the order of the guns to ensure stable recipes
 
         M249 = new M249Factory().createGun(proxy);

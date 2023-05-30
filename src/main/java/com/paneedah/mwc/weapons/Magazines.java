@@ -161,7 +161,7 @@ public class Magazines {
     public static ItemMagazine FuelCell;
     public static ItemMagazine NinthSinMag;
 
-    public static void init(Object mod, CompatibleFmlPreInitializationEvent event) {
+    public static void init(Object mod) {
     	
         Magazines.FuelCell = new ItemMagazine.Builder().withAmmo(1000)
                 .withName("FuelCell")
