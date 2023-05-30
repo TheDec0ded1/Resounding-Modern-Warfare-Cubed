@@ -23,12 +23,12 @@ import org.lwjgl.opengl.GL11;
 import java.util.Arrays;
 // IMPORT LIST END
 
-public class FNFALFactory {
+public class FALIFactory {
 
     public Item createGun(CommonProxy commonProxy) {
         return new Weapon.Builder()
         
-        .withName("fnfal")
+        .withName("fnfal_israeli")
         .withFireRate(0.6f)
         .withRecoil(5f)
         .withZoom(0.9f)
@@ -99,7 +99,7 @@ public class FNFALFactory {
                 GL11.glScaled(0.65F, 0.8F, 1F);
             }
         })
-        .withCompatibleAttachment(Attachments.FNFALHandguard, true, (model) -> {
+        .withCompatibleAttachment(Attachments.FNFALHandguard, (model) -> {
 //            GL11.glTranslatef(0f, 0f, 1f);
         })
         .withCompatibleAttachment(Attachments.FNFALBHandguard, (model) -> {
@@ -108,7 +108,7 @@ public class FNFALFactory {
         .withCompatibleAttachment(Attachments.FNFALPHandguard, (model) -> {
 //            GL11.glTranslatef(0f, 0f, 1f);
         })
-        .withCompatibleAttachment(Attachments.FNFALIsraeliHandguard, (model) -> {
+        .withCompatibleAttachment(Attachments.FNFALIsraeliHandguard, true, (model) -> {
 //            GL11.glTranslatef(0f, 0f, 1f);
         })
         .withCompatibleAttachment(Attachments.FNFALG1Handguard, (model) -> {
@@ -135,11 +135,11 @@ public class FNFALFactory {
 //            GL11.glTranslatef(0.02f, 0.2f, -0.2f);
 //            GL11.glScaled(1.2F, 1.2F, 1.2F);
         })
-        .withCompatibleAttachment(Attachments.FNFALGrip, true, (model) -> {
+        .withCompatibleAttachment(Attachments.FNFALGrip, (model) -> {
 //            GL11.glTranslatef(0.02f, 0.2f, -0.4f);
 //            GL11.glScaled(1.2F, 1.2F, 1.2F);
         })
-        .withCompatibleAttachment(Attachments.FNFALGripWood, (model) -> {
+        .withCompatibleAttachment(Attachments.FNFALGripWood, true, (model) -> {
 //            GL11.glTranslatef(0.02f, 0.2f, -0.4f);
 //            GL11.glScaled(1.2F, 1.2F, 1.2F);
         })
@@ -389,7 +389,7 @@ public class FNFALFactory {
         .withTextureNames("fnfal")
         .withRenderer(new WeaponRenderer.Builder()
             
-            .withModel(new FNFAL())
+            .withModel(new FNFALWood())
             .withActionPiece(AuxiliaryAttachments.FNFALAction)
             .withActionTransform(new Transform().withPosition(0, 0, 1))
             //.withTextureName("AK47")

@@ -354,6 +354,12 @@ public class AR15Factory implements GunFactory {
             
 //            GL11.glTranslatef(0F, 0.35F, 0F);
         })
+        .withCompatibleAttachment(Magazines.M16Mag, (model) -> {
+		    GL11.glTranslatef(-0.335F, 0.4F, -1.25F);
+            GL11.glScaled(1.05F, 1.2F, 1.15F);
+            
+//            GL11.glTranslatef(0F, 0.35F, 0F);
+        })
 		.withCompatibleAttachment(Magazines.SOCOM_Mag, (model) -> {
 		    GL11.glTranslatef(-0.335F, 0.4F, -1.25F);
             GL11.glScaled(1.05F, 1.2F, 1.15F);
@@ -772,6 +778,7 @@ public class AR15Factory implements GunFactory {
                 .setupModernAnimations("m4a1", AuxiliaryAttachments.AKaction)
                 .setupModernMagazineAnimations("m4a1", 
                 		Magazines.M4A1Mag, 
+                		Magazines.M16Mag,
                 		Magazines.M38Mag, 
                 		Magazines.Stanag100,
                 		Magazines.Stanag50,

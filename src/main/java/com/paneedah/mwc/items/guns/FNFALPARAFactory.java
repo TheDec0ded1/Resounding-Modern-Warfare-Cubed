@@ -23,12 +23,12 @@ import org.lwjgl.opengl.GL11;
 import java.util.Arrays;
 // IMPORT LIST END
 
-public class FNFALFactory {
+public class FNFALPARAFactory {
 
     public Item createGun(CommonProxy commonProxy) {
         return new Weapon.Builder()
         
-        .withName("fnfal")
+        .withName("fnfal_para")
         .withFireRate(0.6f)
         .withRecoil(5f)
         .withZoom(0.9f)
@@ -99,13 +99,13 @@ public class FNFALFactory {
                 GL11.glScaled(0.65F, 0.8F, 1F);
             }
         })
-        .withCompatibleAttachment(Attachments.FNFALHandguard, true, (model) -> {
+        .withCompatibleAttachment(Attachments.FNFALHandguard, (model) -> {
 //            GL11.glTranslatef(0f, 0f, 1f);
         })
         .withCompatibleAttachment(Attachments.FNFALBHandguard, (model) -> {
 //            GL11.glTranslatef(0f, 0f, 1f);
         })
-        .withCompatibleAttachment(Attachments.FNFALPHandguard, (model) -> {
+        .withCompatibleAttachment(Attachments.FNFALPHandguard, true, (model) -> {
 //            GL11.glTranslatef(0f, 0f, 1f);
         })
         .withCompatibleAttachment(Attachments.FNFALIsraeliHandguard, (model) -> {
@@ -123,11 +123,11 @@ public class FNFALFactory {
                 GL11.glRotatef(180.000000f, 0f, 0f, 1f);
             }
         })
-        .withCompatibleAttachment(Attachments.FNFALStock, true, (model) -> {
+        .withCompatibleAttachment(Attachments.FNFALStock, (model) -> {
 //            GL11.glTranslatef(0.02f, 0.2f, -0.2f);
 //            GL11.glScaled(1.2F, 1.2F, 1.2F);
         })
-        .withCompatibleAttachment(Attachments.FNFALParaStock, (model) -> {
+        .withCompatibleAttachment(Attachments.FNFALParaStock, true, (model) -> {
 //            GL11.glTranslatef(0.02f, 0.2f, -0.2f);
 //            GL11.glScaled(1.2F, 1.2F, 1.2F);
         })
@@ -383,13 +383,13 @@ public class FNFALFactory {
             GL11.glScaled(1F, 1F, 1F);
         })
         .withCompatibleAttachment(Attachments.Silencer762x51, (model) -> {
-        	GL11.glTranslatef(-0.2F, -1.18F, -9F);
+        	GL11.glTranslatef(-0.2F, -1.18F, -7F);
             GL11.glScaled(1F, 1F, 1F);
         })
         .withTextureNames("fnfal")
         .withRenderer(new WeaponRenderer.Builder()
             
-            .withModel(new FNFAL())
+            .withModel(new FNFALPara())
             .withActionPiece(AuxiliaryAttachments.FNFALAction)
             .withActionTransform(new Transform().withPosition(0, 0, 1))
             //.withTextureName("AK47")

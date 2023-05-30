@@ -145,6 +145,12 @@ public class ScarLFactory implements GunFactory {
             
 //            GL11.glTranslatef(0F, 0.35F, 0F);
         })
+        .withCompatibleAttachment(Magazines.M16Mag, (model) -> {
+		    GL11.glTranslatef(-0.335F, 0.4F, -1.4F);
+            GL11.glScaled(1.04F, 1.25F, 1.25F);
+            
+//            GL11.glTranslatef(0F, 0.35F, 0F);
+        })
 		.withCompatibleAttachment(Magazines.SOCOM_Mag, (model) -> {
 			GL11.glTranslatef(-0.335F, 0.4F, -1.4F);
             GL11.glScaled(1.04F, 1.25F, 1.25F);
@@ -464,6 +470,7 @@ public class ScarLFactory implements GunFactory {
                 .setupModernAnimations("scar", AuxiliaryAttachments.ScarAction)
                 .setupModernMagazineAnimations("scar", 
                 		Magazines.M4A1Mag, 
+                		Magazines.M16Mag,
                 		Magazines.M38Mag, 
                 		Magazines.Stanag100,
                 		Magazines.Stanag50,

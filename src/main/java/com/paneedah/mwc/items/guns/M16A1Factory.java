@@ -132,6 +132,10 @@ public class M16A1Factory implements GunFactory {
 //            GL11.glTranslatef(0f, -0.28f, -0.55f);
 //            GL11.glScaled(1F, 1F, 0.85F);
         })
+        .withCompatibleAttachment(Attachments.CQStock, (model) -> {
+//            GL11.glTranslatef(0f, -0.28f, -0.55f);
+//            GL11.glScaled(1F, 1F, 0.85F);
+        })
         .withCompatibleAttachment(Attachments.MagpulCTRStockTan, (model) -> {
             GL11.glTranslatef(0.01f, -0.19f, -0.4f);
             GL11.glScaled(1.1F, 1.1F, 1.1F);
@@ -176,7 +180,12 @@ public class M16A1Factory implements GunFactory {
         
         .withCompatibleAttachment(Attachments.M16A1Handguard, true, (model) -> {
         })
+        .withCompatibleAttachment(Attachments.CQHandguard, (model) -> {
+        })
         .withCompatibleAttachment(Attachments.M4Grip, true, (model) -> {
+//            GL11.glTranslatef(0f, 0f, 1f);
+        })
+        .withCompatibleAttachment(Attachments.CQGrip, (model) -> {
 //            GL11.glTranslatef(0f, 0f, 1f);
         })
         .withCompatibleAttachment(Attachments.M4GripTan, (model) -> {
@@ -190,6 +199,12 @@ public class M16A1Factory implements GunFactory {
             GL11.glScaled(1F, 0.95F, 1F);
         })
         .withCompatibleAttachment(Magazines.M4A1Mag, (model) -> {
+		    GL11.glTranslatef(-0.335F, 0.4F, -1.25F);
+            GL11.glScaled(1.05F, 1.2F, 1.15F);
+            
+//            GL11.glTranslatef(0F, 0.35F, 0F);
+        })
+        .withCompatibleAttachment(Magazines.M16Mag, (model) -> {
 		    GL11.glTranslatef(-0.335F, 0.4F, -1.25F);
             GL11.glScaled(1.05F, 1.2F, 1.15F);
             
@@ -455,6 +470,7 @@ public class M16A1Factory implements GunFactory {
                 .setupModernAnimations("m4a1", AuxiliaryAttachments.AKaction)
                 .setupModernMagazineAnimations("m4a1", 
                 		Magazines.M4A1Mag, 
+                		Magazines.M16Mag,
                 		Magazines.M38Mag, 
                 		Magazines.Stanag100,
                 		Magazines.Stanag50,

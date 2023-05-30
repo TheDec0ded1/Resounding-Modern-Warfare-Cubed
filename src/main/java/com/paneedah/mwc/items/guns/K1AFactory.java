@@ -122,6 +122,10 @@ public class K1AFactory implements GunFactory {
 		    GL11.glTranslatef(-0.35F, 0.25F, -1.25F);
             GL11.glScaled(1.15F, 1.2F, 1.2F);
         })
+		.withCompatibleAttachment(Magazines.M16Mag, (model) -> {
+		    GL11.glTranslatef(-0.35F, 0.25F, -1.25F);
+            GL11.glScaled(1.15F, 1.2F, 1.2F);
+        })
         .withCompatibleAttachment(Magazines.M38Mag, (model) -> {
           GL11.glTranslatef(-0.35F, 0.25F, -1.25F);
             GL11.glScaled(1.15F, 1.2F, 1.2F);
@@ -202,6 +206,7 @@ public class K1AFactory implements GunFactory {
                 .setupModernAnimations("k2c1", AuxiliaryAttachments.K2C1Action)
                 .setupModernMagazineAnimations("k2c1", 
                 		Magazines.M4A1Mag, 
+                		Magazines.M16Mag,
                 		Magazines.M38Mag, 
                 		Magazines.Stanag100,
                 		Magazines.Stanag50,
