@@ -3,15 +3,16 @@ package com.paneedah.weaponlib.grenade;
 import com.paneedah.mwc.utils.ModReference;
 import com.paneedah.weaponlib.RenderableState;
 import com.paneedah.weaponlib.*;
-import com.paneedah.weaponlib.compatibility.CompatibleItem;
-import com.paneedah.weaponlib.compatibility.CompatibleSound;
-import com.paneedah.weaponlib.crafting.CraftingComplexity;
-import com.paneedah.weaponlib.crafting.OptionsMetadata;
+import com.paneedah.weaponlib.crafting.*;
 import net.minecraft.client.model.ModelBase;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+import net.minecraft.util.SoundEvent;
+import net.minecraftforge.fml.common.registry.ForgeRegistries;
+import net.minecraftforge.oredict.ShapedOreRecipe;
 
 import java.util.*;
 import java.util.function.BiConsumer;
@@ -19,10 +20,8 @@ import java.util.function.Consumer;
 import java.util.function.Supplier;
 import java.util.stream.Collectors;
 
-import static com.paneedah.weaponlib.compatibility.CompatibilityProvider.compatibility;
-
-public class ItemGrenade extends CompatibleItem implements
-PlayerItemInstanceFactory<PlayerGrenadeInstance, GrenadeState>, AttachmentContainer, Updatable {
+public class ItemGrenade extends Item implements
+PlayerItemInstanceFactory<PlayerGrenadeInstance, GrenadeState>, AttachmentContainer, Updatable, IModernCrafting {
 
     public static final int DEFAULT_FUSE_TIMEOUT = 3000;
     public static final float DEFAULT_EXPLOSION_STRENTH = 2f;
@@ -36,7 +35,35 @@ PlayerItemInstanceFactory<PlayerGrenadeInstance, GrenadeState>, AttachmentContai
     public static final float DEFAULT_EFFECTIVE_RADIUS = 20f;
     public static final float DEFAULT_FRAGMENT_DAMAGE = 15f;
     public static final int DEFAULT_FRAGMENT_COUNT = 100;
-    
+
+    private CraftingEntry[] modernRecipe;
+    private CraftingGroup craftGroup;
+
+    @Override
+    public CraftingEntry[] getModernRecipe() {
+        return this.modernRecipe;
+    }
+
+    @Override
+    public Item getItem() {
+        return this;
+    }
+
+    @Override
+    public CraftingGroup getCraftingGroup() {
+        return this.craftGroup;
+    }
+
+    @Override
+    public void setCraftingRecipe(CraftingEntry[] recipe) {
+        this.modernRecipe = recipe;
+    }
+
+    @Override
+    public void setCraftingGroup(CraftingGroup group) {
+        this.craftGroup = group;
+    }
+
     public static enum Type {
         REGULAR, SMOKE, GAS, FLASH
     }
@@ -93,7 +120,14 @@ PlayerItemInstanceFactory<PlayerGrenadeInstance, GrenadeState>, AttachmentContai
         private long activeDuration;
         private Object[] craftingRecipe;
         private boolean isDestroyingBlocks = true;
+        private CraftingEntry[] modernRecipe;
+        private CraftingGroup craftingGroup;
 
+        public Builder withModernRecipe(CraftingGroup group, CraftingEntry...is) {
+            this.modernRecipe = is;
+            this.craftingGroup = group;
+            return this;
+        }
 
         public Builder withName(String name) {
             this.name = name;
@@ -307,11 +341,15 @@ PlayerItemInstanceFactory<PlayerGrenadeInstance, GrenadeState>, AttachmentContai
         }
 
         public ItemGrenade build(ModContext modContext) {
-
             ItemGrenade grenade = new ItemGrenade(this, modContext);
             grenade.setTranslationKey(ModReference.id + "_" + name);
             grenade.setCreativeTab(tab);
             grenade.maxStackSize = maxStackSize;
+
+            grenade.setCraftingGroup(craftingGroup);
+            grenade.setCraftingRecipe(modernRecipe);
+
+            CraftingRegistry.registerHook(grenade);
 
             if(this.bounceHardSound != null) {
                 grenade.bounceHardSound = modContext.registerSound(this.bounceHardSound);
@@ -340,14 +378,7 @@ PlayerItemInstanceFactory<PlayerGrenadeInstance, GrenadeState>, AttachmentContai
             modContext.registerGrenadeWeapon(name, grenade, renderer);
 
             if(craftingRecipe != null && craftingRecipe.length >= 2) {
-                ItemStack itemStack = new ItemStack(grenade);
-                List<Object> registeredRecipe = modContext.getRecipeManager().registerShapedRecipe(grenade, craftingRecipe);
-                boolean hasOres = Arrays.stream(craftingRecipe).anyMatch(r -> r instanceof String);
-                if(hasOres) {
-                    compatibility.addShapedOreRecipe(itemStack, registeredRecipe.toArray());
-                } else {
-                    compatibility.addShapedRecipe(itemStack, registeredRecipe.toArray());
-                }
+                modContext.getRecipeManager().registerShapedRecipe(grenade, craftingRecipe);
             } else if(craftingComplexity != null) {
                 OptionsMetadata optionsMetadata = new OptionsMetadata.OptionMetadataBuilder()
                     .withSlotCount(9)
@@ -356,11 +387,11 @@ PlayerItemInstanceFactory<PlayerGrenadeInstance, GrenadeState>, AttachmentContai
                 List<Object> shape = modContext.getRecipeManager().createShapedRecipe(grenade, name, optionsMetadata);
 
                 ItemStack itemStack = new ItemStack(grenade);
-                compatibility.setStackSize(itemStack, craftingCount);
+                itemStack.setCount(craftingCount);
                 if(optionsMetadata.hasOres()) {
-                    compatibility.addShapedOreRecipe(itemStack, shape.toArray());
+                    ForgeRegistries.RECIPES.register(new ShapedOreRecipe(null, itemStack, shape.toArray()).setMirrored(false).setRegistryName(ModReference.id, itemStack.getItem().getTranslationKey() + "_recipe") /*TODO: temporary hack*/);
                 } else {
-                    compatibility.addShapedRecipe(itemStack, shape.toArray());
+                    ForgeRegistries.RECIPES.register(new ShapedOreRecipe(null, itemStack, shape.toArray()).setMirrored(false).setRegistryName(ModReference.id, itemStack.getItem().getTranslationKey() + "_recipe"));
                 }
             } else {
                 //throw new IllegalStateException("No recipe defined for attachment " + name);
@@ -382,12 +413,12 @@ PlayerItemInstanceFactory<PlayerGrenadeInstance, GrenadeState>, AttachmentContai
 
     Builder builder;
     private ModContext modContext;
-    private CompatibleSound bounceHardSound;
-    private CompatibleSound bounceSoftSound;
-    private CompatibleSound explosionSound;
-    private CompatibleSound safetyPinOffSound;
-    private CompatibleSound throwSound;
-    private CompatibleSound stopAfterThrowingSound;
+    private SoundEvent bounceHardSound;
+    private SoundEvent bounceSoftSound;
+    private SoundEvent explosionSound;
+    private SoundEvent safetyPinOffSound;
+    private SoundEvent throwSound;
+    private SoundEvent stopAfterThrowingSound;
 
     public ItemGrenade(Builder builder, ModContext modContext) {
         this.builder = builder;
@@ -482,27 +513,27 @@ PlayerItemInstanceFactory<PlayerGrenadeInstance, GrenadeState>, AttachmentContai
         return builder.rotationSlowdownFactor.get();
     }
 
-    public CompatibleSound getBounceHardSound() {
+    public SoundEvent getBounceHardSound() {
         return bounceHardSound;
     }
 
-    public CompatibleSound getBounceSoftSound() {
+    public SoundEvent getBounceSoftSound() {
         return bounceSoftSound;
     }
 
-    public CompatibleSound getExplosionSound() {
+    public SoundEvent getExplosionSound() {
         return explosionSound;
     }
 
-    public CompatibleSound getSafetyPinOffSound() {
+    public SoundEvent getSafetyPinOffSound() {
         return safetyPinOffSound;
     }
 
-    public CompatibleSound getThrowSound() {
+    public SoundEvent getThrowSound() {
         return throwSound;
     }
 
-    public CompatibleSound getStopAfterThrowingSound() {
+    public SoundEvent getStopAfterThrowingSound() {
         return stopAfterThrowingSound;
     }
 
@@ -536,5 +567,11 @@ PlayerItemInstanceFactory<PlayerGrenadeInstance, GrenadeState>, AttachmentContai
         Collection<CompatibleAttachment<ItemGrenade>> c = builder.compatibleAttachments.values();
         List<AttachmentCategory> inputCategoryList = Arrays.asList(categories);
         return c.stream().filter(e -> inputCategoryList.contains(e)).collect(Collectors.toList());
+    }
+
+    // Todo: Remove this method once models are fixed to be at correct height
+    @Override
+    public boolean shouldCauseReequipAnimation(ItemStack oldStack, ItemStack newStack, boolean slotChanged) {
+        return true;
     }
 }
