@@ -42,6 +42,7 @@ public class Bullets {
     public static ItemBullet Bullet9x39mm;
     public static ItemBullet Bullet9x19mm;
     public static ItemBullet Bullet9x18mm;
+    public static ItemBullet Bullet9x21mm;
     public static ItemBullet Bullet57x28mm;
     public static ItemBullet Bullet46x30mm;
     public static ItemBullet Bullet473x33mm;
@@ -50,6 +51,8 @@ public class Bullets {
     public static ItemBullet M202Rocket;
     public static ItemBullet EnergyCase;
     public static ItemBullet PlasmaCapsule;
+    public static ItemBullet Bullet58x42;
+    public static ItemBullet Bullet58x21;
 
     public static void init(Object mod) {
         Grenade40mm = new ItemBullet.Builder()
@@ -920,6 +923,30 @@ public class Bullets {
                 })
                 .withTextureName("Dummy.png")
                 .build(ModernWarfareMod.MOD_CONTEXT, ItemBullet.class);
+
+        Bullet9x21mm = new ItemBullet.Builder()
+
+                .withCreativeTab(ModernWarfareMod.AmmoTab)
+                .withName("Bullet9x21mm")
+                .withModel(new com.paneedah.mwc.models.BulletSmall(), "bullet9x18.png")
+                .withFirstPersonPositioning((player, itemStack) -> {
+                    GL11.glTranslatef(0.2F, -1.9F, 0.5F);
+                    GL11.glRotatef(30F, 0f, 1f, 0f);
+                    GL11.glScaled(0.55F, 0.55F, 0.55F);
+                }).withThirdPersonPositioning((player, itemStack) -> {
+                    GL11.glTranslatef(-0.2F, -0.3F, 0.4F);
+                    GL11.glRotatef(-50F, 0f, 1f, 0f);
+                    GL11.glRotatef(80F, 1f, 0f, 0f);
+                    GL11.glScaled(0.45F, 0.45F, 0.45F);
+                }).withInventoryPositioning((itemStack) -> {
+                    GL11.glTranslatef(-0.8F, -4F, 0.7F);
+                    GL11.glRotatef(10F, 0f, 1f, 0f);
+                    GL11.glRotatef(2F, 1f, 0f, 0f);
+                    GL11.glRotatef(0F, 0f, 0f, 1f);
+                    GL11.glScaled(2.4F, 2.4F, 2.4f);
+                })
+                .withTextureName("Dummy.png")
+                .build(ModernWarfareMod.MOD_CONTEXT, ItemBullet.class);
         
         Bullet57x28mm = new ItemBullet.Builder()
                 .withCreativeTab(ModernWarfareMod.AmmoTab)
@@ -1012,6 +1039,53 @@ public class Bullets {
                     GL11.glRotatef(2F, 1f, 0f, 0f);
                     GL11.glRotatef(0F, 0f, 0f, 1f);
                     GL11.glScaled(1.7F, 2F, 1.7f);
+                })
+                .withTextureName("Dummy.png")
+                .build(ModernWarfareMod.MOD_CONTEXT, ItemBullet.class);
+
+        Bullet58x42 = new ItemBullet.Builder()
+
+                .withCreativeTab(ModernWarfareMod.AmmoTab)
+                .withName("Bullet58x42")
+                .withModel(new com.paneedah.mwc.models.BulletBig(), "bullet58x42.png")
+                .withFirstPersonPositioning((player, itemStack) -> {
+                    GL11.glTranslatef(0.2F, -1.9F, 0.5F);
+                    GL11.glRotatef(30F, 0f, 1f, 0f);
+                    GL11.glScaled(0.55F, 0.65F, 0.55F);
+                }).withThirdPersonPositioning((player, itemStack) -> {
+                    GL11.glTranslatef(-0.2F, -0.3F, 0.4F);
+                    GL11.glRotatef(-50F, 0f, 1f, 0f);
+                    GL11.glRotatef(80F, 1f, 0f, 0f);
+                    GL11.glScaled(0.45F, 0.55F, 0.45F);
+                }).withInventoryPositioning((itemStack) -> {
+                    GL11.glTranslatef(-0.8F, -2.9F, 0.7F);
+                    GL11.glRotatef(10F, 0f, 1f, 0f);
+                    GL11.glRotatef(2F, 1f, 0f, 0f);
+                    GL11.glRotatef(0F, 0f, 0f, 1f);
+                    GL11.glScaled(1.5F, 1.55F, 1.5f);
+                })
+                .withTextureName("Dummy.png")
+                .build(ModernWarfareMod.MOD_CONTEXT, ItemBullet.class);
+
+       Bullet58x21 = new ItemBullet.Builder()
+                .withCreativeTab(ModernWarfareMod.AmmoTab)
+                .withName("Bullet58x21")
+                .withModel(new com.paneedah.mwc.models.BulletBig(), "bullet58x42.png")
+                .withFirstPersonPositioning((player, itemStack) -> {
+                    GL11.glTranslatef(0.2F, -1.9F, 0.5F);
+                    GL11.glRotatef(30F, 0f, 1f, 0f);
+                    GL11.glScaled(0.5F, 0.45F, 0.5F);
+                }).withThirdPersonPositioning((player, itemStack) -> {
+                    GL11.glTranslatef(-0.2F, -0.3F, 0.4F);
+                    GL11.glRotatef(-50F, 0f, 1f, 0f);
+                    GL11.glRotatef(80F, 1f, 0f, 0f);
+                    GL11.glScaled(0.4F, 0.35F, 0.4F);
+                }).withInventoryPositioning((itemStack) -> {
+                    GL11.glTranslatef(-0.8F, -2.45F, 0.7F);
+                    GL11.glRotatef(10F, 0f, 1f, 0f);
+                    GL11.glRotatef(2F, 1f, 0f, 0f);
+                    GL11.glRotatef(0F, 0f, 0f, 1f);
+                    GL11.glScaled(1.3F, 1.2F, 1.3f);
                 })
                 .withTextureName("Dummy.png")
                 .build(ModernWarfareMod.MOD_CONTEXT, ItemBullet.class);

@@ -94,10 +94,10 @@ public class KBP9A91Factory {
         .withCompatibleAttachment(AuxiliaryAttachments.KBP9A91action, true, (model) -> {
 //            GL11.glTranslatef(0F, 0F, 1F);
         })
-        .withCompatibleAttachment(Attachments.KBP9A91Handguard, true, (model) -> {
+        .withCompatibleAttachment(Attachments.KBP9A91Handguard, (model) -> {
 //            GL11.glTranslatef(0F, 0F, 0.33F);
         })
-        .withCompatibleAttachment(Attachments.KBP9A91CompactHandguard, (model) -> {
+        .withCompatibleAttachment(Attachments.KBP9A91CompactHandguard, true, (model) -> {
 //          GL11.glTranslatef(0F, 0F, 0.33F);
         })
         .withCompatibleAttachment(Attachments.KBP9A91KulaTacHandguard, (model) -> {

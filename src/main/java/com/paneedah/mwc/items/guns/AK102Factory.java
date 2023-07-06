@@ -8,6 +8,7 @@ import com.paneedah.mwc.init.MWCItems;
 import com.paneedah.mwc.models.*;
 import com.paneedah.mwc.proxies.CommonProxy;
 import com.paneedah.mwc.weapons.Attachments;
+import com.paneedah.mwc.weapons.Attachments2;
 import com.paneedah.mwc.weapons.AuxiliaryAttachments;
 import com.paneedah.mwc.weapons.Magazines;
 import com.paneedah.weaponlib.*;
@@ -102,7 +103,25 @@ public class AK102Factory {
         .withCompatibleAttachment(Attachments.AK47Stock, (model) -> {
 //            GL11.glTranslatef(0f, 0f, 1f);
         })
-        .withCompatibleAttachment(Attachments.RPKStock, (model) -> {
+  .withCompatibleAttachment(Attachments.RPKStock, (model) -> {
+//          GL11.glTranslatef(0f, 0f, 1f);
+        })
+        .withCompatibleAttachment(Attachments2.RPK74Stock, (model) -> {
+//          GL11.glTranslatef(0f, 0f, 1f);
+        })
+        .withCompatibleAttachment(Attachments2.RPK74MStock, (model) -> {
+//          GL11.glTranslatef(0f, 0f, 1f);
+        })
+        .withCompatibleAttachment(Attachments2.RPK74MPlumStock, (model) -> {
+//          GL11.glTranslatef(0f, 0f, 1f);
+        })
+        .withCompatibleAttachment(Attachments2.RPK74MGreenStock, (model) -> {
+//          GL11.glTranslatef(0f, 0f, 1f);
+        })
+        .withCompatibleAttachment(Attachments2.RPK74MPearlStock, (model) -> {
+//          GL11.glTranslatef(0f, 0f, 1f);
+        })
+        .withCompatibleAttachment(Attachments2.RPK74MWhiteStock, (model) -> {
 //          GL11.glTranslatef(0f, 0f, 1f);
         })
         .withCompatibleAttachment(Attachments.AK101Stock, true, (model) -> {
@@ -144,6 +163,21 @@ public class AK102Factory {
         .withCompatibleAttachment(Attachments.AK101HandGuard, true, (model) -> {
 //            GL11.glTranslatef(0f, 0f, 1f);
         })
+        .withCompatibleAttachment(Attachments2.RPK74MHandguard, (model) -> {
+//          GL11.glTranslatef(0f, 0f, 1f);
+        })
+        .withCompatibleAttachment(Attachments2.RPK74MPlumHandguard, (model) -> {
+//          GL11.glTranslatef(0f, 0f, 1f);
+        })
+        .withCompatibleAttachment(Attachments2.RPK74MGreenHandguard, (model) -> {
+//          GL11.glTranslatef(0f, 0f, 1f);
+        })
+        .withCompatibleAttachment(Attachments2.RPK74MPearlHandguard, (model) -> {
+//          GL11.glTranslatef(0f, 0f, 1f);
+        })
+        .withCompatibleAttachment(Attachments2.RPK74MWhiteHandguard, (model) -> {
+//          GL11.glTranslatef(0f, 0f, 1f);
+        })
         .withCompatibleAttachment(Attachments.AK101PearlHandGuard, (model) -> {
 //            GL11.glTranslatef(0f, 0f, 1f);
         })
@@ -156,12 +190,6 @@ public class AK102Factory {
         .withCompatibleAttachment(Attachments.AK101GreenHandGuard, (model) -> {
 //            GL11.glTranslatef(0f, 0f, 1f);
         })
-        .withCompatibleAttachment(Attachments.AK74Handguard, (model) -> {
-//          GL11.glTranslatef(0f, 0f, 1f);
-      })
-        .withCompatibleAttachment(Attachments.AK74GreenHandguard, (model) -> {
-//          GL11.glTranslatef(0f, 0f, 1f);
-      })
         .withCompatibleAttachment(Attachments.AIMHandGuard, (model) -> {
 //            GL11.glTranslatef(0f, 0f, 1f);
         })

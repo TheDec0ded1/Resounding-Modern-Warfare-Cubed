@@ -8,6 +8,7 @@ import com.paneedah.mwc.init.MWCItems;
 import com.paneedah.mwc.models.*;
 import com.paneedah.mwc.proxies.CommonProxy;
 import com.paneedah.mwc.weapons.Attachments;
+import com.paneedah.mwc.weapons.Attachments2;
 import com.paneedah.mwc.weapons.AuxiliaryAttachments;
 import com.paneedah.mwc.weapons.Magazines;
 import com.paneedah.weaponlib.*;
@@ -87,7 +88,7 @@ public class FALIFactory {
         .withUnremovableAttachmentCategories(AttachmentCategory.GUARD)
         .withUnremovableAttachmentCategories(AttachmentCategory.BACKGRIP)
         .withUnremovableAttachmentCategories(AttachmentCategory.RAILING)
-        
+       
         .withCompatibleAttachment(Attachments.FNFALDustCover, true, (model) -> {
 //            GL11.glTranslatef(0f, 0f, 1f);
         })
@@ -102,16 +103,16 @@ public class FALIFactory {
         .withCompatibleAttachment(Attachments.FNFALHandguard, (model) -> {
 //            GL11.glTranslatef(0f, 0f, 1f);
         })
-        .withCompatibleAttachment(Attachments.FNFALBHandguard, (model) -> {
+        .withCompatibleAttachment(Attachments2.FNFALBHandguard, (model) -> {
 //            GL11.glTranslatef(0f, 0f, 1f);
         })
-        .withCompatibleAttachment(Attachments.FNFALPHandguard, (model) -> {
+        .withCompatibleAttachment(Attachments2.FNFALPHandguard, (model) -> {
 //            GL11.glTranslatef(0f, 0f, 1f);
         })
-        .withCompatibleAttachment(Attachments.FNFALIsraeliHandguard, true, (model) -> {
+        .withCompatibleAttachment(Attachments2.FNFALIsraeliHandguard, true, (model) -> {
 //            GL11.glTranslatef(0f, 0f, 1f);
         })
-        .withCompatibleAttachment(Attachments.FNFALG1Handguard, (model) -> {
+        .withCompatibleAttachment(Attachments2.FNFALG1Handguard, (model) -> {
 //            GL11.glTranslatef(0f, 0f, 1f);
         })
         .withCompatibleAttachment(Attachments.FNFALPARAHandguard, (model) -> {
@@ -127,11 +128,11 @@ public class FALIFactory {
 //            GL11.glTranslatef(0.02f, 0.2f, -0.2f);
 //            GL11.glScaled(1.2F, 1.2F, 1.2F);
         })
-        .withCompatibleAttachment(Attachments.FNFALParaStock, (model) -> {
+        .withCompatibleAttachment(Attachments2.FNFALParaStock, (model) -> {
 //            GL11.glTranslatef(0.02f, 0.2f, -0.2f);
 //            GL11.glScaled(1.2F, 1.2F, 1.2F);
         })
-        .withCompatibleAttachment(Attachments.FNFALPolymerStock, (model) -> {
+        .withCompatibleAttachment(Attachments2.FNFALPolymerStock, (model) -> {
 //            GL11.glTranslatef(0.02f, 0.2f, -0.2f);
 //            GL11.glScaled(1.2F, 1.2F, 1.2F);
         })
@@ -139,7 +140,18 @@ public class FALIFactory {
 //            GL11.glTranslatef(0.02f, 0.2f, -0.4f);
 //            GL11.glScaled(1.2F, 1.2F, 1.2F);
         })
-        .withCompatibleAttachment(Attachments.FNFALGripWood, true, (model) -> {
+        .withCompatibleAttachment(Attachments2.FNFALGripWood, true, (model) -> {
+//            GL11.glTranslatef(0.02f, 0.2f, -0.4f);
+//            GL11.glScaled(1.2F, 1.2F, 1.2F);
+        })
+        .withCompatibleAttachment(Attachments2.I1A1Handguard, (model) -> {
+//            GL11.glTranslatef(0f, 0f, 1f);
+        })
+        .withCompatibleAttachment(Attachments2.I1A1Stock, (model) -> {
+//            GL11.glTranslatef(0.02f, 0.2f, -0.2f);
+//            GL11.glScaled(1.2F, 1.2F, 1.2F);
+        })
+        .withCompatibleAttachment(Attachments2.I1A1Grip, (model) -> {
 //            GL11.glTranslatef(0.02f, 0.2f, -0.4f);
 //            GL11.glScaled(1.2F, 1.2F, 1.2F);
         })

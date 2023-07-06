@@ -143,6 +143,8 @@ public class M9A1Factory implements GunFactory {
         .withCompatibleAttachment(Magazines.M9A1Mag, (model) -> {
 //           GL11.glTranslatef(0F, 0.2F, 0.12F);
         })
+        .withCompatibleAttachment(Magazines.M93RMag, (model) -> {
+        })
         .withCompatibleAttachment(Magazines.SamuraiEdgeMag, (model) -> {
 //            GL11.glTranslatef(0F, 0.2F, 0.12F);
         })

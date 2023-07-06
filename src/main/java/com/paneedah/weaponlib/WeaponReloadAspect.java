@@ -499,22 +499,17 @@ public class WeaponReloadAspect implements Aspect<WeaponState, PlayerWeaponInsta
         Comparator<ItemStack> comparator;
         comparator = (stack1, stack2) -> Integer.compare(Tags.getAmmo(stack1), Tags.getAmmo(stack2));
 
-        if (player.isCreative()) {
-            // in creative mode, return the magazine with the most ammo
-            ItemStack maxStack = compatibleMagazines.stream().map(ItemMagazine::createItemStack).max(comparator).orElse(null);
 
-            return (ItemAttachment<Weapon>) maxStack.getItem();
-        }
 
-        ItemStack maxStack = null;
+
         int maxItemIndex = -1;
         for (int i = 0; i < player.inventory.mainInventory.size(); ++i) {
-            if (player.inventory.getStackInSlot(i) != null && compatibleMagazines.contains(player.inventory.getStackInSlot(i).getItem()) && (maxStack == null || comparator.compare(player.inventory.getStackInSlot(i), maxStack) > 0)) {
-                maxStack = player.inventory.getStackInSlot(i);
+            if (player.inventory.getStackInSlot(i) != null && compatibleMagazines.contains(player.inventory.getStackInSlot(i).getItem()))
+            {
                 maxItemIndex = i;
             }
         }
-        
+
         int i = maxItemIndex;
 
         if (i < 0)
@@ -540,18 +535,10 @@ public class WeaponReloadAspect implements Aspect<WeaponState, PlayerWeaponInsta
         Comparator<ItemStack> comparator;
         comparator = (stack1, stack2) -> Integer.compare(Tags.getAmmo(stack1), Tags.getAmmo(stack2));
 
-        if (player.isCreative()) {
-            // in creative mode, return the magazine with the most ammo
-            ItemStack maxStack = compatibleMagazines.stream().map(ItemMagazine::createItemStack).max(comparator).orElse(null);
 
-            return maxStack;
-        }
-
-        ItemStack maxStack = null;
         int maxItemIndex = -1;
         for (int i = 0; i < player.inventory.mainInventory.size(); ++i) {
-            if (player.inventory.getStackInSlot(i) != null && compatibleMagazines.contains(player.inventory.getStackInSlot(i).getItem()) && (maxStack == null || comparator.compare(player.inventory.getStackInSlot(i), maxStack) > 0)) {
-                maxStack = player.inventory.getStackInSlot(i);
+            if (player.inventory.getStackInSlot(i) != null && compatibleMagazines.contains(player.inventory.getStackInSlot(i).getItem())) {
                 maxItemIndex = i;
             }
         }
@@ -601,7 +588,7 @@ public class WeaponReloadAspect implements Aspect<WeaponState, PlayerWeaponInsta
 
         if (attachment == null)
             p.setStatus(Status.DENIED);
-        else if (attachment instanceof ItemMagazine && !player.isCreative()) {
+        else if (attachment instanceof ItemMagazine) {
             ItemStack attachmentItemStack = ((ItemMagazine) attachment).createItemStack();
             Tags.setAmmo(attachmentItemStack, originalAmmo);
             if (!player.inventory.addItemStackToInventory(attachmentItemStack))
@@ -713,7 +700,7 @@ public class WeaponReloadAspect implements Aspect<WeaponState, PlayerWeaponInsta
                 return;
             }
 
-            if (attachment instanceof ItemMagazine && !player.isCreative()) {
+            if (attachment instanceof ItemMagazine) {
                 previousMagazine = attachment;
                 ItemStack attachmentItemStack = ((ItemMagazine) attachment).createItemStack();
                 Tags.setAmmo(attachmentItemStack, weaponInstance.getAmmo());

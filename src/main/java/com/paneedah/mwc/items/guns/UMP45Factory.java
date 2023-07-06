@@ -372,6 +372,8 @@ public class UMP45Factory {
                 .setupModernAnimations("ump45", AuxiliaryAttachments.UMP45action)
                 .setupModernMagazineAnimations("ump45", 
                 		Magazines.UMP45Mag,
+                		Magazines.UMP40Mag,
+                		Magazines.UMP10Mag,
                 		Magazines.UMP9Mag)
                     
             .withThirdPersonPositioningReloading(

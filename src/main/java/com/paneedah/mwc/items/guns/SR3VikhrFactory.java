@@ -8,6 +8,7 @@ import com.paneedah.mwc.init.MWCItems;
 import com.paneedah.mwc.models.*;
 import com.paneedah.mwc.proxies.CommonProxy;
 import com.paneedah.mwc.weapons.Attachments;
+import com.paneedah.mwc.weapons.Attachments2;
 import com.paneedah.mwc.weapons.AuxiliaryAttachments;
 import com.paneedah.mwc.weapons.Magazines;
 import com.paneedah.weaponlib.*;
@@ -101,6 +102,10 @@ public class SR3VikhrFactory {
         })
         .withCompatibleAttachment(Attachments.SR3VikhrHG, true, (model) -> {
         })
+        .withCompatibleAttachment(Attachments2.SR3VikhrStockB, (model) -> {
+        })
+        .withCompatibleAttachment(Attachments2.SR3VikhrHGB, (model) -> {
+        })
         .withCompatibleAttachment(Magazines.VSSVintorezMag, (model) -> {
         })
         .withCompatibleAttachment(Magazines.ASValMag, (model) -> {
@@ -164,9 +169,9 @@ public class SR3VikhrFactory {
                 .setupModernAnimations("vssvintorez", AuxiliaryAttachments.SR3VikhrAction)
                 .setupModernMagazineAnimations("vssvintorez", Magazines.ASValMag, Magazines.Val30Mag, Magazines.VSSVintorezMag)
             
-            .withFirstPersonPositioningCustomRecoiled(AuxiliaryAttachments.SR3VikhrAction.getRenderablePart(), (renderContext) -> {
-                GL11.glTranslatef(0f, 0f, 1f);
-                })
+                .withFirstPersonPositioningCustomRecoiled(AuxiliaryAttachments.SR3VikhrAction.getRenderablePart(), (renderContext) -> {
+                    GL11.glTranslatef(0f, 0f, 1f);
+                    })
                 
             .withFirstPersonPositioningCustomZoomingRecoiled(AuxiliaryAttachments.SR3VikhrAction.getRenderablePart(), (renderContext) -> {
                 GL11.glTranslatef(0f, 0f, 1f);
@@ -477,7 +482,7 @@ public class SR3VikhrFactory {
                     }, 280, 0))
              
             .build())
-        .withSpawnEntityDamage(13f)
+        .withSpawnEntityDamage(7f)
         .withSpawnEntityGravityVelocity(0.0118f)
                 
         .build(ModernWarfareMod.MOD_CONTEXT);

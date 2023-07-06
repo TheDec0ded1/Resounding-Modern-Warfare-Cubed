@@ -203,6 +203,10 @@ public class G36CRALFactory implements GunFactory {
 //            GL11.glTranslatef(-0.37F, 0.8F, -1.7F);
 //            GL11.glScaled(1.25F, 1.7F, 1.7F);
         })
+        .withCompatibleAttachment(Magazines.MG36Mag, (model) -> {
+//            GL11.glTranslatef(-0.37F, 0.8F, -1.7F);
+//            GL11.glScaled(1.25F, 1.7F, 1.7F);
+        })
         .withCompatibleAttachment(Magazines.G36CMagRAL, (model) -> {
 //            GL11.glTranslatef(-0.37F, 0.8F, -1.7F);
 //            GL11.glScaled(1.25F, 1.7F, 1.7F);
@@ -413,7 +417,7 @@ public class G36CRALFactory implements GunFactory {
                 
                 .setupModernAnimations("g36c", AuxiliaryAttachments.G36CAction)
                 .setupModernMagazineAnimations("g36c", 
-                		Magazines.G36CMag, Magazines.G36CMagRAL)
+                		Magazines.G36CMag, Magazines.MG36Mag, Magazines.G36CMagRAL)
                 
                 .withFirstPersonCustomPositioning(AuxiliaryAttachments.G36CAction.getRenderablePart(), (renderContext) -> {
                     if(renderContext.getWeaponInstance().getAmmo() == 0) {

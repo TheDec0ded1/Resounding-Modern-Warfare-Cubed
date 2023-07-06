@@ -178,7 +178,7 @@ public class Guns {
     public static Item Klin;
     public static Item SR3Vikhr;
     public static Item Malyuk545;
-    public static Item K1A;
+    public static Item K2;
     public static Item G36CRAL;
     public static Item FiveSevenAuto;
     public static Item Thunderbird;
@@ -188,6 +188,22 @@ public class Guns {
     public static Item SP1;
     public static Item FALI;
     public static Item FNFALPARA;
+    public static Item Minimi;
+    public static Item Type56AK;
+    public static Item RPK;
+    public static Item RPK74;
+    public static Item ScarHCQC;
+    public static Item ScarHSSR;
+    public static Item ScarSC;
+    public static Item AK19;
+    public static Item AK12new;
+    public static Item AK15new;
+    public static Item AN94;
+    public static Item M93R;
+    public static Item Groza;
+    public static Item SR2M;
+    public static Item AEK971;
+    public static Item MCXRattler;
 
     
     public static void init(Object mod, CommonProxy proxy) {
@@ -347,7 +363,7 @@ public class Guns {
         Klin = new KlinFactory().createGun(proxy);
         SR3Vikhr = new SR3VikhrFactory().createGun(proxy);
         Malyuk545 = new Malyuk545Factory().createGun(proxy);
-        K1A = new K1AFactory().createGun(proxy);
+        K2 = new K2Factory().createGun(proxy);
         G36CRAL = new G36CRALFactory().createGun(proxy);
         FiveSevenAuto = new FiveSevenAutoFactory().createGun(proxy);
         Thunderbird = new ThunderbirdFactory().createGun(proxy);
@@ -357,7 +373,22 @@ public class Guns {
         SP1 = new SP1Factory().createGun(proxy);
         FNFALPARA = new FNFALPARAFactory().createGun(proxy);
         FALI = new FALIFactory().createGun(proxy);
-
+        Minimi = new MinimiFactory().createGun(proxy);
+        Type56AK = new Type56AKFactory().createGun(proxy);
+        RPK = new RPKFactory().createGun(proxy);
+        RPK74 = new RPK74Factory().createGun(proxy);
+        ScarHCQC = new ScarHCQCFactory().createGun(proxy);
+        ScarHSSR = new ScarHSSRFactory().createGun(proxy);
+        ScarSC = new ScarSCFactory().createGun(proxy);
+        AK19 = new AK19Factory().createGun(proxy);
+        AK12new = new AK12newFactory().createGun(proxy);
+        AK15new = new AK15newFactory().createGun(proxy);
+        AN94 = new AN94Factory().createGun(proxy);
+        M93R = new M93RFactory().createGun(proxy);
+        Groza = new GrozaFactory().createGun(proxy);
+        SR2M = new SR2MFactory().createGun(proxy);
+        AEK971 = new AEK971Factory().createGun(proxy);
+        MCXRattler = new MCXRattlerFactory().createGun(proxy);
        
     }
 }

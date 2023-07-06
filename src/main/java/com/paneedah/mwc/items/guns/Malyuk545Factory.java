@@ -126,7 +126,15 @@ public class Malyuk545Factory {
         	GL11.glTranslatef(0F, 0.2F, 3.1F);
 //            GL11.glScaled(1.15F, 1.2F, 1.15F);
         })
+       .withCompatibleAttachment(Magazines.RPK74MGreenMag, (model) -> {
+        	GL11.glTranslatef(0F, 0.2F, 3.1F);
+//            GL11.glScaled(1.15F, 1.2F, 1.15F);
+        })
        .withCompatibleAttachment(Magazines.AK74PearlMag, (model) -> {
+        	GL11.glTranslatef(0F, 0.2F, 3.1F);
+//            GL11.glScaled(1.15F, 1.2F, 1.15F);
+        })
+       .withCompatibleAttachment(Magazines.RPK74MPearlMag, (model) -> {
         	GL11.glTranslatef(0F, 0.2F, 3.1F);
 //            GL11.glScaled(1.15F, 1.2F, 1.15F);
         })
@@ -139,6 +147,10 @@ public class Malyuk545Factory {
 //            GL11.glScaled(1.15F, 1.2F, 1.15F);
         })
        .withCompatibleAttachment(Magazines.AK74WhiteMag, (model) -> {
+        	GL11.glTranslatef(0F, 0.2F, 3.1F);
+//            GL11.glScaled(1.15F, 1.2F, 1.15F);
+        })
+       .withCompatibleAttachment(Magazines.RPK74MWhiteMag, (model) -> {
         	GL11.glTranslatef(0F, 0.2F, 3.1F);
 //            GL11.glScaled(1.15F, 1.2F, 1.15F);
         })
@@ -386,15 +398,18 @@ public class Malyuk545Factory {
                 
                 .setupModernAnimations("malyuk", AuxiliaryAttachments.Malyukaction)
                 .setupModernMagazineAnimations("malyuk", 
-                		Magazines.AK74Mag,
-                		Magazines.RPK74Mag,
-                		Magazines.AK74BlackMag,
-                		Magazines.RPK74MBlackMag, 
-                		Magazines.AK74GreenMag,
-                		Magazines.AK74PearlMag,
-                		Magazines.AK74PlumMag,
-                		Magazines.RPK74MPlumMag,
-                		Magazines.AK74WhiteMag
+                    		Magazines.AK74Mag,
+                    		Magazines.RPK74Mag,
+                    		Magazines.AK74BlackMag,
+                    		Magazines.RPK74MBlackMag,
+                    		Magazines.AK74GreenMag,
+                                Magazines.RPK74MGreenMag,
+                    		Magazines.AK74PearlMag,
+                                Magazines.RPK74MPearlMag,
+                    		Magazines.AK74PlumMag,
+                    		Magazines.RPK74MPlumMag,
+                    		Magazines.AK74WhiteMag,
+                                Magazines.RPK74MWhiteMag
                 		)
                     
             .withThirdPersonPositioningReloading(

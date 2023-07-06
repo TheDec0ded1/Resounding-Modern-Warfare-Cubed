@@ -8,6 +8,7 @@ import com.paneedah.mwc.init.MWCItems;
 import com.paneedah.mwc.models.*;
 import com.paneedah.mwc.proxies.CommonProxy;
 import com.paneedah.mwc.weapons.Attachments;
+import com.paneedah.mwc.weapons.Attachments2;
 import com.paneedah.mwc.weapons.AuxiliaryAttachments;
 import com.paneedah.mwc.weapons.Magazines;
 import com.paneedah.weaponlib.*;
@@ -95,7 +96,7 @@ public class AK12_kalFactory {
         .withUnremovableAttachmentCategories(AttachmentCategory.GUARD)
         .withUnremovableAttachmentCategories(AttachmentCategory.BACKGRIP)
         
-        .withCompatibleAttachment(Attachments.AK15HandleGuard, (model) -> {
+        .withCompatibleAttachment(Attachments.AK15HandleGuard, true, (model) -> {
             if(model instanceof AK15HandleGuard) {
 //                GL11.glScaled(1F, 0.98F, 1);
             } else if(model instanceof AKRail) {
@@ -103,7 +104,7 @@ public class AK12_kalFactory {
                 GL11.glScaled(0.7F, 0.8F, 0.45F);
             } 
         })
-        .withCompatibleAttachment(Attachments.AK12kalHandguard, true, (model) -> {
+        .withCompatibleAttachment(Attachments.AK12kalHandguard, (model) -> {
             if(model instanceof AK15HandleGuard) {
 //                GL11.glScaled(1F, 0.98F, 1);
             } else if(model instanceof AKRail) {
@@ -135,11 +136,11 @@ public class AK12_kalFactory {
                 GL11.glScaled(0.6F, 0.8F, 1.12F);
             }
         })
-        .withCompatibleAttachment(Attachments.CollapsableMOEStock, (model) -> {
+        .withCompatibleAttachment(Attachments.CollapsableMOEStock, true, (model) -> {
             GL11.glTranslatef(0.02f, 0.2f, -0.2f);
             GL11.glScaled(1.2F, 1.2F, 1.2F);
         })
-        .withCompatibleAttachment(Attachments.CollapsableMOEStockGreen, true, (model) -> {
+        .withCompatibleAttachment(Attachments.CollapsableMOEStockGreen, (model) -> {
             GL11.glTranslatef(0.02f, 0.2f, -0.2f);
             GL11.glScaled(1.2F, 1.2F, 1.2F);
         })
@@ -147,27 +148,13 @@ public class AK12_kalFactory {
             GL11.glTranslatef(0.02f, 0.2f, -0.2f);
             GL11.glScaled(1.2F, 1.2F, 1.2F);
         })
-        .withCompatibleAttachment(Attachments.MagpulCTRStock, (model) -> {
-            GL11.glTranslatef(0.02f, 0.2f, -0.4f);
-            GL11.glScaled(1.2F, 1.2F, 1.2F);
+        .withCompatibleAttachment(Attachments2.AK19Stock, (model) -> {
         })
-        .withCompatibleAttachment(Attachments.MilSpecStock, (model) -> {
-            GL11.glTranslatef(0.02f, 0.2f, -0.4f);
-            GL11.glScaled(1.2F, 1.2F, 1.2F);
+        .withCompatibleAttachment(Attachments2.AK19StockGreen, (model) -> {
         })
-        .withCompatibleAttachment(Attachments.AK47Grip, (model) -> {
-//            GL11.glTranslatef(0.02f, 0.2f, -0.4f);
-//            GL11.glScaled(1.2F, 1.2F, 1.2F);
+        .withCompatibleAttachment(Attachments2.AK19StockTan, (model) -> {
         })
-        .withCompatibleAttachment(Attachments.AK101Grip, (model) -> {
-//            GL11.glTranslatef(0.02f, 0.2f, -0.4f);
-//            GL11.glScaled(1.2F, 1.2F, 1.2F);
-        })
-        .withCompatibleAttachment(Attachments.AKErgoGrip, (model) -> {
-//            GL11.glTranslatef(0.02f, 0.2f, -0.4f);
-//            GL11.glScaled(1.2F, 1.2F, 1.2F);
-        })
-        .withCompatibleAttachment(Attachments.AKErgoGripGreen, true, (model) -> {
+        .withCompatibleAttachment(Attachments.AKErgoGripGreen, (model) -> {
 //          GL11.glTranslatef(0.02f, 0.2f, -0.4f);
 //          GL11.glScaled(1.2F, 1.2F, 1.2F);
       })
@@ -175,7 +162,7 @@ public class AK12_kalFactory {
 //          GL11.glTranslatef(0.02f, 0.2f, -0.4f);
 //          GL11.glScaled(1.2F, 1.2F, 1.2F);
       })
-        .withCompatibleAttachment(Attachments.AKErgoGripTan, (model) -> {
+        .withCompatibleAttachment(Attachments.AKErgoGrip, true, (model) -> {
 //          GL11.glTranslatef(0.02f, 0.2f, -0.4f);
 //          GL11.glScaled(1.2F, 1.2F, 1.2F);
         })
@@ -209,7 +196,15 @@ public class AK12_kalFactory {
 //          GL11.glTranslatef(-0.35F, 0.5F, -1.25F);
 //            GL11.glScaled(1.15F, 1.2F, 1.15F);
         })
+        .withCompatibleAttachment(Magazines.RPK74MGreenMag, (model) -> {
+//          GL11.glTranslatef(-0.35F, 0.5F, -1.25F);
+//            GL11.glScaled(1.15F, 1.2F, 1.15F);
+        })
         .withCompatibleAttachment(Magazines.AK74PearlMag, (model) -> {
+//          GL11.glTranslatef(-0.35F, 0.5F, -1.25F);
+//            GL11.glScaled(1.15F, 1.2F, 1.15F);
+        })
+        .withCompatibleAttachment(Magazines.RPK74MPearlMag, (model) -> {
 //          GL11.glTranslatef(-0.35F, 0.5F, -1.25F);
 //            GL11.glScaled(1.15F, 1.2F, 1.15F);
         })
@@ -222,6 +217,10 @@ public class AK12_kalFactory {
 //            GL11.glScaled(1.15F, 1.2F, 1.15F);
         })
         .withCompatibleAttachment(Magazines.AK74WhiteMag, (model) -> {
+//          GL11.glTranslatef(-0.35F, 0.5F, -1.25F);
+//            GL11.glScaled(1.15F, 1.2F, 1.15F);
+        })
+        .withCompatibleAttachment(Magazines.RPK74MWhiteMag, (model) -> {
 //          GL11.glTranslatef(-0.35F, 0.5F, -1.25F);
 //            GL11.glScaled(1.15F, 1.2F, 1.15F);
         })
@@ -515,10 +514,13 @@ public class AK12_kalFactory {
                     		Magazines.AK74BlackMag,
                     		Magazines.RPK74MBlackMag,
                     		Magazines.AK74GreenMag,
+                                Magazines.RPK74MGreenMag,
                     		Magazines.AK74PearlMag,
+                                Magazines.RPK74MPearlMag,
                     		Magazines.AK74PlumMag,
                     		Magazines.RPK74MPlumMag,
                     		Magazines.AK74WhiteMag,
+                                Magazines.RPK74MWhiteMag,
                     		Magazines.AK74Mag60)
                 
                 .withFirstPersonPositioningCustomRecoiled(AuxiliaryAttachments.AK15action.getRenderablePart(), (renderContext) -> {

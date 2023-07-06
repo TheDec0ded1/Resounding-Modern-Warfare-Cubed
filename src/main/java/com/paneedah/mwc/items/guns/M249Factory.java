@@ -4,6 +4,7 @@ import com.paneedah.mwc.ModernWarfareMod;
 import com.paneedah.mwc.models.*;
 import com.paneedah.mwc.proxies.CommonProxy;
 import com.paneedah.mwc.weapons.Attachments;
+import com.paneedah.mwc.weapons.Attachments2;
 import com.paneedah.mwc.weapons.AuxiliaryAttachments;
 import com.paneedah.mwc.weapons.Magazines;
 import com.paneedah.weaponlib.AttachmentCategory;
@@ -73,11 +74,17 @@ public class M249Factory {
          })
          .withCompatibleAttachment(Attachments.M249HandGuard, true, (model) -> {
          })
+         .withCompatibleAttachment(Attachments2.MinimiHandguard, (model) -> {
+         })
          .withCompatibleAttachment(Attachments.M249UpperHandGuard, true, (model) -> {
          })
          .withCompatibleAttachment(Attachments.M249Stock, true, (model) -> {
          })
          .withCompatibleAttachment(Attachments.M249ParaStock, (model) -> {
+         })
+         .withCompatibleAttachment(Attachments2.MinimiStock, (model) -> {
+         })
+         .withCompatibleAttachment(Attachments2.MinimiStockB, (model) -> {
          })
          .withCompatibleAttachment(Attachments.M249MilspecStock, (model) -> {
         	 if(model instanceof MilSpecStock) {
@@ -119,9 +126,6 @@ public class M249Factory {
             if(model instanceof M249Hatch) {
 //            	GL11.glTranslatef(-0F, 2.45F, 3.8F);
 //                GL11.glRotatef(90F, 1f, 0f, 0f);
-            } else if(model instanceof M249RearSight) {
-                GL11.glTranslatef(0.04f, -0.86f, 5.95f);
-                GL11.glScaled(0.3F, 0.3F, 0.3F);
             } else if(model instanceof AKRail) {
             	GL11.glTranslatef(-0.25F, -1.7F, -2.2F);
                 GL11.glScaled(0.9F, 0.9F, 0.9F);
@@ -487,6 +491,7 @@ public class M249Factory {
                 
                 // Everything else
                 else {
+                GL11.glTranslatef(0.14f, 1f, -1f);
                 }
             
                 })

@@ -247,6 +247,8 @@ public class EntityCustomMob extends EntityMob implements IRangedAttackMob, Cont
      */
     @Override
     protected void setEquipmentBasedOnDifficulty(DifficultyInstance difficulty) {
+        super.setEquipmentBasedOnDifficulty(difficulty);
+
         setArmorEquipment();
         setPrimaryEquipment();
         setSecondaryEquipment();

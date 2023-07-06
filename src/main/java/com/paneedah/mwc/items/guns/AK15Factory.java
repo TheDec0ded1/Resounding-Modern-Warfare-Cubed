@@ -8,6 +8,7 @@ import com.paneedah.mwc.init.MWCItems;
 import com.paneedah.mwc.models.*;
 import com.paneedah.mwc.proxies.CommonProxy;
 import com.paneedah.mwc.weapons.Attachments;
+import com.paneedah.mwc.weapons.Attachments2;
 import com.paneedah.mwc.weapons.AuxiliaryAttachments;
 import com.paneedah.mwc.weapons.Magazines;
 import com.paneedah.weaponlib.*;
@@ -146,21 +147,15 @@ public class AK15Factory {
             GL11.glTranslatef(0.02f, 0.2f, -0.2f);
             GL11.glScaled(1.2F, 1.2F, 1.2F);
         })
-        .withCompatibleAttachment(Attachments.MagpulCTRStock, (model) -> {
-            GL11.glTranslatef(0.02f, 0.2f, -0.4f);
+        .withCompatibleAttachment(Attachments.CollapsableMOEStockGreen, (model) -> {
+            GL11.glTranslatef(0.02f, 0.2f, -0.2f);
             GL11.glScaled(1.2F, 1.2F, 1.2F);
         })
-        .withCompatibleAttachment(Attachments.MilSpecStock, (model) -> {
-            GL11.glTranslatef(0.02f, 0.2f, -0.4f);
-            GL11.glScaled(1.2F, 1.2F, 1.2F);
+        .withCompatibleAttachment(Attachments2.AK19Stock, (model) -> {
         })
-        .withCompatibleAttachment(Attachments.AK47Grip, (model) -> {
-//            GL11.glTranslatef(0.02f, 0.2f, -0.4f);
-//            GL11.glScaled(1.2F, 1.2F, 1.2F);
+        .withCompatibleAttachment(Attachments2.AK19StockGreen, (model) -> {
         })
-        .withCompatibleAttachment(Attachments.AK101Grip, (model) -> {
-//            GL11.glTranslatef(0.02f, 0.2f, -0.4f);
-//            GL11.glScaled(1.2F, 1.2F, 1.2F);
+        .withCompatibleAttachment(Attachments2.AK19StockTan, (model) -> {
         })
         .withCompatibleAttachment(Attachments.AKErgoGrip, true, (model) -> {
 //            GL11.glTranslatef(0.02f, 0.2f, -0.4f);

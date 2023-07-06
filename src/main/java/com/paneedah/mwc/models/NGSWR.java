@@ -1,18 +1,18 @@
 package com.paneedah.mwc.models;
 
 import com.paneedah.weaponlib.ModelWithAttachments;
-
 import net.minecraft.client.model.ModelBox;
 import net.minecraft.client.model.ModelRenderer;
 import net.minecraft.entity.Entity;
 
-// Made with Blockbench 4.1.1
+// Made with Blockbench 4.7.4
 // Exported for Minecraft version 1.7 - 1.12
 // Paste this class into your mod and generate all required imports
 
 
 public class NGSWR extends ModelWithAttachments {
 	private final ModelRenderer gun;
+	private final ModelRenderer gun_r1;
 	private final ModelRenderer cube_r1;
 	private final ModelRenderer cube_r2;
 	private final ModelRenderer cube_r3;
@@ -140,44 +140,6 @@ public class NGSWR extends ModelWithAttachments {
 	private final ModelRenderer cube_r116;
 	private final ModelRenderer cube_r117;
 	private final ModelRenderer cube_r118;
-	private final ModelRenderer rails_attachment;
-	private final ModelRenderer bone2;
-	private final ModelRenderer cube_r119;
-	private final ModelRenderer cube_r120;
-	private final ModelRenderer bone3;
-	private final ModelRenderer cube_r121;
-	private final ModelRenderer cube_r122;
-	private final ModelRenderer action;
-	private final ModelRenderer cube_r123;
-	private final ModelRenderer cube_r124;
-	private final ModelRenderer cube_r125;
-	private final ModelRenderer cube_r126;
-	private final ModelRenderer stock_adapter;
-	private final ModelRenderer cube_r127;
-	private final ModelRenderer cube_r128;
-	private final ModelRenderer cube_r129;
-	private final ModelRenderer cube_r130;
-	private final ModelRenderer cube_r131;
-	private final ModelRenderer cube_r132;
-	private final ModelRenderer cube_r133;
-	private final ModelRenderer cube_r134;
-	private final ModelRenderer cube_r135;
-	private final ModelRenderer magazine;
-	private final ModelRenderer cube_r136;
-	private final ModelRenderer cube_r137;
-	private final ModelRenderer cube_r138;
-	private final ModelRenderer cube_r139;
-	private final ModelRenderer cube_r140;
-	private final ModelRenderer cube_r141;
-	private final ModelRenderer cube_r142;
-	private final ModelRenderer cube_r143;
-	private final ModelRenderer cube_r144;
-	private final ModelRenderer cube_r145;
-	private final ModelRenderer cube_r146;
-	private final ModelRenderer cube_r147;
-	private final ModelRenderer cube_r148;
-	private final ModelRenderer cube_r149;
-	private final ModelRenderer cube_r150;
 
 	public NGSWR() {
 		textureWidth = 256;
@@ -298,6 +260,12 @@ public class NGSWR extends ModelWithAttachments {
 		gun.cubeList.add(new ModelBox(gun, 59, 48, -3.0F, -31.0F, -14.5F, 3, 4, 1, -0.001F, false));
 		gun.cubeList.add(new ModelBox(gun, 104, 66, -3.0F, -26.9F, -10.7F, 3, 1, 1, -0.001F, false));
 		gun.cubeList.add(new ModelBox(gun, 62, 112, -3.35F, -32.0F, -14.0F, 1, 1, 8, -0.001F, false));
+
+		gun_r1 = new ModelRenderer(this);
+		gun_r1.setRotationPoint(-3.4F, -34.1F, -13.8F);
+		gun.addChild(gun_r1);
+		setRotationAngle(gun_r1, 1.5708F, 0.0F, 0.0F);
+		gun_r1.cubeList.add(new ModelBox(gun_r1, 28, 59, -0.5F, -0.4F, 0.3F, 1, 2, 1, -0.1F, false));
 
 		cube_r1 = new ModelRenderer(this);
 		cube_r1.setRotationPoint(0.0F, -25.9F, -9.7F);
@@ -509,13 +477,11 @@ public class NGSWR extends ModelWithAttachments {
 		cube_r33 = new ModelRenderer(this);
 		cube_r33.setRotationPoint(-3.35F, -40.5F, -27.7F);
 		gun.addChild(cube_r33);
-		setRotationAngle(cube_r33, 0.0F, 0.0F, 0.0F);
 		cube_r33.cubeList.add(new ModelBox(cube_r33, 0, 86, 0.0F, -2.0F, -1.0F, 1, 1, 2, -0.002F, false));
 
 		cube_r34 = new ModelRenderer(this);
 		cube_r34.setRotationPoint(-3.35F, -39.6F, -27.0F);
 		gun.addChild(cube_r34);
-		setRotationAngle(cube_r34, 0.0F, 0.0F, 0.0F);
 		cube_r34.cubeList.add(new ModelBox(cube_r34, 120, 67, 0.0F, -2.0F, -2.0F, 1, 1, 3, -0.002F, false));
 
 		cube_r35 = new ModelRenderer(this);
@@ -619,13 +585,11 @@ public class NGSWR extends ModelWithAttachments {
 		cube_r49 = new ModelRenderer(this);
 		cube_r49.setRotationPoint(0.35F, -39.6F, -27.0F);
 		gun.addChild(cube_r49);
-		setRotationAngle(cube_r49, 0.0F, 0.0F, 0.0F);
 		cube_r49.cubeList.add(new ModelBox(cube_r49, 120, 71, -1.0F, -2.0F, -2.0F, 1, 1, 3, -0.002F, false));
 
 		cube_r50 = new ModelRenderer(this);
 		cube_r50.setRotationPoint(0.35F, -40.5F, -27.7F);
 		gun.addChild(cube_r50);
-		setRotationAngle(cube_r50, 0.0F, 0.0F, 0.0F);
 		cube_r50.cubeList.add(new ModelBox(cube_r50, 0, 67, -1.0F, -2.0F, -17.0F, 1, 1, 18, -0.002F, false));
 
 		cube_r51 = new ModelRenderer(this);
@@ -875,73 +839,181 @@ public class NGSWR extends ModelWithAttachments {
 		rails = new ModelRenderer(this);
 		rails.setRotationPoint(-2.3F, -43.1F, -39.75F);
 		gun.addChild(rails);
-		rails.cubeList.add(new ModelBox(rails, 115, 21, -0.2F, -1.2F, 35.55F, 2, 1, 3, -0.2F, false));
-		rails.cubeList.add(new ModelBox(rails, 115, 17, -0.2F, -1.2F, 32.3F, 2, 1, 3, -0.2F, false));
-		rails.cubeList.add(new ModelBox(rails, 16, 115, -0.2F, -1.2F, 29.05F, 2, 1, 3, -0.2F, false));
-		rails.cubeList.add(new ModelBox(rails, 0, 115, -0.2F, -1.2F, 25.8F, 2, 1, 3, -0.2F, false));
-		rails.cubeList.add(new ModelBox(rails, 112, 104, -0.2F, -1.2F, 16.05F, 2, 1, 3, -0.2F, false));
-		rails.cubeList.add(new ModelBox(rails, 110, 113, -0.2F, -1.2F, 19.3F, 2, 1, 3, -0.2F, false));
-		rails.cubeList.add(new ModelBox(rails, 114, 85, -0.2F, -1.2F, 22.55F, 2, 1, 3, -0.2F, false));
-		rails.cubeList.add(new ModelBox(rails, 72, 112, -0.2F, -1.2F, 6.3F, 2, 1, 3, -0.2F, false));
-		rails.cubeList.add(new ModelBox(rails, 88, 112, -0.2F, -1.2F, 9.55F, 2, 1, 3, -0.2F, false));
-		rails.cubeList.add(new ModelBox(rails, 103, 112, -0.2F, -1.2F, 12.8F, 2, 1, 3, -0.2F, false));
-		rails.cubeList.add(new ModelBox(rails, 49, 77, -0.2F, -1.2F, -5.45F, 2, 1, 5, -0.2F, false));
-		rails.cubeList.add(new ModelBox(rails, 16, 111, -0.2F, -1.2F, -8.2F, 2, 1, 3, -0.2F, false));
-		rails.cubeList.add(new ModelBox(rails, 0, 111, -0.2F, -1.2F, -11.45F, 2, 1, 3, -0.2F, false));
-		rails.cubeList.add(new ModelBox(rails, 110, 78, -0.2F, -1.2F, -14.7F, 2, 1, 3, -0.2F, false));
-		rails.cubeList.add(new ModelBox(rails, 110, 39, -0.2F, -1.2F, -17.95F, 2, 1, 3, -0.2F, false));
-		rails.cubeList.add(new ModelBox(rails, 108, 34, -0.2F, -1.2F, -21.2F, 2, 1, 3, -0.2F, false));
-		rails.cubeList.add(new ModelBox(rails, 51, 11, -0.2F, -1.2F, -27.45F, 2, 1, 6, -0.199F, false));
-		rails.cubeList.add(new ModelBox(rails, 31, 112, -0.2F, -1.2F, -0.2F, 2, 1, 3, -0.2F, false));
-		rails.cubeList.add(new ModelBox(rails, 47, 112, -0.2F, -1.2F, 3.05F, 2, 1, 3, -0.2F, false));
+		rails.cubeList.add(new ModelBox(rails, 117, 23, -0.2F, -1.2F, 37.55F, 2, 1, 1, -0.2F, false));
+		rails.cubeList.add(new ModelBox(rails, 117, 23, -0.2F, -1.2F, 35.95F, 2, 1, 1, -0.2F, false));
+		rails.cubeList.add(new ModelBox(rails, 117, 23, -0.2F, -1.2F, 37.15F, 2, 1, 1, -0.2F, false));
+		rails.cubeList.add(new ModelBox(rails, 117, 19, -0.2F, -1.2F, 32.35F, 2, 1, 1, -0.2F, false));
+		rails.cubeList.add(new ModelBox(rails, 117, 19, -0.2F, -1.2F, 33.55F, 2, 1, 1, -0.2F, false));
+		rails.cubeList.add(new ModelBox(rails, 117, 19, -0.2F, -1.2F, 34.75F, 2, 1, 1, -0.2F, false));
+		rails.cubeList.add(new ModelBox(rails, 18, 117, -0.2F, -1.2F, 29.95F, 2, 1, 1, -0.2F, false));
+		rails.cubeList.add(new ModelBox(rails, 18, 117, -0.2F, -1.2F, 31.15F, 2, 1, 1, -0.2F, false));
+		rails.cubeList.add(new ModelBox(rails, 2, 117, -0.2F, -1.2F, 26.35F, 2, 1, 1, -0.2F, false));
+		rails.cubeList.add(new ModelBox(rails, 2, 117, -0.2F, -1.2F, 27.55F, 2, 1, 1, -0.2F, false));
+		rails.cubeList.add(new ModelBox(rails, 2, 117, -0.2F, -1.2F, 28.75F, 2, 1, 1, -0.2F, false));
+		rails.cubeList.add(new ModelBox(rails, 114, 106, -0.2F, -1.2F, 16.75F, 2, 1, 1, -0.2F, false));
+		rails.cubeList.add(new ModelBox(rails, 114, 106, -0.2F, -1.2F, 17.95F, 2, 1, 1, -0.2F, false));
+		rails.cubeList.add(new ModelBox(rails, 112, 115, -0.2F, -1.2F, 19.15F, 2, 1, 1, -0.2F, false));
+		rails.cubeList.add(new ModelBox(rails, 112, 115, -0.2F, -1.2F, 20.35F, 2, 1, 1, -0.2F, false));
+		rails.cubeList.add(new ModelBox(rails, 112, 115, -0.2F, -1.2F, 21.55F, 2, 1, 1, -0.2F, false));
+		rails.cubeList.add(new ModelBox(rails, 116, 87, -0.2F, -1.2F, 22.75F, 2, 1, 1, -0.2F, false));
+		rails.cubeList.add(new ModelBox(rails, 116, 87, -0.2F, -1.2F, 23.95F, 2, 1, 1, -0.2F, false));
+		rails.cubeList.add(new ModelBox(rails, 116, 87, -0.2F, -1.2F, 25.15F, 2, 1, 1, -0.2F, false));
+		rails.cubeList.add(new ModelBox(rails, 74, 114, -0.2F, -1.2F, 7.15F, 2, 1, 1, -0.2F, false));
+		rails.cubeList.add(new ModelBox(rails, 74, 114, -0.2F, -1.2F, 8.35F, 2, 1, 1, -0.2F, false));
+		rails.cubeList.add(new ModelBox(rails, 90, 114, -0.2F, -1.2F, 9.55F, 2, 1, 1, -0.2F, false));
+		rails.cubeList.add(new ModelBox(rails, 90, 114, -0.2F, -1.2F, 10.75F, 2, 1, 1, -0.2F, false));
+		rails.cubeList.add(new ModelBox(rails, 90, 114, -0.2F, -1.2F, 11.95F, 2, 1, 1, -0.2F, false));
+		rails.cubeList.add(new ModelBox(rails, 105, 114, -0.2F, -1.2F, 14.35F, 2, 1, 1, -0.2F, false));
+		rails.cubeList.add(new ModelBox(rails, 105, 114, -0.2F, -1.2F, 15.55F, 2, 1, 1, -0.2F, false));
+		rails.cubeList.add(new ModelBox(rails, 105, 114, -0.2F, -1.2F, 13.15F, 2, 1, 1, -0.2F, false));
+		rails.cubeList.add(new ModelBox(rails, 53, 81, -0.2F, -1.2F, -4.85F, 2, 1, 1, -0.2F, false));
+		rails.cubeList.add(new ModelBox(rails, 53, 81, -0.2F, -1.2F, -3.65F, 2, 1, 1, -0.2F, false));
+		rails.cubeList.add(new ModelBox(rails, 53, 81, -0.2F, -1.2F, -2.45F, 2, 1, 1, -0.2F, false));
+		rails.cubeList.add(new ModelBox(rails, 53, 81, -0.2F, -1.2F, -1.25F, 2, 1, 1, -0.2F, false));
+		rails.cubeList.add(new ModelBox(rails, 18, 113, -0.2F, -1.2F, -7.25F, 2, 1, 1, -0.2F, false));
+		rails.cubeList.add(new ModelBox(rails, 18, 113, -0.2F, -1.2F, -6.05F, 2, 1, 1, -0.2F, false));
+		rails.cubeList.add(new ModelBox(rails, 2, 113, -0.2F, -1.2F, -10.85F, 2, 1, 1, -0.2F, false));
+		rails.cubeList.add(new ModelBox(rails, 2, 113, -0.2F, -1.2F, -9.65F, 2, 1, 1, -0.2F, false));
+		rails.cubeList.add(new ModelBox(rails, 2, 113, -0.2F, -1.2F, -8.45F, 2, 1, 1, -0.2F, false));
+		rails.cubeList.add(new ModelBox(rails, 112, 80, -0.2F, -1.2F, -14.45F, 2, 1, 1, -0.2F, false));
+		rails.cubeList.add(new ModelBox(rails, 112, 80, -0.2F, -1.2F, -13.25F, 2, 1, 1, -0.2F, false));
+		rails.cubeList.add(new ModelBox(rails, 112, 80, -0.2F, -1.2F, -12.05F, 2, 1, 1, -0.2F, false));
+		rails.cubeList.add(new ModelBox(rails, 112, 41, -0.2F, -1.2F, -18.05F, 2, 1, 1, -0.2F, false));
+		rails.cubeList.add(new ModelBox(rails, 112, 41, -0.2F, -1.2F, -16.85F, 2, 1, 1, -0.2F, false));
+		rails.cubeList.add(new ModelBox(rails, 112, 41, -0.2F, -1.2F, -15.65F, 2, 1, 1, -0.2F, false));
+		rails.cubeList.add(new ModelBox(rails, 110, 36, -0.2F, -1.2F, -20.45F, 2, 1, 1, -0.2F, false));
+		rails.cubeList.add(new ModelBox(rails, 110, 36, -0.2F, -1.2F, -19.25F, 2, 1, 1, -0.2F, false));
+		rails.cubeList.add(new ModelBox(rails, 55, 15, -0.2F, -1.2F, -27.45F, 2, 1, 2, -0.199F, false));
+		rails.cubeList.add(new ModelBox(rails, 56, 16, -0.2F, -1.2F, -25.25F, 2, 1, 1, -0.199F, false));
+		rails.cubeList.add(new ModelBox(rails, 56, 16, -0.2F, -1.2F, -24.05F, 2, 1, 1, -0.199F, false));
+		rails.cubeList.add(new ModelBox(rails, 56, 16, -0.2F, -1.2F, -22.85F, 2, 1, 1, -0.199F, false));
+		rails.cubeList.add(new ModelBox(rails, 56, 16, -0.2F, -1.2F, -21.65F, 2, 1, 1, -0.199F, false));
+		rails.cubeList.add(new ModelBox(rails, 33, 114, -0.2F, -1.2F, -0.05F, 2, 1, 1, -0.2F, false));
+		rails.cubeList.add(new ModelBox(rails, 33, 114, -0.2F, -1.2F, 1.15F, 2, 1, 1, -0.2F, false));
+		rails.cubeList.add(new ModelBox(rails, 33, 114, -0.2F, -1.2F, 2.35F, 2, 1, 1, -0.2F, false));
+		rails.cubeList.add(new ModelBox(rails, 49, 114, -0.2F, -1.2F, 3.55F, 2, 1, 1, -0.2F, false));
+		rails.cubeList.add(new ModelBox(rails, 49, 114, -0.2F, -1.2F, 4.75F, 2, 1, 1, -0.2F, false));
+		rails.cubeList.add(new ModelBox(rails, 49, 114, -0.2F, -1.2F, 5.95F, 2, 1, 1, -0.2F, false));
 
 		cube_r82 = new ModelRenderer(this);
 		cube_r82.setRotationPoint(0.0F, -1.0F, 0.0F);
 		rails.addChild(cube_r82);
 		setRotationAngle(cube_r82, 0.0F, 0.0F, -0.7854F);
-		cube_r82.cubeList.add(new ModelBox(cube_r82, 115, 62, -0.8F, -0.2F, -0.2F, 1, 1, 3, -0.201F, false));
-		cube_r82.cubeList.add(new ModelBox(cube_r82, 49, 59, -0.8F, -0.2F, -27.45F, 1, 1, 6, -0.201F, false));
-		cube_r82.cubeList.add(new ModelBox(cube_r82, 104, 22, -0.8F, -0.2F, -21.2F, 1, 1, 3, -0.201F, false));
-		cube_r82.cubeList.add(new ModelBox(cube_r82, 104, 46, -0.8F, -0.2F, -17.95F, 1, 1, 3, -0.201F, false));
-		cube_r82.cubeList.add(new ModelBox(cube_r82, 106, 0, -0.8F, -0.2F, -14.7F, 1, 1, 3, -0.201F, false));
-		cube_r82.cubeList.add(new ModelBox(cube_r82, 106, 95, -0.8F, -0.2F, -11.45F, 1, 1, 3, -0.201F, false));
-		cube_r82.cubeList.add(new ModelBox(cube_r82, 37, 107, -0.8F, -0.2F, -8.2F, 1, 1, 3, -0.201F, false));
-		cube_r82.cubeList.add(new ModelBox(cube_r82, 32, 48, -0.8F, -0.2F, -5.45F, 1, 1, 5, -0.201F, false));
-		cube_r82.cubeList.add(new ModelBox(cube_r82, 31, 116, -0.8F, -0.2F, 12.8F, 1, 1, 3, -0.201F, false));
-		cube_r82.cubeList.add(new ModelBox(cube_r82, 116, 12, -0.8F, -0.2F, 9.55F, 1, 1, 3, -0.201F, false));
-		cube_r82.cubeList.add(new ModelBox(cube_r82, 116, 0, -0.8F, -0.2F, 6.3F, 1, 1, 3, -0.201F, false));
-		cube_r82.cubeList.add(new ModelBox(cube_r82, 116, 95, -0.8F, -0.2F, 22.55F, 1, 1, 3, -0.201F, false));
-		cube_r82.cubeList.add(new ModelBox(cube_r82, 116, 90, -0.8F, -0.2F, 19.3F, 1, 1, 3, -0.201F, false));
-		cube_r82.cubeList.add(new ModelBox(cube_r82, 62, 116, -0.8F, -0.2F, 16.05F, 1, 1, 3, -0.201F, false));
-		cube_r82.cubeList.add(new ModelBox(cube_r82, 103, 116, -0.8F, -0.2F, 25.8F, 1, 1, 3, -0.201F, false));
-		cube_r82.cubeList.add(new ModelBox(cube_r82, 117, 40, -0.8F, -0.2F, 29.05F, 1, 1, 3, -0.201F, false));
-		cube_r82.cubeList.add(new ModelBox(cube_r82, 117, 79, -0.8F, -0.2F, 32.3F, 1, 1, 3, -0.201F, false));
-		cube_r82.cubeList.add(new ModelBox(cube_r82, 93, 117, -0.8F, -0.2F, 35.55F, 1, 1, 3, -0.201F, false));
-		cube_r82.cubeList.add(new ModelBox(cube_r82, 115, 66, -0.8F, -0.2F, 3.05F, 1, 1, 3, -0.201F, false));
+		cube_r82.cubeList.add(new ModelBox(cube_r82, 117, 64, -0.8F, -0.2F, -0.05F, 1, 1, 1, -0.201F, false));
+		cube_r82.cubeList.add(new ModelBox(cube_r82, 117, 64, -0.8F, -0.2F, 1.15F, 1, 1, 1, -0.201F, false));
+		cube_r82.cubeList.add(new ModelBox(cube_r82, 117, 64, -0.8F, -0.2F, 2.35F, 1, 1, 1, -0.201F, false));
+		cube_r82.cubeList.add(new ModelBox(cube_r82, 53, 63, -0.8F, -0.2F, -27.45F, 1, 1, 2, -0.201F, false));
+		cube_r82.cubeList.add(new ModelBox(cube_r82, 54, 64, -0.8F, -0.2F, -25.25F, 1, 1, 1, -0.201F, false));
+		cube_r82.cubeList.add(new ModelBox(cube_r82, 54, 64, -0.8F, -0.2F, -24.05F, 1, 1, 1, -0.201F, false));
+		cube_r82.cubeList.add(new ModelBox(cube_r82, 54, 64, -0.8F, -0.2F, -22.85F, 1, 1, 1, -0.201F, false));
+		cube_r82.cubeList.add(new ModelBox(cube_r82, 54, 64, -0.8F, -0.2F, -21.65F, 1, 1, 1, -0.201F, false));
+		cube_r82.cubeList.add(new ModelBox(cube_r82, 106, 24, -0.8F, -0.2F, -20.45F, 1, 1, 1, -0.201F, false));
+		cube_r82.cubeList.add(new ModelBox(cube_r82, 106, 24, -0.8F, -0.2F, -19.25F, 1, 1, 1, -0.201F, false));
+		cube_r82.cubeList.add(new ModelBox(cube_r82, 106, 48, -0.8F, -0.2F, -18.05F, 1, 1, 1, -0.201F, false));
+		cube_r82.cubeList.add(new ModelBox(cube_r82, 106, 48, -0.8F, -0.2F, -16.85F, 1, 1, 1, -0.201F, false));
+		cube_r82.cubeList.add(new ModelBox(cube_r82, 106, 48, -0.8F, -0.2F, -15.65F, 1, 1, 1, -0.201F, false));
+		cube_r82.cubeList.add(new ModelBox(cube_r82, 108, 2, -0.8F, -0.2F, -14.45F, 1, 1, 1, -0.201F, false));
+		cube_r82.cubeList.add(new ModelBox(cube_r82, 108, 2, -0.8F, -0.2F, -13.25F, 1, 1, 1, -0.201F, false));
+		cube_r82.cubeList.add(new ModelBox(cube_r82, 108, 2, -0.8F, -0.2F, -12.05F, 1, 1, 1, -0.201F, false));
+		cube_r82.cubeList.add(new ModelBox(cube_r82, 108, 97, -0.8F, -0.2F, -10.85F, 1, 1, 1, -0.201F, false));
+		cube_r82.cubeList.add(new ModelBox(cube_r82, 108, 97, -0.8F, -0.2F, -9.65F, 1, 1, 1, -0.201F, false));
+		cube_r82.cubeList.add(new ModelBox(cube_r82, 108, 97, -0.8F, -0.2F, -8.45F, 1, 1, 1, -0.201F, false));
+		cube_r82.cubeList.add(new ModelBox(cube_r82, 39, 109, -0.8F, -0.2F, -7.25F, 1, 1, 1, -0.201F, false));
+		cube_r82.cubeList.add(new ModelBox(cube_r82, 39, 109, -0.8F, -0.2F, -6.05F, 1, 1, 1, -0.201F, false));
+		cube_r82.cubeList.add(new ModelBox(cube_r82, 36, 52, -0.8F, -0.2F, -4.85F, 1, 1, 1, -0.201F, false));
+		cube_r82.cubeList.add(new ModelBox(cube_r82, 36, 52, -0.8F, -0.2F, -3.65F, 1, 1, 1, -0.201F, false));
+		cube_r82.cubeList.add(new ModelBox(cube_r82, 36, 52, -0.8F, -0.2F, -2.45F, 1, 1, 1, -0.201F, false));
+		cube_r82.cubeList.add(new ModelBox(cube_r82, 36, 52, -0.8F, -0.2F, -1.25F, 1, 1, 1, -0.201F, false));
+		cube_r82.cubeList.add(new ModelBox(cube_r82, 33, 118, -0.8F, -0.2F, 14.35F, 1, 1, 1, -0.201F, false));
+		cube_r82.cubeList.add(new ModelBox(cube_r82, 33, 118, -0.8F, -0.2F, 15.55F, 1, 1, 1, -0.201F, false));
+		cube_r82.cubeList.add(new ModelBox(cube_r82, 33, 118, -0.8F, -0.2F, 13.15F, 1, 1, 1, -0.201F, false));
+		cube_r82.cubeList.add(new ModelBox(cube_r82, 118, 14, -0.8F, -0.2F, 9.55F, 1, 1, 1, -0.201F, false));
+		cube_r82.cubeList.add(new ModelBox(cube_r82, 118, 14, -0.8F, -0.2F, 10.75F, 1, 1, 1, -0.201F, false));
+		cube_r82.cubeList.add(new ModelBox(cube_r82, 118, 14, -0.8F, -0.2F, 11.95F, 1, 1, 1, -0.201F, false));
+		cube_r82.cubeList.add(new ModelBox(cube_r82, 118, 2, -0.8F, -0.2F, 7.15F, 1, 1, 1, -0.201F, false));
+		cube_r82.cubeList.add(new ModelBox(cube_r82, 118, 2, -0.8F, -0.2F, 8.35F, 1, 1, 1, -0.201F, false));
+		cube_r82.cubeList.add(new ModelBox(cube_r82, 118, 97, -0.8F, -0.2F, 22.75F, 1, 1, 1, -0.201F, false));
+		cube_r82.cubeList.add(new ModelBox(cube_r82, 118, 97, -0.8F, -0.2F, 23.95F, 1, 1, 1, -0.201F, false));
+		cube_r82.cubeList.add(new ModelBox(cube_r82, 118, 97, -0.8F, -0.2F, 25.15F, 1, 1, 1, -0.201F, false));
+		cube_r82.cubeList.add(new ModelBox(cube_r82, 118, 92, -0.8F, -0.2F, 19.15F, 1, 1, 1, -0.201F, false));
+		cube_r82.cubeList.add(new ModelBox(cube_r82, 118, 92, -0.8F, -0.2F, 20.35F, 1, 1, 1, -0.201F, false));
+		cube_r82.cubeList.add(new ModelBox(cube_r82, 118, 92, -0.8F, -0.2F, 21.55F, 1, 1, 1, -0.201F, false));
+		cube_r82.cubeList.add(new ModelBox(cube_r82, 64, 118, -0.8F, -0.2F, 16.75F, 1, 1, 1, -0.201F, false));
+		cube_r82.cubeList.add(new ModelBox(cube_r82, 64, 118, -0.8F, -0.2F, 17.95F, 1, 1, 1, -0.201F, false));
+		cube_r82.cubeList.add(new ModelBox(cube_r82, 105, 118, -0.8F, -0.2F, 26.35F, 1, 1, 1, -0.201F, false));
+		cube_r82.cubeList.add(new ModelBox(cube_r82, 105, 118, -0.8F, -0.2F, 27.55F, 1, 1, 1, -0.201F, false));
+		cube_r82.cubeList.add(new ModelBox(cube_r82, 105, 118, -0.8F, -0.2F, 28.75F, 1, 1, 1, -0.201F, false));
+		cube_r82.cubeList.add(new ModelBox(cube_r82, 119, 42, -0.8F, -0.2F, 29.95F, 1, 1, 1, -0.201F, false));
+		cube_r82.cubeList.add(new ModelBox(cube_r82, 119, 42, -0.8F, -0.2F, 31.15F, 1, 1, 1, -0.201F, false));
+		cube_r82.cubeList.add(new ModelBox(cube_r82, 119, 81, -0.8F, -0.2F, 32.35F, 1, 1, 1, -0.201F, false));
+		cube_r82.cubeList.add(new ModelBox(cube_r82, 119, 81, -0.8F, -0.2F, 33.55F, 1, 1, 1, -0.201F, false));
+		cube_r82.cubeList.add(new ModelBox(cube_r82, 119, 81, -0.8F, -0.2F, 34.75F, 1, 1, 1, -0.201F, false));
+		cube_r82.cubeList.add(new ModelBox(cube_r82, 95, 119, -0.8F, -0.2F, 37.55F, 1, 1, 1, -0.201F, false));
+		cube_r82.cubeList.add(new ModelBox(cube_r82, 95, 119, -0.8F, -0.2F, 35.95F, 1, 1, 1, -0.201F, false));
+		cube_r82.cubeList.add(new ModelBox(cube_r82, 95, 119, -0.8F, -0.2F, 37.15F, 1, 1, 1, -0.201F, false));
+		cube_r82.cubeList.add(new ModelBox(cube_r82, 117, 68, -0.8F, -0.2F, 3.55F, 1, 1, 1, -0.201F, false));
+		cube_r82.cubeList.add(new ModelBox(cube_r82, 117, 68, -0.8F, -0.2F, 4.75F, 1, 1, 1, -0.201F, false));
+		cube_r82.cubeList.add(new ModelBox(cube_r82, 117, 68, -0.8F, -0.2F, 5.95F, 1, 1, 1, -0.201F, false));
 
 		cube_r83 = new ModelRenderer(this);
 		cube_r83.setRotationPoint(1.6F, -1.0F, 3.25F);
 		rails.addChild(cube_r83);
 		setRotationAngle(cube_r83, 0.0F, 0.0F, -0.7854F);
-		cube_r83.cubeList.add(new ModelBox(cube_r83, 115, 55, -0.8F, -0.2F, -0.2F, 1, 1, 3, -0.201F, false));
-		cube_r83.cubeList.add(new ModelBox(cube_r83, 62, 112, -0.8F, -0.2F, -3.45F, 1, 1, 3, -0.201F, false));
-		cube_r83.cubeList.add(new ModelBox(cube_r83, 20, 59, -0.8F, -0.2F, -30.7F, 1, 1, 6, -0.201F, false));
-		cube_r83.cubeList.add(new ModelBox(cube_r83, 37, 102, -0.8F, -0.2F, -24.45F, 1, 1, 3, -0.201F, false));
-		cube_r83.cubeList.add(new ModelBox(cube_r83, 104, 27, -0.8F, -0.2F, -21.2F, 1, 1, 3, -0.201F, false));
-		cube_r83.cubeList.add(new ModelBox(cube_r83, 104, 62, -0.8F, -0.2F, -17.95F, 1, 1, 3, -0.201F, false));
-		cube_r83.cubeList.add(new ModelBox(cube_r83, 106, 8, -0.8F, -0.2F, -14.7F, 1, 1, 3, -0.201F, false));
-		cube_r83.cubeList.add(new ModelBox(cube_r83, 106, 99, -0.8F, -0.2F, -11.45F, 1, 1, 3, -0.201F, false));
-		cube_r83.cubeList.add(new ModelBox(cube_r83, 35, 35, -0.8F, -0.2F, -8.7F, 1, 1, 5, -0.201F, false));
-		cube_r83.cubeList.add(new ModelBox(cube_r83, 116, 8, -0.8F, -0.2F, 9.55F, 1, 1, 3, -0.201F, false));
-		cube_r83.cubeList.add(new ModelBox(cube_r83, 116, 4, -0.8F, -0.2F, 6.3F, 1, 1, 3, -0.201F, false));
-		cube_r83.cubeList.add(new ModelBox(cube_r83, 115, 70, -0.8F, -0.2F, 3.05F, 1, 1, 3, -0.201F, false));
-		cube_r83.cubeList.add(new ModelBox(cube_r83, 88, 116, -0.8F, -0.2F, 19.3F, 1, 1, 3, -0.201F, false));
-		cube_r83.cubeList.add(new ModelBox(cube_r83, 72, 116, -0.8F, -0.2F, 16.05F, 1, 1, 3, -0.201F, false));
-		cube_r83.cubeList.add(new ModelBox(cube_r83, 47, 116, -0.8F, -0.2F, 12.8F, 1, 1, 3, -0.201F, false));
-		cube_r83.cubeList.add(new ModelBox(cube_r83, 116, 99, -0.8F, -0.2F, 22.55F, 1, 1, 3, -0.201F, false));
-		cube_r83.cubeList.add(new ModelBox(cube_r83, 36, 117, -0.8F, -0.2F, 25.8F, 1, 1, 3, -0.201F, false));
-		cube_r83.cubeList.add(new ModelBox(cube_r83, 52, 117, -0.8F, -0.2F, 29.05F, 1, 1, 3, -0.201F, false));
-		cube_r83.cubeList.add(new ModelBox(cube_r83, 108, 117, -0.8F, -0.2F, 32.3F, 1, 1, 3, -0.201F, false));
+		cube_r83.cubeList.add(new ModelBox(cube_r83, 117, 57, -0.8F, -0.2F, 0.3F, 1, 1, 1, -0.201F, false));
+		cube_r83.cubeList.add(new ModelBox(cube_r83, 117, 57, -0.8F, -0.2F, 1.5F, 1, 1, 1, -0.201F, false));
+		cube_r83.cubeList.add(new ModelBox(cube_r83, 117, 57, -0.8F, -0.2F, 2.7F, 1, 1, 1, -0.201F, false));
+		cube_r83.cubeList.add(new ModelBox(cube_r83, 64, 114, -0.8F, -0.2F, -3.3F, 1, 1, 1, -0.201F, false));
+		cube_r83.cubeList.add(new ModelBox(cube_r83, 64, 114, -0.8F, -0.2F, -2.1F, 1, 1, 1, -0.201F, false));
+		cube_r83.cubeList.add(new ModelBox(cube_r83, 64, 114, -0.8F, -0.2F, -0.9F, 1, 1, 1, -0.201F, false));
+		cube_r83.cubeList.add(new ModelBox(cube_r83, 24, 63, -0.8F, -0.2F, -30.7F, 1, 1, 2, -0.201F, false));
+		cube_r83.cubeList.add(new ModelBox(cube_r83, 25, 64, -0.8F, -0.2F, -28.5F, 1, 1, 1, -0.201F, false));
+		cube_r83.cubeList.add(new ModelBox(cube_r83, 25, 64, -0.8F, -0.2F, -27.3F, 1, 1, 1, -0.201F, false));
+		cube_r83.cubeList.add(new ModelBox(cube_r83, 25, 64, -0.8F, -0.2F, -26.1F, 1, 1, 1, -0.201F, false));
+		cube_r83.cubeList.add(new ModelBox(cube_r83, 25, 64, -0.8F, -0.2F, -24.9F, 1, 1, 1, -0.201F, false));
+		cube_r83.cubeList.add(new ModelBox(cube_r83, 39, 104, -0.8F, -0.2F, -23.7F, 1, 1, 1, -0.201F, false));
+		cube_r83.cubeList.add(new ModelBox(cube_r83, 39, 104, -0.8F, -0.2F, -22.5F, 1, 1, 1, -0.201F, false));
+		cube_r83.cubeList.add(new ModelBox(cube_r83, 106, 29, -0.8F, -0.2F, -21.3F, 1, 1, 1, -0.201F, false));
+		cube_r83.cubeList.add(new ModelBox(cube_r83, 106, 29, -0.8F, -0.2F, -20.1F, 1, 1, 1, -0.201F, false));
+		cube_r83.cubeList.add(new ModelBox(cube_r83, 106, 29, -0.8F, -0.2F, -18.9F, 1, 1, 1, -0.201F, false));
+		cube_r83.cubeList.add(new ModelBox(cube_r83, 106, 64, -0.8F, -0.2F, -17.7F, 1, 1, 1, -0.201F, false));
+		cube_r83.cubeList.add(new ModelBox(cube_r83, 106, 64, -0.8F, -0.2F, -16.5F, 1, 1, 1, -0.201F, false));
+		cube_r83.cubeList.add(new ModelBox(cube_r83, 106, 64, -0.8F, -0.2F, -15.3F, 1, 1, 1, -0.201F, false));
+		cube_r83.cubeList.add(new ModelBox(cube_r83, 108, 10, -0.8F, -0.2F, -14.1F, 1, 1, 1, -0.201F, false));
+		cube_r83.cubeList.add(new ModelBox(cube_r83, 108, 10, -0.8F, -0.2F, -12.9F, 1, 1, 1, -0.201F, false));
+		cube_r83.cubeList.add(new ModelBox(cube_r83, 108, 10, -0.8F, -0.2F, -11.7F, 1, 1, 1, -0.201F, false));
+		cube_r83.cubeList.add(new ModelBox(cube_r83, 108, 101, -0.8F, -0.2F, -10.5F, 1, 1, 1, -0.201F, false));
+		cube_r83.cubeList.add(new ModelBox(cube_r83, 108, 101, -0.8F, -0.2F, -9.3F, 1, 1, 1, -0.201F, false));
+		cube_r83.cubeList.add(new ModelBox(cube_r83, 39, 39, -0.8F, -0.2F, -8.1F, 1, 1, 1, -0.201F, false));
+		cube_r83.cubeList.add(new ModelBox(cube_r83, 39, 39, -0.8F, -0.2F, -6.9F, 1, 1, 1, -0.201F, false));
+		cube_r83.cubeList.add(new ModelBox(cube_r83, 39, 39, -0.8F, -0.2F, -5.7F, 1, 1, 1, -0.201F, false));
+		cube_r83.cubeList.add(new ModelBox(cube_r83, 39, 39, -0.8F, -0.2F, -4.5F, 1, 1, 1, -0.201F, false));
+		cube_r83.cubeList.add(new ModelBox(cube_r83, 118, 10, -0.8F, -0.2F, 11.1F, 1, 1, 1, -0.201F, false));
+		cube_r83.cubeList.add(new ModelBox(cube_r83, 118, 10, -0.8F, -0.2F, 12.3F, 1, 1, 1, -0.201F, false));
+		cube_r83.cubeList.add(new ModelBox(cube_r83, 118, 10, -0.8F, -0.2F, 9.9F, 1, 1, 1, -0.201F, false));
+		cube_r83.cubeList.add(new ModelBox(cube_r83, 118, 6, -0.8F, -0.2F, 6.3F, 1, 1, 1, -0.201F, false));
+		cube_r83.cubeList.add(new ModelBox(cube_r83, 118, 6, -0.8F, -0.2F, 7.5F, 1, 1, 1, -0.201F, false));
+		cube_r83.cubeList.add(new ModelBox(cube_r83, 118, 6, -0.8F, -0.2F, 8.7F, 1, 1, 1, -0.201F, false));
+		cube_r83.cubeList.add(new ModelBox(cube_r83, 117, 72, -0.8F, -0.2F, 3.9F, 1, 1, 1, -0.201F, false));
+		cube_r83.cubeList.add(new ModelBox(cube_r83, 117, 72, -0.8F, -0.2F, 5.1F, 1, 1, 1, -0.201F, false));
+		cube_r83.cubeList.add(new ModelBox(cube_r83, 90, 118, -0.8F, -0.2F, 19.5F, 1, 1, 1, -0.201F, false));
+		cube_r83.cubeList.add(new ModelBox(cube_r83, 90, 118, -0.8F, -0.2F, 20.7F, 1, 1, 1, -0.201F, false));
+		cube_r83.cubeList.add(new ModelBox(cube_r83, 90, 118, -0.8F, -0.2F, 21.9F, 1, 1, 1, -0.201F, false));
+		cube_r83.cubeList.add(new ModelBox(cube_r83, 74, 118, -0.8F, -0.2F, 15.9F, 1, 1, 1, -0.201F, false));
+		cube_r83.cubeList.add(new ModelBox(cube_r83, 74, 118, -0.8F, -0.2F, 17.1F, 1, 1, 1, -0.201F, false));
+		cube_r83.cubeList.add(new ModelBox(cube_r83, 74, 118, -0.8F, -0.2F, 18.3F, 1, 1, 1, -0.201F, false));
+		cube_r83.cubeList.add(new ModelBox(cube_r83, 49, 118, -0.8F, -0.2F, 13.5F, 1, 1, 1, -0.201F, false));
+		cube_r83.cubeList.add(new ModelBox(cube_r83, 49, 118, -0.8F, -0.2F, 14.7F, 1, 1, 1, -0.201F, false));
+		cube_r83.cubeList.add(new ModelBox(cube_r83, 118, 101, -0.8F, -0.2F, 23.1F, 1, 1, 1, -0.201F, false));
+		cube_r83.cubeList.add(new ModelBox(cube_r83, 118, 101, -0.8F, -0.2F, 24.3F, 1, 1, 1, -0.201F, false));
+		cube_r83.cubeList.add(new ModelBox(cube_r83, 118, 101, -0.8F, -0.2F, 25.5F, 1, 1, 1, -0.201F, false));
+		cube_r83.cubeList.add(new ModelBox(cube_r83, 38, 119, -0.8F, -0.2F, 26.7F, 1, 1, 1, -0.201F, false));
+		cube_r83.cubeList.add(new ModelBox(cube_r83, 38, 119, -0.8F, -0.2F, 27.9F, 1, 1, 1, -0.201F, false));
+		cube_r83.cubeList.add(new ModelBox(cube_r83, 54, 119, -0.8F, -0.2F, 29.1F, 1, 1, 1, -0.201F, false));
+		cube_r83.cubeList.add(new ModelBox(cube_r83, 54, 119, -0.8F, -0.2F, 30.3F, 1, 1, 1, -0.201F, false));
+		cube_r83.cubeList.add(new ModelBox(cube_r83, 54, 119, -0.8F, -0.2F, 31.5F, 1, 1, 1, -0.201F, false));
+		cube_r83.cubeList.add(new ModelBox(cube_r83, 110, 119, -0.8F, -0.2F, 34.3F, 1, 1, 1, -0.201F, false));
+		cube_r83.cubeList.add(new ModelBox(cube_r83, 110, 119, -0.8F, -0.2F, 32.7F, 1, 1, 1, -0.201F, false));
+		cube_r83.cubeList.add(new ModelBox(cube_r83, 110, 119, -0.8F, -0.2F, 33.9F, 1, 1, 1, -0.201F, false));
 
 		cube_r84 = new ModelRenderer(this);
 		cube_r84.setRotationPoint(0.0F, -1.0F, 38.35F);
@@ -1222,286 +1294,12 @@ public class NGSWR extends ModelWithAttachments {
 		handguard.addChild(cube_r118);
 		setRotationAngle(cube_r118, 1.1345F, 0.0F, -0.3491F);
 		cube_r118.cubeList.add(new ModelBox(cube_r118, 98, 19, -1.0F, -1.1F, 0.2F, 1, 1, 1, -0.002F, false));
-
-		rails_attachment = new ModelRenderer(this);
-		rails_attachment.setRotationPoint(0.0F, 24.0F, 0.0F);
-		rails_attachment.cubeList.add(new ModelBox(rails_attachment, 24, 23, 0.85F, -39.5F, -39.0F, 1, 2, 10, 0.1F, false));
-		rails_attachment.cubeList.add(new ModelBox(rails_attachment, 49, 67, -2.5F, -35.9F, -51.7F, 2, 1, 16, 0.0F, false));
-
-		bone2 = new ModelRenderer(this);
-		bone2.setRotationPoint(-0.7F, -33.5F, -51.75F);
-		rails_attachment.addChild(bone2);
-		setRotationAngle(bone2, 0.0F, 0.0F, -3.1416F);
-		bone2.cubeList.add(new ModelBox(bone2, 36, 29, -0.2F, 0.8F, 12.8F, 2, 1, 3, -0.2F, false));
-		bone2.cubeList.add(new ModelBox(bone2, 20, 54, -0.2F, 0.8F, 9.55F, 2, 1, 3, -0.2F, false));
-		bone2.cubeList.add(new ModelBox(bone2, 69, 54, -0.2F, 0.8F, 6.3F, 2, 1, 3, -0.2F, false));
-		bone2.cubeList.add(new ModelBox(bone2, 20, 73, -0.2F, 0.8F, 3.05F, 2, 1, 3, -0.2F, false));
-		bone2.cubeList.add(new ModelBox(bone2, 69, 79, -0.2F, 0.8F, -0.2F, 2, 1, 3, -0.2F, false));
-
-		cube_r119 = new ModelRenderer(this);
-		cube_r119.setRotationPoint(0.0F, 0.0F, 0.0F);
-		bone2.addChild(cube_r119);
-		setRotationAngle(cube_r119, 0.0F, 0.0F, -0.7854F);
-		cube_r119.cubeList.add(new ModelBox(cube_r119, 75, 95, -1.5071F, 0.5071F, -0.2F, 1, 1, 3, -0.201F, false));
-		cube_r119.cubeList.add(new ModelBox(cube_r119, 24, 86, -1.5071F, 0.5071F, 3.05F, 1, 1, 3, -0.201F, false));
-		cube_r119.cubeList.add(new ModelBox(cube_r119, 37, 78, -1.5071F, 0.5071F, 6.3F, 1, 1, 3, -0.201F, false));
-		cube_r119.cubeList.add(new ModelBox(cube_r119, 0, 71, -1.5071F, 0.5071F, 9.55F, 1, 1, 3, -0.201F, false));
-		cube_r119.cubeList.add(new ModelBox(cube_r119, 10, 67, -1.5071F, 0.5071F, 12.8F, 1, 1, 3, -0.201F, false));
-
-		cube_r120 = new ModelRenderer(this);
-		cube_r120.setRotationPoint(1.6F, 0.0F, 0.0F);
-		bone2.addChild(cube_r120);
-		setRotationAngle(cube_r120, 0.0F, 0.0F, -0.7854F);
-		cube_r120.cubeList.add(new ModelBox(cube_r120, 65, 95, -1.5071F, 0.5071F, -0.2F, 1, 1, 3, -0.201F, false));
-		cube_r120.cubeList.add(new ModelBox(cube_r120, 86, 59, -1.5071F, 0.5071F, 3.05F, 1, 1, 3, -0.201F, false));
-		cube_r120.cubeList.add(new ModelBox(cube_r120, 9, 77, -1.5071F, 0.5071F, 6.3F, 1, 1, 3, -0.201F, false));
-		cube_r120.cubeList.add(new ModelBox(cube_r120, 10, 71, -1.5071F, 0.5071F, 9.55F, 1, 1, 3, -0.201F, false));
-		cube_r120.cubeList.add(new ModelBox(cube_r120, 0, 67, -1.5071F, 0.5071F, 12.8F, 1, 1, 3, -0.201F, false));
-
-		bone3 = new ModelRenderer(this);
-		bone3.setRotationPoint(2.5F, -38.4F, -31.5F);
-		rails_attachment.addChild(bone3);
-		setRotationAngle(bone3, 0.0F, 0.0F, 1.5708F);
-		bone3.cubeList.add(new ModelBox(bone3, 98, 34, -1.2F, -0.1F, -0.2F, 2, 1, 3, -0.2F, false));
-		bone3.cubeList.add(new ModelBox(bone3, 8, 86, -1.2F, -0.1F, -3.45F, 2, 1, 3, -0.2F, false));
-		bone3.cubeList.add(new ModelBox(bone3, 81, 48, -1.2F, -0.1F, -7.7F, 2, 1, 4, -0.2F, false));
-
-		cube_r121 = new ModelRenderer(this);
-		cube_r121.setRotationPoint(0.0F, 0.0F, 0.0F);
-		bone3.addChild(cube_r121);
-		setRotationAngle(cube_r121, 0.0F, 0.0F, -0.7854F);
-		cube_r121.cubeList.add(new ModelBox(cube_r121, 98, 78, -1.5778F, -0.8364F, -7.7F, 1, 1, 4, -0.201F, false));
-		cube_r121.cubeList.add(new ModelBox(cube_r121, 98, 89, -1.5778F, -0.8364F, -3.45F, 1, 1, 3, -0.201F, false));
-		cube_r121.cubeList.add(new ModelBox(cube_r121, 75, 99, -1.5778F, -0.8364F, -0.2F, 1, 1, 3, -0.201F, false));
-
-		cube_r122 = new ModelRenderer(this);
-		cube_r122.setRotationPoint(1.6F, 0.0F, 0.0F);
-		bone3.addChild(cube_r122);
-		setRotationAngle(cube_r122, 0.0F, 0.0F, -0.7854F);
-		cube_r122.cubeList.add(new ModelBox(cube_r122, 98, 39, -1.5778F, -0.8364F, -7.7F, 1, 1, 4, -0.201F, false));
-		cube_r122.cubeList.add(new ModelBox(cube_r122, 98, 85, -1.5778F, -0.8364F, -3.45F, 1, 1, 3, -0.201F, false));
-		cube_r122.cubeList.add(new ModelBox(cube_r122, 65, 99, -1.5778F, -0.8364F, -0.2F, 1, 1, 3, -0.201F, false));
-
-		action = new ModelRenderer(this);
-		action.setRotationPoint(-3.8F, -12.8F, -16.0F);
-		setRotationAngle(action, 0.0F, 0.0F, -0.0349F);
-		
-
-		cube_r123 = new ModelRenderer(this);
-		cube_r123.setRotationPoint(0.1F, 0.4F, -0.6F);
-		action.addChild(cube_r123);
-		setRotationAngle(cube_r123, 0.0F, 0.0F, 0.4014F);
-		cube_r123.cubeList.add(new ModelBox(cube_r123, 35, 12, -0.3584F, -3.9336F, -5.0F, 1, 3, 5, 0.0F, false));
-
-		cube_r124 = new ModelRenderer(this);
-		cube_r124.setRotationPoint(-0.2F, 0.4F, -5.1F);
-		action.addChild(cube_r124);
-		setRotationAngle(cube_r124, 0.0F, -0.3316F, 0.4014F);
-		cube_r124.cubeList.add(new ModelBox(cube_r124, 35, 35, -0.3388F, -3.9336F, -0.8833F, 1, 3, 1, 0.0F, false));
-
-		cube_r125 = new ModelRenderer(this);
-		cube_r125.setRotationPoint(-0.2F, 0.4F, -5.1F);
-		action.addChild(cube_r125);
-		setRotationAngle(cube_r125, 0.0F, 0.0F, 0.4014F);
-		cube_r125.cubeList.add(new ModelBox(cube_r125, 24, 35, -0.3584F, -3.9336F, -3.0F, 1, 3, 3, 0.0F, false));
-		cube_r125.cubeList.add(new ModelBox(cube_r125, 39, 48, -0.3584F, -3.9336F, 4.1F, 1, 3, 2, 0.0F, false));
-
-		cube_r126 = new ModelRenderer(this);
-		cube_r126.setRotationPoint(-0.2F, 0.4F, -1.0F);
-		action.addChild(cube_r126);
-		setRotationAngle(cube_r126, 0.0F, -0.3491F, 0.4014F);
-		cube_r126.cubeList.add(new ModelBox(cube_r126, 36, 23, -0.3368F, -3.9336F, -0.8774F, 1, 3, 1, 0.0F, false));
-
-		stock_adapter = new ModelRenderer(this);
-		stock_adapter.setRotationPoint(0.0F, -11.3F, 6.9F);
-		stock_adapter.cubeList.add(new ModelBox(stock_adapter, 11, 23, -3.0F, -5.2F, 0.0F, 3, 4, 2, 0.0F, false));
-		stock_adapter.cubeList.add(new ModelBox(stock_adapter, 14, 14, -2.5F, -5.2F, 2.0F, 2, 4, 2, 0.0F, false));
-		stock_adapter.cubeList.add(new ModelBox(stock_adapter, 14, 48, -0.2F, -4.25F, 0.0F, 1, 2, 1, 0.0F, false));
-		stock_adapter.cubeList.add(new ModelBox(stock_adapter, 29, 35, -3.8F, -4.25F, 0.0F, 1, 2, 1, 0.0F, false));
-		stock_adapter.cubeList.add(new ModelBox(stock_adapter, 61, 15, -3.0F, -5.8F, 0.0F, 3, 1, 1, -0.001F, false));
-
-		cube_r127 = new ModelRenderer(this);
-		cube_r127.setRotationPoint(0.0F, -5.8F, 1.0F);
-		stock_adapter.addChild(cube_r127);
-		setRotationAngle(cube_r127, -0.7505F, 0.0F, 0.0F);
-		cube_r127.cubeList.add(new ModelBox(cube_r127, 9, 53, -3.0F, 0.0F, 0.0F, 3, 1, 1, -0.002F, false));
-
-		cube_r128 = new ModelRenderer(this);
-		cube_r128.setRotationPoint(-3.8F, -2.25F, 0.0F);
-		stock_adapter.addChild(cube_r128);
-		setRotationAngle(cube_r128, 0.0F, 0.0F, -0.925F);
-		cube_r128.cubeList.add(new ModelBox(cube_r128, 51, 41, 0.0F, 0.0F, 0.0F, 1, 1, 1, -0.001F, false));
-
-		cube_r129 = new ModelRenderer(this);
-		cube_r129.setRotationPoint(-3.8F, -4.25F, 0.0F);
-		stock_adapter.addChild(cube_r129);
-		setRotationAngle(cube_r129, 0.0F, 0.0F, 0.8029F);
-		cube_r129.cubeList.add(new ModelBox(cube_r129, 42, 35, 0.0F, -2.0F, 0.0F, 1, 2, 1, -0.001F, false));
-
-		cube_r130 = new ModelRenderer(this);
-		cube_r130.setRotationPoint(0.8F, -2.25F, 0.0F);
-		stock_adapter.addChild(cube_r130);
-		setRotationAngle(cube_r130, 0.0F, 0.0F, 0.925F);
-		cube_r130.cubeList.add(new ModelBox(cube_r130, 62, 41, -1.0F, 0.0F, 0.0F, 1, 1, 1, -0.001F, false));
-
-		cube_r131 = new ModelRenderer(this);
-		cube_r131.setRotationPoint(0.8F, -4.25F, 0.0F);
-		stock_adapter.addChild(cube_r131);
-		setRotationAngle(cube_r131, 0.0F, 0.0F, -0.8029F);
-		cube_r131.cubeList.add(new ModelBox(cube_r131, 43, 29, -1.0F, -2.0F, 0.0F, 1, 2, 1, -0.001F, false));
-
-		cube_r132 = new ModelRenderer(this);
-		cube_r132.setRotationPoint(-3.8F, -2.25F, 1.0F);
-		stock_adapter.addChild(cube_r132);
-		setRotationAngle(cube_r132, 0.0F, 0.4887F, 0.0F);
-		cube_r132.cubeList.add(new ModelBox(cube_r132, 51, 29, 0.0F, -2.0F, 0.0F, 1, 2, 2, 0.0F, false));
-
-		cube_r133 = new ModelRenderer(this);
-		cube_r133.setRotationPoint(0.8F, -2.25F, 1.0F);
-		stock_adapter.addChild(cube_r133);
-		setRotationAngle(cube_r133, 0.0F, -0.4887F, 0.0F);
-		cube_r133.cubeList.add(new ModelBox(cube_r133, 20, 59, -1.0F, -2.0F, 0.0F, 1, 2, 2, 0.0F, false));
-
-		cube_r134 = new ModelRenderer(this);
-		cube_r134.setRotationPoint(-3.0F, -1.2F, 2.0F);
-		stock_adapter.addChild(cube_r134);
-		setRotationAngle(cube_r134, 0.0F, 0.1571F, 0.0F);
-		cube_r134.cubeList.add(new ModelBox(cube_r134, 0, 14, 0.0F, -4.0F, 0.0F, 1, 4, 2, -0.001F, false));
-
-		cube_r135 = new ModelRenderer(this);
-		cube_r135.setRotationPoint(0.0F, -1.2F, 2.0F);
-		stock_adapter.addChild(cube_r135);
-		setRotationAngle(cube_r135, 0.0F, -0.1571F, 0.0F);
-		cube_r135.cubeList.add(new ModelBox(cube_r135, 0, 23, -1.0F, -4.0F, 0.0F, 1, 4, 2, -0.001F, false));
-
-		magazine = new ModelRenderer(this);
-		magazine.setRotationPoint(0.25F, -3.0F, -24.0F);
-		magazine.cubeList.add(new ModelBox(magazine, 73, 67, -1.0F, 1.0F, 8.0F, 1, 8, 1, 0.0F, false));
-		magazine.cubeList.add(new ModelBox(magazine, 24, 12, -2.75F, 1.0F, 0.0F, 2, 8, 1, 0.0F, false));
-		magazine.cubeList.add(new ModelBox(magazine, 24, 23, -1.25F, 1.0F, 2.75F, 1, 8, 2, 0.0F, false));
-		magazine.cubeList.add(new ModelBox(magazine, 24, 0, -3.25F, 1.0F, 2.75F, 1, 8, 2, 0.0F, false));
-		magazine.cubeList.add(new ModelBox(magazine, 24, 0, -0.9F, 9.0F, 0.0F, 1, 2, 10, 0.0F, false));
-		magazine.cubeList.add(new ModelBox(magazine, 65, 140, -3.75F, 9.25F, 1.2F, 4, 2, 9, 0.0F, false));
-		magazine.cubeList.add(new ModelBox(magazine, 0, 64, -3.75F, 10.25F, 0.2F, 4, 1, 1, 0.0F, false));
-		magazine.cubeList.add(new ModelBox(magazine, 0, 126, -3.6F, 9.0F, 0.0F, 3, 2, 10, 0.001F, false));
-		magazine.cubeList.add(new ModelBox(magazine, 36, 0, -2.75F, 0.0F, 9.0F, 2, 9, 1, 0.0F, false));
-		magazine.cubeList.add(new ModelBox(magazine, 32, 51, -1.0F, 0.2F, 8.0F, 1, 1, 1, 0.001F, false));
-		magazine.cubeList.add(new ModelBox(magazine, 35, 12, -1.0F, -2.0F, 0.0F, 1, 3, 1, 0.0F, false));
-		magazine.cubeList.add(new ModelBox(magazine, 71, 19, -3.5F, 1.0F, 8.0F, 1, 8, 1, 0.0F, false));
-		magazine.cubeList.add(new ModelBox(magazine, 30, 23, -1.0F, 1.0F, 4.0F, 1, 8, 1, 0.0F, false));
-		magazine.cubeList.add(new ModelBox(magazine, 42, 0, -3.5F, 1.0F, 4.0F, 1, 8, 1, 0.0F, false));
-		magazine.cubeList.add(new ModelBox(magazine, 85, 79, -1.1F, 1.0F, 5.0F, 1, 8, 3, 0.0F, false));
-		magazine.cubeList.add(new ModelBox(magazine, 32, 94, -3.4F, 1.0F, 5.0F, 1, 8, 3, 0.0F, false));
-		magazine.cubeList.add(new ModelBox(magazine, 18, 29, -1.0F, 1.0F, 6.0F, 1, 8, 1, 0.0F, false));
-		magazine.cubeList.add(new ModelBox(magazine, 30, 0, -3.5F, 1.0F, 6.0F, 1, 8, 1, 0.0F, false));
-		magazine.cubeList.add(new ModelBox(magazine, 42, 38, -3.5F, 0.2F, 8.0F, 1, 1, 1, 0.001F, false));
-		magazine.cubeList.add(new ModelBox(magazine, 61, 11, -3.5F, -2.0F, 0.0F, 3, 3, 1, 0.001F, false));
-		magazine.cubeList.add(new ModelBox(magazine, 0, 23, -3.0F, -8.0F, 0.5F, 2, 9, 7, 0.002F, false));
-		magazine.cubeList.add(new ModelBox(magazine, 0, 48, -1.5F, -8.0F, 0.5F, 1, 9, 7, 0.001F, false));
-		magazine.cubeList.add(new ModelBox(magazine, 35, 64, -2.25F, -8.0F, 6.6F, 1, 9, 3, 0.001F, false));
-		magazine.cubeList.add(new ModelBox(magazine, 61, 19, -2.25F, -7.0F, 0.2F, 1, 7, 1, 0.001F, false));
-
-		cube_r136 = new ModelRenderer(this);
-		cube_r136.setRotationPoint(-0.5F, -8.0F, 7.5F);
-		magazine.addChild(cube_r136);
-		setRotationAngle(cube_r136, 0.0F, -0.2443F, 0.0F);
-		cube_r136.cubeList.add(new ModelBox(cube_r136, 98, 46, -1.0F, 0.0F, 0.0F, 1, 9, 2, -0.001F, false));
-
-		cube_r137 = new ModelRenderer(this);
-		cube_r137.setRotationPoint(-3.0F, -8.0F, 7.5F);
-		magazine.addChild(cube_r137);
-		setRotationAngle(cube_r137, 0.0F, 0.2443F, 0.0F);
-		cube_r137.cubeList.add(new ModelBox(cube_r137, 98, 62, 0.0F, 0.0F, 0.0F, 1, 9, 2, 0.0F, false));
-
-		cube_r138 = new ModelRenderer(this);
-		cube_r138.setRotationPoint(-0.5F, -6.4F, 5.5F);
-		magazine.addChild(cube_r138);
-		setRotationAngle(cube_r138, 0.0F, 0.0F, -0.2094F);
-		cube_r138.cubeList.add(new ModelBox(cube_r138, 9, 48, -1.0F, 0.0F, 0.0F, 1, 2, 3, 0.001F, false));
-
-		cube_r139 = new ModelRenderer(this);
-		cube_r139.setRotationPoint(-3.5F, 1.9F, 1.0F);
-		magazine.addChild(cube_r139);
-		setRotationAngle(cube_r139, -0.2618F, 0.0F, 0.0F);
-		cube_r139.cubeList.add(new ModelBox(cube_r139, 98, 27, 0.0F, 2.0F, 4.0F, 1, 1, 4, -0.001F, false));
-		cube_r139.cubeList.add(new ModelBox(cube_r139, 98, 22, 2.5F, 2.0F, 4.0F, 1, 1, 4, -0.001F, false));
-
-		cube_r140 = new ModelRenderer(this);
-		cube_r140.setRotationPoint(-3.1F, 1.9F, 1.0F);
-		magazine.addChild(cube_r140);
-		setRotationAngle(cube_r140, -0.2628F, -0.0843F, 0.0226F);
-		cube_r140.cubeList.add(new ModelBox(cube_r140, 11, 39, 0.0F, 2.0F, 0.0F, 1, 1, 4, -0.001F, false));
-
-		cube_r141 = new ModelRenderer(this);
-		cube_r141.setRotationPoint(-0.4F, 1.9F, 1.0F);
-		magazine.addChild(cube_r141);
-		setRotationAngle(cube_r141, -0.2628F, 0.0843F, -0.0226F);
-		cube_r141.cubeList.add(new ModelBox(cube_r141, 81, 53, -1.0F, 2.0F, 0.0F, 1, 1, 4, -0.001F, false));
-
-		cube_r142 = new ModelRenderer(this);
-		cube_r142.setRotationPoint(-3.5F, -2.0F, 1.0F);
-		magazine.addChild(cube_r142);
-		setRotationAngle(cube_r142, -0.2618F, 0.0F, 0.0F);
-		cube_r142.cubeList.add(new ModelBox(cube_r142, 49, 48, 0.0F, 0.0F, 0.0F, 1, 3, 8, -0.001F, false));
-		cube_r142.cubeList.add(new ModelBox(cube_r142, 51, 0, 2.5F, 0.0F, 0.0F, 1, 3, 8, -0.001F, false));
-
-		cube_r143 = new ModelRenderer(this);
-		cube_r143.setRotationPoint(-3.5F, -2.0F, 1.0F);
-		magazine.addChild(cube_r143);
-		setRotationAngle(cube_r143, -0.2302F, 0.1258F, 0.4916F);
-		cube_r143.cubeList.add(new ModelBox(cube_r143, 51, 19, 0.0F, -2.0F, 0.0F, 1, 2, 8, -0.001F, false));
-
-		cube_r144 = new ModelRenderer(this);
-		cube_r144.setRotationPoint(0.0F, -2.0F, 1.0F);
-		magazine.addChild(cube_r144);
-		setRotationAngle(cube_r144, -0.2302F, -0.1258F, -0.4916F);
-		cube_r144.cubeList.add(new ModelBox(cube_r144, 0, 67, -1.0F, -2.0F, 0.0F, 1, 2, 8, -0.001F, false));
-
-		cube_r145 = new ModelRenderer(this);
-		cube_r145.setRotationPoint(-3.5F, 0.2F, 9.0F);
-		magazine.addChild(cube_r145);
-		setRotationAngle(cube_r145, 0.0F, 0.925F, 0.0F);
-		cube_r145.cubeList.add(new ModelBox(cube_r145, 6, 0, 0.0F, 0.0F, 0.0F, 1, 9, 1, 0.0F, false));
-
-		cube_r146 = new ModelRenderer(this);
-		cube_r146.setRotationPoint(0.0F, 0.2F, 9.0F);
-		magazine.addChild(cube_r146);
-		setRotationAngle(cube_r146, 0.0F, -0.925F, 0.0F);
-		cube_r146.cubeList.add(new ModelBox(cube_r146, 18, 0, -1.0F, 0.0F, 0.0F, 1, 9, 1, 0.0F, false));
-
-		cube_r147 = new ModelRenderer(this);
-		cube_r147.setRotationPoint(-3.5F, 1.0F, 4.0F);
-		magazine.addChild(cube_r147);
-		setRotationAngle(cube_r147, 0.0F, -0.5236F, 0.0F);
-		cube_r147.cubeList.add(new ModelBox(cube_r147, 69, 67, 0.0F, 0.0F, -1.0F, 1, 8, 1, 0.0F, false));
-
-		cube_r148 = new ModelRenderer(this);
-		cube_r148.setRotationPoint(0.0F, 1.0F, 4.0F);
-		magazine.addChild(cube_r148);
-		setRotationAngle(cube_r148, 0.0F, 0.5236F, 0.0F);
-		cube_r148.cubeList.add(new ModelBox(cube_r148, 71, 0, -1.0F, 0.0F, -1.0F, 1, 8, 1, 0.0F, false));
-
-		cube_r149 = new ModelRenderer(this);
-		cube_r149.setRotationPoint(-3.25F, 1.0F, 2.75F);
-		magazine.addChild(cube_r149);
-		setRotationAngle(cube_r149, 0.0F, -0.1571F, 0.0F);
-		cube_r149.cubeList.add(new ModelBox(cube_r149, 0, 0, 0.0F, 0.0F, -2.0F, 1, 8, 2, 0.0F, false));
-
-		cube_r150 = new ModelRenderer(this);
-		cube_r150.setRotationPoint(-0.25F, 1.0F, 2.75F);
-		magazine.addChild(cube_r150);
-		setRotationAngle(cube_r150, 0.0F, 0.1571F, 0.0F);
-		cube_r150.cubeList.add(new ModelBox(cube_r150, 12, 0, -1.0F, 0.0F, -2.0F, 1, 8, 2, 0.0F, false));
 	}
 
 	@Override
 	public void render(Entity entity, float f, float f1, float f2, float f3, float f4, float f5) {
 		gun.render(f5);
 		handguard.render(f5);
-//		rails_attachment.render(f5);
-//		action.render(f5);
-		stock_adapter.render(f5);
-//		magazine.render(f5);
 	}
 
 	public void setRotationAngle(ModelRenderer modelRenderer, float x, float y, float z) {

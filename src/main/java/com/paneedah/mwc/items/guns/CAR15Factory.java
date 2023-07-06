@@ -76,7 +76,6 @@ public class CAR15Factory implements GunFactory {
 		 
         .withUnremovableAttachmentCategories(AttachmentCategory.GUARD)
         .withUnremovableAttachmentCategories(AttachmentCategory.BACKGRIP)
-        .withUnremovableAttachmentCategories(AttachmentCategory.RECEIVER)
         .withCompatibleAttachment(Attachments.M16A1ScopeMount, (model) -> {
             if(model instanceof AKRail) {
                 GL11.glTranslatef(-0.2F, -1.74F, -2.1f);
@@ -147,8 +146,6 @@ public class CAR15Factory implements GunFactory {
                   GL11.glScaled(0.55F, 0.5F, 1F);
               }
         }, true, false)
-        
-       
         .withCompatibleAttachment(Attachments.M4HandGuard, true, (model) -> {
         })
         .withCompatibleAttachment(Attachments.M4MagpulHandGuard, (model) -> {
@@ -173,24 +170,6 @@ public class CAR15Factory implements GunFactory {
               GL11.glScaled(0.6F, 0.8F, 0.68F);
           }
         })
-        .withCompatibleAttachment(Attachments.FSSTacLiteHandguard, (model) -> {
-            if(model instanceof AKRail) {
-              GL11.glTranslatef(0.13F, -1.17F, -4.2F);
-              GL11.glScaled(0.6F, 0.6F, 0.95F);
-              GL11.glRotatef(90F, 0f, 0f, 1f);
-          } else if(model instanceof AKRail2) {
-              GL11.glTranslatef(-0.37F, -1.005F, -4.2F);
-              GL11.glScaled(0.6F, 0.6F, 0.95F);
-              GL11.glRotatef(-90F, 0f, 0f, 1f);
-          } else if(model instanceof AKRail3) {
-              GL11.glTranslatef(-0.03F, -0.84F, -3.9F);
-              GL11.glScaled(0.6F, 0.6F, 0.8F);
-              GL11.glRotatef(180F, 0f, 0f, 1f);
-          } else if(model instanceof AKRail5) {
-              GL11.glTranslatef(-0.2F, -1.32F, -4.2f);
-              GL11.glScaled(0.6F, 0.8F, 0.95F);
-          }
-        })//19
         .withCompatibleAttachment(Attachments.Mk18HandGuard, (model) -> {
             if(model instanceof AKRail) {
               GL11.glTranslatef(0.13F, -1.14F, -4.1F);
@@ -298,10 +277,6 @@ public class CAR15Factory implements GunFactory {
             GL11.glTranslatef(-0.175F, -1.28F, -0.67F);
             GL11.glScaled(0.7F, 0.4F, 0.7F);
         })
-		.withCompatibleAttachment(AuxiliaryAttachments.M4EjectorAction, true, (model) -> {
-//            GL11.glTranslatef(-0.175F, -1.28F, -0.67F);
-//            GL11.glScaled(0.7F, 0.4F, 0.7F);
-        }) 
  .withCompatibleAttachment(Magazines.M4A1Mag, (model) -> {
 		    GL11.glTranslatef(-0.335F, 0.4F, -1.25F);
             GL11.glScaled(1.05F, 1.2F, 1.15F);

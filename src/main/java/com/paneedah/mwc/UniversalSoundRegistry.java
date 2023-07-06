@@ -20,6 +20,8 @@ public class UniversalSoundRegistry {
 		UniversalSoundLookup.registerSoundToLookup("chargehandle_forward");
 		UniversalSoundLookup.registerSoundToLookup("gun_foley");
 		UniversalSoundLookup.registerSoundToLookup("gun_foley2");
+		UniversalSoundLookup.registerSoundToLookup("akfoley");
+		UniversalSoundLookup.registerSoundToLookup("akfoley2");
 		UniversalSoundLookup.registerSoundToLookup("gun_rest");
 		UniversalSoundLookup.registerSoundToLookup("gun_turn");
 		UniversalSoundLookup.registerSoundToLookup("gun_unrest");

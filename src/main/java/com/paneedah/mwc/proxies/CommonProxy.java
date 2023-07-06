@@ -11,6 +11,7 @@ import com.paneedah.mwc.skins.GunSkins;
 import com.paneedah.mwc.tileentities.TileEntities;
 import com.paneedah.mwc.vehicle.Vehicles;
 import com.paneedah.mwc.weapons.Attachments;
+import com.paneedah.mwc.weapons.Attachments2;
 import com.paneedah.mwc.weapons.AuxiliaryAttachments;
 import com.paneedah.mwc.weapons.Guns;
 import com.paneedah.mwc.weapons.Magazines;
@@ -98,6 +99,7 @@ public class CommonProxy {
         Vests.init(mod);
         Armors.init(mod, ModernWarfareMod.MOD_CONTEXT);
         Attachments.init(mod);
+        Attachments2.init(mod);
         AuxiliaryAttachments.init(mod);
         GunSkins.init(mod);
         Bullets.init(mod);

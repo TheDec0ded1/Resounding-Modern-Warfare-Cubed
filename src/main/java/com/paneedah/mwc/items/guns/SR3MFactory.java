@@ -8,6 +8,7 @@ import com.paneedah.mwc.init.MWCItems;
 import com.paneedah.mwc.models.*;
 import com.paneedah.mwc.proxies.CommonProxy;
 import com.paneedah.mwc.weapons.Attachments;
+import com.paneedah.mwc.weapons.Attachments2;
 import com.paneedah.mwc.weapons.AuxiliaryAttachments;
 import com.paneedah.mwc.weapons.Magazines;
 import com.paneedah.weaponlib.*;
@@ -104,6 +105,12 @@ public class SR3MFactory {
         .withCompatibleAttachment(Attachments.SR3MHG, true, (model) -> {
         })
         .withCompatibleAttachment(Attachments.SR3MHGF, (model) -> {
+        })
+        .withCompatibleAttachment(Attachments2.ASValStockB, (model) -> {
+        })
+        .withCompatibleAttachment(Attachments2.SR3MHGB, (model) -> {
+        })
+        .withCompatibleAttachment(Attachments2.SR3MHGFB, (model) -> {
         })
         .withCompatibleAttachment(Attachments.VSSVintorezMilspecStock, (player, stack) -> {
 //        	GL11.glTranslatef(-0.212F, -0.486F, 1.27F);
@@ -400,9 +407,9 @@ public class SR3MFactory {
                 .setupModernAnimations("vssvintorez", AuxiliaryAttachments.VSSVintorezAction)
                 .setupModernMagazineAnimations("vssvintorez", Magazines.ASValMag, Magazines.Val30Mag, Magazines.SR3MMag, Magazines.VSSVintorezMag)
             
-            .withFirstPersonPositioningCustomRecoiled(AuxiliaryAttachments.VSSVintorezAction.getRenderablePart(), (renderContext) -> {
-                GL11.glTranslatef(0f, 0f, 1f);
-                })
+                .withFirstPersonPositioningCustomRecoiled(AuxiliaryAttachments.VSSVintorezAction.getRenderablePart(), (renderContext) -> {
+                    GL11.glTranslatef(0f, 0f, 1f);
+                    })
                 
             .withFirstPersonPositioningCustomZoomingRecoiled(AuxiliaryAttachments.VSSVintorezAction.getRenderablePart(), (renderContext) -> {
                 GL11.glTranslatef(0f, 0f, 1f);

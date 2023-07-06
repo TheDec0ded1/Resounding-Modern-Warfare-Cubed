@@ -51,8 +51,11 @@ public class AuxiliaryAttachments {
     public static ItemAttachment<Weapon> AKaction;
     public static ItemAttachment<Weapon> DragunovAction;
     public static ItemAttachment<Weapon> Malyukaction;
+    public static ItemAttachment<Weapon> Grozaaction;
     public static ItemAttachment<Weapon> KBP9A91action;
     public static ItemAttachment<Weapon> AK15action;
+    public static ItemAttachment<Weapon> AEK971Action;
+    public static ItemAttachment<Weapon> AN94Action;
     public static ItemAttachment<Weapon> FNFALActionLever;
     public static ItemAttachment<Weapon> FNFALAction;
     public static ItemAttachment<Weapon> FamasF1Action;
@@ -63,6 +66,7 @@ public class AuxiliaryAttachments {
     public static ItemAttachment<Weapon> InterventionBoltAction;
     public static ItemAttachment<Weapon> VSSVintorezAction;
     public static ItemAttachment<Weapon> SR3VikhrAction;
+    public static ItemAttachment<Weapon> SR2Maction;
     public static ItemAttachment<Weapon> AS50Action;
     public static ItemAttachment<Weapon> P10Slide;
     public static ItemAttachment<Weapon> AKpart;
@@ -105,6 +109,8 @@ public class AuxiliaryAttachments {
     public static ItemAttachment<Weapon> Saiga12action;
     public static ItemAttachment<Weapon> Saiga12sights;
     public static ItemAttachment<Weapon> ScarAction;
+    public static ItemAttachment<Weapon> Mk20Action;
+    public static ItemAttachment<Weapon> SCARSCAction;
     public static ItemAttachment<Weapon> ScarHAction;
     public static ItemAttachment<Weapon> M82Action;
     public static ItemAttachment<Weapon> MP5boltaction;
@@ -139,7 +145,9 @@ public class AuxiliaryAttachments {
     public static ItemAttachment<Weapon> HAR27Belt;
     public static ItemAttachment<Weapon> HAR27Action;
     public static ItemAttachment<Weapon> ACRAction;
+    public static ItemAttachment<Weapon> BlackACRAction;
     public static ItemAttachment<Weapon> ACRRails;
+    public static ItemAttachment<Weapon> BlackACRRails;
     public static ItemAttachment<Weapon> M1014Action;
     public static ItemAttachment<Weapon> ShotgunInsertion;
     public static ItemAttachment<Weapon> SupernovaPump;
@@ -155,6 +163,7 @@ public class AuxiliaryAttachments {
     public static ItemAttachment<Weapon> M32Main1B;
     public static ItemAttachment<Weapon> M134Barrels;
     public static ItemAttachment<Weapon> M249Hatch;
+    public static ItemAttachment<Weapon> MinimiHatch;
     public static ItemAttachment<Weapon> M249Belt;
     public static ItemAttachment<Weapon> M249Action;
     public static ItemAttachment<Weapon> FatmanGrip;
@@ -553,6 +562,12 @@ public class AuxiliaryAttachments {
                 .withModel(new com.paneedah.mwc.models.ACRAction2(), "gun.png")
                 .withName("ACRAction").withRenderablePart()
                 .withTextureName("Dummy.png").build(ModernWarfareMod.MOD_CONTEXT);
+
+        BlackACRAction = new AttachmentBuilder<Weapon>().withCategory(AttachmentCategory.EXTRA2)
+                .withModel(new com.paneedah.mwc.models.ACRAction(), "acrblack.png")
+                .withModel(new com.paneedah.mwc.models.ACRAction2(), "gun.png")
+                .withName("BlackACRAction").withRenderablePart()
+                .withTextureName("Dummy.png").build(ModernWarfareMod.MOD_CONTEXT);
         
         M1014Action = new AttachmentBuilder<Weapon>().withCategory(AttachmentCategory.EXTRA2)
                 .withModel(new com.paneedah.mwc.models.M1014action(), "m1014.png")
@@ -576,6 +591,15 @@ public class AuxiliaryAttachments {
                 .withModel(new com.paneedah.mwc.models.AKRail4(), "acrsbrhandguardtan.png")
                 .withModel(new com.paneedah.mwc.models.AKRail5(), "acrsbrhandguardtan.png")
                 .withName("ACRRails").withRenderablePart()
+                .withTextureName("Dummy.png").build(ModernWarfareMod.MOD_CONTEXT);
+
+        BlackACRRails = new AttachmentBuilder<Weapon>().withCategory(AttachmentCategory.EXTRA5)
+                .withModel(new com.paneedah.mwc.models.AKRail(), "acrsbrhandguard.png")
+                .withModel(new com.paneedah.mwc.models.AKRail2(), "acrsbrhandguard.png")
+                .withModel(new com.paneedah.mwc.models.AKRail3(), "acrsbrhandguard.png")
+                .withModel(new com.paneedah.mwc.models.AKRail4(), "acrsbrhandguard.png")
+                .withModel(new com.paneedah.mwc.models.AKRail5(), "acrsbrhandguard.png")
+                .withName("BlackACRRails").withRenderablePart()
                 .withTextureName("Dummy.png").build(ModernWarfareMod.MOD_CONTEXT);
         
         RPG7rocket = new AttachmentBuilder<Weapon>()
@@ -982,9 +1006,18 @@ public class AuxiliaryAttachments {
                 // .withCreativeTab(ModernWarfareMod.gunsTab)
                 .withModel(new com.paneedah.mwc.models.M249Hatch(), "m249.png")
                 .withModel(new com.paneedah.mwc.models.AKRail(), "akrail.png")
-                .withModel(new com.paneedah.mwc.models.M249RearSight(), "gun.png")
                 .withRotationPoint(-0.12079999459981924, -1.4240000168085098, -2.392400065904859)
                 .withName("M249Hatch")
+                .withRenderablePart()
+        
+                .withTextureName("Dummy.png").build(ModernWarfareMod.MOD_CONTEXT);
+
+        MinimiHatch = new AttachmentBuilder<Weapon>()
+                .withCategory(AttachmentCategory.EXTRA3)
+                // .withCreativeTab(ModernWarfareMod.gunsTab)
+                .withModel(new com.paneedah.mwc.models.MinimiHatch(), "m249.png")
+                .withRotationPoint(-0.12079999459981924, -1.4240000168085098, -2.392400065904859)
+                .withName("MinimiHatch")
                 .withRenderablePart()
         
                 .withTextureName("Dummy.png").build(ModernWarfareMod.MOD_CONTEXT);
@@ -1012,6 +1045,25 @@ public class AuxiliaryAttachments {
                 // .withCreativeTab(ModernWarfareMod.gunsTab)
                 .withModel(new com.paneedah.mwc.models.ScarAction(), "gun.png")
                 .withName("ScarAction")
+                .withRenderablePart()
+        
+                .withTextureName("Dummy.png").build(ModernWarfareMod.MOD_CONTEXT);
+
+        Mk20Action = new AttachmentBuilder<Weapon>()
+                .withCategory(AttachmentCategory.EXTRA2)
+                // .withCreativeTab(ModernWarfareMod.gunsTab)
+                .withModel(new com.paneedah.mwc.models.Mk20Action(), "scarl.png")
+                .withName("Mk20Action")
+                .withRenderablePart()
+        
+                .withTextureName("Dummy.png").build(ModernWarfareMod.MOD_CONTEXT);
+
+
+        SCARSCAction = new AttachmentBuilder<Weapon>()
+                .withCategory(AttachmentCategory.EXTRA2)
+                // .withCreativeTab(ModernWarfareMod.gunsTab)
+                .withModel(new com.paneedah.mwc.models.SCARSCAction(), "scarl.png")
+                .withName("SCARSCAction")
                 .withRenderablePart()
         
                 .withTextureName("Dummy.png").build(ModernWarfareMod.MOD_CONTEXT);
@@ -1224,7 +1276,7 @@ public class AuxiliaryAttachments {
                 .build(ModernWarfareMod.MOD_CONTEXT);
         
         VSSVintorezAction = new AttachmentBuilder<Weapon>()
-                .withCategory(AttachmentCategory.EXTRA2)
+                .withCategory(AttachmentCategory.EXTRA)
                 // .withCreativeTab(ModernWarfareMod.gunsTab)
                 .withModel(new com.paneedah.mwc.models.VSSVintorezAction(), "vssvintorez.png")
                 .withName("VSSVintorezAction")
@@ -1232,10 +1284,18 @@ public class AuxiliaryAttachments {
                 .build(ModernWarfareMod.MOD_CONTEXT);
      
   SR3VikhrAction = new AttachmentBuilder<Weapon>()
-                .withCategory(AttachmentCategory.EXTRA2)
+                .withCategory(AttachmentCategory.EXTRA)
                 // .withCreativeTab(ModernWarfareMod.gunsTab)
                 .withModel(new com.paneedah.mwc.models.SR3VikhrAction(), "vssvintorez.png")
                 .withName("SR3VikhrAction")
+                .withRenderablePart().withTextureName("Dummy.png")
+                .build(ModernWarfareMod.MOD_CONTEXT);
+
+  SR2Maction = new AttachmentBuilder<Weapon>()
+                .withCategory(AttachmentCategory.EXTRA)
+                // .withCreativeTab(ModernWarfareMod.gunsTab)
+                .withModel(new com.paneedah.mwc.models.SR2Maction(), "vssvintorez.png")
+                .withName("SR2Maction")
                 .withRenderablePart().withTextureName("Dummy.png")
                 .build(ModernWarfareMod.MOD_CONTEXT);
         
@@ -1263,11 +1323,35 @@ public class AuxiliaryAttachments {
                 .withRenderablePart().withTextureName("Dummy.png")
                 .build(ModernWarfareMod.MOD_CONTEXT);
         
+        Grozaaction = new AttachmentBuilder<Weapon>()
+                .withCategory(AttachmentCategory.EXTRA)
+                // .withCreativeTab(ModernWarfareMod.gunsTab)
+                .withModel(new com.paneedah.mwc.models.grozaAction(), "groza.png")
+                .withName("Grozaaction")
+                .withRenderablePart().withTextureName("Dummy.png")
+                .build(ModernWarfareMod.MOD_CONTEXT);
+        
         AK15action = new AttachmentBuilder<Weapon>()
                 .withCategory(AttachmentCategory.EXTRA)
                 // .withCreativeTab(ModernWarfareMod.gunsTab)
                 .withModel(new com.paneedah.mwc.models.AK15Action(), "ak15.png")
                 .withName("AK15action")
+                .withRenderablePart().withTextureName("Dummy.png")
+                .build(ModernWarfareMod.MOD_CONTEXT);
+
+        AEK971Action = new AttachmentBuilder<Weapon>()
+                .withCategory(AttachmentCategory.EXTRA)
+                // .withCreativeTab(ModernWarfareMod.gunsTab)
+                .withModel(new com.paneedah.mwc.models.AEK971Action(), "aek971.png")
+                .withName("AEK971Action")
+                .withRenderablePart().withTextureName("Dummy.png")
+                .build(ModernWarfareMod.MOD_CONTEXT);
+
+        AN94Action = new AttachmentBuilder<Weapon>()
+                .withCategory(AttachmentCategory.EXTRA)
+                // .withCreativeTab(ModernWarfareMod.gunsTab)
+                .withModel(new com.paneedah.mwc.models.AN94Action(), "an94.png")
+                .withName("AN94Action")
                 .withRenderablePart().withTextureName("Dummy.png")
                 .build(ModernWarfareMod.MOD_CONTEXT);
         

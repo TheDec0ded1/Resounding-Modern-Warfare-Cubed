@@ -8,6 +8,7 @@ import com.paneedah.mwc.init.MWCItems;
 import com.paneedah.mwc.models.*;
 import com.paneedah.mwc.proxies.CommonProxy;
 import com.paneedah.mwc.weapons.Attachments;
+import com.paneedah.mwc.weapons.Attachments2;
 import com.paneedah.mwc.weapons.AuxiliaryAttachments;
 import com.paneedah.mwc.weapons.Magazines;
 import com.paneedah.weaponlib.*;
@@ -104,6 +105,24 @@ public class AK74Factory {
         .withCompatibleAttachment(Attachments.RPKStock, (model) -> {
 //          GL11.glTranslatef(0f, 0f, 1f);
         })
+        .withCompatibleAttachment(Attachments2.RPK74Stock, (model) -> {
+//          GL11.glTranslatef(0f, 0f, 1f);
+        })
+        .withCompatibleAttachment(Attachments2.RPK74MStock, (model) -> {
+//          GL11.glTranslatef(0f, 0f, 1f);
+        })
+        .withCompatibleAttachment(Attachments2.RPK74MPlumStock, (model) -> {
+//          GL11.glTranslatef(0f, 0f, 1f);
+        })
+        .withCompatibleAttachment(Attachments2.RPK74MGreenStock, (model) -> {
+//          GL11.glTranslatef(0f, 0f, 1f);
+        })
+        .withCompatibleAttachment(Attachments2.RPK74MPearlStock, (model) -> {
+//          GL11.glTranslatef(0f, 0f, 1f);
+        })
+        .withCompatibleAttachment(Attachments2.RPK74MWhiteStock, (model) -> {
+//          GL11.glTranslatef(0f, 0f, 1f);
+        })
         .withCompatibleAttachment(Attachments.AK101Stock, (model) -> {
 //            GL11.glTranslatef(0f, 0f, 1f);
         })
@@ -140,6 +159,21 @@ public class AK74Factory {
         .withCompatibleAttachment(Attachments.AK47HandleGuard, (model) -> {
 //            GL11.glTranslatef(0f, 0f, 1f);
         })
+        .withCompatibleAttachment(Attachments2.RPK74MHandguard, (model) -> {
+//          GL11.glTranslatef(0f, 0f, 1f);
+        })
+        .withCompatibleAttachment(Attachments2.RPK74MPlumHandguard, (model) -> {
+//          GL11.glTranslatef(0f, 0f, 1f);
+        })
+        .withCompatibleAttachment(Attachments2.RPK74MGreenHandguard, (model) -> {
+//          GL11.glTranslatef(0f, 0f, 1f);
+        })
+        .withCompatibleAttachment(Attachments2.RPK74MPearlHandguard, (model) -> {
+//          GL11.glTranslatef(0f, 0f, 1f);
+        })
+        .withCompatibleAttachment(Attachments2.RPK74MWhiteHandguard, (model) -> {
+//          GL11.glTranslatef(0f, 0f, 1f);
+        })
         .withCompatibleAttachment(Attachments.AK101HandGuard, (model) -> {
 //            GL11.glTranslatef(0f, 0f, 1f);
         })
@@ -162,6 +196,9 @@ public class AK74Factory {
 //            GL11.glTranslatef(0f, 0f, 1f);
         })
         .withCompatibleAttachment(Attachments.AK74Handguard, true, (model) -> {
+//          GL11.glTranslatef(0f, 0f, 1f);
+      })
+        .withCompatibleAttachment(Attachments2.RPK74Handguard, (model) -> {
 //          GL11.glTranslatef(0f, 0f, 1f);
       })
         .withCompatibleAttachment(Attachments.AK74GreenHandguard, (model) -> {
@@ -287,16 +324,6 @@ public class AK74Factory {
                 GL11.glScaled(0.55F, 0.55F, 0.68F);
             }
         })
-        .withCompatibleAttachment(Attachments.RPKBarrel, (model) -> {
-            if(model instanceof RPKbarrel) {
-            } else if(model instanceof AKiron3) {
-                GL11.glTranslatef(-0.195F, -1.06F, -7.16F);
-                GL11.glScaled(0.9F, 0.55F, 0.5F);
-            } else if(model instanceof AKMiron2) {
-                GL11.glTranslatef(-0.185F, -1.32F, -7.15F);
-                GL11.glScaled(0.55F, 0.55F, 0.68F);
-            }
-        })
         .withCompatibleAttachment(Magazines.AK74Mag, (model) -> {
 //          GL11.glTranslatef(-0.35F, 0.5F, -1.25F);
 //            GL11.glScaled(1.15F, 1.2F, 1.15F);
@@ -317,7 +344,15 @@ public class AK74Factory {
 //          GL11.glTranslatef(-0.35F, 0.5F, -1.25F);
 //            GL11.glScaled(1.15F, 1.2F, 1.15F);
         })
+        .withCompatibleAttachment(Magazines.RPK74MGreenMag, (model) -> {
+//          GL11.glTranslatef(-0.35F, 0.5F, -1.25F);
+//            GL11.glScaled(1.15F, 1.2F, 1.15F);
+        })
         .withCompatibleAttachment(Magazines.AK74PearlMag, (model) -> {
+//          GL11.glTranslatef(-0.35F, 0.5F, -1.25F);
+//            GL11.glScaled(1.15F, 1.2F, 1.15F);
+        })
+        .withCompatibleAttachment(Magazines.RPK74MPearlMag, (model) -> {
 //          GL11.glTranslatef(-0.35F, 0.5F, -1.25F);
 //            GL11.glScaled(1.15F, 1.2F, 1.15F);
         })
@@ -330,6 +365,10 @@ public class AK74Factory {
 //            GL11.glScaled(1.15F, 1.2F, 1.15F);
         })
         .withCompatibleAttachment(Magazines.AK74WhiteMag, (model) -> {
+//          GL11.glTranslatef(-0.35F, 0.5F, -1.25F);
+//            GL11.glScaled(1.15F, 1.2F, 1.15F);
+        })
+        .withCompatibleAttachment(Magazines.RPK74MWhiteMag, (model) -> {
 //          GL11.glTranslatef(-0.35F, 0.5F, -1.25F);
 //            GL11.glScaled(1.15F, 1.2F, 1.15F);
         })
@@ -644,10 +683,13 @@ public class AK74Factory {
                     		Magazines.AK74BlackMag,
                     		Magazines.RPK74MBlackMag,
                     		Magazines.AK74GreenMag,
+                                Magazines.RPK74MGreenMag,
                     		Magazines.AK74PearlMag,
+                                Magazines.RPK74MPearlMag,
                     		Magazines.AK74PlumMag,
                     		Magazines.RPK74MPlumMag,
                     		Magazines.AK74WhiteMag,
+                                Magazines.RPK74MWhiteMag,
                     		Magazines.AK74Mag60,
                     		Magazines.AK12Mag545x39,
                     		Magazines.AK75Mag545x39)

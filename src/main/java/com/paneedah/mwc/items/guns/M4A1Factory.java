@@ -97,11 +97,19 @@ public class M4A1Factory implements GunFactory {
             GL11.glTranslatef(0f, -0.28f, -0f);
             GL11.glScaled(1F, 1F, 1F);
         })
+        .withCompatibleAttachment(Attachments.C8Stock, (model) -> {
+            GL11.glTranslatef(0f, -0.28f, -0f);
+            GL11.glScaled(1F, 1F, 1F);
+        })
         .withCompatibleAttachment(Attachments.HK416Stock, (model) -> {
         	GL11.glTranslatef(0f, -0.28f, -0f);
             GL11.glScaled(1F, 1F, 1F);
         })
         .withCompatibleAttachment(Attachments.M16Stock, (model) -> {
+            GL11.glTranslatef(0f, -0.28f, -0.55f);
+            GL11.glScaled(1F, 1F, 0.85F);
+        })
+        .withCompatibleAttachment(Attachments.C7Stock, (model) -> {
             GL11.glTranslatef(0f, -0.28f, -0.55f);
             GL11.glScaled(1F, 1F, 0.85F);
         })
@@ -218,6 +226,8 @@ public class M4A1Factory implements GunFactory {
           }
         }, false, false)
         .withCompatibleAttachment(Attachments.M4HandGuard, true, (model) -> {
+        })
+        .withCompatibleAttachment(Attachments.C8HandGuard, (model) -> {
         })
         .withCompatibleAttachment(Attachments.M16HandGuard, (model) -> {
         })
@@ -373,6 +383,9 @@ public class M4A1Factory implements GunFactory {
 //          GL11.glTranslatef(0f, 0f, 1f);
         })
         .withCompatibleAttachment(Attachments.M4Grip, true, (model) -> {
+//            GL11.glTranslatef(0f, 0f, 1f);
+        })
+        .withCompatibleAttachment(Attachments.C7Grip, (model) -> {
 //            GL11.glTranslatef(0f, 0f, 1f);
         })
         .withCompatibleAttachment(Attachments.M4GripTan, (model) -> {

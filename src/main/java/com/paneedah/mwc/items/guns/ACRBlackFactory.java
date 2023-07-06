@@ -520,7 +520,7 @@ public class ACRBlackFactory implements GunFactory {
                  GL11.glScaled(0F, 0F, 0F); 
             }
         })
-        .withCompatibleAttachment(AuxiliaryAttachments.ACRRails, true, (model) -> {
+        .withCompatibleAttachment(AuxiliaryAttachments.BlackACRRails, true, (model) -> {
             if(model instanceof AKRail) {
                 GL11.glTranslatef(0.19F, -1.15F, -3.9F);
                 GL11.glScaled(0F, 0F, 0F); 
@@ -541,7 +541,7 @@ public class ACRBlackFactory implements GunFactory {
                 GL11.glScaled(0.76F, 0.87F, 0.8F);
             }
         })
-        .withCompatibleAttachment(AuxiliaryAttachments.ACRAction, true, (model) -> {
+        .withCompatibleAttachment(AuxiliaryAttachments.BlackACRAction, true, (model) -> {
             if(model instanceof ACRAction) {
                 GL11.glTranslatef(-0.06F, -1.4F, -2.9F);
                 GL11.glScaled(0.6F, 0.6F, 0.5F);
@@ -612,7 +612,7 @@ public class ACRBlackFactory implements GunFactory {
                 		Magazines.Stanag60,
                 		Magazines.SOCOM_Mag)
                 
-            .withFirstPersonCustomPositioning(AuxiliaryAttachments.ACRAction.getRenderablePart(), (renderContext) -> {
+            .withFirstPersonCustomPositioning(AuxiliaryAttachments.BlackACRAction.getRenderablePart(), (renderContext) -> {
                 if(renderContext.getWeaponInstance().getAmmo() == 0) {
                     GL11.glTranslatef(0F, 0F, 1F);
                 }
