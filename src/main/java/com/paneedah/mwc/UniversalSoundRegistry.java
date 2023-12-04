@@ -80,5 +80,14 @@ public class UniversalSoundRegistry {
 		UniversalSoundLookup.registerSoundToLookup("mpx_bolt_smack");
 		UniversalSoundLookup.registerSoundToLookup("mpx_chargehandle_back");
 		UniversalSoundLookup.registerSoundToLookup("mpx_chargehandle_forward");
+		UniversalSoundLookup.registerSoundToLookup("m82mag_insert");
+		UniversalSoundLookup.registerSoundToLookup("m82mag_unload");
+		UniversalSoundLookup.registerSoundToLookup("m82action_back");
+		UniversalSoundLookup.registerSoundToLookup("m82action_release");
+		UniversalSoundLookup.registerSoundToLookup("m14action_back");
+		UniversalSoundLookup.registerSoundToLookup("m14action_forward");
+		UniversalSoundLookup.registerSoundToLookup("m14mag_insert");
+		UniversalSoundLookup.registerSoundToLookup("m14mag_touchgun");
+		UniversalSoundLookup.registerSoundToLookup("m14mag_unload");
 	}
 }

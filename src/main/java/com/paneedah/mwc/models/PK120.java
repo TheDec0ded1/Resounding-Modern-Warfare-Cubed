@@ -5,7 +5,7 @@ import net.minecraft.client.model.ModelBox;
 import net.minecraft.client.model.ModelRenderer;
 import net.minecraft.entity.Entity;
 
-// Made with Blockbench 4.7.2
+// Made with Blockbench 4.8.3
 // Exported for Minecraft version 1.7 - 1.12
 // Paste this class into your mod and generate all required imports
 
@@ -132,16 +132,16 @@ public class PK120 extends ModelBase {
 		gun4 = new ModelRenderer(this);
 		gun4.setRotationPoint(-5.0F, -5.0F, -0.5F);
 		gun4.cubeList.add(new ModelBox(gun4, 0, 44, 0.0F, 0.0F, 0.0F, 1, 5, 7, 0.0F, false));
-		gun4.cubeList.add(new ModelBox(gun4, 0, 32, 0.0F, 1.0F, -8.0F, 1, 4, 8, 0.0F, false));
+		gun4.cubeList.add(new ModelBox(gun4, 18, 33, 0.0F, 1.0F, -8.0F, 1, 4, 8, 0.0F, false));
 
 		gun5 = new ModelRenderer(this);
 		gun5.setRotationPoint(1.0F, -5.0F, -0.5F);
 		gun5.cubeList.add(new ModelBox(gun5, 0, 0, 0.0F, 0.0F, 0.0F, 1, 5, 7, 0.0F, false));
-		gun5.cubeList.add(new ModelBox(gun5, 18, 33, 0.0F, 1.0F, -8.0F, 1, 4, 8, 0.0F, false));
+		gun5.cubeList.add(new ModelBox(gun5, 0, 32, 0.0F, 1.0F, -8.0F, 1, 4, 8, 0.0F, false));
 
 		gun7 = new ModelRenderer(this);
 		gun7.setRotationPoint(-5.0F, -9.0F, 0.0F);
-		gun7.cubeList.add(new ModelBox(gun7, 46, 26, 0.0F, 0.0F, 0.0F, 1, 4, 6, 0.0F, false));
+		gun7.cubeList.add(new ModelBox(gun7, 46, 36, 0.0F, 0.0F, 0.0F, 1, 4, 6, 0.0F, false));
 
 		gun8 = new ModelRenderer(this);
 		gun8.setRotationPoint(1.0F, -2.0F, -3.5F);
@@ -180,7 +180,7 @@ public class PK120 extends ModelBase {
 
 		gun24 = new ModelRenderer(this);
 		gun24.setRotationPoint(1.0F, -9.0F, 0.0F);
-		gun24.cubeList.add(new ModelBox(gun24, 16, 45, 0.0F, 0.0F, 0.0F, 1, 4, 6, 0.0F, false));
+		gun24.cubeList.add(new ModelBox(gun24, 46, 26, 0.0F, 0.0F, 0.0F, 1, 4, 6, 0.0F, false));
 
 		gun25 = new ModelRenderer(this);
 		gun25.setRotationPoint(-5.0F, -9.0F, 0.0F);
@@ -247,7 +247,7 @@ public class PK120 extends ModelBase {
 		gun42 = new ModelRenderer(this);
 		gun42.setRotationPoint(-5.7F, -2.5F, -0.5F);
 		gun42.cubeList.add(new ModelBox(gun42, 0, 0, -0.3F, -3.3F, -1.5F, 1, 4, 2, 0.0F, false));
-		gun42.cubeList.add(new ModelBox(gun42, 9, 44, -0.3F, -2.3F, -2.5F, 1, 2, 4, 0.0F, false));
+		gun42.cubeList.add(new ModelBox(gun42, 44, 53, -0.3F, -2.3F, -2.5F, 1, 2, 4, 0.0F, false));
 
 		gun43 = new ModelRenderer(this);
 		gun43.setRotationPoint(1.5F, -3.9F, -12.0F);
@@ -292,12 +292,12 @@ public class PK120 extends ModelBase {
 		gun52 = new ModelRenderer(this);
 		gun52.setRotationPoint(1.0F, -10.0F, 0.0F);
 		setRotationAngle(gun52, 0.0F, 0.0F, 0.7854F);
-		gun52.cubeList.add(new ModelBox(gun52, 40, 50, 0.4F, 0.0F, 0.0F, 1, 1, 6, 0.0F, false));
+		gun52.cubeList.add(new ModelBox(gun52, 34, 49, 0.4F, 0.0F, 0.0F, 1, 1, 6, 0.0F, false));
 
 		gun53 = new ModelRenderer(this);
 		gun53.setRotationPoint(-4.0F, -10.0F, 0.0F);
 		setRotationAngle(gun53, 0.0F, 0.0F, 0.7854F);
-		gun53.cubeList.add(new ModelBox(gun53, 46, 43, 0.0F, 0.5F, 0.0F, 1, 1, 6, 0.0F, false));
+		gun53.cubeList.add(new ModelBox(gun53, 26, 48, 0.0F, 0.5F, 0.0F, 1, 1, 6, 0.0F, false));
 
 		gun54 = new ModelRenderer(this);
 		gun54.setRotationPoint(-4.0F, -10.0F, 5.5F);
@@ -330,7 +330,7 @@ public class PK120 extends ModelBase {
 		gun60 = new ModelRenderer(this);
 		gun60.setRotationPoint(-4.5F, -5.0F, 6.8F);
 		setRotationAngle(gun60, -1.3627F, 0.0F, 0.0F);
-		gun60.cubeList.add(new ModelBox(gun60, 48, 50, -0.5F, 0.0F, -4.0F, 1, 1, 4, 0.0F, false));
+		gun60.cubeList.add(new ModelBox(gun60, 12, 54, -0.5F, 0.0F, -4.0F, 1, 1, 4, 0.0F, false));
 		gun60.cubeList.add(new ModelBox(gun60, 44, 8, 5.5F, 0.0F, -4.0F, 1, 1, 4, 0.0F, false));
 
 		gun61 = new ModelRenderer(this);
@@ -385,7 +385,7 @@ public class PK120 extends ModelBase {
 		gun72 = new ModelRenderer(this);
 		gun72.setRotationPoint(-3.1F, -5.0F, 0.8F);
 		setRotationAngle(gun72, 0.0F, 0.0F, 2.3562F);
-		gun72.cubeList.add(new ModelBox(gun72, 46, 36, 0.0F, 0.0F, -1.0F, 1, 1, 6, 0.0F, false));
+		gun72.cubeList.add(new ModelBox(gun72, 46, 46, 0.0F, 0.0F, -1.0F, 1, 1, 6, 0.0F, false));
 
 		gun73 = new ModelRenderer(this);
 		gun73.setRotationPoint(1.5F, -5.0F, 0.8F);
@@ -519,7 +519,7 @@ public class PK120 extends ModelBase {
 		gun94_r1.setRotationPoint(-5.2F, -1.5F, -12.4F);
 		gun94.addChild(gun94_r1);
 		setRotationAngle(gun94_r1, 0.0F, -1.5708F, 0.0F);
-		gun94_r1.cubeList.add(new ModelBox(gun94_r1, 0, 20, -0.5F, -1.2F, -0.5F, 1, 1, 1, 0.0F, false));
+		gun94_r1.cubeList.add(new ModelBox(gun94_r1, 15, 20, -0.5F, -1.2F, -0.5F, 1, 1, 1, 0.0F, false));
 
 		gun95 = new ModelRenderer(this);
 		gun95.setRotationPoint(1.7F, -1.3F, 0.0F);
@@ -529,7 +529,7 @@ public class PK120 extends ModelBase {
 		gun95_r1.setRotationPoint(-5.2F, -2.9F, -12.4F);
 		gun95.addChild(gun95_r1);
 		setRotationAngle(gun95_r1, 0.0F, -1.5708F, 0.0F);
-		gun95_r1.cubeList.add(new ModelBox(gun95_r1, 15, 18, -0.5F, 0.2F, -0.5F, 1, 1, 1, 0.0F, false));
+		gun95_r1.cubeList.add(new ModelBox(gun95_r1, 0, 20, -0.5F, 0.2F, -0.5F, 1, 1, 1, 0.0F, false));
 
 		gun96 = new ModelRenderer(this);
 		gun96.setRotationPoint(1.7F, -2.0F, -0.7F);
@@ -539,7 +539,7 @@ public class PK120 extends ModelBase {
 		gun96_r1.setRotationPoint(-5.2F, -2.2F, -11.7F);
 		gun96.addChild(gun96_r1);
 		setRotationAngle(gun96_r1, 0.0F, -1.5708F, 0.0F);
-		gun96_r1.cubeList.add(new ModelBox(gun96_r1, 0, 18, -0.5F, -0.5F, -1.2F, 1, 1, 1, 0.0F, false));
+		gun96_r1.cubeList.add(new ModelBox(gun96_r1, 15, 18, -0.5F, -0.5F, -1.2F, 1, 1, 1, 0.0F, false));
 
 		gun97 = new ModelRenderer(this);
 		gun97.setRotationPoint(1.7F, -2.0F, 0.7F);
@@ -549,7 +549,7 @@ public class PK120 extends ModelBase {
 		gun97_r1.setRotationPoint(-5.2F, -2.2F, -13.1F);
 		gun97.addChild(gun97_r1);
 		setRotationAngle(gun97_r1, 0.0F, -1.5708F, 0.0F);
-		gun97_r1.cubeList.add(new ModelBox(gun97_r1, 15, 20, -0.5F, -0.5F, 0.2F, 1, 1, 1, 0.0F, false));
+		gun97_r1.cubeList.add(new ModelBox(gun97_r1, 0, 18, -0.5F, -0.5F, 0.2F, 1, 1, 1, 0.0F, false));
 
 		gun98 = new ModelRenderer(this);
 		gun98.setRotationPoint(1.1F, -1.2F, 4.7F);
@@ -580,14 +580,14 @@ public class PK120 extends ModelBase {
 		gun6 = new ModelRenderer(this);
 		gun6.setRotationPoint(1.0F, -9.0F, -6.0F);
 		setRotationAngle(gun6, -1.4513F, 0.0F, 0.0F);
-		gun6.cubeList.add(new ModelBox(gun6, 44, 0, -5.0F, -5.4537F, 4.4841F, 6, 6, 2, 0.0F, false));
-		gun6.cubeList.add(new ModelBox(gun6, 0, 32, -6.0F, -5.4537F, 4.4841F, 1, 6, 2, 0.0F, false));
+		gun6.cubeList.add(new ModelBox(gun6, 16, 46, -5.0F, -5.4537F, 4.4841F, 6, 6, 2, 0.0F, false));
+		gun6.cubeList.add(new ModelBox(gun6, 22, 54, -6.0F, -5.4537F, 4.4841F, 1, 6, 2, 0.0F, false));
 
 		gun10 = new ModelRenderer(this);
 		gun10.setRotationPoint(1.0F, -9.0F, -12.6F);
 		setRotationAngle(gun10, -1.5708F, 0.0F, 0.0F);
-		gun10.cubeList.add(new ModelBox(gun10, 30, 48, -5.0F, -6.6923F, 4.5173F, 6, 6, 2, 0.0F, false));
-		gun10.cubeList.add(new ModelBox(gun10, 14, 55, -6.0F, -6.6923F, 4.5173F, 1, 6, 2, 0.0F, false));
+		gun10.cubeList.add(new ModelBox(gun10, 44, 0, -5.0F, -6.6923F, 4.5173F, 6, 6, 2, 0.0F, false));
+		gun10.cubeList.add(new ModelBox(gun10, 0, 32, -6.0F, -6.6923F, 4.5173F, 1, 6, 2, 0.0F, false));
 	}
 
 	@Override

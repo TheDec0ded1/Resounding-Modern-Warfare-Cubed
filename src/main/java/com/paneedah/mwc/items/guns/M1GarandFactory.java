@@ -4,6 +4,7 @@ import com.paneedah.mwc.ModernWarfareMod;
 import com.paneedah.mwc.models.*;
 import com.paneedah.mwc.proxies.CommonProxy;
 import com.paneedah.mwc.weapons.Attachments;
+import com.paneedah.mwc.weapons.Attachments3;
 import com.paneedah.mwc.weapons.AuxiliaryAttachments;
 import com.paneedah.mwc.wearables.Bullets;
 import com.paneedah.weaponlib.RenderableState;
@@ -373,7 +374,7 @@ public class M1GarandFactory implements GunFactory {
                 GL11.glTranslatef(0.352f, 0.69f, 0.4f);
                 
              // Standard Iron Sight Zoom
-                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.NightRaider)) {
+                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.NightRaider)) {
                     //System.out.println("Position me for Acog");
                     GL11.glTranslatef(0F, 0.03f, 0.3f);
                 } 
@@ -392,7 +393,7 @@ public class M1GarandFactory implements GunFactory {
                 GL11.glRotatef(-2F, 1f, 0f, 0f);
                 
              // Standard Iron Sight Zoom
-                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.NightRaider)) {
+                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.NightRaider)) {
                     //System.out.println("Position me for Acog");
                     GL11.glTranslatef(0F, 0.03f, 0.3f);
                 } 

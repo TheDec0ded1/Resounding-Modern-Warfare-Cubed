@@ -182,7 +182,6 @@ public class Guns {
     public static Item G36CRAL;
     public static Item FiveSevenAuto;
     public static Item Thunderbird;
-    public static Item LAPAFA03;
     public static Item MP510;
     public static Item MP540;
     public static Item SP1;
@@ -204,6 +203,27 @@ public class Guns {
     public static Item SR2M;
     public static Item AEK971;
     public static Item MCXRattler;
+    public static Item HK_P2000;
+    public static Item QBZ95;
+    public static Item QZS92;
+    public static Item M99;
+    public static Item FELIN;
+    public static Item Type64SMG;
+    public static Item K50M;
+    public static Item PPSh;
+    public static Item M16A2;
+    public static Item MP5A1;
+    public static Item MP5k;
+    public static Item MP5kPDW;
+    public static Item Type81;
+    public static Item Origin12Auto;
+    public static Item VSSM;
+    public static Item FORT500;
+    public static Item AK47T1;
+    public static Item AK47T2;
+    public static Item AK47T3;
+    public static Item VSSKO;
+    public static Item GalilARM;
 
     
     public static void init(Object mod, CommonProxy proxy) {
@@ -367,7 +387,6 @@ public class Guns {
         G36CRAL = new G36CRALFactory().createGun(proxy);
         FiveSevenAuto = new FiveSevenAutoFactory().createGun(proxy);
         Thunderbird = new ThunderbirdFactory().createGun(proxy);
-        LAPAFA03 = new LAPAFA03Factory().createGun(proxy);
         MP510 = new MP510Factory().createGun(proxy);
         MP540 = new MP540Factory().createGun(proxy);
         SP1 = new SP1Factory().createGun(proxy);
@@ -389,6 +408,26 @@ public class Guns {
         SR2M = new SR2MFactory().createGun(proxy);
         AEK971 = new AEK971Factory().createGun(proxy);
         MCXRattler = new MCXRattlerFactory().createGun(proxy);
-       
+        HK_P2000 = new HK_P2000Factory().createGun(proxy);
+        QBZ95 = new QBZ95Factory().createGun(proxy);
+        QZS92 = new QZS92Factory().createGun(proxy);
+        M99 = new M99Factory().createGun(proxy);
+        FELIN = new FELINFactory().createGun(proxy);
+        Type64SMG = new Type64SMGFactory().createGun(proxy);
+        K50M = new K50MFactory().createGun(proxy);   
+        PPSh = new PPShFactory().createGun(proxy);
+        M16A2 = new M16A2Factory().createGun(proxy);
+        MP5A1 = new MP5A1Factory().createGun(proxy);
+        MP5k = new MP5kFactory().createGun(proxy); 
+        MP5kPDW = new MP5kPDWFactory().createGun(proxy);  
+        Type81 = new Type81Factory().createGun(proxy);
+        Origin12Auto = new Origin12AutoFactory().createGun(proxy);
+        VSSM = new VSSMFactory().createGun(proxy);
+        FORT500 = new FORT500Factory().createGun(proxy);
+        AK47T1 = new AK47T1Factory().createGun(proxy);
+        AK47T2 = new AK47T2Factory().createGun(proxy);
+        AK47T3 = new AK47T3Factory().createGun(proxy);
+        VSSKO = new VSSKOFactory().createGun(proxy);
+        GalilARM = new GalilARMFactory().createGun(proxy);
     }
 }

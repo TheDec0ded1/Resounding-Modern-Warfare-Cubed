@@ -53,6 +53,7 @@ public class Bullets {
     public static ItemBullet PlasmaCapsule;
     public static ItemBullet Bullet58x42;
     public static ItemBullet Bullet58x21;
+    public static ItemBullet Bullet762x25mm;
 
     public static void init(Object mod) {
         Grenade40mm = new ItemBullet.Builder()
@@ -1071,6 +1072,29 @@ public class Bullets {
                 .withCreativeTab(ModernWarfareMod.AmmoTab)
                 .withName("Bullet58x21")
                 .withModel(new com.paneedah.mwc.models.BulletBig(), "bullet58x42.png")
+                .withFirstPersonPositioning((player, itemStack) -> {
+                    GL11.glTranslatef(0.2F, -1.9F, 0.5F);
+                    GL11.glRotatef(30F, 0f, 1f, 0f);
+                    GL11.glScaled(0.5F, 0.45F, 0.5F);
+                }).withThirdPersonPositioning((player, itemStack) -> {
+                    GL11.glTranslatef(-0.2F, -0.3F, 0.4F);
+                    GL11.glRotatef(-50F, 0f, 1f, 0f);
+                    GL11.glRotatef(80F, 1f, 0f, 0f);
+                    GL11.glScaled(0.4F, 0.35F, 0.4F);
+                }).withInventoryPositioning((itemStack) -> {
+                    GL11.glTranslatef(-0.8F, -2.45F, 0.7F);
+                    GL11.glRotatef(10F, 0f, 1f, 0f);
+                    GL11.glRotatef(2F, 1f, 0f, 0f);
+                    GL11.glRotatef(0F, 0f, 0f, 1f);
+                    GL11.glScaled(1.3F, 1.2F, 1.3f);
+                })
+                .withTextureName("Dummy.png")
+                .build(ModernWarfareMod.MOD_CONTEXT, ItemBullet.class);
+
+       Bullet762x25mm = new ItemBullet.Builder()
+                .withCreativeTab(ModernWarfareMod.AmmoTab)
+                .withName("Bullet762x25mm")
+                .withModel(new com.paneedah.mwc.models.BulletBig(), "bullet58x21.png")
                 .withFirstPersonPositioning((player, itemStack) -> {
                     GL11.glTranslatef(0.2F, -1.9F, 0.5F);
                     GL11.glRotatef(30F, 0f, 1f, 0f);

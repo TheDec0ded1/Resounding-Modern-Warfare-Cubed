@@ -4,6 +4,7 @@ import com.paneedah.mwc.ModernWarfareMod;
 import com.paneedah.mwc.models.*;
 import com.paneedah.mwc.proxies.CommonProxy;
 import com.paneedah.mwc.weapons.Attachments;
+import com.paneedah.mwc.weapons.Attachments3;
 import com.paneedah.mwc.weapons.AuxiliaryAttachments;
 import com.paneedah.mwc.wearables.Bullets;
 import com.paneedah.weaponlib.*;
@@ -165,7 +166,7 @@ public class Remington870Factory implements GunFactory {
             GL11.glRotatef(90F, 1f, 0f, 0f);
             GL11.glScaled(0.45F, 0.45F, 0.45F);
         })
-        .withCompatibleAttachment(Attachments.NightRaider, (player, stack) -> {
+        .withCompatibleAttachment(Attachments3.NightRaider, (player, stack) -> {
             GL11.glTranslatef(-0.17F, -0.73F, -1.3F);
             GL11.glScaled(0.75F, 0.75F, 0.75F);
         },(model) -> {
@@ -174,7 +175,7 @@ public class Remington870Factory implements GunFactory {
                 GL11.glScaled(0.03F, 0.03F, 0.03F);
             }
         })
-        .withCompatibleAttachment(Attachments.ACOG, (player, stack) -> {
+        .withCompatibleAttachment(Attachments3.ACOG, (player, stack) -> {
             GL11.glTranslatef(-0.25F, -0.7F, -0.2F);
             GL11.glScaled(0.7F, 0.7F, 0.7F);
         },(model) -> {
@@ -187,7 +188,7 @@ public class Remington870Factory implements GunFactory {
                 GL11.glScaled(0.03F, 0.03F, 0.03F);
             }
         })
-        .withCompatibleAttachment(Attachments.Specter, (player, stack) -> {
+        .withCompatibleAttachment(Attachments3.Specter, (player, stack) -> {
             GL11.glTranslatef(-0.14F, -0.45F, -0.6F);
             GL11.glScaled(0.4F, 0.4F, 0.4F);
         },(model) -> {
@@ -196,7 +197,7 @@ public class Remington870Factory implements GunFactory {
                 GL11.glScaled(0.1F, 0.1F, 0.1F);
             }
         })
-        .withCompatibleAttachment(Attachments.HP, (player, stack) -> {
+        .withCompatibleAttachment(Attachments3.HP, (player, stack) -> {
             GL11.glTranslatef(-0.26F, -0.7F, -0.3F);
             GL11.glScaled(0.75F, 0.75F, 0.75F);
         },(model) -> {
@@ -205,7 +206,7 @@ public class Remington870Factory implements GunFactory {
                 GL11.glScaled(0.03F, 0.03F, 0.03F);
             }
         })
-        .withCompatibleAttachment(Attachments.Reflex, (player, stack) -> {
+        .withCompatibleAttachment(Attachments3.Reflex, (player, stack) -> {
                 GL11.glTranslatef(-0.02F, -0.55F, -0.7F);
                 GL11.glScaled(0.45F, 0.45F, 0.45F);
         },(model) -> {
@@ -214,7 +215,7 @@ public class Remington870Factory implements GunFactory {
                 GL11.glScaled(0.15F, 0.15F, 0.15F);
             }
         })
-        .withCompatibleAttachment(Attachments.Holographic, (player, stack) -> {
+        .withCompatibleAttachment(Attachments3.Holographic, (player, stack) -> {
                 GL11.glTranslatef(-0F, -0.58F, -0.5F);
                 GL11.glScaled(0.65F, 0.65F, 0.65F);
             },(model) -> {
@@ -223,7 +224,7 @@ public class Remington870Factory implements GunFactory {
                     GL11.glScaled(0.1F, 0.1F, 0.1F);
                 }
             })
-        .withCompatibleAttachment(Attachments.HolographicAlt, (player, stack) -> {
+        .withCompatibleAttachment(Attachments3.HolographicAlt, (player, stack) -> {
             GL11.glTranslatef(-0F, -0.58F, -0.5F);
             GL11.glScaled(0.65F, 0.65F, 0.65F);
         },(model) -> {
@@ -232,7 +233,7 @@ public class Remington870Factory implements GunFactory {
                 GL11.glScaled(0.1F, 0.1F, 0.1F);
             }
         })
-        .withCompatibleAttachment(Attachments.VortexRedux, (player, stack) -> {
+        .withCompatibleAttachment(Attachments3.VortexRedux, (player, stack) -> {
                 GL11.glTranslatef(-0.24F, -0.74F, -0.9F);
                 GL11.glScaled(0.4F, 0.4F, 0.4F);
             },(model) -> {
@@ -241,7 +242,7 @@ public class Remington870Factory implements GunFactory {
                     GL11.glScaled(0.15F, 0.15F, 0.15F);
                 }
             })
-        .withCompatibleAttachment(Attachments.Kobra, (player, stack) -> {
+        .withCompatibleAttachment(Attachments3.Kobra, (player, stack) -> {
                 GL11.glTranslatef(-0F, -0.58F, -0.4F);
                 GL11.glScaled(0.65F, 0.65F, 0.65F);
         },(model) -> {
@@ -250,7 +251,7 @@ public class Remington870Factory implements GunFactory {
                 GL11.glScaled(0.15F, 0.15F, 0.15F);
             }
         })
-        .withCompatibleAttachment(Attachments.MicroT1, (player, stack) -> {
+        .withCompatibleAttachment(Attachments3.MicroT1, (player, stack) -> {
                 GL11.glTranslatef(-0.14F, -0.75F, -0.5F);
                 GL11.glScaled(0.38F, 0.38F, 0.38F);
             },(model) -> {
@@ -259,7 +260,7 @@ public class Remington870Factory implements GunFactory {
                     GL11.glScaled(0.15F, 0.15F, 0.15F);
                 }
             })
-        .withCompatibleAttachment(Attachments.AimpointCompM5, (player, stack) -> {
+        .withCompatibleAttachment(Attachments3.AimpointCompM5, (player, stack) -> {
             GL11.glTranslatef(-0.14F, -0.75F, -0.5F);
             GL11.glScaled(0.38F, 0.38F, 0.38F);
         },(model) -> {
@@ -268,7 +269,7 @@ public class Remington870Factory implements GunFactory {
                 GL11.glScaled(0.15F, 0.15F, 0.15F);
             }
         })
-      .withCompatibleAttachment(Attachments.Silencer12Gauge, renderContext -> {
+      .withCompatibleAttachment(Attachments3.Silencer12Gauge, renderContext -> {
               PlayerWeaponInstance instance = renderContext.getWeaponInstance();
               if(instance != null) {
                   ItemAttachment<Weapon> activeAttachment = WeaponAttachmentAspect.getActiveAttachment(
@@ -290,17 +291,17 @@ public class Remington870Factory implements GunFactory {
                   GL11.glScaled(1.4F, 1.4F, 1.4F);
               }
           }, false, false)
-      .withCompatibleAttachment(Attachments.Grip2, (model) -> {
+      .withCompatibleAttachment(Attachments3.Grip2, (model) -> {
               GL11.glTranslatef(-0.155F, 0.45F, -2.5F);
               GL11.glScaled(0.9F, 0.9F, 0.9F);
               
 //              GL11.glTranslatef(0F, 0F, 0.75F);
           })
-          .withCompatibleAttachment(Attachments.StubbyGrip, (model) -> {
+          .withCompatibleAttachment(Attachments3.StubbyGrip, (model) -> {
               GL11.glTranslatef(-0.155F, 0.45F, -2.5F);
               GL11.glScaled(0.9F, 0.9F, 0.9F);
           })
-          .withCompatibleAttachment(Attachments.VGrip, (model) -> {
+          .withCompatibleAttachment(Attachments3.VGrip, (model) -> {
               GL11.glTranslatef(-0.155F, 0.45F, -2.5F);
               GL11.glScaled(0.9F, 0.9F, 0.9F);
           })
@@ -373,67 +374,67 @@ public class Remington870Factory implements GunFactory {
                 GL11.glRotatef(-1.5F, 1f, 0f, 0f);
                 
              // Holo Zoom
-                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.NightRaider)) {
+                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.NightRaider)) {
                     //System.out.println("Position me for Holo");
                     GL11.glTranslatef(0f, 0.3f, 0.3f);
                 } 
                 
 //              // Holo Zoom
-                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.ACOG)) {
+                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.ACOG)) {
                     //System.out.println("Position me for Holo");
                     GL11.glTranslatef(0f, 0.25f, 0.8f);
                 } 
                 
              // Holo Zoom
-                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.Specter)) {
+                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.Specter)) {
                     //System.out.println("Position me for Holo");
                     GL11.glTranslatef(0f, 0.24f, 0.8f);
                 } 
                 
              // Holo Zoom
-                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.HP)) {
+                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.HP)) {
                     //System.out.println("Position me for Holo");
                     GL11.glTranslatef(0f, 0.28f, 0.6f);
                 } 
                 
              // Holo Zoom
-                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.Reflex)) {
+                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.Reflex)) {
                     //System.out.println("Position me for Holo");
                     GL11.glTranslatef(0f, 0.27f, 0.6f);
                 } 
                 
              // Holo Zoom
-                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.Holographic)) {
+                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.Holographic)) {
                     //System.out.println("Position me for Holo");
                     GL11.glTranslatef(0f, 0.3f, 0.6f);
                 } 
                 
              // Holo Zoom
-                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.HolographicAlt)) {
+                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.HolographicAlt)) {
                     //System.out.println("Position me for Holo");
                     GL11.glTranslatef(0f, 0.3f, 0.6f);
                 } 
                 
              // Holo Zoom
-                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.VortexRedux)) {
+                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.VortexRedux)) {
                     //System.out.println("Position me for Holo");
                     GL11.glTranslatef(0f, 0.28f, 0.6f);
                 } 
                 
              // Holo Zoom
-                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.Kobra)) {
+                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.Kobra)) {
                     //System.out.println("Position me for Holo");
                     GL11.glTranslatef(0f, 0.3f, 0.6f);
                 } 
                 
              // Holo Zoom
-                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.MicroT1)) {
+                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.MicroT1)) {
                     //System.out.println("Position me for Holo");
                     GL11.glTranslatef(0f, 0.3f, 0.6f);
                 } 
                 
              // Holo Zoom
-                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.AimpointCompM5)) {
+                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.AimpointCompM5)) {
                     //System.out.println("Position me for Holo");
                     GL11.glTranslatef(0f, 0.3f, 0.6f);
                 } 
@@ -590,7 +591,7 @@ public class Remington870Factory implements GunFactory {
                       
                       )
               
-              .withFirstPersonCustomPositioningEjectSpentRound(Attachments.Grip2.getRenderablePart(),
+              .withFirstPersonCustomPositioningEjectSpentRound(Attachments3.Grip2.getRenderablePart(),
                       new Transition((renderContext) -> { // Reload position
                       	GL11.glTranslatef(0F, 0F, 0.75F);
                           
@@ -608,7 +609,7 @@ public class Remington870Factory implements GunFactory {
                       
                       )
               
-              .withFirstPersonCustomPositioningEjectSpentRound(Attachments.StubbyGrip.getRenderablePart(),
+              .withFirstPersonCustomPositioningEjectSpentRound(Attachments3.StubbyGrip.getRenderablePart(),
                       new Transition((renderContext) -> { // Reload position
                       	GL11.glTranslatef(0F, 0F, 0.75F);
                           
@@ -626,7 +627,7 @@ public class Remington870Factory implements GunFactory {
                       
                       )
               
-              .withFirstPersonCustomPositioningEjectSpentRound(Attachments.VGrip.getRenderablePart(),
+              .withFirstPersonCustomPositioningEjectSpentRound(Attachments3.VGrip.getRenderablePart(),
                       new Transition((renderContext) -> { // Reload position
                       	GL11.glTranslatef(0F, 0F, 0.75F);
                           
@@ -887,7 +888,7 @@ public class Remington870Factory implements GunFactory {
                       }, 250, 50)
                   )
               
-              .withFirstPersonCustomPositioningAllLoadIterationsCompleted(Attachments.Grip2.getRenderablePart(),
+              .withFirstPersonCustomPositioningAllLoadIterationsCompleted(Attachments3.Grip2.getRenderablePart(),
                       new Transition((renderContext) -> { // Reload position\
                       }, 250, 50),
                       
@@ -907,7 +908,7 @@ public class Remington870Factory implements GunFactory {
                       }, 250, 50)
                   )
               
-              .withFirstPersonCustomPositioningAllLoadIterationsCompleted(Attachments.StubbyGrip.getRenderablePart(),
+              .withFirstPersonCustomPositioningAllLoadIterationsCompleted(Attachments3.StubbyGrip.getRenderablePart(),
                       new Transition((renderContext) -> { // Reload position\
                       }, 250, 50),
                       
@@ -927,7 +928,7 @@ public class Remington870Factory implements GunFactory {
                       }, 250, 50)
                   )
               
-              .withFirstPersonCustomPositioningAllLoadIterationsCompleted(Attachments.VGrip.getRenderablePart(),
+              .withFirstPersonCustomPositioningAllLoadIterationsCompleted(Attachments3.VGrip.getRenderablePart(),
                       new Transition((renderContext) -> { // Reload position\
                       }, 250, 50),
                       
@@ -1246,67 +1247,67 @@ public class Remington870Factory implements GunFactory {
                 GL11.glTranslatef(0.250000f, 0.21f, -1.1f);
                 
              // Holo Zoom
-                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.NightRaider)) {
+                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.NightRaider)) {
                     //System.out.println("Position me for Holo");
                     GL11.glTranslatef(0f, 0.3f, 0.4f);
                 } 
                 
 //              // Holo Zoom
-                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.ACOG)) {
+                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.ACOG)) {
                     //System.out.println("Position me for Holo");
                     GL11.glTranslatef(0f, 0.25f, 0.8f);
                 } 
                 
              // Holo Zoom
-                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.Specter)) {
+                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.Specter)) {
                     //System.out.println("Position me for Holo");
                     GL11.glTranslatef(0f, 0.24f, 0.8f);
                 } 
                 
              // Holo Zoom
-                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.HP)) {
+                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.HP)) {
                     //System.out.println("Position me for Holo");
                     GL11.glTranslatef(0f, 0.28f, 0.6f);
                 } 
                 
              // Holo Zoom
-                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.Reflex)) {
+                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.Reflex)) {
                     //System.out.println("Position me for Holo");
                     GL11.glTranslatef(0f, 0.27f, 0.6f);
                 } 
                 
              // Holo Zoom
-                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.Holographic)) {
+                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.Holographic)) {
                     //System.out.println("Position me for Holo");
                     GL11.glTranslatef(0f, 0.3f, 0.6f);
                 } 
                 
              // Holo Zoom
-                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.HolographicAlt)) {
+                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.HolographicAlt)) {
                     //System.out.println("Position me for Holo");
                     GL11.glTranslatef(0f, 0.3f, 0.6f);
                 } 
                 
              // Holo Zoom
-                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.VortexRedux)) {
+                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.VortexRedux)) {
                     //System.out.println("Position me for Holo");
                     GL11.glTranslatef(0f, 0.28f, 0.6f);
                 } 
                 
              // Holo Zoom
-                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.Kobra)) {
+                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.Kobra)) {
                     //System.out.println("Position me for Holo");
                     GL11.glTranslatef(0f, 0.3f, 0.6f);
                 } 
                 
              // Holo Zoom
-                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.MicroT1)) {
+                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.MicroT1)) {
                     //System.out.println("Position me for Holo");
                     GL11.glTranslatef(0f, 0.3f, 0.6f);
                 } 
                 
              // Holo Zoom
-                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.AimpointCompM5)) {
+                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.AimpointCompM5)) {
                     //System.out.println("Position me for Holo");
                     GL11.glTranslatef(0f, 0.3f, 0.6f);
                 } 
@@ -1343,9 +1344,9 @@ public class Remington870Factory implements GunFactory {
                          RenderContext<?> rc = (RenderContext<?>) renderContext;
                          ItemAttachment<Weapon> activeAttachment = WeaponAttachmentAspect.getActiveAttachment(
                                  AttachmentCategory.GRIP, rc.getWeaponInstance());
-                         if(activeAttachment == Attachments.Grip2 || 
-                                 activeAttachment == Attachments.StubbyGrip ||
-                                 activeAttachment == Attachments.VGrip) {
+                         if(activeAttachment == Attachments3.Grip2 || 
+                                 activeAttachment == Attachments3.StubbyGrip ||
+                                 activeAttachment == Attachments3.VGrip) {
                         	 GL11.glScalef(3.5f, 3.5f, 3.5f);
                            	 GL11.glRotatef(-80.000000f, 1f, 0f, 0f);
                            	 GL11.glRotatef(-50.000000f, 0f, 1f, 0f);
@@ -1397,9 +1398,9 @@ public class Remington870Factory implements GunFactory {
                         RenderContext<?> rc = (RenderContext<?>) renderContext;
                         ItemAttachment<Weapon> activeAttachment = WeaponAttachmentAspect.getActiveAttachment(
                                 AttachmentCategory.GRIP, rc.getWeaponInstance());
-                        if(activeAttachment == Attachments.Grip2 || 
-                                activeAttachment == Attachments.StubbyGrip ||
-                                activeAttachment == Attachments.VGrip) {
+                        if(activeAttachment == Attachments3.Grip2 || 
+                                activeAttachment == Attachments3.StubbyGrip ||
+                                activeAttachment == Attachments3.VGrip) {
                         	GL11.glScalef(3.5f, 3.5f, 3.5f);
                        	 GL11.glRotatef(-80.000000f, 1f, 0f, 0f);
                        	 GL11.glRotatef(-50.000000f, 0f, 1f, 0f);
@@ -1480,9 +1481,9 @@ public class Remington870Factory implements GunFactory {
                         RenderContext<?> rc = (RenderContext<?>) renderContext;
                         ItemAttachment<Weapon> activeAttachment = WeaponAttachmentAspect.getActiveAttachment(
                                 AttachmentCategory.GRIP, rc.getWeaponInstance());
-                        if(activeAttachment == Attachments.Grip2 || 
-                                activeAttachment == Attachments.StubbyGrip ||
-                                activeAttachment == Attachments.VGrip) {
+                        if(activeAttachment == Attachments3.Grip2 || 
+                                activeAttachment == Attachments3.StubbyGrip ||
+                                activeAttachment == Attachments3.VGrip) {
                         	 GL11.glScalef(3.5f, 3.5f, 3.5f);
                              GL11.glRotatef(-70.000000f, 1f, 0f, 0f);
                              GL11.glRotatef(-50.000000f, 0f, 1f, 0f);
@@ -1729,9 +1730,9 @@ public class Remington870Factory implements GunFactory {
                         RenderContext<?> rc = (RenderContext<?>) renderContext;
                         ItemAttachment<Weapon> activeAttachment = WeaponAttachmentAspect.getActiveAttachment(
                                 AttachmentCategory.GRIP, rc.getWeaponInstance());
-                        if(activeAttachment == Attachments.Grip2 || 
-                                activeAttachment == Attachments.StubbyGrip ||
-                                activeAttachment == Attachments.VGrip) {
+                        if(activeAttachment == Attachments3.Grip2 || 
+                                activeAttachment == Attachments3.StubbyGrip ||
+                                activeAttachment == Attachments3.VGrip) {
                         	GL11.glScalef(3.5f, 3.5f, 3.5f);
                        	 GL11.glRotatef(-80.000000f, 1f, 0f, 0f);
                        	 GL11.glRotatef(-50.000000f, 0f, 1f, 0f);
@@ -1750,9 +1751,9 @@ public class Remington870Factory implements GunFactory {
                         RenderContext<?> rc = (RenderContext<?>) renderContext;
                         ItemAttachment<Weapon> activeAttachment = WeaponAttachmentAspect.getActiveAttachment(
                                 AttachmentCategory.GRIP, rc.getWeaponInstance());
-                        if(activeAttachment == Attachments.Grip2 || 
-                                activeAttachment == Attachments.StubbyGrip ||
-                                activeAttachment == Attachments.VGrip) {
+                        if(activeAttachment == Attachments3.Grip2 || 
+                                activeAttachment == Attachments3.StubbyGrip ||
+                                activeAttachment == Attachments3.VGrip) {
                         	GL11.glScalef(3.5f, 3.5f, 3.5f);
                         	GL11.glRotatef(-85.000000f, 1f, 0f, 0f);
                         	GL11.glRotatef(-50.000000f, 0f, 1f, 0f);
@@ -1771,9 +1772,9 @@ public class Remington870Factory implements GunFactory {
                         RenderContext<?> rc = (RenderContext<?>) renderContext;
                         ItemAttachment<Weapon> activeAttachment = WeaponAttachmentAspect.getActiveAttachment(
                                 AttachmentCategory.GRIP, rc.getWeaponInstance());
-                        if(activeAttachment == Attachments.Grip2 || 
-                                activeAttachment == Attachments.StubbyGrip ||
-                                activeAttachment == Attachments.VGrip) {
+                        if(activeAttachment == Attachments3.Grip2 || 
+                                activeAttachment == Attachments3.StubbyGrip ||
+                                activeAttachment == Attachments3.VGrip) {
                         	GL11.glScalef(3.5f, 3.5f, 3.5f);
                         	GL11.glRotatef(-85.000000f, 1f, 0f, 0f);
                         	GL11.glRotatef(-50.000000f, 0f, 1f, 0f);
@@ -1792,9 +1793,9 @@ public class Remington870Factory implements GunFactory {
                         RenderContext<?> rc = (RenderContext<?>) renderContext;
                         ItemAttachment<Weapon> activeAttachment = WeaponAttachmentAspect.getActiveAttachment(
                                 AttachmentCategory.GRIP, rc.getWeaponInstance());
-                        if(activeAttachment == Attachments.Grip2 || 
-                                activeAttachment == Attachments.StubbyGrip ||
-                                activeAttachment == Attachments.VGrip) {
+                        if(activeAttachment == Attachments3.Grip2 || 
+                                activeAttachment == Attachments3.StubbyGrip ||
+                                activeAttachment == Attachments3.VGrip) {
                         	GL11.glScalef(3.5f, 3.5f, 3.5f);
                         	GL11.glRotatef(-85.000000f, 1f, 0f, 0f);
                         	GL11.glRotatef(-50.000000f, 0f, 1f, 0f);
@@ -1813,9 +1814,9 @@ public class Remington870Factory implements GunFactory {
                         RenderContext<?> rc = (RenderContext<?>) renderContext;
                         ItemAttachment<Weapon> activeAttachment = WeaponAttachmentAspect.getActiveAttachment(
                                 AttachmentCategory.GRIP, rc.getWeaponInstance());
-                        if(activeAttachment == Attachments.Grip2 || 
-                                activeAttachment == Attachments.StubbyGrip ||
-                                activeAttachment == Attachments.VGrip) {
+                        if(activeAttachment == Attachments3.Grip2 || 
+                                activeAttachment == Attachments3.StubbyGrip ||
+                                activeAttachment == Attachments3.VGrip) {
                         	GL11.glScalef(3.5f, 3.5f, 3.5f);
                        	 GL11.glRotatef(-80.000000f, 1f, 0f, 0f);
                        	 GL11.glRotatef(-50.000000f, 0f, 1f, 0f);
@@ -1879,9 +1880,9 @@ public class Remington870Factory implements GunFactory {
                         RenderContext<?> rc = (RenderContext<?>) renderContext;
                         ItemAttachment<Weapon> activeAttachment = WeaponAttachmentAspect.getActiveAttachment(
                                 AttachmentCategory.GRIP, rc.getWeaponInstance());
-                        if(activeAttachment == Attachments.Grip2 || 
-                                activeAttachment == Attachments.StubbyGrip ||
-                                activeAttachment == Attachments.VGrip) {
+                        if(activeAttachment == Attachments3.Grip2 || 
+                                activeAttachment == Attachments3.StubbyGrip ||
+                                activeAttachment == Attachments3.VGrip) {
                         	GL11.glScalef(3.5f, 3.5f, 3.5f);
                         	GL11.glRotatef(-85.000000f, 1f, 0f, 0f);
                         	GL11.glRotatef(-50.000000f, 0f, 1f, 0f);
@@ -1900,9 +1901,9 @@ public class Remington870Factory implements GunFactory {
                         RenderContext<?> rc = (RenderContext<?>) renderContext;
                         ItemAttachment<Weapon> activeAttachment = WeaponAttachmentAspect.getActiveAttachment(
                                 AttachmentCategory.GRIP, rc.getWeaponInstance());
-                        if(activeAttachment == Attachments.Grip2 || 
-                                activeAttachment == Attachments.StubbyGrip ||
-                                activeAttachment == Attachments.VGrip) {
+                        if(activeAttachment == Attachments3.Grip2 || 
+                                activeAttachment == Attachments3.StubbyGrip ||
+                                activeAttachment == Attachments3.VGrip) {
                         	GL11.glScalef(3.5f, 3.5f, 3.5f);
                         	GL11.glRotatef(-85.000000f, 1f, 0f, 0f);
                         	GL11.glRotatef(-50.000000f, 0f, 1f, 0f);
@@ -1921,9 +1922,9 @@ public class Remington870Factory implements GunFactory {
                         RenderContext<?> rc = (RenderContext<?>) renderContext;
                         ItemAttachment<Weapon> activeAttachment = WeaponAttachmentAspect.getActiveAttachment(
                                 AttachmentCategory.GRIP, rc.getWeaponInstance());
-                        if(activeAttachment == Attachments.Grip2 || 
-                                activeAttachment == Attachments.StubbyGrip ||
-                                activeAttachment == Attachments.VGrip) {
+                        if(activeAttachment == Attachments3.Grip2 || 
+                                activeAttachment == Attachments3.StubbyGrip ||
+                                activeAttachment == Attachments3.VGrip) {
                         	GL11.glScalef(3.5f, 3.5f, 3.5f);
                         	GL11.glRotatef(-85.000000f, 1f, 0f, 0f);
                         	GL11.glRotatef(-50.000000f, 0f, 1f, 0f);
@@ -1942,9 +1943,9 @@ public class Remington870Factory implements GunFactory {
                         RenderContext<?> rc = (RenderContext<?>) renderContext;
                         ItemAttachment<Weapon> activeAttachment = WeaponAttachmentAspect.getActiveAttachment(
                                 AttachmentCategory.GRIP, rc.getWeaponInstance());
-                        if(activeAttachment == Attachments.Grip2 || 
-                                activeAttachment == Attachments.StubbyGrip ||
-                                activeAttachment == Attachments.VGrip) {
+                        if(activeAttachment == Attachments3.Grip2 || 
+                                activeAttachment == Attachments3.StubbyGrip ||
+                                activeAttachment == Attachments3.VGrip) {
                         	GL11.glScalef(3.5f, 3.5f, 3.5f);
                        	 GL11.glRotatef(-80.000000f, 1f, 0f, 0f);
                        	 GL11.glRotatef(-50.000000f, 0f, 1f, 0f);
@@ -1998,9 +1999,9 @@ public class Remington870Factory implements GunFactory {
                         RenderContext<?> rc = (RenderContext<?>) renderContext;
                         ItemAttachment<Weapon> activeAttachment = WeaponAttachmentAspect.getActiveAttachment(
                                 AttachmentCategory.GRIP, rc.getWeaponInstance());
-                        if(activeAttachment == Attachments.Grip2 || 
-                                activeAttachment == Attachments.StubbyGrip ||
-                                activeAttachment == Attachments.VGrip) {
+                        if(activeAttachment == Attachments3.Grip2 || 
+                                activeAttachment == Attachments3.StubbyGrip ||
+                                activeAttachment == Attachments3.VGrip) {
                         	GL11.glScalef(3.5f, 3.5f, 3.5f);
                         	GL11.glRotatef(-85.000000f, 1f, 0f, 0f);
                         	GL11.glRotatef(-50.000000f, 0f, 1f, 0f);
@@ -2019,9 +2020,9 @@ public class Remington870Factory implements GunFactory {
                         RenderContext<?> rc = (RenderContext<?>) renderContext;
                         ItemAttachment<Weapon> activeAttachment = WeaponAttachmentAspect.getActiveAttachment(
                                 AttachmentCategory.GRIP, rc.getWeaponInstance());
-                        if(activeAttachment == Attachments.Grip2 || 
-                                activeAttachment == Attachments.StubbyGrip ||
-                                activeAttachment == Attachments.VGrip) {
+                        if(activeAttachment == Attachments3.Grip2 || 
+                                activeAttachment == Attachments3.StubbyGrip ||
+                                activeAttachment == Attachments3.VGrip) {
                         	GL11.glScalef(3.5f, 3.5f, 3.5f);
                         	GL11.glRotatef(-85.000000f, 1f, 0f, 0f);
                         	GL11.glRotatef(-50.000000f, 0f, 1f, 0f);
@@ -2040,9 +2041,9 @@ public class Remington870Factory implements GunFactory {
                         RenderContext<?> rc = (RenderContext<?>) renderContext;
                         ItemAttachment<Weapon> activeAttachment = WeaponAttachmentAspect.getActiveAttachment(
                                 AttachmentCategory.GRIP, rc.getWeaponInstance());
-                        if(activeAttachment == Attachments.Grip2 || 
-                                activeAttachment == Attachments.StubbyGrip ||
-                                activeAttachment == Attachments.VGrip) {
+                        if(activeAttachment == Attachments3.Grip2 || 
+                                activeAttachment == Attachments3.StubbyGrip ||
+                                activeAttachment == Attachments3.VGrip) {
                         	GL11.glScalef(3.5f, 3.5f, 3.5f);
                         	GL11.glRotatef(-85.000000f, 1f, 0f, 0f);
                         	GL11.glRotatef(-50.000000f, 0f, 1f, 0f);
@@ -2061,9 +2062,9 @@ public class Remington870Factory implements GunFactory {
                         RenderContext<?> rc = (RenderContext<?>) renderContext;
                         ItemAttachment<Weapon> activeAttachment = WeaponAttachmentAspect.getActiveAttachment(
                                 AttachmentCategory.GRIP, rc.getWeaponInstance());
-                        if(activeAttachment == Attachments.Grip2 || 
-                                activeAttachment == Attachments.StubbyGrip ||
-                                activeAttachment == Attachments.VGrip) {
+                        if(activeAttachment == Attachments3.Grip2 || 
+                                activeAttachment == Attachments3.StubbyGrip ||
+                                activeAttachment == Attachments3.VGrip) {
                         	GL11.glScalef(3.5f, 3.5f, 3.5f);
                        	 GL11.glRotatef(-80.000000f, 1f, 0f, 0f);
                        	 GL11.glRotatef(-50.000000f, 0f, 1f, 0f);

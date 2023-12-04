@@ -5,6 +5,7 @@ import com.paneedah.mwc.models.Glock18C;
 import com.paneedah.mwc.models.Reflex2;
 import com.paneedah.mwc.proxies.CommonProxy;
 import com.paneedah.mwc.weapons.Attachments;
+import com.paneedah.mwc.weapons.Attachments3;
 import com.paneedah.mwc.weapons.Magazines;
 import com.paneedah.weaponlib.AttachmentCategory;
 import com.paneedah.weaponlib.Weapon;
@@ -98,13 +99,13 @@ public class DesertEagleFactory implements GunFactory {
 //        	GL11.glTranslatef(0f, 3f, 1f);
 //        	GL11.glRotatef(20F, 1f, 0f, 0f);
         })
-        .withCompatibleAttachment(Attachments.Laser, (p, s) -> {
+        .withCompatibleAttachment(Attachments3.Laser, (p, s) -> {
             GL11.glTranslatef(0.01F, -0.76F, -2.1F);
             GL11.glScaled(1.1F, 1.1F, 1.1F);
             GL11.glRotatef(-90F, 0f, 0f, -4f);
         })
 
-        .withCompatibleAttachment(Attachments.RMR, (player, stack) -> {
+        .withCompatibleAttachment(Attachments3.RMR, (player, stack) -> {
                 GL11.glTranslatef(-0.19F, -1.3F, -1.25F);
                 GL11.glScaled(0.46F, 0.46F, 0.46F);
         },(model) -> {
@@ -113,7 +114,7 @@ public class DesertEagleFactory implements GunFactory {
                 GL11.glScaled(0.2F, 0.2F, 0.2F);
             }
         })
-        .withCompatibleAttachment(Attachments.BijiaReflex, (player, stack) -> {
+        .withCompatibleAttachment(Attachments3.BijiaReflex, (player, stack) -> {
             GL11.glTranslatef(-0.05F, -1F, -1.6F);
             GL11.glScaled(0.65F, 0.65F, 0.65F);
         },(model) -> {
@@ -186,12 +187,12 @@ public class DesertEagleFactory implements GunFactory {
                 GL11.glScaled(3F, 3F, 3F);
                 GL11.glTranslatef(0.14f, 0.7f, -2.3f);
                 
-                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.RMR)) {
+                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.RMR)) {
                     //System.out.println("Position me for Holo");
                 	GL11.glTranslatef(0f, 0.21f, 0.24f);
                 } 
                 
-                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.BijiaReflex)) {
+                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.BijiaReflex)) {
                     //System.out.println("Position me for Holo");
                     GL11.glTranslatef(0f, 0.26f, 0.24f);
                 } 

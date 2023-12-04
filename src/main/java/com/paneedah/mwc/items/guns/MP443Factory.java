@@ -5,6 +5,7 @@ import com.paneedah.mwc.init.MWCItems;
 import com.paneedah.mwc.models.MP443;
 import com.paneedah.mwc.proxies.CommonProxy;
 import com.paneedah.mwc.weapons.Attachments;
+import com.paneedah.mwc.weapons.Attachments3;
 import com.paneedah.mwc.weapons.AuxiliaryAttachments;
 import com.paneedah.mwc.weapons.Magazines;
 import com.paneedah.weaponlib.AttachmentCategory;
@@ -101,7 +102,7 @@ public class MP443Factory implements GunFactory {
         .withCompatibleAttachment(Magazines.MP443Mag, (model) -> {
             GL11.glTranslatef(0F, 0F, 0.12F);
         })
-        .withCompatibleAttachment(Attachments.Silencer9mm, (model) -> {
+        .withCompatibleAttachment(Attachments3.Silencer9mm, (model) -> {
             GL11.glTranslatef(-0.3F, -1.2F, -4.15F);
             GL11.glScaled(1.2F, 1.2F, 1.2F);
         })
@@ -258,12 +259,12 @@ public class MP443Factory implements GunFactory {
             	GL11.glScaled(3F, 3F, 3F);
             	GL11.glTranslatef(0.22f, 0.69f, -2.3f);
                 
-                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.RMR)) {
+                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.RMR)) {
                     //System.out.println("Position me for Holo");
                     GL11.glTranslatef(0f, 0.22f, 0f);
                 } 
                 
-                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.BijiaReflex)) {
+                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.BijiaReflex)) {
                     //System.out.println("Position me for Holo");
                     GL11.glTranslatef(0f, 0.32f, 0f);
                 } 

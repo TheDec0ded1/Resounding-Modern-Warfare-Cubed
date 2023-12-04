@@ -5,6 +5,7 @@ import com.paneedah.mwc.init.MWCItems;
 import com.paneedah.mwc.models.*;
 import com.paneedah.mwc.proxies.CommonProxy;
 import com.paneedah.mwc.weapons.Attachments;
+import com.paneedah.mwc.weapons.Attachments3;
 import com.paneedah.mwc.weapons.AuxiliaryAttachments;
 import com.paneedah.mwc.weapons.Magazines;
 import com.paneedah.weaponlib.AttachmentCategory;
@@ -146,7 +147,7 @@ public class P90Factory {
         .withCompatibleAttachment(Attachments.P90Placeholder, true, (model) -> {
             GL11.glScaled(0F, 0F, 0F);
         })
-        .withCompatibleAttachment(Attachments.AKMIron, true, (model) -> {
+        .withCompatibleAttachment(Attachments3.AKMIron, true, (model) -> {
             if(model instanceof M4Iron1) {
                 GL11.glTranslatef(0.215F, -1.54F, 1.2F);
                 GL11.glScaled(0F, 0F, 0F); 
@@ -194,7 +195,7 @@ public class P90Factory {
                 GL11.glScaled(0F, 0F, 0F); 
             }
         })
-        .withCompatibleAttachment(Attachments.NightRaider, (player, stack) -> {
+        .withCompatibleAttachment(Attachments3.NightRaider, (player, stack) -> {
             GL11.glTranslatef(-0.24F, -2.25F, -2.6F);
             GL11.glScaled(1.0F, 1.0F, 1.0F);
         },(model) -> {
@@ -203,7 +204,7 @@ public class P90Factory {
                 GL11.glScaled(0.03F, 0.03F, 0.03F);
             }
         })
-        .withCompatibleAttachment(Attachments.ACOG, (player, stack) -> {
+        .withCompatibleAttachment(Attachments3.ACOG, (player, stack) -> {
             GL11.glTranslatef(-0.345F, -2.26F, -1F);
             GL11.glScaled(0.93F, 0.93F, 0.93F);
         },(model) -> {
@@ -216,7 +217,7 @@ public class P90Factory {
                 GL11.glScaled(0.03F, 0.03F, 0.03F);
             }
         })
-        .withCompatibleAttachment(Attachments.MicroT1, (player, stack) -> {
+        .withCompatibleAttachment(Attachments3.MicroT1, (player, stack) -> {
                 GL11.glTranslatef(-0.2F, -2.25F, -1.3F);
                 GL11.glScaled(0.5F, 0.5F, 0.5F);
         },(model) -> {
@@ -225,7 +226,7 @@ public class P90Factory {
                 GL11.glScaled(0.15F, 0.15F, 0.15F);
             }
         })
-        .withCompatibleAttachment(Attachments.AimpointCompM5, (player, stack) -> {
+        .withCompatibleAttachment(Attachments3.AimpointCompM5, (player, stack) -> {
                 GL11.glTranslatef(-0.2F, -2.25F, -1.3F);
                 GL11.glScaled(0.5F, 0.5F, 0.5F);
         },(model) -> {
@@ -234,7 +235,7 @@ public class P90Factory {
                 GL11.glScaled(0.15F, 0.15F, 0.15F);
             }
         })
-        .withCompatibleAttachment(Attachments.Specter, (player, stack) -> {
+        .withCompatibleAttachment(Attachments3.Specter, (player, stack) -> {
             GL11.glTranslatef(-0.21F, -1.83F, -1.3F);
             GL11.glScaled(0.55F, 0.55F, 0.55F);
         },(model) -> {
@@ -243,7 +244,7 @@ public class P90Factory {
                 GL11.glScaled(0.1F, 0.1F, 0.1F);
             }
         })
-        .withCompatibleAttachment(Attachments.Reflex, (player, stack) -> {
+        .withCompatibleAttachment(Attachments3.Reflex, (player, stack) -> {
             GL11.glTranslatef(-0.05F, -2F, -1.5F);
             GL11.glScaled(0.6F, 0.6F, 0.6F);
             },(model) -> {
@@ -252,7 +253,7 @@ public class P90Factory {
                     GL11.glScaled(0.15F, 0.15F, 0.15F);
                 }
             })
-        .withCompatibleAttachment(Attachments.BijiaReflex, (player, stack) -> {
+        .withCompatibleAttachment(Attachments3.BijiaReflex, (player, stack) -> {
         	GL11.glTranslatef(-0.05F, -1.95F, -1.5F);
             GL11.glScaled(0.63F, 0.63F, 0.63F);
 			},(model) -> {
@@ -261,7 +262,7 @@ public class P90Factory {
 			    GL11.glScaled(0.15F, 0.15F, 0.15F);
 			}
 			})
-        .withCompatibleAttachment(Attachments.MicroReflex, (player, stack) -> {
+        .withCompatibleAttachment(Attachments3.MicroReflex, (player, stack) -> {
             GL11.glTranslatef(-0.15F, -2.8F, -1F);
             GL11.glScaled(0.4F, 0.4F, 0.4F);
             },(model) -> {
@@ -273,7 +274,7 @@ public class P90Factory {
 //                    GL11.glScaled(0.4F, 0.4F, 0.4F);
                 }
             })
-        .withCompatibleAttachment(Attachments.Holographic, (player, stack) -> {
+        .withCompatibleAttachment(Attachments3.Holographic, (player, stack) -> {
                 GL11.glTranslatef(-0.018F, -2.05F, -1.4F);
                 GL11.glScaled(0.85F, 0.85F, 0.85F);
             },(model) -> {
@@ -282,7 +283,7 @@ public class P90Factory {
                     GL11.glScaled(0.1F, 0.1F, 0.1F);
                 }
             })
-        .withCompatibleAttachment(Attachments.HolographicAlt, (player, stack) -> {
+        .withCompatibleAttachment(Attachments3.HolographicAlt, (player, stack) -> {
                 GL11.glTranslatef(-0.018F, -2.05F, -1.4F);
                 GL11.glScaled(0.85F, 0.85F, 0.85F);
         },(model) -> {
@@ -291,7 +292,7 @@ public class P90Factory {
                     GL11.glScaled(0.1F, 0.1F, 0.1F);
             }
         })
-        .withCompatibleAttachment(Attachments.EotechHybrid2, (player, stack) -> {
+        .withCompatibleAttachment(Attachments3.EotechHybrid2, (player, stack) -> {
             GL11.glTranslatef(-0.018F, -2.05F, -1.7F);
             GL11.glScaled(0.85F, 0.85F, 0.85F);
         },(model) -> {
@@ -304,7 +305,7 @@ public class P90Factory {
                 GL11.glScaled(0.05F, 0.05F, 0.05F);
             }
         })
-        .withCompatibleAttachment(Attachments.VortexRedux, (player, stack) -> {
+        .withCompatibleAttachment(Attachments3.VortexRedux, (player, stack) -> {
                 GL11.glTranslatef(-0.35F, -2.3F, -1.8F);
                 GL11.glScaled(0.58F, 0.58F, 0.58F);
             },(model) -> {
@@ -313,7 +314,7 @@ public class P90Factory {
                     GL11.glScaled(0.15F, 0.15F, 0.15F);
                 }
             })
-        .withCompatibleAttachment(Attachments.Kobra, (player, stack) -> {
+        .withCompatibleAttachment(Attachments3.Kobra, (player, stack) -> {
                 GL11.glTranslatef(-0.02F, -2.05F, -1.1F);
                 GL11.glScaled(0.85F, 0.85F, 0.85F);
         },(model) -> {
@@ -322,7 +323,7 @@ public class P90Factory {
                 GL11.glScaled(0.15F, 0.15F, 0.15F);
             }
         })
-        .withCompatibleAttachment(Attachments.KobraGen3, (player, stack) -> {
+        .withCompatibleAttachment(Attachments3.KobraGen3, (player, stack) -> {
             GL11.glTranslatef(-0.02F, -2.05F, -1.1F);
             GL11.glScaled(0.85F, 0.85F, 0.85F);
 	    },(model) -> {
@@ -331,36 +332,36 @@ public class P90Factory {
 	            GL11.glScaled(0.15F, 0.15F, 0.15F);
 	        }
 	    })
-        .withCompatibleAttachment(Attachments.Grip2, (model) -> {
+        .withCompatibleAttachment(Attachments3.Grip2, (model) -> {
             GL11.glTranslatef(0.75F, -0.72F, -2.6F);
             GL11.glRotatef(-90F, 0f, 0f, 1f);
             GL11.glScaled(1F, 1F, 1F);
         })
-        .withCompatibleAttachment(Attachments.StubbyGrip, (model) -> {
+        .withCompatibleAttachment(Attachments3.StubbyGrip, (model) -> {
             GL11.glTranslatef(0.75F, -0.72F, -2.6F);
             GL11.glRotatef(-90F, 0f, 0f, 1f);
             GL11.glScaled(1F, 1F, 1F);
         })
-        .withCompatibleAttachment(Attachments.VGrip, (model) -> {
+        .withCompatibleAttachment(Attachments3.VGrip, (model) -> {
             GL11.glTranslatef(0.75F, -0.72F, -2.6F);
             GL11.glRotatef(-90F, 0f, 0f, 1f);
             GL11.glScaled(1F, 1F, 1F);
         })
-        .withCompatibleAttachment(Attachments.Bipod, (model) -> {
+        .withCompatibleAttachment(Attachments3.Bipod, (model) -> {
             GL11.glTranslatef(-0.2F, -0.15F, -3F);
             GL11.glScaled(1F, 1F, 1F);
         })
-        .withCompatibleAttachment(Attachments.Laser, (p, s) -> {
+        .withCompatibleAttachment(Attachments3.Laser, (p, s) -> {
             GL11.glTranslatef(0.13F, -1.99F, -2F);
             GL11.glRotatef(-20F, 0f, 0f, 1f);
             GL11.glScaled(1F, 1F, 1F);
         })
-        .withCompatibleAttachment(Attachments.Laser2, (p, s) -> {
+        .withCompatibleAttachment(Attachments3.Laser2, (p, s) -> {
             GL11.glTranslatef(0.13F, -1.99F, -2F);
             GL11.glRotatef(-20F, 0f, 0f, 1f);
             GL11.glScaled(1F, 1F, 1F);
         })
-        .withCompatibleAttachment(Attachments.Silencer57x38, (model) -> {
+        .withCompatibleAttachment(Attachments3.Silencer57x38, (model) -> {
             GL11.glTranslatef(-0.22F, -0.99F, -4.77F);
             GL11.glScaled(1.3F, 1.3F, 1.3F);
         })
@@ -505,85 +506,85 @@ public class P90Factory {
 
                 
              // ACOG Zoom
-                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.NightRaider)) {
+                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.NightRaider)) {
                     //System.out.println("Position me for Acog");
                     GL11.glTranslatef(0F, 0.2f, 0.9f);
                 } 
                 
                 // ACOG Zoom
-                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.ACOG)) {
+                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.ACOG)) {
                     //System.out.println("Position me for Acog");
                     GL11.glTranslatef(0F, 0.21f, 1.2f);
                 } 
                 
              // ACOG Zoom
-                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.Specter)) {
+                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.Specter)) {
                     //System.out.println("Position me for Acog");
                     GL11.glTranslatef(0F, 0.11f, 1.1f);
                 } 
                 
              // ACOG Zoom
-                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.MicroT1)) {
+                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.MicroT1)) {
                     //System.out.println("Position me for Acog");
                 	 GL11.glTranslatef(0F, 0.175f, 1.3f);
                 } 
                 
              // ACOG Zoom
-                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.AimpointCompM5)) {
+                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.AimpointCompM5)) {
                     //System.out.println("Position me for Acog");
                     GL11.glTranslatef(0F, 0.175f, 1.3f);
                 } 
                 
              // ACOG Zoom
-                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.Reflex)) {
+                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.Reflex)) {
                     //System.out.println("Position me for Acog");
                     GL11.glTranslatef(0F, 0.15f, 1f);
                 } 
                 
              // ACOG Zoom
-                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.BijiaReflex)) {
+                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.BijiaReflex)) {
                     //System.out.println("Position me for Acog");
                     GL11.glTranslatef(0F, 0.11f, 1f);
                 } 
                 
              // ACOG Zoom
-                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.MicroReflex)) {
+                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.MicroReflex)) {
                     //System.out.println("Position me for Acog");
                     GL11.glTranslatef(0F, 0.12f, 1f);
                 } 
                 
              // ACOG Zoom
-                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.Holographic)) {
+                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.Holographic)) {
                     //System.out.println("Position me for Acog");
                     GL11.glTranslatef(0F, 0.2f, 1f);
                 } 
                 
              // ACOG Zoom
-                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.HolographicAlt)) {
+                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.HolographicAlt)) {
                     //System.out.println("Position me for Acog");
                     GL11.glTranslatef(0F, 0.2f, 1f);
                 } 
                 
              // ACOG Zoom
-                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.EotechHybrid2)) {
+                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.EotechHybrid2)) {
                     //System.out.println("Position me for Acog");
                     GL11.glTranslatef(0F, 0.2f, 0.8f);
                 } 
                 
              // ACOG Zoom
-                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.VortexRedux)) {
+                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.VortexRedux)) {
                     //System.out.println("Position me for Acog");
                     GL11.glTranslatef(0F, 0.235f, 1f);
                 } 
                 
              // ACOG Zoom
-                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.Kobra)) {
+                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.Kobra)) {
                     //System.out.println("Position me for Acog");
                     GL11.glTranslatef(0F, 0.18f, 0.8f);
                 } 
                 
              // ACOG Zoom
-                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.KobraGen3)) {
+                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.KobraGen3)) {
                     //System.out.println("Position me for Acog");
                     GL11.glTranslatef(0F, 0.18f, 0.8f);
                 } 

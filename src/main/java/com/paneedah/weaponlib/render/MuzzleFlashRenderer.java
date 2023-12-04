@@ -57,7 +57,10 @@ public class MuzzleFlashRenderer {
 		
 		
 		boolean shouldRenderCrossplane = mc.world.getEntityByID(entityID) != mc.player || mc.gameSettings.thirdPersonView != 0;
-		// Turn on all of the GL states
+	        //OpenGlHelper.glFramebufferTexture2D(OpenGlHelper.GL_FRAMEBUFFER, GL30.GL_COLOR_ATTACHMENT1, GL11.GL_TEXTURE_2D, Bloom.data.framebufferTexture, 0);
+		//
+		//GL20.glDrawBuffers(intBuf)
+                // Turn on all of the GL states
 		GlStateManager.pushMatrix();
 		//GlStateManager.depthMask(false);
 		GlStateManager.disableLighting();

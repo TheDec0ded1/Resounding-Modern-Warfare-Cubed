@@ -1,6 +1,6 @@
 package com.paneedah.mwc.creativetab;
 
-import com.paneedah.mwc.weapons.Attachments;
+import com.paneedah.mwc.weapons.Attachments3;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.fml.relauncher.Side;
@@ -15,6 +15,6 @@ public class AttachmentsTab extends CreativeTabs {
 	@Override
 	@SideOnly(Side.CLIENT)
 	public ItemStack createIcon() {
-		return new ItemStack(Attachments.ACOG);
+		return new ItemStack(Attachments3.ACOG);
 	}
 }

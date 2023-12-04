@@ -5,8 +5,7 @@ import net.minecraft.client.model.ModelBox;
 import net.minecraft.client.model.ModelRenderer;
 import net.minecraft.entity.Entity;
 
-
-// Made with Blockbench 4.7.4
+// Made with Blockbench 4.8.3
 // Exported for Minecraft version 1.7 - 1.12
 // Paste this class into your mod and generate all required imports
 
@@ -1053,6 +1052,7 @@ public class AK19 extends ModelWithAttachments {
 		gun80.setRotationPoint(-0.3F, -36.0F, -21.5F);
 		gun.addChild(gun80);
 		gun80.cubeList.add(new ModelBox(gun80, 41, 40, 0.001F, 0.0F, 0.0F, 1, 5, 25, 0.0F, false));
+		gun80.cubeList.add(new ModelBox(gun80, 42, 41, -3.399F, 0.0F, -12.0F, 1, 1, 24, 0.0F, false));
 
 		gun79 = new ModelRenderer(this);
 		gun79.setRotationPoint(0.8F, -36.0F, -35.5F);

@@ -8,6 +8,7 @@ import com.paneedah.mwc.init.MWCItems;
 import com.paneedah.mwc.models.*;
 import com.paneedah.mwc.proxies.CommonProxy;
 import com.paneedah.mwc.weapons.Attachments;
+import com.paneedah.mwc.weapons.Attachments3;
 import com.paneedah.mwc.weapons.AuxiliaryAttachments;
 import com.paneedah.mwc.weapons.Magazines;
 import com.paneedah.weaponlib.*;
@@ -36,8 +37,8 @@ public class MalyukFactory {
         .withMuzzlePosition(new Vec3d(-0.12000000357627887, -0.7399999922513956, -3.7999999195337324))
         .withMaxShots(1, Integer.MAX_VALUE)
         //.withMaxShots(5)
-        .withShootSound("ak47")
-        .withSilencedShootSound("ak15_silenced")
+        .withShootSound("malyuk762")
+        .withSilencedShootSound("ak_silenced")
         .withReloadSound("ak_reload")
         .withUnloadSound("ak_unload")
         .withInspectSound("inspection")
@@ -124,7 +125,7 @@ public class MalyukFactory {
         	GL11.glTranslatef(0F, 0.2F, 3.1F);
 //            GL11.glRotatef(-10F, 1f, 0f, 0f);
         })
-        .withCompatibleAttachment(Attachments.NightRaider, (player, stack) -> {
+        .withCompatibleAttachment(Attachments3.NightRaider, (player, stack) -> {
             GL11.glTranslatef(-0.21F, -1.4F, -1.2F);
             GL11.glScaled(0.75F, 0.75F, 0.75F);
         },(model) -> {
@@ -133,7 +134,7 @@ public class MalyukFactory {
                 GL11.glScaled(0.03F, 0.03F, 0.03F);
             }
         })
-        .withCompatibleAttachment(Attachments.ACOG, (player, stack) -> {
+        .withCompatibleAttachment(Attachments3.ACOG, (player, stack) -> {
             GL11.glTranslatef(-0.32F, -1.4F, -0.0F);
             GL11.glScaled(0.83F, 0.83F, 0.83F);
         },(model) -> {
@@ -147,7 +148,7 @@ public class MalyukFactory {
             }
         })
         
-        .withCompatibleAttachment(Attachments.LeupoldRailScope, (player, stack) -> {
+        .withCompatibleAttachment(Attachments3.LeupoldRailScope, (player, stack) -> {
 		            GL11.glTranslatef(-0.155F, -1.23F, -1.2F);
 		            GL11.glScaled(0.43F, 0.43F, 0.43F);
 		},(model) -> {
@@ -157,7 +158,7 @@ public class MalyukFactory {
 		    }
 		})
         
-        .withCompatibleAttachment(Attachments.Specter, (player, stack) -> {
+        .withCompatibleAttachment(Attachments3.Specter, (player, stack) -> {
 		            GL11.glTranslatef(-0.195F, -1.05F, -0.5F);
 		            GL11.glScaled(0.47F, 0.47F, 0.47F);
 		},(model) -> {
@@ -167,7 +168,7 @@ public class MalyukFactory {
 		    }
 		})
         
-		.withCompatibleAttachment(Attachments.MicroReflex, (player, stack) -> {
+		.withCompatibleAttachment(Attachments3.MicroReflex, (player, stack) -> {
 		    GL11.glTranslatef(-0.15F, -1.91F, -0.5F);
 		    GL11.glScaled(0.35F, 0.35F, 0.35F);
 		    },(model) -> {
@@ -180,7 +181,7 @@ public class MalyukFactory {
 		        }
 		    })
         
-        .withCompatibleAttachment(Attachments.MicroT1, (player, stack) -> {
+        .withCompatibleAttachment(Attachments3.MicroT1, (player, stack) -> {
                 GL11.glTranslatef(-0.185F, -1.41F, -0.5F);
                 GL11.glScaled(0.43F, 0.43F, 0.43F);
         },(model) -> {
@@ -189,7 +190,7 @@ public class MalyukFactory {
                 GL11.glScaled(0.15F, 0.15F, 0.15F);
             }
         })
-        .withCompatibleAttachment(Attachments.AimpointCompM5, (player, stack) -> {
+        .withCompatibleAttachment(Attachments3.AimpointCompM5, (player, stack) -> {
         	GL11.glTranslatef(-0.185F, -1.41F, -0.5F);
             GL11.glScaled(0.43F, 0.43F, 0.43F);
 	    },(model) -> {
@@ -198,7 +199,7 @@ public class MalyukFactory {
 	            GL11.glScaled(0.15F, 0.15F, 0.15F);
 	        }
 	    })
-        .withCompatibleAttachment(Attachments.Reflex, (player, stack) -> {
+        .withCompatibleAttachment(Attachments3.Reflex, (player, stack) -> {
             GL11.glTranslatef(-0.06F, -1.18F, -1.0F);
             GL11.glScaled(0.52F, 0.52F, 0.52F);
             },(model) -> {
@@ -207,7 +208,7 @@ public class MalyukFactory {
                     GL11.glScaled(0.15F, 0.15F, 0.15F);
                 }
             })
-        .withCompatibleAttachment(Attachments.BijiaReflex, (player, stack) -> {
+        .withCompatibleAttachment(Attachments3.BijiaReflex, (player, stack) -> {
             GL11.glTranslatef(-0.055F, -1.16F, -1.0F);
             GL11.glScaled(0.55F, 0.55F, 0.55F);
         },(model) -> {
@@ -216,7 +217,7 @@ public class MalyukFactory {
             GL11.glScaled(0.15F, 0.15F, 0.15F);
         }
         })
-        .withCompatibleAttachment(Attachments.Holographic, (player, stack) -> {
+        .withCompatibleAttachment(Attachments3.Holographic, (player, stack) -> {
                 GL11.glTranslatef(-0.035F, -1.25F, -1.0F);
                 GL11.glScaled(0.73F, 0.73F, 0.73F);
             },(model) -> {
@@ -225,7 +226,7 @@ public class MalyukFactory {
                     GL11.glScaled(0.1F, 0.1F, 0.1F);
                 }
             })
-        .withCompatibleAttachment(Attachments.HolographicAlt, (player, stack) -> {
+        .withCompatibleAttachment(Attachments3.HolographicAlt, (player, stack) -> {
         	GL11.glTranslatef(-0.035F, -1.25F, -1.0F);
             GL11.glScaled(0.73F, 0.73F, 0.73F);
         },(model) -> {
@@ -235,7 +236,7 @@ public class MalyukFactory {
             }
         })
         
-        .withCompatibleAttachment(Attachments.EotechHybrid2, (player, stack) -> {
+        .withCompatibleAttachment(Attachments3.EotechHybrid2, (player, stack) -> {
         	GL11.glTranslatef(-0.035F, -1.25F, -1.4F);
             GL11.glScaled(0.73F, 0.73F, 0.73F);
 		},(model) -> {
@@ -249,7 +250,7 @@ public class MalyukFactory {
 		    }
 		})
         
-        .withCompatibleAttachment(Attachments.VortexRedux, (player, stack) -> {
+        .withCompatibleAttachment(Attachments3.VortexRedux, (player, stack) -> {
             GL11.glTranslatef(-0.33F, -1.44F, -1.0F);
             GL11.glScaled(0.52F, 0.52F, 0.52F);
 	    },(model) -> {
@@ -258,7 +259,7 @@ public class MalyukFactory {
 	            GL11.glScaled(0.15F, 0.15F, 0.15F);
 	        }
 	    })
-        .withCompatibleAttachment(Attachments.Kobra, (player, stack) -> {
+        .withCompatibleAttachment(Attachments3.Kobra, (player, stack) -> {
                 GL11.glTranslatef(-0.04F, -1.24F, -0.5F);
                 GL11.glScaled(0.7F, 0.7F, 0.7F);
         },(model) -> {
@@ -267,7 +268,7 @@ public class MalyukFactory {
                 GL11.glScaled(0.15F, 0.15F, 0.15F);
             }
         })
-        .withCompatibleAttachment(Attachments.KobraGen3, (player, stack) -> {
+        .withCompatibleAttachment(Attachments3.KobraGen3, (player, stack) -> {
         	GL11.glTranslatef(-0.04F, -1.24F, -0.5F);
             GL11.glScaled(0.7F, 0.7F, 0.7F);
 	    },(model) -> {
@@ -276,7 +277,7 @@ public class MalyukFactory {
 	            GL11.glScaled(0.15F, 0.15F, 0.15F);
 	        }
 	    })
-        .withCompatibleAttachment(Attachments.MBUSRearSights, true, (model) -> {
+        .withCompatibleAttachment(Attachments3.MBUSRearSights, true, (model) -> {
          	   GL11.glTranslatef(-0.16F, -1.51F, 0.4F);
                 GL11.glScaled(0.35F, 0.35F, 0.35F);
         })
@@ -284,31 +285,31 @@ public class MalyukFactory {
             	GL11.glTranslatef(-0.16F, -1.51F, -2F);
                 GL11.glScaled(0.35F, 0.35F, 0.35F);
         })
-        .withCompatibleAttachment(Attachments.Bipod, (model) -> {
+        .withCompatibleAttachment(Attachments3.Bipod, (model) -> {
         	GL11.glTranslatef(-0.18F, -0.15F, -4F);
             GL11.glScaled(0.8F, 0.8F, 0.8F);
         })
-        .withCompatibleAttachment(Attachments.Grip2, (model) -> {
+        .withCompatibleAttachment(Attachments3.Grip2, (model) -> {
             GL11.glTranslatef(-0.2F, -0.1F, -3.5F);
             GL11.glScaled(1F, 1F, 1F);
         })
-        .withCompatibleAttachment(Attachments.StubbyGrip, (model) -> {
+        .withCompatibleAttachment(Attachments3.StubbyGrip, (model) -> {
             GL11.glTranslatef(-0.2F, -0.1F, -3.5F);
             GL11.glScaled(1F, 1F, 1F);
         })
-        .withCompatibleAttachment(Attachments.AngledGrip, (model) -> {
+        .withCompatibleAttachment(Attachments3.AngledGrip, (model) -> {
             GL11.glTranslatef(-0.2F, 0.05F, -4F);
             GL11.glScaled(1F, 1F, 1F);
         })
-        .withCompatibleAttachment(Attachments.VGrip, (model) -> {
+        .withCompatibleAttachment(Attachments3.VGrip, (model) -> {
             GL11.glTranslatef(-0.2F, -0.1F, -3.5F);
             GL11.glScaled(1F, 1F, 1F);
         })
-        .withCompatibleAttachment(Attachments.JunoGrip, (model) -> {
+        .withCompatibleAttachment(Attachments3.JunoGrip, (model) -> {
             GL11.glTranslatef(-0.3F, -0.35F, -4.5F);
             GL11.glScaled(1F, 1F, 1F);
         })
-        .withCompatibleAttachment(Attachments.Silencer762x39, renderContext -> {
+        .withCompatibleAttachment(Attachments3.Silencer762x39, renderContext -> {
                     GL11.glTranslatef(-0.2F, -0.95F, -4.8F);
                     GL11.glScaled(1F, 1F, 1F);
         })
@@ -480,103 +481,103 @@ public class MalyukFactory {
                 GL11.glTranslatef(0.18f, -0.23f, 0.7f);
 
              // ACOG Zoom
-                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.MBUSRearSights)) {
+                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.MBUSRearSights)) {
                     //System.out.println("Position me for Acog");
                     GL11.glTranslatef(0F, 0.22f, -0.8f);
                 } 
                 
              // ACOG Zoom
-                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.NightRaider)) {
+                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.NightRaider)) {
                     //System.out.println("Position me for Acog");
                     GL11.glTranslatef(0F, 0.23f, -0.5f);
                 } 
                 
                 // ACOG Zoom
-                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.ACOG)) {
+                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.ACOG)) {
                     //System.out.println("Position me for Acog");
                     GL11.glTranslatef(0F, 0.26f, -0.4f);
                 } 
                 
              // ACOG Zoom
-                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.LeupoldRailScope)) {
+                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.LeupoldRailScope)) {
                     //System.out.println("Position me for Acog");
                     GL11.glTranslatef(0F, 0.18f, -0.5f);
                 } 
                 
              // ACOG Zoom
-                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.Specter)) {
+                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.Specter)) {
                     //System.out.println("Position me for Acog");
                     GL11.glTranslatef(0F, 0.18f, -0.3f);
                 } 
                 
              // ACOG Zoom
-                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.MicroReflex)) {
+                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.MicroReflex)) {
                     //System.out.println("Position me for Acog");
                     GL11.glTranslatef(0F, 0.22f, 0.0f);
                 } 
                 
              // ACOG Zoom
-                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.MicroT1)) {
+                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.MicroT1)) {
                     //System.out.println("Position me for Acog");
                     GL11.glTranslatef(0F, 0.25f, 0.0f);
                 } 
                 
              // ACOG Zoom
-                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.AimpointCompM5)) {
+                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.AimpointCompM5)) {
                     //System.out.println("Position me for Acog");
                 	 GL11.glTranslatef(0F, 0.25f, 0.0f);
                 } 
                 
              // ACOG Zoom
-                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.Reflex)) {
+                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.Reflex)) {
                     //System.out.println("Position me for Acog");
                     GL11.glTranslatef(0F, 0.2f, 0.0f);
                 } 
                 
              // ACOG Zoom
-                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.BijiaReflex)) {
+                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.BijiaReflex)) {
                     //System.out.println("Position me for Acog");
                     GL11.glTranslatef(0F, 0.19f, 0.0f);
                 } 
                 
              // ACOG Zoom
-                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.Holographic)) {
+                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.Holographic)) {
                     //System.out.println("Position me for Acog");
                     GL11.glTranslatef(0F, 0.26f, 0.0f);
                 } 
                 
              // ACOG Zoom
-                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.HolographicAlt)) {
+                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.HolographicAlt)) {
                     //System.out.println("Position me for Acog");
                 	 GL11.glTranslatef(0F, 0.26f, 0.0f);
                 } 
                 
              // ACOG Zoom
-                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.EotechHybrid2)) {
+                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.EotechHybrid2)) {
                     //System.out.println("Position me for Acog");
                 	 GL11.glTranslatef(0F, 0.28f, 0.0f);
                 } 
                 
              // ACOG Zoom
-                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.VortexRedux)) {
+                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.VortexRedux)) {
                     //System.out.println("Position me for Acog");
                     GL11.glTranslatef(0F, 0.28f, -0.2f);
                 } 
                 
              // ACOG Zoom
-                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.Kobra)) {
+                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.Kobra)) {
                     //System.out.println("Position me for Acog");
                     GL11.glTranslatef(0F, 0.24f, -0.1f);
                 } 
                 
              // ACOG Zoom
-                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.KobraGen3)) {
+                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.KobraGen3)) {
                     //System.out.println("Position me for Acog");
                 	 GL11.glTranslatef(0F, 0.24f, -0.1f);
                 } 
                 
              // ACOG Zoom
-                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.AK15ironsight)) {
+                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.AK15ironsight)) {
                     //System.out.println("Position me for Acog");
                     GL11.glTranslatef(0F, 0.008f, 0f);
                 } 

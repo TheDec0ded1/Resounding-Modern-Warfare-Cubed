@@ -5,6 +5,7 @@ import com.paneedah.mwc.init.MWCItems;
 import com.paneedah.mwc.models.*;
 import com.paneedah.mwc.proxies.CommonProxy;
 import com.paneedah.mwc.weapons.Attachments;
+import com.paneedah.mwc.weapons.Attachments3;
 import com.paneedah.mwc.weapons.AuxiliaryAttachments;
 import com.paneedah.mwc.weapons.Magazines;
 import com.paneedah.weaponlib.AttachmentCategory;
@@ -125,12 +126,12 @@ public class P226Factory implements GunFactory {
         .withCompatibleAttachment(Magazines.M9DrumMag, (model) -> {
         	 GL11.glTranslatef(0F, 0.02F, 0.02F);
         })
-        .withCompatibleAttachment(Attachments.Laser, (p, s) -> {
+        .withCompatibleAttachment(Attachments3.Laser, (p, s) -> {
             GL11.glTranslatef(0.01F, -0.65F, -2.1F);
             GL11.glScaled(1.1F, 1.1F, 1.1F);
             GL11.glRotatef(-90F, 0f, 0f, -4f);
         })
-        .withCompatibleAttachment(Attachments.Silencer9mm, (model) -> {
+        .withCompatibleAttachment(Attachments3.Silencer9mm, (model) -> {
             GL11.glTranslatef(-0.22F, -1.16F, -4.5F);
             GL11.glScaled(1.3F, 1.3F, 1.3F);
         })
@@ -138,7 +139,7 @@ public class P226Factory implements GunFactory {
             GL11.glTranslatef(-0.23f, -0.53f, -1.9f);
             GL11.glScaled(0.7F, 0.6F, 0.7F);
         })
-        .withCompatibleAttachment(Attachments.RMR, (player, stack) -> {
+        .withCompatibleAttachment(Attachments3.RMR, (player, stack) -> {
                 GL11.glTranslatef(-0.175F, -1.35F, -1.1F);
                 GL11.glScaled(0.36F, 0.36F, 0.36F);
         },(model) -> {
@@ -147,7 +148,7 @@ public class P226Factory implements GunFactory {
                 GL11.glScaled(0.2F, 0.2F, 0.2F);
             }
         })
-        .withCompatibleAttachment(Attachments.BijiaReflex, (player, stack) -> {
+        .withCompatibleAttachment(Attachments3.BijiaReflex, (player, stack) -> {
             GL11.glTranslatef(-0.05F, -1.1F, -1.4F);
             GL11.glScaled(0.55F, 0.55F, 0.55F);
         },(model) -> {
@@ -312,12 +313,12 @@ public class P226Factory implements GunFactory {
                 GL11.glScaled(3F, 3F, 3F);
                 GL11.glTranslatef(0.145f, 0.66f, -1.9f);
                 
-                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.RMR)) {
+                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.RMR)) {
                     //System.out.println("Position me for Holo");
                     GL11.glTranslatef(0f, 0.22f, 0f);
                 } 
                 
-                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.BijiaReflex)) {
+                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.BijiaReflex)) {
                     //System.out.println("Position me for Holo");
                     GL11.glTranslatef(0f, 0.32f, 0f);
                 } 

@@ -5,6 +5,7 @@ import com.paneedah.mwc.init.MWCItems;
 import com.paneedah.mwc.models.*;
 import com.paneedah.mwc.proxies.CommonProxy;
 import com.paneedah.mwc.weapons.Attachments;
+import com.paneedah.mwc.weapons.Attachments3;
 import com.paneedah.mwc.weapons.AuxiliaryAttachments;
 import com.paneedah.mwc.weapons.Magazines;
 import com.paneedah.weaponlib.*;
@@ -495,7 +496,7 @@ public class M4A1Factory implements GunFactory {
                 GL11.glScaled(0F, 0F, 0F);
             }
         })
-	   .withCompatibleAttachment(Attachments.TritiumRearSights, renderContext -> {
+	   .withCompatibleAttachment(Attachments3.TritiumRearSights, renderContext -> {
            PlayerWeaponInstance instance = renderContext.getWeaponInstance();
            if(instance != null) {
                ItemAttachment<Weapon> activeAttachment = WeaponAttachmentAspect.getActiveAttachment(
@@ -515,7 +516,7 @@ public class M4A1Factory implements GunFactory {
            }
        }, false, false) //60
 	   
-	   .withCompatibleAttachment(Attachments.MBUSRearSights, renderContext -> {
+	   .withCompatibleAttachment(Attachments3.MBUSRearSights, renderContext -> {
            PlayerWeaponInstance instance = renderContext.getWeaponInstance();
            if(instance != null) {
                ItemAttachment<Weapon> activeAttachment = WeaponAttachmentAspect.getActiveAttachment(
@@ -535,14 +536,14 @@ public class M4A1Factory implements GunFactory {
            }
        }, false, false)
 	   
-	   .withCompatibleAttachment(Attachments.HK416RearSights, (model) -> {
+	   .withCompatibleAttachment(Attachments3.HK416RearSights, (model) -> {
            if(model instanceof G95_upright_rearsights) {
         	   GL11.glTranslatef(-0.158F, -1.53F, -0.2F);
                GL11.glScaled(0.32F, 0.32F, 0.32F);
            }
        })
 	   
-		 .withCompatibleAttachment(Attachments.AKMIron, renderContext -> {
+		 .withCompatibleAttachment(Attachments3.AKMIron, renderContext -> {
              PlayerWeaponInstance instance = renderContext.getWeaponInstance();
              if(instance != null) {
                  ItemAttachment<Weapon> activeAttachment = WeaponAttachmentAspect.getActiveAttachment(
@@ -604,7 +605,7 @@ public class M4A1Factory implements GunFactory {
             }
         }, false, false)
         
-        .withCompatibleAttachment(Attachments.NightRaider, renderContext -> {
+        .withCompatibleAttachment(Attachments3.NightRaider, renderContext -> {
             PlayerWeaponInstance instance = renderContext.getWeaponInstance();
             if(instance != null) {
                 ItemAttachment<Weapon> activeAttachment = WeaponAttachmentAspect.getActiveAttachment(
@@ -624,7 +625,7 @@ public class M4A1Factory implements GunFactory {
             }
         }, false, false)
         
-		.withCompatibleAttachment(Attachments.ACOG, renderContext -> {
+		.withCompatibleAttachment(Attachments3.ACOG, renderContext -> {
 		    PlayerWeaponInstance instance = renderContext.getWeaponInstance();
             if(instance != null) {
                 ItemAttachment<Weapon> activeAttachment = WeaponAttachmentAspect.getActiveAttachment(
@@ -648,7 +649,7 @@ public class M4A1Factory implements GunFactory {
             }
         }, false, false)
 		
-		.withCompatibleAttachment(Attachments.Specter, renderContext -> {
+		.withCompatibleAttachment(Attachments3.Specter, renderContext -> {
             PlayerWeaponInstance instance = renderContext.getWeaponInstance();
             if(instance != null) {
                 ItemAttachment<Weapon> activeAttachment = WeaponAttachmentAspect.getActiveAttachment(
@@ -668,7 +669,7 @@ public class M4A1Factory implements GunFactory {
             }
         }, false, false)
 		
-		.withCompatibleAttachment(Attachments.LeupoldRailScope, renderContext -> {
+		.withCompatibleAttachment(Attachments3.LeupoldRailScope, renderContext -> {
 		    PlayerWeaponInstance instance = renderContext.getWeaponInstance();
             if(instance != null) {
                 ItemAttachment<Weapon> activeAttachment = WeaponAttachmentAspect.getActiveAttachment(
@@ -687,7 +688,7 @@ public class M4A1Factory implements GunFactory {
                 GL11.glScaled(0.04F, 0.04F, 0.04F);
             }
         }, false, false)
-		.withCompatibleAttachment(Attachments.MicroReflex, renderContext -> {
+		.withCompatibleAttachment(Attachments3.MicroReflex, renderContext -> {
 		    PlayerWeaponInstance instance = renderContext.getWeaponInstance();
             if(instance != null) {
                 ItemAttachment<Weapon> activeAttachment = WeaponAttachmentAspect.getActiveAttachment(
@@ -710,7 +711,7 @@ public class M4A1Factory implements GunFactory {
             }
 		}, false, false)
 		
-		.withCompatibleAttachment(Attachments.Reflex, renderContext -> {
+		.withCompatibleAttachment(Attachments3.Reflex, renderContext -> {
 		    PlayerWeaponInstance instance = renderContext.getWeaponInstance();
             if(instance != null) {
                 ItemAttachment<Weapon> activeAttachment = WeaponAttachmentAspect.getActiveAttachment(
@@ -729,7 +730,7 @@ public class M4A1Factory implements GunFactory {
                 GL11.glScaled(0.15F, 0.15F, 0.15F);
 			}
 		}, false, false)
-		.withCompatibleAttachment(Attachments.BijiaReflex, renderContext -> {
+		.withCompatibleAttachment(Attachments3.BijiaReflex, renderContext -> {
 		    PlayerWeaponInstance instance = renderContext.getWeaponInstance();
             if(instance != null) {
                 ItemAttachment<Weapon> activeAttachment = WeaponAttachmentAspect.getActiveAttachment(
@@ -749,7 +750,7 @@ public class M4A1Factory implements GunFactory {
         }
 		}, false, false)
 		
-		.withCompatibleAttachment(Attachments.Holographic, renderContext -> {
+		.withCompatibleAttachment(Attachments3.Holographic, renderContext -> {
 		    PlayerWeaponInstance instance = renderContext.getWeaponInstance();
             if(instance != null) {
                 ItemAttachment<Weapon> activeAttachment = WeaponAttachmentAspect.getActiveAttachment(
@@ -769,7 +770,7 @@ public class M4A1Factory implements GunFactory {
 	            }
 	        }, false, false)
 		
-		.withCompatibleAttachment(Attachments.HolographicAlt, renderContext -> {
+		.withCompatibleAttachment(Attachments3.HolographicAlt, renderContext -> {
 		    PlayerWeaponInstance instance = renderContext.getWeaponInstance();
             if(instance != null) {
                 ItemAttachment<Weapon> activeAttachment = WeaponAttachmentAspect.getActiveAttachment(
@@ -789,7 +790,7 @@ public class M4A1Factory implements GunFactory {
             }
         }, false, false)
 		
-		.withCompatibleAttachment(Attachments.EotechHybrid2, renderContext -> {
+		.withCompatibleAttachment(Attachments3.EotechHybrid2, renderContext -> {
             PlayerWeaponInstance instance = renderContext.getWeaponInstance();
             if(instance != null) {
                 ItemAttachment<Weapon> activeAttachment = WeaponAttachmentAspect.getActiveAttachment(
@@ -813,7 +814,7 @@ public class M4A1Factory implements GunFactory {
             }
         }, false, false)
 	    
-	    .withCompatibleAttachment(Attachments.VortexRedux, renderContext -> {
+	    .withCompatibleAttachment(Attachments3.VortexRedux, renderContext -> {
 	        PlayerWeaponInstance instance = renderContext.getWeaponInstance();
             if(instance != null) {
                 ItemAttachment<Weapon> activeAttachment = WeaponAttachmentAspect.getActiveAttachment(
@@ -833,7 +834,7 @@ public class M4A1Factory implements GunFactory {
 	        }
 	    }, false, false)
 	    
-		.withCompatibleAttachment(Attachments.Kobra, renderContext -> {
+		.withCompatibleAttachment(Attachments3.Kobra, renderContext -> {
 		    PlayerWeaponInstance instance = renderContext.getWeaponInstance();
             if(instance != null) {
                 ItemAttachment<Weapon> activeAttachment = WeaponAttachmentAspect.getActiveAttachment(
@@ -853,7 +854,7 @@ public class M4A1Factory implements GunFactory {
             }
         }, false, false)
 		
-		.withCompatibleAttachment(Attachments.KobraGen3, renderContext -> {
+		.withCompatibleAttachment(Attachments3.KobraGen3, renderContext -> {
 		    PlayerWeaponInstance instance = renderContext.getWeaponInstance();
             if(instance != null) {
                 ItemAttachment<Weapon> activeAttachment = WeaponAttachmentAspect.getActiveAttachment(
@@ -873,7 +874,7 @@ public class M4A1Factory implements GunFactory {
             }
         }, false, false)
 		
-		.withCompatibleAttachment(Attachments.MicroT1, renderContext -> {
+		.withCompatibleAttachment(Attachments3.MicroT1, renderContext -> {
 		    PlayerWeaponInstance instance = renderContext.getWeaponInstance();
             if(instance != null) {
                 ItemAttachment<Weapon> activeAttachment = WeaponAttachmentAspect.getActiveAttachment(
@@ -893,7 +894,7 @@ public class M4A1Factory implements GunFactory {
                 }
             }, false, false)
 		
-		.withCompatibleAttachment(Attachments.AimpointCompM5, renderContext -> {
+		.withCompatibleAttachment(Attachments3.AimpointCompM5, renderContext -> {
 		    PlayerWeaponInstance instance = renderContext.getWeaponInstance();
             if(instance != null) {
                 ItemAttachment<Weapon> activeAttachment = WeaponAttachmentAspect.getActiveAttachment(
@@ -912,40 +913,40 @@ public class M4A1Factory implements GunFactory {
                 GL11.glScaled(0.15F, 0.15F, 0.15F);
             }
         }, false, false)
-		.withCompatibleAttachment(Attachments.Grip2, (model) -> {
+		.withCompatibleAttachment(Attachments3.Grip2, (model) -> {
 			GL11.glTranslatef(-0.2F, -0.38F, -2.5F);
 			GL11.glScaled(1F, 1F, 1F);
 		})
-		.withCompatibleAttachment(Attachments.JunoGrip, (model) -> {
+		.withCompatibleAttachment(Attachments3.JunoGrip, (model) -> {
             GL11.glTranslatef(-0.23F, -0.7F, -2.81F);
             GL11.glScaled(0.8F, 0.8F, 0.8F);
         })
-		.withCompatibleAttachment(Attachments.StubbyGrip, (model) -> {
+		.withCompatibleAttachment(Attachments3.StubbyGrip, (model) -> {
 		    GL11.glTranslatef(-0.2F, -0.38F, -2.5F);
             GL11.glScaled(1F, 1F, 1F);
 		})
-		.withCompatibleAttachment(Attachments.AngledGrip, (model) -> {
+		.withCompatibleAttachment(Attachments3.AngledGrip, (model) -> {
 		    GL11.glTranslatef(-0.2F, -0.25F, -2.9F);
             GL11.glScaled(1F, 1F, 1F);
 		})
-		.withCompatibleAttachment(Attachments.VGrip, (model) -> {
+		.withCompatibleAttachment(Attachments3.VGrip, (model) -> {
 		    GL11.glTranslatef(-0.2F, -0.41F, -2.5F);
             GL11.glScaled(1F, 1F, 1F);
 		})
-		.withCompatibleAttachment(Attachments.Bipod, (model) -> {
+		.withCompatibleAttachment(Attachments3.Bipod, (model) -> {
 			GL11.glTranslatef(-0.18F, -0.38F, -3.5F);
             GL11.glScaled(0.8F, 0.8F, 0.8F);
 		})
-		.withCompatibleAttachment(Attachments.Laser2, (p, s) -> {
+		.withCompatibleAttachment(Attachments3.Laser2, (p, s) -> {
 		    GL11.glTranslatef(-0.22F, -1.18F, -3F);
             GL11.glScaled(0.8F, 0.8F, 0.8F);
             GL11.glRotatef(-90F, 0f, 0f, 1f);
 		})
-		.withCompatibleAttachment(Attachments.Laser, (p, s) -> {
+		.withCompatibleAttachment(Attachments3.Laser, (p, s) -> {
 			GL11.glTranslatef(0.05F, -1.18F, -3.9F);
 			GL11.glScaled(0.8F, 0.8F, 0.8F);
 		})
-		.withCompatibleAttachment(Attachments.Silencer556x45, (model) -> {
+		.withCompatibleAttachment(Attachments3.Silencer556x45, (model) -> {
 			GL11.glTranslatef(-0.2F, -1.235F, -6.5F);
 			GL11.glScaled(1F, 1F, 1F);
 		})
@@ -1115,7 +1116,7 @@ public class M4A1Factory implements GunFactory {
 				} 
 				
 				// Standard Iron Sight Zoom
-				if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.TritiumRearSights)) {
+				if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.TritiumRearSights)) {
 					//System.out.println("Position me for Acog");
 				    RenderContext<?> rc = (RenderContext<?>) renderContext;
                     ItemAttachment<Weapon> activeAttachment = WeaponAttachmentAspect.getActiveAttachment(
@@ -1128,12 +1129,12 @@ public class M4A1Factory implements GunFactory {
 				} 
 				
 				// Standard Iron Sight Zoom
-				if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.HK416RearSights)) {
+				if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.HK416RearSights)) {
                         GL11.glTranslatef(0F, 0.03f, 0f);
 				} 
 				
 				// Standard Iron Sight Zoom
-				if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.MicroReflex)) {
+				if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.MicroReflex)) {
 					//System.out.println("Position me for Acog");
 				    RenderContext<?> rc = (RenderContext<?>) renderContext;
                     ItemAttachment<Weapon> activeAttachment = WeaponAttachmentAspect.getActiveAttachment(
@@ -1146,7 +1147,7 @@ public class M4A1Factory implements GunFactory {
 				} 
 				
 				// Standard Iron Sight Zoom
-                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.NightRaider)) {
+                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.NightRaider)) {
                     //System.out.println("Position me for Acog");
                     RenderContext<?> rc = (RenderContext<?>) renderContext;
                     ItemAttachment<Weapon> activeAttachment = WeaponAttachmentAspect.getActiveAttachment(
@@ -1159,7 +1160,7 @@ public class M4A1Factory implements GunFactory {
                 } 
 				
 				// Standard Iron Sight Zoom
-				if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.AKMIron)) {
+				if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.AKMIron)) {
 					//System.out.println("Position me for Acog");
 				    RenderContext<?> rc = (RenderContext<?>) renderContext;
                     ItemAttachment<Weapon> activeAttachment = WeaponAttachmentAspect.getActiveAttachment(
@@ -1172,7 +1173,7 @@ public class M4A1Factory implements GunFactory {
 				} 
 				
 				// ACOG Zoom
-				if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.ACOG)) {
+				if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.ACOG)) {
 					//System.out.println("Position me for Acog");
 				    RenderContext<?> rc = (RenderContext<?>) renderContext;
                     ItemAttachment<Weapon> activeAttachment = WeaponAttachmentAspect.getActiveAttachment(
@@ -1185,7 +1186,7 @@ public class M4A1Factory implements GunFactory {
 				} 
 				
 				// ACOG Zoom
-                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.Specter)) {
+                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.Specter)) {
                     //System.out.println("Position me for Acog");
                     RenderContext<?> rc = (RenderContext<?>) renderContext;
                     ItemAttachment<Weapon> activeAttachment = WeaponAttachmentAspect.getActiveAttachment(
@@ -1198,7 +1199,7 @@ public class M4A1Factory implements GunFactory {
                 } 
 
 				// HP Zoomw
-				if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.LeupoldRailScope)) {
+				if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.LeupoldRailScope)) {
 					//System.out.println("Position me for Acog");
 				    RenderContext<?> rc = (RenderContext<?>) renderContext;
                     ItemAttachment<Weapon> activeAttachment = WeaponAttachmentAspect.getActiveAttachment(
@@ -1211,7 +1212,7 @@ public class M4A1Factory implements GunFactory {
 				} 
 				
 				// Reflex Zoom
-				if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.Reflex)) {
+				if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.Reflex)) {
 					//System.out.println("Position me for Reflex");
 				    RenderContext<?> rc = (RenderContext<?>) renderContext;
                     ItemAttachment<Weapon> activeAttachment = WeaponAttachmentAspect.getActiveAttachment(
@@ -1224,7 +1225,7 @@ public class M4A1Factory implements GunFactory {
 				} 
 				
 				// Reflex Zoom
-                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.BijiaReflex)) {
+                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.BijiaReflex)) {
                     //System.out.println("Position me for Reflex");
                     RenderContext<?> rc = (RenderContext<?>) renderContext;
                     ItemAttachment<Weapon> activeAttachment = WeaponAttachmentAspect.getActiveAttachment(
@@ -1237,7 +1238,7 @@ public class M4A1Factory implements GunFactory {
                 } 
 				
 				// Holo Zoom
-				if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.Holographic)) {
+				if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.Holographic)) {
 					//System.out.println("Position me for Holo");
 				    RenderContext<?> rc = (RenderContext<?>) renderContext;
                     ItemAttachment<Weapon> activeAttachment = WeaponAttachmentAspect.getActiveAttachment(
@@ -1250,7 +1251,7 @@ public class M4A1Factory implements GunFactory {
 				} 
 				
 				// Holo Zoom
-                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.HolographicAlt)) {
+                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.HolographicAlt)) {
                     //System.out.println("Position me for Holo");
                     RenderContext<?> rc = (RenderContext<?>) renderContext;
                     ItemAttachment<Weapon> activeAttachment = WeaponAttachmentAspect.getActiveAttachment(
@@ -1263,7 +1264,7 @@ public class M4A1Factory implements GunFactory {
                 } 
                 
              // Holo Zoom
-                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.EotechHybrid2)) {
+                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.EotechHybrid2)) {
                     //System.out.println("Position me for Holo");
                     RenderContext<?> rc = (RenderContext<?>) renderContext;
                     ItemAttachment<Weapon> activeAttachment = WeaponAttachmentAspect.getActiveAttachment(
@@ -1276,7 +1277,7 @@ public class M4A1Factory implements GunFactory {
                 } 
 				
 				// Holo Zoom
-                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.VortexRedux)) {
+                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.VortexRedux)) {
                     //System.out.println("Position me for Holo");
                     RenderContext<?> rc = (RenderContext<?>) renderContext;
                     ItemAttachment<Weapon> activeAttachment = WeaponAttachmentAspect.getActiveAttachment(
@@ -1289,7 +1290,7 @@ public class M4A1Factory implements GunFactory {
                 } 
 				
 				// Reflex Zoom
-				if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.Kobra)) {
+				if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.Kobra)) {
 					//System.out.println("Position me for Reflex");
 				    RenderContext<?> rc = (RenderContext<?>) renderContext;
                     ItemAttachment<Weapon> activeAttachment = WeaponAttachmentAspect.getActiveAttachment(
@@ -1302,7 +1303,7 @@ public class M4A1Factory implements GunFactory {
 				} 
 				
 				// Reflex Zoom
-				if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.KobraGen3)) {
+				if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.KobraGen3)) {
 					//System.out.println("Position me for Reflex");
 				    RenderContext<?> rc = (RenderContext<?>) renderContext;
                     ItemAttachment<Weapon> activeAttachment = WeaponAttachmentAspect.getActiveAttachment(
@@ -1315,7 +1316,7 @@ public class M4A1Factory implements GunFactory {
 				} 
 				
 				// Reflex Zoom
-                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.MicroT1)) {
+                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.MicroT1)) {
                     //System.out.println("Position me for Reflex");
                     RenderContext<?> rc = (RenderContext<?>) renderContext;
                     ItemAttachment<Weapon> activeAttachment = WeaponAttachmentAspect.getActiveAttachment(
@@ -1328,7 +1329,7 @@ public class M4A1Factory implements GunFactory {
                 } 
                 
              // Reflex Zoom
-                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.AimpointCompM5)) {
+                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.AimpointCompM5)) {
                     //System.out.println("Position me for Reflex");
                     RenderContext<?> rc = (RenderContext<?>) renderContext;
                     ItemAttachment<Weapon> activeAttachment = WeaponAttachmentAspect.getActiveAttachment(

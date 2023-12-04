@@ -4,6 +4,7 @@ import com.paneedah.mwc.ModernWarfareMod;
 import com.paneedah.mwc.models.*;
 import com.paneedah.mwc.proxies.CommonProxy;
 import com.paneedah.mwc.weapons.Attachments;
+import com.paneedah.mwc.weapons.Attachments3;
 import com.paneedah.mwc.weapons.AuxiliaryAttachments;
 import com.paneedah.mwc.wearables.Bullets;
 import com.paneedah.weaponlib.AttachmentCategory;
@@ -101,7 +102,7 @@ public class G2ContenderFactory implements GunFactory {
         	GL11.glRotatef(90F, 1f, 0f, 0f);
           GL11.glScaled(0.5F, 0.5F, 0.5F);
         })
-        .withCompatibleAttachment(Attachments.LeupoldRailScope, (player, stack) -> {
+        .withCompatibleAttachment(Attachments3.LeupoldRailScope, (player, stack) -> {
         	GL11.glTranslatef(-0.115F, -0.57F, -2F);
             GL11.glScaled(0.48F, 0.48F, 0.48F);
 		},(model) -> {
@@ -693,7 +694,7 @@ public class G2ContenderFactory implements GunFactory {
                     }, 260, 0)
                 )
             
-            .withFirstPersonCustomPositioningReloading(Attachments.LeupoldRailScope.getRenderablePart(),
+            .withFirstPersonCustomPositioningReloading(Attachments3.LeupoldRailScope.getRenderablePart(),
             		// left hand grabs double-barrel
                     
                     new Transition((renderContext) -> { // Reload position
@@ -1044,7 +1045,7 @@ public class G2ContenderFactory implements GunFactory {
                 GL11.glTranslatef(0.250000f, 0.23f, -1f);
                 
 //              // Holo Zoom
-                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.LeupoldRailScope)) {
+                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.LeupoldRailScope)) {
                     //System.out.println("Position me for Holo");
                 	GL11.glTranslatef(0f, 0.27f, 1f);
                 } 
@@ -1064,7 +1065,7 @@ public class G2ContenderFactory implements GunFactory {
 //                GL11.glRotatef(-2.5F, 0f, 1f, 0f);
                 
 //              // Holo Zoom
-                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.LeupoldRailScope)) {
+                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.LeupoldRailScope)) {
                     //System.out.println("Position me for Holo");
                 	GL11.glTranslatef(0f, 0.27f, 0.5f);
                 } 

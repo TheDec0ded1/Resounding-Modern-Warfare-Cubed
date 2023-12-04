@@ -1,13 +1,15 @@
 package com.paneedah.mwc.models;
 
 import com.paneedah.weaponlib.ModelWithAttachments;
-
 import net.minecraft.client.model.ModelBox;
 import net.minecraft.client.model.ModelRenderer;
 import net.minecraft.entity.Entity;
-// Made with Blockbench
-// Paste this code into your mod.
-// Make sure to generate all required imports
+
+
+// Made with Blockbench 4.8.3
+// Exported for Minecraft version 1.7 - 1.12
+// Paste this class into your mod and generate all required imports
+
 
 public class AK102 extends ModelWithAttachments {
 	private final ModelRenderer gun1;
@@ -270,6 +272,7 @@ public class AK102 extends ModelWithAttachments {
 	private final ModelRenderer gun375;
 	private final ModelRenderer gun372;
 	private final ModelRenderer gun369;
+	private final ModelRenderer gun48;
 
 	public AK102() {
 		textureWidth = 512;
@@ -277,43 +280,54 @@ public class AK102 extends ModelWithAttachments {
 
 		gun1 = new ModelRenderer(this);
 		gun1.setRotationPoint(-3.5F, -7.0F, -7.0F);
+		
 
 		gun2 = new ModelRenderer(this);
 		gun2.setRotationPoint(-3.5F, -2.5F, -6.0F);
 		setRotationAngle(gun2, 0.481F, 0.0F, 0.0F);
+		
 
 		gun3 = new ModelRenderer(this);
 		gun3.setRotationPoint(-3.5F, -6.0F, 2.0F);
 		setRotationAngle(gun3, -2.5281F, 0.0F, 0.0F);
+		
 
 		gun4 = new ModelRenderer(this);
 		gun4.setRotationPoint(-3.5F, 6.5F, -1.0F);
+		
 
 		gun5 = new ModelRenderer(this);
 		gun5.setRotationPoint(-3.5F, -4.5F, -1.5F);
 		setRotationAngle(gun5, 0.481F, 0.0F, 0.0F);
+		
 
 		gun6 = new ModelRenderer(this);
 		gun6.setRotationPoint(-3.5F, 8.5F, 3.0F);
 		setRotationAngle(gun6, 2.491F, 0.0F, 0.0F);
+		
 
 		gun7 = new ModelRenderer(this);
 		gun7.setRotationPoint(-3.5F, 5.2F, 4.2F);
 		setRotationAngle(gun7, -0.6692F, 0.0F, 0.0F);
+		
 
 		gun8 = new ModelRenderer(this);
 		gun8.setRotationPoint(-3.5F, -6.5F, -7.0F);
+		
 
 		gun9 = new ModelRenderer(this);
 		gun9.setRotationPoint(-3.5F, -2.5F, -7.0F);
 		setRotationAngle(gun9, 1.2269F, 0.0F, 0.0F);
+		
 
 		gun10 = new ModelRenderer(this);
 		gun10.setRotationPoint(-3.5F, -6.0F, -0.4F);
+		
 
 		gun11 = new ModelRenderer(this);
 		gun11.setRotationPoint(-3.5F, -5.2F, 0.67F);
 		setRotationAngle(gun11, -2.1564F, 0.0F, 0.0F);
+		
 
 		gun12 = new ModelRenderer(this);
 		gun12.setRotationPoint(-3.2F, -7.5F, -7.5F);
@@ -403,30 +417,38 @@ public class AK102 extends ModelWithAttachments {
 		gun31 = new ModelRenderer(this);
 		gun31.setRotationPoint(-3.6F, -3.5F, -5.9F);
 		setRotationAngle(gun31, 0.481F, 0.0F, 0.0F);
+		
 
 		gun32 = new ModelRenderer(this);
 		gun32.setRotationPoint(-0.4F, -3.5F, -5.9F);
 		setRotationAngle(gun32, 0.481F, 0.0F, 0.0F);
+		
 
 		gun33 = new ModelRenderer(this);
 		gun33.setRotationPoint(-0.4F, -5.8F, -6.5F);
+		
 
 		gun34 = new ModelRenderer(this);
 		gun34.setRotationPoint(-3.6F, -5.8F, -6.5F);
+		
 
 		gun35 = new ModelRenderer(this);
 		gun35.setRotationPoint(-3.6F, -4.8F, -6.5F);
 		setRotationAngle(gun35, 0.4461F, 0.0F, 0.0F);
+		
 
 		gun36 = new ModelRenderer(this);
 		gun36.setRotationPoint(-0.4F, -4.8F, -6.5F);
 		setRotationAngle(gun36, 0.4461F, 0.0F, 0.0F);
+		
 
 		gun37 = new ModelRenderer(this);
 		gun37.setRotationPoint(-0.4F, -4.8F, -5.0F);
+		
 
 		gun38 = new ModelRenderer(this);
 		gun38.setRotationPoint(-3.6F, -4.8F, -5.0F);
+		
 
 		gun39 = new ModelRenderer(this);
 		gun39.setRotationPoint(-3.7F, -8.0F, -35.5F);
@@ -487,6 +509,7 @@ public class AK102 extends ModelWithAttachments {
 		gun80 = new ModelRenderer(this);
 		gun80.setRotationPoint(-0.3F, -12.0F, -21.5F);
 		gun80.cubeList.add(new ModelBox(gun80, 100, 0, 0.0F, 0.0F, 0.0F, 1, 5, 25, 0.0F, true));
+		gun80.cubeList.add(new ModelBox(gun80, 100, 0, -3.4F, 0.0F, -13.0F, 1, 1, 25, 0.0F, true));
 
 		gun81 = new ModelRenderer(this);
 		gun81.setRotationPoint(-0.3F, -12.0F, -24.5F);
@@ -865,10 +888,12 @@ public class AK102 extends ModelWithAttachments {
 		gun278 = new ModelRenderer(this);
 		gun278.setRotationPoint(-2.0F, -15.1F, -62.0F);
 		setRotationAngle(gun278, -0.5205F, 0.0F, 0.0F);
+		
 
 		gun280 = new ModelRenderer(this);
 		gun280.setRotationPoint(-2.0F, -14.2F, -62.4F);
 		setRotationAngle(gun280, -0.8551F, 0.0F, 0.0F);
+		
 
 		gun281 = new ModelRenderer(this);
 		gun281.setRotationPoint(-2.0F, -11.4F, -75.0F);
@@ -1006,6 +1031,7 @@ public class AK102 extends ModelWithAttachments {
 		gun314 = new ModelRenderer(this);
 		gun314.setRotationPoint(-2.0F, -12.2F, -65.0F);
 		setRotationAngle(gun314, 0.2603F, 0.0F, 0.0F);
+		
 
 		gun315 = new ModelRenderer(this);
 		gun315.setRotationPoint(-2.2F, -15.325F, -61.0F);
@@ -1124,17 +1150,21 @@ public class AK102 extends ModelWithAttachments {
 		gun344 = new ModelRenderer(this);
 		gun344.setRotationPoint(-2.0F, -9.5F, -72.5F);
 		setRotationAngle(gun344, 2.4538F, 0.0F, 0.0F);
+		
 
 		gun345 = new ModelRenderer(this);
 		gun345.setRotationPoint(-2.0F, -10.5F, -62.2F);
+		
 
 		gun346 = new ModelRenderer(this);
 		gun346.setRotationPoint(-2.0F, -9.5F, -61.2F);
 		setRotationAngle(gun346, 2.7512F, 0.0F, 0.0F);
+		
 
 		gun347 = new ModelRenderer(this);
 		gun347.setRotationPoint(-2.0F, -9.5F, -62.2F);
 		setRotationAngle(gun347, 2.0076F, 0.0F, 0.0F);
+		
 
 		gun350 = new ModelRenderer(this);
 		gun350.setRotationPoint(-0.7F, -16.6F, -39.5F);
@@ -1203,40 +1233,50 @@ public class AK102 extends ModelWithAttachments {
 
 		action1 = new ModelRenderer(this);
 		action1.setRotationPoint(-3.3F, -13.0F, -25.5F);
+		
 
 		action2 = new ModelRenderer(this);
 		action2.setRotationPoint(-3.5F, -13.0F, -33.5F);
+		
 
 		action3 = new ModelRenderer(this);
 		action3.setRotationPoint(-0.5F, -13.0F, -33.5F);
+		
 
 		action4 = new ModelRenderer(this);
 		action4.setRotationPoint(-1.5F, -15.0F, -39.5F);
 		setRotationAngle(action4, 0.0F, 0.0F, -1.1154F);
+		
 
 		action5 = new ModelRenderer(this);
 		action5.setRotationPoint(-1.5F, -15.0F, -39.5F);
 		setRotationAngle(action5, 0.0F, 0.0F, 1.1154F);
+		
 
 		action6 = new ModelRenderer(this);
 		action6.setRotationPoint(-0.6F, -14.5F, -33.5F);
 		setRotationAngle(action6, 0.0F, 0.0F, -0.2974F);
+		
 
 		action7 = new ModelRenderer(this);
 		action7.setRotationPoint(-2.4F, -14.5F, -33.5F);
 		setRotationAngle(action7, 0.0F, 0.0F, 0.2974F);
+		
 
 		action8 = new ModelRenderer(this);
 		action8.setRotationPoint(0.5F, -13.0F, -33.5F);
 		setRotationAngle(action8, 0.0F, 0.0F, 2.1564F);
+		
 
 		action9 = new ModelRenderer(this);
 		action9.setRotationPoint(-3.5F, -13.0F, -33.5F);
 		setRotationAngle(action9, 0.0F, 0.0F, -2.1564F);
+		
 
 		action10 = new ModelRenderer(this);
 		action10.setRotationPoint(-3.3F, -13.0F, -25.5F);
 		setRotationAngle(action10, 0.0F, 0.0F, -2.1564F);
+		
 
 		gun366 = new ModelRenderer(this);
 		gun366.setRotationPoint(-3.0F, -12.0F, -0.5F);
@@ -1287,25 +1327,31 @@ public class AK102 extends ModelWithAttachments {
 
 		action11 = new ModelRenderer(this);
 		action11.setRotationPoint(-3.8F, -12.5F, -33.5F);
+		
 
 		action12 = new ModelRenderer(this);
 		action12.setRotationPoint(-3.8F, -12.2F, -33.5F);
+		
 
 		action14 = new ModelRenderer(this);
 		action14.setRotationPoint(-3.8F, -12.3F, -31.6F);
 		setRotationAngle(action14, 0.0F, 2.9743F, 0.0F);
+		
 
 		action15 = new ModelRenderer(this);
 		action15.setRotationPoint(-3.8F, -12.3F, -31.5F);
 		setRotationAngle(action15, 0.0F, 2.7512F, 0.0F);
+		
 
 		action16 = new ModelRenderer(this);
 		action16.setRotationPoint(-3.8F, -12.5F, -32.8F);
 		setRotationAngle(action16, 0.0F, 0.0F, 1.3384F);
+		
 
 		action17 = new ModelRenderer(this);
 		action17.setRotationPoint(-5.8F, -12.3F, -32.0F);
 		setRotationAngle(action17, 0.0F, 2.6025F, 0.0F);
+		
 
 		gun370 = new ModelRenderer(this);
 		gun370.setRotationPoint(0.0F, -10.5F, -5.5F);
@@ -1351,6 +1397,14 @@ public class AK102 extends ModelWithAttachments {
 		gun369.setRotationPoint(0.0F, -10.5F, -19.5F);
 		setRotationAngle(gun369, -1.0782F, 0.0F, 0.0F);
 		gun369.cubeList.add(new ModelBox(gun369, 100, 0, 0.0F, 0.0F, 0.0F, 1, 2, 2, 0.0F, true));
+
+		gun48 = new ModelRenderer(this);
+		gun48.setRotationPoint(-2.0F, -15.1F, -62.0F);
+		gun48.cubeList.add(new ModelBox(gun48, 51, 59, 0.0F, 0.0F, 0.998F, 1, 1, 2, 0.0F, false));
+		gun48.cubeList.add(new ModelBox(gun48, 164, 15, 0.2F, -0.9F, -0.001F, 1, 1, 1, 0.0F, false));
+		gun48.cubeList.add(new ModelBox(gun48, 132, 30, -0.2F, -0.901F, -0.002F, 1, 1, 1, 0.0F, false));
+		gun48.cubeList.add(new ModelBox(gun48, 164, 9, 0.199F, -0.901F, 0.598F, 1, 1, 1, 0.0F, false));
+		gun48.cubeList.add(new ModelBox(gun48, 144, 16, -0.201F, -0.902F, 0.597F, 1, 1, 1, 0.0F, false));
 	}
 
 	@Override
@@ -1612,7 +1666,9 @@ public class AK102 extends ModelWithAttachments {
 		gun375.render(f5);
 		gun372.render(f5);
 		gun369.render(f5);
+		gun48.render(f5);
 	}
+
 	public void setRotationAngle(ModelRenderer modelRenderer, float x, float y, float z) {
 		modelRenderer.rotateAngleX = x;
 		modelRenderer.rotateAngleY = y;

@@ -8,6 +8,7 @@ import com.paneedah.mwc.models.APSslide;
 import com.paneedah.mwc.models.makarovfrontsight;
 import com.paneedah.mwc.proxies.CommonProxy;
 import com.paneedah.mwc.weapons.Attachments;
+import com.paneedah.mwc.weapons.Attachments3;
 import com.paneedah.mwc.weapons.AuxiliaryAttachments;
 import com.paneedah.mwc.weapons.Magazines;
 import com.paneedah.weaponlib.AttachmentCategory;
@@ -114,7 +115,7 @@ public class APSFactory implements GunFactory {
         .withCompatibleAttachment(Magazines.APSMag, (model) -> {
 //            GL11.glTranslatef(0F, 0.2F, 0.12F);
         })
-        .withCompatibleAttachment(Attachments.Silencer9mm, (model) -> {
+        .withCompatibleAttachment(Attachments3.Silencer9mm, (model) -> {
             GL11.glTranslatef(-0.215F, -1.05F, -4.52F);
             GL11.glScaled(1.1F, 1.1F, 1.3F);
         })
@@ -279,7 +280,7 @@ public class APSFactory implements GunFactory {
                 GL11.glScaled(3F, 3F, 3F);
                 GL11.glTranslatef(0.14f, 0.59f, -1.8f);
                 
-                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.RMR)) {
+                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.RMR)) {
                     //System.out.println("Position me for Holo");
                 } 
                 

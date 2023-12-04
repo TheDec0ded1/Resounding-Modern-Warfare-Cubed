@@ -6,6 +6,7 @@ import com.paneedah.mwc.models.Shotgun12Gauge;
 import com.paneedah.mwc.models.Shotgun12Gauge2;
 import com.paneedah.mwc.proxies.CommonProxy;
 import com.paneedah.mwc.weapons.Attachments;
+import com.paneedah.mwc.weapons.Attachments3;
 import com.paneedah.mwc.weapons.AuxiliaryAttachments;
 import com.paneedah.mwc.wearables.Bullets;
 import com.paneedah.weaponlib.RenderableState;
@@ -75,7 +76,7 @@ public class MP43EFactory implements GunFactory {
               GL11.glScaled(0.47F, 0.47F, 0.47F);
               }
         })
-//        .withCompatibleAttachment(Attachments.Silencer12Gauge, (model) -> {
+//        .withCompatibleAttachment(Attachments3.Silencer12Gauge, (model) -> {
 //            GL11.glTranslatef(-0.19F, -0.6F, -8F);
 //            GL11.glScaled(1.4F, 1.4F, 1.4F);
 //        })
@@ -132,7 +133,7 @@ public class MP43EFactory implements GunFactory {
 //                GL11.glRotatef(-2.5F, 0f, 1f, 0f);
                 
 //              // Holo Zoom
-                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.PSO1)) {
+                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.PSO1)) {
                     //System.out.println("Position me for Holo");
                 } 
                 
@@ -738,7 +739,7 @@ public class MP43EFactory implements GunFactory {
                 GL11.glTranslatef(0.250000f, 0.23f, -1.5f);
                 
 //              // Holo Zoom
-                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.PSO1)) {
+                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.PSO1)) {
                     //System.out.println("Position me for Holo");
                 } 
                 

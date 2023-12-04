@@ -5,7 +5,7 @@ import net.minecraft.client.model.ModelBox;
 import net.minecraft.client.model.ModelRenderer;
 import net.minecraft.entity.Entity;
 
-// Made with Blockbench 4.7.4
+// Made with Blockbench 4.8.3
 // Exported for Minecraft version 1.7 - 1.12
 // Paste this class into your mod and generate all required imports
 
@@ -140,6 +140,16 @@ public class NGSWR extends ModelWithAttachments {
 	private final ModelRenderer cube_r116;
 	private final ModelRenderer cube_r117;
 	private final ModelRenderer cube_r118;
+	private final ModelRenderer stock_adapter;
+	private final ModelRenderer cube_r127;
+	private final ModelRenderer cube_r128;
+	private final ModelRenderer cube_r129;
+	private final ModelRenderer cube_r130;
+	private final ModelRenderer cube_r131;
+	private final ModelRenderer cube_r132;
+	private final ModelRenderer cube_r133;
+	private final ModelRenderer cube_r134;
+	private final ModelRenderer cube_r135;
 
 	public NGSWR() {
 		textureWidth = 256;
@@ -1294,12 +1304,75 @@ public class NGSWR extends ModelWithAttachments {
 		handguard.addChild(cube_r118);
 		setRotationAngle(cube_r118, 1.1345F, 0.0F, -0.3491F);
 		cube_r118.cubeList.add(new ModelBox(cube_r118, 98, 19, -1.0F, -1.1F, 0.2F, 1, 1, 1, -0.002F, false));
+
+		stock_adapter = new ModelRenderer(this);
+		stock_adapter.setRotationPoint(0.0F, -11.3F, 6.9F);
+		stock_adapter.cubeList.add(new ModelBox(stock_adapter, 11, 23, -3.0F, -5.2F, 0.0F, 3, 4, 2, 0.0F, false));
+		stock_adapter.cubeList.add(new ModelBox(stock_adapter, 14, 14, -2.5F, -5.2F, 2.0F, 2, 4, 2, 0.0F, false));
+		stock_adapter.cubeList.add(new ModelBox(stock_adapter, 14, 48, -0.2F, -4.25F, 0.0F, 1, 2, 1, 0.0F, false));
+		stock_adapter.cubeList.add(new ModelBox(stock_adapter, 29, 35, -3.8F, -4.25F, 0.0F, 1, 2, 1, 0.0F, false));
+		stock_adapter.cubeList.add(new ModelBox(stock_adapter, 61, 15, -3.0F, -5.8F, 0.0F, 3, 1, 1, -0.001F, false));
+
+		cube_r127 = new ModelRenderer(this);
+		cube_r127.setRotationPoint(0.0F, -5.8F, 1.0F);
+		stock_adapter.addChild(cube_r127);
+		setRotationAngle(cube_r127, -0.7505F, 0.0F, 0.0F);
+		cube_r127.cubeList.add(new ModelBox(cube_r127, 9, 53, -3.0F, 0.0F, 0.0F, 3, 1, 1, -0.002F, false));
+
+		cube_r128 = new ModelRenderer(this);
+		cube_r128.setRotationPoint(-3.8F, -2.25F, 0.0F);
+		stock_adapter.addChild(cube_r128);
+		setRotationAngle(cube_r128, 0.0F, 0.0F, -0.925F);
+		cube_r128.cubeList.add(new ModelBox(cube_r128, 51, 41, 0.0F, 0.0F, 0.0F, 1, 1, 1, -0.001F, false));
+
+		cube_r129 = new ModelRenderer(this);
+		cube_r129.setRotationPoint(-3.8F, -4.25F, 0.0F);
+		stock_adapter.addChild(cube_r129);
+		setRotationAngle(cube_r129, 0.0F, 0.0F, 0.8029F);
+		cube_r129.cubeList.add(new ModelBox(cube_r129, 42, 35, 0.0F, -2.0F, 0.0F, 1, 2, 1, -0.001F, false));
+
+		cube_r130 = new ModelRenderer(this);
+		cube_r130.setRotationPoint(0.8F, -2.25F, 0.0F);
+		stock_adapter.addChild(cube_r130);
+		setRotationAngle(cube_r130, 0.0F, 0.0F, 0.925F);
+		cube_r130.cubeList.add(new ModelBox(cube_r130, 62, 41, -1.0F, 0.0F, 0.0F, 1, 1, 1, -0.001F, false));
+
+		cube_r131 = new ModelRenderer(this);
+		cube_r131.setRotationPoint(0.8F, -4.25F, 0.0F);
+		stock_adapter.addChild(cube_r131);
+		setRotationAngle(cube_r131, 0.0F, 0.0F, -0.8029F);
+		cube_r131.cubeList.add(new ModelBox(cube_r131, 43, 29, -1.0F, -2.0F, 0.0F, 1, 2, 1, -0.001F, false));
+
+		cube_r132 = new ModelRenderer(this);
+		cube_r132.setRotationPoint(-3.8F, -2.25F, 1.0F);
+		stock_adapter.addChild(cube_r132);
+		setRotationAngle(cube_r132, 0.0F, 0.4887F, 0.0F);
+		cube_r132.cubeList.add(new ModelBox(cube_r132, 51, 29, 0.0F, -2.0F, 0.0F, 1, 2, 2, 0.0F, false));
+
+		cube_r133 = new ModelRenderer(this);
+		cube_r133.setRotationPoint(0.8F, -2.25F, 1.0F);
+		stock_adapter.addChild(cube_r133);
+		setRotationAngle(cube_r133, 0.0F, -0.4887F, 0.0F);
+		cube_r133.cubeList.add(new ModelBox(cube_r133, 20, 59, -1.0F, -2.0F, 0.0F, 1, 2, 2, 0.0F, false));
+
+		cube_r134 = new ModelRenderer(this);
+		cube_r134.setRotationPoint(-3.0F, -1.2F, 2.0F);
+		stock_adapter.addChild(cube_r134);
+		setRotationAngle(cube_r134, 0.0F, 0.1571F, 0.0F);
+		cube_r134.cubeList.add(new ModelBox(cube_r134, 0, 14, 0.0F, -4.0F, 0.0F, 1, 4, 2, -0.001F, false));
+
+		cube_r135 = new ModelRenderer(this);
+		cube_r135.setRotationPoint(0.0F, -1.2F, 2.0F);
+		stock_adapter.addChild(cube_r135);
+		setRotationAngle(cube_r135, 0.0F, -0.1571F, 0.0F);
+		cube_r135.cubeList.add(new ModelBox(cube_r135, 0, 23, -1.0F, -4.0F, 0.0F, 1, 4, 2, -0.001F, false));
 	}
 
 	@Override
 	public void render(Entity entity, float f, float f1, float f2, float f3, float f4, float f5) {
 		gun.render(f5);
 		handguard.render(f5);
+		stock_adapter.render(f5);
 	}
 
 	public void setRotationAngle(ModelRenderer modelRenderer, float x, float y, float z) {

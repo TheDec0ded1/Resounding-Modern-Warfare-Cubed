@@ -4,6 +4,7 @@ import com.paneedah.mwc.ModernWarfareMod;
 import com.paneedah.mwc.models.BrowningAuto5;
 import com.paneedah.mwc.proxies.CommonProxy;
 import com.paneedah.mwc.weapons.Attachments;
+import com.paneedah.mwc.weapons.Attachments3;
 import com.paneedah.mwc.weapons.AuxiliaryAttachments;
 import com.paneedah.mwc.wearables.Bullets;
 import com.paneedah.weaponlib.RenderableState;
@@ -69,7 +70,7 @@ public class BrowningAuto5Factory implements GunFactory {
         })
         .withCompatibleAttachment(AuxiliaryAttachments.BrowningAuto5Action, true, (model) -> {
         })
-//        .withCompatibleAttachment(Attachments.Silencer12Gauge, (model) -> {
+//        .withCompatibleAttachment(Attachments3.Silencer12Gauge, (model) -> {
 //            GL11.glTranslatef(-0.19F, -0.6F, -8F);
 //            GL11.glScaled(1.4F, 1.4F, 1.4F);
 //        })
@@ -142,7 +143,7 @@ public class BrowningAuto5Factory implements GunFactory {
                 GL11.glRotatef(-1F, 1f, 0f, 0f);
                 
 //              // Holo Zoom
-                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.RMR)) {
+                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.RMR)) {
                     //System.out.println("Position me for Holo");
                 } 
                 
@@ -339,7 +340,7 @@ public class BrowningAuto5Factory implements GunFactory {
                 GL11.glTranslatef(0.08f, 0.13f, -2.5f);
                 
 //              // Holo Zoom
-                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.RMR)) {
+                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.RMR)) {
                     //System.out.println("Position me for Holo");
                 } 
                 

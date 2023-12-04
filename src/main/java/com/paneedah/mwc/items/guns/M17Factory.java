@@ -5,6 +5,7 @@ import com.paneedah.mwc.init.MWCItems;
 import com.paneedah.mwc.models.*;
 import com.paneedah.mwc.proxies.CommonProxy;
 import com.paneedah.mwc.weapons.Attachments;
+import com.paneedah.mwc.weapons.Attachments3;
 import com.paneedah.mwc.weapons.AuxiliaryAttachments;
 import com.paneedah.mwc.weapons.Magazines;
 import com.paneedah.weaponlib.AttachmentCategory;
@@ -109,16 +110,16 @@ public class M17Factory implements GunFactory {
 //            GL11.glTranslatef(0F, 0.8F, 0.2F);
         })
         
-        .withCompatibleAttachment(Attachments.Laser, (p, s) -> {
+        .withCompatibleAttachment(Attachments3.Laser, (p, s) -> {
             GL11.glTranslatef(0.01F, -0.72F, -2.1F);
             GL11.glScaled(1.1F, 1.1F, 1.1F);
             GL11.glRotatef(-90F, 0f, 0f, -4f);
         })
-        .withCompatibleAttachment(Attachments.Silencer9mm, (model) -> {
+        .withCompatibleAttachment(Attachments3.Silencer9mm, (model) -> {
             GL11.glTranslatef(-0.21F, -1.21F, -3.93F);
             GL11.glScaled(1.1F, 1.1F, 1.1F);
         })
-        .withCompatibleAttachment(Attachments.RMR, (player, stack) -> {
+        .withCompatibleAttachment(Attachments3.RMR, (player, stack) -> {
                 GL11.glTranslatef(-0.175F, -1.35F, -0.3F);
                 GL11.glScaled(0.4F, 0.4F, 0.4F);
         },(model) -> {
@@ -132,7 +133,7 @@ public class M17Factory implements GunFactory {
     
             .withModel(new M17())
             .withActionPiece(AuxiliaryAttachments.M17_Slide)
-            .withActionPiece(Attachments.RMR)
+            .withActionPiece(Attachments3.RMR)
             .withActionTransform(new Transform().withPosition(0, 0, 0.5))
             //.withTextureName("M9")
             //.withWeaponProximity(0.99F)
@@ -195,7 +196,7 @@ public class M17Factory implements GunFactory {
                 GL11.glScaled(3F, 3F, 3F);
                 GL11.glTranslatef(0.14f, 0.7f, -2.3f);
                 
-                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.RMR)) {
+                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.RMR)) {
                     //System.out.println("Position me for Holo");
                     GL11.glTranslatef(0f, 0.23f, 0f);
                 } 

@@ -7,6 +7,7 @@ import com.paneedah.mwc.models.M1911frontsight;
 import com.paneedah.mwc.models.makarovrearsight;
 import com.paneedah.mwc.proxies.CommonProxy;
 import com.paneedah.mwc.weapons.Attachments;
+import com.paneedah.mwc.weapons.Attachments3;
 import com.paneedah.mwc.weapons.AuxiliaryAttachments;
 import com.paneedah.mwc.weapons.Magazines;
 import com.paneedah.weaponlib.AttachmentCategory;
@@ -84,7 +85,7 @@ public class BrowningHiPowerFactory implements GunFactory {
         .withCompatibleAttachment(Magazines.HiPowerMag, (model) -> {
             GL11.glTranslatef(0F, 0.2F, 0.12F);
         })
-//        .withCompatibleAttachment(Attachments.Silencer45ACP, (model) -> {
+//        .withCompatibleAttachment(Attachments3.Silencer45ACP, (model) -> {
 //            GL11.glTranslatef(-0.23F, -1.14F, -4.92F);
 //            GL11.glScaled(1.5F, 1.5F, 1.5F);
 //        })
@@ -680,7 +681,7 @@ public class BrowningHiPowerFactory implements GunFactory {
                 GL11.glScaled(3F, 3F, 3F);
                 GL11.glTranslatef(0.350000f, 0.62f, -2f);
                 
-                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.RMR)) {
+                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.RMR)) {
                     //System.out.println("Position me for Holo");
                     GL11.glTranslatef(0f, 0.22f, 0f);
                 } 
@@ -699,7 +700,7 @@ public class BrowningHiPowerFactory implements GunFactory {
                 GL11.glRotatef(-8F, 1f, 0f, 0f);
                 GL11.glRotatef(-4F, 0f, 0f, 1f);
                 
-                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.RMR)) {
+                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.RMR)) {
                     //System.out.println("Position me for Holo");
                     GL11.glTranslatef(0f, 0.22f, 0f);
                 } 

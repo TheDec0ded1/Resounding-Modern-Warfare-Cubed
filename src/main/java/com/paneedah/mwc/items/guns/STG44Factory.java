@@ -4,11 +4,13 @@ import com.paneedah.mwc.ModernWarfareMod;
 import com.paneedah.mwc.models.*;
 import com.paneedah.mwc.proxies.CommonProxy;
 import com.paneedah.mwc.weapons.Attachments;
+import com.paneedah.mwc.weapons.Attachments3;
 import com.paneedah.mwc.weapons.AuxiliaryAttachments;
 import com.paneedah.mwc.weapons.Magazines;
 import com.paneedah.weaponlib.RenderableState;
 import com.paneedah.weaponlib.Weapon;
 import com.paneedah.weaponlib.WeaponRenderer;
+import com.paneedah.weaponlib.animation.Transform;
 import com.paneedah.weaponlib.animation.Transition;
 import com.paneedah.weaponlib.config.BalancePackManager.GunConfigurationGroup;
 import net.minecraft.item.Item;
@@ -69,7 +71,7 @@ public class STG44Factory {
 //        	GL11.glTranslatef(0F, 0.45F, -0.15F);
 //            GL11.glRotatef(-10F, 1f, 0f, 0f);
         })
-//        .withCompatibleAttachment(Attachments.Silencer762x39, (model) -> {
+//        .withCompatibleAttachment(Attachments3.Silencer762x39, (model) -> {
 //          GL11.glTranslatef(-0.2F, -1.06F, -7.55F);
 //          GL11.glScaled(1F, 1F, 1F);
 //        })
@@ -121,6 +123,8 @@ public class STG44Factory {
         .withRenderer(new WeaponRenderer.Builder()
     
             .withModel(new STG44())
+            .withActionPiece(AuxiliaryAttachments.STG44action)
+            .withActionTransform(new Transform().withPosition(0, 0, 1.5))
             //.withTextureName("AK47")
             //.withWeaponProximity(0.99F)
             //.withYOffsetZoom(5F)
@@ -701,13 +705,13 @@ public class STG44Factory {
 
                 
                 // ACOG Zoom
-                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.PSO1)) {
+                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.PSO1)) {
                     //System.out.println("Position me for Acog");
                     GL11.glTranslatef(-0.013F, 0.15f, 0.2f);
                 } 
                 
              // ACOG Zoom
-                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.OKP7)) {
+                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.OKP7)) {
                     //System.out.println("Position me for Acog");
                     GL11.glTranslatef(-0.05F, 0.11f, 0f);
                 } 
@@ -726,13 +730,13 @@ public class STG44Factory {
 
                 
              // ACOG Zoom
-                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.PSO1)) {
+                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.PSO1)) {
                     //System.out.println("Position me for Acog");
                     GL11.glTranslatef(-0.013F, 0.15f, 0.15f);
                 } 
                 
              // ACOG Zoom
-                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.OKP7)) {
+                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.OKP7)) {
                     //System.out.println("Position me for Acog");
                     GL11.glTranslatef(-0.05F, 0.11f, 0f);
                 } 

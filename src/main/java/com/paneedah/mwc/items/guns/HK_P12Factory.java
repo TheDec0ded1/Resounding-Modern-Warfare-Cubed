@@ -5,6 +5,7 @@ import com.paneedah.mwc.init.MWCItems;
 import com.paneedah.mwc.models.*;
 import com.paneedah.mwc.proxies.CommonProxy;
 import com.paneedah.mwc.weapons.Attachments;
+import com.paneedah.mwc.weapons.Attachments3;
 import com.paneedah.mwc.weapons.AuxiliaryAttachments;
 import com.paneedah.mwc.weapons.Magazines;
 import com.paneedah.weaponlib.*;
@@ -97,7 +98,7 @@ public class HK_P12Factory implements GunFactory {
             GL11.glTranslatef(-0.23f, -0.53f, -1.9f);
             GL11.glScaled(0.7F, 0.6F, 0.7F);
         })
-        .withCompatibleAttachment(Attachments.ACOG, (player, stack) -> {
+        .withCompatibleAttachment(Attachments3.ACOG, (player, stack) -> {
             GL11.glTranslatef(-0.37F, -1.37F, -0.55F);
             GL11.glScaled(1.03F, 1.03F, 1.03F);
         },(model) -> {
@@ -132,12 +133,12 @@ public class HK_P12Factory implements GunFactory {
 //          GL11.glTranslatef(-0F, -0.17F, 0.53F);
 //        	GL11.glRotatef(45F, 1f, 0f, 0f);
         })
-        .withCompatibleAttachment(Attachments.Laser, (p, s) -> {
+        .withCompatibleAttachment(Attachments3.Laser, (p, s) -> {
             GL11.glTranslatef(0.01F, -0.65F, -2.3F);
             GL11.glScaled(1.1F, 1.1F, 1.1F);
             GL11.glRotatef(-90F, 0f, 0f, -4f);
         })
-        .withCompatibleAttachment(Attachments.RMR, (player, stack) -> {
+        .withCompatibleAttachment(Attachments3.RMR, (player, stack) -> {
             GL11.glTranslatef(-0.175F, -1.35F, -0.3F);
             GL11.glScaled(0.4F, 0.4F, 0.4F);
 	    },(model) -> {
@@ -146,7 +147,7 @@ public class HK_P12Factory implements GunFactory {
 	            GL11.glScaled(0.2F, 0.2F, 0.2F);
 	        }
 	    })
-        .withCompatibleAttachment(Attachments.BijiaReflex, (player, stack) -> {
+        .withCompatibleAttachment(Attachments3.BijiaReflex, (player, stack) -> {
             GL11.glTranslatef(-0.05F, -1.1F, -1.4F);
             GL11.glScaled(0.55F, 0.55F, 0.55F);
         },(model) -> {
@@ -155,16 +156,16 @@ public class HK_P12Factory implements GunFactory {
             GL11.glScaled(0.15F, 0.15F, 0.15F);
         }
         })
-//        .withCompatibleAttachment(Attachments.USPMatchCompensator, (model) -> {
+//        .withCompatibleAttachment(Attachments3.USPMatchCompensator, (model) -> {
 ////            GL11.glTranslatef(-0.23F, -1.14F, -4.92F);
 ////            GL11.glScaled(1.5F, 1.5F, 1.5F);
 //        })
-        .withCompatibleAttachment(Attachments.Silencer45ACP, renderContext -> {
+        .withCompatibleAttachment(Attachments3.Silencer45ACP, renderContext -> {
             PlayerWeaponInstance instance = renderContext.getWeaponInstance();
             if(instance != null) {
                 ItemAttachment<Weapon> activeAttachment = WeaponAttachmentAspect.getActiveAttachment(
                         AttachmentCategory.GRIP, instance);
-                if(activeAttachment == Attachments.USPMatchCompensator) {
+                if(activeAttachment == Attachments3.USPMatchCompensator) {
                 	GL11.glTranslatef(-0.23F, -1.14F, -4.92F);
                     GL11.glScaled(1.5F, 1.5F, 1.5F);
                 } else {
@@ -331,12 +332,12 @@ public class HK_P12Factory implements GunFactory {
                 GL11.glScaled(3F, 3F, 3F);
                 GL11.glTranslatef(0.15f, 0.67f, -2f);
                 
-                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.ACOG)) {
+                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.ACOG)) {
                     //System.out.println("Position me for Holo");
                     GL11.glTranslatef(0f, 0.46f, 1.4f);
                 } 
                 
-                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.RMR)) {
+                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.RMR)) {
                     //System.out.println("Position me for Holo");
                     GL11.glTranslatef(0f, 0.22f, 0f);
                 } 

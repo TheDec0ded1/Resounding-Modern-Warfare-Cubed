@@ -5,6 +5,7 @@ import com.paneedah.mwc.init.MWCItems;
 import com.paneedah.mwc.models.*;
 import com.paneedah.mwc.proxies.CommonProxy;
 import com.paneedah.mwc.weapons.Attachments;
+import com.paneedah.mwc.weapons.Attachments3;
 import com.paneedah.mwc.weapons.Magazines;
 import com.paneedah.weaponlib.AttachmentCategory;
 import com.paneedah.weaponlib.RenderableState;
@@ -149,7 +150,7 @@ public class Glock18CFactory implements GunFactory {
         .withCompatibleAttachment(Magazines.GlockMag50, (model) -> {
             GL11.glTranslatef(0F, 0F, -0.08F);
         })
-        .withCompatibleAttachment(Attachments.Laser, (p, s) -> {
+        .withCompatibleAttachment(Attachments3.Laser, (p, s) -> {
             GL11.glTranslatef(0.05F, -0.65F, -2.3F);
             GL11.glScaled(1.1F, 1.1F, 1.1F);
             GL11.glRotatef(-90F, 0f, 0f, -4f);
@@ -158,7 +159,7 @@ public class Glock18CFactory implements GunFactory {
             GL11.glTranslatef(0.03F, 0F, 0F);
             GL11.glScaled(0.9F, 1F, 1F);
         })
-        .withCompatibleAttachment(Attachments.Silencer9mm, (model) -> {
+        .withCompatibleAttachment(Attachments3.Silencer9mm, (model) -> {
             GL11.glTranslatef(-0.18F, -1.19F, -4.36F);
             GL11.glScaled(1.3F, 1.3F, 1.3F);
         })
@@ -170,7 +171,7 @@ public class Glock18CFactory implements GunFactory {
             GL11.glTranslatef(-0.18f, -0.53f, -1.9f);
             GL11.glScaled(0.6F, 0.6F, 0.7F);
         })
-        .withCompatibleAttachment(Attachments.RMR, (player, stack) -> {
+        .withCompatibleAttachment(Attachments3.RMR, (player, stack) -> {
                 GL11.glTranslatef(-0.14F, -1.35F, -1.1F);
                 GL11.glScaled(0.36F, 0.36F, 0.36F);
         },(model) -> {
@@ -179,7 +180,7 @@ public class Glock18CFactory implements GunFactory {
                 GL11.glScaled(0.2F, 0.2F, 0.2F);
             }
         })
-        .withCompatibleAttachment(Attachments.BijiaReflex, (player, stack) -> {
+        .withCompatibleAttachment(Attachments3.BijiaReflex, (player, stack) -> {
             GL11.glTranslatef(-0.015F, -1.1F, -1.4F);
             GL11.glScaled(0.55F, 0.55F, 0.55F);
         },(model) -> {
@@ -352,12 +353,12 @@ public class Glock18CFactory implements GunFactory {
             	GL11.glScaled(3F, 3F, 3F);
             	GL11.glTranslatef(0.105f, 0.67f, -1.9f);
               
-              if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.RMR)) {
+              if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.RMR)) {
                   //System.out.println("Position me for Holo");
                   GL11.glTranslatef(0f, 0.26f, 1.4f);
               } 
               
-              if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.BijiaReflex)) {
+              if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.BijiaReflex)) {
                   //System.out.println("Position me for Holo");
                   GL11.glTranslatef(0f, 0.36f, 1.4f);
               } 

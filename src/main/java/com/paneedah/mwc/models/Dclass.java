@@ -415,6 +415,8 @@ public class Dclass extends ModelBiped {
 //		rightarm_usmc.render(f5);
 //		helmet.render(f5);
 //		vest.render(f5);
+		super.render(entity, f, f1, f2, f3, f4, f5);
+	    setRotationAngles(f, f1, f2, f3, f4, f5, entity);
 	}
 
 	public void setRotationAngle(ModelRenderer modelRenderer, float x, float y, float z) {

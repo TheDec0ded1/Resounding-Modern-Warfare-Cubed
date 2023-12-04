@@ -53,6 +53,96 @@
       }
     ]
   },
+   "m82mag_insert": {
+    "category": "master",
+    "sounds": [
+      {
+       "name": "mwc:m82mag_insert",
+       "stream": false
+      }
+    ]
+  },
+   "m82mag_unload": {
+    "category": "master",
+    "sounds": [
+      {
+       "name": "mwc:m82mag_unload",
+       "stream": false
+      }
+    ]
+  },
+   "m82action_back": {
+    "category": "master",
+    "sounds": [
+      {
+       "name": "mwc:m82action_back",
+       "stream": false
+      }
+    ]
+  },
+   "m82action_release": {
+    "category": "master",
+    "sounds": [
+      {
+       "name": "mwc:m82action_release",
+       "stream": false
+      }
+    ]
+  },
+  "m14mag_insert": {
+    "category": "master",
+    "sounds": [
+      {
+       "name": "mwc:m14mag_insert",
+       "stream": false
+      }
+    ]
+  },
+  "m14mag_touchgun": {
+    "category": "master",
+    "sounds": [
+      {
+       "name": "mwc:m14mag_touchgun",
+       "stream": false
+      }
+    ]
+  },
+   "m14mag_unload": {
+    "category": "master",
+    "sounds": [
+      {
+       "name": "mwc:m14mag_unload",
+       "stream": false
+      }
+    ]
+  },
+   "m14action_back": {
+    "category": "master",
+    "sounds": [
+      {
+       "name": "mwc:m14action_back",
+       "stream": false
+      }
+    ]
+  },
+   "m14action_forward": {
+    "category": "master",
+    "sounds": [
+      {
+       "name": "mwc:m14action_forward",
+       "stream": false
+      }
+    ]
+  },
+   "ump_silenced": {
+    "category": "master",
+    "sounds": [
+      {
+       "name": "mwc:ump_silenced",
+       "stream": false
+      }
+    ]
+  },
    "sg556_silenced": {
     "category": "master",
     "sounds": [
@@ -94,6 +184,213 @@
     "sounds": [
       {
        "name": "mwc:sr2m",
+       "stream": false
+      }
+    ]
+  },
+   "m99": {
+    "category": "master",
+    "sounds": [
+      {
+       "name": "mwc:m99",
+       "stream": false
+      }
+    ]
+  },
+   "ak_silenced": {
+    "category": "master",
+    "sounds": [
+      {
+       "name": "mwc:ak_silenced",
+       "stream": false
+      }
+    ]
+  },
+   "ak101_silenced": {
+    "category": "master",
+    "sounds": [
+      {
+       "name": "mwc:ak101_silenced",
+       "stream": false
+      }
+    ]
+  },
+   "ak74_silenced": {
+    "category": "master",
+    "sounds": [
+      {
+       "name": "mwc:ak74_silenced",
+       "stream": false
+      }
+    ]
+  },
+   "ak102": {
+    "category": "master",
+    "sounds": [
+      {
+       "name": "mwc:ak102",
+       "stream": false
+      }
+    ]
+  },
+   "ak104": {
+    "category": "master",
+    "sounds": [
+      {
+       "name": "mwc:ak104",
+       "stream": false
+      }
+    ]
+  },
+   "ak105": {
+    "category": "master",
+    "sounds": [
+      {
+       "name": "mwc:ak105",
+       "stream": false
+      }
+    ]
+  },
+   "amd65": {
+    "category": "master",
+    "sounds": [
+      {
+       "name": "mwc:amd65",
+       "stream": false
+      }
+    ]
+  },
+   "malyuk762": {
+    "category": "master",
+    "sounds": [
+      {
+       "name": "mwc:malyuk762",
+       "stream": false
+      }
+    ]
+  },
+   "malyuk545": {
+    "category": "master",
+    "sounds": [
+      {
+       "name": "mwc:malyuk545",
+       "stream": false
+      }
+    ]
+  },
+   "beryl": {
+    "category": "master",
+    "sounds": [
+      {
+       "name": "mwc:beryl",
+       "stream": false
+      }
+    ]
+  },
+   "miniberyl": {
+    "category": "master",
+    "sounds": [
+      {
+       "name": "mwc:miniberyl",
+       "stream": false
+      }
+    ]
+  },
+   "tantal": {
+    "category": "master",
+    "sounds": [
+      {
+       "name": "mwc:tantal",
+       "stream": false
+      }
+    ]
+  },
+   "galil": {
+    "category": "master",
+    "sounds": [
+      {
+       "name": "mwc:galil",
+       "stream": false
+      }
+    ]
+  },
+   "galil308": {
+    "category": "master",
+    "sounds": [
+      {
+       "name": "mwc:galil308",
+       "stream": false
+      }
+    ]
+  },
+   "qbz_silenced": {
+    "category": "master",
+    "sounds": [
+      {
+       "name": "mwc:qbz_silenced",
+       "stream": false
+      }
+    ]
+  },
+   "qbz95": {
+    "category": "master",
+    "sounds": [
+      {
+       "name": "mwc:qbz95",
+       "stream": false
+      }
+    ]
+  },
+   "qsz92": {
+    "category": "master",
+    "sounds": [
+      {
+       "name": "mwc:qsz92",
+       "stream": false
+      }
+    ]
+  },
+  "mcxrattler": {
+    "category": "master",
+    "sounds": [
+      {
+       "name": "mwc:mcxrattler",
+       "stream": false
+      }
+    ]
+  },
+   "mp5sd": {
+    "category": "master",
+    "sounds": [
+      {
+       "name": "mwc:mp5sd",
+       "stream": false
+      }
+    ]
+  },
+   "type64smg": {
+    "category": "master",
+    "sounds": [
+      {
+       "name": "mwc:type64smg",
+       "stream": false
+      }
+    ]
+  },
+   "type81": {
+    "category": "master",
+    "sounds": [
+      {
+       "name": "mwc:type81",
+       "stream": false
+      }
+    ]
+  },
+   "ppsh41": {
+    "category": "master",
+    "sounds": [
+      {
+       "name": "mwc:ppsh41",
        "stream": false
       }
     ]
@@ -904,6 +1201,15 @@
     "sounds": [
       {
        "name": "mwc:m38_silenced",
+       "stream": false
+      }
+    ]
+  },
+    "hk417_silenced": {
+    "category": "master",
+    "sounds": [
+      {
+       "name": "mwc:hk417_silenced",
        "stream": false
       }
     ]
@@ -2636,24 +2942,6 @@
       }
     ]
   },
-  "m14dmr": {
-    "category": "master",
-    "sounds": [
-      {
-       "name": "mwc:m14dmr",
-       "stream": false
-      }
-    ]
-  },
-  "g36k": {
-    "category": "master",
-    "sounds": [
-      {
-       "name": "mwc:g36k",
-       "stream": false
-      }
-    ]
-  },
   "ak74": {
     "category": "master",
     "sounds": [
@@ -3100,6 +3388,15 @@
     "sounds": [
       {
        "name": "mwc:beowulf",
+       "stream": false
+      }
+    ]
+  },
+   "ak19": {
+    "category": "master",
+    "sounds": [
+      {
+       "name": "mwc:ak19",
        "stream": false
       }
     ]

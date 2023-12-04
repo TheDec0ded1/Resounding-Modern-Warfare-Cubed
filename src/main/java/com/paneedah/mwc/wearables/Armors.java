@@ -61,6 +61,16 @@ public class Armors {
     public static Item Santachest;
     public static Item Santaboots;
     public static Item Santahelmet;
+
+    public static Item OldUniformchest;
+    public static Item OldUniformboots;
+
+    public static Item dClasschest;
+    public static Item dClassboots;
+
+    public static Item scpGuardchest;
+    public static Item scpGuardboots;
+    public static Item scpGuardhelmet;
     
     static ArmorMaterial Juggernaut = EnumHelper.addArmorMaterial("Juggernaut", "Juggernaut", 20, new int[] { 5, 6, 2, 5}, 20, null, 0);
     static ArmorMaterial Marine = EnumHelper.addArmorMaterial("Marine", "Marine", 60, new int[] { 2, 3, 3, 3 }, 15, null, 0);
@@ -232,5 +242,38 @@ public class Armors {
                 .withCreativeTab(ModernWarfareMod.ArmorTab);
 
         Armors.GasMaskM40 = gasSuitArmorBuilder.buildHelmet(modContext);
+
+        Builder oldUniformArmorBuilder = new CustomArmor.Builder()
+        		.withMaterial(Armors.Marine)
+                .withCreativeTab(ModernWarfareMod.ArmorTab)
+                .withUnlocalizedName("olduniform")
+                .withTextureName("olduniform")
+                .withModelClass("com.paneedah.mwc.models.OldUniform")
+                .withCreativeTab(ModernWarfareMod.ArmorTab);
+
+        Armors.OldUniformchest = oldUniformArmorBuilder.buildChest(modContext.isClient());
+        Armors.OldUniformboots = oldUniformArmorBuilder.buildBoots(modContext.isClient());
+
+        Builder dClassArmorBuilder = new CustomArmor.Builder()
+                .withMaterial(Armors.Marine)
+                .withCreativeTab(ModernWarfareMod.ArmorTab)
+                .withUnlocalizedName("dclass")
+                .withTextureName("dclass")
+                .withModelClass("com.paneedah.mwc.models.Dclass")
+                .withCreativeTab(ModernWarfareMod.ArmorTab);
+
+        Armors.dClasschest = dClassArmorBuilder.buildChest(modContext.isClient());
+        Armors.dClassboots = dClassArmorBuilder.buildBoots(modContext.isClient());
+
+        Builder scpGuardArmorBuilder = new CustomArmor.Builder()
+        		.withMaterial(Armors.Marine)
+                .withUnlocalizedName("scpguard")
+                .withTextureName("scpguard")
+                .withModelClass("com.paneedah.mwc.models.SCPGuard")
+                .withCreativeTab(ModernWarfareMod.ArmorTab);
+
+        Armors.scpGuardhelmet = scpGuardArmorBuilder.buildHelmet(modContext);
+        Armors.scpGuardchest = scpGuardArmorBuilder.buildChest(modContext.isClient());
+        Armors.scpGuardboots = scpGuardArmorBuilder.buildBoots(modContext.isClient());
     }
 }

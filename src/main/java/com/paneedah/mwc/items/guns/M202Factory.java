@@ -5,6 +5,7 @@ import com.paneedah.mwc.models.M202;
 import com.paneedah.mwc.models.M202RocketPROJECTILE;
 import com.paneedah.mwc.proxies.CommonProxy;
 import com.paneedah.mwc.weapons.Attachments;
+import com.paneedah.mwc.weapons.Attachments3;
 import com.paneedah.mwc.weapons.AuxiliaryAttachments;
 import com.paneedah.mwc.wearables.Bullets;
 import com.paneedah.weaponlib.AttachmentCategory;
@@ -55,7 +56,7 @@ public class M202Factory implements GunFactory {
         .withCompatibleAttachment(Bullets.M202Rocket, (model) -> {})
         .withCompatibleAttachment(AuxiliaryAttachments.M202rockets, true, (model) -> {
         })
-        .withCompatibleAttachment(Attachments.M202scope, true, (model) -> {
+        .withCompatibleAttachment(Attachments3.M202scope, true, (model) -> {
             GL11.glScaled(0.03F, 0.03F, 0.03F);
             GL11.glTranslatef(28f, -24.7f, 19.5f);
       })
@@ -109,7 +110,7 @@ public class M202Factory implements GunFactory {
                 GL11.glTranslatef(-0.6f, 0.22f, -0.5f);
                 
                 // ACOG Zoom
-                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.ACOG)) {
+                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.ACOG)) {
                     //System.out.println("Position me for Acog");
                 } 
                 // Everything else
@@ -320,7 +321,7 @@ public class M202Factory implements GunFactory {
                 GL11.glTranslatef(-0.6f, 0.22f, -0.8f);
                 
                 // ACOG Zoom
-                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.ACOG)) {
+                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.ACOG)) {
                     //System.out.println("Position me for Acog");
                 } 
                 // Everything else

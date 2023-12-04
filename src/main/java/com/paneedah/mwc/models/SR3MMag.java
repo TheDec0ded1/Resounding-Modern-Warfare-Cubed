@@ -1,12 +1,11 @@
 package com.paneedah.mwc.models;
 
 import com.paneedah.weaponlib.ModelWithAttachments;
-
 import net.minecraft.client.model.ModelBox;
 import net.minecraft.client.model.ModelRenderer;
 import net.minecraft.entity.Entity;
 
-// Made with Blockbench 4.7.2
+// Made with Blockbench 4.8.3
 // Exported for Minecraft version 1.7 - 1.12
 // Paste this class into your mod and generate all required imports
 
@@ -80,8 +79,8 @@ public class SR3MMag extends ModelWithAttachments {
 		cube_r119.setRotationPoint(-0.15F, 9.0F, -0.8F);
 		asval_mag.addChild(cube_r119);
 		setRotationAngle(cube_r119, -0.192F, 0.0F, 0.0F);
-		cube_r119.cubeList.add(new ModelBox(cube_r119, 241, 84, -3.25F, 0.04F, -1.69F, 1, 9, 1, -0.003F, false));
-		cube_r119.cubeList.add(new ModelBox(cube_r119, 240, 36, -0.45F, 0.04F, -1.69F, 1, 9, 1, -0.003F, false));
+		cube_r119.cubeList.add(new ModelBox(cube_r119, 241, 84, -3.25F, 0.6193F, -7.3991F, 1, 9, 1, -0.003F, false));
+		cube_r119.cubeList.add(new ModelBox(cube_r119, 240, 36, -0.45F, 0.6193F, -7.3991F, 1, 9, 1, -0.003F, false));
 		cube_r119.cubeList.add(new ModelBox(cube_r119, 199, 82, -1.6F, 0.04F, -7.44F, 2, 10, 7, -0.002F, false));
 		cube_r119.cubeList.add(new ModelBox(cube_r119, 206, 52, -3.1F, 0.04F, -7.44F, 2, 11, 7, -0.001F, false));
 
@@ -89,8 +88,8 @@ public class SR3MMag extends ModelWithAttachments {
 		cube_r2.setRotationPoint(-0.15F, 9.0F, -0.8F);
 		asval_mag.addChild(cube_r2);
 		setRotationAngle(cube_r2, -0.3229F, 0.0F, 0.0F);
-		cube_r2.cubeList.add(new ModelBox(cube_r2, 260, 110, -3.25F, 9.0078F, -0.376F, 1, 10, 1, -0.003F, false));
-		cube_r2.cubeList.add(new ModelBox(cube_r2, 240, 36, -0.45F, 9.0078F, -0.376F, 1, 10, 1, -0.003F, false));
+		cube_r2.cubeList.add(new ModelBox(cube_r2, 260, 110, -3.25F, 10.3666F, -6.0891F, 1, 10, 1, -0.003F, false));
+		cube_r2.cubeList.add(new ModelBox(cube_r2, 240, 36, -0.45F, 10.3666F, -6.0891F, 1, 10, 1, -0.003F, false));
 		cube_r2.cubeList.add(new ModelBox(cube_r2, 238, 54, -1.6F, 10.0078F, -6.126F, 2, 10, 7, -0.002F, false));
 		cube_r2.cubeList.add(new ModelBox(cube_r2, 219, 72, -3.1F, 10.0078F, -6.126F, 2, 10, 7, -0.001F, false));
 
@@ -100,12 +99,12 @@ public class SR3MMag extends ModelWithAttachments {
 		setRotationAngle(cube_r120, -0.1047F, 0.0F, 0.0F);
 		cube_r120.cubeList.add(new ModelBox(cube_r120, 175, 71, -2.15F, 7.0F, -5.4F, 1, 1, 5, -0.003F, false));
 		cube_r120.cubeList.add(new ModelBox(cube_r120, 175, 63, -2.15F, 4.0F, -5.4F, 1, 1, 5, -0.003F, false));
-		cube_r120.cubeList.add(new ModelBox(cube_r120, 208, 65, -2.15F, 0.0F, -0.65F, 1, 8, 1, -0.002F, false));
+		cube_r120.cubeList.add(new ModelBox(cube_r120, 208, 65, -2.149F, -0.001F, -6.395F, 1, 8, 1, -0.002F, false));
 		cube_r120.cubeList.add(new ModelBox(cube_r120, 175, 57, -2.15F, 1.0F, -5.4F, 1, 1, 5, -0.003F, false));
 		cube_r120.cubeList.add(new ModelBox(cube_r120, 188, 63, 0.65F, 7.0F, -5.4F, 1, 1, 5, -0.003F, false));
 		cube_r120.cubeList.add(new ModelBox(cube_r120, 201, 60, 0.65F, 4.0F, -5.4F, 1, 1, 5, -0.003F, false));
 		cube_r120.cubeList.add(new ModelBox(cube_r120, 201, 66, 0.65F, 1.0F, -5.4F, 1, 1, 5, -0.003F, false));
-		cube_r120.cubeList.add(new ModelBox(cube_r120, 191, 103, 0.65F, 0.0F, -0.65F, 1, 8, 1, -0.002F, false));
+		cube_r120.cubeList.add(new ModelBox(cube_r120, 191, 103, 0.649F, -0.001F, -6.395F, 1, 8, 1, -0.002F, false));
 		cube_r120.cubeList.add(new ModelBox(cube_r120, 247, 6, -0.5F, -5.0F, -6.4F, 2, 13, 7, -0.001F, false));
 		cube_r120.cubeList.add(new ModelBox(cube_r120, 210, 55, -2.0F, -5.0F, -6.4F, 2, 13, 7, 0.0F, false));
 
@@ -169,7 +168,7 @@ public class SR3MMag extends ModelWithAttachments {
 		cube_r119_r1.setRotationPoint(0.0F, 27.0F, 16.5F);
 		i_hate_this_process.addChild(cube_r119_r1);
 		setRotationAngle(cube_r119_r1, -0.2356F, 0.0F, 0.0F);
-		cube_r119_r1.cubeList.add(new ModelBox(cube_r119_r1, 201, 80, -0.4F, -4.5F, -27.15F, 1, 1, 5, -0.004F, false));
+		cube_r119_r1.cubeList.add(new ModelBox(cube_r119_r1, 201, 80, -0.6F, -4.5F, -27.15F, 1, 1, 5, -0.004F, false));
 		cube_r119_r1.cubeList.add(new ModelBox(cube_r119_r1, 218, 57, -3.4F, -4.5F, -27.15F, 1, 1, 5, -0.004F, false));
 	}
 

@@ -6,6 +6,7 @@ import com.paneedah.mwc.models.*;
 import com.paneedah.mwc.proxies.CommonProxy;
 import com.paneedah.mwc.weapons.Attachments;
 import com.paneedah.mwc.weapons.Attachments2;
+import com.paneedah.mwc.weapons.Attachments3;
 import com.paneedah.mwc.weapons.Magazines;
 import com.paneedah.weaponlib.AttachmentCategory;
 import com.paneedah.weaponlib.RenderableState;
@@ -102,29 +103,7 @@ public class MakarovPMFactory implements GunFactory {
               GL11.glScaled(0.15F, 0.25F, 0.2F);
           } 
         })
-        .withCompatibleAttachment(Attachments2.MakarovPBBodyGreen, (model) -> {
-            if(model instanceof MakarovPBBody) {
-            	GL11.glScaled(1F, 1F, 1F);
-            } 
-            else if(model instanceof makarovfrontsight) {
-        	  GL11.glTranslatef(-0.1393F, -1.09F, -1.75F);
-              GL11.glScaled(0.15F, 0.25F, 0.2F);
-          } 
-        })
-        .withCompatibleAttachment(Attachments2.MakarovPBBodyPearl, (model) -> {
-            if(model instanceof MakarovPBBody) {
-            	GL11.glScaled(1F, 1F, 1F);
-            } 
-            else if(model instanceof makarovfrontsight) {
-        	  GL11.glTranslatef(-0.1393F, -1.09F, -1.75F);
-              GL11.glScaled(0.15F, 0.25F, 0.2F);
-          } 
-        })
         .withCompatibleAttachment(Attachments.MakarovBody, true, (model) -> {
-//          GL11.glTranslatef(0.01f, -0.19f, -0.4f);
-//          GL11.glScaled(0F, 0F, 0F);
-        })
-        .withCompatibleAttachment(Attachments2.MakarovBodyGreen, (model) -> {
 //          GL11.glTranslatef(0.01f, -0.19f, -0.4f);
 //          GL11.glScaled(0F, 0F, 0F);
         })
@@ -158,7 +137,7 @@ public class MakarovPMFactory implements GunFactory {
 //            GL11.glRotatef(-5F, 1f, 0f, 0f);
             GL11.glTranslatef(0F, 0F, 0.1F);
         })
-        .withCompatibleAttachment(Attachments.SilencerPBS, (model) -> {
+        .withCompatibleAttachment(Attachments3.SilencerPBS, (model) -> {
 //            GL11.glTranslatef(-0.23F, -1.14F, -4.92F);
 //            GL11.glScaled(1.5F, 1.5F, 1.5F);
         })

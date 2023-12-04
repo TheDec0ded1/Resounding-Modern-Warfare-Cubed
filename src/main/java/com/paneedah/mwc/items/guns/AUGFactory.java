@@ -4,6 +4,7 @@ import com.paneedah.mwc.ModernWarfareMod;
 import com.paneedah.mwc.models.*;
 import com.paneedah.mwc.proxies.CommonProxy;
 import com.paneedah.mwc.weapons.Attachments;
+import com.paneedah.mwc.weapons.Attachments3;
 import com.paneedah.mwc.weapons.AuxiliaryAttachments;
 import com.paneedah.mwc.weapons.Magazines;
 import com.paneedah.weaponlib.*;
@@ -144,7 +145,7 @@ public class AUGFactory implements GunFactory {
             GL11.glTranslatef(-0.02F, 0.03F, 0.3F);
             GL11.glScaled(1.1F, 1.1F, 1.1F);
         })
-         .withCompatibleAttachment(Attachments.AKMIron, renderContext -> {
+         .withCompatibleAttachment(Attachments3.AKMIron, renderContext -> {
              PlayerWeaponInstance instance = renderContext.getWeaponInstance();
              if(instance != null) {
                  ItemAttachment<Weapon> activeAttachment = WeaponAttachmentAspect.getActiveAttachment(
@@ -207,7 +208,7 @@ public class AUGFactory implements GunFactory {
             }
             
         }, false, false)
-         .withCompatibleAttachment(Attachments.AUGscope, true, (player, stack) -> {
+         .withCompatibleAttachment(Attachments3.AUGscope, true, (player, stack) -> {
              GL11.glTranslatef(0F, 0F, 0F);
              GL11.glScaled(1F, 1F, 1F);
          },(model) -> {
@@ -224,7 +225,7 @@ public class AUGFactory implements GunFactory {
                  GL11.glScaled(0.6F, 0.6F, 0.6F);
              }
          })
-        .withCompatibleAttachment(Attachments.NightRaider, renderContext -> {
+        .withCompatibleAttachment(Attachments3.NightRaider, renderContext -> {
             PlayerWeaponInstance instance = renderContext.getWeaponInstance();
             if(instance != null) {
                 ItemAttachment<Weapon> activeAttachment = WeaponAttachmentAspect.getActiveAttachment(
@@ -243,7 +244,7 @@ public class AUGFactory implements GunFactory {
                 GL11.glScaled(0.03F, 0.03F, 0.03F);
             }
         }, false, false)
-        .withCompatibleAttachment(Attachments.ACOG, renderContext -> {
+        .withCompatibleAttachment(Attachments3.ACOG, renderContext -> {
             PlayerWeaponInstance instance = renderContext.getWeaponInstance();
             if(instance != null) {
                 ItemAttachment<Weapon> activeAttachment = WeaponAttachmentAspect.getActiveAttachment(
@@ -266,7 +267,7 @@ public class AUGFactory implements GunFactory {
                 GL11.glScaled(0.03F, 0.03F, 0.03F);
             }
         }, false, false)
-        .withCompatibleAttachment(Attachments.Specter, renderContext -> {
+        .withCompatibleAttachment(Attachments3.Specter, renderContext -> {
             PlayerWeaponInstance instance = renderContext.getWeaponInstance();
             if(instance != null) {
                 ItemAttachment<Weapon> activeAttachment = WeaponAttachmentAspect.getActiveAttachment(
@@ -285,7 +286,7 @@ public class AUGFactory implements GunFactory {
                 GL11.glScaled(0.1F, 0.1F, 0.1F);
             }
         }, false, false)
-        .withCompatibleAttachment(Attachments.Reflex, renderContext -> {
+        .withCompatibleAttachment(Attachments3.Reflex, renderContext -> {
             PlayerWeaponInstance instance = renderContext.getWeaponInstance();
             if(instance != null) {
                 ItemAttachment<Weapon> activeAttachment = WeaponAttachmentAspect.getActiveAttachment(
@@ -304,7 +305,7 @@ public class AUGFactory implements GunFactory {
                 GL11.glScaled(0.15F, 0.15F, 0.15F);
             }
         }, false, false)
-        .withCompatibleAttachment(Attachments.BijiaReflex, renderContext -> {
+        .withCompatibleAttachment(Attachments3.BijiaReflex, renderContext -> {
             PlayerWeaponInstance instance = renderContext.getWeaponInstance();
             if(instance != null) {
                 ItemAttachment<Weapon> activeAttachment = WeaponAttachmentAspect.getActiveAttachment(
@@ -323,7 +324,7 @@ public class AUGFactory implements GunFactory {
             GL11.glScaled(0.15F, 0.15F, 0.15F);
         }
         }, false, false)
-        .withCompatibleAttachment(Attachments.Holographic, renderContext -> {
+        .withCompatibleAttachment(Attachments3.Holographic, renderContext -> {
             PlayerWeaponInstance instance = renderContext.getWeaponInstance();
             if(instance != null) {
                 ItemAttachment<Weapon> activeAttachment = WeaponAttachmentAspect.getActiveAttachment(
@@ -342,7 +343,7 @@ public class AUGFactory implements GunFactory {
                     GL11.glScaled(0.1F, 0.1F, 0.1F);
                 }
             }, false, false)
-        .withCompatibleAttachment(Attachments.HolographicAlt, renderContext -> {
+        .withCompatibleAttachment(Attachments3.HolographicAlt, renderContext -> {
             PlayerWeaponInstance instance = renderContext.getWeaponInstance();
             if(instance != null) {
                 ItemAttachment<Weapon> activeAttachment = WeaponAttachmentAspect.getActiveAttachment(
@@ -361,7 +362,7 @@ public class AUGFactory implements GunFactory {
                 GL11.glScaled(0.1F, 0.1F, 0.1F);
             }
         }, false, false)
-        .withCompatibleAttachment(Attachments.EotechHybrid2, renderContext -> {
+        .withCompatibleAttachment(Attachments3.EotechHybrid2, renderContext -> {
             PlayerWeaponInstance instance = renderContext.getWeaponInstance();
             if(instance != null) {
                 ItemAttachment<Weapon> activeAttachment = WeaponAttachmentAspect.getActiveAttachment(
@@ -403,7 +404,7 @@ public class AUGFactory implements GunFactory {
 //                    GL11.glScaled(0.15F, 0.15F, 0.15F);
 //                }
 //            }, false, false)
-        .withCompatibleAttachment(Attachments.Kobra, renderContext -> {
+        .withCompatibleAttachment(Attachments3.Kobra, renderContext -> {
             PlayerWeaponInstance instance = renderContext.getWeaponInstance();
             if(instance != null) {
                 ItemAttachment<Weapon> activeAttachment = WeaponAttachmentAspect.getActiveAttachment(
@@ -422,7 +423,7 @@ public class AUGFactory implements GunFactory {
                 GL11.glScaled(0.15F, 0.15F, 0.15F);
             }
         }, false, false)
-        .withCompatibleAttachment(Attachments.MicroT1, renderContext -> {
+        .withCompatibleAttachment(Attachments3.MicroT1, renderContext -> {
             PlayerWeaponInstance instance = renderContext.getWeaponInstance();
             if(instance != null) {
                 ItemAttachment<Weapon> activeAttachment = WeaponAttachmentAspect.getActiveAttachment(
@@ -441,7 +442,7 @@ public class AUGFactory implements GunFactory {
                     GL11.glScaled(0.15F, 0.15F, 0.15F);
                 }
             }, false, false)
-        .withCompatibleAttachment(Attachments.AimpointCompM5, renderContext -> {
+        .withCompatibleAttachment(Attachments3.AimpointCompM5, renderContext -> {
             PlayerWeaponInstance instance = renderContext.getWeaponInstance();
             if(instance != null) {
                 ItemAttachment<Weapon> activeAttachment = WeaponAttachmentAspect.getActiveAttachment(
@@ -460,7 +461,7 @@ public class AUGFactory implements GunFactory {
                 GL11.glScaled(0.15F, 0.15F, 0.15F);
             }
         }, false, false)
-        .withCompatibleAttachment(Attachments.RMR, renderContext -> {
+        .withCompatibleAttachment(Attachments3.RMR, renderContext -> {
             PlayerWeaponInstance instance = renderContext.getWeaponInstance();
             if(instance != null) {
                 ItemAttachment<Weapon> activeAttachment = WeaponAttachmentAspect.getActiveAttachment(
@@ -479,39 +480,39 @@ public class AUGFactory implements GunFactory {
                 GL11.glScaled(0.3F, 0.3F, 0.3F);
             }
         }, false, false)
-        .withCompatibleAttachment(Attachments.AUGgrip, true, (model) -> {
+        .withCompatibleAttachment(Attachments3.AUGgrip, true, (model) -> {
             GL11.glTranslatef(0F, 0F, 0F);
             GL11.glScaled(1F, 1F, 1F);
         })
-        .withCompatibleAttachment(Attachments.Grip2, (model) -> {
+        .withCompatibleAttachment(Attachments3.Grip2, (model) -> {
             GL11.glTranslatef(-0.2F, -0.07F, -2.6F);
             GL11.glScaled(1F, 1F, 1F);
         })
-        .withCompatibleAttachment(Attachments.StubbyGrip, (model) -> {
+        .withCompatibleAttachment(Attachments3.StubbyGrip, (model) -> {
             GL11.glTranslatef(-0.2F, -0.07F, -2.6F);
             GL11.glScaled(1F, 1F, 1F);
         })
-        .withCompatibleAttachment(Attachments.AngledGrip, (model) -> {
+        .withCompatibleAttachment(Attachments3.AngledGrip, (model) -> {
             GL11.glTranslatef(-0.2F, 0.05F, -3F);
             GL11.glScaled(1F, 1F, 1F);
         })
-        .withCompatibleAttachment(Attachments.VGrip, (model) -> {
+        .withCompatibleAttachment(Attachments3.VGrip, (model) -> {
             GL11.glTranslatef(-0.2F, -0.07F, -2.6F);
             GL11.glScaled(1F, 1F, 1F);
         })
-        .withCompatibleAttachment(Attachments.Bipod, (model) -> {
+        .withCompatibleAttachment(Attachments3.Bipod, (model) -> {
             GL11.glTranslatef(-0.2F, -0.07F, -3.5F);
             GL11.glScaled(1F, 1F, 1F);
         })
-        .withCompatibleAttachment(Attachments.Laser2, (p, s) -> {
+        .withCompatibleAttachment(Attachments3.Laser2, (p, s) -> {
             GL11.glTranslatef(0.05F, -0.95F, -3.3F);
             GL11.glScaled(0.8F, 0.8F, 0.8F);
         })
-        .withCompatibleAttachment(Attachments.Laser, (p, s) -> {
+        .withCompatibleAttachment(Attachments3.Laser, (p, s) -> {
             GL11.glTranslatef(0.05F, -0.95F, -3.3F);
             GL11.glScaled(0.8F, 0.8F, 0.8F);
         })
-        .withCompatibleAttachment(Attachments.Silencer556x45, (model) -> {
+        .withCompatibleAttachment(Attachments3.Silencer556x45, (model) -> {
             GL11.glTranslatef(-0.2F, -1F, -5.7F);
             GL11.glScaled(1F, 1F, 1F);
         })
@@ -1548,7 +1549,7 @@ public class AUGFactory implements GunFactory {
                 GL11.glTranslatef(0.350000f, 1.000000f, -2f);
                 
                 // Standard Iron Sight Zoom
-                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.NightRaider)) {
+                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.NightRaider)) {
                     //System.out.println("Position me for Acog");
                     RenderContext<?> rc = (RenderContext<?>) renderContext;
                     ItemAttachment<Weapon> activeAttachment = WeaponAttachmentAspect.getActiveAttachment(
@@ -1561,7 +1562,7 @@ public class AUGFactory implements GunFactory {
                 } 
                 
                 // ACOG Zoom
-                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.ACOG)) {
+                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.ACOG)) {
                     //System.out.println("Position me for Acog");
                     RenderContext<?> rc = (RenderContext<?>) renderContext;
                     ItemAttachment<Weapon> activeAttachment = WeaponAttachmentAspect.getActiveAttachment(
@@ -1574,7 +1575,7 @@ public class AUGFactory implements GunFactory {
                 } 
                 
                 // ACOG Zoom
-                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.Specter)) {
+                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.Specter)) {
                     //System.out.println("Position me for Acog");
                     RenderContext<?> rc = (RenderContext<?>) renderContext;
                     ItemAttachment<Weapon> activeAttachment = WeaponAttachmentAspect.getActiveAttachment(
@@ -1587,13 +1588,13 @@ public class AUGFactory implements GunFactory {
                 } 
 
                 // HP Zoomw
-                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.AUGscope)) {
+                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.AUGscope)) {
                     //System.out.println("Position me for Acog");
                     GL11.glTranslatef(0F, -0.08f, 1.5f);
                 } 
                 
                 // Reflex Zoom
-                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.Reflex)) {
+                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.Reflex)) {
                     //System.out.println("Position me for Reflex");
                     RenderContext<?> rc = (RenderContext<?>) renderContext;
                     ItemAttachment<Weapon> activeAttachment = WeaponAttachmentAspect.getActiveAttachment(
@@ -1606,7 +1607,7 @@ public class AUGFactory implements GunFactory {
                 } 
                 
                 // Reflex Zoom
-                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.BijiaReflex)) {
+                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.BijiaReflex)) {
                     //System.out.println("Position me for Reflex");
                     RenderContext<?> rc = (RenderContext<?>) renderContext;
                     ItemAttachment<Weapon> activeAttachment = WeaponAttachmentAspect.getActiveAttachment(
@@ -1619,7 +1620,7 @@ public class AUGFactory implements GunFactory {
                 } 
                 
                 // Holo Zoom
-                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.Holographic)) {
+                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.Holographic)) {
                     //System.out.println("Position me for Holo");
                     RenderContext<?> rc = (RenderContext<?>) renderContext;
                     ItemAttachment<Weapon> activeAttachment = WeaponAttachmentAspect.getActiveAttachment(
@@ -1632,7 +1633,7 @@ public class AUGFactory implements GunFactory {
                 } 
                 
                 // Holo Zoom
-                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.HolographicAlt)) {
+                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.HolographicAlt)) {
                     //System.out.println("Position me for Holo");
                     RenderContext<?> rc = (RenderContext<?>) renderContext;
                     ItemAttachment<Weapon> activeAttachment = WeaponAttachmentAspect.getActiveAttachment(
@@ -1645,7 +1646,7 @@ public class AUGFactory implements GunFactory {
                 } 
                 
              // Holo Zoom
-                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.EotechHybrid2)) {
+                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.EotechHybrid2)) {
                     //System.out.println("Position me for Holo");
                     RenderContext<?> rc = (RenderContext<?>) renderContext;
                     ItemAttachment<Weapon> activeAttachment = WeaponAttachmentAspect.getActiveAttachment(
@@ -1671,7 +1672,7 @@ public class AUGFactory implements GunFactory {
 //                } 
                 
                 // Reflex Zoom
-                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.Kobra)) {
+                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.Kobra)) {
                     //System.out.println("Position me for Reflex");
                     RenderContext<?> rc = (RenderContext<?>) renderContext;
                     ItemAttachment<Weapon> activeAttachment = WeaponAttachmentAspect.getActiveAttachment(
@@ -1684,7 +1685,7 @@ public class AUGFactory implements GunFactory {
                 } 
                 
                 // Reflex Zoom
-                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.MicroT1)) {
+                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.MicroT1)) {
                     //System.out.println("Position me for Reflex");
                     RenderContext<?> rc = (RenderContext<?>) renderContext;
                     ItemAttachment<Weapon> activeAttachment = WeaponAttachmentAspect.getActiveAttachment(
@@ -1697,7 +1698,7 @@ public class AUGFactory implements GunFactory {
                 } 
                 
              // Reflex Zoom
-                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.AimpointCompM5)) {
+                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.AimpointCompM5)) {
                   //System.out.println("Position me for Reflex");
                     RenderContext<?> rc = (RenderContext<?>) renderContext;
                     ItemAttachment<Weapon> activeAttachment = WeaponAttachmentAspect.getActiveAttachment(
@@ -1710,7 +1711,7 @@ public class AUGFactory implements GunFactory {
                 } 
                 
              // Reflex Zoom
-                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.RMR)) {
+                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.RMR)) {
                     //System.out.println("Position me for Reflex");
                     RenderContext<?> rc = (RenderContext<?>) renderContext;
                     ItemAttachment<Weapon> activeAttachment = WeaponAttachmentAspect.getActiveAttachment(
@@ -1723,7 +1724,7 @@ public class AUGFactory implements GunFactory {
                 } 
                 
              // Standard Iron Sight Zoom
-                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.AKMIron)) {
+                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.AKMIron)) {
                     //System.out.println("Position me for Acog");
                     RenderContext<?> rc = (RenderContext<?>) renderContext;
                     ItemAttachment<Weapon> activeAttachment = WeaponAttachmentAspect.getActiveAttachment(
@@ -1748,7 +1749,7 @@ public class AUGFactory implements GunFactory {
                 GL11.glTranslatef(0.350000f, 1.000000f, -1.9f);
                 
                 // Standard Iron Sight Zoom
-                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.NightRaider)) {
+                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.NightRaider)) {
                     //System.out.println("Position me for Acog");
                     RenderContext<?> rc = (RenderContext<?>) renderContext;
                     ItemAttachment<Weapon> activeAttachment = WeaponAttachmentAspect.getActiveAttachment(
@@ -1761,7 +1762,7 @@ public class AUGFactory implements GunFactory {
                 } 
                 
                 // ACOG Zoom
-                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.ACOG)) {
+                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.ACOG)) {
                     //System.out.println("Position me for Acog");
                     RenderContext<?> rc = (RenderContext<?>) renderContext;
                     ItemAttachment<Weapon> activeAttachment = WeaponAttachmentAspect.getActiveAttachment(
@@ -1774,7 +1775,7 @@ public class AUGFactory implements GunFactory {
                 } 
                 
                 // ACOG Zoom
-                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.Specter)) {
+                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.Specter)) {
                     //System.out.println("Position me for Acog");
                     RenderContext<?> rc = (RenderContext<?>) renderContext;
                     ItemAttachment<Weapon> activeAttachment = WeaponAttachmentAspect.getActiveAttachment(
@@ -1787,13 +1788,13 @@ public class AUGFactory implements GunFactory {
                 } 
 
                 // HP Zoomw
-                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.AUGscope)) {
+                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.AUGscope)) {
                     //System.out.println("Position me for Acog");
                     GL11.glTranslatef(0F, -0.08f, 1.45f);
                 } 
                 
                 // Reflex Zoom
-                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.Reflex)) {
+                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.Reflex)) {
                     //System.out.println("Position me for Reflex");
                     RenderContext<?> rc = (RenderContext<?>) renderContext;
                     ItemAttachment<Weapon> activeAttachment = WeaponAttachmentAspect.getActiveAttachment(
@@ -1806,7 +1807,7 @@ public class AUGFactory implements GunFactory {
                 } 
                 
                 // Reflex Zoom
-                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.BijiaReflex)) {
+                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.BijiaReflex)) {
                     //System.out.println("Position me for Reflex");
                     RenderContext<?> rc = (RenderContext<?>) renderContext;
                     ItemAttachment<Weapon> activeAttachment = WeaponAttachmentAspect.getActiveAttachment(
@@ -1819,7 +1820,7 @@ public class AUGFactory implements GunFactory {
                 } 
                 
                 // Holo Zoom
-                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.Holographic)) {
+                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.Holographic)) {
                     //System.out.println("Position me for Holo");
                     RenderContext<?> rc = (RenderContext<?>) renderContext;
                     ItemAttachment<Weapon> activeAttachment = WeaponAttachmentAspect.getActiveAttachment(
@@ -1832,7 +1833,7 @@ public class AUGFactory implements GunFactory {
                 } 
                 
                 // Holo Zoom
-                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.HolographicAlt)) {
+                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.HolographicAlt)) {
                     //System.out.println("Position me for Holo");
                     RenderContext<?> rc = (RenderContext<?>) renderContext;
                     ItemAttachment<Weapon> activeAttachment = WeaponAttachmentAspect.getActiveAttachment(
@@ -1845,7 +1846,7 @@ public class AUGFactory implements GunFactory {
                 } 
                 
              // Holo Zoom
-                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.EotechHybrid2)) {
+                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.EotechHybrid2)) {
                     //System.out.println("Position me for Holo");
                     RenderContext<?> rc = (RenderContext<?>) renderContext;
                     ItemAttachment<Weapon> activeAttachment = WeaponAttachmentAspect.getActiveAttachment(
@@ -1871,7 +1872,7 @@ public class AUGFactory implements GunFactory {
 //                } 
                 
                 // Reflex Zoom
-                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.Kobra)) {
+                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.Kobra)) {
                     //System.out.println("Position me for Reflex");
                     RenderContext<?> rc = (RenderContext<?>) renderContext;
                     ItemAttachment<Weapon> activeAttachment = WeaponAttachmentAspect.getActiveAttachment(
@@ -1884,7 +1885,7 @@ public class AUGFactory implements GunFactory {
                 } 
                 
                 // Reflex Zoom
-                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.MicroT1)) {
+                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.MicroT1)) {
                     //System.out.println("Position me for Reflex");
                     RenderContext<?> rc = (RenderContext<?>) renderContext;
                     ItemAttachment<Weapon> activeAttachment = WeaponAttachmentAspect.getActiveAttachment(
@@ -1897,7 +1898,7 @@ public class AUGFactory implements GunFactory {
                 } 
                 
              // Reflex Zoom
-                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.AimpointCompM5)) {
+                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.AimpointCompM5)) {
                   //System.out.println("Position me for Reflex");
                     RenderContext<?> rc = (RenderContext<?>) renderContext;
                     ItemAttachment<Weapon> activeAttachment = WeaponAttachmentAspect.getActiveAttachment(
@@ -1910,7 +1911,7 @@ public class AUGFactory implements GunFactory {
                 } 
                 
              // Reflex Zoom
-                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.RMR)) {
+                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.RMR)) {
                     //System.out.println("Position me for Reflex");
                     RenderContext<?> rc = (RenderContext<?>) renderContext;
                     ItemAttachment<Weapon> activeAttachment = WeaponAttachmentAspect.getActiveAttachment(
@@ -1923,7 +1924,7 @@ public class AUGFactory implements GunFactory {
                 } 
                 
              // Standard Iron Sight Zoom
-                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.AKMIron)) {
+                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.AKMIron)) {
                     //System.out.println("Position me for Acog");
                     RenderContext<?> rc = (RenderContext<?>) renderContext;
                     ItemAttachment<Weapon> activeAttachment = WeaponAttachmentAspect.getActiveAttachment(
@@ -1976,21 +1977,21 @@ public class AUGFactory implements GunFactory {
                          RenderContext<?> rc = (RenderContext<?>) renderContext;
                          ItemAttachment<Weapon> activeAttachment = WeaponAttachmentAspect.getActiveAttachment(
                                  AttachmentCategory.GRIP, rc.getWeaponInstance());
-                         if(activeAttachment == Attachments.Grip2 ||
-                                activeAttachment == Attachments.StubbyGrip || 
-                                activeAttachment == Attachments.VGrip) {
+                         if(activeAttachment == Attachments3.Grip2 ||
+                                activeAttachment == Attachments3.StubbyGrip || 
+                                activeAttachment == Attachments3.VGrip) {
                              GL11.glScalef(4f, 4f, 4f);
                              GL11.glRotatef(-95.000000f, 1f, 0f, 0f);
                              GL11.glRotatef(-45.000000f, 0f, 1f, 0f);
                              GL11.glRotatef(30.000000f, 0f, 0f, 1f);
                              GL11.glTranslatef(0.225000f, -0.300000f, 0.250000f);
-                         } else if(activeAttachment == Attachments.AngledGrip) {
+                         } else if(activeAttachment == Attachments3.AngledGrip) {
                              GL11.glScalef(4f, 4f, 4f);
                              GL11.glRotatef(-100.000000f, 1f, 0f, 0f);
                              GL11.glRotatef(-50.000000f, 0f, 1f, 0f);
                              GL11.glRotatef(25.000000f, 0f, 0f, 1f);
                              GL11.glTranslatef(0.250000f, -0.225000f, 0.250000f);
-                         } else if(activeAttachment == Attachments.AUGgrip) {
+                         } else if(activeAttachment == Attachments3.AUGgrip) {
                              GL11.glScalef(3f, 3f, 3f);
                              GL11.glRotatef(-80.000000f, 1f, 0f, 0f);
                              GL11.glRotatef(-35.000000f, 0f, 1f, 0f);

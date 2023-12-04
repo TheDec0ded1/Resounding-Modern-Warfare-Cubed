@@ -4,6 +4,7 @@ import com.paneedah.mwc.ModernWarfareMod;
 import com.paneedah.mwc.models.*;
 import com.paneedah.mwc.proxies.CommonProxy;
 import com.paneedah.mwc.weapons.Attachments;
+import com.paneedah.mwc.weapons.Attachments3;
 import com.paneedah.mwc.weapons.AuxiliaryAttachments;
 import com.paneedah.mwc.weapons.Magazines;
 import com.paneedah.weaponlib.*;
@@ -99,12 +100,12 @@ public class MAS21Factory implements GunFactory {
         	GL11.glTranslatef(-0.01F, 0F, -0.07F);
             GL11.glScaled(0.9F, 0.9F, 0.9F);
         })
-        .withCompatibleAttachment(Attachments.Laser, (p, s) -> {
+        .withCompatibleAttachment(Attachments3.Laser, (p, s) -> {
             GL11.glTranslatef(0.01F, -0.6F, -2.05F);
             GL11.glScaled(1.1F, 1.1F, 1.1F);
             GL11.glRotatef(-90F, 0f, 0f, -4f);
         })
-        .withCompatibleAttachment(Attachments.Silencer9mm, (model) -> {
+        .withCompatibleAttachment(Attachments3.Silencer9mm, (model) -> {
             GL11.glTranslatef(-0.22F, -1.2F, -4.35F);
             GL11.glScaled(1.3F, 1.3F, 1.3F);
         })
@@ -112,7 +113,7 @@ public class MAS21Factory implements GunFactory {
 //            GL11.glTranslatef(-0.23f, -0.53f, -1.9f);
 //            GL11.glScaled(0.7F, 0.6F, 0.7F);
         })
-        .withCompatibleAttachment(Attachments.RMR, (player, stack) -> {
+        .withCompatibleAttachment(Attachments3.RMR, (player, stack) -> {
                 GL11.glTranslatef(-0.5F, -0.6F, -1.4F);
                 GL11.glScaled(0.36F, 0.36F, 0.36F);
                 GL11.glRotatef(-90F, 0f, 0f, 1f);
@@ -122,7 +123,7 @@ public class MAS21Factory implements GunFactory {
                 GL11.glScaled(0.2F, 0.2F, 0.2F);
             }
         })
-        .withCompatibleAttachment(Attachments.MicroReflex, (player, stack) -> {
+        .withCompatibleAttachment(Attachments3.MicroReflex, (player, stack) -> {
 		    GL11.glTranslatef(-0.155F, -1.83F, -1.2F);
 		    GL11.glScaled(0.48F, 0.48F, 0.48F);
 		    },(model) -> {
@@ -1581,13 +1582,13 @@ public class MAS21Factory implements GunFactory {
                 GL11.glScaled(3F, 3F, 3F);
                 GL11.glTranslatef(0.350000f, 0.47f, -1.5f);
                 
-                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.RMR)) {
+                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.RMR)) {
                     //System.out.println("Position me for Holo");
                     GL11.glTranslatef(-0.755f, -0.43f, 0.7f);
                     GL11.glRotatef(87F, 0f, 0f, 1f);
                 } 
                 
-                else if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.MicroReflex)) {
+                else if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.MicroReflex)) {
                     //System.out.println("Position me for Holo");
                     GL11.glTranslatef(0f, 0.2f, 0f);
                 } 
@@ -1606,13 +1607,13 @@ public class MAS21Factory implements GunFactory {
                 GL11.glRotatef(-3F, 1f, 0f, 0f);
                 GL11.glRotatef(-1F, 0f, 0f, 1f);
                 
-                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.RMR)) {
+                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.RMR)) {
                     //System.out.println("Position me for Holo");
                     GL11.glTranslatef(-0.755f, -0.43f, 0.7f);
                     GL11.glRotatef(87F, 0f, 0f, 1f);
                 } 
                 
-                else if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.MicroReflex)) {
+                else if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.MicroReflex)) {
                     //System.out.println("Position me for Holo");
                     GL11.glTranslatef(0f, 0.2f, 0f);
                 } 
@@ -2228,7 +2229,7 @@ public class MAS21Factory implements GunFactory {
                         RenderContext<?> rc = (RenderContext<?>) renderContext;
                         ItemAttachment<Weapon> activeAttachment = WeaponAttachmentAspect.getActiveAttachment(
                                 AttachmentCategory.SCOPE, rc.getWeaponInstance());
-                        if(activeAttachment == Attachments.RMR) {
+                        if(activeAttachment == Attachments3.RMR) {
                             GL11.glScalef(4f, 4f, 4f);
                             GL11.glRotatef(-100.000000f, 1f, 0f, 0f);
                             GL11.glRotatef(15.000000f, 0f, 1f, 0f);

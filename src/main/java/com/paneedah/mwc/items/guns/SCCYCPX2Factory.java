@@ -8,6 +8,7 @@ import com.paneedah.mwc.models.M9A1rearsight;
 import com.paneedah.mwc.models.SCCYCPX2Slide;
 import com.paneedah.mwc.proxies.CommonProxy;
 import com.paneedah.mwc.weapons.Attachments;
+import com.paneedah.mwc.weapons.Attachments3;
 import com.paneedah.mwc.weapons.Magazines;
 import com.paneedah.weaponlib.AttachmentCategory;
 import com.paneedah.weaponlib.RenderableState;
@@ -138,12 +139,12 @@ public class SCCYCPX2Factory implements GunFactory {
         })
         .withCompatibleAttachment(Magazines.SCCYCPX2MagExt, (model) -> {
         })
-        .withCompatibleAttachment(Attachments.SCCYCPX2Laser, (p, s) -> {
+        .withCompatibleAttachment(Attachments3.SCCYCPX2Laser, (p, s) -> {
 //            GL11.glTranslatef(0.01F, -0.65F, -2.3F);
 //            GL11.glScaled(1.2F, 1.2F, 1.2F);
 //            GL11.glRotatef(-90F, 0f, 0f, -4f);
         })
-        .withCompatibleAttachment(Attachments.Silencer9mm, (model) -> {
+        .withCompatibleAttachment(Attachments3.Silencer9mm, (model) -> {
             GL11.glTranslatef(-0.22F, -1.12F, -4.06F);
             GL11.glScaled(1.3F, 1.3F, 1.3F);
         })
@@ -308,12 +309,12 @@ public class SCCYCPX2Factory implements GunFactory {
             	GL11.glScaled(3F, 3F, 3F);
             	GL11.glTranslatef(0.145f, 0.60f, -2f);
                 
-                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.RMR)) {
+                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.RMR)) {
                     //System.out.println("Position me for Holo");
                     GL11.glTranslatef(0f, 0.22f, 0f);
                 } 
                 
-                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.BijiaReflex)) {
+                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.BijiaReflex)) {
                     //System.out.println("Position me for Holo");
                     GL11.glTranslatef(0f, 0.32f, 0f);
                 } 

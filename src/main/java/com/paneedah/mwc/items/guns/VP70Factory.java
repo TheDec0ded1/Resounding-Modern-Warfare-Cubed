@@ -8,6 +8,7 @@ import com.paneedah.mwc.init.MWCItems;
 import com.paneedah.mwc.models.*;
 import com.paneedah.mwc.proxies.CommonProxy;
 import com.paneedah.mwc.weapons.Attachments;
+import com.paneedah.mwc.weapons.Attachments3;
 import com.paneedah.mwc.weapons.AuxiliaryAttachments;
 import com.paneedah.mwc.weapons.Magazines;
 import com.paneedah.weaponlib.*;
@@ -35,7 +36,7 @@ public class VP70Factory implements GunFactory {
         .withZoom(0.9f)
         .withConfigGroup(GunConfigurationGroup.SIDEARM)
                 .withShellType(ShellParticleSimulator.Shell.Type.PISTOL)
-        .withMaxShots(1, 3, Integer.MAX_VALUE)
+        .withMaxShots(1, 3)
         .withShootSound("vp70")
         .withSilencedShootSound("m9a1_silenced")
         .withReloadSound("m9a1_reload")
@@ -104,7 +105,7 @@ public class VP70Factory implements GunFactory {
         })
         .withCompatibleAttachment(Attachments.VP70Stock, (model) -> {
         })
-        .withCompatibleAttachment(Attachments.Silencer9mm, (model) -> {
+        .withCompatibleAttachment(Attachments3.Silencer9mm, (model) -> {
             GL11.glTranslatef(-0.18F, -1.16F, -4.39F);
             GL11.glScaled(1.3F, 1.3F, 1.3F);
         })
@@ -259,12 +260,12 @@ public class VP70Factory implements GunFactory {
                 GL11.glScaled(3F, 3F, 3F);
                 GL11.glTranslatef(0.1f, 0.64f, -1.9f);
                 
-                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.RMR)) {
+                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.RMR)) {
                     //System.out.println("Position me for Holo");
                     GL11.glTranslatef(0f, 0.22f, 0f);
                 } 
                 
-                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.BijiaReflex)) {
+                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.BijiaReflex)) {
                     //System.out.println("Position me for Holo");
                     GL11.glTranslatef(0f, 0.32f, 0f);
                 } 

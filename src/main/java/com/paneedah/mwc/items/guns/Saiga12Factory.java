@@ -4,6 +4,7 @@ import com.paneedah.mwc.ModernWarfareMod;
 import com.paneedah.mwc.models.*;
 import com.paneedah.mwc.proxies.CommonProxy;
 import com.paneedah.mwc.weapons.Attachments;
+import com.paneedah.mwc.weapons.Attachments3;
 import com.paneedah.mwc.weapons.AuxiliaryAttachments;
 import com.paneedah.mwc.weapons.Magazines;
 import com.paneedah.weaponlib.RenderableState;
@@ -69,11 +70,11 @@ public class Saiga12Factory {
 //            GL11.glTranslatef(0F, 0.45F, -0.15F);
 //            GL11.glRotatef(-10F, 1f, 0f, 0f);
         })
-        .withCompatibleAttachment(Attachments.Silencer762x39, (model) -> {
+        .withCompatibleAttachment(Attachments3.Silencer762x39, (model) -> {
           GL11.glTranslatef(-0.2F, -1.06F, -7.55F);
           GL11.glScaled(1F, 1F, 1F);
         })
-        .withCompatibleAttachment(Attachments.Bipod, (model) -> {
+        .withCompatibleAttachment(Attachments3.Bipod, (model) -> {
             GL11.glTranslatef(-0.185F, -0.3F, -5.7F);
             GL11.glScaled(1F, 1F, 1F);
         })
@@ -87,7 +88,7 @@ public class Saiga12Factory {
                 GL11.glScaled(0.1F, 0.1F, 0.05F);
             }
         })
-        .withCompatibleAttachment(Attachments.PSO1, (player, stack) -> {
+        .withCompatibleAttachment(Attachments3.PSO1, (player, stack) -> {
             GL11.glTranslatef(0.14F, -0.9F, -1.1F);
             GL11.glScaled(1.2F, 1.2F, 1.2F);
         },(model) -> {
@@ -100,7 +101,7 @@ public class Saiga12Factory {
                  GL11.glScaled(0.8F, 0.8F, 0.8F);
              }
         })
-        .withCompatibleAttachment(Attachments.OKP7, (model) -> {
+        .withCompatibleAttachment(Attachments3.OKP7, (model) -> {
             if(model instanceof OKP7) {
                 GL11.glTranslatef(-0.18F, -0.65F, -1.15F);
                 GL11.glScaled(0.7F, 0.7F, 0.7F);
@@ -599,13 +600,13 @@ public class Saiga12Factory {
 
                 
                 // ACOG Zoom
-                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.PSO1)) {
+                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.PSO1)) {
                     //System.out.println("Position me for Acog");
                     GL11.glTranslatef(-0.013F, 0.15f, 0.2f);
                 } 
                 
              // ACOG Zoom
-                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.OKP7)) {
+                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.OKP7)) {
                     //System.out.println("Position me for Acog");
                     GL11.glTranslatef(-0.05F, 0.11f, 0f);
                 } 
@@ -625,13 +626,13 @@ public class Saiga12Factory {
 
                 
              // ACOG Zoom
-                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.PSO1)) {
+                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.PSO1)) {
                     //System.out.println("Position me for Acog");
                     GL11.glTranslatef(-0.013F, 0.15f, 0.15f);
                 } 
                 
              // ACOG Zoom
-                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.OKP7)) {
+                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.OKP7)) {
                     //System.out.println("Position me for Acog");
                     GL11.glTranslatef(-0.05F, 0.11f, 0f);
                 } 
