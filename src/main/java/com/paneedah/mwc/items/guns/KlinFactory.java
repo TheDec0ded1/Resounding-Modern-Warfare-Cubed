@@ -8,6 +8,7 @@ import com.paneedah.mwc.init.MWCItems;
 import com.paneedah.mwc.models.*;
 import com.paneedah.mwc.proxies.CommonProxy;
 import com.paneedah.mwc.weapons.Attachments;
+import com.paneedah.mwc.weapons.Attachments3;
 import com.paneedah.mwc.weapons.AuxiliaryAttachments;
 import com.paneedah.mwc.weapons.Magazines;
 import com.paneedah.weaponlib.*;
@@ -79,7 +80,7 @@ public class KlinFactory {
 //        	GL11.glTranslatef(0F, 0.25F, 0F);
 //            GL11.glRotatef(5F, 0f, 0f, 1f);
         })
-        .withCompatibleAttachment(Attachments.Silencer9mm, (model) -> {
+        .withCompatibleAttachment(Attachments3.Silencer9mm, (model) -> {
           GL11.glTranslatef(-0.25F, -1.1F, -4.8F);
           GL11.glScaled(1.5F, 1.5F, 1.5F);
         })
@@ -610,13 +611,13 @@ public class KlinFactory {
 
                 
                 // ACOG Zoom
-                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.OKP7)) {
+                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.OKP7)) {
                     //System.out.println("Position me for Acog");
                     GL11.glTranslatef(-0.07F, 0.13f, 0f);
                 } 
                 
              // ACOG Zoom
-                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.PSO1)) {
+                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.PSO1)) {
                     //System.out.println("Position me for Acog");
                     GL11.glTranslatef(-0.015F, 0.17f, 0.7f);
                 } 
@@ -636,13 +637,13 @@ public class KlinFactory {
 
                 
              // ACOG Zoom
-                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.OKP7)) {
+                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.OKP7)) {
                     //System.out.println("Position me for Acog");
                     GL11.glTranslatef(-0.07F, 0.13f, 0f);
                 } 
                 
              // ACOG Zoom
-                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.PSO1)) {
+                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.PSO1)) {
                     //System.out.println("Position me for Acog");
                     GL11.glTranslatef(-0.015F, 0.17f, 0.65f);
                 } 

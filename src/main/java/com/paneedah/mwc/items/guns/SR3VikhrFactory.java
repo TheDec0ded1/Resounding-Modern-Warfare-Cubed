@@ -9,6 +9,7 @@ import com.paneedah.mwc.models.*;
 import com.paneedah.mwc.proxies.CommonProxy;
 import com.paneedah.mwc.weapons.Attachments;
 import com.paneedah.mwc.weapons.Attachments2;
+import com.paneedah.mwc.weapons.Attachments3;
 import com.paneedah.mwc.weapons.AuxiliaryAttachments;
 import com.paneedah.mwc.weapons.Magazines;
 import com.paneedah.weaponlib.*;
@@ -112,13 +113,21 @@ public class SR3VikhrFactory {
         })
         .withCompatibleAttachment(Magazines.Val30Mag, (model) -> {
         })
-        .withCompatibleAttachment(Attachments.SuppressorSR3M, (model) -> {
+        .withCompatibleAttachment(Magazines.ASValMagB, (model) -> {
+        })
+        .withCompatibleAttachment(Magazines.Val30MagB, (model) -> {
+        })
+        .withCompatibleAttachment(Magazines.SR3MMag, (model) -> {
+        })
+        .withCompatibleAttachment(Attachments3.SuppressorSR3M, (model) -> {
         })
        
         .withTextureNames("vssvintorez")
         .withRenderer(new WeaponRenderer.Builder()
             
             .withModel(new SR3Vikhr())
+            .withActionPiece(AuxiliaryAttachments.SR3VikhrAction)
+            .withActionTransform(new Transform().withPosition(0, 0, 1))
             //.withTextureName("AK47")
             //.withWeaponProximity(0.99F)
             //.withYOffsetZoom(5F)
@@ -167,7 +176,7 @@ public class SR3VikhrFactory {
                 )
                 
                 .setupModernAnimations("vssvintorez", AuxiliaryAttachments.SR3VikhrAction)
-                .setupModernMagazineAnimations("vssvintorez", Magazines.ASValMag, Magazines.Val30Mag, Magazines.VSSVintorezMag)
+                .setupModernMagazineAnimations("vssvintorez", Magazines.ASValMag, Magazines.Val30Mag, Magazines.ASValMagB, Magazines.Val30MagB, Magazines.SR3MMag, Magazines.VSSVintorezMag)
             
                 .withFirstPersonPositioningCustomRecoiled(AuxiliaryAttachments.SR3VikhrAction.getRenderablePart(), (renderContext) -> {
                     GL11.glTranslatef(0f, 0f, 1f);

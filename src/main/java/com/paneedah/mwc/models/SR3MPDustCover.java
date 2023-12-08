@@ -5,7 +5,7 @@ import net.minecraft.client.model.ModelBox;
 import net.minecraft.client.model.ModelRenderer;
 import net.minecraft.entity.Entity;
 
-// Made with Blockbench 4.9.0
+// Made with Blockbench 4.9.1
 // Exported for Minecraft version 1.7 - 1.12
 // Paste this class into your mod and generate all required imports
 
@@ -420,8 +420,8 @@ public class SR3MPDustCover extends ModelBase {
 		vssm_dustcover_r2.setRotationPoint(0.6133F, -10.6515F, 10.5F);
 		vssm_dustcover.addChild(vssm_dustcover_r2);
 		setRotationAngle(vssm_dustcover_r2, 0.0F, 0.0F, 1.0908F);
-		vssm_dustcover_r2.cubeList.add(new ModelBox(vssm_dustcover_r2, 221, 220, 1.6F, -0.3F, 5.1F, 1, 1, 1, -0.1F, false));
-		vssm_dustcover_r2.cubeList.add(new ModelBox(vssm_dustcover_r2, 218, 217, 0.8F, -0.3F, 4.6F, 1, 1, 4, -0.1F, false));
+		vssm_dustcover_r2.cubeList.add(new ModelBox(vssm_dustcover_r2, 223, 220, 1.6F, -0.3F, 5.1F, 1, 1, 1, -0.1F, false));
+		vssm_dustcover_r2.cubeList.add(new ModelBox(vssm_dustcover_r2, 220, 217, 0.8F, -0.3F, 4.6F, 1, 1, 4, -0.1F, false));
 		vssm_dustcover_r2.cubeList.add(new ModelBox(vssm_dustcover_r2, 122, 184, 0.8F, -0.3F, -10.5F, 2, 1, 16, -0.1F, false));
 
 		vssm_dustcover_r3 = new ModelRenderer(this);

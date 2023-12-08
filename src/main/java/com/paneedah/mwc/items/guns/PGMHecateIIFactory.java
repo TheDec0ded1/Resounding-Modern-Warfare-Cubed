@@ -8,6 +8,7 @@ import com.paneedah.mwc.init.MWCItems;
 import com.paneedah.mwc.models.*;
 import com.paneedah.mwc.proxies.CommonProxy;
 import com.paneedah.mwc.weapons.Attachments;
+import com.paneedah.mwc.weapons.Attachments3;
 import com.paneedah.mwc.weapons.AuxiliaryAttachments;
 import com.paneedah.mwc.weapons.Magazines;
 import com.paneedah.weaponlib.*;
@@ -103,7 +104,7 @@ public class PGMHecateIIFactory implements GunFactory {
 //                GL11.glRotatef(5f, 0f, 1f, 0f);
             }
         })
-        .withCompatibleAttachment(Attachments.NightRaider, (player, stack) -> {
+        .withCompatibleAttachment(Attachments3.NightRaider, (player, stack) -> {
             GL11.glTranslatef(-0.195F, -1.45F, -2.7F);
             GL11.glScaled(0.65F, 0.65F, 0.65F);
 		},(model) -> {
@@ -113,7 +114,7 @@ public class PGMHecateIIFactory implements GunFactory {
 		    }
 		})
 		
-		.withCompatibleAttachment(Attachments.ACOG, (player, stack) -> {
+		.withCompatibleAttachment(Attachments3.ACOG, (player, stack) -> {
 		            GL11.glTranslatef(-0.273F, -1.47F, -1.3F);
 		            GL11.glScaled(0.63F, 0.63F, 0.63F);
 		},(model) -> {
@@ -127,7 +128,7 @@ public class PGMHecateIIFactory implements GunFactory {
 		    }
 		})
 		
-		.withCompatibleAttachment(Attachments.Specter, (player, stack) -> {
+		.withCompatibleAttachment(Attachments3.Specter, (player, stack) -> {
 		            GL11.glTranslatef(-0.175F, -1.22F, -1.7F);
 		            GL11.glScaled(0.35F, 0.35F, 0.35F);
 		},(model) -> {
@@ -137,7 +138,7 @@ public class PGMHecateIIFactory implements GunFactory {
 		    }
 		})
 		
-		.withCompatibleAttachment(Attachments.LeupoldRailScope, (player, stack) -> {
+		.withCompatibleAttachment(Attachments3.LeupoldRailScope, (player, stack) -> {
 		            GL11.glTranslatef(-0.155F, -1.22F, -2.4F);
 		            GL11.glScaled(0.48F, 0.48F, 0.48F);
 		},(model) -> {
@@ -146,7 +147,7 @@ public class PGMHecateIIFactory implements GunFactory {
 		        GL11.glScaled(0.04F, 0.04F, 0.04F);
 		    }
 		})
-		.withCompatibleAttachment(Attachments.MicroReflex, (player, stack) -> {
+		.withCompatibleAttachment(Attachments3.MicroReflex, (player, stack) -> {
             GL11.glTranslatef(-0.145F, -1.92F, -2F);
             GL11.glScaled(0.3F, 0.3F, 0.3F);
             },(model) -> {
@@ -159,7 +160,7 @@ public class PGMHecateIIFactory implements GunFactory {
                 }
             })
 		
-		.withCompatibleAttachment(Attachments.Reflex, (player, stack) -> {
+		.withCompatibleAttachment(Attachments3.Reflex, (player, stack) -> {
                     GL11.glTranslatef(-0.071F, -1.29F, -2F);
                     GL11.glScaled(0.4F, 0.4F, 0.4F);
 		},(model) -> {
@@ -168,7 +169,7 @@ public class PGMHecateIIFactory implements GunFactory {
                 GL11.glScaled(0.15F, 0.15F, 0.15F);
 			}
 		})
-		.withCompatibleAttachment(Attachments.BijiaReflex, (player, stack) -> {
+		.withCompatibleAttachment(Attachments3.BijiaReflex, (player, stack) -> {
 	                    GL11.glTranslatef(-0.07F, -1.28F, -1.7F);
 	                    GL11.glScaled(0.4F, 0.4F, 0.4F);
 			},(model) -> {
@@ -178,7 +179,7 @@ public class PGMHecateIIFactory implements GunFactory {
 	        }
 			})
 		
-		.withCompatibleAttachment(Attachments.Holographic, (player, stack) -> {
+		.withCompatibleAttachment(Attachments3.Holographic, (player, stack) -> {
 					GL11.glTranslatef(-0.052F, -1.35F, -1.7F);
 		            GL11.glScaled(0.55F, 0.55F, 0.55F);
 			},(model) -> {
@@ -188,7 +189,7 @@ public class PGMHecateIIFactory implements GunFactory {
 	            }
 	        })
 		
-		.withCompatibleAttachment(Attachments.HolographicAlt, (player, stack) -> {
+		.withCompatibleAttachment(Attachments3.HolographicAlt, (player, stack) -> {
                     GL11.glTranslatef(-0.052F, -1.35F, -1.7F);
                     GL11.glScaled(0.55F, 0.55F, 0.55F);
         },(model) -> {
@@ -198,7 +199,7 @@ public class PGMHecateIIFactory implements GunFactory {
             }
         })
 		
-		.withCompatibleAttachment(Attachments.EotechHybrid2, (player, stack) -> {
+		.withCompatibleAttachment(Attachments3.EotechHybrid2, (player, stack) -> {
                     GL11.glTranslatef(-0.041F, -1.25F, -1.3F);
                     GL11.glScaled(0.65F, 0.65F, 0.65F);
         },(model) -> {
@@ -212,7 +213,7 @@ public class PGMHecateIIFactory implements GunFactory {
             }
         })
 		
-		.withCompatibleAttachment(Attachments.VortexRedux, (player, stack) -> {
+		.withCompatibleAttachment(Attachments3.VortexRedux, (player, stack) -> {
             GL11.glTranslatef(-0.3F, -1.45F, -1.1F);
             GL11.glScaled(0.45F, 0.45F, 0.45F);
 	    },(model) -> {
@@ -222,7 +223,7 @@ public class PGMHecateIIFactory implements GunFactory {
 	        }
 	    })
 	    
-		.withCompatibleAttachment(Attachments.Kobra, (player, stack) -> {
+		.withCompatibleAttachment(Attachments3.Kobra, (player, stack) -> {
                     GL11.glTranslatef(-0.045F, -1.34F, -1.6F);
                     GL11.glScaled(0.6F, 0.6F, 0.6F);
 		},(model) -> {
@@ -232,7 +233,7 @@ public class PGMHecateIIFactory implements GunFactory {
             }
         })
 		
-		.withCompatibleAttachment(Attachments.KobraGen3, (player, stack) -> {
+		.withCompatibleAttachment(Attachments3.KobraGen3, (player, stack) -> {
 					GL11.glTranslatef(-0.045F, -1.34F, -1.6F);
 		            GL11.glScaled(0.6F, 0.6F, 0.6F);
 		},(model) -> {
@@ -242,7 +243,7 @@ public class PGMHecateIIFactory implements GunFactory {
 		    }
 		})
 		
-		.withCompatibleAttachment(Attachments.MicroT1, (player, stack) -> {
+		.withCompatibleAttachment(Attachments3.MicroT1, (player, stack) -> {
                     GL11.glTranslatef(-0.171F, -1.5F, -1.5F);
                     GL11.glScaled(0.33F, 0.33F, 0.33F);
             },(model) -> {
@@ -252,7 +253,7 @@ public class PGMHecateIIFactory implements GunFactory {
                 }
             })
 		
-		.withCompatibleAttachment(Attachments.AimpointCompM5, (player, stack) -> {
+		.withCompatibleAttachment(Attachments3.AimpointCompM5, (player, stack) -> {
 					GL11.glTranslatef(-0.171F, -1.5F, -1.5F);
 		            GL11.glScaled(0.33F, 0.33F, 0.33F);
         },(model) -> {
@@ -261,7 +262,7 @@ public class PGMHecateIIFactory implements GunFactory {
                 GL11.glScaled(0.15F, 0.15F, 0.15F);
             }
         })
-		.withCompatibleAttachment(Attachments.Bipod, (model) -> {
+		.withCompatibleAttachment(Attachments3.Bipod, (model) -> {
         	GL11.glTranslatef(-0.2F, -0.2F, -4.3F);
             GL11.glScaled(1F, 1F, 1F);
         })
@@ -1339,79 +1340,79 @@ public class PGMHecateIIFactory implements GunFactory {
                 GL11.glTranslatef(0.35f, 0.8f, 0.4f);
                 
              // HP Zoom
-                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.LeupoldRailScope)) {
+                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.LeupoldRailScope)) {
                     //System.out.println("Position me for Scope");
                     GL11.glTranslatef(0F, 0.2f, 0.2f);
                 } 
                 
              // HP Zoom
-                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.NightRaider)) {
+                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.NightRaider)) {
                     //System.out.println("Position me for Scope");
                     GL11.glTranslatef(0F, 0.24f, 0.8f);
                 } 
                 
              // HP Zoom
-                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.ACOG)) {
+                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.ACOG)) {
                     //System.out.println("Position me for Scope");
                     GL11.glTranslatef(0F, 0.265f, 0.7f);
                 } 
                 
              // HP Zoom
-                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.Specter)) {
+                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.Specter)) {
                     //System.out.println("Position me for Scope");
                     GL11.glTranslatef(0F, 0.21f, 0.8f);
                 } 
                 
              // HP Zoom
-                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.MicroReflex)) {
+                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.MicroReflex)) {
                     //System.out.println("Position me for Scope");
                     GL11.glTranslatef(0F, 0.27f, 0.8f);
                 } 
                 
              // HP Zoom
-                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.Reflex)) {
+                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.Reflex)) {
                     //System.out.println("Position me for Scope");
                     GL11.glTranslatef(0F, 0.22f, 0.8f);
                 } 
                 
              // HP Zoom
-                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.BijiaReflex)) {
+                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.BijiaReflex)) {
                     //System.out.println("Position me for Scope");
                     GL11.glTranslatef(0F, 0.2f, 0.8f);
                 } 
                 
              // HP Zoom
-                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.Holographic)) {
+                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.Holographic)) {
                     //System.out.println("Position me for Scope");
                     GL11.glTranslatef(0F, 0.275f, 0.8f);
                 } 
                 
              // HP Zoom
-                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.HolographicAlt)) {
+                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.HolographicAlt)) {
                     //System.out.println("Position me for Scope");
                     GL11.glTranslatef(0F, 0.275f, 0.8f);
                 } 
                 
              // HP Zoom
-                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.MicroT1)) {
+                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.MicroT1)) {
                     //System.out.println("Position me for Scope");
                     GL11.glTranslatef(0F, 0.273f, 0.8f);
                 } 
                 
              // HP Zoom
-                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.AimpointCompM5)) {
+                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.AimpointCompM5)) {
                     //System.out.println("Position me for Scope");
                     GL11.glTranslatef(0F, 0.273f, 0.8f);
                 } 
                 
              // HP Zoom
-                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.Kobra)) {
+                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.Kobra)) {
                     //System.out.println("Position me for Scope");
                     GL11.glTranslatef(0F, 0.283f, 0.6f);
                 } 
                 
              // HP Zoom
-                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.KobraGen3)) {
+                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.KobraGen3)) {
                     //System.out.println("Position me for Scope");
                     GL11.glTranslatef(0F, 0.283f, 0.6f);
                 } 
@@ -1430,79 +1431,79 @@ public class PGMHecateIIFactory implements GunFactory {
                  GL11.glRotatef(-2F, 1f, 0f, 0f);
                 
              // HP Zoom
-                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.LeupoldRailScope)) {
+                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.LeupoldRailScope)) {
                     //System.out.println("Position me for Scope");
                 	GL11.glTranslatef(0F, 0.2f, -0.1f);
                 } 
                 
              // HP Zoom
-                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.NightRaider)) {
+                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.NightRaider)) {
                     //System.out.println("Position me for Scope");
                     GL11.glTranslatef(0F, 0.24f, 0.5f);
                 } 
                 
              // HP Zoom
-                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.ACOG)) {
+                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.ACOG)) {
                     //System.out.println("Position me for Scope");
                     GL11.glTranslatef(0F, 0.265f, 0.4f);
                 } 
                 
              // HP Zoom
-                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.Specter)) {
+                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.Specter)) {
                     //System.out.println("Position me for Scope");
                     GL11.glTranslatef(0F, 0.21f, 0.5f);
                 } 
                 
              // HP Zoom
-                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.MicroReflex)) {
+                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.MicroReflex)) {
                     //System.out.println("Position me for Scope");
                     GL11.glTranslatef(0F, 0.27f, 0.8f);
                 } 
                 
              // HP Zoom
-                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.Reflex)) {
+                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.Reflex)) {
                     //System.out.println("Position me for Scope");
                     GL11.glTranslatef(0F, 0.22f, 0.8f);
                 } 
                 
              // HP Zoom
-                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.BijiaReflex)) {
+                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.BijiaReflex)) {
                     //System.out.println("Position me for Scope");
                     GL11.glTranslatef(0F, 0.2f, 0.8f);
                 } 
                 
              // HP Zoom
-                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.Holographic)) {
+                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.Holographic)) {
                     //System.out.println("Position me for Scope");
                 	 GL11.glTranslatef(0F, 0.275f, 0.8f);
                 } 
                 
              // HP Zoom
-                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.HolographicAlt)) {
+                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.HolographicAlt)) {
                     //System.out.println("Position me for Scope");
                 	 GL11.glTranslatef(0F, 0.275f, 0.8f);
                 } 
                 
              // HP Zoom
-                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.MicroT1)) {
+                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.MicroT1)) {
                     //System.out.println("Position me for Scope");
                     GL11.glTranslatef(0F, 0.273f, 0.8f);
                 } 
                 
              // HP Zoom
-                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.AimpointCompM5)) {
+                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.AimpointCompM5)) {
                     //System.out.println("Position me for Scope");
                     GL11.glTranslatef(0F, 0.273f, 0.8f);
                 } 
                 
              // HP Zoom
-                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.Kobra)) {
+                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.Kobra)) {
                     //System.out.println("Position me for Scope");
                     GL11.glTranslatef(0F, 0.283f, 0.6f);
                 } 
                 
              // HP Zoom
-                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.KobraGen3)) {
+                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.KobraGen3)) {
                     //System.out.println("Position me for Scope");
                     GL11.glTranslatef(0F, 0.283f, 0.6f);
                 } 
@@ -1542,7 +1543,7 @@ public class PGMHecateIIFactory implements GunFactory {
                          RenderContext<?> rc = (RenderContext<?>) renderContext;
                          ItemAttachment<Weapon> activeAttachment = WeaponAttachmentAspect.getActiveAttachment(
                                  AttachmentCategory.GRIP, rc.getWeaponInstance());
-                         if(activeAttachment == Attachments.Bipod) {
+                         if(activeAttachment == Attachments3.Bipod) {
                              GL11.glScalef(4f, 4f, 4f);
                              GL11.glRotatef(-95.000000f, 1f, 0f, 0f);
                              GL11.glRotatef(-40.000000f, 0f, 1f, 0f);
@@ -2068,7 +2069,7 @@ public class PGMHecateIIFactory implements GunFactory {
                         RenderContext<?> rc = (RenderContext<?>) renderContext;
                         ItemAttachment<Weapon> activeAttachment = WeaponAttachmentAspect.getActiveAttachment(
                                 AttachmentCategory.GRIP, rc.getWeaponInstance());
-                        if(activeAttachment == Attachments.Bipod) {
+                        if(activeAttachment == Attachments3.Bipod) {
                             GL11.glScalef(4f, 4f, 4f);
                             GL11.glRotatef(-95.000000f, 1f, 0f, 0f);
                             GL11.glRotatef(-40.000000f, 0f, 1f, 0f);
@@ -2087,7 +2088,7 @@ public class PGMHecateIIFactory implements GunFactory {
                         RenderContext<?> rc = (RenderContext<?>) renderContext;
                         ItemAttachment<Weapon> activeAttachment = WeaponAttachmentAspect.getActiveAttachment(
                                 AttachmentCategory.GRIP, rc.getWeaponInstance());
-                        if(activeAttachment == Attachments.Bipod) {
+                        if(activeAttachment == Attachments3.Bipod) {
                             GL11.glScalef(4f, 4f, 4f);
                             GL11.glRotatef(-95.000000f, 1f, 0f, 0f);
                             GL11.glRotatef(-40.000000f, 0f, 1f, 0f);
@@ -2105,7 +2106,7 @@ public class PGMHecateIIFactory implements GunFactory {
                         RenderContext<?> rc = (RenderContext<?>) renderContext;
                         ItemAttachment<Weapon> activeAttachment = WeaponAttachmentAspect.getActiveAttachment(
                                 AttachmentCategory.GRIP, rc.getWeaponInstance());
-                        if(activeAttachment == Attachments.Bipod) {
+                        if(activeAttachment == Attachments3.Bipod) {
                             GL11.glScalef(4f, 4f, 4f);
                             GL11.glRotatef(-95.000000f, 1f, 0f, 0f);
                             GL11.glRotatef(-40.000000f, 0f, 1f, 0f);
@@ -2123,7 +2124,7 @@ public class PGMHecateIIFactory implements GunFactory {
                         RenderContext<?> rc = (RenderContext<?>) renderContext;
                         ItemAttachment<Weapon> activeAttachment = WeaponAttachmentAspect.getActiveAttachment(
                                 AttachmentCategory.GRIP, rc.getWeaponInstance());
-                        if(activeAttachment == Attachments.Bipod) {
+                        if(activeAttachment == Attachments3.Bipod) {
                             GL11.glScalef(4f, 4f, 4f);
                             GL11.glRotatef(-95.000000f, 1f, 0f, 0f);
                             GL11.glRotatef(-40.000000f, 0f, 1f, 0f);
@@ -2141,7 +2142,7 @@ public class PGMHecateIIFactory implements GunFactory {
                         RenderContext<?> rc = (RenderContext<?>) renderContext;
                         ItemAttachment<Weapon> activeAttachment = WeaponAttachmentAspect.getActiveAttachment(
                                 AttachmentCategory.GRIP, rc.getWeaponInstance());
-                        if(activeAttachment == Attachments.Bipod) {
+                        if(activeAttachment == Attachments3.Bipod) {
                             GL11.glScalef(4f, 4f, 4f);
                             GL11.glRotatef(-95.000000f, 1f, 0f, 0f);
                             GL11.glRotatef(-40.000000f, 0f, 1f, 0f);
@@ -2159,7 +2160,7 @@ public class PGMHecateIIFactory implements GunFactory {
                         RenderContext<?> rc = (RenderContext<?>) renderContext;
                         ItemAttachment<Weapon> activeAttachment = WeaponAttachmentAspect.getActiveAttachment(
                                 AttachmentCategory.GRIP, rc.getWeaponInstance());
-                        if(activeAttachment == Attachments.Bipod) {
+                        if(activeAttachment == Attachments3.Bipod) {
                             GL11.glScalef(4f, 4f, 4f);
                             GL11.glRotatef(-95.000000f, 1f, 0f, 0f);
                             GL11.glRotatef(-40.000000f, 0f, 1f, 0f);
@@ -2177,7 +2178,7 @@ public class PGMHecateIIFactory implements GunFactory {
                         RenderContext<?> rc = (RenderContext<?>) renderContext;
                         ItemAttachment<Weapon> activeAttachment = WeaponAttachmentAspect.getActiveAttachment(
                                 AttachmentCategory.GRIP, rc.getWeaponInstance());
-                        if(activeAttachment == Attachments.Bipod) {
+                        if(activeAttachment == Attachments3.Bipod) {
                             GL11.glScalef(4f, 4f, 4f);
                             GL11.glRotatef(-95.000000f, 1f, 0f, 0f);
                             GL11.glRotatef(-40.000000f, 0f, 1f, 0f);
@@ -2195,7 +2196,7 @@ public class PGMHecateIIFactory implements GunFactory {
                         RenderContext<?> rc = (RenderContext<?>) renderContext;
                         ItemAttachment<Weapon> activeAttachment = WeaponAttachmentAspect.getActiveAttachment(
                                 AttachmentCategory.GRIP, rc.getWeaponInstance());
-                        if(activeAttachment == Attachments.Bipod) {
+                        if(activeAttachment == Attachments3.Bipod) {
                             GL11.glScalef(4f, 4f, 4f);
                             GL11.glRotatef(-95.000000f, 1f, 0f, 0f);
                             GL11.glRotatef(-40.000000f, 0f, 1f, 0f);

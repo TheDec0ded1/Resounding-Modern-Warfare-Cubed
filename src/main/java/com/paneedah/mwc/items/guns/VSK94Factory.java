@@ -8,6 +8,7 @@ import com.paneedah.mwc.init.MWCItems;
 import com.paneedah.mwc.models.*;
 import com.paneedah.mwc.proxies.CommonProxy;
 import com.paneedah.mwc.weapons.Attachments;
+import com.paneedah.mwc.weapons.Attachments3;
 import com.paneedah.mwc.weapons.AuxiliaryAttachments;
 import com.paneedah.mwc.weapons.Magazines;
 import com.paneedah.weaponlib.*;
@@ -107,11 +108,11 @@ public class VSK94Factory {
 //    	   GL11.glTranslatef(-0.4F, 1.5F, 0.2F);
 //           GL11.glRotatef(-15F, 1f, 0f, 0f);
         })
-        .withCompatibleAttachment(Attachments.SuppressorKBP9A91, true, (model) -> {
+        .withCompatibleAttachment(Attachments3.SuppressorKBP9A91, true, (model) -> {
 //          GL11.glTranslatef(-0.25F, -1.14F, -6.4F);
 //          GL11.glScaled(1.5F, 1.5F, 1.5F);
         })
-        .withCompatibleAttachment(Attachments.KobraMount, (player, stack) -> {
+        .withCompatibleAttachment(Attachments3.KobraMount, (player, stack) -> {
         	GL11.glTranslatef(-0.035F, -1.23F, -0.4F);
             GL11.glScaled(0.7F, 0.7F, 0.7F);
         },(model) -> {
@@ -120,7 +121,7 @@ public class VSK94Factory {
                 GL11.glScaled(0.15F, 0.15F, 0.15F);
             }
         })
-        .withCompatibleAttachment(Attachments.OKP7, (player, stack) -> {
+        .withCompatibleAttachment(Attachments3.OKP7, (player, stack) -> {
                 GL11.glTranslatef(-0.18F, -0.65F, -1F);
                 GL11.glScaled(0.7F, 0.7F, 0.7F);
             },(model) -> {
@@ -129,7 +130,7 @@ public class VSK94Factory {
                 GL11.glScaled(0.1F, 0.1F, 0.1F);
             }
         })
-        .withCompatibleAttachment(Attachments.PSO1, (player, stack) -> {
+        .withCompatibleAttachment(Attachments3.PSO1, (player, stack) -> {
             
             GL11.glTranslatef(0.14F, -0.9F, -1.2F);
             GL11.glScaled(1.2F, 1.2F, 1.2F);
@@ -143,7 +144,7 @@ public class VSK94Factory {
                  GL11.glScaled(0.8F, 0.8F, 0.8F);
              }
         })
-        .withCompatibleAttachment(Attachments.NSPU, (player, stack) -> {
+        .withCompatibleAttachment(Attachments3.NSPU, (player, stack) -> {
             GL11.glTranslatef(0.14F, -0.9F, -1.2F);
             GL11.glScaled(1.2F, 1.2F, 1.2F);
         },(model) -> {
@@ -156,18 +157,26 @@ public class VSK94Factory {
                  GL11.glScaled(0.8F, 0.8F, 0.8F);
              }
         })
-        .withCompatibleAttachment(Attachments.Grip2, (model) -> {
+        .withCompatibleAttachment(Attachments3.Grip2, (model) -> {
             GL11.glTranslatef(-0.2F, -0.15F, -3.3F);
             GL11.glScaled(1F, 1F, 1F);
         })
-        .withCompatibleAttachment(Attachments.StubbyGrip, (model) -> {
+        .withCompatibleAttachment(Attachments3.StubbyGrip, (model) -> {
         	GL11.glTranslatef(-0.2F, -0.15F, -3.3F);
             GL11.glScaled(1F, 1F, 1F);
         })
-        .withCompatibleAttachment(Attachments.VGrip, (model) -> {
+        .withCompatibleAttachment(Attachments3.VGrip, (model) -> {
         	GL11.glTranslatef(-0.2F, -0.15F, -3.3F);
             GL11.glScaled(1F, 1F, 1F);
         })
+        .withCompatibleAttachment(Attachments3.Laser2, (p, s) -> {
+        	GL11.glTranslatef(0F, -0.95F, -4.3F);
+			GL11.glScaled(0.8F, 0.8F, 0.8F);
+		})
+		.withCompatibleAttachment(Attachments3.Laser, (p, s) -> {
+			GL11.glTranslatef(0F, -0.95F, -4.3F);
+			GL11.glScaled(0.8F, 0.8F, 0.8F);
+		})
         .withTextureNames("kbp9a91")
         .withRenderer(new WeaponRenderer.Builder()
             
@@ -326,26 +335,26 @@ public class VSK94Factory {
                 GL11.glTranslatef(0.14f, 0.8f, -0.4f);
 
              // ACOG Zoom
-                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.KobraMount)) {
+                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.KobraMount)) {
                     //System.out.println("Position me for Acog");
                     GL11.glTranslatef(-0F, 0.305f, 0f);
                 } 
                 
                 // ACOG Zoom
-                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.OKP7)) {
+                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.OKP7)) {
                     //System.out.println("Position me for Acog");
                     GL11.glTranslatef(-0.06F, 0.17f, 0f);
                 } 
                 
              // ACOG Zoom
-                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.PSO1)) {
+                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.PSO1)) {
                     //System.out.println("Position me for Acog");
-                    GL11.glTranslatef(-0.015F, 0.22f, 0.25f);
+                    GL11.glTranslatef(-0.015F, 0.2f, 0.0f);
                 } 
                 // ACOG Zoom
-                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.NSPU)) {
+                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.NSPU)) {
                     //System.out.println("Position me for Acog");
-                    GL11.glTranslatef(-0.015F, 0.28f, -0.1f);
+                    GL11.glTranslatef(-0.015F, 0.2f, 0.0f);
                 } 
                 
                 // Everything else

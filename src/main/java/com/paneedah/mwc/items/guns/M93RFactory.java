@@ -6,6 +6,7 @@ import com.paneedah.mwc.models.*;
 import com.paneedah.mwc.proxies.CommonProxy;
 import com.paneedah.mwc.weapons.Attachments;
 import com.paneedah.mwc.weapons.Attachments2;
+import com.paneedah.mwc.weapons.Attachments3;
 import com.paneedah.mwc.weapons.AuxiliaryAttachments;
 import com.paneedah.mwc.weapons.Magazines;
 import com.paneedah.weaponlib.AttachmentCategory;
@@ -132,7 +133,7 @@ public class M93RFactory implements GunFactory {
         .withCompatibleAttachment(Magazines.M9DrumMag, (model) -> {
         })
       
-        .withCompatibleAttachment(Attachments.Silencer9mm, (model) -> {
+        .withCompatibleAttachment(Attachments3.Silencer9mm, (model) -> {
             GL11.glTranslatef(-0.22F, -1.2F, -4.6F);
             GL11.glScaled(1.3F, 1.3F, 1.3F);
         })
@@ -317,17 +318,17 @@ public class M93RFactory implements GunFactory {
             	GL11.glScaled(3F, 3F, 3F);
             	GL11.glTranslatef(0.145f, 0.67f, -2f);
                 
-                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.RMR)) {
+                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.RMR)) {
                     //System.out.println("Position me for Holo");
                     GL11.glTranslatef(0f, 0.24f, 0f);
                 } 
                 
-                else if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.BijiaReflex)) {
+                else if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.BijiaReflex)) {
                     //System.out.println("Position me for Holo");
                     GL11.glTranslatef(0f, 0.34f, 0f);
                 } 
                 
-                else if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.MicroReflex)) {
+                else if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.MicroReflex)) {
                     //System.out.println("Position me for Holo");
                     GL11.glTranslatef(0f, 0.2f, 0f);
                 } 

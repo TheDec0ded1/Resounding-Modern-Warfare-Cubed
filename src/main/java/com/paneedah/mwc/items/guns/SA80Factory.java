@@ -4,6 +4,7 @@ import com.paneedah.mwc.ModernWarfareMod;
 import com.paneedah.mwc.models.*;
 import com.paneedah.mwc.proxies.CommonProxy;
 import com.paneedah.mwc.weapons.Attachments;
+import com.paneedah.mwc.weapons.Attachments3;
 import com.paneedah.mwc.weapons.AuxiliaryAttachments;
 import com.paneedah.mwc.weapons.Magazines;
 import com.paneedah.weaponlib.*;
@@ -95,7 +96,7 @@ public class SA80Factory implements GunFactory {
               GL11.glScaled(0F, 0F, 0F);
           }
         })
-        .withCompatibleAttachment(Attachments.Specter, true, (player, stack) -> {
+        .withCompatibleAttachment(Attachments3.Specter, true, (player, stack) -> {
             GL11.glTranslatef(-0.178F, -1.12F, 0.5F);
             GL11.glScaled(0.35F, 0.35F, 0.35F);
         },(model) -> {
@@ -486,7 +487,7 @@ public class SA80Factory implements GunFactory {
                 GL11.glTranslatef(0.355f, 0.91f, -0.85f);
                 
              // Standard Iron Sight Zoom
-                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.AKMIron)) {
+                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.AKMIron)) {
                     //System.out.println("Position me for Acog");
                     RenderContext<?> rc = (RenderContext<?>) renderContext;
                     ItemAttachment<Weapon> activeAttachment = WeaponAttachmentAspect.getActiveAttachment(
@@ -511,7 +512,7 @@ public class SA80Factory implements GunFactory {
                 GL11.glTranslatef(0.355f, 0.91f, -0.75f);
                 
              // Standard Iron Sight Zoom
-                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.AKMIron)) {
+                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.AKMIron)) {
                     //System.out.println("Position me for Acog");
                     RenderContext<?> rc = (RenderContext<?>) renderContext;
                     ItemAttachment<Weapon> activeAttachment = WeaponAttachmentAspect.getActiveAttachment(

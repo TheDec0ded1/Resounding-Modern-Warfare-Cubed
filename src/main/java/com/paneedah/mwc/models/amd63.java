@@ -5,7 +5,7 @@ import net.minecraft.client.model.ModelBox;
 import net.minecraft.client.model.ModelRenderer;
 import net.minecraft.entity.Entity;
 
-// Made with Blockbench 4.8.1
+// Made with Blockbench 4.9.1
 // Exported for Minecraft version 1.7 - 1.12
 // Paste this class into your mod and generate all required imports
 
@@ -1163,6 +1163,7 @@ public class amd63 extends ModelWithAttachments {
 		gun80.cubeList.add(new ModelBox(gun80, 57, 130, -3.6F, 2.6F, -31.9F, 1, 1, 5, 0.0F, false));
 		gun80.cubeList.add(new ModelBox(gun80, 57, 130, 0.2F, 2.6F, -31.9F, 1, 1, 5, 0.0F, false));
 		gun80.cubeList.add(new ModelBox(gun80, 37, 110, 0.001F, 0.0F, 0.0F, 1, 5, 25, 0.0F, false));
+		gun80.cubeList.add(new ModelBox(gun80, 38, 111, -3.399F, 0.0F, -12.0F, 1, 1, 24, 0.0F, false));
 
 		gun81_r1 = new ModelRenderer(this);
 		gun81_r1.setRotationPoint(-1.2F, 3.8781F, -23.4483F);
