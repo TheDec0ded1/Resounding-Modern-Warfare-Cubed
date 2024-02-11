@@ -28,7 +28,7 @@ public class FlashGrenadeFactory implements GrenadeFactory {
                 .withName("Flash")
                 .withCreativeTab(ModernWarfareMod.GrenadesTab)
                 .withTextureNames("flashgrenade")
-                .withExplosionStrength(0.1f)
+                .withExplosionStrength(0f)
                 .withExplosionTimeout(5000)
                 .withExplosionSound("flashbang")
                 .withBounceSoftSound("grenade-soft-bounce")

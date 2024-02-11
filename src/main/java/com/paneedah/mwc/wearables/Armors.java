@@ -22,6 +22,10 @@ public class Armors {
     public static Item Urbanchest;
     public static Item Urbanboots;
     public static Item Urbanhelmet;
+
+    public static Item ForestAltchest;
+    public static Item ForestAltboots;
+    public static Item ForestAlthelmet;
     
     public static Item Blackcamochest;
     
@@ -71,6 +75,30 @@ public class Armors {
     public static Item scpGuardchest;
     public static Item scpGuardboots;
     public static Item scpGuardhelmet;
+
+    public static Item ratnikWoodlandchest;
+    public static Item ratnikWoodlandboots;
+    public static Item ratnikWoodlandhelmet;
+
+    public static Item ratnikAridchest;
+    public static Item ratnikAridboots;
+    public static Item ratnikAridhelmet;
+
+    public static Item ratnikMountainchest;
+    public static Item ratnikMountainboots;
+    public static Item ratnikMountainhelmet;
+
+    public static Item ratnikArcticchest;
+    public static Item ratnikArcticboots;
+    public static Item ratnikArctichelmet;
+
+    public static Item ratnikDesertchest;
+    public static Item ratnikDesertboots;
+    public static Item ratnikDeserthelmet;
+
+    public static Item ratnikSteppechest;
+    public static Item ratnikSteppeboots;
+    public static Item ratnikSteppehelmet;
     
     static ArmorMaterial Juggernaut = EnumHelper.addArmorMaterial("Juggernaut", "Juggernaut", 20, new int[] { 5, 6, 2, 5}, 20, null, 0);
     static ArmorMaterial Marine = EnumHelper.addArmorMaterial("Marine", "Marine", 60, new int[] { 2, 3, 3, 3 }, 15, null, 0);
@@ -121,6 +149,18 @@ public class Armors {
         Armors.Urbanhelmet = urbanArmorBuilder.buildHelmet(modContext);
         Armors.Urbanchest = urbanArmorBuilder.buildChest(modContext.isClient());
         Armors.Urbanboots = urbanArmorBuilder.buildBoots(modContext.isClient());
+
+        Builder forestaltArmorBuilder = new CustomArmor.Builder()
+        		.withMaterial(Armors.Marine)
+                .withCreativeTab(ModernWarfareMod.ArmorTab)
+                .withUnlocalizedName("ForestAlt")
+                .withTextureName("militaryuniformforestalt")
+                .withModelClass("com.paneedah.mwc.models.USMC")
+                .withCreativeTab(ModernWarfareMod.ArmorTab);
+
+        Armors.ForestAlthelmet = forestaltArmorBuilder.buildHelmet(modContext);
+        Armors.ForestAltchest = forestaltArmorBuilder.buildChest(modContext.isClient());
+        Armors.ForestAltboots = forestaltArmorBuilder.buildBoots(modContext.isClient());
         
         Builder multicamoblackArmorBuilder = new CustomArmor.Builder()
         		.withMaterial(Armors.Marine)
@@ -275,5 +315,71 @@ public class Armors {
         Armors.scpGuardhelmet = scpGuardArmorBuilder.buildHelmet(modContext);
         Armors.scpGuardchest = scpGuardArmorBuilder.buildChest(modContext.isClient());
         Armors.scpGuardboots = scpGuardArmorBuilder.buildBoots(modContext.isClient());
+
+       Builder ratnikWoodlandArmorBuilder = new CustomArmor.Builder()
+        		.withMaterial(Armors.Marine)
+                .withUnlocalizedName("Ratnik_Woodland")
+                .withTextureName("woodland_emr")
+                .withModelClass("com.paneedah.mwc.models.Ratnik_Uniform")
+                .withCreativeTab(ModernWarfareMod.ArmorTab);
+
+        Armors.ratnikWoodlandhelmet = ratnikWoodlandArmorBuilder.buildHelmet(modContext);
+        Armors.ratnikWoodlandchest = ratnikWoodlandArmorBuilder.buildChest(modContext.isClient());
+        Armors.ratnikWoodlandboots = ratnikWoodlandArmorBuilder.buildBoots(modContext.isClient());
+
+       Builder ratnikSteppeArmorBuilder = new CustomArmor.Builder()
+        		.withMaterial(Armors.Marine)
+                .withUnlocalizedName("Ratnik_Steppe")
+                .withTextureName("steppe_emr")
+                .withModelClass("com.paneedah.mwc.models.Ratnik_Uniform")
+                .withCreativeTab(ModernWarfareMod.ArmorTab);
+
+        Armors.ratnikSteppehelmet = ratnikSteppeArmorBuilder.buildHelmet(modContext);
+        Armors.ratnikSteppechest = ratnikSteppeArmorBuilder.buildChest(modContext.isClient());
+        Armors.ratnikSteppeboots = ratnikSteppeArmorBuilder.buildBoots(modContext.isClient());
+
+       Builder ratnikArcticArmorBuilder = new CustomArmor.Builder()
+        		.withMaterial(Armors.Marine)
+                .withUnlocalizedName("Ratnik_Arctic")
+                .withTextureName("arctic_emr")
+                .withModelClass("com.paneedah.mwc.models.Ratnik_Uniform")
+                .withCreativeTab(ModernWarfareMod.ArmorTab);
+
+        Armors.ratnikArctichelmet = ratnikArcticArmorBuilder.buildHelmet(modContext);
+        Armors.ratnikArcticchest = ratnikArcticArmorBuilder.buildChest(modContext.isClient());
+        Armors.ratnikArcticboots = ratnikArcticArmorBuilder.buildBoots(modContext.isClient());
+
+       Builder ratnikDesertArmorBuilder = new CustomArmor.Builder()
+        		.withMaterial(Armors.Marine)
+                .withUnlocalizedName("Ratnik_Desert")
+                .withTextureName("desert_emr")
+                .withModelClass("com.paneedah.mwc.models.Ratnik_Uniform")
+                .withCreativeTab(ModernWarfareMod.ArmorTab);
+
+        Armors.ratnikDeserthelmet = ratnikDesertArmorBuilder.buildHelmet(modContext);
+        Armors.ratnikDesertchest = ratnikDesertArmorBuilder.buildChest(modContext.isClient());
+        Armors.ratnikDesertboots = ratnikDesertArmorBuilder.buildBoots(modContext.isClient());
+
+       Builder ratnikAridArmorBuilder = new CustomArmor.Builder()
+        		.withMaterial(Armors.Marine)
+                .withUnlocalizedName("Ratnik_Arid")
+                .withTextureName("arid_emr")
+                .withModelClass("com.paneedah.mwc.models.Ratnik_Uniform")
+                .withCreativeTab(ModernWarfareMod.ArmorTab);
+
+        Armors.ratnikAridhelmet = ratnikAridArmorBuilder.buildHelmet(modContext);
+        Armors.ratnikAridchest = ratnikAridArmorBuilder.buildChest(modContext.isClient());
+        Armors.ratnikAridboots = ratnikAridArmorBuilder.buildBoots(modContext.isClient());
+
+       Builder ratnikMountainArmorBuilder = new CustomArmor.Builder()
+        		.withMaterial(Armors.Marine)
+                .withUnlocalizedName("Ratnik_Mountain")
+                .withTextureName("mountain_emr")
+                .withModelClass("com.paneedah.mwc.models.Ratnik_Uniform")
+                .withCreativeTab(ModernWarfareMod.ArmorTab);
+
+        Armors.ratnikMountainhelmet = ratnikMountainArmorBuilder.buildHelmet(modContext);
+        Armors.ratnikMountainchest = ratnikMountainArmorBuilder.buildChest(modContext.isClient());
+        Armors.ratnikMountainboots = ratnikMountainArmorBuilder.buildBoots(modContext.isClient());
     }
 }

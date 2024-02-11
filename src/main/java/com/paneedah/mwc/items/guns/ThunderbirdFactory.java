@@ -25,7 +25,7 @@ public class ThunderbirdFactory implements GunFactory {
 
         .withName("thunderbird")
         .withFireRate(0.7f)
-        .withRecoil(5f)
+        .withRecoil(20f)
         .withZoom(0.9f)
         .withConfigGroup(GunConfigurationGroup.SIDEARM)
         .withMuzzlePosition(new Vec3d(-0.14400000429153445, -0.8639999959468836, -2.355999876499175))
@@ -53,7 +53,7 @@ public class ThunderbirdFactory implements GunFactory {
         		// The weapon power
         		45.0,
         		// Muzzle climb divisor
-        		13.5,
+        		40.5,
         		// "Stock Length"
         		37.5,
         		// Recovery rate from initial shot
@@ -61,9 +61,9 @@ public class ThunderbirdFactory implements GunFactory {
         		// Recovery rate @ "stock"
         		0.2125,
         		// Recoil rotation (Y)
-        		0.0,
+        		0.01,
         		// Recoil rotation (Z)
-        		0.0,
+        		0.01,
         		// Ads similarity divisor
         		1.0
         ))

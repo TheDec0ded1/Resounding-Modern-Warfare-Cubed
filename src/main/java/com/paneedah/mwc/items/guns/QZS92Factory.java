@@ -39,7 +39,7 @@ public class QZS92Factory implements GunFactory {
         .withShellType(Type.PISTOL)
         .withMaxShots(1)
         .withShootSound("qsz92")
-        .withSilencedShootSound("m9a1_silenced")
+        .withSilencedShootSound("qsz92_silenced")
         .withReloadSound("m9a1_reload")
         .withUnloadSound("pistol_unload")
         .withInspectSound("inspection")
@@ -118,6 +118,8 @@ public class QZS92Factory implements GunFactory {
         })
         .withCompatibleAttachment(Magazines.QZS92Mag, (model) -> {
 //           GL11.glTranslatef(0F, 0.2F, 0.12F);
+        })
+        .withCompatibleAttachment(Attachments2.QZS92Silencer, (model) -> {
         })
         .withCompatibleAttachment(Attachments3.Laser, (p, s) -> {
             GL11.glTranslatef(0.01F, -0.65F, -2.3F);

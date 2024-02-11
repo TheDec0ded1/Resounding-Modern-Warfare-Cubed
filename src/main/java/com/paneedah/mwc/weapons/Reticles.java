@@ -26,4 +26,5 @@ public class Reticles {
 	public static final Reticle RETICLE_NIGHTRAIDER = new Reticle("nightraider");
 	public static final Reticle RETICLE_NSPU = new Reticle("nspu");
 	public static final Reticle RETICLE_HKV = new Reticle("hkv");
+	public static final Reticle RETICLE_VUDU = new Reticle("vudu");
 }

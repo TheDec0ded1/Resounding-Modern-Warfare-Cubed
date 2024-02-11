@@ -496,6 +496,10 @@ public class M4A1Factory implements GunFactory {
                 GL11.glScaled(0F, 0F, 0F);
             }
         })
+	   .withCompatibleAttachment(Attachments3.M4RearIron, (model) -> {
+                GL11.glTranslatef(-0.1425F, -1.533F, -0.12F);
+                GL11.glScaled(0.29F, 0.29F, 0.29F);
+        })
 	   .withCompatibleAttachment(Attachments3.TritiumRearSights, renderContext -> {
            PlayerWeaponInstance instance = renderContext.getWeaponInstance();
            if(instance != null) {
@@ -688,6 +692,47 @@ public class M4A1Factory implements GunFactory {
                 GL11.glScaled(0.04F, 0.04F, 0.04F);
             }
         }, false, false)
+
+		.withCompatibleAttachment(Attachments3.Specter, renderContext -> {
+            PlayerWeaponInstance instance = renderContext.getWeaponInstance();
+            if(instance != null) {
+                ItemAttachment<Weapon> activeAttachment = WeaponAttachmentAspect.getActiveAttachment(
+                        AttachmentCategory.GUARD, instance);
+                if(activeAttachment == Attachments.AR57Handguard) {
+                    GL11.glTranslatef(-0.18F, -1.2F, -0.6F);
+                    GL11.glScaled(0.4F, 0.4F, 0.4F);
+                } else {
+                    GL11.glTranslatef(-0.18F, -1.1F, -0.7F);
+                    GL11.glScaled(0.4F, 0.4F, 0.4F);
+                }
+            }
+        },(model) -> {
+            if(model instanceof Acog2) {
+                GL11.glTranslatef(0.15F, -1.035F, 1.513F);
+                GL11.glScaled(0.1F, 0.1F, 0.1F);
+            }
+        }, false, false)
+		
+		.withCompatibleAttachment(Attachments3.VuduScope, renderContext -> {
+		    PlayerWeaponInstance instance = renderContext.getWeaponInstance();
+            if(instance != null) {
+                ItemAttachment<Weapon> activeAttachment = WeaponAttachmentAspect.getActiveAttachment(
+                        AttachmentCategory.GUARD, instance);
+                if(activeAttachment == Attachments.AR57Handguard) {
+                	GL11.glTranslatef(-0.151F, -1.37F, -1.2F);
+		            GL11.glScaled(0.4F, 0.4F, 0.4F);
+                } else {
+		            GL11.glTranslatef(-0.151F, -1.25F, -1.2F);
+		            GL11.glScaled(0.4F, 0.4F, 0.4F);
+                }
+            }
+        },(model) -> {
+             if(model instanceof JPUreticle) {
+                GL11.glTranslatef(0.076F, -0.67F, 4.0251F);
+                GL11.glScaled(0.04F, 0.04F, 0.04F);
+            }
+        }, false, false)
+
 		.withCompatibleAttachment(Attachments3.MicroReflex, renderContext -> {
 		    PlayerWeaponInstance instance = renderContext.getWeaponInstance();
             if(instance != null) {
@@ -1103,6 +1148,19 @@ public class M4A1Factory implements GunFactory {
 				GL11.glTranslatef(0.18f, -0.02f, 0.6f);
 				
 				// Standard Iron Sight Zoom
+				if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.M4RearIron)) {
+					//System.out.println("Position me for Acog");
+				    RenderContext<?> rc = (RenderContext<?>) renderContext;
+                    ItemAttachment<Weapon> activeAttachment = WeaponAttachmentAspect.getActiveAttachment(
+                            AttachmentCategory.RECEIVER, rc.getWeaponInstance());
+                    if(activeAttachment == Attachments.AR57Receiver) {
+                        GL11.glTranslatef(-0.0005F, 0.1f, 0f);
+                    } else {
+                        GL11.glTranslatef(0F, 0.028f, -0.3f);
+                    }
+				} 
+
+				// Standard Iron Sight Zoom
 				if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), AuxiliaryAttachments.AR15Iron)) {
 					//System.out.println("Position me for Acog");
 				    RenderContext<?> rc = (RenderContext<?>) renderContext;
@@ -1199,9 +1257,17 @@ public class M4A1Factory implements GunFactory {
                 } 
 
 				// HP Zoomw
-				if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.LeupoldRailScope)) {
-					//System.out.println("Position me for Acog");
-				    RenderContext<?> rc = (RenderContext<?>) renderContext;
+				if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.LeupoldRailScope)) {RenderContext<?> rc = (RenderContext<?>) renderContext;
+                    ItemAttachment<Weapon> activeAttachment = WeaponAttachmentAspect.getActiveAttachment(
+                            AttachmentCategory.RECEIVER, rc.getWeaponInstance());
+                    if(activeAttachment == Attachments.AR57Receiver) {
+                        GL11.glTranslatef(0.001F, 0.092f, -0.2f);
+                    } else {
+                        GL11.glTranslatef(0.001F, -0.027f, -0.2f);
+                    }
+				} 
+
+				if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.VuduScope)) {RenderContext<?> rc = (RenderContext<?>) renderContext;
                     ItemAttachment<Weapon> activeAttachment = WeaponAttachmentAspect.getActiveAttachment(
                             AttachmentCategory.RECEIVER, rc.getWeaponInstance());
                     if(activeAttachment == Attachments.AR57Receiver) {

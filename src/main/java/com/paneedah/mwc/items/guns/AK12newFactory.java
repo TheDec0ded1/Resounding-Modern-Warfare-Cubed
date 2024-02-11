@@ -126,14 +126,6 @@ public class AK12newFactory {
                 GL11.glScaled(0.7F, 0.8F, 0.45F);
             } 
         })
-        .withCompatibleAttachment(Attachments.RPK16Handguard, (model) -> {
-            if(model instanceof RPK16handguard) {
-//                GL11.glScaled(1F, 0.98F, 1);
-            } else if(model instanceof AKRail) {
-                GL11.glTranslatef(-0.22F, -1.3F, -4.39f);
-                GL11.glScaled(0.7F, 0.8F, 0.5F);
-            } 
-        })
         .withCompatibleAttachment(Attachments.AK15DustCover, true, (model) -> {
             if(model instanceof AK15DustCover) {
 //                GL11.glScaled(1F, 0.98F, 1);
@@ -940,7 +932,7 @@ public class AK12newFactory {
                         }, 300, 0))
                  
                 .build())
-            .withSpawnEntityDamage(6.6f)
+            .withSpawnEntityDamage(6f)
             .withSpawnEntityGravityVelocity(0.0118f)
                     
             .build(ModernWarfareMod.MOD_CONTEXT);

@@ -5,7 +5,7 @@ import net.minecraft.client.model.ModelBox;
 import net.minecraft.client.model.ModelRenderer;
 import net.minecraft.entity.Entity;
 
-// Made with Blockbench 4.7.4
+// Made with Blockbench 4.9.2
 // Exported for Minecraft version 1.7 - 1.12
 // Paste this class into your mod and generate all required imports
 
@@ -144,10 +144,7 @@ public class LeupoldRail extends ModelBase {
 		Leupold.cubeList.add(new ModelBox(Leupold, 82, 67, -0.9882F, -4.5075F, -13.222F, 2, 1, 3, 0.0F, false));
 		Leupold.cubeList.add(new ModelBox(Leupold, 48, 95, -1.4882F, 2.5925F, 13.778F, 3, 4, 3, 0.0F, false));
 		Leupold.cubeList.add(new ModelBox(Leupold, 39, 91, -1.4882F, 2.5925F, -13.222F, 3, 4, 3, 0.0F, false));
-		Leupold.cubeList.add(new ModelBox(Leupold, 73, 74, -1.4882F, 6.5925F, -13.722F, 3, 2, 4, 0.0F, false));
-		Leupold.cubeList.add(new ModelBox(Leupold, 73, 21, -1.4882F, 7.5925F, -18.722F, 3, 1, 5, 0.0F, false));
 		Leupold.cubeList.add(new ModelBox(Leupold, 0, 38, -1.4882F, 6.5925F, 13.278F, 3, 1, 4, 0.0F, false));
-		Leupold.cubeList.add(new ModelBox(Leupold, 51, 74, -0.9882F, 6.5925F, -18.722F, 2, 1, 5, 0.0F, false));
 		Leupold.cubeList.add(new ModelBox(Leupold, 73, 33, -0.9882F, 6.5925F, 12.778F, 2, 1, 5, 0.0F, false));
 		Leupold.cubeList.add(new ModelBox(Leupold, 0, 72, -1.4882F, 7.5925F, 12.778F, 3, 1, 5, 0.0F, false));
 		Leupold.cubeList.add(new ModelBox(Leupold, 10, 29, 3.3118F, -1.7075F, -12.722F, 2, 3, 2, 0.0F, false));

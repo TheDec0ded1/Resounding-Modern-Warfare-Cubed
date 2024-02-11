@@ -33,7 +33,7 @@ public class ARX160Factory implements GunFactory {
         .hasFlashPedals()
         .withMaxShots(1, 3, Integer.MAX_VALUE)
         .withShootSound("arx160")
-        .withSilencedShootSound("m4a1_silenced")
+        .withSilencedShootSound("arx160_silenced")
         .withReloadSound("g36c_reload")
         .withUnloadSound("g36c_unload")
         .withEndOfShootSound("gun_click")

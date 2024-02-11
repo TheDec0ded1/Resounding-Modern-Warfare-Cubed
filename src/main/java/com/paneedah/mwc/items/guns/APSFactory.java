@@ -109,23 +109,18 @@ public class APSFactory implements GunFactory {
             }
         })
         .withCompatibleAttachment(AuxiliaryAttachments.APShammer, true, (model) -> {
-//          GL11.glTranslatef(-0F, -0.17F, 0.53F);
-//        	GL11.glRotatef(45F, 1f, 0f, 0f);
         })
         .withCompatibleAttachment(Magazines.APSMag, (model) -> {
-//            GL11.glTranslatef(0F, 0.2F, 0.12F);
         })
-        .withCompatibleAttachment(Attachments3.Silencer9mm, (model) -> {
-            GL11.glTranslatef(-0.215F, -1.05F, -4.52F);
-            GL11.glScaled(1.1F, 1.1F, 1.3F);
+        .withCompatibleAttachment(Attachments3.APBSuppressor, (model) -> {
         })
         .withCompatibleAttachment(Attachments.APSStock, (model) -> {
-//            GL11.glTranslatef(-0.215F, -1.05F, -4.52F);
-//            GL11.glScaled(1.1F, 1.1F, 1.3F);
+        })
+        .withCompatibleAttachment(Attachments.APBStock, (model) -> {
         })
         .withCompatibleAttachment(Attachments.APSGrip, true, (model) -> {
-//          GL11.glTranslatef(-0.215F, -1.05F, -4.52F);
-//          GL11.glScaled(1.1F, 1.1F, 1.3F);
+      })
+        .withCompatibleAttachment(Attachments.APBGrip, (model) -> {
       })
         .withTextureNames("APS")
         .withRenderer(new WeaponRenderer.Builder()

@@ -175,8 +175,8 @@ public class SR3VikhrFactory {
                 
                 )
                 
-                .setupModernAnimations("vssvintorez", AuxiliaryAttachments.SR3VikhrAction)
-                .setupModernMagazineAnimations("vssvintorez", Magazines.ASValMag, Magazines.Val30Mag, Magazines.ASValMagB, Magazines.Val30MagB, Magazines.SR3MMag, Magazines.VSSVintorezMag)
+                .setupModernAnimations("sr3", AuxiliaryAttachments.SR3VikhrAction)
+                .setupModernMagazineAnimations("sr3", Magazines.ASValMag, Magazines.Val30Mag, Magazines.ASValMagB, Magazines.Val30MagB, Magazines.SR3MMag, Magazines.VSSVintorezMag)
             
                 .withFirstPersonPositioningCustomRecoiled(AuxiliaryAttachments.SR3VikhrAction.getRenderablePart(), (renderContext) -> {
                     GL11.glTranslatef(0f, 0f, 1f);

@@ -52,7 +52,6 @@ public class Type64SMGFactory {
         .withFlashScale(() -> 0.4f)
         .withFlashOffsetX(() -> 0.1f)
         .withFlashOffsetY(() -> 0.11f)
-        .withShootSoundVolume(1f)
         .withCreativeTab(ModernWarfareMod.AssaultRiflesTab)
         .useNewSystem()
         .withRecoilParam(new RecoilParam(
@@ -195,8 +194,8 @@ public class Type64SMGFactory {
                 
                 )
                 
-                .setupModernAnimations("vssvintorez", AuxiliaryAttachments.Type64SMGAction)
-                .setupModernMagazineAnimations("vssvintorez", Magazines.Type64SMGMag, Magazines.Type64SMGMag2)
+                .setupModernAnimations("type64", AuxiliaryAttachments.Type64SMGAction)
+                .setupModernMagazineAnimations("type64", Magazines.Type64SMGMag, Magazines.Type64SMGMag2)
             
                 .withFirstPersonPositioningCustomRecoiled(AuxiliaryAttachments.Type64SMGAction.getRenderablePart(), (renderContext) -> {
                     GL11.glTranslatef(0f, 0f, -1f);

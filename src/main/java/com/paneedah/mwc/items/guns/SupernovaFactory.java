@@ -35,7 +35,7 @@ public class SupernovaFactory implements GunFactory {
         .withMaxShots(1)
         .withPumpTimeout(600)
         .withShootSound("supernova")
-        .withSilencedShootSound("ShotgunSilenced")
+        .withSilencedShootSound("shotgun_silenced")
         .withReloadSound("drawweapon")
         .withReloadIterationSound("load_shell")
         .withInspectSound("inspection")

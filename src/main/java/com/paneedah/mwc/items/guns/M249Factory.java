@@ -89,34 +89,40 @@ public class M249Factory {
          })
          .withCompatibleAttachment(Attachments.M249MilspecStock, (model) -> {
         	 if(model instanceof MilSpecStock) {
-        		 GL11.glTranslatef(0.185f, 0.7f, 5.9f);
+        		 GL11.glTranslatef(0.0f, 0.0f, 0.6f);
                  GL11.glScaled(1.2F, 1.2F, 1.2F);
              } 
          })
          .withCompatibleAttachment(Attachments.M249HK416Stock, (model) -> {
         	 if(model instanceof HK416Stock) {
-        		 GL11.glTranslatef(0.185f, 0.7f, 5.9f);
+        		 GL11.glTranslatef(0.0f, 0.0f, 0.6f);
                  GL11.glScaled(1.2F, 1.2F, 1.2F);
              } 
          })
          .withCompatibleAttachment(Attachments.Mk48HandGuard, (model) -> {
+             if(model instanceof Mk48HandGuard) {
+                 GL11.glTranslatef(-0.15f, -0.75f, -5.6f);
+             }
         	 if(model instanceof AKRail) {
-        		 GL11.glTranslatef(0.16F, 0.28F, 1.54F);
+        		 GL11.glTranslatef(0.0F, -0.4F, -4.0F);
                  GL11.glScaled(0.9F, 0.9F, 0.6F);
                  GL11.glRotatef(180F, 0f, 0f, 1f);
              } 
          })
          .withCompatibleAttachment(Attachments.Mk48UpperHandGuard, (model) -> {
+             if(model instanceof Mk48UpperHandGuard) {
+                 GL11.glTranslatef(-0.18f, -0.8f, -5.5f);
+             }
              if(model instanceof AKRail) {
-                 GL11.glTranslatef(0.42F, -0.45F, 1F);
+                 GL11.glTranslatef(0.3F, -1.25F, -4.57F);
                  GL11.glScaled(0.9F, 0.9F, 0.58F);
                  GL11.glRotatef(90F, 0f, 0f, 1f);
              } else if(model instanceof AKRail2) {
-                 GL11.glTranslatef(-0.34F, -0.2F, 1F);
+                 GL11.glTranslatef(-0.54F, -0.9F, -4.57F);
                  GL11.glScaled(0.9F, 0.9F, 0.58F);
                  GL11.glRotatef(-90F, 0f, 0f, 1f);
              } else if(model instanceof AKRail3) {
-            	 GL11.glTranslatef(-0.09F, -0.92F, 0.95F);
+                 GL11.glTranslatef(-0.27F, -1.7F, -4.57F);
                  GL11.glScaled(0.9F, 0.9F, 0.58F);
              } 
          })
@@ -127,6 +133,9 @@ public class M249Factory {
             if(model instanceof M249Hatch) {
 //            	GL11.glTranslatef(-0F, 2.45F, 3.8F);
 //                GL11.glRotatef(90F, 1f, 0f, 0f);
+            } else if(model instanceof M249RearSight) {
+                GL11.glTranslatef(-0.13f, -1.63f, 0.5f);
+                GL11.glScaled(0.35F, 0.35F, 0.35F);
             } else if(model instanceof AKRail) {
             	GL11.glTranslatef(-0.25F, -1.7F, -2.2F);
                 GL11.glScaled(0.9F, 0.9F, 0.9F);
@@ -168,8 +177,8 @@ public class M249Factory {
                 GL11.glTranslatef(-0.22F, -1.94F, 0.13F);
                 GL11.glScaled(0F, 0F, 0F);
             } else if(model instanceof G36CIron2) {
-                GL11.glTranslatef(-0.005F, -0.9F, 0.08F);
-                GL11.glScaled(0.3F, 0.3F, 0.6F);
+                GL11.glTranslatef(-0.22F, -1.67F, -5.45F);
+                GL11.glScaled(0.5F, 0.5F, 0.8F);
             } else if(model instanceof ScarIron1) {
                     GL11.glTranslatef(0.165F, -1.65F, 1F);
                     GL11.glScaled(0F, 0F, 0F);
@@ -178,7 +187,7 @@ public class M249Factory {
                     GL11.glScaled(0F, 0F, 0F);
             } else if(model instanceof FALIron) {
                 GL11.glTranslatef(0.06F, -0.15F, -2.32F);
-                GL11.glScaled(0.15F, 0.3F, 0.8F);
+                GL11.glScaled(0F, 0F, 0F);
                 GL11.glRotatef(-180F, 0f, 0f, 1f);
             } else if(model instanceof M14Iron) {
                 GL11.glTranslatef(0.129F, -1.63F, -2.08F);
@@ -189,7 +198,7 @@ public class M249Factory {
             }
         })
         .withCompatibleAttachment(Attachments3.NightRaider, (player, stack) -> {
-            GL11.glTranslatef(-0.05F, -1F, 3.8F);
+            GL11.glTranslatef(-0.21F, -1.80F, -1.8F);
             GL11.glScaled(0.75F, 0.75F, 0.75F);
         },(model) -> {
             if(model instanceof JPUreticle) {
@@ -220,7 +229,7 @@ public class M249Factory {
             }
         })
         .withCompatibleAttachment(Attachments3.Reflex, (player, stack) -> {
-            GL11.glTranslatef(0.1F, -0.83F, 4.6F);
+            GL11.glTranslatef(-0.06F, -1.62F, -1.1F);
             GL11.glScaled(0.5F, 0.5F, 0.5F);
         },(model) -> {
             if(model instanceof Reflex2) {
@@ -229,7 +238,7 @@ public class M249Factory {
             }
         })
         .withCompatibleAttachment(Attachments3.BijiaReflex, (player, stack) -> {
-            GL11.glTranslatef(0.1F, -0.83F, 4.6F);
+            GL11.glTranslatef(-0.063F, -1.62F, -1.1F);
             GL11.glScaled(0.5F, 0.5F, 0.5F);
         },(model) -> {
         if(model instanceof Reflex2) {
@@ -238,7 +247,7 @@ public class M249Factory {
         }
         })
         .withCompatibleAttachment(Attachments3.Holographic, (player, stack) -> {
-            GL11.glTranslatef(0.12F, -0.83F, 4.6F);
+            GL11.glTranslatef(-0.05F, -1.66F, -1.0F);
             GL11.glScaled(0.65F, 0.65F, 0.65F);
             },(model) -> {
                 if(model instanceof Holo2) {
@@ -247,7 +256,7 @@ public class M249Factory {
                 }
             })
         .withCompatibleAttachment(Attachments3.HolographicAlt, (player, stack) -> {
-            GL11.glTranslatef(0.12F, -0.83F, 4.6F);
+            GL11.glTranslatef(-0.05F, -1.66F, -1.0F);
             GL11.glScaled(0.65F, 0.65F, 0.65F);
         },(model) -> {
             if(model instanceof Holo2) {
@@ -256,7 +265,7 @@ public class M249Factory {
             }
         })
         .withCompatibleAttachment(Attachments3.EotechHybrid2, (player, stack) -> {
-        	GL11.glTranslatef(0.12F, -0.83F, 4.6F);
+        	GL11.glTranslatef(-0.05F, -1.66F, -1.0F);
             GL11.glScaled(0.65F, 0.65F, 0.65F);
         },(model) -> {
             if(model instanceof EotechScopeRing) {
@@ -269,7 +278,7 @@ public class M249Factory {
             }
         })
         .withCompatibleAttachment(Attachments3.VortexRedux, (player, stack) -> {
-            GL11.glTranslatef(-0.14F, -1.05F, 4.3F);
+            GL11.glTranslatef(-0.30F, -1.85F, -1.2F);
             GL11.glScaled(0.45F, 0.45F, 0.45F);
             },(model) -> {
                 if(model instanceof Holo2) {
@@ -278,7 +287,7 @@ public class M249Factory {
                 }
             })
         .withCompatibleAttachment(Attachments3.Kobra, (player, stack) -> {
-            GL11.glTranslatef(0.125F, -0.85F, 4.8F);
+            GL11.glTranslatef(-0.04F, -1.65F, -1.0F);
             GL11.glScaled(0.7F, 0.7F, 0.7F);
         },(model) -> {
             if(model instanceof Reflex2) {
@@ -287,7 +296,7 @@ public class M249Factory {
             }
         })
         .withCompatibleAttachment(Attachments3.KobraGen3, (player, stack) -> {
-            GL11.glTranslatef(0.125F, -0.85F, 4.8F);
+            GL11.glTranslatef(-0.04F, -1.65F, -1.0F);
             GL11.glScaled(0.7F, 0.7F, 0.7F);
         },(model) -> {
             if(model instanceof Reflex2) {
@@ -296,7 +305,7 @@ public class M249Factory {
             }
         })
         .withCompatibleAttachment(Attachments3.MicroT1, (player, stack) -> {
-            GL11.glTranslatef(-0.04F, -1.05F, 4.6F);
+            GL11.glTranslatef(-0.2F, -1.86F, -1.0F);
             GL11.glScaled(0.48F, 0.48F, 0.48F);
             },(model) -> {
                 if(model instanceof Reflex2) {
@@ -305,7 +314,7 @@ public class M249Factory {
                 }
             })
         .withCompatibleAttachment(Attachments3.AimpointCompM5, (player, stack) -> {
-        	GL11.glTranslatef(-0.04F, -1.05F, 4.6F);
+        	GL11.glTranslatef(-0.2F, -1.86F, -1.0F);
             GL11.glScaled(0.48F, 0.48F, 0.48F);
             },(model) -> {
                 if(model instanceof Reflex2) {
@@ -314,31 +323,31 @@ public class M249Factory {
                 }
             })
         .withCompatibleAttachment(Attachments3.Grip2, (model) -> {
-            GL11.glTranslatef(-0.05F, 0.8F, 2.2F);
+            GL11.glTranslatef(-0.2F, 0.2F, -3.1F);
             GL11.glScaled(1.2F, 1.2F, 1.2F);
         })
         .withCompatibleAttachment(Attachments3.StubbyGrip, (model) -> {
-        	 GL11.glTranslatef(-0.05F, 0.8F, 2.2F);
+        	 GL11.glTranslatef(-0.2F, 0.18F, -3.3F);
              GL11.glScaled(1.2F, 1.2F, 1.2F);
         })
         .withCompatibleAttachment(Attachments3.AngledGrip, (model) -> {
-        	 GL11.glTranslatef(-0.05F, 1F, 2.2F);
-             GL11.glScaled(1.2F, 1.2F, 1.2F);
+        	 GL11.glTranslatef(-0.2F, 0.2F, -3.3F);
+             GL11.glScaled(1F, 1F, 0.9F);
         })
         .withCompatibleAttachment(Attachments3.VGrip, (model) -> {
-        	 GL11.glTranslatef(-0.05F, 0.8F, 2.2F);
+        	 GL11.glTranslatef(-0.2F, 0.2F, -3.3F);
              GL11.glScaled(1.2F, 1.2F, 1.2F);
         })
         .withCompatibleAttachment(Attachments3.Bipod, (model) -> {
-            GL11.glTranslatef(-0.05F, 0.4F, 0.8F);
+            GL11.glTranslatef(-0.2F, -0.2F, -4.45F);
             GL11.glScaled(1F, 1F, 1F);
         })
         .withCompatibleAttachment(Attachments3.Laser2, (p, s) -> {
-        	GL11.glTranslatef(0.26F, -0.44F, 1F);
+        	GL11.glTranslatef(0.1F, -1.47F, -4.0F);
             GL11.glScaled(1F, 1F, 1F);
         })
         .withCompatibleAttachment(Attachments3.Laser, (p, s) -> {
-            GL11.glTranslatef(0.26F, -0.44F, 1F);
+            GL11.glTranslatef(0.1F, -1.47F, -4.0F);
             GL11.glScaled(1F, 1F, 1F);
         })
         .withTextureNames("m249")
@@ -359,7 +368,7 @@ public class M249Factory {
             })
             .withThirdPersonPositioning((renderContext) -> {
                 GL11.glScaled(0.45F, 0.45F, 0.45F);
-                GL11.glTranslatef(-0.6F, 3.5F, 0.5F);
+                GL11.glTranslatef(-1.7F, -0.8F, 1.9F);
                 GL11.glRotatef(-45F, 0f, 1f, 0f);
                 GL11.glRotatef(70F, 1f, 0f, 0f);
                 })
@@ -398,6 +407,17 @@ public class M249Factory {
                 .setupCustomKeyedPart(AuxiliaryAttachments.M249Hatch, "m249", "hatch")
                 .setupCustomKeyedPart(Attachments3.ACOG, "m249", "scope")
                 .setupCustomKeyedPart(Attachments3.Specter, "m249", "scope")
+                .setupCustomKeyedPart(Attachments3.Reflex, "m249", "scope")
+                .setupCustomKeyedPart(Attachments3.NightRaider, "m249", "scope")
+                .setupCustomKeyedPart(Attachments3.BijiaReflex, "m249", "scope")
+                .setupCustomKeyedPart(Attachments3.Holographic, "m249", "scope")
+                .setupCustomKeyedPart(Attachments3.HolographicAlt, "m249", "scope")
+                .setupCustomKeyedPart(Attachments3.EotechHybrid2, "m249", "scope")
+                .setupCustomKeyedPart(Attachments3.MicroT1, "m249", "scope")
+                .setupCustomKeyedPart(Attachments3.AimpointCompM5, "m249", "scope")
+                .setupCustomKeyedPart(Attachments3.VortexRedux, "m249", "scope")
+                .setupCustomKeyedPart(Attachments3.Kobra, "m249", "scope")
+                .setupCustomKeyedPart(Attachments3.KobraGen3, "m249", "scope")
                 .setupModernMagazineAnimations("m249", 
                 		Magazines.M249Mag)
             
@@ -410,7 +430,7 @@ public class M249Factory {
             
             .withFirstPersonPositioningZooming((renderContext) -> {
                 GL11.glScalef(3.000000f, 3.000000f, 3.000000f);
-                GL11.glTranslatef(0.14f, 1.5f, -1f);
+                GL11.glTranslatef(0.14f, 1.23f, -1f);
 
              // ACOG Zoom
                 if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.NightRaider)) {
@@ -457,7 +477,7 @@ public class M249Factory {
              // ACOG Zoom
                 if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.EotechHybrid2)) {
                     //System.out.println("Position me for Acog");
-                    GL11.glTranslatef(0F, 0.235f, 0.5f);
+                    GL11.glTranslatef(0F, 0.255f, 0.5f);
                 } 
                 
              // ACOG Zoom
@@ -492,7 +512,6 @@ public class M249Factory {
                 
                 // Everything else
                 else {
-                GL11.glTranslatef(0.14f, 1f, -1f);
                 }
             
                 })

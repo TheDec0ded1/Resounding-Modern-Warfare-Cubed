@@ -30,7 +30,7 @@ public class Saiga12Factory {
         .withMaxShots(1)
         //.withMaxShots(5)
         .withShootSound("saiga12")
-        .withSilencedShootSound("ak15_silenced")
+        .withSilencedShootSound("autoshotgun_silenced")
         .withReloadSound("ak15_reload")
         .withInspectSound("inspection")
         .withDrawSound("ak_draw")

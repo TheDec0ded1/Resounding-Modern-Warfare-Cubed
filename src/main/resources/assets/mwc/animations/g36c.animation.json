@@ -279,7 +279,7 @@
 					"effect": "mag_smack"
 				},
 				"3.1": {
-					"effect": "action3_forward"
+					"effect": "g36action_forward"
 				},
 				"3.4": {
 					"effect": "gun_rest"
@@ -409,7 +409,7 @@
 					"effect": "gun_foley2"
 				},
 				"1.6": {
-					"effect": "action3_back"
+					"effect": "g36action_back"
 				},
 				"2.1": {
 					"effect": "gun_rest"
@@ -710,7 +710,7 @@
 					"effect": "gun_foley2"
 				},
 				"2.6": {
-					"effect": "action3_forward"
+					"effect": "g36action_forward"
 				},
 				"3.0": {
 					"effect": "gun_rest"

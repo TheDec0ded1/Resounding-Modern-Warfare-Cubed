@@ -8,7 +8,7 @@ import java.awt.Color;
 
 public class Reticle {
 	
-	private static final int DEFAULT_TINT = 0x576574;
+	private static final int DEFAULT_TINT = 0x808080;
 	
 	private ResourceLocation reticleTexture;
 	private Type reticleType;

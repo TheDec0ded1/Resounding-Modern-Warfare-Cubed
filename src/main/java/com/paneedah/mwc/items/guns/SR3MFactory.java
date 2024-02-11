@@ -363,11 +363,11 @@ public class SR3MFactory {
             }
         })
         .withCompatibleAttachment(Attachments3.Laser2, (p, s) -> {
-        	GL11.glTranslatef(0F, -0.85F, -4.2F);
+        	GL11.glTranslatef(0F, -1.15F, -3.8F);
 			GL11.glScaled(0.8F, 0.8F, 0.8F);
 		})
 		.withCompatibleAttachment(Attachments3.Laser, (p, s) -> {
-			GL11.glTranslatef(0F, -0.85F, -4.2F);
+			GL11.glTranslatef(0F, -1.15F, -3.8F);
 			GL11.glScaled(0.8F, 0.8F, 0.8F);
 		})
         .withTextureNames("vssvintorez")

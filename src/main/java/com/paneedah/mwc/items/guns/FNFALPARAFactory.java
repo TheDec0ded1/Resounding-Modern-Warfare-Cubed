@@ -39,7 +39,7 @@ public class FNFALPARAFactory {
         .withMaxShots(1, Integer.MAX_VALUE)
         //.withMaxShots(5)
         .withShootSound("fnfal")
-        .withSilencedShootSound("m110_silenced")
+        .withSilencedShootSound("fal_silenced")
         .withReloadSound("fnfal_reload")
         .withUnloadSound("fnfal_unload")
         .withInspectSound("inspection")

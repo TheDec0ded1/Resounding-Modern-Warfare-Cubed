@@ -34,7 +34,7 @@ public class BrowningAuto5Factory implements GunFactory {
         .withMaxShots(1)
         .withPumpTimeout(800)
         .withShootSound("browningauto5")
-        .withSilencedShootSound("ShotgunSilenced")
+        .withSilencedShootSound("autoshotgun_silenced")
         .withReloadSound("drawweapon")
         .withInspectSound("inspection")
         .withReloadIterationSound("load_shell")

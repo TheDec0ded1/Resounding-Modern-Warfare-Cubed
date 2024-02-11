@@ -1080,7 +1080,7 @@ AttachmentContainer, Reloadable, Inspectable, Modifiable, Updatable, IModernCraf
     //private static final float DEFAULT_ZOOM = 0.75f;
     private static final float DEFAULT_FIRE_RATE = 0.5f;
 
-    private static final float DEFAULT_SILENCED_SHOOT_SOUND_VOLUME = 0.7f;
+    private static final float DEFAULT_SILENCED_SHOOT_SOUND_VOLUME = 10f;
     private static final float DEFAULT_SHOOT_SOUND_VOLUME = 10f;
 
     public Builder builder;

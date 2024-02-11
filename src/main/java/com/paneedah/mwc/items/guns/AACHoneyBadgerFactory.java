@@ -33,7 +33,7 @@ public class AACHoneyBadgerFactory implements GunFactory {
                 .withZoom(0.9f) // Zoom factor
                 .withConfigGroup(GunConfigurationGroup.RIFLES) // Config group
                 .withMaxShots(1, Integer.MAX_VALUE) // Max shots per reload
-                .withShootSound("aac_honeybadger") // Shoot sound
+                .withShootSound("honeybadger") // Shoot sound
                 .withSilencedShootSound("aac_honeybadger") // Silenced shoot sound
                 .withReloadSound("honeybadger_reload") // Reload sound
                 .withUnloadSound("honeybadger_unload") // Unload sound
@@ -91,7 +91,6 @@ public class AACHoneyBadgerFactory implements GunFactory {
                 .withUnremovableAttachmentCategories(AttachmentCategory.STOCK)
                 .withUnremovableAttachmentCategories(AttachmentCategory.RECEIVER)
                 .withUnremovableAttachmentCategories(AttachmentCategory.RAILING)
-                .withUnremovableAttachmentCategories(AttachmentCategory.SILENCER)
                 .withUnremovableAttachmentCategories(AttachmentCategory.BACKGRIP)
 
                 // Compatible attachment placeholder

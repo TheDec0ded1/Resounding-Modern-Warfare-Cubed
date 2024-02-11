@@ -190,6 +190,10 @@ public class NGSWRFactory implements GunFactory {
 //		    GL11.glTranslatef(-0.333F, 0.45F, -1.4F);
 //            GL11.glScaled(1.02F, 1.35F, 1.33F);
         })
+        .withCompatibleAttachment(Magazines.NGSWRMetalMag, (model) -> {
+//		    GL11.glTranslatef(-0.333F, 0.45F, -1.4F);
+//            GL11.glScaled(1.02F, 1.35F, 1.33F);
+        })
         .withCompatibleAttachment(Magazines.NGSWR25RDMag, (model) -> {
 //		    GL11.glTranslatef(-0.333F, 0.45F, -1.4F);
 //            GL11.glScaled(1.02F, 1.35F, 1.33F);
@@ -421,9 +425,7 @@ public class NGSWRFactory implements GunFactory {
 			 GL11.glTranslatef(0.03F, -1.27F, -3F);
 	            GL11.glScaled(0.9F, 0.9F, 0.9F);
 		})
-		.withCompatibleAttachment(Attachments3.Silencer65x39, (model) -> {
-			GL11.glTranslatef(-0.2F, -1.35F, -7.2F);
-			GL11.glScaled(1.1F, 1.1F, 1.1F);
+		.withCompatibleAttachment(Attachments3.NGSWRSuppressor, (model) -> {
 		})
 		.withTextureNames("ngswr")
 		.withRenderer(new WeaponRenderer.Builder()

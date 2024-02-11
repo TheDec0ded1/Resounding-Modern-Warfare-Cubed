@@ -12,10 +12,70 @@ public class Vests {
 
     	new ItemVest.Builder()
         .withName("m43a_chest_harness")
-        .withPercentDamageBlocked(0.1)
+        .withPercentDamageBlocked(0)
 	.withDurability(150)
         .withTab(ModernWarfareMod.ArmorTab)
         .withProperModel("com.paneedah.mwc.models.M43AChestHarness", "m43achestharness.png")
+//        .withCustomEquippedPositioning((player, stack) -> {
+//            GL11.glScalef(0.8f, 0.8f, 0.8f);
+//            GL11.glTranslatef(0f, 0f, 0f);
+//            GL11.glRotatef(0F, 0f, 0f, 1f);
+//        })
+        .withInventoryPositioning(stack -> {
+		        new Transform()
+		        .withPosition(-0.15, -4, -0.25)
+		        .withRotation(-15, 150, 0)
+		        .withScale(3, 3, 3)
+		        .doGLDirect();
+        })
+        .build(ModernWarfareMod.MOD_CONTEXT);
+
+    	new ItemVest.Builder()
+        .withName("basicrig_rusfor")
+        .withPercentDamageBlocked(0.1)
+	.withDurability(150)
+        .withTab(ModernWarfareMod.ArmorTab)
+        .withProperModel("com.paneedah.mwc.models.BanditCarrier", "newcarrier.png")
+//        .withCustomEquippedPositioning((player, stack) -> {
+//            GL11.glScalef(0.8f, 0.8f, 0.8f);
+//            GL11.glTranslatef(0f, 0f, 0f);
+//            GL11.glRotatef(0F, 0f, 0f, 1f);
+//        })
+        .withInventoryPositioning(stack -> {
+		        new Transform()
+		        .withPosition(-0.15, -4, -0.25)
+		        .withRotation(-15, 150, 0)
+		        .withScale(3, 3, 3)
+		        .doGLDirect();
+        })
+        .build(ModernWarfareMod.MOD_CONTEXT);
+
+    	new ItemVest.Builder()
+        .withName("basicrig_ukfor")
+        .withPercentDamageBlocked(0.1)
+	.withDurability(150)
+        .withTab(ModernWarfareMod.ArmorTab)
+        .withProperModel("com.paneedah.mwc.models.BanditCarrier", "newcarrieralt.png")
+//        .withCustomEquippedPositioning((player, stack) -> {
+//            GL11.glScalef(0.8f, 0.8f, 0.8f);
+//            GL11.glTranslatef(0f, 0f, 0f);
+//            GL11.glRotatef(0F, 0f, 0f, 1f);
+//        })
+        .withInventoryPositioning(stack -> {
+		        new Transform()
+		        .withPosition(-0.15, -4, -0.25)
+		        .withRotation(-15, 150, 0)
+		        .withScale(3, 3, 3)
+		        .doGLDirect();
+        })
+        .build(ModernWarfareMod.MOD_CONTEXT);
+
+    	new ItemVest.Builder()
+        .withName("basicrig_forest")
+        .withPercentDamageBlocked(0.1)
+	.withDurability(150)
+        .withTab(ModernWarfareMod.ArmorTab)
+        .withProperModel("com.paneedah.mwc.models.BanditCarrier", "carriergreen.png")
 //        .withCustomEquippedPositioning((player, stack) -> {
 //            GL11.glScalef(0.8f, 0.8f, 0.8f);
 //            GL11.glTranslatef(0f, 0f, 0f);

@@ -37,7 +37,7 @@ public class M1014Factory implements GunFactory {
         .withConfigGroup(GunConfigurationGroup.SHOTGUN)
         .withMaxShots(1)
         .withShootSound("m1014")
-        .withSilencedShootSound("ShotgunSilenced")
+        .withSilencedShootSound("autoshotgun_silenced")
         .withReloadSound("drawweapon")
         .withReloadIterationSound("load_shell")
         .withInspectSound("inspection")

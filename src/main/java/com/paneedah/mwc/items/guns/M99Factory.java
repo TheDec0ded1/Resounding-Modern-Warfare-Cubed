@@ -106,159 +106,45 @@ public class M99Factory implements GunFactory {
 //            GL11.glScaled(1.5F, 1.5F, 1.5F);
         })
         .withCompatibleAttachment(Attachments3.NightRaider, (player, stack) -> {
-            GL11.glTranslatef(-0.22F, -1.58F, -2.5F);
+            GL11.glTranslatef(-0.22F, -1.63F, -2.5F);
             GL11.glScaled(0.9F, 0.9F, 0.9F);
         },(model) -> {
             if(model instanceof JPUreticle) {
-                GL11.glTranslatef(0.12F, -0.2F, 2.49F);
+                GL11.glTranslatef(0.12F, -0.25F, 2.49F);
                 GL11.glScaled(0.03F, 0.03F, 0.03F);
             }
         })
          .withCompatibleAttachment(Attachments3.ACOG, (player, stack) -> {
-            GL11.glTranslatef(-0.328F, -1.6F, -1.2F);
+            GL11.glTranslatef(-0.328F, -1.65F, -1.2F);
             GL11.glScaled(0.9F, 0.9F, 0.9F);
         },(model) -> {
             if(model instanceof AcogScope2) {
-                GL11.glTranslatef(-0.018F, -0.25F, 0.13F);
+                GL11.glTranslatef(-0.018F, -0.3F, 0.13F);
                 GL11.glScaled(0.5F, 0.5F, 0.5F);
             }
             else if(model instanceof AcogReticle) {
-                GL11.glTranslatef(0.243F, -0.23F, 0.68f);
+                GL11.glTranslatef(0.243F, -0.3F, 0.68f);
                 GL11.glScaled(0.03F, 0.03F, 0.03F);
             }
         })
         .withCompatibleAttachment(Attachments3.Specter, (player, stack) -> {
-            GL11.glTranslatef(-0.19F, -1.22F, -1.5F);
+            GL11.glTranslatef(-0.19F, -1.27F, -1.5F);
             GL11.glScaled(0.5F, 0.5F, 0.5F);
         },(model) -> {
              if(model instanceof Acog2) {
-                 GL11.glTranslatef(0.15F, -1.035F, 1.513F);
+                 GL11.glTranslatef(0.15F, -1.042F, 1.513F);
                  GL11.glScaled(0.1F, 0.1F, 0.1F);
             }
         })
         .withCompatibleAttachment(Attachments3.LeupoldRailScope, (player, stack) -> {
-            GL11.glTranslatef(-0.155F, -1.4F, -2.2F);
+            GL11.glTranslatef(-0.155F, -1.7F, -2.2F);
             GL11.glScaled(0.55F, 0.55F, 0.55F);
 		},(model) -> {
 		     if(model instanceof JPUreticle) {
-		        GL11.glTranslatef(0.076F, -0.67F, 4.0251F);
+		        GL11.glTranslatef(0.076F, -0.70F, 4.0251F);
 		        GL11.glScaled(0.04F, 0.04F, 0.04F);
 		    }
 		})
-        .withCompatibleAttachment(Attachments3.MicroReflex, (player, stack) -> {
-		    GL11.glTranslatef(-0.145F, -2.15F, -1F);
-		    GL11.glScaled(0.38F, 0.38F, 0.38F);
-		    },(model) -> {
-		        if(model instanceof Reflex2) {
-		            GL11.glTranslatef(0.08F, 0.97F, -0.4F);
-		            GL11.glScaled(0.15F, 0.15F, 0.15F);
-		        } else if (model instanceof SightMount) {
-		//        	GL11.glTranslatef(-0.15F, -1.82F, -1F);
-		//            GL11.glScaled(0.4F, 0.4F, 0.4F);
-		        }
-		    })
-        .withCompatibleAttachment(Attachments3.Reflex, (player, stack) -> {
-                GL11.glTranslatef(-0.045F, -1.35F, -1.5F);
-                GL11.glScaled(0.55F, 0.55F, 0.55F);
-        },(model) -> {
-            if(model instanceof Reflex2) {
-                GL11.glTranslatef(-0.125F, -0.7F, -0.4F);
-                GL11.glScaled(0.15F, 0.15F, 0.15F);
-            }
-        })
-        .withCompatibleAttachment(Attachments3.BijiaReflex, (player, stack) -> {
-            GL11.glTranslatef(-0.04F, -1.32F, -1.6F);
-            GL11.glScaled(0.63F, 0.63F, 0.63F);
-        },(model) -> {
-        if(model instanceof Reflex2) {
-            GL11.glTranslatef(-0.125F, -0.68F, -0.4F);
-            GL11.glScaled(0.15F, 0.15F, 0.15F);
-        }
-        })
-        .withCompatibleAttachment(Attachments3.Holographic, (player, stack) -> {
-            GL11.glTranslatef(-0.015F, -1.4F, -1.5F);
-            GL11.glScaled(0.8F, 0.8F, 0.8F);
-            },(model) -> {
-                if(model instanceof Holo2) {
-                    GL11.glTranslatef(-0.125F, -0.5F, -0.1F);
-                    GL11.glScaled(0.1F, 0.1F, 0.1F);
-                }
-            })
-        .withCompatibleAttachment(Attachments3.HolographicAlt, (player, stack) -> {
-        	GL11.glTranslatef(-0.015F, -1.4F, -1.5F);
-            GL11.glScaled(0.8F, 0.8F, 0.8F);
-            },(model) -> {
-                if(model instanceof Holo2) {
-                    GL11.glTranslatef(-0.125F, -0.5F, -0.1F);
-                    GL11.glScaled(0.1F, 0.1F, 0.1F);
-                }
-            })
-        .withCompatibleAttachment(Attachments3.EotechHybrid2, (player, stack) -> {
-        	GL11.glTranslatef(-0.015F, -1.4F, -1.8F);
-            GL11.glScaled(0.8F, 0.8F, 0.8F);
-		},(model) -> {
-		    if(model instanceof EotechScopeRing) {
-		        GL11.glTranslatef(-0.2F, -0.41F, 1.8F);
-		        GL11.glScaled(0.5F, 0.5F, 0.5F);
-		    }
-		    if(model instanceof Holo2) {
-		        GL11.glTranslatef(-0.118F, -0.535F, 1.9F);
-		        GL11.glScaled(0.05F, 0.05F, 0.05F);
-		    }
-		})
-        .withCompatibleAttachment(Attachments3.VortexRedux, (player, stack) -> {
-            GL11.glTranslatef(-0.315F, -1.61F, -1.5F);
-            GL11.glScaled(0.5F, 0.5F, 0.5F);
-	    },(model) -> {
-	        if(model instanceof Holo2) {
-	            GL11.glTranslatef(0.395F, -0.33F, -0.1F);
-	            GL11.glScaled(0.15F, 0.15F, 0.15F);
-	        }
-	    })
-        .withCompatibleAttachment(Attachments3.Kobra, (player, stack) -> {
-                GL11.glTranslatef(-0.025F, -1.42F, -1F);
-                GL11.glScaled(0.75F, 0.75F, 0.75F);
-        },(model) -> {
-            if(model instanceof Reflex2) {
-                GL11.glTranslatef(-0.125F, -0.45F, -0.85F);
-                GL11.glScaled(0.15F, 0.15F, 0.15F);
-            }
-        })
-        .withCompatibleAttachment(Attachments3.KobraGen3, (player, stack) -> {
-        	 GL11.glTranslatef(-0.025F, -1.42F, -1F);
-             GL11.glScaled(0.75F, 0.75F, 0.75F);
-	    },(model) -> {
-	        if(model instanceof Reflex2) {
-	            GL11.glTranslatef(-0.125F, -0.45F, -0.85F);
-	            GL11.glScaled(0.15F, 0.15F, 0.15F);
-	        }
-	    })
-        .withCompatibleAttachment(Attachments3.MicroT1, (player, stack) -> {
-        	GL11.glTranslatef(-0.186F, -1.6F, -1F);
-            GL11.glScaled(0.45F, 0.45F, 0.45F);
-	    },(model) -> {
-	        if(model instanceof Reflex2) {
-	            GL11.glTranslatef(0.155F, -0.4F, -0.5F);
-	            GL11.glScaled(0.15F, 0.15F, 0.15F);
-	        }
-	    })
-        .withCompatibleAttachment(Attachments3.AimpointCompM5, (player, stack) -> {
-        	GL11.glTranslatef(-0.186F, -1.6F, -1F);
-            GL11.glScaled(0.45F, 0.45F, 0.45F);
-	    },(model) -> {
-	        if(model instanceof Reflex2) {
-	            GL11.glTranslatef(0.155F, -0.4F, -0.5F);
-	            GL11.glScaled(0.15F, 0.15F, 0.15F);
-	        }
-	    })
-        .withCompatibleAttachment(Attachments3.Bipod, (model) -> {
-        	GL11.glTranslatef(-0.18F, -0.15F, -4.9F);
-            GL11.glScaled(1F, 1F, 1F);
-      })
-        .withCompatibleAttachment(Attachments3.Silencer50BMG, (model) -> {
-            GL11.glTranslatef(-0.23F, -1.4F, -12.4F);
-            GL11.glScaled(1.5F, 1.5F, 1.5F);
-        })
         .withTextureNames("m99")
         .withRenderer(new WeaponRenderer.Builder()
     
@@ -439,9 +325,9 @@ public class M99Factory implements GunFactory {
                 }  
                 
                 // HP Zoom
-                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.LeupoldRailScope)) {
+            if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.LeupoldRailScope)) {
                     //System.out.println("Position me for Scope");
-                    GL11.glTranslatef(0f, 0.11f, 0.6f);
+                    GL11.glTranslatef(0f, 0.2f, 0.6f);
                 } 
                 
                 // HP Zoom
@@ -512,6 +398,7 @@ public class M99Factory implements GunFactory {
                 
                 // Everything else
                 else {
+                	GL11.glTranslatef(0f, 0.20f, -0.2f);
                 }
             
                 })

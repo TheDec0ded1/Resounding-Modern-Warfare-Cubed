@@ -190,10 +190,10 @@
 					"effect": "gun_unrest"
 				},
 				"0.6": {
-					"effect": "mag_unload"
+					"effect": "scarmag_unload"
 				},
 				"1.5": {
-					"effect": "mag_insert"
+					"effect": "scarmag_insert"
 				},
 				"2.4": {
 					"effect": "gun_rest"
@@ -361,13 +361,13 @@
 					"effect": "gun_foley"
 				},
 				"1.4": {
-					"effect": "mag_insert"
+					"effect": "scarmag_insert"
 				},
 				"2.3": {
-					"effect": "mag_smack"
+					"effect": "scarmag_smack"
 				},
 				"3.1": {
-					"effect": "bolt_press"
+					"effect": "scarbolt_press"
 				},
 				"3.4": {
 					"effect": "gun_rest"
@@ -591,10 +591,10 @@
 					"effect": "gun_foley2"
 				},
 				"0.9": {
-					"effect": "mag_unload"
+					"effect": "scarmag_unload"
 				},
 				"2.4": {
-					"effect": "action3_back"
+					"effect": "scaraction_back"
 				},
 				"3.0": {
 					"effect": "gun_rest"
@@ -762,16 +762,16 @@
 					"effect": "gun_foley2"
 				},
 				"0.6": {
-					"effect": "mag_unload"
+					"effect": "scarmag_unload"
 				},
 				"0.8": {
 					"effect": "gun_foley"
 				},
 				"2.2": {
-					"effect": "mag_insert"
+					"effect": "scarmag_insert"
 				},
 				"3.4": {
-					"effect": "bolt_press"
+					"effect": "scarbolt_press"
 				},
 				"3.7": {
 					"effect": "gun_rest"
@@ -907,13 +907,13 @@
 					"effect": "gun_unrest"
 				},
 				"0.2": {
-					"effect": "mag_unload"
+					"effect": "scarmag_unload"
 				},
 				"0.4": {
 					"effect": "gun_foley"
 				},
 				"2.0": {
-					"effect": "mag_insert"
+					"effect": "scarmag_insert"
 				},
 				"2.6": {
 					"effect": "gun_rest"

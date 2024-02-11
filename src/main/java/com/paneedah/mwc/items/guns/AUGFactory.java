@@ -112,35 +112,16 @@ public class AUGFactory implements GunFactory {
           }
         })
         .withCompatibleAttachment(Magazines.AUG9mmMag, (model) -> {
-//            GL11.glTranslatef(-0.28F, 0.9F, 1.2F);
-//            GL11.glScaled(0.8F, 1.3F, 1.4F);
-//            GL11.glRotatef(-5F, 1f, 0f, 0f);
         })
-        .withCompatibleAttachment(Magazines.M4A1Mag, (model) -> {
-            GL11.glTranslatef(-0.28F, 0.6F, 1.25F);
-            GL11.glScaled(0.8F, 1.3F, 1.4F);
-            GL11.glRotatef(-5F, 1f, 0f, 0f);
+        .withCompatibleAttachment(Magazines.AUG_Mag10, (model) -> {
         })
-        .withCompatibleAttachment(Magazines.M38Mag, (model) -> {
-            GL11.glTranslatef(-0.28F, 0.6F, 1.25F);
-            GL11.glScaled(0.8F, 1.3F, 1.4F);
-            GL11.glRotatef(-5F, 1f, 0f, 0f);
+        .withCompatibleAttachment(Magazines.AUG_Mag20, (model) -> {
         })
-        .withCompatibleAttachment(Magazines.Stanag50, (model) -> {
-            GL11.glTranslatef(0.01F, 0.5F, 2.6F);
-            GL11.glScaled(1.1F, 1.1F, 1.1F);
-            GL11.glRotatef(-5F, 1f, 0f, 0f);
+        .withCompatibleAttachment(Magazines.AUG_Mag30, (model) -> {
         })
-        .withCompatibleAttachment(Magazines.Stanag60, (model) -> {
-            GL11.glTranslatef(0.01F, 0.5F, 2.6F);
-            GL11.glScaled(1.1F, 1.1F, 1.1F);
-            GL11.glRotatef(-10F, 1f, 0f, 0f);
+        .withCompatibleAttachment(Magazines.AUG_Mag42, (model) -> {
         })
-        .withCompatibleAttachment(Magazines.Stanag100, (model) -> {
-            GL11.glTranslatef(-0.335F, 0.9F, 1.2F);
-            GL11.glScaled(1.1F, 1.3F, 1.3F);
-            GL11.glRotatef(-5F, 1f, 0f, 0f);
-        })
+
         .withCompatibleAttachment(AuxiliaryAttachments.AUGAction, true, (model) -> {
             GL11.glTranslatef(-0.02F, 0.03F, 0.3F);
             GL11.glScaled(1.1F, 1.1F, 1.1F);
@@ -580,10 +561,6 @@ public class AUGFactory implements GunFactory {
 //                GL11.glRotatef(-30F, 0f, 0f, 1f);
                 })
                 
-            .withFirstPersonCustomPositioning(Magazines.M4A1Mag, (renderContext) -> {
-//            	GL11.glTranslatef(0.1F, 0.5F, 0F);
-//                GL11.glRotatef(-8F, 0f, 0f, 1f);
-                })
                 
             .withFirstPersonPositioningReloading(
             		// goes down
@@ -969,84 +946,8 @@ public class AUGFactory implements GunFactory {
                         //GL11.glTranslatef(-0.4F, -0.8F, 0.9F);
                   }, 250, 1000)
                     )
-                    
-            .withFirstPersonCustomPositioningReloading(Magazines.M4A1Mag,
-                    new Transition((renderContext) -> {
-                        GL11.glTranslatef(0.3F, 1.7F, 0.1F);
-                        GL11.glRotatef(-30F, 0f, 0f, 1f);
-                    }, 250, 1000),
-                    new Transition((renderContext) -> {
-                        GL11.glTranslatef(0.3F, 1.7F, 0.1F);
-                        GL11.glRotatef(-30F, 0f, 0f, 1f);
-                    }, 250, 1000),
-                    new Transition((renderContext) -> {
-                        GL11.glTranslatef(0.3F, 1.7F, 0.1F);
-                        GL11.glRotatef(-30F, 0f, 0f, 1f);
-                    }, 250, 1000),
-                    new Transition((renderContext) -> {
-                        GL11.glTranslatef(0.3F, 1.7F, 0.1F);
-                        GL11.glRotatef(-30F, 0f, 0f, 1f);
-                    }, 250, 1000),
-                    new Transition((renderContext) -> {
-                    	GL11.glTranslatef(0.2F, 0.5F, 0F);
-                        GL11.glRotatef(-15F, 0f, 0f, 1f);
-                    }, 250, 1000),
-                    new Transition((renderContext) -> {
-                        GL11.glTranslatef(0.1F, 0.5F, 0F);
-                        GL11.glRotatef(-8F, 0f, 0f, 1f);
-                    }, 250, 1000),
-                    new Transition((renderContext) -> {
-                        GL11.glTranslatef(0.1F, 0.5F, 0F);
-                        GL11.glRotatef(-8F, 0f, 0f, 1f);
-                    }, 250, 1000),
-                new Transition((renderContext) -> {
-                }, 250, 1000),
-                new Transition((renderContext) -> {
-                }, 250, 1000),
-                new Transition((renderContext) -> {
-                }, 250, 1000),
-                new Transition((renderContext) -> {
-                }, 250, 1000),
-                new Transition((renderContext) -> {
-                }, 250, 1000),
-                new Transition((renderContext) -> {
-                }, 250, 1000),
-                new Transition((renderContext) -> {
-                }, 250, 1000),
-                new Transition((renderContext) -> {
-                }, 250, 1000),
-                new Transition((renderContext) -> {
-                }, 250, 1000)
-                    )
-                    
-            .withFirstPersonCustomPositioningUnloading(Magazines.M4A1Mag,
-                    new Transition((renderContext) -> {
-                    }, 250, 1000),
-                    new Transition((renderContext) -> {
-                    }, 250, 1000),
-                    new Transition((renderContext) -> {
-                      }, 250, 1000),
-                    new Transition((renderContext) -> {
-                    }, 250, 1000),
-                    new Transition((renderContext) -> {
-                    }, 250, 1000),
-                      new Transition((renderContext) -> {
-                    }, 250, 1000),
-                    new Transition((renderContext) -> {
-                    }, 250, 1000),
-                    new Transition((renderContext) -> {
-                      }, 250, 1000),
-                      new Transition((renderContext) -> {
-                    }, 250, 1000),
-                    new Transition((renderContext) -> {
-                        GL11.glTranslatef(0.3F, 1.7F, 0.1F);
-                        GL11.glRotatef(-30F, 0f, 0f, 1f);
-//                  GL11.glScaled(0.55F, 0.55F, 0.55F);
-                        //GL11.glTranslatef(-0.4F, -0.8F, 0.9F);
-                  }, 250, 1000)
-                    )
-                    
-            .withFirstPersonCustomPositioningReloading(Magazines.M38Mag,
+
+            .withFirstPersonCustomPositioningReloading(Magazines.AUG_Mag10,
                     new Transition((renderContext) -> {
                         GL11.glTranslatef(0.3F, 1.7F, 0.1F);
                         GL11.glRotatef(-30F, 0f, 0f, 1f);
@@ -1101,7 +1002,7 @@ public class AUGFactory implements GunFactory {
                 }, 250, 1000)
                     )
                     
-            .withFirstPersonCustomPositioningUnloading(Magazines.M38Mag,
+            .withFirstPersonCustomPositioningUnloading(Magazines.AUG_Mag10,
                     new Transition((renderContext) -> {
                     }, 250, 1000),
                     new Transition((renderContext) -> {
@@ -1127,8 +1028,8 @@ public class AUGFactory implements GunFactory {
                         //GL11.glTranslatef(-0.4F, -0.8F, 0.9F);
                   }, 250, 1000)
                     )
-                    
-            .withFirstPersonCustomPositioningReloading(Magazines.Stanag50,
+
+            .withFirstPersonCustomPositioningReloading(Magazines.AUG_Mag20,
                     new Transition((renderContext) -> {
                         GL11.glTranslatef(0.3F, 1.7F, 0.1F);
                         GL11.glRotatef(-30F, 0f, 0f, 1f);
@@ -1183,7 +1084,7 @@ public class AUGFactory implements GunFactory {
                 }, 250, 1000)
                     )
                     
-            .withFirstPersonCustomPositioningUnloading(Magazines.Stanag50,
+            .withFirstPersonCustomPositioningUnloading(Magazines.AUG_Mag20,
                     new Transition((renderContext) -> {
                     }, 250, 1000),
                     new Transition((renderContext) -> {
@@ -1209,8 +1110,8 @@ public class AUGFactory implements GunFactory {
                         //GL11.glTranslatef(-0.4F, -0.8F, 0.9F);
                   }, 250, 1000)
                     )
-                    
-            .withFirstPersonCustomPositioningReloading(Magazines.Stanag60,
+
+            .withFirstPersonCustomPositioningReloading(Magazines.AUG_Mag30,
                     new Transition((renderContext) -> {
                         GL11.glTranslatef(0.3F, 1.7F, 0.1F);
                         GL11.glRotatef(-30F, 0f, 0f, 1f);
@@ -1265,13 +1166,13 @@ public class AUGFactory implements GunFactory {
                 }, 250, 1000)
                     )
                     
-            .withFirstPersonCustomPositioningUnloading(Magazines.Stanag60,
+            .withFirstPersonCustomPositioningUnloading(Magazines.AUG_Mag30,
+                    new Transition((renderContext) -> {
+                    }, 250, 1000),
                     new Transition((renderContext) -> {
                     }, 250, 1000),
                     new Transition((renderContext) -> {
                       }, 250, 1000),
-                    new Transition((renderContext) -> {
-                    }, 250, 1000),
                     new Transition((renderContext) -> {
                     }, 250, 1000),
                     new Transition((renderContext) -> {
@@ -1291,8 +1192,8 @@ public class AUGFactory implements GunFactory {
                         //GL11.glTranslatef(-0.4F, -0.8F, 0.9F);
                   }, 250, 1000)
                     )
-                    
-            .withFirstPersonCustomPositioningReloading(Magazines.Stanag100,
+
+            .withFirstPersonCustomPositioningReloading(Magazines.AUG_Mag42,
                     new Transition((renderContext) -> {
                         GL11.glTranslatef(0.3F, 1.7F, 0.1F);
                         GL11.glRotatef(-30F, 0f, 0f, 1f);
@@ -1347,13 +1248,13 @@ public class AUGFactory implements GunFactory {
                 }, 250, 1000)
                     )
                     
-            .withFirstPersonCustomPositioningUnloading(Magazines.Stanag100,
+            .withFirstPersonCustomPositioningUnloading(Magazines.AUG_Mag42,
+                    new Transition((renderContext) -> {
+                    }, 250, 1000),
                     new Transition((renderContext) -> {
                     }, 250, 1000),
                     new Transition((renderContext) -> {
                       }, 250, 1000),
-                    new Transition((renderContext) -> {
-                    }, 250, 1000),
                     new Transition((renderContext) -> {
                     }, 250, 1000),
                     new Transition((renderContext) -> {
@@ -1373,6 +1274,7 @@ public class AUGFactory implements GunFactory {
                         //GL11.glTranslatef(-0.4F, -0.8F, 0.9F);
                   }, 250, 1000)
                     )
+                    
                     
             .withFirstPersonPositioningInspecting(
                     new Transition((renderContext) -> {

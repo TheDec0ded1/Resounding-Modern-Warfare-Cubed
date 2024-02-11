@@ -37,7 +37,7 @@ public class M1897Factory implements GunFactory {
         .withConfigGroup(GunConfigurationGroup.SHOTGUN)
         .withMaxShots(1)
         .withShootSound("m1897")
-        .withSilencedShootSound("ShotgunSilenced")
+        .withSilencedShootSound("shotgun_silenced")
         .withReloadSound("drawweapon")
         .withReloadIterationSound("load_shell")
         .withAllReloadIterationsCompletedSound("m1897_pump")

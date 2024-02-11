@@ -31,7 +31,7 @@ public class ZbroyarZ10Factory implements GunFactory {
         .withZoom(0.9f)
         .withConfigGroup(GunConfigurationGroup.LONG_RANGE_RIFLES)
         .withMaxShots(1)
-        .withShootSound("m110")
+        .withShootSound("z10")
         .withSilencedShootSound("m110_silenced")
         .withReloadSound("m4a1_reload")
         .withUnloadSound("m4_unload")

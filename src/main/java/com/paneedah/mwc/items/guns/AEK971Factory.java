@@ -230,6 +230,15 @@ public class AEK971Factory {
                 if(model instanceof Reflex2) {
             }
         })
+        .withCompatibleAttachment(Attachments3.KobraMount, (player, stack) -> {
+        	GL11.glTranslatef(-0.035F, -1.23F, -0.6F);
+            GL11.glScaled(0.7F, 0.7F, 0.7F);
+        },(model) -> {
+            if(model instanceof Reflex2) {
+                GL11.glTranslatef(-0.125F, -0.45F, -0.85F);
+                GL11.glScaled(0.15F, 0.15F, 0.15F);
+            }
+        })
         .withTextureNames("aek971")
         .withRenderer(new WeaponRenderer.Builder()
                 
@@ -513,6 +522,12 @@ public class AEK971Factory {
                         //System.out.println("Position me for Acog");
                         GL11.glTranslatef(0F, 0.15f, 0f);
                     }
+
+             // ACOG Zoom
+                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.KobraMount)) {
+                    //System.out.println("Position me for Acog");
+                    GL11.glTranslatef(0F, 0.25f, 0f);
+                } 
 
                     // ACOG Zoom
                     if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.PSO1)) {

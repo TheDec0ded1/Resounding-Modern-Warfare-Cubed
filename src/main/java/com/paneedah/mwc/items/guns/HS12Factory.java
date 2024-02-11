@@ -32,7 +32,7 @@ public class HS12Factory implements GunFactory {
         .withConfigGroup(GunConfigurationGroup.SHOTGUN)
         .withMaxShots(1)
         .withShootSound("mp43e")
-        .withSilencedShootSound("ShotgunSilenced")
+        .withSilencedShootSound("shotgun_silenced")
         .withDrawSound("noaction_draw")
         .withReloadingTime(15)
         .withCrosshair("gun")

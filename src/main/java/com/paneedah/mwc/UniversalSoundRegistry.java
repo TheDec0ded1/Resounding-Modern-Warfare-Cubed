@@ -89,5 +89,12 @@ public class UniversalSoundRegistry {
 		UniversalSoundLookup.registerSoundToLookup("m14mag_insert");
 		UniversalSoundLookup.registerSoundToLookup("m14mag_touchgun");
 		UniversalSoundLookup.registerSoundToLookup("m14mag_unload");
+		UniversalSoundLookup.registerSoundToLookup("scarmag_insert");
+		UniversalSoundLookup.registerSoundToLookup("scarmag_smack");
+		UniversalSoundLookup.registerSoundToLookup("scarmag_unload");
+		UniversalSoundLookup.registerSoundToLookup("scarbolt_press");
+		UniversalSoundLookup.registerSoundToLookup("scaraction_back");
+		UniversalSoundLookup.registerSoundToLookup("g36action_back");
+		UniversalSoundLookup.registerSoundToLookup("g36action_forward");
 	}
 }

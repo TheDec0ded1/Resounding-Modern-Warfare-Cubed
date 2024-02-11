@@ -34,7 +34,7 @@ public class Spas12Factory implements GunFactory {
         .withConfigGroup(GunConfigurationGroup.SHOTGUN)
         .withMaxShots(1)
         .withShootSound("spas12")
-        .withSilencedShootSound("ShotgunSilenced")
+        .withSilencedShootSound("autoshotgun_silenced")
         .withReloadSound("drawweapon")
         .withReloadIterationSound("load_shell2")
         .withInspectSound("inspection")

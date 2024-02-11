@@ -170,11 +170,11 @@ public class VSK94Factory {
             GL11.glScaled(1F, 1F, 1F);
         })
         .withCompatibleAttachment(Attachments3.Laser2, (p, s) -> {
-        	GL11.glTranslatef(0F, -0.95F, -4.3F);
+        	GL11.glTranslatef(0F, -0.95F, -4F);
 			GL11.glScaled(0.8F, 0.8F, 0.8F);
 		})
 		.withCompatibleAttachment(Attachments3.Laser, (p, s) -> {
-			GL11.glTranslatef(0F, -0.95F, -4.3F);
+			GL11.glTranslatef(0F, -0.95F, -4F);
 			GL11.glScaled(0.8F, 0.8F, 0.8F);
 		})
         .withTextureNames("kbp9a91")

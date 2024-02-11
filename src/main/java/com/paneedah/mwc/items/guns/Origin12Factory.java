@@ -35,7 +35,7 @@ public class Origin12Factory {
         .hasFlashPedals()
         .withMaxShots(1)
         .withShootSound("origin12")
-        .withSilencedShootSound("ak15_silenced")
+        .withSilencedShootSound("autoshotgun_silenced")
         .withReloadSound("origin12_reload")
         .withUnloadSound("origin12_unload")
         .withInspectSound("inspection")

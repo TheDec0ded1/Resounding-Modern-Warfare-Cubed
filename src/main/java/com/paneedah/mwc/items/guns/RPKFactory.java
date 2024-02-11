@@ -39,7 +39,7 @@ public class RPKFactory {
         .withMaxShots(1, Integer.MAX_VALUE)
         .withMuzzlePosition(new Vec3d(-0.16400000488758082, -1.0, -6.5))
         //.withMaxShots(5)
-        .withShootSound("ak47")
+        .withShootSound("rpk")
         .withSilencedShootSound("ak_silenced")
         .withReloadSound("ak_reload")
         .withUnloadSound("ak_unload")
@@ -128,6 +128,8 @@ public class RPKFactory {
       })
         
         .withCompatibleAttachment(Attachments.AK47Stock, (model) -> {
+//            GL11.glTranslatef(0f, 0f, 1f);
+        })        .withCompatibleAttachment(Attachments2.PT1Stock, (model) -> {
 //            GL11.glTranslatef(0f, 0f, 1f);
         })
         .withCompatibleAttachment(Attachments.RPKStock, true, (model) -> {
@@ -546,6 +548,15 @@ public class RPKFactory {
 	            GL11.glScaled(0.15F, 0.15F, 0.15F);
 	        }
 	    })
+        .withCompatibleAttachment(Attachments3.KobraMount, (player, stack) -> {
+        	GL11.glTranslatef(-0.035F, -1.23F, -0.6F);
+            GL11.glScaled(0.7F, 0.7F, 0.7F);
+        },(model) -> {
+            if(model instanceof Reflex2) {
+                GL11.glTranslatef(-0.125F, -0.45F, -0.85F);
+                GL11.glScaled(0.15F, 0.15F, 0.15F);
+            }
+        })
         .withCompatibleAttachment(AuxiliaryAttachments.Extra, true, (model) -> {
             if(model instanceof AKMiron1) {
                 GL11.glTranslatef(0.125F, -1.8F, -0.5F);
@@ -810,7 +821,7 @@ public class RPKFactory {
                 GL11.glTranslatef(0.18f, -0.23f, 0.7f);
 
                 
-             // ACOG Zoom
+              // ACOG Zoom
                 if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.NightRaider)) {
                     //System.out.println("Position me for Acog");
                     GL11.glTranslatef(0F, 0.23f, 0.4f);
@@ -883,6 +894,12 @@ public class RPKFactory {
                 } 
                 
              // ACOG Zoom
+                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.EotechHybrid2)) {
+                    //System.out.println("Position me for Acog");
+                	 GL11.glTranslatef(0F, 0.28f, 0.4f);
+                } 
+                
+             // ACOG Zoom
                 if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.VortexRedux)) {
                     //System.out.println("Position me for Acog");
                     GL11.glTranslatef(0F, 0.28f, 0.4f);
@@ -911,6 +928,12 @@ public class RPKFactory {
                         //System.out.println("Position me for Acog");
                         GL11.glTranslatef(0F, 0.15f, 0f);
                     }
+
+             // ACOG Zoom
+                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.KobraMount)) {
+                    //System.out.println("Position me for Acog");
+                    GL11.glTranslatef(0F, 0.25f, 0f);
+                } 
 
                     // ACOG Zoom
                     if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.PSO1)) {

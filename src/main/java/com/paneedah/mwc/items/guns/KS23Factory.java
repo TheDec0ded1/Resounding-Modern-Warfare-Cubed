@@ -38,7 +38,7 @@ public class KS23Factory implements GunFactory {
         .withMaxShots(1)
         .withPumpTimeout(800)
         .withShootSound("ks23")
-        .withSilencedShootSound("ShotgunSilenced")
+        .withSilencedShootSound("shotgun_silenced")
         .withReloadSound("drawweapon")
         .withInspectSound("inspection")
         .withReloadIterationSound("load_shell")

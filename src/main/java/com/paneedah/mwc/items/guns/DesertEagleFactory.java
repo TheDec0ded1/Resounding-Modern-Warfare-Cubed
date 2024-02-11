@@ -25,7 +25,7 @@ public class DesertEagleFactory implements GunFactory {
 
         .withName("desert_eagle")
         .withFireRate(0.2f)
-        .withRecoil(5f)
+        .withRecoil(20f)
         .withZoom(0.9f)
         .withConfigGroup(GunConfigurationGroup.SIDEARM)
         .withMuzzlePosition(new Vec3d(-0.14400000429153445, -0.8639999959468836, -2.355999876499175))
@@ -52,11 +52,11 @@ public class DesertEagleFactory implements GunFactory {
         		// The weapon power
         		45.0,
         		// Muzzle climb divisor
-        		13.5,
+        		30.5,
         		// "Stock Length"
         		37.5,
         		// Recovery rate from initial shot
-        		0.425,
+        		0.3,
         		// Recovery rate @ "stock"
         		0.2125,
         		// Recoil rotation (Y)

@@ -130,6 +130,8 @@ public class AK47Factory {
         
         .withCompatibleAttachment(Attachments.AK47Stock, (model) -> {
 //            GL11.glTranslatef(0f, 0f, 1f);
+        })        .withCompatibleAttachment(Attachments2.PT1Stock, (model) -> {
+//            GL11.glTranslatef(0f, 0f, 1f);
         })
         .withCompatibleAttachment(Attachments.RPKStock, (model) -> {
 //          GL11.glTranslatef(0f, 0f, 1f);

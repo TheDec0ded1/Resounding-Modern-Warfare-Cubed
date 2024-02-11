@@ -460,6 +460,10 @@ public class M16A4Factory implements GunFactory {
                 GL11.glScaled(0F, 0F, 0F);
             }
         })
+	   .withCompatibleAttachment(Attachments3.M4RearIron, (model) -> {
+                GL11.glTranslatef(-0.1425F, -1.533F, -0.12F);
+                GL11.glScaled(0.29F, 0.29F, 0.29F);
+        })
 	   .withCompatibleAttachment(Attachments3.TritiumRearSights, (model) -> {
            if(model instanceof TritiumRearSights) {
            	 GL11.glTranslatef(-0.16F, -1.5F, -0.3F);
@@ -882,6 +886,11 @@ public class M16A4Factory implements GunFactory {
 				if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), AuxiliaryAttachments.AR15Iron)) {
                         GL11.glTranslatef(0F, 0.028f, -0.3f);
 				} 
+	// Standard Iron Sight Zoom
+				if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.M4RearIron)) {
+                        GL11.glTranslatef(0F, 0.028f, -0.3f);
+                    }
+
 				
 				// Standard Iron Sight Zoom
 				if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.TritiumRearSights)) {

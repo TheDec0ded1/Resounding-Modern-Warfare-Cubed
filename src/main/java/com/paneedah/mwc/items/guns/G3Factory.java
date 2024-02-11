@@ -37,7 +37,7 @@ public class G3Factory {
         .withMaxShots(1, Integer.MAX_VALUE)
         //.withMaxShots(5)
         .withShootSound("g3")
-        .withSilencedShootSound("m110_silenced")
+        .withSilencedShootSound("g3_silenced")
         .withReloadSound("mp5_reload")
         .withUnloadSound("mp5_unload")
         .withInspectSound("inspection")

@@ -8,6 +8,69 @@
       }
     ]
   },
+      "g36action_back": {
+    "category": "master",
+    "sounds": [
+      {
+       "name": "mwc:g36action_back",
+       "stream": false
+      }
+    ]
+  },
+      "g36action_forward": {
+    "category": "master",
+    "sounds": [
+      {
+       "name": "mwc:g36action_forward",
+       "stream": false
+      }
+    ]
+  },
+      "scarbolt_press": {
+    "category": "master",
+    "sounds": [
+      {
+       "name": "mwc:scarbolt_press",
+       "stream": false
+      }
+    ]
+  },
+      "scaraction_back": {
+    "category": "master",
+    "sounds": [
+      {
+       "name": "mwc:scaraction_back",
+       "stream": false
+      }
+    ]
+  },
+    "scarmag_insert": {
+    "category": "master",
+    "sounds": [
+      {
+       "name": "mwc:scarmag_insert",
+       "stream": false
+      }
+    ]
+  },
+    "scarmag_smack": {
+    "category": "master",
+    "sounds": [
+      {
+       "name": "mwc:scarmag_smack",
+       "stream": false
+      }
+    ]
+  },
+    "scarmag_unload": {
+    "category": "master",
+    "sounds": [
+      {
+       "name": "mwc:scarmag_unload",
+       "stream": false
+      }
+    ]
+  },
   "firerate_toggle": {
     "category": "master",
     "sounds": [
@@ -143,11 +206,38 @@
       }
     ]
   },
+   "shotgun_silenced": {
+    "category": "master",
+    "sounds": [
+      {
+       "name": "mwc:shotgun_silenced",
+       "stream": false
+      }
+    ]
+  },
+   "autoshotgun_silenced": {
+    "category": "master",
+    "sounds": [
+      {
+       "name": "mwc:autoshotgun_silenced",
+       "stream": false
+      }
+    ]
+  },
    "sg556_silenced": {
     "category": "master",
     "sounds": [
       {
        "name": "mwc:sg556_silenced",
+       "stream": false
+      }
+    ]
+  },
+   "g3_silenced": {
+    "category": "master",
+    "sounds": [
+      {
+       "name": "mwc:g3_silenced",
        "stream": false
       }
     ]
@@ -193,6 +283,69 @@
     "sounds": [
       {
        "name": "mwc:m99",
+       "stream": false
+      }
+    ]
+  },
+   "rpk": {
+    "category": "master",
+    "sounds": [
+      {
+       "name": "mwc:rpk",
+       "stream": false
+      }
+    ]
+  },
+   "pp19vityaz": {
+    "category": "master",
+    "sounds": [
+      {
+       "name": "mwc:pp19vityaz",
+       "stream": false
+      }
+    ]
+  },
+   "pp19bizon": {
+    "category": "master",
+    "sounds": [
+      {
+       "name": "mwc:pp19bizon",
+       "stream": false
+      }
+    ]
+  },
+   "rpk74": {
+    "category": "master",
+    "sounds": [
+      {
+       "name": "mwc:rpk74",
+       "stream": false
+      }
+    ]
+  },
+   "rpk16": {
+    "category": "master",
+    "sounds": [
+      {
+       "name": "mwc:rpk16",
+       "stream": false
+      }
+    ]
+  },
+   "fort500_pump": {
+    "category": "master",
+    "sounds": [
+      {
+       "name": "mwc:fort500_pump",
+       "stream": false
+      }
+    ]
+  },
+   "mini14": {
+    "category": "master",
+    "sounds": [
+      {
+       "name": "mwc:mini14",
        "stream": false
       }
     ]
@@ -323,6 +476,33 @@
       }
     ]
   },
+   "fort500": {
+    "category": "master",
+    "sounds": [
+      {
+       "name": "mwc:fort500",
+       "stream": false
+      }
+    ]
+  },
+   "fort28": {
+    "category": "master",
+    "sounds": [
+      {
+       "name": "mwc:fort28",
+       "stream": false
+      }
+    ]
+  },
+   "fal_silenced": {
+    "category": "master",
+    "sounds": [
+      {
+       "name": "mwc:fal_silenced",
+       "stream": false
+      }
+    ]
+  },
    "qbz_silenced": {
     "category": "master",
     "sounds": [
@@ -346,6 +526,33 @@
     "sounds": [
       {
        "name": "mwc:qsz92",
+       "stream": false
+      }
+    ]
+  },
+   "qsz92_silenced": {
+    "category": "master",
+    "sounds": [
+      {
+       "name": "mwc:qsz92_silenced",
+       "stream": false
+      }
+    ]
+  },
+   "ls2": {
+    "category": "master",
+    "sounds": [
+      {
+       "name": "mwc:ls2",
+       "stream": false
+      }
+    ]
+  },
+   "qcw05": {
+    "category": "master",
+    "sounds": [
+      {
+       "name": "mwc:qcw05",
        "stream": false
       }
     ]
@@ -386,6 +593,15 @@
       }
     ]
   },
+   "honeybadger": {
+    "category": "master",
+    "sounds": [
+      {
+       "name": "mwc:honeybadger",
+       "stream": false
+      }
+    ]
+  },
    "ppsh41": {
     "category": "master",
     "sounds": [
@@ -409,6 +625,15 @@
     "sounds": [
       {
        "name": "mwc:aek971",
+       "stream": false
+      }
+    ]
+  },
+   "aek973": {
+    "category": "master",
+    "sounds": [
+      {
+       "name": "mwc:aek973",
        "stream": false
       }
     ]
@@ -1250,11 +1475,20 @@
       }
     ]
   },
-  "m500a2": {
+  "lr300": {
     "category": "master",
     "sounds": [
       {
-       "name": "mwc:m500a2",
+       "name": "mwc:lr300",
+       "stream": false
+      }
+    ]
+  },
+  "lr300_silenced": {
+    "category": "master",
+    "sounds": [
+      {
+       "name": "mwc:lr300_silenced",
        "stream": false
       }
     ]
@@ -3145,6 +3379,15 @@
     "sounds": [
       {
        "name": "mwc:arx160",
+       "stream": false
+      }
+    ]
+  },
+  "arx160_silenced": {
+    "category": "master",
+    "sounds": [
+      {
+       "name": "mwc:arx160_silenced",
        "stream": false
       }
     ]

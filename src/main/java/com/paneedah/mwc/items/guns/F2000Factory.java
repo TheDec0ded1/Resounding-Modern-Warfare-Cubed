@@ -1,5 +1,6 @@
 package com.paneedah.mwc.items.guns;
 
+
 import com.paneedah.mwc.ModernWarfareMod;
 import com.paneedah.mwc.init.MWCItems;
 import com.paneedah.mwc.models.*;
@@ -45,9 +46,9 @@ public class F2000Factory {
         .withCrosshair("gun")
         .withCrosshairRunning("Running")
         .withCrosshairZoomed("Sight")
-        .withFlashIntensity(0.5f)
-        .withFlashScale(() -> 0.6f)
-        .withFlashOffsetX(() -> 0.1f)
+        .withFlashIntensity(0.6f)
+        .withFlashScale(() -> 0.5f)
+        .withFlashOffsetX(() -> 0.08f)
         .withFlashOffsetY(() -> 0.16f)
         .withCreativeTab(ModernWarfareMod.AssaultRiflesTab)
         .useNewSystem()
@@ -329,15 +330,6 @@ public class F2000Factory {
                 GL11.glScaled(0.1F, 0.1F, 0.1F);
             }
         })
-//        .withCompatibleAttachment(Attachments.Vortex, (player, stack) -> {
-//                GL11.glTranslatef(-0.16F, -0.84F, -0.5F);
-//                GL11.glScaled(0.38F, 0.38F, 0.48F);
-//            },(model) -> {
-//                if(model instanceof Holo2) {
-//                    GL11.glTranslatef(0.395F, -0.33F, -0.1F);
-//                    GL11.glScaled(0.15F, 0.15F, 0.15F);
-//                }
-//            })
         .withCompatibleAttachment(Attachments3.Kobra, (player, stack) -> {
                 GL11.glTranslatef(0.07F, -0.65F, 0F);
                 GL11.glScaled(0.65F, 0.65F, 0.65F);
@@ -371,7 +363,7 @@ public class F2000Factory {
                 GL11.glScaled(0.6F, 0.7F, 0.9F);
             }
         })
-        .withTextureNames("gun")
+        .withTextureNames("f2000")
         .withRenderer(new WeaponRenderer.Builder()
     
             .withModel(new F2000())
@@ -527,11 +519,11 @@ public class F2000Factory {
                         )
             
             .withFirstPersonPositioningZooming((renderContext) -> {
-                GL11.glRotatef(45F, 0f, 1f, 0f);
-                GL11.glScalef(3.000000f, 3.000000f, 3.000000f);
-                GL11.glTranslatef(0.232f, 0.21f, -1f);
+//                GL11.glRotatef(45F, 0f, 1f, 0f);
+//                GL11.glScalef(3.000000f, 3.000000f, 3.000000f);
+                GL11.glTranslatef(0.059f,-0.81f,-0.5f);
 
-                
+
              // ACOG Zoom
                 if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.F2000Scope)) {
                     //System.out.println("Position me for Acog");
@@ -598,11 +590,6 @@ public class F2000Factory {
                     GL11.glTranslatef(0F, 0.22f, 0.2f);
                 } 
                 
-//             // ACOG Zoom
-//                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments.Vortex)) {
-//                    //System.out.println("Position me for Acog");
-//                    GL11.glTranslatef(0F, 0.211f, 0.6f);
-//                } 
                 
              // ACOG Zoom
                 if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.Kobra)) {

@@ -137,14 +137,17 @@ public class AR15Factory implements GunFactory {
             if(instance != null) {
                 ItemAttachment<Weapon> activeAttachment = WeaponAttachmentAspect.getActiveAttachment(
                         AttachmentCategory.GUARD, instance);
-                if(activeAttachment == Attachments.Mk18HandGuard) {
+                if(activeAttachment == Attachments.Mk18HandGuard || 
+                		activeAttachment == Attachments.Block2SOCOMHandguard ||
+                		activeAttachment == Attachments.Mk18HandGuardBlack) {
                     GL11.glTranslatef(0F, 0F, -0.6F);
                     GL11.glScaled(1F, 1F, 1F);
-                } else if(activeAttachment == Attachments.M16A4HandGuard) {
+                } else if(activeAttachment == Attachments.M16A4HandGuard ||
+                          activeAttachment == Attachments.M16HandGuard) {
                     GL11.glTranslatef(0F, 0F, -1.2F);
                     GL11.glScaled(1F, 1F, 1F);
                 } else {
-                    GL11.glTranslatef(0F, 0F, -1.1F);
+                    GL11.glTranslatef(0F, 0F, 0F);
                     GL11.glScaled(1F, 1F, 1F);
                 }
             }
@@ -294,6 +297,42 @@ public class AR15Factory implements GunFactory {
           } else if(model instanceof AKRail5) {
               GL11.glTranslatef(-0.2F, -1.32F, -4.3f);
               GL11.glScaled(0.6F, 0.8F, 1F);
+          }
+        })
+        .withCompatibleAttachment(Attachments.Mk18HandGuardBlack, (model) -> {
+            if(model instanceof AKRail) {
+              GL11.glTranslatef(0.13F, -1.14F, -4.1F);
+              GL11.glScaled(0.6F, 0.6F, 0.9F);
+              GL11.glRotatef(90F, 0f, 0f, 1f);
+          } else if(model instanceof AKRail2) {
+              GL11.glTranslatef(-0.37F, -0.98F, -4.1F);
+              GL11.glScaled(0.6F, 0.6F, 0.9F);
+              GL11.glRotatef(-90F, 0f, 0f, 1f);
+          } else if(model instanceof AKRail3) {
+              GL11.glTranslatef(-0.03F, -0.84F, -4.1F);
+              GL11.glScaled(0.6F, 0.6F, 0.9F);
+              GL11.glRotatef(180F, 0f, 0f, 1f);
+          } else if(model instanceof AKRail5) {
+              GL11.glTranslatef(-0.182F, -1.32F, -4.1f);
+              GL11.glScaled(0.5F, 0.8F, 0.9F);
+          }
+        })
+        .withCompatibleAttachment(Attachments.Block2SOCOMHandguard, (model) -> {
+        	if(model instanceof AKRail) {
+                GL11.glTranslatef(0.13F, -1.14F, -4.1F);
+                GL11.glScaled(0.6F, 0.6F, 0.9F);
+                GL11.glRotatef(90F, 0f, 0f, 1f);
+            } else if(model instanceof AKRail2) {
+                GL11.glTranslatef(-0.37F, -0.98F, -4.1F);
+                GL11.glScaled(0.6F, 0.6F, 0.9F);
+                GL11.glRotatef(-90F, 0f, 0f, 1f);
+            } else if(model instanceof AKRail3) {
+                GL11.glTranslatef(-0.03F, -0.84F, -4.1F);
+                GL11.glScaled(0.6F, 0.6F, 0.9F);
+                GL11.glRotatef(180F, 0f, 0f, 1f);
+          } else if(model instanceof AKRail5) {
+        	  GL11.glTranslatef(-0.182F, -1.32F, -4.1f);
+              GL11.glScaled(0.5F, 0.8F, 0.9F);
           }
         })
         .withCompatibleAttachment(Attachments.LVOAVHandGuard, (model) -> {

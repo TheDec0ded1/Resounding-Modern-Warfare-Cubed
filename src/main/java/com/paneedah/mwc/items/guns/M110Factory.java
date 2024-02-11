@@ -125,6 +125,10 @@ public class M110Factory implements GunFactory {
 //            GL11.glTranslatef(-0.33F, 0.5F, -1.3F);
 //            GL11.glScaled(1.05F, 1.2F, 1F);
         })
+        .withCompatibleAttachment(Magazines.M110Mag10, (model) -> {
+//            GL11.glTranslatef(-0.33F, 0.5F, -1.3F);
+//            GL11.glScaled(1.05F, 1.2F, 1F);
+        })
         .withCompatibleAttachment(AuxiliaryAttachments.M110Action, true, (model) -> {
             GL11.glTranslatef(-0.175F, -1.28F, -0.67F);
             GL11.glScaled(0.7F, 0.4F, 0.7F);
@@ -426,7 +430,7 @@ public class M110Factory implements GunFactory {
                 )
                 
                 .setupModernAnimations("m110", AuxiliaryAttachments.AKaction)
-                .setupModernMagazineAnimations("m110", Magazines.M110Mag)
+                .setupModernMagazineAnimations("m110", Magazines.M110Mag, Magazines.M110Mag10)
         
             .withFirstPersonPositioningCustomRecoiled(AuxiliaryAttachments.M110EjectorAction.getRenderablePart(), (renderContext) -> {
                 GL11.glTranslatef(0f, 0f, 0.7f);
