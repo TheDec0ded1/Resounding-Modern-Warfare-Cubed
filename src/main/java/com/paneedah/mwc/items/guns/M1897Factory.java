@@ -48,7 +48,7 @@ public class M1897Factory implements GunFactory {
 		.withCrosshairRunning("Running")	
 		.withShellCasingEjectEnabled(false)
 		.withCrosshairZoomed("Sight")
-		.withInaccuracy(18)
+        .withInaccuracy(1)
 		.withPellets(10)
 		.withFlashIntensity(0.4f)
 		.withFlashScale(() -> 0.8f)

@@ -49,6 +49,7 @@ public class AuxiliaryAttachments {
     public static ItemAttachment<Weapon> Remington700BoltActionMain;
     public static ItemAttachment<Weapon> M500A2pump;
     public static ItemAttachment<Weapon> KS23pump;
+    public static ItemAttachment<Weapon> Remington1100Action;
     public static ItemAttachment<Weapon> AKaction;
     public static ItemAttachment<Weapon> Type81action;
     public static ItemAttachment<Weapon> Type56AKAction;
@@ -101,6 +102,7 @@ public class AuxiliaryAttachments {
 //    public static ItemAttachment<Weapon> Glock18Cslide;
     public static ItemAttachment<Weapon> L131A1slide;
     public static ItemAttachment<Weapon> APSslide;
+    public static ItemAttachment<Weapon> PSSslide;
     public static ItemAttachment<Weapon> APShammer;
     public static ItemAttachment<Weapon> MP443hammer;
     public static ItemAttachment<Weapon> USP45hammer;
@@ -126,6 +128,7 @@ public class AuxiliaryAttachments {
     public static ItemAttachment<Weapon> ScarHAction;
     public static ItemAttachment<Weapon> M82Action;
     public static ItemAttachment<Weapon> M99Action;
+    public static ItemAttachment<Weapon> GM6_LynxAction;
     public static ItemAttachment<Weapon> MP5boltaction;
     public static ItemAttachment<Weapon> MP5kboltaction;
     public static ItemAttachment<Weapon> UMP45action;
@@ -821,6 +824,15 @@ public class AuxiliaryAttachments {
                 .withRenderablePart()
         
                 .withTextureName("Dummy.png").build(ModernWarfareMod.MOD_CONTEXT);
+
+        GM6_LynxAction = new AttachmentBuilder<Weapon>()
+                .withCategory(AttachmentCategory.EXTRA2)
+                // .withCreativeTab(ModernWarfareMod.gunsTab)
+                .withModel(new com.paneedah.mwc.models.GM6_LynxAction(), "m99.png")
+                .withName("gm6action")
+                .withRenderablePart()
+        
+                .withTextureName("Dummy.png").build(ModernWarfareMod.MOD_CONTEXT);
         
         MP40action = new AttachmentBuilder<Weapon>()
                 .withCategory(AttachmentCategory.EXTRA2)
@@ -1225,6 +1237,14 @@ public class AuxiliaryAttachments {
                 // .withCreativeTab(ModernWarfareMod.gunsTab)
                 .withModel(new com.paneedah.mwc.models.APShammer(), "APS.png")
                 .withName("APShammer")
+                .withRenderablePart().withTextureName("Dummy.png")
+                .build(ModernWarfareMod.MOD_CONTEXT);
+
+        PSSslide = new AttachmentBuilder<Weapon>()
+                .withCategory(AttachmentCategory.EXTRA)
+                // .withCreativeTab(ModernWarfareMod.gunsTab)
+                .withModel(new com.paneedah.mwc.models.PSSslide(), "APSM.png")
+                .withName("PSSslide")
                 .withRenderablePart().withTextureName("Dummy.png")
                 .build(ModernWarfareMod.MOD_CONTEXT);
         
@@ -1743,6 +1763,14 @@ HecateIIBoltAction1 = new AttachmentBuilder<Weapon>()
                 // .withCreativeTab(ModernWarfareMod.gunsTab)
                 .withModel(new com.paneedah.mwc.models.KS23pump(), "ks23")
                 .withName("KS23pump")
+                .withRenderablePart().withTextureName("Dummy.png")
+                .build(ModernWarfareMod.MOD_CONTEXT);
+
+        Remington1100Action = new AttachmentBuilder<Weapon>()
+                .withCategory(AttachmentCategory.EXTRA2)
+                // .withCreativeTab(ModernWarfareMod.gunsTab)
+                .withModel(new com.paneedah.mwc.models.Remington1100Action(), "remington870")
+                .withName("Remington1100Action")
                 .withRenderablePart().withTextureName("Dummy.png")
                 .build(ModernWarfareMod.MOD_CONTEXT);
         

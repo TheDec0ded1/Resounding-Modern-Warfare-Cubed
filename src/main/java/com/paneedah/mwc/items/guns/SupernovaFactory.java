@@ -46,7 +46,7 @@ public class SupernovaFactory implements GunFactory {
         .withCrosshairRunning("Running")    
         .withShellCasingEjectEnabled(false)
         .withCrosshairZoomed("Sight")
-        .withInaccuracy(15)
+        .withInaccuracy(2)
         .withPellets(10)
         .withFlashIntensity(0.5f)
         .withFlashScale(() -> 0.6f)

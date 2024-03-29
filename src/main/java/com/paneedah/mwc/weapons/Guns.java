@@ -179,7 +179,10 @@ public class Guns {
     public static Item SR3Vikhr;
     public static Item Malyuk545;
     public static Item K2;
-    public static Item G36CRAL;
+    public static Item G36K;
+    public static Item G36E;
+    public static Item MG36;
+    public static Item SL8;
     public static Item FiveSevenAuto;
     public static Item Thunderbird;
     public static Item MP510;
@@ -232,6 +235,12 @@ public class Guns {
     public static Item Mini14;
     public static Item PP19Vityaz;
     public static Item PP19Bizon;
+    public static Item HK416A5;
+    public static Item MPT556;
+    public static Item PSS;
+    public static Item GM6_Lynx;
+    public static Item Remington1100;
+    public static Item SVDS;
 
     
     public static void init(Object mod, CommonProxy proxy) {
@@ -392,7 +401,10 @@ public class Guns {
         SR3Vikhr = new SR3VikhrFactory().createGun(proxy);
         Malyuk545 = new Malyuk545Factory().createGun(proxy);
         K2 = new K2Factory().createGun(proxy);
-        G36CRAL = new G36CRALFactory().createGun(proxy);
+        G36K = new G36KFactory().createGun(proxy);
+        G36E = new G36EFactory().createGun(proxy);
+        MG36 = new MG36Factory().createGun(proxy);
+        SL8 = new SL8Factory().createGun(proxy);
         FiveSevenAuto = new FiveSevenAutoFactory().createGun(proxy);
         Thunderbird = new ThunderbirdFactory().createGun(proxy);
         MP510 = new MP510Factory().createGun(proxy);
@@ -445,5 +457,11 @@ public class Guns {
         Mini14 = new Mini14Factory().createGun(proxy);
         PP19Vityaz = new PP19VityazFactory().createGun(proxy);
         PP19Bizon = new PP19BizonFactory().createGun(proxy);
+        HK416A5 = new HK416A5Factory().createGun(proxy);
+        MPT556 = new MPT556Factory().createGun(proxy);
+        PSS = new PSSFactory().createGun(proxy);
+        GM6_Lynx = new GM6_LynxFactory().createGun(proxy);
+        Remington1100 = new Remington1100Factory().createGun(proxy);
+        SVDS = new SVDSFactory().createGun(proxy);
     }
 }

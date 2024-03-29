@@ -106,11 +106,14 @@ public class SVDDragunovFactory {
         .withCompatibleAttachment(Attachments.DragunovDustCover, true, (model) -> {
 //            GL11.glTranslatef(0f, 0f, 1f);
         })
+        .withCompatibleAttachment(Attachments.SVDSDC, (model) -> {
+//            GL11.glTranslatef(0f, 0f, 1f);
+        })
         .withCompatibleAttachment(Attachments.Dragunov98DustCover, (model) -> {
 //          GL11.glTranslatef(0f, 0f, 1f);
         })
         .withCompatibleAttachment(Attachments.DragunovHandguard, true, (model) -> {
-        	if(model instanceof AKMiron2) {
+        	if(model instanceof Type56iron2) {
             	GL11.glTranslatef(-0.185F, -1.39F, -10.35F);
                 GL11.glScaled(0.55F, 0.55F, 1.2F);
             } else if(model instanceof AK47iron) {
@@ -119,7 +122,7 @@ public class SVDDragunovFactory {
             }
         })
         .withCompatibleAttachment(Attachments.DragunovDarkHandguard, (model) -> {
-        	if(model instanceof AKMiron2) {
+        	if(model instanceof Type56iron2) {
             	GL11.glTranslatef(-0.185F, -1.39F, -10.35F);
                 GL11.glScaled(0.55F, 0.55F, 1.2F);
             } else if(model instanceof AK47iron) {

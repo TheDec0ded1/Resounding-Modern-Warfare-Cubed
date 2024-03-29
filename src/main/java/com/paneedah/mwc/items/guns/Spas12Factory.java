@@ -45,7 +45,7 @@ public class Spas12Factory implements GunFactory {
         .withShellCasingModel(new com.paneedah.mwc.models.Shotgun12Gauge())
         .withShellCasingModelTexture("shotgun12gauge")
         .withCrosshairZoomed("Sight")
-        .withInaccuracy(8)
+        .withInaccuracy(2)
         .withPellets(10)
         .withFlashIntensity(0.5f)
         .withFlashScale(() -> 0.6f)

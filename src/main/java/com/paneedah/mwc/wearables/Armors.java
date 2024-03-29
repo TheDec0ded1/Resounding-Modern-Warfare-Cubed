@@ -99,6 +99,10 @@ public class Armors {
     public static Item ratnikSteppechest;
     public static Item ratnikSteppeboots;
     public static Item ratnikSteppehelmet;
+
+    public static Item SOBRchest;
+    public static Item SOBRboots;
+    public static Item SOBRhelmet;
     
     static ArmorMaterial Juggernaut = EnumHelper.addArmorMaterial("Juggernaut", "Juggernaut", 20, new int[] { 5, 6, 2, 5}, 20, null, 0);
     static ArmorMaterial Marine = EnumHelper.addArmorMaterial("Marine", "Marine", 60, new int[] { 2, 3, 3, 3 }, 15, null, 0);
@@ -381,5 +385,16 @@ public class Armors {
         Armors.ratnikMountainhelmet = ratnikMountainArmorBuilder.buildHelmet(modContext);
         Armors.ratnikMountainchest = ratnikMountainArmorBuilder.buildChest(modContext.isClient());
         Armors.ratnikMountainboots = ratnikMountainArmorBuilder.buildBoots(modContext.isClient());
+
+        Builder sobrArmorBuilder = new CustomArmor.Builder()
+    			.withMaterial(Armors.Marine)
+                .withUnlocalizedName("SOBR")
+                .withTextureName("vestsobr")
+                .withModelClass("com.paneedah.mwc.models.SOBRUniform")
+                .withCreativeTab(ModernWarfareMod.ArmorTab);
+
+        Armors.SOBRhelmet = sobrArmorBuilder.buildHelmet(modContext);
+        Armors.SOBRchest = sobrArmorBuilder.buildChest(modContext.isClient());
+        Armors.SOBRboots = sobrArmorBuilder.buildBoots(modContext.isClient());
     }
 }

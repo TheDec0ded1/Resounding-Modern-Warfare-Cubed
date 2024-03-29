@@ -39,7 +39,7 @@ public class HS12Factory implements GunFactory {
         .withCrosshairRunning("Running")    
         .withShellCasingEjectEnabled(false)
         .withCrosshairZoomed("Sight")
-        .withInaccuracy(8)
+        .withInaccuracy(2)
         .withPellets(10)
         .withFlashIntensity(0.5f)
         .withFlashScale(() -> 0.6f)
@@ -175,10 +175,6 @@ public class HS12Factory implements GunFactory {
             GL11.glScaled(0.3F, 0.3F, 0.3F);
         }
     })
-        .withCompatibleAttachment(Attachments3.Silencer12Gauge, (model) -> {
-            GL11.glTranslatef(-0.19F, -0.6F, -8F);
-            GL11.glScaled(1.4F, 1.4F, 1.4F);
-        })
         .withCompatibleBullet(Bullets.Shotgun12Guage, (model) -> {})
         .withTextureNames("gun")
         .withRenderer(new WeaponRenderer.Builder()

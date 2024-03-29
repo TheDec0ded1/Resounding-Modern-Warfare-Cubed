@@ -125,6 +125,14 @@ public class M38Factory implements GunFactory {
         	GL11.glTranslatef(0f, -0.28f, -0f);
             GL11.glScaled(1F, 1F, 1F);
         })
+        .withCompatibleAttachment(Attachments.HKSlimStock, (model) -> {
+        	GL11.glTranslatef(0f, -0.28f, -0f);
+            GL11.glScaled(1F, 1F, 1F);
+        })
+        .withCompatibleAttachment(Attachments.HKSlimStockTan, (model) -> {
+        	GL11.glTranslatef(0f, -0.28f, -0f);
+            GL11.glScaled(1F, 1F, 1F);
+        })
         .withCompatibleAttachment(Attachments.M16Stock, (model) -> {
             GL11.glTranslatef(0f, -0.28f, -0.55f);
             GL11.glScaled(1F, 1F, 0.85F);
@@ -187,47 +195,10 @@ public class M38Factory implements GunFactory {
               }
         }, false, false)
         .withCompatibleAttachment(Attachments.M38HandGuard, true, (model) -> {
-            if(model instanceof AKRail) {
-                GL11.glTranslatef(0.13F, -1.145F, -4.03F);
-                GL11.glScaled(0.6F, 0.6F, 0.88F);
-                GL11.glRotatef(90F, 0f, 0f, 1f);
-          } else if(model instanceof AKRail2) {
-              GL11.glTranslatef(-0.37F, -0.97F, -4.03F);
-              GL11.glScaled(0.6F, 0.6F, 0.88F);
-              GL11.glRotatef(-90F, 0f, 0f, 1f);
-          } else if(model instanceof AKRail3) {
-              GL11.glTranslatef(-0.03F, -0.81F, -4.03F);
-              GL11.glScaled(0.6F, 0.6F, 0.88F);
-              GL11.glRotatef(180F, 0f, 0f, 1f);
-          } else if(model instanceof AKRail5) {
-              GL11.glTranslatef(-0.2F, -1.375F, -4.03f);
-              GL11.glScaled(0.6F, 0.8F, 0.88F);
-          }
         })
         .withCompatibleAttachment(Attachments.HK416HandGuardBlackAndTan, (model) -> {
-            if(model instanceof AKRail) {
-                GL11.glTranslatef(0.13F, -1.145F, -4.03F);
-                GL11.glScaled(0.6F, 0.6F, 0.88F);
-                GL11.glRotatef(90F, 0f, 0f, 1f);
-          } else if(model instanceof AKRail2) {
-              GL11.glTranslatef(-0.37F, -0.97F, -4.03F);
-              GL11.glScaled(0.6F, 0.6F, 0.88F);
-              GL11.glRotatef(-90F, 0f, 0f, 1f);
-          } else if(model instanceof AKRail3) {
-              GL11.glTranslatef(-0.03F, -0.81F, -4.03F);
-              GL11.glScaled(0.6F, 0.6F, 0.88F);
-              GL11.glRotatef(180F, 0f, 0f, 1f);
-          } else if(model instanceof AKRail5) {
-              GL11.glTranslatef(-0.2F, -1.375F, -4.03f);
-              GL11.glScaled(0.6F, 0.8F, 0.88F);
-          }
         })
         .withCompatibleAttachment(Attachments.HK416Receiver, true, (model) -> {
-            if(model instanceof M4Receiver) {
-          } else if(model instanceof AKRail) {
-              GL11.glTranslatef(-0.2F, -1.375F, -1.82f);
-              GL11.glScaled(0.6F, 0.8F, 0.69F);
-          }
         })
         .withCompatibleAttachment(Attachments.HK416Grip, true, (model) -> {
           GL11.glTranslatef(0f, -0.025f, 0f);

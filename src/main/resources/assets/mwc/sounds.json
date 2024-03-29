@@ -8,6 +8,15 @@
       }
     ]
   },
+  "gm6_lynx": {
+    "category": "master",
+    "sounds": [
+      {
+       "name": "mwc:gm6_lynx",
+       "stream": false
+      }
+    ]
+  },
       "g36action_back": {
     "category": "master",
     "sounds": [
@@ -292,6 +301,15 @@
     "sounds": [
       {
        "name": "mwc:rpk",
+       "stream": false
+      }
+    ]
+  },
+   "pss": {
+    "category": "master",
+    "sounds": [
+      {
+       "name": "mwc:pss",
        "stream": false
       }
     ]
@@ -2362,6 +2380,33 @@
     "sounds": [
       {
        "name": "mwc:g36c",
+       "stream": false
+      }
+    ]
+  },
+  "g36k": {
+    "category": "master",
+    "sounds": [
+      {
+       "name": "mwc:g36k",
+       "stream": false
+      }
+    ]
+  },
+  "g36e": {
+    "category": "master",
+    "sounds": [
+      {
+       "name": "mwc:g36e",
+       "stream": false
+      }
+    ]
+  },
+  "mg36": {
+    "category": "master",
+    "sounds": [
+      {
+       "name": "mwc:mg36",
        "stream": false
       }
     ]

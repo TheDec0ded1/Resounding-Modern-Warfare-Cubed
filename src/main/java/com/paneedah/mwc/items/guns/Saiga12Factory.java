@@ -38,7 +38,7 @@ public class Saiga12Factory {
         .withCrosshair("gun")
         .withCrosshairRunning("Running")
         .withCrosshairZoomed("Sight")
-        .withInaccuracy(10)
+        .withInaccuracy(2)
         .withPellets(10)
         .withFlashIntensity(0.4f)
         .withFlashScale(() -> 1f)

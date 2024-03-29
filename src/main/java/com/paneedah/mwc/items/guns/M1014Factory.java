@@ -48,7 +48,7 @@ public class M1014Factory implements GunFactory {
         .withCrosshairRunning("Running")    
 //        .withShellCasingEjectEnabled(false)
         .withCrosshairZoomed("Sight")
-        .withInaccuracy(10)
+        .withInaccuracy(2)
         .withPellets(10)
         .withFlashIntensity(0.5f)
         .withFlashScale(() -> 0.6f)

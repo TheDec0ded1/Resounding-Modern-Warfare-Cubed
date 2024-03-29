@@ -53,6 +53,7 @@ public class Attachments3 {
     public static ItemAttachment<Weapon> Silencer45ACP;
     public static ItemAttachment<Weapon> SilencerEABH;
     public static ItemAttachment<Weapon> Silencer12Gauge;
+    public static ItemAttachment<Weapon> Silencer12GaugeImprovised;
     public static ItemAttachment<Weapon> Silencer65x39;
     public static ItemAttachment<Weapon> Silencer57x38;
     public static ItemAttachment<Weapon> Silencer300AACBlackout;
@@ -719,6 +720,45 @@ public class Attachments3 {
                         GL11.glScaled(0.4F, 0.4F, 0.4F);
                     }
                 }).withName("Silencer12Gauge").withTextureName("Dummy.png")
+                .build(ModernWarfareMod.MOD_CONTEXT);
+
+
+        Silencer12GaugeImprovised = new AttachmentBuilder<Weapon>().withCategory(AttachmentCategory.SILENCER)
+                .withCreativeTab(ModernWarfareMod.AttachmentsTab)
+                .withModel(new com.paneedah.mwc.models.SuppressorImprovised(), "dsr1.png")
+                .withModernRecipe(
+                    	CraftingGroup.ATTACHMENT_NORMAL,
+                    	new CraftingEntry(MWCItems.gunmetalIngot, 3), 
+                    	new CraftingEntry(MWCItems.steelIngot, 2))
+                .withFirstPersonModelPositioning((model, itemStack) -> {
+                    if (model instanceof com.paneedah.mwc.models.SuppressorImprovised) {
+                        GL11.glTranslatef(0.5F, -1.3F, -0.1F);
+                        GL11.glRotatef(30F, 0f, 1f, 0f);
+                        GL11.glScaled(0.6F, 0.6F, 0.6F);
+                    }
+
+                }).withThirdPersonModelPositioning((model, itemStack) -> {
+                    if (model instanceof com.paneedah.mwc.models.SuppressorImprovised) {
+                        GL11.glTranslatef(-0.7F, -0.5F, 0.6F);
+                        GL11.glRotatef(-50F, 0f, 1f, 0f);
+                        GL11.glRotatef(80F, 1f, 0f, 0f);
+                        GL11.glScaled(0.5F, 0.5F, 0.5F);
+                    }
+                }).withInventoryModelPositioning((model, itemStack) -> {
+                    if (model instanceof com.paneedah.mwc.models.SuppressorImprovised) {
+                        GL11.glTranslatef(0.6F, 0.1F, 0.3F);
+                        GL11.glRotatef(-180F, 0f, 1f, 0f);
+                        GL11.glRotatef(0F, 0f, 0f, 1f);
+                        GL11.glScaled(1F, 1F, 1f);
+
+                    }
+                }).withEntityModelPositioning((model, itemStack) -> {
+                    if (model instanceof com.paneedah.mwc.models.SuppressorImprovised) {
+                        GL11.glTranslatef(0.1F, 0.2F, 0.4F);
+                        GL11.glRotatef(90F, 0f, 0f, 1f);
+                        GL11.glScaled(0.4F, 0.4F, 0.4F);
+                    }
+                }).withName("Silencer12GaugeImprovised").withTextureName("Dummy.png")
                 .build(ModernWarfareMod.MOD_CONTEXT);
 
 
@@ -1882,7 +1922,7 @@ public class Attachments3 {
                         Attachments.P90Placeholder, Attachments.AUGA2handguard, Attachments.AUGA3handguard, Attachments.M4Receiver,
                         Attachments.VLTORReceiver, Attachments.AR57Receiver, Attachments.EF88Handguard,
                         Attachments.KrissVectorReceiver, Attachments.KrissVectorReceiverBlack, Attachments.Vector556Handguard, Attachments.Origin12Grip, Attachments.HKS20Grip,
-                        Attachments.Beowulf50CalReceiver, Attachments.HK417Receiver, Attachments.HK417ReceiverTan, Attachments.HK416Receiver,
+                        Attachments.Beowulf50CalReceiver, Attachments.HK417Receiver, Attachments.HK417ReceiverTan, 
                         Attachments.M110Receiver, Attachments.Z10Receiver)
                 .withModernRecipe(
                     	CraftingGroup.ATTACHMENT_NORMAL,
@@ -1929,7 +1969,7 @@ public class Attachments3 {
                         Attachments.P90Placeholder, Attachments.AUGA2handguard, Attachments.AUGA3handguard, Attachments.M4Receiver,
                         Attachments.VLTORReceiver, Attachments.AR57Receiver, Attachments.EF88Handguard,
                         Attachments.KrissVectorReceiver, Attachments.KrissVectorReceiverBlack, Attachments.Vector556Handguard, Attachments.Origin12Grip, Attachments.HKS20Grip,
-                        Attachments.Beowulf50CalReceiver, Attachments.HK417Receiver, Attachments.HK417ReceiverTan, Attachments.HK416Receiver,
+                        Attachments.Beowulf50CalReceiver, Attachments.HK417Receiver, Attachments.HK417ReceiverTan, 
                         Attachments.M110Receiver, Attachments.Z10Receiver)
                 .withModernRecipe(
                     	CraftingGroup.ATTACHMENT_NORMAL,
@@ -1976,7 +2016,7 @@ public class Attachments3 {
                         Attachments.P90Placeholder, Attachments.AUGA2handguard, Attachments.AUGA3handguard, Attachments.M4Receiver,
                         Attachments.VLTORReceiver, Attachments.AR57Receiver, Attachments.EF88Handguard,
                         Attachments.KrissVectorReceiver, Attachments.KrissVectorReceiverBlack, Attachments.Vector556Handguard, Attachments.Origin12Grip, Attachments.HKS20Grip,
-                        Attachments.Beowulf50CalReceiver, Attachments.HK417Receiver, Attachments.HK417ReceiverTan, Attachments.HK416Receiver,
+                        Attachments.Beowulf50CalReceiver, Attachments.HK417Receiver, Attachments.HK417ReceiverTan, 
                         Attachments.M110Receiver, Attachments.Z10Receiver)
                 .withModernRecipe(
                     	CraftingGroup.ATTACHMENT_NORMAL,
@@ -2287,7 +2327,7 @@ public class Attachments3 {
                         Attachments.P90Placeholder, Attachments.AUGA2handguard, Attachments.AUGA3handguard, Attachments.M4Receiver,
                         Attachments.VLTORReceiver, Attachments.AR57Receiver, Attachments.EF88Handguard,
                         Attachments.KrissVectorReceiver, Attachments.KrissVectorReceiverBlack, Attachments.Vector556Handguard, Attachments.Origin12Grip, Attachments.HKS20Grip,
-                        Attachments.Beowulf50CalReceiver, Attachments.HK417Receiver, Attachments.HK417ReceiverTan, Attachments.HK416Receiver,
+                        Attachments.Beowulf50CalReceiver, Attachments.HK417Receiver, Attachments.HK417ReceiverTan, 
                         Attachments.M110Receiver, Attachments.Z10Receiver)
         		.withCrosshair("LP")
                 .withModel(new com.paneedah.mwc.models.Leupold(), "leupold.png")
@@ -2632,7 +2672,7 @@ public class Attachments3 {
                         Attachments.M14TriRailCover, Attachments.Mk14TanBody, Attachments.Mk14SnowBody, Attachments.Mk14BlackBody, Attachments.SSG08Chassis, Attachments.SA58DustCover,
                         Attachments.M16A1ScopeMount, Attachments.G2ContenderBarrelLong, Attachments.S710Receiver,
                         Attachments.Beowulf50CalReceiver, Attachments.FamasF1ScopeMount,
-                        Attachments.HK417Receiver, Attachments.HK417ReceiverTan, Attachments.AK12DustCover, Attachments.AK12BDustCover, Attachments.CZ805BrenReceiver, Attachments.HK416Receiver,
+                        Attachments.HK417Receiver, Attachments.HK417ReceiverTan, Attachments.AK12DustCover, Attachments.AK12BDustCover, Attachments.CZ805BrenReceiver, 
                         Attachments.M110Receiver, Attachments.Remington700Chassis, Attachments.Remington700APACChassis,
                         Attachments.Remington700MDTXRSChassis, Attachments.DSR1Handguard, Attachments.DSR1HandguardRailed, Attachments.Z10Receiver, Attachments.MAC21Stock,
                         Attachments.VSSMDustCover, Attachments.SR3MPDustCover, Attachments.Dragunov98DustCover)
@@ -2700,7 +2740,7 @@ public class Attachments3 {
                         Attachments.M14TriRailCover, Attachments.Mk14TanBody, Attachments.Mk14SnowBody, Attachments.Mk14BlackBody, Attachments.SSG08Chassis, Attachments.SA58DustCover,
                         Attachments.M16A1ScopeMount, Attachments.G2ContenderBarrelLong, Attachments.S710Receiver,
                         Attachments.Beowulf50CalReceiver, Attachments.FamasF1ScopeMount,
-                        Attachments.HK417Receiver, Attachments.HK417ReceiverTan, Attachments.AK12DustCover, Attachments.AK12BDustCover, Attachments.CZ805BrenReceiver, Attachments.HK416Receiver,
+                        Attachments.HK417Receiver, Attachments.HK417ReceiverTan, Attachments.AK12DustCover, Attachments.AK12BDustCover, Attachments.CZ805BrenReceiver, 
                         Attachments.M110Receiver, Attachments.Remington700Chassis, Attachments.Remington700APACChassis,
                         Attachments.Remington700MDTXRSChassis, Attachments.DSR1Handguard, Attachments.DSR1HandguardRailed, Attachments.Z10Receiver, Attachments.MAC21Stock,
                         Attachments.VSSMDustCover, Attachments.SR3MPDustCover, Attachments.Dragunov98DustCover)
@@ -2772,7 +2812,7 @@ public class Attachments3 {
                         Attachments.M14TriRailCover, Attachments.Mk14TanBody, Attachments.Mk14SnowBody, Attachments.Mk14BlackBody, Attachments.SSG08Chassis, Attachments.SA58DustCover,
                         Attachments.M16A1ScopeMount, Attachments.G2ContenderBarrelLong, Attachments.S710Receiver,
                         Attachments.Beowulf50CalReceiver, Attachments.FamasF1ScopeMount,
-                        Attachments.HK417Receiver, Attachments.HK417ReceiverTan, Attachments.AK12DustCover, Attachments.AK12BDustCover, Attachments.CZ805BrenReceiver, Attachments.HK416Receiver,
+                        Attachments.HK417Receiver, Attachments.HK417ReceiverTan, Attachments.AK12DustCover, Attachments.AK12BDustCover, Attachments.CZ805BrenReceiver, 
                         Attachments.M110Receiver, Attachments.Remington700Chassis, Attachments.Remington700APACChassis,
                         Attachments.Remington700MDTXRSChassis, Attachments.DSR1Handguard, Attachments.DSR1HandguardRailed, Attachments.Z10Receiver, Attachments.MAC21Stock,
                         Attachments.VSSMDustCover, Attachments.SR3MPDustCover, Attachments.Dragunov98DustCover)
@@ -2841,7 +2881,7 @@ public class Attachments3 {
                         Attachments.M14TriRailCover, Attachments.Mk14TanBody, Attachments.Mk14SnowBody, Attachments.Mk14BlackBody, Attachments.SSG08Chassis, Attachments.SA58DustCover,
                         Attachments.M16A1ScopeMount, Attachments.G2ContenderBarrelLong, Attachments.S710Receiver,
                         Attachments.Beowulf50CalReceiver, Attachments.FamasF1ScopeMount,
-                        Attachments.HK417Receiver, Attachments.HK417ReceiverTan, Attachments.AK12DustCover, Attachments.AK12BDustCover, Attachments.CZ805BrenReceiver, Attachments.HK416Receiver,
+                        Attachments.HK417Receiver, Attachments.HK417ReceiverTan, Attachments.AK12DustCover, Attachments.AK12BDustCover, Attachments.CZ805BrenReceiver, 
                         Attachments.M110Receiver, Attachments.Remington700Chassis, Attachments.Remington700APACChassis,
                         Attachments.Remington700MDTXRSChassis, Attachments.DSR1Handguard, Attachments.DSR1HandguardRailed, Attachments.Z10Receiver, Attachments.MAC21Stock,
                         Attachments.VSSMDustCover, Attachments.SR3MPDustCover, Attachments.Dragunov98DustCover)
@@ -2925,7 +2965,7 @@ public class Attachments3 {
                         Attachments.M14TriRailCover, Attachments.Mk14TanBody, Attachments.Mk14SnowBody, Attachments.Mk14BlackBody, Attachments.SSG08Chassis, Attachments.SA58DustCover,
                         Attachments.M16A1ScopeMount, Attachments.G2ContenderBarrelLong, Attachments.S710Receiver,
                         Attachments.Beowulf50CalReceiver, Attachments.FamasF1ScopeMount,
-                        Attachments.HK417Receiver, Attachments.HK417ReceiverTan, Attachments.AK12DustCover, Attachments.AK12BDustCover, Attachments.CZ805BrenReceiver, Attachments.HK416Receiver,
+                        Attachments.HK417Receiver, Attachments.HK417ReceiverTan, Attachments.AK12DustCover, Attachments.AK12BDustCover, Attachments.CZ805BrenReceiver, 
                         Attachments.M110Receiver, Attachments.Remington700Chassis, Attachments.Remington700APACChassis,
                         Attachments.Remington700MDTXRSChassis, Attachments.DSR1Handguard, Attachments.DSR1HandguardRailed, Attachments.Z10Receiver, Attachments.MAC21Stock,
                         Attachments.VSSMDustCover, Attachments.SR3MPDustCover, Attachments.Dragunov98DustCover)
@@ -3048,7 +3088,7 @@ public class Attachments3 {
                         Attachments.M14TriRailCover, Attachments.Mk14TanBody, Attachments.Mk14SnowBody, Attachments.Mk14BlackBody, Attachments.SSG08Chassis, Attachments.SA58DustCover,
                         Attachments.M16A1ScopeMount, Attachments.G2ContenderBarrelLong, Attachments.S710Receiver,
                         Attachments.Beowulf50CalReceiver, Attachments.FamasF1ScopeMount,
-                        Attachments.HK417Receiver, Attachments.HK417ReceiverTan, Attachments.AK12DustCover, Attachments.AK12BDustCover, Attachments.CZ805BrenReceiver, Attachments.HK416Receiver,
+                        Attachments.HK417Receiver, Attachments.HK417ReceiverTan, Attachments.AK12DustCover, Attachments.AK12BDustCover, Attachments.CZ805BrenReceiver, 
                         Attachments.M110Receiver, Attachments.Remington700Chassis, Attachments.Remington700APACChassis,
                         Attachments.Remington700MDTXRSChassis, Attachments.DSR1Handguard, Attachments.DSR1HandguardRailed, Attachments.Z10Receiver, Attachments.MAC21Stock,
                         Attachments.VSSMDustCover, Attachments.SR3MPDustCover, Attachments.Dragunov98DustCover)
@@ -3116,7 +3156,7 @@ public class Attachments3 {
                         Attachments.M14TriRailCover, Attachments.Mk14TanBody, Attachments.Mk14SnowBody, Attachments.Mk14BlackBody, Attachments.SSG08Chassis, Attachments.SA58DustCover,
                         Attachments.M16A1ScopeMount, Attachments.G2ContenderBarrelLong, Attachments.S710Receiver,
                         Attachments.Beowulf50CalReceiver, Attachments.FamasF1ScopeMount,
-                        Attachments.HK417Receiver, Attachments.HK417ReceiverTan, Attachments.AK12DustCover, Attachments.AK12BDustCover, Attachments.CZ805BrenReceiver, Attachments.HK416Receiver,
+                        Attachments.HK417Receiver, Attachments.HK417ReceiverTan, Attachments.AK12DustCover, Attachments.AK12BDustCover, Attachments.CZ805BrenReceiver, 
                         Attachments.M110Receiver, Attachments.Remington700Chassis, Attachments.Remington700APACChassis,
                         Attachments.Remington700MDTXRSChassis, Attachments.DSR1Handguard, Attachments.DSR1HandguardRailed, Attachments.Z10Receiver, Attachments.MAC21Stock,
                         Attachments.VSSMDustCover, Attachments.SR3MPDustCover, Attachments.Dragunov98DustCover)
@@ -3183,7 +3223,7 @@ public class Attachments3 {
                         Attachments.M14TriRailCover, Attachments.Mk14TanBody, Attachments.Mk14SnowBody, Attachments.Mk14BlackBody, Attachments.SSG08Chassis, Attachments.SA58DustCover,
                         Attachments.M16A1ScopeMount, Attachments.G2ContenderBarrelLong, Attachments.S710Receiver,
                         Attachments.Beowulf50CalReceiver, Attachments.FamasF1ScopeMount,
-                        Attachments.HK417Receiver, Attachments.HK417ReceiverTan, Attachments.AK12DustCover, Attachments.AK12BDustCover, Attachments.CZ805BrenReceiver, Attachments.HK416Receiver,
+                        Attachments.HK417Receiver, Attachments.HK417ReceiverTan, Attachments.AK12DustCover, Attachments.AK12BDustCover, Attachments.CZ805BrenReceiver, 
                         Attachments.M110Receiver, Attachments.Remington700Chassis, Attachments.Remington700APACChassis,
                         Attachments.Remington700MDTXRSChassis, Attachments.DSR1Handguard, Attachments.DSR1HandguardRailed, Attachments.Z10Receiver, Attachments.MAC21Stock,
                         Attachments.VSSMDustCover, Attachments.SR3MPDustCover, Attachments.Dragunov98DustCover)
@@ -3254,7 +3294,7 @@ public class Attachments3 {
                         Attachments.M14TriRailCover, Attachments.Mk14TanBody, Attachments.Mk14SnowBody, Attachments.Mk14BlackBody, Attachments.SSG08Chassis, Attachments.SA58DustCover,
                         Attachments.M16A1ScopeMount, Attachments.G2ContenderBarrelLong, Attachments.S710Receiver,
                         Attachments.Beowulf50CalReceiver, Attachments.FamasF1ScopeMount,
-                        Attachments.HK417Receiver, Attachments.HK417ReceiverTan, Attachments.AK12DustCover, Attachments.AK12BDustCover, Attachments.CZ805BrenReceiver, Attachments.HK416Receiver,
+                        Attachments.HK417Receiver, Attachments.HK417ReceiverTan, Attachments.AK12DustCover, Attachments.AK12BDustCover, Attachments.CZ805BrenReceiver, 
                         Attachments.M110Receiver, Attachments.Remington700Chassis, Attachments.Remington700APACChassis,
                         Attachments.Remington700MDTXRSChassis, Attachments.DSR1Handguard, Attachments.DSR1HandguardRailed, Attachments.Z10Receiver, Attachments.MAC21Stock,
                         Attachments.VSSMDustCover, Attachments.SR3MPDustCover, Attachments.Dragunov98DustCover)
@@ -3328,7 +3368,7 @@ public class Attachments3 {
                         Attachments.M14TriRailCover, Attachments.Mk14TanBody, Attachments.Mk14SnowBody, Attachments.Mk14BlackBody, Attachments.SSG08Chassis, Attachments.SA58DustCover,
                         Attachments.M16A1ScopeMount, Attachments.G2ContenderBarrelLong, Attachments.S710Receiver,
                         Attachments.Beowulf50CalReceiver, Attachments.FamasF1ScopeMount,
-                        Attachments.HK417Receiver, Attachments.HK417ReceiverTan, Attachments.AK12DustCover, Attachments.AK12BDustCover, Attachments.CZ805BrenReceiver, Attachments.HK416Receiver,
+                        Attachments.HK417Receiver, Attachments.HK417ReceiverTan, Attachments.AK12DustCover, Attachments.AK12BDustCover, Attachments.CZ805BrenReceiver, 
                         Attachments.M110Receiver, Attachments.Remington700Chassis, Attachments.Remington700APACChassis,
                         Attachments.Remington700MDTXRSChassis, Attachments.DSR1Handguard, Attachments.DSR1HandguardRailed, Attachments.Z10Receiver, Attachments.MAC21Stock,
                         Attachments.VSSMDustCover, Attachments.SR3MPDustCover, Attachments.Dragunov98DustCover)
@@ -3396,7 +3436,7 @@ public class Attachments3 {
                         Attachments.M14TriRailCover, Attachments.Mk14TanBody, Attachments.Mk14SnowBody, Attachments.Mk14BlackBody, Attachments.SSG08Chassis, Attachments.SA58DustCover,
                         Attachments.M16A1ScopeMount, Attachments.G2ContenderBarrelLong, Attachments.S710Receiver,
                         Attachments.Beowulf50CalReceiver, Attachments.FamasF1ScopeMount,
-                        Attachments.HK417Receiver, Attachments.HK417ReceiverTan, Attachments.AK12DustCover, Attachments.AK12BDustCover, Attachments.CZ805BrenReceiver, Attachments.HK416Receiver,
+                        Attachments.HK417Receiver, Attachments.HK417ReceiverTan, Attachments.AK12DustCover, Attachments.AK12BDustCover, Attachments.CZ805BrenReceiver, 
                         Attachments.M110Receiver, Attachments.Remington700Chassis, Attachments.Remington700APACChassis,
                         Attachments.Remington700MDTXRSChassis, Attachments.DSR1Handguard, Attachments.DSR1HandguardRailed, Attachments.Z10Receiver, Attachments.MAC21Stock,
                         Attachments.VSSMDustCover, Attachments.SR3MPDustCover, Attachments.Dragunov98DustCover)
@@ -3464,7 +3504,7 @@ public class Attachments3 {
                         Attachments.M14TriRailCover, Attachments.Mk14TanBody, Attachments.Mk14SnowBody, Attachments.Mk14BlackBody, Attachments.SSG08Chassis, Attachments.SA58DustCover,
                         Attachments.M16A1ScopeMount, Attachments.G2ContenderBarrelLong, Attachments.S710Receiver,
                         Attachments.Beowulf50CalReceiver, Attachments.FamasF1ScopeMount,
-                        Attachments.HK417Receiver, Attachments.HK417ReceiverTan, Attachments.AK12DustCover, Attachments.AK12BDustCover, Attachments.CZ805BrenReceiver, Attachments.HK416Receiver,
+                        Attachments.HK417Receiver, Attachments.HK417ReceiverTan, Attachments.AK12DustCover, Attachments.AK12BDustCover, Attachments.CZ805BrenReceiver, 
                         Attachments.M110Receiver, Attachments.Remington700Chassis, Attachments.Remington700APACChassis,
                         Attachments.Remington700MDTXRSChassis, Attachments.DSR1Handguard, Attachments.DSR1HandguardRailed, Attachments.Z10Receiver, Attachments.MAC21Stock,
                         Attachments.VSSMDustCover, Attachments.SR3MPDustCover, Attachments.Dragunov98DustCover)
@@ -3533,7 +3573,7 @@ public class Attachments3 {
                         Attachments.M14TriRailCover, Attachments.Mk14TanBody, Attachments.Mk14SnowBody, Attachments.Mk14BlackBody, Attachments.SSG08Chassis, Attachments.SA58DustCover,
                         Attachments.M16A1ScopeMount, Attachments.G2ContenderBarrelLong, Attachments.S710Receiver,
                         Attachments.Beowulf50CalReceiver, Attachments.FamasF1ScopeMount,
-                        Attachments.HK417Receiver, Attachments.HK417ReceiverTan, Attachments.AK12DustCover, Attachments.AK12BDustCover, Attachments.CZ805BrenReceiver, Attachments.HK416Receiver,
+                        Attachments.HK417Receiver, Attachments.HK417ReceiverTan, Attachments.AK12DustCover, Attachments.AK12BDustCover, Attachments.CZ805BrenReceiver, 
                         Attachments.M110Receiver, Attachments.Remington700Chassis, Attachments.Remington700APACChassis,
                         Attachments.Remington700MDTXRSChassis, Attachments.DSR1Handguard, Attachments.DSR1HandguardRailed, Attachments.Z10Receiver, Attachments.MAC21Stock,
                         Attachments.VSSMDustCover, Attachments.SR3MPDustCover, Attachments.Dragunov98DustCover)
@@ -3662,7 +3702,7 @@ public class Attachments3 {
                         Attachments.M14TriRailCover, Attachments.Mk14TanBody, Attachments.Mk14SnowBody, Attachments.Mk14BlackBody, Attachments.SSG08Chassis, Attachments.SA58DustCover,
                         Attachments.M16A1ScopeMount, Attachments.G2ContenderBarrelLong, Attachments.S710Receiver,
                         Attachments.Beowulf50CalReceiver, Attachments.FamasF1ScopeMount,
-                        Attachments.HK417Receiver, Attachments.HK417ReceiverTan, Attachments.AK12DustCover, Attachments.AK12BDustCover, Attachments.CZ805BrenReceiver, Attachments.HK416Receiver,
+                        Attachments.HK417Receiver, Attachments.HK417ReceiverTan, Attachments.AK12DustCover, Attachments.AK12BDustCover, Attachments.CZ805BrenReceiver, 
                         Attachments.M110Receiver, Attachments.Remington700Chassis, Attachments.Remington700APACChassis,
                         Attachments.Remington700MDTXRSChassis, Attachments.DSR1Handguard, Attachments.DSR1HandguardRailed, Attachments.Z10Receiver, Attachments.MAC21Stock,
                         Attachments.VSSMDustCover, Attachments.SR3MPDustCover, Attachments.Dragunov98DustCover)
@@ -3730,7 +3770,7 @@ public class Attachments3 {
                         Attachments.M14TriRailCover, Attachments.Mk14TanBody, Attachments.Mk14SnowBody, Attachments.Mk14BlackBody, Attachments.SSG08Chassis, Attachments.SA58DustCover,
                         Attachments.M16A1ScopeMount, Attachments.G2ContenderBarrelLong, Attachments.S710Receiver,
                         Attachments.Beowulf50CalReceiver, Attachments.FamasF1ScopeMount,
-                        Attachments.HK417Receiver, Attachments.HK417ReceiverTan, Attachments.AK12DustCover, Attachments.AK12BDustCover, Attachments.CZ805BrenReceiver, Attachments.HK416Receiver,
+                        Attachments.HK417Receiver, Attachments.HK417ReceiverTan, Attachments.AK12DustCover, Attachments.AK12BDustCover, Attachments.CZ805BrenReceiver, 
                         Attachments.M110Receiver, Attachments.Remington700Chassis, Attachments.Remington700APACChassis,
                         Attachments.Remington700MDTXRSChassis, Attachments.DSR1Handguard, Attachments.DSR1HandguardRailed, Attachments.Z10Receiver, Attachments.MAC21Stock,
                         Attachments.VSSMDustCover, Attachments.SR3MPDustCover, Attachments.Dragunov98DustCover)
@@ -3896,7 +3936,7 @@ public class Attachments3 {
                         Attachments.SSG08Chassis, Attachments.SA58DustCover, Attachments.M16A1ScopeMount, Attachments.G2ContenderBarrelLong,  Attachments.S710Receiver,
                         Attachments.Beowulf50CalReceiver, Attachments.FamasF1ScopeMount,
                         Attachments.HK417Receiver, Attachments.HK417ReceiverTan, Attachments.AK12DustCover, Attachments.AK12BDustCover,  Attachments.MIMP5TRRail, Attachments.MIMP5MRail,
-                        Attachments.CZ805BrenReceiver, Attachments.HK416Receiver, Attachments.M110Receiver, Attachments.Remington700Chassis,  Attachments.Remington700APACChassis,
+                        Attachments.CZ805BrenReceiver,  Attachments.M110Receiver, Attachments.Remington700Chassis,  Attachments.Remington700APACChassis,
                         Attachments.Remington700MDTXRSChassis, Attachments.DSR1Handguard, Attachments.DSR1HandguardRailed, Attachments.Z10Receiver,
                         Attachments.VSSMDustCover, Attachments.SR3MPDustCover, Attachments.Dragunov98DustCover)
         		.withModernRecipe(
@@ -3964,7 +4004,7 @@ public class Attachments3 {
                         Attachments.SSG08Chassis, Attachments.SA58DustCover, Attachments.M16A1ScopeMount, Attachments.G2ContenderBarrelLong,  Attachments.S710Receiver,
                         Attachments.Beowulf50CalReceiver, Attachments.FamasF1ScopeMount,
                         Attachments.HK417Receiver, Attachments.HK417ReceiverTan, Attachments.AK12DustCover, Attachments.AK12BDustCover,  Attachments.MIMP5TRRail, Attachments.MIMP5MRail,
-                        Attachments.CZ805BrenReceiver, Attachments.HK416Receiver, Attachments.M110Receiver, Attachments.Remington700Chassis,  Attachments.Remington700APACChassis,
+                        Attachments.CZ805BrenReceiver,  Attachments.M110Receiver, Attachments.Remington700Chassis,  Attachments.Remington700APACChassis,
                         Attachments.Remington700MDTXRSChassis, Attachments.DSR1Handguard, Attachments.DSR1HandguardRailed, Attachments.Z10Receiver,
                         Attachments.VSSMDustCover, Attachments.SR3MPDustCover, Attachments.Dragunov98DustCover)
         		.withModernRecipe(
@@ -4042,7 +4082,7 @@ public class Attachments3 {
                         Attachments.M14TriRailCover, Attachments.Mk14TanBody, Attachments.Mk14SnowBody, Attachments.Mk14BlackBody, Attachments.SSG08Chassis, Attachments.SA58DustCover,
                         Attachments.M16A1ScopeMount, Attachments.G2ContenderBarrelLong, Attachments.S710Receiver,
                         Attachments.Beowulf50CalReceiver, Attachments.FamasF1ScopeMount,
-                        Attachments.HK417Receiver, Attachments.HK417ReceiverTan, Attachments.AK12DustCover, Attachments.AK12BDustCover, Attachments.CZ805BrenReceiver, Attachments.HK416Receiver,
+                        Attachments.HK417Receiver, Attachments.HK417ReceiverTan, Attachments.AK12DustCover, Attachments.AK12BDustCover, Attachments.CZ805BrenReceiver, 
                         Attachments.M110Receiver, Attachments.Remington700Chassis, Attachments.Remington700APACChassis,
                         Attachments.Remington700MDTXRSChassis, Attachments.DSR1Handguard, Attachments.DSR1HandguardRailed, Attachments.Z10Receiver, Attachments.MAC21Stock,
                         Attachments.VSSMDustCover, Attachments.SR3MPDustCover, Attachments.Dragunov98DustCover)

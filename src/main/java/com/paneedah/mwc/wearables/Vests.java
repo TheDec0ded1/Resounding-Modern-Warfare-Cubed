@@ -296,5 +296,26 @@ public class Vests {
 	        .doGLDirect();
         })
         .build(ModernWarfareMod.MOD_CONTEXT);
+
+        new ItemVest.Builder()
+        .withName("sobr_vest")
+        .withPercentDamageBlocked(0.4)
+	.withDurability(400)
+        .withTab(ModernWarfareMod.ArmorTab)
+        .withProperModel("com.paneedah.mwc.models.SOBRVest", "vestsobr.png")
+//        .withModelTextureName("vestsobr.png")
+//        .withCustomEquippedPositioning((player, stack) -> {
+//            GL11.glScalef(0.8f, 0.8f, 0.8f);
+//            GL11.glTranslatef(0f, 0f, 0f);
+//            GL11.glRotatef(0F, 0f, 0f, 1f);
+//        })
+        .withInventoryPositioning(stack -> {
+	        new Transform()
+	        .withPosition(-0.15, -3.6, -0.25)
+	        .withRotation(-15, 150, 0)
+	        .withScale(2.6, 2.6, 2.6)
+	        .doGLDirect();
+        })
+        .build(ModernWarfareMod.MOD_CONTEXT);
     }
 }

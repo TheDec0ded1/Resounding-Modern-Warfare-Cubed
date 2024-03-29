@@ -106,15 +106,23 @@ public class HK417Factory implements GunFactory {
             GL11.glScaled(1.1F, 1.1F, 1.1F);
         })
         .withCompatibleAttachment(Attachments.MagpulCTRStockTan, (model) -> {
-            GL11.glTranslatef(0.01f, -0.19f, -0.4f);
+            GL11.glTranslatef(0.01f, -0.17f, -0.1f);
             GL11.glScaled(1.1F, 1.1F, 1.1F);
         })
         .withCompatibleAttachment(Attachments.MilSpecStockTan, (model) -> {
-            GL11.glTranslatef(0.01f, -0.19f, -0.4f);
+            GL11.glTranslatef(0.01f, -0.17f, -0.1f);
             GL11.glScaled(1.1F, 1.1F, 1.1F);
         })
         .withCompatibleAttachment(Attachments.HK416StockTan, (model) -> {
-            GL11.glTranslatef(0.01f, -0.19f, -0.4f);
+            GL11.glTranslatef(0.01f, -0.17f, -0.1f);
+            GL11.glScaled(1.1F, 1.1F, 1.1F);
+        })
+        .withCompatibleAttachment(Attachments.HKSlimStockTan, (model) -> {
+            GL11.glTranslatef(0.01f, -0.17f, -0.1f);
+            GL11.glScaled(1.1F, 1.1F, 1.1F);
+        })
+        .withCompatibleAttachment(Attachments.HKSlimStock, (model) -> {
+            GL11.glTranslatef(0.01f, -0.17f, -0.1f);
             GL11.glScaled(1.1F, 1.1F, 1.1F);
         })
         .withCompatibleAttachment(Attachments.HK417Receiver, true, (model) -> {

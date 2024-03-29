@@ -91,12 +91,14 @@ public class Magazines {
     public static ItemMagazine P2022Mag;
     public static ItemMagazine HiPowerMag;
     public static ItemMagazine APSMag;
+    public static ItemMagazine PSSMag;
     public static ItemMagazine AS50Mag;
     public static ItemMagazine M82Mag;
     public static ItemMagazine M99Mag;
     public static ItemMagazine NTW20Mag;
     public static ItemMagazine FrommerStopMag;
     public static ItemMagazine G36CMag;
+    public static ItemMagazine SL8Mag;
     public static ItemMagazine MG36Mag;
     public static ItemMagazine G36CMagRAL;
     public static ItemMagazine GlockMag13;
@@ -1109,6 +1111,34 @@ public class Magazines {
                 
                 .withCreativeTab(ModernWarfareMod.AmmoTab)
                 .withModel(new com.paneedah.mwc.models.G36CMag(), "g36c.png")
+
+                .withFirstPersonPositioning((player, itemStack) -> {
+                    GL11.glTranslatef(0.1F, -0.3F, 0.4F);
+                    GL11.glRotatef(30F, 0f, 1f, 0f);
+                    GL11.glScaled(0.7F, 0.7F, 0.7F);
+                }).withThirdPersonPositioning((player, itemStack) -> {
+                    GL11.glTranslatef(-0.3F, 0.5F, 0.1F);
+                    GL11.glRotatef(-50F, 0f, 1f, 0f);
+                    GL11.glRotatef(10F, 1f, 0f, 0f);
+                    GL11.glScaled(0.7F, 0.7F, 0.7F);
+                }).withInventoryPositioning((itemStack) -> {
+                    GL11.glTranslatef(0.3F, 1F, -2.5F);
+                    GL11.glRotatef(-150F, 0f, 1f, 0f);
+                    GL11.glRotatef(-6F, 1f, 0f, 0f);
+                    GL11.glRotatef(-15F, 0f, 0f, 1f);
+                    GL11.glScaled(0.8F, 0.8F, 0.8f);
+                })
+                .withMaxStackSize(6)
+                .withTextureName("Dummy.png").build(ModernWarfareMod.MOD_CONTEXT, ItemMagazine.class);
+
+        Magazines.SL8Mag = new ItemMagazine.Builder()
+        		.withAmmo(10)
+        		.withCompatibleBullet(Bullets.Bullet556x45)
+        		.withName("SL8Mag")
+        		.withRotationPoint(-0.040000001192092904, -0.28000000834465033, -1.4400000429153446)
+                
+                .withCreativeTab(ModernWarfareMod.AmmoTab)
+                .withModel(new com.paneedah.mwc.models.SL8Mag(), "sl8.png")
 
                 .withFirstPersonPositioning((player, itemStack) -> {
                     GL11.glTranslatef(0.1F, -0.3F, 0.4F);
@@ -2747,6 +2777,33 @@ Magazines.RPK74Mag = new ItemMagazine.Builder()
         		.withRotationPoint(-0.12000000357627871, 0.48000001430511485, 0.0)
                 .withCreativeTab(ModernWarfareMod.AmmoTab)
                 .withModel(new com.paneedah.mwc.models.APSmag(), "aps.png")
+
+                .withFirstPersonPositioning((player, itemStack) -> {
+                    GL11.glTranslatef(0.1F, -0.3F, 0.4F);
+                    GL11.glRotatef(30F, 0f, 1f, 0f);
+                    GL11.glScaled(0.7F, 0.7F, 0.7F);
+                }).withThirdPersonPositioning((player, itemStack) -> {
+                    GL11.glTranslatef(-0.3F, 0.5F, 0.1F);
+                    GL11.glRotatef(-50F, 0f, 1f, 0f);
+                    GL11.glRotatef(10F, 1f, 0f, 0f);
+                    GL11.glScaled(0.7F, 0.7F, 0.7F);
+                }).withInventoryPositioning((itemStack) -> {
+                    GL11.glTranslatef(0.3F, 0.5f, -0.9F);
+                    GL11.glRotatef(-150F, 0f, 1f, 0f);
+                    GL11.glRotatef(0F, 1f, 0f, 0f);
+                    GL11.glRotatef(-5F, 0f, 0f, 1f);
+                    GL11.glScaled(0.8F, 0.8F, 0.8f);
+                })
+                .withMaxStackSize(6)
+                .withTextureName("Dummy.png").build(ModernWarfareMod.MOD_CONTEXT, ItemMagazine.class);
+
+        Magazines.PSSMag = new ItemMagazine.Builder()
+        		.withAmmo(6)
+        		.withCompatibleBullet(Bullets.Bullet9x19mm)
+        		.withName("PPSMag")
+        		.withRotationPoint(-0.12000000357627871, 0.48000001430511485, 0.0)
+                .withCreativeTab(ModernWarfareMod.AmmoTab)
+                .withModel(new com.paneedah.mwc.models.PSSMag(), "apsm.png")
 
                 .withFirstPersonPositioning((player, itemStack) -> {
                     GL11.glTranslatef(0.1F, -0.3F, 0.4F);

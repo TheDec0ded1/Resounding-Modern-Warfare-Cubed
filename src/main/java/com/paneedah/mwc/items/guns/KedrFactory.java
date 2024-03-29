@@ -230,21 +230,6 @@ new Transform()
              })
              
                      
-            .withFirstPersonHandPositioningZooming(
-                     (renderContext) -> {
-                    	 GL11.glScalef(3.5f, 3.5f, 3.5f);
-                    	 GL11.glRotatef(-100.000000f, 1f, 0f, 0f);
-                    	 GL11.glRotatef(-55.000000f, 0f, 1f, 0f);
-                    	 GL11.glRotatef(30.000000f, 0f, 0f, 1f);
-                    	 GL11.glTranslatef(0.100000f, -0.375000f, 0.175000f);
-                     }, 
-                     (renderContext) -> {
-                    	 GL11.glScalef(3.5f, 3.5f, 3.5f);
-                    	 GL11.glRotatef(-95.000000f, 1f, 0f, 0f);
-                    	 GL11.glRotatef(20.000000f, 0f, 1f, 0f);
-                    	 GL11.glRotatef(-50.000000f, 0f, 0f, 1f);
-                    	 GL11.glTranslatef(0.395000f, -0.470000f, 0.190000f);
-                     })
                      
             .withFirstPersonHandPositioningModifying(
                      (renderContext) -> {

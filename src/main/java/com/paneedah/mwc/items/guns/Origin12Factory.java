@@ -50,7 +50,7 @@ public class Origin12Factory {
         .withFlashOffsetY(() -> 0.16f)
         .withShellCasingModel(new com.paneedah.mwc.models.Shotgun12Gauge())
         .withShellCasingModelTexture("shotgun12gauge")
-        .withInaccuracy(12f)
+        .withInaccuracy(2)
         .withPellets(10)
         .withCreativeTab(ModernWarfareMod.AssaultRiflesTab)
         .useNewSystem()

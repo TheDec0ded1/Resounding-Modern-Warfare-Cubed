@@ -5,7 +5,7 @@ import net.minecraft.client.model.ModelBox;
 import net.minecraft.client.model.ModelRenderer;
 import net.minecraft.entity.Entity;
 
-// Made with Blockbench 3.8.4
+// Made with Blockbench 4.9.3
 // Exported for Minecraft version 1.7 - 1.12
 // Paste this class into your mod and generate all required imports
 
@@ -18,38 +18,41 @@ public class HK416Receiver extends ModelBase {
 	private final ModelRenderer gun264_r2;
 	private final ModelRenderer gun143_r1;
 	private final ModelRenderer gun140_r1;
-	private final ModelRenderer receiver18_r1;
-	private final ModelRenderer receiver17_r1;
-	private final ModelRenderer receiver14_r1;
-	private final ModelRenderer receiver14_r2;
+	private final ModelRenderer receiver18_r2;
+	private final ModelRenderer receiver17_r5;
+	private final ModelRenderer receiver14_r4;
+	private final ModelRenderer receiver14_r5;
 	private final ModelRenderer receiver13_r1;
 	private final ModelRenderer receiver12_r1;
-	private final ModelRenderer receiver15_r1;
-	private final ModelRenderer receiver14_r3;
-	private final ModelRenderer receiver14_r4;
+	private final ModelRenderer receiver15_r6;
+	private final ModelRenderer receiver14_r6;
+	private final ModelRenderer receiver14_r7;
 	private final ModelRenderer receiver13_r2;
 	private final ModelRenderer receiver13_r3;
-	private final ModelRenderer receiver14_r5;
-	private final ModelRenderer receiver14_r6;
-	private final ModelRenderer receiver15_r2;
-	private final ModelRenderer receiver14_r7;
 	private final ModelRenderer receiver14_r8;
+	private final ModelRenderer receiver14_r9;
+	private final ModelRenderer receiver15_r7;
+	private final ModelRenderer receiver14_r10;
+	private final ModelRenderer receiver14_r11;
 	private final ModelRenderer receiver13_r4;
 	private final ModelRenderer receiver12_r2;
 	private final ModelRenderer receiver13_r5;
 	private final ModelRenderer receiver13_r6;
 	private final ModelRenderer receiver12_r3;
 	private final ModelRenderer receiver11_r1;
-	private final ModelRenderer receiver16_r1;
-	private final ModelRenderer receiver18_r2;
-	private final ModelRenderer receiver17_r2;
+	private final ModelRenderer receiver16_r7;
+	private final ModelRenderer receiver18_r3;
+	private final ModelRenderer receiver17_r6;
 	private final ModelRenderer gun125_r1;
 	private final ModelRenderer gun170;
 	private final ModelRenderer gun172_r1;
 	private final ModelRenderer gun172_r2;
 	private final ModelRenderer gun264;
 	private final ModelRenderer bone2;
-	private final ModelRenderer bone_r1;
+	private final ModelRenderer bone_r17;
+	private final ModelRenderer rails;
+	private final ModelRenderer cube_r82;
+	private final ModelRenderer cube_r83;
 
 	public HK416Receiver() {
 		textureWidth = 200;
@@ -67,7 +70,7 @@ public class HK416Receiver extends ModelBase {
 		receiver.cubeList.add(new ModelBox(receiver, 103, 109, -1.4F, -39.3F, -22.0F, 1, 1, 23, 0.0F, false));
 		receiver.cubeList.add(new ModelBox(receiver, 102, 85, -2.6F, -39.3F, -22.0F, 1, 1, 23, 0.0F, false));
 		receiver.cubeList.add(new ModelBox(receiver, 92, 96, -2.0F, -38.8F, -23.699F, 1, 1, 1, 0.0F, false));
-		receiver.cubeList.add(new ModelBox(receiver, 88, 96, -2.0F, -37.2F, -23.699F, 1, 1, 1, 0.0F, false));
+		receiver.cubeList.add(new ModelBox(receiver, 57, 33, -2.0F, -37.2F, -23.699F, 1, 1, 1, 0.0F, false));
 		receiver.cubeList.add(new ModelBox(receiver, 37, 100, -4.3F, -37.4F, -21.0F, 1, 1, 1, 0.0F, false));
 		receiver.cubeList.add(new ModelBox(receiver, 0, 100, -4.3F, -37.4F, -12.0F, 1, 1, 1, 0.0F, false));
 		receiver.cubeList.add(new ModelBox(receiver, 74, 49, -2.5F, -37.001F, -22.701F, 2, 2, 1, 0.0F, false));
@@ -121,31 +124,31 @@ public class HK416Receiver extends ModelBase {
 		gun140_r1.cubeList.add(new ModelBox(gun140_r1, 64, 74, -0.01F, 0.0F, 0.0F, 2, 1, 7, 0.0F, false));
 		gun140_r1.cubeList.add(new ModelBox(gun140_r1, 20, 29, -0.011F, -0.4F, -0.001F, 2, 1, 7, 0.0F, false));
 
-		receiver18_r1 = new ModelRenderer(this);
-		receiver18_r1.setRotationPoint(-2.6F, -39.25F, 1.0F);
-		receiver.addChild(receiver18_r1);
-		setRotationAngle(receiver18_r1, 0.0F, 0.0F, -0.8029F);
-		receiver18_r1.cubeList.add(new ModelBox(receiver18_r1, 8, 100, -0.9F, 0.0F, -0.4F, 1, 1, 1, 0.0F, false));
+		receiver18_r2 = new ModelRenderer(this);
+		receiver18_r2.setRotationPoint(-2.6F, -39.25F, 1.0F);
+		receiver.addChild(receiver18_r2);
+		setRotationAngle(receiver18_r2, 0.0F, 0.0F, -0.8029F);
+		receiver18_r2.cubeList.add(new ModelBox(receiver18_r2, 8, 100, -0.9F, 0.0F, -0.4F, 1, 1, 1, 0.0F, false));
 
-		receiver17_r1 = new ModelRenderer(this);
-		receiver17_r1.setRotationPoint(-0.4F, -39.25F, 1.0F);
-		receiver.addChild(receiver17_r1);
-		setRotationAngle(receiver17_r1, 0.0F, 0.0F, 0.8029F);
-		receiver17_r1.cubeList.add(new ModelBox(receiver17_r1, 100, 18, -0.1F, 0.0F, -0.4F, 1, 1, 1, 0.0F, false));
+		receiver17_r5 = new ModelRenderer(this);
+		receiver17_r5.setRotationPoint(-0.4F, -39.25F, 1.0F);
+		receiver.addChild(receiver17_r5);
+		setRotationAngle(receiver17_r5, 0.0F, 0.0F, 0.8029F);
+		receiver17_r5.cubeList.add(new ModelBox(receiver17_r5, 100, 18, -0.1F, 0.0F, -0.4F, 1, 1, 1, 0.0F, false));
 
-		receiver14_r1 = new ModelRenderer(this);
-		receiver14_r1.setRotationPoint(-3.6F, -37.5F, -11.7F);
-		receiver.addChild(receiver14_r1);
-		setRotationAngle(receiver14_r1, 0.0F, 0.0F, -0.4014F);
-		receiver14_r1.cubeList.add(new ModelBox(receiver14_r1, 86, 68, 0.0F, 0.0F, 0.001F, 1, 1, 13, 0.0F, false));
-		receiver14_r1.cubeList.add(new ModelBox(receiver14_r1, 62, 19, -0.4F, -0.2F, -8.999F, 1, 2, 10, -0.4F, false));
-		receiver14_r1.cubeList.add(new ModelBox(receiver14_r1, 78, 20, 0.0F, 0.0F, -10.998F, 1, 1, 2, 0.0F, false));
+		receiver14_r4 = new ModelRenderer(this);
+		receiver14_r4.setRotationPoint(-3.6F, -37.5F, -11.7F);
+		receiver.addChild(receiver14_r4);
+		setRotationAngle(receiver14_r4, 0.0F, 0.0F, -0.4014F);
+		receiver14_r4.cubeList.add(new ModelBox(receiver14_r4, 86, 68, 0.0F, 0.0F, 0.001F, 1, 1, 13, 0.0F, false));
+		receiver14_r4.cubeList.add(new ModelBox(receiver14_r4, 62, 19, -0.4F, -0.2F, -8.999F, 1, 2, 10, -0.4F, false));
+		receiver14_r4.cubeList.add(new ModelBox(receiver14_r4, 78, 20, 0.0F, 0.0F, -10.998F, 1, 1, 2, 0.0F, false));
 
-		receiver14_r2 = new ModelRenderer(this);
-		receiver14_r2.setRotationPoint(-3.2F, -37.5F, -23.7F);
-		receiver.addChild(receiver14_r2);
-		setRotationAngle(receiver14_r2, 0.0F, 0.0F, -0.4014F);
-		receiver14_r2.cubeList.add(new ModelBox(receiver14_r2, 97, 19, 0.0F, 0.0F, 0.001F, 1, 1, 1, 0.0F, false));
+		receiver14_r5 = new ModelRenderer(this);
+		receiver14_r5.setRotationPoint(-3.2F, -37.5F, -23.7F);
+		receiver.addChild(receiver14_r5);
+		setRotationAngle(receiver14_r5, 0.0F, 0.0F, -0.4014F);
+		receiver14_r5.cubeList.add(new ModelBox(receiver14_r5, 97, 19, 0.0F, 0.0F, 0.001F, 1, 1, 1, 0.0F, false));
 
 		receiver13_r1 = new ModelRenderer(this);
 		receiver13_r1.setRotationPoint(0.2F, -37.5F, -23.7F);
@@ -159,23 +162,23 @@ public class HK416Receiver extends ModelBase {
 		setRotationAngle(receiver12_r1, 0.0F, 0.0F, 0.4014F);
 		receiver12_r1.cubeList.add(new ModelBox(receiver12_r1, 86, 43, -1.0F, 0.0F, 0.001F, 1, 1, 24, 0.0F, false));
 
-		receiver15_r1 = new ModelRenderer(this);
-		receiver15_r1.setRotationPoint(-3.7F, -37.5F, 0.6F);
-		receiver.addChild(receiver15_r1);
-		setRotationAngle(receiver15_r1, -0.925F, 0.0F, -0.3142F);
-		receiver15_r1.cubeList.add(new ModelBox(receiver15_r1, 79, 55, 0.001F, 0.3F, 0.5F, 1, 2, 1, 0.0F, false));
+		receiver15_r6 = new ModelRenderer(this);
+		receiver15_r6.setRotationPoint(-3.7F, -37.5F, 0.6F);
+		receiver.addChild(receiver15_r6);
+		setRotationAngle(receiver15_r6, -0.925F, 0.0F, -0.3142F);
+		receiver15_r6.cubeList.add(new ModelBox(receiver15_r6, 79, 55, 0.001F, 0.3F, 0.5F, 1, 2, 1, 0.0F, false));
 
-		receiver14_r3 = new ModelRenderer(this);
-		receiver14_r3.setRotationPoint(0.7F, -37.5F, 0.6F);
-		receiver.addChild(receiver14_r3);
-		setRotationAngle(receiver14_r3, -0.925F, 0.0F, 0.3142F);
-		receiver14_r3.cubeList.add(new ModelBox(receiver14_r3, 79, 62, -0.999F, 0.3F, 0.5F, 1, 2, 1, 0.0F, false));
+		receiver14_r6 = new ModelRenderer(this);
+		receiver14_r6.setRotationPoint(0.7F, -37.5F, 0.6F);
+		receiver.addChild(receiver14_r6);
+		setRotationAngle(receiver14_r6, -0.925F, 0.0F, 0.3142F);
+		receiver14_r6.cubeList.add(new ModelBox(receiver14_r6, 79, 62, -0.999F, 0.3F, 0.5F, 1, 2, 1, 0.0F, false));
 
-		receiver14_r4 = new ModelRenderer(this);
-		receiver14_r4.setRotationPoint(-3.7F, -37.5F, 0.6F);
-		receiver.addChild(receiver14_r4);
-		setRotationAngle(receiver14_r4, 0.0F, 0.0F, -0.3142F);
-		receiver14_r4.cubeList.add(new ModelBox(receiver14_r4, 79, 31, 0.0F, 0.0F, 0.001F, 1, 2, 1, 0.0F, false));
+		receiver14_r7 = new ModelRenderer(this);
+		receiver14_r7.setRotationPoint(-3.7F, -37.5F, 0.6F);
+		receiver.addChild(receiver14_r7);
+		setRotationAngle(receiver14_r7, 0.0F, 0.0F, -0.3142F);
+		receiver14_r7.cubeList.add(new ModelBox(receiver14_r7, 79, 31, 0.0F, 0.0F, 0.001F, 1, 2, 1, 0.0F, false));
 
 		receiver13_r2 = new ModelRenderer(this);
 		receiver13_r2.setRotationPoint(0.7F, -37.5F, 0.6F);
@@ -190,37 +193,37 @@ public class HK416Receiver extends ModelBase {
 		receiver13_r3.cubeList.add(new ModelBox(receiver13_r3, 20, 100, -0.999F, -1.2F, 0.001F, 1, 1, 1, 0.0F, false));
 		receiver13_r3.cubeList.add(new ModelBox(receiver13_r3, 100, 20, -1.0F, -1.0F, 0.0F, 1, 1, 1, 0.0F, false));
 
-		receiver14_r5 = new ModelRenderer(this);
-		receiver14_r5.setRotationPoint(-3.7F, -37.5F, 0.6F);
-		receiver.addChild(receiver14_r5);
-		setRotationAngle(receiver14_r5, 0.0F, 0.0F, 0.4014F);
-		receiver14_r5.cubeList.add(new ModelBox(receiver14_r5, 4, 100, 0.0F, -1.0F, 0.0F, 1, 1, 1, 0.0F, false));
-		receiver14_r5.cubeList.add(new ModelBox(receiver14_r5, 100, 11, -0.001F, -1.2F, 0.001F, 1, 1, 1, 0.0F, false));
-
-		receiver14_r6 = new ModelRenderer(this);
-		receiver14_r6.setRotationPoint(-2.3F, -38.8F, -11.7F);
-		receiver.addChild(receiver14_r6);
-		setRotationAngle(receiver14_r6, 0.0F, 0.0F, -0.4014F);
-		receiver14_r6.cubeList.add(new ModelBox(receiver14_r6, 101, 69, -1.0F, 0.0F, 0.001F, 1, 1, 13, 0.0F, false));
-		receiver14_r6.cubeList.add(new ModelBox(receiver14_r6, 78, 23, -1.0F, 0.0F, -10.999F, 1, 1, 2, 0.0F, false));
-
-		receiver15_r2 = new ModelRenderer(this);
-		receiver15_r2.setRotationPoint(-1.9F, -36.2F, -23.7F);
-		receiver.addChild(receiver15_r2);
-		setRotationAngle(receiver15_r2, 0.0F, 0.0F, 0.4014F);
-		receiver15_r2.cubeList.add(new ModelBox(receiver15_r2, 96, 96, -1.0F, -1.0F, -0.001F, 1, 1, 1, 0.0F, false));
-
-		receiver14_r7 = new ModelRenderer(this);
-		receiver14_r7.setRotationPoint(-1.1F, -36.2F, -23.7F);
-		receiver.addChild(receiver14_r7);
-		setRotationAngle(receiver14_r7, 0.0F, 0.0F, -0.4014F);
-		receiver14_r7.cubeList.add(new ModelBox(receiver14_r7, 30, 97, 0.0F, -1.0F, -0.001F, 1, 1, 1, 0.0F, false));
-
 		receiver14_r8 = new ModelRenderer(this);
-		receiver14_r8.setRotationPoint(-1.9F, -38.8F, -23.7F);
+		receiver14_r8.setRotationPoint(-3.7F, -37.5F, 0.6F);
 		receiver.addChild(receiver14_r8);
-		setRotationAngle(receiver14_r8, 0.0F, 0.0F, -0.4014F);
-		receiver14_r8.cubeList.add(new ModelBox(receiver14_r8, 97, 21, -1.0F, 0.0F, 0.001F, 1, 1, 1, 0.0F, false));
+		setRotationAngle(receiver14_r8, 0.0F, 0.0F, 0.4014F);
+		receiver14_r8.cubeList.add(new ModelBox(receiver14_r8, 4, 100, 0.0F, -1.0F, 0.0F, 1, 1, 1, 0.0F, false));
+		receiver14_r8.cubeList.add(new ModelBox(receiver14_r8, 100, 11, -0.001F, -1.2F, 0.001F, 1, 1, 1, 0.0F, false));
+
+		receiver14_r9 = new ModelRenderer(this);
+		receiver14_r9.setRotationPoint(-2.3F, -38.8F, -11.7F);
+		receiver.addChild(receiver14_r9);
+		setRotationAngle(receiver14_r9, 0.0F, 0.0F, -0.4014F);
+		receiver14_r9.cubeList.add(new ModelBox(receiver14_r9, 101, 69, -1.0F, 0.0F, 0.001F, 1, 1, 13, 0.0F, false));
+		receiver14_r9.cubeList.add(new ModelBox(receiver14_r9, 78, 23, -1.0F, 0.0F, -10.999F, 1, 1, 2, 0.0F, false));
+
+		receiver15_r7 = new ModelRenderer(this);
+		receiver15_r7.setRotationPoint(-1.9F, -36.2F, -23.7F);
+		receiver.addChild(receiver15_r7);
+		setRotationAngle(receiver15_r7, 0.0F, 0.0F, 0.4014F);
+		receiver15_r7.cubeList.add(new ModelBox(receiver15_r7, 96, 96, -1.0F, -1.0F, -0.001F, 1, 1, 1, 0.0F, false));
+
+		receiver14_r10 = new ModelRenderer(this);
+		receiver14_r10.setRotationPoint(-1.1F, -36.2F, -23.7F);
+		receiver.addChild(receiver14_r10);
+		setRotationAngle(receiver14_r10, 0.0F, 0.0F, -0.4014F);
+		receiver14_r10.cubeList.add(new ModelBox(receiver14_r10, 30, 97, 0.0F, -1.0F, -0.001F, 1, 1, 1, 0.0F, false));
+
+		receiver14_r11 = new ModelRenderer(this);
+		receiver14_r11.setRotationPoint(-1.9F, -38.8F, -23.7F);
+		receiver.addChild(receiver14_r11);
+		setRotationAngle(receiver14_r11, 0.0F, 0.0F, -0.4014F);
+		receiver14_r11.cubeList.add(new ModelBox(receiver14_r11, 97, 21, -1.0F, 0.0F, 0.001F, 1, 1, 1, 0.0F, false));
 
 		receiver13_r4 = new ModelRenderer(this);
 		receiver13_r4.setRotationPoint(-1.1F, -38.8F, -23.7F);
@@ -259,24 +262,24 @@ public class HK416Receiver extends ModelBase {
 		setRotationAngle(receiver11_r1, 0.0F, 0.0F, -0.4014F);
 		receiver11_r1.cubeList.add(new ModelBox(receiver11_r1, 76, 87, -1.0F, -1.0F, 0.0F, 1, 1, 24, 0.0F, false));
 
-		receiver16_r1 = new ModelRenderer(this);
-		receiver16_r1.setRotationPoint(0.4F, -38.85F, -19.0F);
-		receiver.addChild(receiver16_r1);
-		setRotationAngle(receiver16_r1, 0.0F, 0.0F, 1.9705F);
-		receiver16_r1.cubeList.add(new ModelBox(receiver16_r1, 16, 100, 0.001F, 0.0F, 0.0F, 1, 1, 1, 0.0F, false));
-		receiver16_r1.cubeList.add(new ModelBox(receiver16_r1, 55, 79, 0.0F, 0.0F, 0.5F, 1, 1, 2, 0.0F, false));
+		receiver16_r7 = new ModelRenderer(this);
+		receiver16_r7.setRotationPoint(0.4F, -38.85F, -19.0F);
+		receiver.addChild(receiver16_r7);
+		setRotationAngle(receiver16_r7, 0.0F, 0.0F, 1.9705F);
+		receiver16_r7.cubeList.add(new ModelBox(receiver16_r7, 16, 100, 0.001F, 0.0F, 0.0F, 1, 1, 1, 0.0F, false));
+		receiver16_r7.cubeList.add(new ModelBox(receiver16_r7, 55, 79, 0.0F, 0.0F, 0.5F, 1, 1, 2, 0.0F, false));
 
-		receiver18_r2 = new ModelRenderer(this);
-		receiver18_r2.setRotationPoint(0.4F, -38.85F, -19.0F);
-		receiver.addChild(receiver18_r2);
-		setRotationAngle(receiver18_r2, 0.0F, -1.9333F, 0.0F);
-		receiver18_r2.cubeList.add(new ModelBox(receiver18_r2, 80, 47, 0.0F, 0.0F, 0.0F, 1, 2, 1, 0.0F, false));
+		receiver18_r3 = new ModelRenderer(this);
+		receiver18_r3.setRotationPoint(0.4F, -38.85F, -19.0F);
+		receiver.addChild(receiver18_r3);
+		setRotationAngle(receiver18_r3, 0.0F, -1.9333F, 0.0F);
+		receiver18_r3.cubeList.add(new ModelBox(receiver18_r3, 80, 47, 0.0F, 0.0F, 0.0F, 1, 2, 1, 0.0F, false));
 
-		receiver17_r2 = new ModelRenderer(this);
-		receiver17_r2.setRotationPoint(0.4F, -38.85F, -16.5F);
-		receiver.addChild(receiver17_r2);
-		setRotationAngle(receiver17_r2, 0.0F, 1.9333F, 0.0F);
-		receiver17_r2.cubeList.add(new ModelBox(receiver17_r2, 80, 76, 0.0F, 0.0F, -1.0F, 1, 2, 1, 0.0F, false));
+		receiver17_r6 = new ModelRenderer(this);
+		receiver17_r6.setRotationPoint(0.4F, -38.85F, -16.5F);
+		receiver.addChild(receiver17_r6);
+		setRotationAngle(receiver17_r6, 0.0F, 1.9333F, 0.0F);
+		receiver17_r6.cubeList.add(new ModelBox(receiver17_r6, 80, 76, 0.0F, 0.0F, -1.0F, 1, 2, 1, 0.0F, false));
 
 		gun125_r1 = new ModelRenderer(this);
 		gun125_r1.setRotationPoint(-2.5F, -40.1F, -1.0F);
@@ -316,22 +319,87 @@ public class HK416Receiver extends ModelBase {
 		gun264.cubeList.add(new ModelBox(gun264, 0, 0, -1.001F, -3.001F, 7.3F, 1, 3, 1, -0.3F, false));
 
 		bone2 = new ModelRenderer(this);
-		bone2.setRotationPoint(-0.5F, -16.75F, -50.7F);
+		bone2.setRotationPoint(-0.5F, -40.75F, -50.7F);
+		receiver.addChild(bone2);
 		bone2.cubeList.add(new ModelBox(bone2, 45, 160, -1.05F, 0.0F, 28.001F, 1, 1, 21, 0.0F, false));
 		bone2.cubeList.add(new ModelBox(bone2, 45, 160, -1.95F, -0.001F, 28.0F, 1, 1, 21, 0.0F, false));
 
-		bone_r1 = new ModelRenderer(this);
-		bone_r1.setRotationPoint(-0.95F, 0.0F, 49.001F);
-		bone2.addChild(bone_r1);
-		setRotationAngle(bone_r1, -0.5934F, 0.0F, 0.0F);
-		bone_r1.cubeList.add(new ModelBox(bone_r1, 54, 163, -1.001F, 0.0F, 0.0F, 1, 1, 1, 0.0F, false));
-		bone_r1.cubeList.add(new ModelBox(bone_r1, 54, 163, -0.101F, 0.0F, 0.0F, 1, 1, 1, 0.0F, false));
+		bone_r17 = new ModelRenderer(this);
+		bone_r17.setRotationPoint(-0.95F, 0.0F, 49.001F);
+		bone2.addChild(bone_r17);
+		setRotationAngle(bone_r17, -0.5934F, 0.0F, 0.0F);
+		bone_r17.cubeList.add(new ModelBox(bone_r17, 57, 57, -1.001F, 0.0F, 0.0F, 1, 1, 1, 0.0F, false));
+		bone_r17.cubeList.add(new ModelBox(bone_r17, 48, 38, -0.101F, 0.0F, 0.0F, 1, 1, 1, 0.0F, false));
+
+		rails = new ModelRenderer(this);
+		rails.setRotationPoint(-2.3F, -43.1F, -39.75F);
+		receiver.addChild(rails);
+		rails.cubeList.add(new ModelBox(rails, 31, 5, -0.2F, 1.7F, 36.55F, 2, 1, 2, -0.2F, false));
+		rails.cubeList.add(new ModelBox(rails, 30, 33, -0.2F, 1.7F, 35.35F, 2, 1, 1, -0.2F, false));
+		rails.cubeList.add(new ModelBox(rails, 30, 33, -0.2F, 1.7F, 34.15F, 2, 1, 1, -0.2F, false));
+		rails.cubeList.add(new ModelBox(rails, 30, 33, -0.2F, 1.7F, 32.95F, 2, 1, 1, -0.2F, false));
+		rails.cubeList.add(new ModelBox(rails, 30, 33, -0.2F, 1.7F, 31.75F, 2, 1, 1, -0.2F, false));
+		rails.cubeList.add(new ModelBox(rails, 30, 33, -0.2F, 1.7F, 30.55F, 2, 1, 1, -0.2F, false));
+		rails.cubeList.add(new ModelBox(rails, 30, 33, -0.2F, 1.7F, 29.35F, 2, 1, 1, -0.2F, false));
+		rails.cubeList.add(new ModelBox(rails, 30, 33, -0.2F, 1.7F, 28.15F, 2, 1, 1, -0.2F, false));
+		rails.cubeList.add(new ModelBox(rails, 30, 33, -0.2F, 1.7F, 26.95F, 2, 1, 1, -0.2F, false));
+		rails.cubeList.add(new ModelBox(rails, 30, 33, -0.2F, 1.7F, 25.75F, 2, 1, 1, -0.2F, false));
+		rails.cubeList.add(new ModelBox(rails, 30, 33, -0.2F, 1.7F, 24.55F, 2, 1, 1, -0.2F, false));
+		rails.cubeList.add(new ModelBox(rails, 30, 33, -0.2F, 1.7F, 23.35F, 2, 1, 1, -0.2F, false));
+		rails.cubeList.add(new ModelBox(rails, 30, 33, -0.2F, 1.7F, 22.15F, 2, 1, 1, -0.2F, false));
+		rails.cubeList.add(new ModelBox(rails, 30, 33, -0.2F, 1.7F, 20.95F, 2, 1, 1, -0.2F, false));
+		rails.cubeList.add(new ModelBox(rails, 30, 33, -0.2F, 1.7F, 19.75F, 2, 1, 1, -0.2F, false));
+		rails.cubeList.add(new ModelBox(rails, 30, 33, -0.2F, 1.7F, 18.55F, 2, 1, 1, -0.2F, false));
+		rails.cubeList.add(new ModelBox(rails, 30, 33, -0.2F, 1.7F, 17.35F, 2, 1, 1, -0.2F, false));
+
+		cube_r82 = new ModelRenderer(this);
+		cube_r82.setRotationPoint(0.0F, -1.0F, 0.0F);
+		rails.addChild(cube_r82);
+		setRotationAngle(cube_r82, 0.0F, 0.0F, -0.7854F);
+		cube_r82.cubeList.add(new ModelBox(cube_r82, 13, 70, -2.8506F, 1.8506F, 36.55F, 1, 1, 2, -0.201F, false));
+		cube_r82.cubeList.add(new ModelBox(cube_r82, 42, 30, -2.8506F, 1.8506F, 35.35F, 1, 1, 1, -0.201F, false));
+		cube_r82.cubeList.add(new ModelBox(cube_r82, 42, 30, -2.8506F, 1.8506F, 34.15F, 1, 1, 1, -0.201F, false));
+		cube_r82.cubeList.add(new ModelBox(cube_r82, 42, 30, -2.8506F, 1.8506F, 32.95F, 1, 1, 1, -0.201F, false));
+		cube_r82.cubeList.add(new ModelBox(cube_r82, 42, 30, -2.8506F, 1.8506F, 31.75F, 1, 1, 1, -0.201F, false));
+		cube_r82.cubeList.add(new ModelBox(cube_r82, 42, 30, -2.8506F, 1.8506F, 30.55F, 1, 1, 1, -0.201F, false));
+		cube_r82.cubeList.add(new ModelBox(cube_r82, 42, 30, -2.8506F, 1.8506F, 29.35F, 1, 1, 1, -0.201F, false));
+		cube_r82.cubeList.add(new ModelBox(cube_r82, 42, 30, -2.8506F, 1.8506F, 28.15F, 1, 1, 1, -0.201F, false));
+		cube_r82.cubeList.add(new ModelBox(cube_r82, 42, 30, -2.8506F, 1.8506F, 26.95F, 1, 1, 1, -0.201F, false));
+		cube_r82.cubeList.add(new ModelBox(cube_r82, 42, 30, -2.8506F, 1.8506F, 25.75F, 1, 1, 1, -0.201F, false));
+		cube_r82.cubeList.add(new ModelBox(cube_r82, 42, 30, -2.8506F, 1.8506F, 24.55F, 1, 1, 1, -0.201F, false));
+		cube_r82.cubeList.add(new ModelBox(cube_r82, 42, 30, -2.8506F, 1.8506F, 23.35F, 1, 1, 1, -0.201F, false));
+		cube_r82.cubeList.add(new ModelBox(cube_r82, 42, 30, -2.8506F, 1.8506F, 22.15F, 1, 1, 1, -0.201F, false));
+		cube_r82.cubeList.add(new ModelBox(cube_r82, 42, 30, -2.8506F, 1.8506F, 20.95F, 1, 1, 1, -0.201F, false));
+		cube_r82.cubeList.add(new ModelBox(cube_r82, 42, 30, -2.8506F, 1.8506F, 19.75F, 1, 1, 1, -0.201F, false));
+		cube_r82.cubeList.add(new ModelBox(cube_r82, 42, 30, -2.8506F, 1.8506F, 18.55F, 1, 1, 1, -0.201F, false));
+		cube_r82.cubeList.add(new ModelBox(cube_r82, 42, 30, -2.8506F, 1.8506F, 17.35F, 1, 1, 1, -0.201F, false));
+
+		cube_r83 = new ModelRenderer(this);
+		cube_r83.setRotationPoint(1.6F, -1.0F, 3.25F);
+		rails.addChild(cube_r83);
+		setRotationAngle(cube_r83, 0.0F, 0.0F, -0.7854F);
+		cube_r83.cubeList.add(new ModelBox(cube_r83, 49, 39, -2.8506F, 1.8506F, 33.3F, 1, 1, 2, -0.201F, false));
+		cube_r83.cubeList.add(new ModelBox(cube_r83, 33, 12, -2.8506F, 1.8506F, 32.1F, 1, 1, 1, -0.201F, false));
+		cube_r83.cubeList.add(new ModelBox(cube_r83, 33, 12, -2.8506F, 1.8506F, 30.9F, 1, 1, 1, -0.201F, false));
+		cube_r83.cubeList.add(new ModelBox(cube_r83, 33, 12, -2.8506F, 1.8506F, 29.7F, 1, 1, 1, -0.201F, false));
+		cube_r83.cubeList.add(new ModelBox(cube_r83, 33, 12, -2.8506F, 1.8506F, 28.5F, 1, 1, 1, -0.201F, false));
+		cube_r83.cubeList.add(new ModelBox(cube_r83, 33, 12, -2.8506F, 1.8506F, 27.3F, 1, 1, 1, -0.201F, false));
+		cube_r83.cubeList.add(new ModelBox(cube_r83, 33, 12, -2.8506F, 1.8506F, 26.1F, 1, 1, 1, -0.201F, false));
+		cube_r83.cubeList.add(new ModelBox(cube_r83, 33, 12, -2.8506F, 1.8506F, 24.9F, 1, 1, 1, -0.201F, false));
+		cube_r83.cubeList.add(new ModelBox(cube_r83, 33, 12, -2.8506F, 1.8506F, 23.7F, 1, 1, 1, -0.201F, false));
+		cube_r83.cubeList.add(new ModelBox(cube_r83, 33, 12, -2.8506F, 1.8506F, 22.5F, 1, 1, 1, -0.201F, false));
+		cube_r83.cubeList.add(new ModelBox(cube_r83, 33, 12, -2.8506F, 1.8506F, 21.3F, 1, 1, 1, -0.201F, false));
+		cube_r83.cubeList.add(new ModelBox(cube_r83, 33, 12, -2.8506F, 1.8506F, 20.1F, 1, 1, 1, -0.201F, false));
+		cube_r83.cubeList.add(new ModelBox(cube_r83, 33, 12, -2.8506F, 1.8506F, 18.9F, 1, 1, 1, -0.201F, false));
+		cube_r83.cubeList.add(new ModelBox(cube_r83, 33, 12, -2.8506F, 1.8506F, 17.7F, 1, 1, 1, -0.201F, false));
+		cube_r83.cubeList.add(new ModelBox(cube_r83, 33, 12, -2.8506F, 1.8506F, 16.5F, 1, 1, 1, -0.201F, false));
+		cube_r83.cubeList.add(new ModelBox(cube_r83, 33, 12, -2.8506F, 1.8506F, 15.3F, 1, 1, 1, -0.201F, false));
+		cube_r83.cubeList.add(new ModelBox(cube_r83, 33, 12, -2.8506F, 1.8506F, 14.1F, 1, 1, 1, -0.201F, false));
 	}
 
 	@Override
 	public void render(Entity entity, float f, float f1, float f2, float f3, float f4, float f5) {
 		receiver.render(f5);
-		bone2.render(f5);
 	}
 
 	public void setRotationAngle(ModelRenderer modelRenderer, float x, float y, float z) {

@@ -96,6 +96,7 @@ public class G36CFactory implements GunFactory {
          
         .withUnremovableAttachmentCategories(AttachmentCategory.GUARD)
         .withUnremovableAttachmentCategories(AttachmentCategory.RECEIVER)
+        .withUnremovableAttachmentCategories(AttachmentCategory.BACKGRIP)
         .withCompatibleAttachment(Attachments.G36S, true, (model) -> {
         })
         .withCompatibleAttachment(Attachments.G36KVS, (model) -> {
@@ -113,10 +114,6 @@ public class G36CFactory implements GunFactory {
         .withCompatibleAttachment(Attachments.G36CHRAL, (model) -> {
         })
         .withCompatibleAttachment(Attachments.G36IDZCH, (model) -> {
-        })
-        .withCompatibleAttachment(Attachments.G36CRHG, (model) -> {
-        })
-        .withCompatibleAttachment(Attachments.G36CRHGRAL, (model) -> {
         })
         .withCompatibleAttachment(Attachments.G36CCH, true, (model) -> {
              if(model instanceof AKMiron1) {
@@ -161,42 +158,18 @@ public class G36CFactory implements GunFactory {
              }		
         })
         .withCompatibleAttachment(Attachments.G36CHG, true, (model) -> {
-        //    GL11.glTranslatef(0.01f, -0.19f, -0.4f);
-       //     GL11.glScaled(0F, 0F, 0F);
         })
         .withCompatibleAttachment(Attachments.G36CHGRAL, (model) -> {
+        })
+        .withCompatibleAttachment(Attachments.G36CRHG, (model) -> {
+        })
+        .withCompatibleAttachment(Attachments.G36CRHGRAL, (model) -> {
+        })
+        .withCompatibleAttachment(Attachments.G36Body, true, (model) -> {
         //    GL11.glTranslatef(0.01f, -0.19f, -0.4f);
        //     GL11.glScaled(0F, 0F, 0F);
         })
-        .withCompatibleAttachment(Attachments.G36KHG, (model) -> {
-        //    GL11.glTranslatef(0.01f, -0.19f, -0.4f);
-       //     GL11.glScaled(0F, 0F, 0F);
-        })
-        .withCompatibleAttachment(Attachments.G36KHGRAL, (model) -> {
-        //    GL11.glTranslatef(0.01f, -0.19f, -0.4f);
-       //     GL11.glScaled(0F, 0F, 0F);
-        })
-        .withCompatibleAttachment(Attachments.G36EHG, (model) -> {
-        //    GL11.glTranslatef(0.01f, -0.19f, -0.4f);
-       //     GL11.glScaled(0F, 0F, 0F);
-        })
-        .withCompatibleAttachment(Attachments.G36EHGRAL, (model) -> {
-        //    GL11.glTranslatef(0.01f, -0.19f, -0.4f);
-       //     GL11.glScaled(0F, 0F, 0F);
-        })
-        .withCompatibleAttachment(Attachments.G36ERHG, (model) -> {
-        //    GL11.glTranslatef(0.01f, -0.19f, -0.4f);
-       //     GL11.glScaled(0F, 0F, 0F);
-        })
-        .withCompatibleAttachment(Attachments.G36ERHGRAL, (model) -> {
-        //    GL11.glTranslatef(0.01f, -0.19f, -0.4f);
-       //     GL11.glScaled(0F, 0F, 0F);
-        })
-        .withCompatibleAttachment(Attachments.G36KRHGRAL, (model) -> {
-        //    GL11.glTranslatef(0.01f, -0.19f, -0.4f);
-       //     GL11.glScaled(0F, 0F, 0F);
-        })
-        .withCompatibleAttachment(Attachments.G36KRHG, (model) -> {
+        .withCompatibleAttachment(Attachments.G36BodyRAL, (model) -> {
         //    GL11.glTranslatef(0.01f, -0.19f, -0.4f);
        //     GL11.glScaled(0F, 0F, 0F);
         })
@@ -215,7 +188,6 @@ public class G36CFactory implements GunFactory {
         .withCompatibleAttachment(AuxiliaryAttachments.G36CAction, true, (model) -> {
 //            GL11.glTranslatef(0F, 0F, 0.75F);
         })
-
         .withCompatibleAttachment(Attachments3.HKV, (player, stack) -> {
             GL11.glTranslatef(-0.2F, -1.7F, -1.9F);
             GL11.glScaled(0.4F, 0.4F, 0.4F);
@@ -366,10 +338,10 @@ public class G36CFactory implements GunFactory {
             GL11.glTranslatef(-0.2F, -1.1F, -6.15F);
             GL11.glScaled(1F, 1F, 1F);
         })
-        .withTextureNames("g36c")
+        .withTextureNames("M9A1")
         .withRenderer(new WeaponRenderer.Builder()
             
-            .withModel(new G36C())
+            .withModel(new M9A1())
             .withActionPiece(AuxiliaryAttachments.G36CAction)
             .withActionTransform(new Transform().withPosition(0, 0, 1))
             .withEntityPositioning(itemStack -> {
