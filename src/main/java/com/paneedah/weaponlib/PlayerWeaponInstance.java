@@ -259,7 +259,7 @@ public class PlayerWeaponInstance extends PlayerItemInstance<WeaponState> implem
 		EntityLivingBase player = this.getPlayer();
 		ItemStack stack = player.getHeldItemMainhand();
 		return stack.getItemDamage();
-    }
+	}
 
 
 	@Override

@@ -425,6 +425,7 @@ public class WeaponFireAspect implements Aspect<WeaponState, PlayerWeaponInstanc
         }
         
         Tags.setAmmo(itemStack, --currentServerAmmo);
+        itemStack.damageItem(1, player);
         
         if(spawnEntityWith == null) {
             spawnEntityWith = weapon.builder.spawnEntityWith;
