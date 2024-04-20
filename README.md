@@ -8,7 +8,7 @@ This is my fork of Paneedah's, which will set the groundwork for more unique sou
 
 # Latest Update
 
-I am experimenting with adding attachments, magazines, and hopefully guns. At the moment they'll just be reskinned versions of existing models, until I can figure out how on earth to work the animation/positioning system __without__ manually inputting and individually testing each value until it looks right.
+There's been a massive example of scope creep, and currently I have a backlog of >200 guns, a ton of attachments, and three new features: Weapon durability, weapon jamming, and system 2 iterative reloads.
 
 ---
 
