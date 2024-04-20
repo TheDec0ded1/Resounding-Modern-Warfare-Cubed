@@ -69,7 +69,6 @@ AttachmentContainer, Reloadable, Inspectable, Modifiable, Updatable, IModernCraf
     public static class Builder {
 
         public static int noRecipe = 0;
-
         private static final float DEFAULT_SPAWN_ENTITY_SPEED = 150f;
         private static final float DEFAULT_INACCURACY = 0f;
         private static final String DEFAULT_SHELL_CASING_TEXTURE_NAME = "weaponlib:/com/paneedah/weaponlib/resources/shell.png";
@@ -119,6 +118,7 @@ AttachmentContainer, Reloadable, Inspectable, Modifiable, Updatable, IModernCraf
         private boolean spawnEntityRocketParticles;
         private float spawnEntityExplosionRadius;
         private boolean isDestroyingBlocks = true;
+
         private float spawnEntityGravityVelocity;
         private float spawnEntityParticleAgeCoefficient = 1f;
         private float spawnEntitySmokeParticleAgeCoefficient = 1f;
@@ -1080,7 +1080,7 @@ AttachmentContainer, Reloadable, Inspectable, Modifiable, Updatable, IModernCraf
     //private static final float DEFAULT_ZOOM = 0.75f;
     private static final float DEFAULT_FIRE_RATE = 0.5f;
 
-    private static final float DEFAULT_SILENCED_SHOOT_SOUND_VOLUME = 0.7f;
+    private static final float DEFAULT_SILENCED_SHOOT_SOUND_VOLUME = 10f;
     private static final float DEFAULT_SHOOT_SOUND_VOLUME = 10f;
 
     public Builder builder;
@@ -1110,6 +1110,8 @@ AttachmentContainer, Reloadable, Inspectable, Modifiable, Updatable, IModernCraf
         this.builder = builder;
         this.modContext = modContext;
         setMaxStackSize(1);
+        isDamageable();
+        setMaxDamage(5000);
     }
 
     public String getName() {

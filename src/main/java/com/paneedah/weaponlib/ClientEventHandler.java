@@ -280,6 +280,7 @@ public class ClientEventHandler {
 			        && mainHandHeldWeaponInstance.getSyncStartTimestamp() == 0
 			        && mainHandHeldWeaponInstance.getUpdateTimestamp() + DEFAULT_RECONCILE_TIMEOUT_MILLIS < System.currentTimeMillis()) {
 			    mainHandHeldWeaponInstance.reconcile();
+				mainHandHeldWeaponInstance.reconcileDura();
 			}
 		} else if(player != null){
 			restorePlayerSpeed(player, SLOW_DOWN_WHILE_ZOOMING_ATTRIBUTE_MODIFIER);

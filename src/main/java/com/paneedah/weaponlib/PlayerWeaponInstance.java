@@ -20,6 +20,7 @@ import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+import net.minecraft.util.EnumHand;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.fml.client.FMLClientHandler;
 import net.minecraftforge.fml.relauncher.Side;
@@ -27,6 +28,7 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 import org.lwjgl.opengl.GL13;
 
 import java.util.Arrays;
+import java.util.Random;
 import java.util.Deque;
 import java.util.UUID;
 import java.util.concurrent.LinkedBlockingDeque;
@@ -75,6 +77,7 @@ public class PlayerWeaponInstance extends PlayerItemInstance<WeaponState> implem
     private static final long AIM_CHANGE_DURATION = 1200;
 
 	private int ammo;
+	private int dura;
 	private float recoil;
 	private int seriesShotCount;
 	private long lastFireTimestamp;
@@ -228,7 +231,7 @@ public class PlayerWeaponInstance extends PlayerItemInstance<WeaponState> implem
 	public int getAmmo() {
 		return ammo;
 	}
-	
+
 	public boolean isSlideLocked() {
 		return this.isSlideInLock;
 	}
@@ -244,12 +247,28 @@ public class PlayerWeaponInstance extends PlayerItemInstance<WeaponState> implem
 		}
 	}
 
+	public void setDura(int num) {
+		EntityLivingBase player = this.getPlayer();
+		ItemStack stack = player.getHeldItemMainhand();
+		stack.damageItem(num, player);
+		dura = getDura();
+		markDirty();
+	}
+
+	public int getDura() {
+		EntityLivingBase player = this.getPlayer();
+		ItemStack stack = player.getHeldItemMainhand();
+		return stack.getItemDamage();
+    }
+
+
 	@Override
 	public void init(ByteBuf buf) {
 		super.init(buf);
 		activeAttachmentIds = initIntArray(buf);
 		selectedAttachmentIndexes = initByteArray(buf);
 		ammo = buf.readInt();
+		dura = buf.readInt();
 		aimed = buf.readBoolean();
 		recoil = buf.readFloat();
 		maxShots = buf.readInt();
@@ -268,6 +287,7 @@ public class PlayerWeaponInstance extends PlayerItemInstance<WeaponState> implem
 		serializeIntArray(buf, activeAttachmentIds);
 		serializeByteArray(buf, selectedAttachmentIndexes);
 		buf.writeInt(ammo);
+		buf.writeInt(dura);
 		buf.writeBoolean(aimed);
 		buf.writeFloat(recoil);
 		buf.writeInt(maxShots);
@@ -318,6 +338,7 @@ public class PlayerWeaponInstance extends PlayerItemInstance<WeaponState> implem
 		PlayerWeaponInstance otherWeaponInstance = (PlayerWeaponInstance) otherItemInstance;
 
 		setAmmo(otherWeaponInstance.ammo);
+		setDura(otherWeaponInstance.dura);
 		setZoom(otherWeaponInstance.zoom);
 		setRecoil(otherWeaponInstance.recoil);
 		setSelectedAttachmentIndexes(otherWeaponInstance.selectedAttachmentIndexes);
@@ -634,6 +655,25 @@ public class PlayerWeaponInstance extends PlayerItemInstance<WeaponState> implem
             updateTimestamp = System.currentTimeMillis();
         }
    	}
+
+	protected void reconcileDura() {
+		ItemStack itemStack = getItemStack();
+		if(itemStack != null) {
+			int expectedStackDura = this.getDura();
+			if(this.dura > expectedStackDura) {
+				log.debug("Reconciling. Expected ammo: {}, actual: {}", expectedStackDura, this.dura);
+				this.dura = expectedStackDura;
+			}
+
+//            int[] expectedAttachmentIds = Tags.getAttachmentIds(itemStack);
+//            if(!Arrays.equals(expectedAttachmentIds, this.activeAttachmentIds)) {
+//                log.debug("Reconciling. Expected attachments: {}, actual: {}",
+//                        Arrays.toString(expectedAttachmentIds), Arrays.toString(this.activeAttachmentIds));
+//                this.activeAttachmentIds = expectedAttachmentIds;
+//            }
+			updateTimestamp = System.currentTimeMillis();
+		}
+	}
 
 	@Override
 	public String toString() {
