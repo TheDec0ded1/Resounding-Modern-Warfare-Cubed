@@ -36,6 +36,8 @@ public enum WeaponState implements ManagedState<WeaponState> {
 	PAUSED(10),
 	EJECT_REQUIRED,
 	EJECTING,
+	JAMMED,
+	UNJAMMING,
 	
 //	STOPPED, 
 //	EJECT_SPENT_ROUND_REQUIRED, 

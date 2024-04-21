@@ -317,6 +317,16 @@ public class WeaponRenderer extends ModelSourceRenderer implements IBakedModel {
         private List<Transition<RenderContext<RenderableState>>> firstPersonRightHandPositioningEjectSpentRoundAimed;
         private LinkedHashMap<Part, List<Transition<RenderContext<RenderableState>>>> firstPersonCustomPositioningEjectSpentRoundAimed = new LinkedHashMap<>();
 
+		private List<Transition<RenderContext<RenderableState>>> firstPersonPositioningUnjamAimed;
+		private List<Transition<RenderContext<RenderableState>>> firstPersonLeftHandPositioningUnjamAimed;
+		private List<Transition<RenderContext<RenderableState>>> firstPersonRightHandPositioningUnjamAimed;
+		private LinkedHashMap<Part, List<Transition<RenderContext<RenderableState>>>> firstPersonCustomPositioningUnjamAimed = new LinkedHashMap<>();
+
+		private List<Transition<RenderContext<RenderableState>>> firstPersonPositioningUnjam;
+		private List<Transition<RenderContext<RenderableState>>> firstPersonLeftHandPositioningUnjam;
+		private List<Transition<RenderContext<RenderableState>>> firstPersonRightHandPositioningUnjam;
+		private LinkedHashMap<Part, List<Transition<RenderContext<RenderableState>>>> firstPersonCustomPositioningUnjam = new LinkedHashMap<>();
+
 		private boolean hasRecoilPositioningDefined;
 		
 		
@@ -417,6 +427,8 @@ public class WeaponRenderer extends ModelSourceRenderer implements IBakedModel {
 		private boolean hasInspect; 
 		private boolean hasEjectSpentRound;
 		private boolean hasEjectSpentRoundAimed;
+		private boolean hasUnjam;
+		private boolean hasUnjamAimed;
 		
 		
 
@@ -1151,6 +1163,44 @@ public class WeaponRenderer extends ModelSourceRenderer implements IBakedModel {
             this.firstPersonCustomPositioningEjectSpentRoundAimed.put(part, list);
             return this;
         }
+
+        @SafeVarargs
+        public final Builder withFirstPersonCustomPositioningUnjamAimed(Part part, Transition<RenderContext<RenderableState>> ...transitions) {
+            if(part instanceof DefaultPart) {
+                throw new IllegalArgumentException("Part " + part + " is not custom");
+            }
+
+            this.firstPersonCustomPositioningUnjamAimed.put(part, Arrays.asList(transitions));
+            return this;
+        }
+
+        public final Builder withFirstPersonCustomPositioningUnjamAimed(Part part, List<Transition<RenderContext<RenderableState>>> list) {
+            if(part instanceof DefaultPart) {
+                throw new IllegalArgumentException("Part " + part + " is not custom");
+            }
+
+            this.firstPersonCustomPositioningUnjamAimed.put(part, list);
+            return this;
+        }
+
+        @SafeVarargs
+        public final Builder withFirstPersonCustomPositioningUnjam(Part part, Transition<RenderContext<RenderableState>> ...transitions) {
+            if(part instanceof DefaultPart) {
+                throw new IllegalArgumentException("Part " + part + " is not custom");
+            }
+
+            this.firstPersonCustomPositioningUnjam.put(part, Arrays.asList(transitions));
+            return this;
+        }
+
+        public final Builder withFirstPersonCustomPositioningUnjam(Part part, List<Transition<RenderContext<RenderableState>>> list) {
+            if(part instanceof DefaultPart) {
+                throw new IllegalArgumentException("Part " + part + " is not custom");
+            }
+
+            this.firstPersonCustomPositioningUnjam.put(part, list);
+            return this;
+        }
 		
 		@SafeVarargs
         public final Builder withFirstPersonCustomPositioningLoadIteration(Part part, Transition<RenderContext<RenderableState>> ...transitions) {
@@ -1350,6 +1400,10 @@ public class WeaponRenderer extends ModelSourceRenderer implements IBakedModel {
 			if(set.containsKey(BBLoader.KEY_EJECT_SPENT_ROUND)) hasEjectSpentRound = true;
 			
 			if(set.containsKey(BBLoader.KEY_EJECT_SPENT_ROUND_AIMED)) hasEjectSpentRoundAimed = true;
+
+            if(set.containsKey(BBLoader.KEY_UNJAM)) hasUnjam = true;
+
+            if(set.containsKey(BBLoader.KEY_UNJAM_AIMED)) hasUnjamAimed = true;
 			
 			// Check if compound & compound empty should use tactical functionality
 			SingleAnimation compound = set.getSingleAnimation(BBLoader.KEY_COMPOUND_RELOAD);
@@ -1392,6 +1446,8 @@ public class WeaponRenderer extends ModelSourceRenderer implements IBakedModel {
 			if(hasCompoundReloadEmpty) setupCompoundReloadEmpty(animationFile, BBLoader.KEY_COMPOUND_RELOAD_EMPTY, mainBoneName, leftBoneName, rightBoneName);
 			if(hasEjectSpentRound) setupModernEjectSpentRoundAnimation(animationFile);
 			if(hasEjectSpentRoundAimed) setupModernEjectSpentRoundAimedAnimation(animationFile);
+            if(hasUnjam) setupModernUnjamAnimation(animationFile);
+            if(hasUnjamAimed) setupModernUnjamAimedAnimation(animationFile);
 			
 			setupCustomKeyedPart(aR15Action, animationFile, BBLoader.KEY_ACTION);
 			
@@ -1485,6 +1541,80 @@ public class WeaponRenderer extends ModelSourceRenderer implements IBakedModel {
 			
 			
 		}
+
+        public Builder setupModernUnjamAnimation(String animationFile) {
+            if(VMWHooksHandler.isOnServer()) return this;
+
+
+            AnimationData main = BBLoader.getAnimation(animationFile, BBLoader.KEY_UNJAM, BBLoader.KEY_MAIN);
+            AnimationData left = BBLoader.getAnimation(animationFile, BBLoader.KEY_UNJAM, "lefthand");
+            AnimationData right = BBLoader.getAnimation(animationFile, BBLoader.KEY_UNJAM, "righthand");
+
+            checkDefaults();
+
+            this.firstPersonPositioningUnjam = main.getTransitionList(firstPersonTransform, BBLoader.GENDIVISOR, false);
+            this.firstPersonLeftHandPositioningUnjam = left.getTransitionList(firstPersonLeftHandTransform, BBLoader.HANDDIVISOR, false);
+            this.firstPersonRightHandPositioningUnjam = right.getTransitionList(firstPersonRightHandTransform, BBLoader.HANDDIVISOR, false);
+
+
+
+            return this;
+
+        }
+
+        public Builder setupModernUnjamAimedAnimation(String animationFile) {
+            if(VMWHooksHandler.isOnServer()) return this;
+
+
+
+
+            AnimationData main = BBLoader.getAnimation(animationFile, BBLoader.KEY_UNJAM_AIMED, BBLoader.KEY_MAIN);
+            AnimationData left = BBLoader.getAnimation(animationFile, BBLoader.KEY_UNJAM_AIMED, "lefthand");
+            AnimationData right = BBLoader.getAnimation(animationFile, BBLoader.KEY_UNJAM_AIMED, "righthand");
+
+            checkDefaults();
+
+
+
+
+
+            this.firstPersonPositioningUnjamAimed = main.getTransitionList(firstPersonTransform, BBLoader.GENDIVISOR, false);
+            this.firstPersonLeftHandPositioningUnjamAimed = left.getTransitionList(firstPersonLeftHandTransform, BBLoader.HANDDIVISOR, false);
+            this.firstPersonRightHandPositioningUnjamAimed = right.getTransitionList(firstPersonRightHandTransform, BBLoader.HANDDIVISOR, false);
+
+
+
+
+            return this;
+
+        }
+
+
+        public Builder setupUnjamAnimations(ItemAttachment<Weapon> action, String animationFile, String partKey) {
+            if(VMWHooksHandler.isOnServer()) return this;
+
+            AnimationSet set = BBLoader.getAnimationSet(animationFile);
+
+
+            Vec3d rotPoint = action.rotationPoint;
+
+            Part aR15Action = action.getRenderablePart();
+
+            if(hasUnjam && set.getSingleAnimation(BBLoader.KEY_UNJAM).hasBone(partKey)) {
+                withFirstPersonCustomPositioningUnloading(aR15Action, BBLoader.getAnimation(animationFile, BBLoader.KEY_UNJAM, partKey)
+                        .getTransitionList(Transform.NULL.copy().withRotationPoint(rotPoint.x, rotPoint.y, rotPoint.z), BBLoader.HANDDIVISOR));
+            }
+
+            if(hasUnjamAimed && set.getSingleAnimation(BBLoader.KEY_UNJAM_AIMED).hasBone(partKey)) {
+                withFirstPersonCustomPositioningUnloading(aR15Action, BBLoader.getAnimation(animationFile, BBLoader.KEY_UNJAM_AIMED, partKey)
+                        .getTransitionList(Transform.NULL.copy().withRotationPoint(rotPoint.x, rotPoint.y, rotPoint.z), BBLoader.HANDDIVISOR));
+            }
+
+            return this;
+
+
+
+        }
 		
 		public Builder setupCustomKeyedPart(ItemAttachment<Weapon> action, String animationFile, String partKey) {
 			if(VMWHooksHandler.isOnServer()) return this;
@@ -1564,6 +1694,25 @@ public class WeaponRenderer extends ModelSourceRenderer implements IBakedModel {
 				
 				withFirstPersonCustomPositioningEjectSpentRoundAimed(aR15Action, list);
 			}
+
+            if(hasUnjam && set.getSingleAnimation(BBLoader.KEY_UNJAM).hasBone(partKey)) {
+
+
+                List<Transition<RenderContext<RenderableState>>> list = BBLoader.getAnimation(animationFile, BBLoader.KEY_UNJAM, partKey)
+                        .getTransitionList(Transform.NULL.copy().withRotationPoint(rotPoint.x, rotPoint.y, rotPoint.z), BBLoader.HANDDIVISOR);
+
+
+                withFirstPersonCustomPositioningUnjam(aR15Action, list);
+                //withFirstPersonCustomPositioningUnloading(aR15Action, list);
+            }
+
+            if(hasUnjamAimed && set.getSingleAnimation(BBLoader.KEY_UNJAM_AIMED).hasBone(partKey)) {
+
+                List<Transition<RenderContext<RenderableState>>> list = BBLoader.getAnimation(animationFile, BBLoader.KEY_UNJAM_AIMED, partKey)
+                        .getTransitionList(Transform.NULL.copy().withRotationPoint(rotPoint.x, rotPoint.y, rotPoint.z), BBLoader.HANDDIVISOR);
+
+                withFirstPersonCustomPositioningUnjamAimed(aR15Action, list);
+            }
 			
 			return this;
 			
@@ -2791,6 +2940,16 @@ public class WeaponRenderer extends ModelSourceRenderer implements IBakedModel {
                 
                 break;
 
+
+                case UNJAMMING:
+                    if(playerWeaponInstance.isAimed()) {
+                        currentState = RenderableState.UNJAM_AIMED;
+                    } else {
+                        currentState = RenderableState.UNJAM;
+                    }
+
+                    break;
+
             case MODIFYING: case MODIFYING_REQUESTED: case NEXT_ATTACHMENT: case NEXT_ATTACHMENT_REQUESTED:
                 currentState = RenderableState.MODIFYING;
                 break;
@@ -3120,6 +3279,18 @@ public class WeaponRenderer extends ModelSourceRenderer implements IBakedModel {
                         getBuilder().firstPersonRightHandPositioningEjectSpentRoundAimed,
                         getBuilder().firstPersonCustomPositioningEjectSpentRoundAimed
                         );
+                case UNJAM:
+                    return getComplexTransition(getBuilder().firstPersonPositioningUnjam,
+                            getBuilder().firstPersonLeftHandPositioningUnjam,
+                            getBuilder().firstPersonRightHandPositioningUnjam,
+                            getBuilder().firstPersonCustomPositioningUnjam
+                    );
+                case UNJAM_AIMED:
+                    return getComplexTransition(getBuilder().firstPersonPositioningUnjamAimed,
+                            getBuilder().firstPersonLeftHandPositioningUnjamAimed,
+                            getBuilder().firstPersonRightHandPositioningUnjamAimed,
+                            getBuilder().firstPersonCustomPositioningUnjamAimed
+                    );
 			case NORMAL:
 				return getSimpleTransitionBeizer(getBuilder().firstPersonPositioning,
 						getBuilder().firstPersonLeftHandPositioning,

@@ -73,6 +73,8 @@ public class WeaponFireAspect implements Aspect<WeaponState, PlayerWeaponInstanc
     private static Predicate<PlayerWeaponInstance> hasAmmo = instance -> instance.getAmmo() > 0
             && Tags.getAmmo(instance.getItemStack()) > 0;
 
+    private static Predicate<PlayerWeaponInstance> hasDura= instance -> instance.getDura() < 4998;
+
     private static Predicate<PlayerWeaponInstance> ejectSpentRoundRequired = instance -> instance.getWeapon().ejectSpentRoundRequired();
 
     private static Predicate<PlayerWeaponInstance> ejectSpentRoundTimeoutExpired = instance -> {
@@ -93,9 +95,12 @@ public class WeaponFireAspect implements Aspect<WeaponState, PlayerWeaponInstanc
     private static final Set<WeaponState> allowedFireOrEjectFromStates = new HashSet<>(
             Arrays.asList(WeaponState.READY, WeaponState.PAUSED, WeaponState.EJECT_REQUIRED));
 
+    private static final Set<WeaponState> allowedUnjamFromState = new HashSet<>(
+            Arrays.asList(WeaponState.JAMMED));
+
     private static final Set<WeaponState> allowedUpdateFromStates = new HashSet<>(
             Arrays.asList(WeaponState.EJECTING, WeaponState.PAUSED, WeaponState.FIRING,
-                    WeaponState.RECOILED, WeaponState.PAUSED, WeaponState.ALERT));
+                    WeaponState.RECOILED, WeaponState.PAUSED, WeaponState.UNJAMMING, WeaponState.ALERT));
 
     private ModContext modContext;
 
@@ -115,7 +120,7 @@ public class WeaponFireAspect implements Aspect<WeaponState, PlayerWeaponInstanc
         stateManager
 
         .in(this).change(WeaponState.READY).to(WeaponState.ALERT)
-        .when(hasAmmo.negate())
+        .when(hasAmmo.and(hasDura.negate()))
         .withAction(this::cannotFire)
         .manual() // on start fire
 
@@ -124,7 +129,7 @@ public class WeaponFireAspect implements Aspect<WeaponState, PlayerWeaponInstanc
         .automatic() //
 
         .in(this).change(WeaponState.READY).to(WeaponState.FIRING)
-        .when(hasAmmo.and(sprinting.negate()).and(readyToShootAccordingToFireRate))
+        .when(hasAmmo.and(hasDura.and(sprinting.negate()).and(readyToShootAccordingToFireRate)))
         .withAction(this::fire)
         .manual() // on start fire
 
@@ -148,30 +153,31 @@ public class WeaponFireAspect implements Aspect<WeaponState, PlayerWeaponInstanc
 
         .in(this).change(WeaponState.PAUSED).to(WeaponState.FIRING)
         .when(hasAmmo
+                .and(hasDura
                 .and(sprinting.negate())
                 .and(readyToShootAccordingToFireMode)
                 .and(readyToShootAccordingToFireRate)
-                )
+                ))
         .withAction(this::fire)
         .manual() // on fire, requires fire button to be down
         
         /// Applies 
         .in(this).change(WeaponState.PAUSED).to(WeaponState.FIRING)
-        .when(hasAmmo.and(sprinting.negate())
+        .when(hasAmmo.and(hasDura.and(sprinting.negate())
                 .and(oneClickBurstEnabled)
                 .and(readyToShootAccordingToFireMode)
                 .and((readyToShootAccordingToFireRate))
-                )
+                ))
         .withAction(this::fire)
         .automatic() // on update
         
         .in(this).change(WeaponState.PAUSED).to(WeaponState.READY)
         .when(ejectSpentRoundRequired.negate()
                 .and(oneClickBurstEnabled)
-                .and(readyToShootAccordingToFireMode.negate().or(hasAmmo.negate()))
+                .and(readyToShootAccordingToFireMode.negate().or(hasDura.or(hasAmmo.negate()))
                 .and(seriesResetAllowed)
                 .and(postBurstTimeoutExpired)
-                )
+                ))
         .withAction(PlayerWeaponInstance::resetCurrentSeries)
         .automatic() // on update
         
@@ -188,6 +194,10 @@ public class WeaponFireAspect implements Aspect<WeaponState, PlayerWeaponInstanc
         if(weaponInstance != null) {
         	
             stateManager.changeStateFromAnyOf(this, weaponInstance, allowedFireOrEjectFromStates, WeaponState.FIRING, WeaponState.EJECTING, WeaponState.ALERT);
+        }
+        if(weaponInstance != null) {
+
+            stateManager.changeStateFromAnyOf(this, weaponInstance, allowedUnjamFromState, WeaponState.UNJAMMING, WeaponState.ALERT);
         }
     }
 
@@ -393,7 +403,6 @@ public class WeaponFireAspect implements Aspect<WeaponState, PlayerWeaponInstanc
         }
         weaponInstance.setLastFireTimestamp(System.currentTimeMillis());
         weaponInstance.setAmmo(currentAmmo - 1);
-        weaponInstance.setDura(1);
     }
 
     private void ejectSpentRound(PlayerWeaponInstance weaponInstance) {

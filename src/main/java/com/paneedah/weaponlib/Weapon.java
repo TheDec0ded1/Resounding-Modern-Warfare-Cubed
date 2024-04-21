@@ -1201,6 +1201,7 @@ AttachmentContainer, Reloadable, Inspectable, Modifiable, Updatable, IModernCraf
         if(mainHandHeldWeaponInstance != null
                 && (mainHandHeldWeaponInstance.getState() == WeaponState.READY
                 || mainHandHeldWeaponInstance.getState() == WeaponState.PAUSED
+                || mainHandHeldWeaponInstance.getState() == WeaponState.JAMMED
                 || mainHandHeldWeaponInstance.getState() == WeaponState.EJECT_REQUIRED)
                 ) {
             mainHandHeldWeaponInstance.setAimed(!mainHandHeldWeaponInstance.isAimed());
