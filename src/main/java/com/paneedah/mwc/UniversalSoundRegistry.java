@@ -37,6 +37,11 @@ public class UniversalSoundRegistry {
 		UniversalSoundLookup.registerSoundToLookup("akmag_insert");
 		UniversalSoundLookup.registerSoundToLookup("akmag_touchgun");
 		UniversalSoundLookup.registerSoundToLookup("akmag_unload");
+		UniversalSoundLookup.registerSoundToLookup("ashaction_back");
+		UniversalSoundLookup.registerSoundToLookup("ashaction_forward");
+		UniversalSoundLookup.registerSoundToLookup("ashmag_insert");
+		UniversalSoundLookup.registerSoundToLookup("ashmag_touchgun");
+		UniversalSoundLookup.registerSoundToLookup("ashmag_unload");
                 UniversalSoundLookup.registerSoundToLookup("svdaction_back");
 		UniversalSoundLookup.registerSoundToLookup("svdaction_forward");
 		UniversalSoundLookup.registerSoundToLookup("svdmag_insert");
@@ -96,5 +101,25 @@ public class UniversalSoundRegistry {
 		UniversalSoundLookup.registerSoundToLookup("scaraction_back");
 		UniversalSoundLookup.registerSoundToLookup("g36action_back");
 		UniversalSoundLookup.registerSoundToLookup("g36action_forward");
+		UniversalSoundLookup.registerSoundToLookup("pkm_foley1");
+		UniversalSoundLookup.registerSoundToLookup("pkm_foley2");
+		UniversalSoundLookup.registerSoundToLookup("pkm_beltplace");
+		UniversalSoundLookup.registerSoundToLookup("pkm_beltrattle");
+		UniversalSoundLookup.registerSoundToLookup("pkm_boltback");
+		UniversalSoundLookup.registerSoundToLookup("pkm_handleforward");
+		UniversalSoundLookup.registerSoundToLookup("pkm_boxattach");
+		UniversalSoundLookup.registerSoundToLookup("pkm_boxdetach");
+		UniversalSoundLookup.registerSoundToLookup("pkm_boxload");
+		UniversalSoundLookup.registerSoundToLookup("pkm_unload");
+		UniversalSoundLookup.registerSoundToLookup("pkm_coverclose");
+		UniversalSoundLookup.registerSoundToLookup("pkm_coveropen");
+		UniversalSoundLookup.registerSoundToLookup("pkm_coverslam");
+		UniversalSoundLookup.registerSoundToLookup("qbz95_1boltrelease");
+		UniversalSoundLookup.registerSoundToLookup("qbz95_boltback");
+		UniversalSoundLookup.registerSoundToLookup("qbz95_boltforward");
+		UniversalSoundLookup.registerSoundToLookup("qbz95_foley");
+		UniversalSoundLookup.registerSoundToLookup("qbz95_maginsert");
+		UniversalSoundLookup.registerSoundToLookup("qbz95_magsmack");
+		UniversalSoundLookup.registerSoundToLookup("qbz95_magunload");
 	}
 }

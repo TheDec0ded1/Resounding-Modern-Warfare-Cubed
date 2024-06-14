@@ -20,6 +20,7 @@ import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+import net.minecraft.util.EnumHand;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.fml.client.FMLClientHandler;
 import net.minecraftforge.fml.relauncher.Side;
@@ -27,6 +28,7 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 import org.lwjgl.opengl.GL13;
 
 import java.util.Arrays;
+import java.util.Random;
 import java.util.Deque;
 import java.util.UUID;
 import java.util.concurrent.LinkedBlockingDeque;
@@ -228,7 +230,7 @@ public class PlayerWeaponInstance extends PlayerItemInstance<WeaponState> implem
 	public int getAmmo() {
 		return ammo;
 	}
-	
+
 	public boolean isSlideLocked() {
 		return this.isSlideInLock;
 	}
@@ -243,6 +245,7 @@ public class PlayerWeaponInstance extends PlayerItemInstance<WeaponState> implem
 			markDirty();
 		}
 	}
+
 
 	@Override
 	public void init(ByteBuf buf) {
@@ -634,6 +637,7 @@ public class PlayerWeaponInstance extends PlayerItemInstance<WeaponState> implem
             updateTimestamp = System.currentTimeMillis();
         }
    	}
+
 
 	@Override
 	public String toString() {

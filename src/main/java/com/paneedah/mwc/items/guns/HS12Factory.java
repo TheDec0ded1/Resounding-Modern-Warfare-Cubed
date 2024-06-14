@@ -51,7 +51,7 @@ public class HS12Factory implements GunFactory {
                  1f, // y
                  10f) // z
          
-        .withCreativeTab(ModernWarfareMod.AssaultRiflesTab)
+        .withCreativeTab(ModernWarfareMod.ShotgunsTab)
         .withInformationProvider(stack -> Arrays.asList(
         "Type: Double-Barrel Shotgun",
         "Damage per Pellet: 6",

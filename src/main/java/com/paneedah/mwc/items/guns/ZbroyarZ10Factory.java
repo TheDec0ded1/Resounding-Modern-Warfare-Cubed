@@ -29,7 +29,7 @@ public class ZbroyarZ10Factory implements GunFactory {
         .withFireRate(0.65f)
         .withRecoil(6f)
         .withZoom(0.9f)
-        .withConfigGroup(GunConfigurationGroup.LONG_RANGE_RIFLES)
+        .withConfigGroup(GunConfigurationGroup.DMR)
         .withMaxShots(1)
         .withShootSound("z10")
         .withSilencedShootSound("m110_silenced")
@@ -48,7 +48,7 @@ public class ZbroyarZ10Factory implements GunFactory {
         .withFlashOffsetY(() -> 0.15f)
         .withShellCasingForwardOffset(0.05f)
         .withShellCasingVerticalOffset(-0.03f)
-        .withCreativeTab(ModernWarfareMod.AssaultRiflesTab)
+        .withCreativeTab(ModernWarfareMod.PrecisionRiflesTab)
         .useNewSystem()
         .withRecoilParam(new RecoilParam(
         		// The weapon power

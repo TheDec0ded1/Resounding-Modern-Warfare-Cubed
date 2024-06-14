@@ -30,7 +30,7 @@ public class ScorpionEVO3A1Factory implements GunFactory {
 		.withFireRate(0.999f)
 		.withRecoil(1.5f)
 		.withZoom(0.9f)
-		.withConfigGroup(GunConfigurationGroup.SIDEARM)
+		.withConfigGroup(GunConfigurationGroup.SMG)
 		.withShellType(Type.PISTOL)
 		.withMaxShots(1, Integer.MAX_VALUE)
 		.withShootSound("scorpion")
@@ -52,7 +52,7 @@ public class ScorpionEVO3A1Factory implements GunFactory {
 		.withShellCasingVerticalOffset(-0.03f)
 //		.withShellCasingEjectEnabled(false)
 		//         .withInaccuracy(2f)
-		.withCreativeTab(ModernWarfareMod.AssaultRiflesTab)
+		.withCreativeTab(ModernWarfareMod.SMGsTab)
 		.useNewSystem()
         .withRecoilParam(new RecoilParam(
 				// The weapon power

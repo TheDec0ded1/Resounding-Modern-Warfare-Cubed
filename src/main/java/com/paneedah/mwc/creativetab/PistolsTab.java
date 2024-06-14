@@ -15,6 +15,6 @@ public class PistolsTab extends CreativeTabs {
 	@Override
 	@SideOnly(Side.CLIENT)
 	public ItemStack createIcon() {
-		return new ItemStack(Guns.P226);
+		return new ItemStack(Guns.M9A1);
 	}
 }

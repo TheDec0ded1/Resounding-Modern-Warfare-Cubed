@@ -30,7 +30,7 @@ public class M16A1Factory implements GunFactory {
 		.withFireRate(0.8f)
 		.withRecoil(3f)
 		.withZoom(0.9f)
-		.withConfigGroup(GunConfigurationGroup.RIFLES)
+		.withConfigGroup(GunConfigurationGroup.AR)
 		.hasFlashPedals()
 		.withMaxShots(1, Integer.MAX_VALUE)
 		.withShootSound("m16a1")

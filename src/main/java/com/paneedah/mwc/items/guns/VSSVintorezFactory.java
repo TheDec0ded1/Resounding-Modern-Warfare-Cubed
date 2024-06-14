@@ -34,7 +34,7 @@ public class VSSVintorezFactory {
         .withFireRate(0.7f)
         .withRecoil(1.5f)
         .withZoom(0.9f)
-        .withConfigGroup(GunConfigurationGroup.RIFLES)
+        .withConfigGroup(GunConfigurationGroup.AR)
         .withMuzzlePosition(new Vec3d (-0.13200000393390654, -0.7959999939203257, -6.976000014185902))
         .withMaxShots(1, Integer.MAX_VALUE)
         //.withMaxShots(5)
@@ -52,7 +52,7 @@ public class VSSVintorezFactory {
         .withFlashScale(() -> 0.4f)
         .withFlashOffsetX(() -> 0.1f)
         .withFlashOffsetY(() -> 0.11f)
-        .withCreativeTab(ModernWarfareMod.AssaultRiflesTab)
+        .withCreativeTab(ModernWarfareMod.PrecisionRiflesTab)
         .useNewSystem()
         .withRecoilParam(new RecoilParam(
 				// The weapon power
@@ -105,24 +105,11 @@ public class VSSVintorezFactory {
         })
         .withCompatibleAttachment(Attachments.VSSMStock,(model) -> {
         })
-        .withCompatibleAttachment(Attachments.ASValStock, (model) -> {
-        })
-        .withCompatibleAttachment(Attachments2.ASValStockB, (model) -> {
-        })
         .withCompatibleAttachment(Attachments2.VSSMStockB, (model) -> {
         })
         .withCompatibleAttachment(Attachments.VSSVintorezHandguard, true, (model) -> {
         })
         .withCompatibleAttachment(Attachments.ASValHandguard, (model) -> {
-        })
-        .withCompatibleAttachment(Attachments.VSSVintorezMilspecStock, (player, stack) -> {
-//        	GL11.glTranslatef(-0.212F, -0.486F, 1.27F);
-//            GL11.glScaled(0.017F, 0.017F, 0.017F);
-        },(model) -> {
-        	if(model instanceof MilSpecStock) {
-                GL11.glTranslatef(0F, 0.12F, -0.1F);
-//                GL11.glScaled(0.017F, 0.017F, 0.017F);
-            }
         })
         .withCompatibleAttachment(Attachments.VSSVintorezTriRailMount, (model) -> {
         })

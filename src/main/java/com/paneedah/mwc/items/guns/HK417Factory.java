@@ -27,7 +27,7 @@ public class HK417Factory implements GunFactory {
 		.withFireRate(0.75f)
 		.withRecoil(5f)
 		.withZoom(0.9f)
-		.withConfigGroup(GunConfigurationGroup.DMR)
+		.withConfigGroup(GunConfigurationGroup.BR)
 		.hasFlashPedals()
 		.withMaxShots(1, Integer.MAX_VALUE)
 		.withShootSound("hk417")

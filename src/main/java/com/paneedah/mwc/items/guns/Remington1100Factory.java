@@ -57,7 +57,7 @@ public class Remington1100Factory implements GunFactory {
                 1f, // y
                 10f) // z
         
-        .withCreativeTab(ModernWarfareMod.AssaultRiflesTab)
+        .withCreativeTab(ModernWarfareMod.ShotgunsTab)
         .withInformationProvider(stack -> Arrays.asList(
         "Type: Shotgun",
         "Damage per Pellet: 6",

@@ -33,7 +33,7 @@ public class MG36Factory implements GunFactory {
         .withFireRate(0.75f)
         .withRecoil(2.5f)
         .withZoom(0.9f)
-        .withConfigGroup(GunConfigurationGroup.RIFLES)
+        .withConfigGroup(GunConfigurationGroup.LMG)
         .hasFlashPedals()
         .withMaxShots(1, 2, Integer.MAX_VALUE)
         .withShootSound("mg36")
@@ -53,7 +53,7 @@ public class MG36Factory implements GunFactory {
         .withFlashOffsetY(() -> 0.2f)
         .withShellCasingForwardOffset(0.05f)
         .withShellCasingVerticalOffset(-0.03f)
-        .withCreativeTab(ModernWarfareMod.AssaultRiflesTab)
+        .withCreativeTab(ModernWarfareMod.LMGsTab)
         .useNewSystem()
 		.withRecoilParam(new RecoilParam(
 				// The weapon power

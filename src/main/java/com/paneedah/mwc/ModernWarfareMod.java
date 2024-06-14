@@ -35,6 +35,11 @@ public class ModernWarfareMod {
 
     public static final CreativeTabs ArmorTab = new ArmorTab(CreativeTabs.getNextID(), "ArmorTab");
 	public static final CreativeTabs AssaultRiflesTab = new AssaultRiflesTab(CreativeTabs.getNextID(), "AssaultRifles_tab");
+	public static final CreativeTabs SMGsTab = new SMGsTab(CreativeTabs.getNextID(), "SMGs_tab");
+	public static final CreativeTabs PistolsTab = new PistolsTab(CreativeTabs.getNextID(), "Pistols_tab");
+	public static final CreativeTabs PrecisionRiflesTab = new PrecisionRiflesTab(CreativeTabs.getNextID(), "PrecisionRifles_tab");
+	public static final CreativeTabs ShotgunsTab = new ShotgunsTab(CreativeTabs.getNextID(), "Shotguns_tab");
+	public static final CreativeTabs LMGsTab = new LMGsTab(CreativeTabs.getNextID(), "LMGs_tab");
 	public static final CreativeTabs AmmoTab = new AmmoTab(CreativeTabs.getNextID(), "AmmoTab");
 	public static final CreativeTabs AttachmentsTab = new AttachmentsTab(CreativeTabs.getNextID(), "AttachmentsTab");
 	public static final CreativeTabs GrenadesTab = new GrenadesTab(CreativeTabs.getNextID(), "GrenadesTab");

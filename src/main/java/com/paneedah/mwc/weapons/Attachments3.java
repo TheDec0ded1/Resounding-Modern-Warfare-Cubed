@@ -119,7 +119,7 @@ public class Attachments3 {
                         Attachments.ACRWEMSKHandGuard, Attachments.ACRWEMSKHandGuardTan,
                         Attachments.HoneyBadgerMatrixArmsHandguard, Attachments.FNFALPARAHandguard, Attachments.M16A1PicatinnyRail,
                         Attachments.AR10SuperSASSHandguard, Attachments.ARX160Chassis, Attachments.FamasF1PicatinnyRail,
-                        Attachments.HK417Handguard, Attachments.HK417HandguardTan, Attachments.AK12Handguard, Attachments.AK12BHandguard, Attachments.CZ805BrenReceiver, Attachments.M14SOCOMChassis,
+                        Attachments.HK417Handguard, Attachments.HK417HandguardTan, Attachments.AK12Handguard, Attachments.AK12BHandguard, Attachments.CZ805BrenReceiver,
                         Attachments.Block2SOCOMHandguard, Attachments.FSSTacLiteHandguard, Attachments.Mk18HandGuardBlack, Attachments.M110Handguard, Attachments.Mk48HandGuard,
                         Attachments.KBP9A91KulaTacHandguard, Attachments.VSSVintorezTriRailMount, Attachments.MP5BMHandguard, Attachments.HK416HandGuardBlackAndTan,
                         Attachments.ScarHandGuard, Attachments.ScarMidWestIndustriesHandGuard, Attachments.SIGMCXHandguard, Attachments.SIGMCXHandguardShort, Attachments.Z10Handguard,
@@ -169,7 +169,7 @@ public class Attachments3 {
                 .withCategory(AttachmentCategory.GRIP)
                 .withCreativeTab(ModernWarfareMod.AttachmentsTab)
                 .withModel(new com.paneedah.mwc.models.StubbyGrip(), "gun.png")
-                .withRequiredAttachments(Attachments.MLOKExtendedHandguard, Attachments.MLOKHandguard, Attachments2.AK200HandGuard,  Attachments2.B30HandGuard, Attachments2.SportRifleHandGuard, Attachments2.SportCarbineHandGuard, Attachments.AK15HandleGuard,
+                .withRequiredAttachments(Attachments.MLOKExtendedHandguard, Attachments.MLOKHandguard, Attachments2.AK200HandGuard, Attachments2.B30HandGuard, Attachments2.B30HandGuardTan, Attachments2.B30HandGuardGreen, Attachments2.SportRifleHandGuard, Attachments2.SportRifleHandGuardTan, Attachments2.SportRifleHandGuardGreen, Attachments2.SportCarbineHandGuard, Attachments2.SportCarbineHandGuardTan, Attachments2.SportCarbineHandGuardGreen, Attachments.AK15HandleGuard,
                         Attachments.M4CarbineHandGuard, Attachments.LVOAVHandGuard, Attachments.M38HandGuard, Attachments.UTGTriRailHandGuard,
                         Attachments.GripPlaceholder, Attachments.Mk18HandGuard, Attachments.M60E4HandGuard, Attachments.P90Swordfish, Attachments.AUGA3extGuard,
                         Attachments.AR57Handguard,  Attachments.StonerHANDGUARD, Attachments.KrissVectorReceiver, Attachments.KrissVectorReceiverBlack,
@@ -180,7 +180,7 @@ public class Attachments3 {
                         Attachments.FNFALPARAHandguard, Attachments.M16A1PicatinnyRail, Attachments.K2C1Handguard, Attachments.AR10SuperSASSHandguard,
                         Attachments.ScorpionHandguardShort, Attachments.APC9Placeholder, Attachments.ARX160Chassis,
                         Attachments.FamasF1PicatinnyRail,
-                        Attachments.HK417Handguard, Attachments.HK417HandguardTan, Attachments.AK12Handguard, Attachments.AK12BHandguard, Attachments.CZ805BrenReceiver, Attachments.M14SOCOMChassis,
+                        Attachments.HK417Handguard, Attachments.HK417HandguardTan, Attachments.AK12Handguard, Attachments.AK12BHandguard, Attachments.CZ805BrenReceiver,
                         Attachments.Block2SOCOMHandguard, Attachments.FSSTacLiteHandguard, Attachments.Mk18HandGuardBlack, Attachments.M110Handguard, Attachments.Mk48HandGuard,
                         Attachments.KBP9A91KulaTacHandguard, Attachments.VSSVintorezTriRailMount, Attachments.MP5BMHandguard, Attachments.HK416HandGuardBlackAndTan,
                         Attachments.ScarHandGuard, Attachments.ScarMidWestIndustriesHandGuard, Attachments.SIGMCXHandguard, Attachments.SIGMCXHandguardShort, Attachments.Z10Handguard,
@@ -228,7 +228,7 @@ public class Attachments3 {
                 .withRenderablePart()
                 .withCreativeTab(ModernWarfareMod.AttachmentsTab)
                 .withModel(new com.paneedah.mwc.models.VGrip(), "gun.png")
-                .withRequiredAttachments(Attachments.MLOKExtendedHandguard, Attachments.MLOKHandguard, Attachments2.AK200HandGuard,  Attachments2.B30HandGuard, Attachments2.SportRifleHandGuard, Attachments2.SportCarbineHandGuard, Attachments.AK15HandleGuard,
+                .withRequiredAttachments(Attachments.MLOKExtendedHandguard, Attachments.MLOKHandguard, Attachments2.AK200HandGuard,  Attachments2.B30HandGuard, Attachments2.B30HandGuardTan, Attachments2.B30HandGuardGreen, Attachments2.SportRifleHandGuard, Attachments2.SportRifleHandGuardTan, Attachments2.SportRifleHandGuardGreen, Attachments2.SportCarbineHandGuard, Attachments2.SportCarbineHandGuardTan, Attachments2.SportCarbineHandGuardGreen, Attachments.AK15HandleGuard,
                         Attachments.M4CarbineHandGuard, Attachments.LVOAVHandGuard, Attachments.M38HandGuard, Attachments.UTGTriRailHandGuard,
                         Attachments.GripPlaceholder, Attachments.Mk18HandGuard, Attachments.M60E4HandGuard, Attachments.P90Swordfish, Attachments.AUGA3extGuard,
                         Attachments.AR57Handguard,  Attachments.StonerHANDGUARD, Attachments.KrissVectorReceiver, Attachments.KrissVectorReceiverBlack,
@@ -239,7 +239,7 @@ public class Attachments3 {
                         Attachments.FNFALPARAHandguard, Attachments.M16A1PicatinnyRail, Attachments.K2C1Handguard, Attachments.AR10SuperSASSHandguard,
                         Attachments.ScorpionHandguardShort, Attachments.APC9Placeholder, Attachments.ARX160Chassis,
                         Attachments.FamasF1PicatinnyRail,
-                        Attachments.HK417Handguard, Attachments.HK417HandguardTan, Attachments.AK12Handguard, Attachments.AK12BHandguard, Attachments.CZ805BrenReceiver, Attachments.M14SOCOMChassis,
+                        Attachments.HK417Handguard, Attachments.HK417HandguardTan, Attachments.AK12Handguard, Attachments.AK12BHandguard, Attachments.CZ805BrenReceiver,
                         Attachments.Block2SOCOMHandguard, Attachments.FSSTacLiteHandguard, Attachments.Mk18HandGuardBlack, Attachments.M110Handguard, Attachments.Mk48HandGuard,
                         Attachments.KBP9A91KulaTacHandguard, Attachments.VSSVintorezTriRailMount, Attachments.MP5BMHandguard, Attachments.HK416HandGuardBlackAndTan,
                         Attachments.ScarHandGuard, Attachments.ScarMidWestIndustriesHandGuard, Attachments.SIGMCXHandguard, Attachments.SIGMCXHandguardShort, Attachments.Z10Handguard,
@@ -286,14 +286,14 @@ public class Attachments3 {
 
         Bipod = new AttachmentBuilder<Weapon>().withCategory(AttachmentCategory.GRIP)
                 .withCreativeTab(ModernWarfareMod.AttachmentsTab).withModel(new com.paneedah.mwc.models.Bipod(), "bipod.png")
-                .withRequiredAttachments(Attachments.MLOKExtendedHandguard, Attachments.MLOKHandguard, Attachments2.AK200HandGuard,  Attachments2.B30HandGuard, Attachments2.SportRifleHandGuard, Attachments2.SportCarbineHandGuard, Attachments.AK15HandleGuard,
+                .withRequiredAttachments(Attachments.MLOKExtendedHandguard, Attachments.MLOKHandguard, Attachments2.AK200HandGuard,  Attachments2.B30HandGuard, Attachments2.B30HandGuardTan, Attachments2.B30HandGuardGreen, Attachments2.SportRifleHandGuard, Attachments2.SportRifleHandGuardTan, Attachments2.SportRifleHandGuardGreen, Attachments2.SportCarbineHandGuard, Attachments2.SportCarbineHandGuardTan, Attachments2.SportCarbineHandGuardGreen, Attachments.AK15HandleGuard,
                         Attachments.M4CarbineHandGuard, Attachments.LVOAVHandGuard, Attachments.M38HandGuard, Attachments.UTGTriRailHandGuard, Attachments.GripPlaceholder,
                         Attachments.Mk18HandGuard, Attachments.AUGA3extGuard, Attachments.AR57Handguard,  Attachments.StonerHANDGUARD,
                         Attachments.StonerHANDGUARD, Attachments.KrissVectorReceiver, Attachments.KrissVectorReceiverBlack, Attachments.Vector556Handguard, Attachments.M16A4HandGuard, Attachments.ACRPrecisionHandGuard, Attachments.ACRHandGuard,
                         Attachments.ACRPrecisionHandGuardTan, Attachments.ACRHandGuardBlack, Attachments.ACRWEMSKHandGuard, Attachments.ACRWEMSKHandGuardTan,
                         Attachments.HoneyBadgerMatrixArmsHandguard, Attachments.Mk14TanBody, Attachments.Mk14SnowBody, Attachments.Mk14BlackBody, Attachments.SSG08Chassis,
                         Attachments.FNFALPARAHandguard, Attachments.M16A1PicatinnyRail, Attachments.K2C1Handguard, Attachments.AR10SuperSASSHandguard, Attachments.ARX160Chassis,
-                        Attachments.HK417Handguard, Attachments.HK417HandguardTan, Attachments.AK12Handguard, Attachments.AK12BHandguard, Attachments.CZ805BrenReceiver, Attachments.M14SOCOMChassis,
+                        Attachments.HK417Handguard, Attachments.HK417HandguardTan, Attachments.AK12Handguard, Attachments.AK12BHandguard, Attachments.CZ805BrenReceiver,
                         Attachments.Block2SOCOMHandguard, Attachments.FSSTacLiteHandguard, Attachments.Mk18HandGuardBlack, Attachments.M110Handguard, Attachments.M249HandGuard, Attachments.Mk48HandGuard,
                         Attachments.M40A6GripPlaceholder, Attachments.VSSVintorezTriRailMount, Attachments.MP5BMHandguard, Attachments.HK416HandGuardBlackAndTan,
                         Attachments.ScarHandGuard, Attachments.ScarMidWestIndustriesHandGuard, Attachments.SIGMCXHandguard, Attachments.SIGMCXHandguardShort,
@@ -496,11 +496,11 @@ public class Attachments3 {
                 .build(ModernWarfareMod.MOD_CONTEXT);
 
         AK15ironsight = new AttachmentBuilder<Weapon>()
-                .withCategory(AttachmentCategory.SCOPE)
+                .withCategory(AttachmentCategory.FRONTSIGHT)
                 .withCreativeTab(ModernWarfareMod.AttachmentsTab)
                 .withModel(new com.paneedah.mwc.models.KA_AK12_Ironsight(), "gun.png")
                 .withModel(new com.paneedah.mwc.models.AKMiron2(), "gun.png")
-                .withRequiredAttachments(Attachments.VeprDustCover, Attachments.AK200DustCover, Attachments2.PP19VityazSNDC, Attachments2.B33DustCover, Attachments.AK15DustCover, Attachments.Placeholder)
+                .withRequiredAttachments(Attachments.VeprDustCover, Attachments.AK200DustCover, Attachments2.PP19VityazSNDC, Attachments2.B33DustCover, Attachments2.B33DustCoverTan, Attachments2.B33DustCoverGreen, Attachments.AK15DustCover, Attachments.Placeholder)
                 .withInventoryModelPositioning((model, s) -> {
                     if (model instanceof com.paneedah.mwc.models.KA_AK12_Ironsight) {
                         GL11.glTranslatef(-0.6F, -1F, 0.7F);
@@ -539,7 +539,7 @@ public class Attachments3 {
                 .withCreativeTab(ModernWarfareMod.AttachmentsTab)
                 .withModel(new com.paneedah.mwc.models.AK15ironsight(), "gun.png")
                 .withModel(new com.paneedah.mwc.models.AKMiron2(), "gun.png")
-                .withRequiredAttachments(Attachments.VeprDustCover, Attachments.AK200DustCover, Attachments2.PP19VityazSNDC, Attachments2.B33DustCover, Attachments.AK15DustCover, Attachments.Placeholder)
+                .withRequiredAttachments(Attachments.VeprDustCover, Attachments.AK200DustCover, Attachments2.PP19VityazSNDC, Attachments2.B33DustCover, Attachments2.B33DustCoverTan, Attachments2.B33DustCoverGreen, Attachments.AK15DustCover, Attachments.Placeholder)
                 .withInventoryModelPositioning((model, s) -> {
                     if (model instanceof com.paneedah.mwc.models.AK15ironsight) {
                         GL11.glTranslatef(-0.6F, -1F, 0.7F);
@@ -941,7 +941,7 @@ public class Attachments3 {
         Laser2 = new AttachmentBuilder<Weapon>().withCategory(AttachmentCategory.LASER)
                 .withCreativeTab(ModernWarfareMod.AttachmentsTab)
                 .withModel(new com.paneedah.mwc.models.Laser3(), "laser2.png")
-                .withRequiredAttachments(Attachments.MLOKExtendedHandguard, Attachments.MLOKHandguard, Attachments2.AK200HandGuard,  Attachments2.B30HandGuard, Attachments2.SportRifleHandGuard, Attachments2.SportCarbineHandGuard, Attachments.AK15HandleGuard, Attachments.AK12kalHandguard,
+                .withRequiredAttachments(Attachments.MLOKExtendedHandguard, Attachments.MLOKHandguard, Attachments2.AK200HandGuard,  Attachments2.B30HandGuard, Attachments2.B30HandGuardTan, Attachments2.B30HandGuardGreen, Attachments2.SportRifleHandGuard, Attachments2.SportRifleHandGuardTan, Attachments2.SportRifleHandGuardGreen, Attachments2.SportCarbineHandGuard, Attachments2.SportCarbineHandGuardTan, Attachments2.SportCarbineHandGuardGreen, Attachments.AK15HandleGuard, Attachments.AK12kalHandguard,
                         Attachments.M4CarbineHandGuard, Attachments.M38HandGuard, Attachments.UTGTriRailHandGuard, Attachments.PistolPlaceholder, Attachments.AK12kalTanHandguard, 
                         Attachments.LaserPlaceholder, Attachments.Mk18HandGuard, Attachments.M60E4HandGuard, Attachments.P90Swordfish,
                         Attachments.AUGA3extGuard, Attachments.StonerHANDGUARD, Attachments.AR57Handguard, Attachments.M16A4HandGuard, Attachments.ACRHandGuard, Attachments.ACRHandGuardBlack,
@@ -1165,7 +1165,7 @@ public class Attachments3 {
         Grip2 = new AttachmentBuilder<Weapon>().withCategory(AttachmentCategory.GRIP)
                 .withRenderablePart()
                 .withCreativeTab(ModernWarfareMod.AttachmentsTab).withModel(new com.paneedah.mwc.models.Grip2(), "gun.png")
-                .withRequiredAttachments(Attachments.MLOKExtendedHandguard, Attachments.MLOKHandguard, Attachments2.AK200HandGuard,  Attachments2.B30HandGuard, Attachments2.SportRifleHandGuard, Attachments2.SportCarbineHandGuard,
+                .withRequiredAttachments(Attachments.MLOKExtendedHandguard, Attachments.MLOKHandguard, Attachments2.AK200HandGuard,  Attachments2.B30HandGuard, Attachments2.B30HandGuardTan, Attachments2.B30HandGuardGreen, Attachments2.SportRifleHandGuard, Attachments2.SportRifleHandGuardTan, Attachments2.SportRifleHandGuardGreen, Attachments2.SportCarbineHandGuard, Attachments2.SportCarbineHandGuardTan, Attachments2.SportCarbineHandGuardGreen,
                         Attachments.AK15HandleGuard, Attachments.M4CarbineHandGuard, Attachments.LVOAVHandGuard,
                         Attachments.M38HandGuard, Attachments.UTGTriRailHandGuard, Attachments.GripPlaceholder,
                         Attachments.Mk18HandGuard, Attachments.M60E4HandGuard, Attachments.P90Swordfish, Attachments.AUGA3extGuard,
@@ -1177,7 +1177,7 @@ public class Attachments3 {
                         Attachments.FNFALPARAHandguard, Attachments.M16A1PicatinnyRail, Attachments.K2C1Handguard, Attachments.AR10SuperSASSHandguard,
                         Attachments.ScorpionHandguardShort, Attachments.APC9Placeholder, Attachments.ARX160Chassis,
                         Attachments.FamasF1PicatinnyRail,
-                        Attachments.HK417Handguard, Attachments.HK417HandguardTan, Attachments.AK12Handguard, Attachments.AK12BHandguard, Attachments.CZ805BrenReceiver, Attachments.M14SOCOMChassis,
+                        Attachments.HK417Handguard, Attachments.HK417HandguardTan, Attachments.AK12Handguard, Attachments.AK12BHandguard, Attachments.CZ805BrenReceiver,
                         Attachments.Block2SOCOMHandguard, Attachments.FSSTacLiteHandguard, Attachments.Mk18HandGuardBlack, Attachments.M110Handguard, Attachments.Mk48HandGuard,
                         Attachments.KBP9A91KulaTacHandguard, Attachments.VSSVintorezTriRailMount, Attachments.MP5BMHandguard, Attachments.HK416HandGuardBlackAndTan,
                         Attachments.ScarHandGuard, Attachments.ScarMidWestIndustriesHandGuard, Attachments.SIGMCXHandguard, Attachments.SIGMCXHandguardShort, Attachments.Z10Handguard,
@@ -1876,7 +1876,7 @@ public class Attachments3 {
                 .withModel(new MP5Iron(), "gun.png")
                 .withModel(new M27rearsight(), "gun.png")
                 .withModel(new MBUSiron(), "gun.png")
-                .withRequiredAttachments(Attachments.VeprDustCover, Attachments.AK200DustCover, Attachments2.PP19VityazSNDC, Attachments2.B33DustCover, Attachments.AK15DustCover, Attachments.Placeholder,
+                .withRequiredAttachments(Attachments.VeprDustCover, Attachments.AK200DustCover, Attachments2.PP19VityazSNDC, Attachments2.B33DustCover, Attachments2.B33DustCoverTan, Attachments2.B33DustCoverGreen, Attachments.AK15DustCover, Attachments.Placeholder,
                         Attachments.MIMP5TRRail, Attachments.MIMP5MRail, Attachments.ShotgunRail, Attachments.Kar98Krail, Attachments.M60Rail,
                         Attachments.P90Placeholder, Attachments.AUGA2handguard, Attachments.AUGA3handguard, Attachments.M4Receiver,
                         Attachments.VLTORReceiver, Attachments.AR57Receiver, Attachments.EF88Handguard,
@@ -1917,7 +1917,7 @@ public class Attachments3 {
         		.withCategory(AttachmentCategory.SCOPE)
                 .withCreativeTab(ModernWarfareMod.AttachmentsTab)
                 .withModel(new com.paneedah.mwc.models.TritiumRearSights(), "gun.png")
-                .withRequiredAttachments(Attachments.VeprDustCover, Attachments.AK200DustCover, Attachments2.PP19VityazSNDC, Attachments2.B33DustCover, Attachments.AK15DustCover, Attachments.Placeholder,
+                .withRequiredAttachments(Attachments.VeprDustCover, Attachments.AK200DustCover, Attachments2.PP19VityazSNDC, Attachments2.B33DustCover, Attachments2.B33DustCoverTan, Attachments2.B33DustCoverGreen, Attachments.AK15DustCover, Attachments.Placeholder,
                         Attachments.MIMP5TRRail, Attachments.MIMP5MRail, Attachments.ShotgunRail, Attachments.Kar98Krail, Attachments.M60Rail,
                         Attachments.P90Placeholder, Attachments.AUGA2handguard, Attachments.AUGA3handguard, Attachments.M4Receiver,
                         Attachments.VLTORReceiver, Attachments.AR57Receiver, Attachments.EF88Handguard,
@@ -1964,7 +1964,7 @@ public class Attachments3 {
         		.withCategory(AttachmentCategory.SCOPE)
                 .withCreativeTab(ModernWarfareMod.AttachmentsTab)
                 .withModel(new MBUSRearSight(), "gun.png")
-                .withRequiredAttachments(Attachments.VeprDustCover, Attachments.AK200DustCover, Attachments2.PP19VityazSNDC, Attachments2.B33DustCover, Attachments.AK15DustCover, Attachments.Placeholder,
+                .withRequiredAttachments(Attachments.VeprDustCover, Attachments.AK200DustCover, Attachments2.PP19VityazSNDC, Attachments2.B33DustCover, Attachments2.B33DustCoverTan, Attachments2.B33DustCoverGreen, Attachments.AK15DustCover, Attachments.Placeholder,
                         Attachments.MIMP5TRRail, Attachments.MIMP5MRail, Attachments.ShotgunRail, Attachments.Kar98Krail, Attachments.M60Rail,
                         Attachments.P90Placeholder, Attachments.AUGA2handguard, Attachments.AUGA3handguard, Attachments.M4Receiver,
                         Attachments.VLTORReceiver, Attachments.AR57Receiver, Attachments.EF88Handguard,
@@ -2011,7 +2011,7 @@ public class Attachments3 {
         		.withCategory(AttachmentCategory.SCOPE)
                 .withCreativeTab(ModernWarfareMod.AttachmentsTab)
                 .withModel(new com.paneedah.mwc.models.G95_upright_rearsights(), "gun.png")
-                .withRequiredAttachments(Attachments.VeprDustCover, Attachments.AK200DustCover, Attachments2.PP19VityazSNDC, Attachments2.B33DustCover, Attachments.AK15DustCover, Attachments.Placeholder,
+                .withRequiredAttachments(Attachments.VeprDustCover, Attachments.AK200DustCover, Attachments2.PP19VityazSNDC, Attachments2.B33DustCover, Attachments2.B33DustCoverTan, Attachments2.B33DustCoverGreen, Attachments.AK15DustCover, Attachments.Placeholder,
                         Attachments.MIMP5TRRail, Attachments.MIMP5MRail, Attachments.ShotgunRail, Attachments.Kar98Krail, Attachments.M60Rail,
                         Attachments.P90Placeholder, Attachments.AUGA2handguard, Attachments.AUGA3handguard, Attachments.M4Receiver,
                         Attachments.VLTORReceiver, Attachments.AR57Receiver, Attachments.EF88Handguard,
@@ -2322,7 +2322,7 @@ public class Attachments3 {
                 })
         		.withCategory(AttachmentCategory.SCOPE)
         		.withCreativeTab(ModernWarfareMod.AttachmentsTab)
-        		.withRequiredAttachments(Attachments.VeprDustCover, Attachments.AK200DustCover, Attachments2.PP19VityazSNDC, Attachments2.B33DustCover, Attachments.AK15DustCover, Attachments.Placeholder,
+        		.withRequiredAttachments(Attachments.VeprDustCover, Attachments.AK200DustCover, Attachments2.PP19VityazSNDC, Attachments2.B33DustCover, Attachments2.B33DustCoverTan, Attachments2.B33DustCoverGreen, Attachments.AK15DustCover, Attachments.Placeholder,
                         Attachments.MIMP5TRRail, Attachments.MIMP5MRail, Attachments.ShotgunRail, Attachments.Kar98Krail, Attachments.M60Rail,
                         Attachments.P90Placeholder, Attachments.AUGA2handguard, Attachments.AUGA3handguard, Attachments.M4Receiver,
                         Attachments.VLTORReceiver, Attachments.AR57Receiver, Attachments.EF88Handguard,
@@ -2663,7 +2663,7 @@ public class Attachments3 {
                     	CraftingGroup.ATTACHMENT_NORMAL,
                     	new CraftingEntry(MWCItems.gunmetalIngot, 2), 
                     	new CraftingEntry(MWCItems.steelIngot, 2))
-                .withRequiredAttachments(Attachments.VeprDustCover, Attachments.AK200DustCover, Attachments2.PP19VityazSNDC, Attachments2.B33DustCover, Attachments.AK15DustCover, Attachments.Placeholder,
+                .withRequiredAttachments(Attachments.VeprDustCover, Attachments.AK200DustCover, Attachments2.PP19VityazSNDC, Attachments2.B33DustCover, Attachments2.B33DustCoverTan, Attachments2.B33DustCoverGreen, Attachments.AK15DustCover, Attachments.Placeholder,
                         Attachments.MIMP5TRRail, Attachments.MIMP5MRail, Attachments.ShotgunRail, Attachments.Kar98Krail,
                         Attachments.M60Rail, Attachments.P90Placeholder, Attachments.AUGA2handguard, Attachments.AUGA3handguard,
                         Attachments.M4Receiver, Attachments.VLTORReceiver, Attachments.AR57Receiver, Attachments.EF88Handguard, Attachments.KrissVectorReceiver, Attachments.KrissVectorReceiverBlack,
@@ -2731,7 +2731,7 @@ public class Attachments3 {
                     	CraftingGroup.ATTACHMENT_NORMAL,
                     	new CraftingEntry(MWCItems.gunmetalIngot, 2), 
                     	new CraftingEntry(MWCItems.steelIngot, 2))
-                .withRequiredAttachments(Attachments.VeprDustCover, Attachments.AK200DustCover, Attachments2.PP19VityazSNDC, Attachments2.B33DustCover, Attachments.AK15DustCover, Attachments.Placeholder,
+                .withRequiredAttachments(Attachments.VeprDustCover, Attachments.AK200DustCover, Attachments2.PP19VityazSNDC, Attachments2.B33DustCover, Attachments2.B33DustCoverTan, Attachments2.B33DustCoverGreen, Attachments.AK15DustCover, Attachments.Placeholder,
                         Attachments.MIMP5TRRail, Attachments.MIMP5MRail, Attachments.ShotgunRail, Attachments.Kar98Krail,
                         Attachments.M60Rail, Attachments.P90Placeholder, Attachments.AUGA2handguard, Attachments.AUGA3handguard,
                         Attachments.M4Receiver, Attachments.VLTORReceiver, Attachments.AR57Receiver, Attachments.EF88Handguard, Attachments.KrissVectorReceiver, Attachments.KrissVectorReceiverBlack,
@@ -2803,7 +2803,7 @@ public class Attachments3 {
                 .withPostRender(new LaserBeamRenderer((p, s) -> {
                     GL11.glTranslatef(-0F, 2.3F, 1.8F);
                 }))
-                .withRequiredAttachments(Attachments.VeprDustCover, Attachments.AK200DustCover, Attachments2.PP19VityazSNDC, Attachments2.B33DustCover, Attachments.AK15DustCover, Attachments.Placeholder,
+                .withRequiredAttachments(Attachments.VeprDustCover, Attachments.AK200DustCover, Attachments2.PP19VityazSNDC, Attachments2.B33DustCover, Attachments2.B33DustCoverTan, Attachments2.B33DustCoverGreen, Attachments.AK15DustCover, Attachments.Placeholder,
                         Attachments.MIMP5TRRail, Attachments.MIMP5MRail, Attachments.ShotgunRail, Attachments.Kar98Krail,
                         Attachments.M60Rail, Attachments.P90Placeholder, Attachments.AUGA2handguard, Attachments.AUGA3handguard,
                         Attachments.M4Receiver, Attachments.VLTORReceiver, Attachments.AR57Receiver, Attachments.EF88Handguard, Attachments.KrissVectorReceiver, Attachments.KrissVectorReceiverBlack,
@@ -2872,7 +2872,7 @@ public class Attachments3 {
                     	CraftingGroup.ATTACHMENT_NORMAL,
                     	new CraftingEntry(MWCItems.gunmetalIngot, 4), 
                     	new CraftingEntry(MWCItems.steelIngot, 3))
-                .withRequiredAttachments(Attachments.VeprDustCover, Attachments.AK200DustCover, Attachments2.PP19VityazSNDC, Attachments2.B33DustCover, Attachments.AK15DustCover, Attachments.Placeholder,
+                .withRequiredAttachments(Attachments.VeprDustCover, Attachments.AK200DustCover, Attachments2.PP19VityazSNDC, Attachments2.B33DustCover, Attachments2.B33DustCoverTan, Attachments2.B33DustCoverGreen, Attachments.AK15DustCover, Attachments.Placeholder,
                         Attachments.MIMP5TRRail, Attachments.MIMP5MRail, Attachments.ShotgunRail, Attachments.Kar98Krail,
                         Attachments.M60Rail, Attachments.P90Placeholder, Attachments.AUGA2handguard, Attachments.AUGA3handguard,
                         Attachments.M4Receiver, Attachments.VLTORReceiver, Attachments.AR57Receiver, Attachments.EF88Handguard, Attachments.KrissVectorReceiver, Attachments.KrissVectorReceiverBlack,
@@ -2956,7 +2956,7 @@ public class Attachments3 {
                     	CraftingGroup.ATTACHMENT_NORMAL,
                     	new CraftingEntry(MWCItems.gunmetalIngot, 4), 
                     	new CraftingEntry(MWCItems.steelIngot, 3))
-                .withRequiredAttachments(Attachments.VeprDustCover, Attachments.AK200DustCover, Attachments2.PP19VityazSNDC, Attachments2.B33DustCover, Attachments.AK15DustCover, Attachments.Placeholder,
+                .withRequiredAttachments(Attachments.VeprDustCover, Attachments.AK200DustCover, Attachments2.PP19VityazSNDC, Attachments2.B33DustCover, Attachments2.B33DustCoverTan, Attachments2.B33DustCoverGreen, Attachments.AK15DustCover, Attachments.Placeholder,
                         Attachments.MIMP5TRRail, Attachments.MIMP5MRail, Attachments.ShotgunRail, Attachments.Kar98Krail,
                         Attachments.M60Rail, Attachments.P90Placeholder, Attachments.AUGA2handguard, Attachments.AUGA3handguard,
                         Attachments.M4Receiver, Attachments.VLTORReceiver, Attachments.AR57Receiver, Attachments.EF88Handguard, Attachments.KrissVectorReceiver, Attachments.KrissVectorReceiverBlack,
@@ -3079,7 +3079,7 @@ public class Attachments3 {
                     	CraftingGroup.ATTACHMENT_NORMAL,
                     	new CraftingEntry(MWCItems.gunmetalIngot, 2), 
                     	new CraftingEntry(MWCItems.steelIngot, 2))
-                .withRequiredAttachments(Attachments.VeprDustCover, Attachments.AK200DustCover, Attachments2.PP19VityazSNDC, Attachments2.B33DustCover, Attachments.AK15DustCover, Attachments.Placeholder,
+                .withRequiredAttachments(Attachments.VeprDustCover, Attachments.AK200DustCover, Attachments2.PP19VityazSNDC, Attachments2.B33DustCover, Attachments2.B33DustCoverTan, Attachments2.B33DustCoverGreen, Attachments.AK15DustCover, Attachments.Placeholder,
                         Attachments.MIMP5TRRail, Attachments.MIMP5MRail, Attachments.ShotgunRail, Attachments.Kar98Krail,
                         Attachments.M60Rail, Attachments.P90Placeholder, Attachments.AUGA2handguard, Attachments.AUGA3handguard,
                         Attachments.M4Receiver, Attachments.VLTORReceiver, Attachments.AR57Receiver, Attachments.EF88Handguard, Attachments.KrissVectorReceiver, Attachments.KrissVectorReceiverBlack,
@@ -3147,7 +3147,7 @@ public class Attachments3 {
                     	CraftingGroup.ATTACHMENT_NORMAL,
                     	new CraftingEntry(MWCItems.gunmetalIngot, 2), 
                     	new CraftingEntry(MWCItems.steelIngot, 2))
-                .withRequiredAttachments(Attachments.VeprDustCover, Attachments.AK200DustCover, Attachments2.PP19VityazSNDC, Attachments2.B33DustCover, Attachments.AK15DustCover, Attachments.Placeholder,
+                .withRequiredAttachments(Attachments.VeprDustCover, Attachments.AK200DustCover, Attachments2.PP19VityazSNDC, Attachments2.B33DustCover, Attachments2.B33DustCoverTan, Attachments2.B33DustCoverGreen, Attachments.AK15DustCover, Attachments.Placeholder,
                         Attachments.MIMP5TRRail, Attachments.MIMP5MRail, Attachments.ShotgunRail, Attachments.Kar98Krail,
                         Attachments.M60Rail, Attachments.P90Placeholder, Attachments.AUGA2handguard, Attachments.AUGA3handguard,
                         Attachments.M4Receiver, Attachments.VLTORReceiver, Attachments.AR57Receiver, Attachments.EF88Handguard, Attachments.KrissVectorReceiver, Attachments.KrissVectorReceiverBlack,
@@ -3214,7 +3214,7 @@ public class Attachments3 {
                     	CraftingGroup.ATTACHMENT_NORMAL,
                     	new CraftingEntry(MWCItems.gunmetalIngot, 2), 
                     	new CraftingEntry(MWCItems.steelIngot, 2))
-                .withRequiredAttachments(Attachments.VeprDustCover, Attachments.AK200DustCover, Attachments2.PP19VityazSNDC, Attachments2.B33DustCover, Attachments.AK15DustCover, Attachments.Placeholder,
+                .withRequiredAttachments(Attachments.VeprDustCover, Attachments.AK200DustCover, Attachments2.PP19VityazSNDC, Attachments2.B33DustCover, Attachments2.B33DustCoverTan, Attachments2.B33DustCoverGreen, Attachments.AK15DustCover, Attachments.Placeholder,
                         Attachments.MIMP5TRRail, Attachments.MIMP5MRail, Attachments.ShotgunRail, Attachments.Kar98Krail,
                         Attachments.M60Rail, Attachments.P90Placeholder, Attachments.AUGA2handguard, Attachments.AUGA3handguard,
                         Attachments.M4Receiver, Attachments.VLTORReceiver, Attachments.AR57Receiver, Attachments.EF88Handguard, Attachments.KrissVectorReceiver, Attachments.KrissVectorReceiverBlack,
@@ -3285,7 +3285,7 @@ public class Attachments3 {
                     	CraftingGroup.ATTACHMENT_NORMAL,
                     	new CraftingEntry(MWCItems.gunmetalIngot, 3), 
                     	new CraftingEntry(MWCItems.steelIngot, 2))
-                .withRequiredAttachments(Attachments.VeprDustCover, Attachments.AK200DustCover, Attachments2.PP19VityazSNDC, Attachments2.B33DustCover, Attachments.AK15DustCover, Attachments.Placeholder,
+                .withRequiredAttachments(Attachments.VeprDustCover, Attachments.AK200DustCover, Attachments2.PP19VityazSNDC, Attachments2.B33DustCover, Attachments2.B33DustCoverTan, Attachments2.B33DustCoverGreen, Attachments.AK15DustCover, Attachments.Placeholder,
                         Attachments.MIMP5TRRail, Attachments.MIMP5MRail, Attachments.ShotgunRail, Attachments.Kar98Krail,
                         Attachments.M60Rail, Attachments.P90Placeholder, Attachments.AUGA2handguard, Attachments.AUGA3handguard,
                         Attachments.M4Receiver, Attachments.VLTORReceiver, Attachments.AR57Receiver, Attachments.EF88Handguard, Attachments.KrissVectorReceiver, Attachments.KrissVectorReceiverBlack,
@@ -3359,7 +3359,7 @@ public class Attachments3 {
                     	CraftingGroup.ATTACHMENT_NORMAL,
                     	new CraftingEntry(MWCItems.gunmetalIngot, 2), 
                     	new CraftingEntry(MWCItems.steelIngot, 2))
-                .withRequiredAttachments(Attachments.VeprDustCover, Attachments.AK200DustCover, Attachments2.PP19VityazSNDC, Attachments2.B33DustCover, Attachments.AK15DustCover, Attachments.Placeholder,
+                .withRequiredAttachments(Attachments.VeprDustCover, Attachments.AK200DustCover, Attachments2.PP19VityazSNDC, Attachments2.B33DustCover, Attachments2.B33DustCoverTan, Attachments2.B33DustCoverGreen, Attachments.AK15DustCover, Attachments.Placeholder,
                         Attachments.MIMP5TRRail, Attachments.MIMP5MRail, Attachments.ShotgunRail, Attachments.Kar98Krail,
                         Attachments.M60Rail, Attachments.P90Placeholder, Attachments.AUGA2handguard, Attachments.AUGA3handguard,
                         Attachments.M4Receiver, Attachments.VLTORReceiver, Attachments.AR57Receiver, Attachments.EF88Handguard, Attachments.KrissVectorReceiver, Attachments.KrissVectorReceiverBlack,
@@ -3427,7 +3427,7 @@ public class Attachments3 {
                     	CraftingGroup.ATTACHMENT_NORMAL,
                     	new CraftingEntry(MWCItems.gunmetalIngot, 2), 
                     	new CraftingEntry(MWCItems.steelIngot, 2))
-                .withRequiredAttachments(Attachments.VeprDustCover, Attachments.AK200DustCover, Attachments2.PP19VityazSNDC, Attachments2.B33DustCover, Attachments.AK15DustCover, Attachments.Placeholder,
+                .withRequiredAttachments(Attachments.VeprDustCover, Attachments.AK200DustCover, Attachments2.PP19VityazSNDC, Attachments2.B33DustCover, Attachments2.B33DustCoverTan, Attachments2.B33DustCoverGreen, Attachments.AK15DustCover, Attachments.Placeholder,
                         Attachments.MIMP5TRRail, Attachments.MIMP5MRail, Attachments.ShotgunRail, Attachments.Kar98Krail,
                         Attachments.M60Rail, Attachments.P90Placeholder, Attachments.AUGA2handguard, Attachments.AUGA3handguard,
                         Attachments.M4Receiver, Attachments.VLTORReceiver, Attachments.AR57Receiver, Attachments.EF88Handguard, Attachments.KrissVectorReceiver, Attachments.KrissVectorReceiverBlack,
@@ -3495,7 +3495,7 @@ public class Attachments3 {
                     	CraftingGroup.ATTACHMENT_NORMAL,
                     	new CraftingEntry(MWCItems.gunmetalIngot, 2), 
                     	new CraftingEntry(MWCItems.steelIngot, 2))
-                .withRequiredAttachments(Attachments.VeprDustCover, Attachments.AK200DustCover, Attachments2.PP19VityazSNDC, Attachments2.B33DustCover, Attachments.AK15DustCover, Attachments.Placeholder,
+                .withRequiredAttachments(Attachments.VeprDustCover, Attachments.AK200DustCover, Attachments2.PP19VityazSNDC, Attachments2.B33DustCover, Attachments2.B33DustCoverTan, Attachments2.B33DustCoverGreen, Attachments.AK15DustCover, Attachments.Placeholder,
                         Attachments.MIMP5TRRail, Attachments.MIMP5MRail, Attachments.ShotgunRail, Attachments.Kar98Krail,
                         Attachments.M60Rail, Attachments.P90Placeholder, Attachments.AUGA2handguard, Attachments.AUGA3handguard,
                         Attachments.M4Receiver, Attachments.VLTORReceiver, Attachments.AR57Receiver, Attachments.EF88Handguard, Attachments.KrissVectorReceiver, Attachments.KrissVectorReceiverBlack,
@@ -3564,7 +3564,7 @@ public class Attachments3 {
                     	CraftingGroup.ATTACHMENT_NORMAL,
                     	new CraftingEntry(MWCItems.gunmetalIngot, 2), 
                     	new CraftingEntry(MWCItems.steelIngot, 2))
-                .withRequiredAttachments(Attachments.VeprDustCover, Attachments.AK200DustCover, Attachments2.PP19VityazSNDC, Attachments2.B33DustCover, Attachments.AK15DustCover, Attachments.Placeholder,
+                .withRequiredAttachments(Attachments.VeprDustCover, Attachments.AK200DustCover, Attachments2.PP19VityazSNDC, Attachments2.B33DustCover, Attachments2.B33DustCoverTan, Attachments2.B33DustCoverGreen, Attachments.AK15DustCover, Attachments.Placeholder,
                         Attachments.MIMP5TRRail, Attachments.MIMP5MRail, Attachments.ShotgunRail, Attachments.Kar98Krail,
                         Attachments.M60Rail, Attachments.P90Placeholder, Attachments.AUGA2handguard, Attachments.AUGA3handguard,
                         Attachments.M4Receiver, Attachments.VLTORReceiver, Attachments.AR57Receiver, Attachments.EF88Handguard, Attachments.KrissVectorReceiver, Attachments.KrissVectorReceiverBlack,
@@ -3631,7 +3631,7 @@ public class Attachments3 {
                     	CraftingGroup.ATTACHMENT_NORMAL,
                     	new CraftingEntry(MWCItems.gunmetalIngot, 1), 
                     	new CraftingEntry(MWCItems.steelIngot, 2))
-                .withRequiredAttachments(Attachments.FABDefenseMount, Attachments.VeprDustCover, Attachments.AK200DustCover, Attachments2.PP19VityazSNDC, Attachments2.B33DustCover, Attachments.AK15DustCover,
+                .withRequiredAttachments(Attachments.FABDefenseMount, Attachments.VeprDustCover, Attachments.AK200DustCover, Attachments2.PP19VityazSNDC, Attachments2.B33DustCover, Attachments2.B33DustCoverTan, Attachments2.B33DustCoverGreen, Attachments.AK15DustCover,
                         Attachments.Placeholder, Attachments.MIMP5TRRail, Attachments.MIMP5MRail, Attachments.ShotgunRail, Attachments.Kar98Krail,
                         Attachments.P90Placeholder, Attachments.AUGA2handguard, Attachments.AUGA3handguard,
                         Attachments.M4Receiver, Attachments.VLTORReceiver, Attachments.AR57Receiver,
@@ -3693,7 +3693,7 @@ public class Attachments3 {
                     	CraftingGroup.ATTACHMENT_NORMAL,
                     	new CraftingEntry(MWCItems.gunmetalIngot, 2), 
                     	new CraftingEntry(MWCItems.steelIngot, 2))
-                .withRequiredAttachments(Attachments.VeprDustCover, Attachments.AK200DustCover, Attachments2.PP19VityazSNDC, Attachments2.B33DustCover, Attachments.AK15DustCover, Attachments.Placeholder,
+                .withRequiredAttachments(Attachments.VeprDustCover, Attachments.AK200DustCover, Attachments2.PP19VityazSNDC, Attachments2.B33DustCover, Attachments2.B33DustCoverTan, Attachments2.B33DustCoverGreen, Attachments.AK15DustCover, Attachments.Placeholder,
                         Attachments.MIMP5TRRail, Attachments.MIMP5MRail, Attachments.ShotgunRail, Attachments.Kar98Krail,
                         Attachments.M60Rail, Attachments.P90Placeholder, Attachments.AUGA2handguard, Attachments.AUGA3handguard,
                         Attachments.M4Receiver, Attachments.VLTORReceiver, Attachments.AR57Receiver, Attachments.EF88Handguard, Attachments.KrissVectorReceiver, Attachments.KrissVectorReceiverBlack,
@@ -3761,7 +3761,7 @@ public class Attachments3 {
                     	CraftingGroup.ATTACHMENT_NORMAL,
                     	new CraftingEntry(MWCItems.gunmetalIngot, 2), 
                     	new CraftingEntry(MWCItems.steelIngot, 2))
-                .withRequiredAttachments(Attachments.VeprDustCover, Attachments.AK200DustCover, Attachments2.PP19VityazSNDC, Attachments2.B33DustCover, Attachments.AK15DustCover, Attachments.Placeholder,
+                .withRequiredAttachments(Attachments.VeprDustCover, Attachments.AK200DustCover, Attachments2.PP19VityazSNDC, Attachments2.B33DustCover, Attachments2.B33DustCoverTan, Attachments2.B33DustCoverGreen, Attachments.AK15DustCover, Attachments.Placeholder,
                         Attachments.MIMP5TRRail, Attachments.MIMP5MRail, Attachments.ShotgunRail, Attachments.Kar98Krail,
                         Attachments.M60Rail, Attachments.P90Placeholder, Attachments.AUGA2handguard, Attachments.AUGA3handguard,
                         Attachments.M4Receiver, Attachments.VLTORReceiver, Attachments.AR57Receiver, Attachments.EF88Handguard, Attachments.KrissVectorReceiver, Attachments.KrissVectorReceiverBlack,
@@ -3930,7 +3930,7 @@ public class Attachments3 {
                 })
         		.withCategory(AttachmentCategory.SCOPE)
         		.withCreativeTab(ModernWarfareMod.AttachmentsTab)
-        		.withRequiredAttachments(Attachments.VeprDustCover, Attachments.AK200DustCover, Attachments2.PP19VityazSNDC, Attachments2.B33DustCover, Attachments.AK15DustCover, Attachments.Placeholder, Attachments.Kar98Krail,
+        		.withRequiredAttachments(Attachments.VeprDustCover, Attachments.AK200DustCover, Attachments2.PP19VityazSNDC, Attachments2.B33DustCover, Attachments2.B33DustCoverTan, Attachments2.B33DustCoverGreen, Attachments.AK15DustCover, Attachments.Placeholder, Attachments.Kar98Krail,
                         Attachments.M4Receiver, Attachments.VLTORReceiver, Attachments.AR57Receiver,
                         Attachments.HoneyBadgerKnightsReceiver, Attachments.HoneyBadgerKnightsReceiverBlack, Attachments.M14Rail,
                         Attachments.SSG08Chassis, Attachments.SA58DustCover, Attachments.M16A1ScopeMount, Attachments.G2ContenderBarrelLong,  Attachments.S710Receiver,
@@ -3998,7 +3998,7 @@ public class Attachments3 {
                 })
         		.withCategory(AttachmentCategory.SCOPE)
         		.withCreativeTab(ModernWarfareMod.AttachmentsTab)
-        		.withRequiredAttachments(Attachments.VeprDustCover, Attachments.AK200DustCover, Attachments2.PP19VityazSNDC, Attachments2.B33DustCover, Attachments.AK15DustCover, Attachments.Placeholder, Attachments.Kar98Krail,
+        		.withRequiredAttachments(Attachments.VeprDustCover, Attachments.AK200DustCover, Attachments2.PP19VityazSNDC, Attachments2.B33DustCover, Attachments2.B33DustCoverTan, Attachments2.B33DustCoverGreen, Attachments.AK15DustCover, Attachments.Placeholder, Attachments.Kar98Krail,
                         Attachments.M4Receiver, Attachments.VLTORReceiver, Attachments.AR57Receiver,
                         Attachments.HoneyBadgerKnightsReceiver, Attachments.HoneyBadgerKnightsReceiverBlack, Attachments.M14Rail,
                         Attachments.SSG08Chassis, Attachments.SA58DustCover, Attachments.M16A1ScopeMount, Attachments.G2ContenderBarrelLong,  Attachments.S710Receiver,
@@ -4073,7 +4073,7 @@ public class Attachments3 {
                     	CraftingGroup.ATTACHMENT_NORMAL,
                     	new CraftingEntry(MWCItems.gunmetalIngot, 6), 
                     	new CraftingEntry(MWCItems.steelIngot, 5))
-                .withRequiredAttachments(Attachments.VeprDustCover, Attachments.AK200DustCover, Attachments2.PP19VityazSNDC, Attachments2.B33DustCover, Attachments.AK15DustCover, Attachments.Placeholder,
+                .withRequiredAttachments(Attachments.VeprDustCover, Attachments.AK200DustCover, Attachments2.PP19VityazSNDC, Attachments2.B33DustCover, Attachments2.B33DustCoverTan, Attachments2.B33DustCoverGreen, Attachments.AK15DustCover, Attachments.Placeholder,
                         Attachments.MIMP5TRRail, Attachments.MIMP5MRail, Attachments.ShotgunRail, Attachments.Kar98Krail,
                         Attachments.M60Rail, Attachments.P90Placeholder, Attachments.AUGA2handguard, Attachments.AUGA3handguard,
                         Attachments.M4Receiver, Attachments.VLTORReceiver, Attachments.AR57Receiver, Attachments.EF88Handguard, Attachments.KrissVectorReceiver, Attachments.KrissVectorReceiverBlack,

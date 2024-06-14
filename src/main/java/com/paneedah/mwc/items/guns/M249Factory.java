@@ -27,7 +27,7 @@ public class M249Factory {
         .withFireRate(0.7f)
         .withRecoil(2f)
         .withZoom(0.9f)
-        .withConfigGroup(GunConfigurationGroup.HEAVY)
+        .withConfigGroup(GunConfigurationGroup.LMG)
         .withMuzzlePosition(new Vec3d(-0.13600000405311594, -1.144000004291535, -8.012000045061113))
         .withMaxShots(Integer.MAX_VALUE)
         //.withMaxShots(5)
@@ -46,7 +46,7 @@ public class M249Factory {
         .withFlashScale(() -> 0.6f)
         .withFlashOffsetX(() -> 0.1f)
         .withFlashOffsetY(() -> 0.15f)
-        .withCreativeTab(ModernWarfareMod.AssaultRiflesTab)
+        .withCreativeTab(ModernWarfareMod.LMGsTab)
         .useNewSystem()
         .withRecoilParam(new RecoilParam(
 				// The weapon power
@@ -152,6 +152,9 @@ public class M249Factory {
 //            GL11.glRotatef(25F, 0f, 0f, 1f);
         })
         .withCompatibleAttachment(Magazines.M249Mag, (model) -> {
+//            GL11.glTranslatef(0.4F, 0F, 0F);
+        })
+        .withCompatibleAttachment(Magazines.M249MagTan, (model) -> {
 //            GL11.glTranslatef(0.4F, 0F, 0F);
         })
         .withCompatibleAttachment(AuxiliaryAttachments.Extra, true, (model) -> {
@@ -419,7 +422,8 @@ public class M249Factory {
                 .setupCustomKeyedPart(Attachments3.Kobra, "m249", "scope")
                 .setupCustomKeyedPart(Attachments3.KobraGen3, "m249", "scope")
                 .setupModernMagazineAnimations("m249", 
-                		Magazines.M249Mag)
+                		Magazines.M249Mag,
+                                Magazines.M249MagTan)
             
             .withFirstPersonCustomPositioning(AuxiliaryAttachments.M249Belt.getRenderablePart(), (renderContext) -> {
                 if(renderContext.getWeaponInstance().getAmmo() == 0) {

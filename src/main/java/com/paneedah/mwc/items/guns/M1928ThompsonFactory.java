@@ -25,7 +25,7 @@ public class M1928ThompsonFactory {
         .withFireRate(0.75f)
         .withRecoil(1.8f)
         .withZoom(0.9f)
-        .withConfigGroup(GunConfigurationGroup.SIDEARM)
+        .withConfigGroup(GunConfigurationGroup.SMG)
         .withMaxShots(1, Integer.MAX_VALUE)
         //.withMaxShots(5)
         .withShootSound("m1a1_thompson")
@@ -43,7 +43,7 @@ public class M1928ThompsonFactory {
         .withFlashOffsetX(() -> 0.11f)
         .withFlashOffsetY(() -> 0.12f)
         .withInaccuracy(2f)
-        .withCreativeTab(ModernWarfareMod.AssaultRiflesTab)
+        .withCreativeTab(ModernWarfareMod.SMGsTab)
         .withInformationProvider(stack -> Arrays.asList(
         "Type: Sub Machine Gun",
         "Damage: 5.3", 

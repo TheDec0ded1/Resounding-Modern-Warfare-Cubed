@@ -50,7 +50,7 @@ public class M17Factory implements GunFactory {
         .withFlashOffsetY(() -> 0.18f)
 //      .withShellCasingForwardOffset(0.001f)
         //         .withInaccuracy(3)
-        .withCreativeTab(ModernWarfareMod.AssaultRiflesTab)
+        .withCreativeTab(ModernWarfareMod.PistolsTab)
         .useNewSystem()
         .withRecoilParam(new RecoilParam(
         		// The weapon power

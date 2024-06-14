@@ -28,7 +28,7 @@ public class G2ContenderFactory implements GunFactory {
         .withFireRate(0.3f)
         .withRecoil(9f)
         .withZoom(0.9f)
-        .withConfigGroup(GunConfigurationGroup.SIDEARM)
+        .withConfigGroup(GunConfigurationGroup.RIFLES)
         .withMaxShots(1)
         .withShootSound("g2contender")
         .withSilencedShootSound("ShotgunSilenced")
@@ -44,7 +44,7 @@ public class G2ContenderFactory implements GunFactory {
         .withFlashOffsetX(() -> 0.09f)
         .withFlashOffsetY(() -> 0.09f)
         
-        .withCreativeTab(ModernWarfareMod.AssaultRiflesTab)
+        .withCreativeTab(ModernWarfareMod.PrecisionRiflesTab)
         .withInformationProvider(stack -> Arrays.asList(
         "Type: Break-Action",
         "Damage: 6.5", 

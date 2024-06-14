@@ -51,7 +51,7 @@ public class Kar98KFactory implements GunFactory {
         .withFlashOffsetX(() -> 0.08f)
         .withFlashOffsetY(() -> 0.16f)
         .withShellCasingEjectEnabled(false)
-        .withCreativeTab(ModernWarfareMod.AssaultRiflesTab)
+        .withCreativeTab(ModernWarfareMod.PrecisionRiflesTab)
         .withInformationProvider(stack -> Arrays.asList(
         "Type: Bolt-action rifle",
         "Damage: 13.5",

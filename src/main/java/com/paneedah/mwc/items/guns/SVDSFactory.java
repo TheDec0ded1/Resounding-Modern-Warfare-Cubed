@@ -33,12 +33,12 @@ public class SVDSFactory {
         .withFireRate(0.3f)
         .withRecoil(4f)
         .withZoom(0.9f)
-        .withConfigGroup(GunConfigurationGroup.RIFLES)
+        .withConfigGroup(GunConfigurationGroup.DMR)
         .hasFlashPedals()
         .withMaxShots(1)
         //.withMaxShots(5)
         .withShootSound("svd")
-        .withSilencedShootSound("m110_silenced")
+        .withSilencedShootSound("svu")
         .withReloadSound("ak_reload")
         .withUnloadSound("ak_unload")
         .withInspectSound("inspection")
@@ -51,7 +51,7 @@ public class SVDSFactory {
         .withFlashScale(() -> 0.5f)
         .withFlashOffsetX(() -> 0.12f)
         .withFlashOffsetY(() -> 0.16f)
-        .withCreativeTab(ModernWarfareMod.AssaultRiflesTab)
+        .withCreativeTab(ModernWarfareMod.PrecisionRiflesTab)
         .useNewSystem()
         .withRecoilParam(new RecoilParam(
         		// The weapon power
@@ -108,7 +108,7 @@ public class SVDSFactory {
         })
         .withCompatibleAttachment(Attachments.SVDSHG, true, (model) -> {
         	if(model instanceof Type56iron2) {
-            	GL11.glTranslatef(-0.185F, -1.39F, -9.1F);
+            	GL11.glTranslatef(-0.185F, -1.39F, -9.15F);
                 GL11.glScaled(0.55F, 0.55F, 1.2F);
             } else if(model instanceof AK47iron) {
                 GL11.glTranslatef(-0.25F, -1.7F, -3.9F);

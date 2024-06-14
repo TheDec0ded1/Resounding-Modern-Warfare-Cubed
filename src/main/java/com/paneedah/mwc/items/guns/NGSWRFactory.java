@@ -34,7 +34,7 @@ public class NGSWRFactory implements GunFactory {
 		.withFireRate(0.75f)
 		.withRecoil(3f)
 		.withZoom(0.9f)
-		.withConfigGroup(GunConfigurationGroup.RIFLES)
+		.withConfigGroup(GunConfigurationGroup.BR)
 		.hasFlashPedals()
 		.withMaxShots(1, Integer.MAX_VALUE)
 		.withShootSound("ngswr")

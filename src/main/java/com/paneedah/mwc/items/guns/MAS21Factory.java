@@ -42,7 +42,7 @@ public class MAS21Factory implements GunFactory {
         .withFlashOffsetY(() -> 0.14f)
 //      .withShellCasingForwardOffset(0.001f)
         .withInaccuracy(3)
-        .withCreativeTab(ModernWarfareMod.AssaultRiflesTab)
+        .withCreativeTab(ModernWarfareMod.PistolsTab)
         .withInformationProvider(stack -> Arrays.asList(
         "Type: Experimental Handgun", 
         "Damage: 5.5", 

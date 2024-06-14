@@ -34,7 +34,7 @@ public class KrissVectorFactory {
         .withFireRate(0.999f)
         .withRecoil(2.5f)
         .withZoom(0.9f)
-        .withConfigGroup(GunConfigurationGroup.SIDEARM)
+        .withConfigGroup(GunConfigurationGroup.SMG)
                 .withShellType(ShellParticleSimulator.Shell.Type.PISTOL)
         .withMaxShots(1, 2, Integer.MAX_VALUE)
         .withMuzzlePosition(new Vec3d(-0.09600000286102293, -0.13599997425079366, -4.6919999461174))
@@ -54,7 +54,7 @@ public class KrissVectorFactory {
         .withFlashOffsetX(() -> 0.12f)
         .withFlashOffsetY(() -> 0.22f)
 //         .withInaccuracy(2f)
-        .withCreativeTab(ModernWarfareMod.AssaultRiflesTab)
+        .withCreativeTab(ModernWarfareMod.SMGsTab)
         .useNewSystem()
         .withRecoilParam(new RecoilParam(
 				// The weapon power

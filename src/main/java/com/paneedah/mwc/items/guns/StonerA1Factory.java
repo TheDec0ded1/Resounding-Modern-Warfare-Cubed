@@ -27,7 +27,7 @@ public class StonerA1Factory {
         .withFireRate(0.8f)
         .withRecoil(2f)
         .withZoom(0.9f)
-        .withConfigGroup(GunConfigurationGroup.HEAVY)
+        .withConfigGroup(GunConfigurationGroup.LMG)
         .withMaxShots(Integer.MAX_VALUE)
         //.withMaxShots(5)
         .withShootSound("m249")
@@ -45,7 +45,7 @@ public class StonerA1Factory {
         .withFlashScale(() -> 0.6f)
         .withFlashOffsetX(() -> 0.11f)
         .withFlashOffsetY(() -> 0.15f)
-        .withCreativeTab(ModernWarfareMod.AssaultRiflesTab)
+        .withCreativeTab(ModernWarfareMod.LMGsTab)
         .withInformationProvider(stack -> Arrays.asList(
         "Type: Light Machine Gun",
         "Damage: 6", 

@@ -34,7 +34,7 @@ public class Type64SMGFactory {
         .withFireRate(0.7f)
         .withRecoil(1.5f)
         .withZoom(0.9f)
-        .withConfigGroup(GunConfigurationGroup.RIFLES)
+        .withConfigGroup(GunConfigurationGroup.PDW)
         .withMuzzlePosition(new Vec3d (-0.13200000393390654, -0.7959999939203257, -6.976000014185902))
         .withMaxShots(1, Integer.MAX_VALUE)
         //.withMaxShots(5)
@@ -52,7 +52,7 @@ public class Type64SMGFactory {
         .withFlashScale(() -> 0.4f)
         .withFlashOffsetX(() -> 0.1f)
         .withFlashOffsetY(() -> 0.11f)
-        .withCreativeTab(ModernWarfareMod.AssaultRiflesTab)
+        .withCreativeTab(ModernWarfareMod.SMGsTab)
         .useNewSystem()
         .withRecoilParam(new RecoilParam(
 				// The weapon power
@@ -114,6 +114,15 @@ public class Type64SMGFactory {
 //            GL11.glScaled(1.2F, 1.2F, 1.2F);
         })
         .withCompatibleAttachment(Attachments.AK101GreenGrip, (model) -> {
+//            GL11.glTranslatef(0.02f, 0.2f, -0.4f);
+//            GL11.glScaled(1.2F, 1.2F, 1.2F);
+        })        .withCompatibleAttachment(Attachments2.RK3Grip, (model) -> {
+//            GL11.glTranslatef(0.02f, 0.2f, -0.4f);
+//            GL11.glScaled(1.2F, 1.2F, 1.2F);
+        })        .withCompatibleAttachment(Attachments2.RK3GripTan, (model) -> {
+//            GL11.glTranslatef(0.02f, 0.2f, -0.4f);
+//            GL11.glScaled(1.2F, 1.2F, 1.2F);
+        })        .withCompatibleAttachment(Attachments2.RK3GripGreen, (model) -> {
 //            GL11.glTranslatef(0.02f, 0.2f, -0.4f);
 //            GL11.glScaled(1.2F, 1.2F, 1.2F);
         })

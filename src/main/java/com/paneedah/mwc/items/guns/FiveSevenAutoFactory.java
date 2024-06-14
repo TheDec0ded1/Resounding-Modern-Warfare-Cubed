@@ -54,7 +54,7 @@ public class FiveSevenAutoFactory implements GunFactory {
         .withFlashOffsetY(() -> 0.13f)
 //      .withShellCasingForwardOffset(0.001f)
         .withInaccuracy(3)
-        .withCreativeTab(ModernWarfareMod.AssaultRiflesTab)
+        .withCreativeTab(ModernWarfareMod.PistolsTab)
         .useNewSystem()
         .withRecoilParam(new RecoilParam(
         		// The weapon power

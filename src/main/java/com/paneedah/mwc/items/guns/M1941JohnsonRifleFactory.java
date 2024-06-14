@@ -11,6 +11,7 @@ import com.paneedah.weaponlib.RenderableState;
 import com.paneedah.weaponlib.Weapon;
 import com.paneedah.weaponlib.WeaponRenderer;
 import com.paneedah.weaponlib.animation.Transition;
+import com.paneedah.weaponlib.config.BalancePackManager.GunConfigurationGroup;
 import net.minecraft.item.Item;
 import org.lwjgl.opengl.GL11;
 
@@ -26,6 +27,7 @@ public class M1941JohnsonRifleFactory {
         .withFireRate(0.5f)
         .withRecoil(2.5f)
         .withZoom(0.9f)
+        .withConfigGroup(GunConfigurationGroup.RIFLES)
         .withMaxShots(1)
         //.withMaxShots(5)
         .withShootSound("m1941")
@@ -44,7 +46,7 @@ public class M1941JohnsonRifleFactory {
         .withFlashOffsetY(() -> 0.12f)
 //        .withShellCasingSideOffset(0f)
         .withShellCasingVerticalOffset(-0.1f)
-        .withCreativeTab(ModernWarfareMod.AssaultRiflesTab)
+        .withCreativeTab(ModernWarfareMod.PrecisionRiflesTab)
         .withInformationProvider(stack -> Arrays.asList(
         "Type: Semi-Automatic Rifle",
         "Damage: 15", 

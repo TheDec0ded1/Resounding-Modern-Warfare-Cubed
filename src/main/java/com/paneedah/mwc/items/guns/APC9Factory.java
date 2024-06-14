@@ -25,7 +25,7 @@ public class APC9Factory implements GunFactory {
 		.withFireRate(0.85f)
 		.withRecoil(2f)
 		.withZoom(0.9f)
-		.withConfigGroup(GunConfigurationGroup.SIDEARM)
+		.withConfigGroup(GunConfigurationGroup.SMG)
 		.withMaxShots(1, Integer.MAX_VALUE)
 		.withShootSound("apc9")
 		.withSilencedShootSound("mp5_silenced")
@@ -46,7 +46,7 @@ public class APC9Factory implements GunFactory {
 		.withShellCasingVerticalOffset(-0.03f)
 		//         .withInaccuracy(1f)
 //		.withShellCasingEjectEnabled(false)
-		.withCreativeTab(ModernWarfareMod.AssaultRiflesTab)
+		.withCreativeTab(ModernWarfareMod.SMGsTab)
 		.withInformationProvider(stack -> Arrays.asList(
 		"Type: Submachine Gun", 
 		"Damage: 5", 

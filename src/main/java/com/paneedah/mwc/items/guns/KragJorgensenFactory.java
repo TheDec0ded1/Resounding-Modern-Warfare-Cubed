@@ -57,7 +57,7 @@ public class KragJorgensenFactory implements GunFactory {
                 2f, // y
                 7f) // z
         
-        .withCreativeTab(ModernWarfareMod.AssaultRiflesTab)
+        .withCreativeTab(ModernWarfareMod.PrecisionRiflesTab)
         .withInformationProvider(stack -> Arrays.asList(
         "Type: Repeating Bolt-action rifle",
         "Damage: 13.8",

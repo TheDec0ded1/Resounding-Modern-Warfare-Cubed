@@ -33,12 +33,12 @@ public class SVDDragunovFactory {
         .withFireRate(0.3f)
         .withRecoil(4f)
         .withZoom(0.9f)
-        .withConfigGroup(GunConfigurationGroup.RIFLES)
+        .withConfigGroup(GunConfigurationGroup.DMR)
         .hasFlashPedals()
         .withMaxShots(1)
         //.withMaxShots(5)
         .withShootSound("svd")
-        .withSilencedShootSound("m110_silenced")
+        .withSilencedShootSound("svu")
         .withReloadSound("ak_reload")
         .withUnloadSound("ak_unload")
         .withInspectSound("inspection")
@@ -51,7 +51,7 @@ public class SVDDragunovFactory {
         .withFlashScale(() -> 0.5f)
         .withFlashOffsetX(() -> 0.12f)
         .withFlashOffsetY(() -> 0.16f)
-        .withCreativeTab(ModernWarfareMod.AssaultRiflesTab)
+        .withCreativeTab(ModernWarfareMod.PrecisionRiflesTab)
         .useNewSystem()
         .withRecoilParam(new RecoilParam(
         		// The weapon power

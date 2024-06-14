@@ -26,7 +26,7 @@ public class MG34Factory {
         .withFireRate(0.75f)
         .withRecoil(2f)
         .withZoom(0.9f)
-        .withConfigGroup(GunConfigurationGroup.HEAVY)
+        .withConfigGroup(GunConfigurationGroup.GPMG)
         .withMaxShots(Integer.MAX_VALUE)
         //.withMaxShots(5)
         .withShootSound("mg42")
@@ -45,7 +45,7 @@ public class MG34Factory {
         .withFlashOffsetX(() -> 0.11f)
         .withFlashOffsetY(() -> 0.14f)
         //         .withInaccuracy(1f)
-        .withCreativeTab(ModernWarfareMod.AssaultRiflesTab)
+        .withCreativeTab(ModernWarfareMod.LMGsTab)
         .withInformationProvider(stack -> Arrays.asList(
         "Type: General-Purpose Machine Gun",
         "Damage: 13.5", 

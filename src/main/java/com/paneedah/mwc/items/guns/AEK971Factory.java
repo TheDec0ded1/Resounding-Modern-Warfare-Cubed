@@ -35,7 +35,7 @@ public class AEK971Factory {
         .withFireRate(0.8f)
         .withRecoil(1f)
         .withZoom(0.9f)
-        .withConfigGroup(GunConfigurationGroup.RIFLES)
+        .withConfigGroup(GunConfigurationGroup.AR)
         .hasFlashPedals()
         .withMaxShots(1, 2, Integer.MAX_VALUE)
         .withMuzzlePosition(new Vec3d(-0.16400000488758082, -1.0, -6.5))

@@ -48,7 +48,7 @@ public class SW500MagnumFactory implements GunFactory {
         .withFlashOffsetY(() -> 0.2f)
         //         .withInaccuracy(2)
         .withShellCasingEjectEnabled(false)
-        .withCreativeTab(ModernWarfareMod.AssaultRiflesTab) 
+        .withCreativeTab(ModernWarfareMod.PistolsTab) 
         .withInformationProvider(stack -> Arrays.asList(
                 "Type: Revolver",
                 "Damage: 7",

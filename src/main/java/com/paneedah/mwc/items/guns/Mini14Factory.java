@@ -30,7 +30,7 @@ public class Mini14Factory {
         .withFireRate(0.7f)
         .withRecoil(3.5f)
         .withZoom(0.9f)
-        .withConfigGroup(GunConfigurationGroup.RIFLES)
+        .withConfigGroup(GunConfigurationGroup.MSR)
         .withMuzzlePosition(new Vec3d(-0.13600000405311582, -1.0, -9.12400007820129))
         .withMaxShots(1)
         //.withMaxShots(5)

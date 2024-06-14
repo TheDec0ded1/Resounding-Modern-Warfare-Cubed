@@ -27,7 +27,7 @@ public class STG44Factory {
         .withFireRate(0.6f)
         .withRecoil(3f)
         .withZoom(0.9f)
-        .withConfigGroup(GunConfigurationGroup.RIFLES)
+        .withConfigGroup(GunConfigurationGroup.AR)
         .withMaxShots(1, Integer.MAX_VALUE)
         //.withMaxShots(5)
         .withShootSound("stg44")

@@ -46,7 +46,7 @@ public class M134Factory implements GunFactory {
         .withShellCasingForwardOffset(-0.02f)
         .withShellCasingVerticalOffset(-0.05f)
         .withBleedingCoefficient(7f)
-        .withCreativeTab(ModernWarfareMod.AssaultRiflesTab)
+        .withCreativeTab(ModernWarfareMod.LMGsTab)
         .withInformationProvider(stack -> Arrays.asList(
         "Type: Minigun", 
         "Damage: 10", 

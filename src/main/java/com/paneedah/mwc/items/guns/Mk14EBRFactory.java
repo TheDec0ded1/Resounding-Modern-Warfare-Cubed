@@ -29,7 +29,7 @@ public class Mk14EBRFactory {
         .withFireRate(0.7f)
         .withRecoil(4.5f)
         .withZoom(0.9f)
-        .withConfigGroup(GunConfigurationGroup.DMR)
+        .withConfigGroup(GunConfigurationGroup.BR)
         .withMuzzlePosition(new Vec3d(-0.13600000405311582, -1.0, -9.12400007820129))
         .withMaxShots(1, Integer.MAX_VALUE)
         //.withMaxShots(5)
@@ -148,12 +148,7 @@ public class Mk14EBRFactory {
 	        	} else if(model instanceof FALIron) {
 	                GL11.glTranslatef(-0.19F, -1.34F, -8.5F);
 	                GL11.glScaled(0F, 0F, 0F);
-	            } 
-	        	else if(model instanceof AKRail) {
-            	  GL11.glTranslatef(-0.015F, -0.65F, -6f);
-                  GL11.glScaled(0.75F, 0.8F, 1F);
-                  GL11.glRotatef(180F, 0f, 0f, 1f);
-              } 
+	            }
         })
         .withCompatibleAttachment(Attachments.M14WoodChassis, (model) -> {
         	if(model instanceof M14DMRSocomChassis) {

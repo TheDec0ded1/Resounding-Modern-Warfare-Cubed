@@ -45,7 +45,7 @@ public class S710TricunFactory implements GunFactory {
 		.withShellCasingForwardOffset(0.05f)
 		.withShellCasingVerticalOffset(-0.03f)
 //		.withShellCasingEjectEnabled(false)
-		.withCreativeTab(ModernWarfareMod.AssaultRiflesTab)
+		.withCreativeTab(ModernWarfareMod.SMGsTab)
 		.withInformationProvider(stack -> Arrays.asList(
 		"Type: Submachine Gun", 
 		"Damage: 5.4", 

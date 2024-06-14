@@ -27,7 +27,7 @@ public class AS50Factory implements GunFactory {
         .withFireRate(0.1f)
         .withRecoil(14f)
         .withZoom(0.8f)
-        .withConfigGroup(GunConfigurationGroup.LONG_RANGE_RIFLES)
+        .withConfigGroup(GunConfigurationGroup.HEAVY)
         .withMaxShots(1)
         .withShootSound("as50")
         .withPumpTimeout(1000)
@@ -44,7 +44,7 @@ public class AS50Factory implements GunFactory {
         .withFlashScale(() -> 0.6f)
         .withFlashOffsetX(() -> 0.08f)
         .withFlashOffsetY(() -> 0.11f)
-        .withCreativeTab(ModernWarfareMod.AssaultRiflesTab)
+        .withCreativeTab(ModernWarfareMod.PrecisionRiflesTab)
         .withInformationProvider(stack -> Arrays.asList(
         "Type: Anti-Materiel Sniper Rifle",
         "Damage: 25", 

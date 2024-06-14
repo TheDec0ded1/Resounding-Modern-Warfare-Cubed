@@ -33,7 +33,7 @@ public class KedrFactory {
         .withFireRate(0.65f)
         .withRecoil(2f)
         .withZoom(0.9f)
-        .withConfigGroup(GunConfigurationGroup.SIDEARM)
+        .withConfigGroup(GunConfigurationGroup.SMG)
         .withMaxShots(1, Integer.MAX_VALUE)
         //.withMaxShots(5)
         .withShootSound("kedr")
@@ -51,7 +51,7 @@ public class KedrFactory {
         .withFlashOffsetX(() -> 0.12f)
         .withFlashOffsetY(() -> 0.18f)
         //         .withInaccuracy(2f)
-        .withCreativeTab(ModernWarfareMod.AssaultRiflesTab)
+        .withCreativeTab(ModernWarfareMod.SMGsTab)
         .useNewSystem()
         .withRecoilParam(new RecoilParam(
 				// The weapon power
@@ -128,20 +128,22 @@ public class KedrFactory {
             
             .withFirstPersonPositioning(
 
-new Transform()
-.withPosition(-1.105000f, 2.785000f, -5.045000f)
-.withRotation(0.000000f, 1.000000f, 6.300000f)
-.withRotationPoint(-0.350000f, -0.900000f, 0.700000f)
-.withScale(3.000000f, 3.000000f, 3.000000f)
+			new Transform()
+			.withPosition(-1.105000f, 2.785000f, -5.045000f)
+			.withRotation(0.000000f, 1.000000f, 6.300000f)
+			.withRotationPoint(-0.350000f, -0.900000f, 0.700000f)
+			.withScale(3.000000f, 3.000000f, 3.000000f)
                 )
                 
                  .withFirstPersonHandPositioning(
                         
                         // Left hand
                         new Transform()
-                        .withPosition(1.210000f, 0.145000f, -0.248300f)
-                        .withBBRotation(-10.1474, -26.3974, 59.2926)
-                        .withScale(2.6, 2.6, 4.0)
+
+                        .withPosition(1.210000f, 0.145000f, 0.831700f)
+                        .withRotation(10.147400f, 26.397400f, 59.292600f)
+                        .withRotationPoint(0.000000f, 0.000000f, 0.000000f)
+                        .withScale(2.600000f, 2.600000f, 4.000000f)
                         .withRotationPoint(0, 0, 0),
                         
                         

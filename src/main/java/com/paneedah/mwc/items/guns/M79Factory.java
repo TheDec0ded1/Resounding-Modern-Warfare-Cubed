@@ -41,7 +41,7 @@ public class M79Factory implements GunFactory {
         .withFlashOffsetY(() -> 0.101f)
         .withShellCasingEjectEnabled(false)
         .withDestroyingBlocks(false)
-        .withCreativeTab(ModernWarfareMod.AssaultRiflesTab)
+        .withCreativeTab(ModernWarfareMod.GadgetsTab)
         
         .withScreenShaking(RenderableState.SHOOTING, 
                 4f, // x 

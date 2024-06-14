@@ -35,7 +35,7 @@ public class AKS74UFactory {
         .withFireRate(0.6f)
         .withRecoil(3f)
         .withZoom(0.9f)
-        .withConfigGroup(GunConfigurationGroup.RIFLES)
+        .withConfigGroup(GunConfigurationGroup.AR_CARBINE)
         .hasFlashPedals()
         .withMaxShots(1, Integer.MAX_VALUE)
         .withMuzzlePosition(new Vec3d(-0.16400000488758082, -1.0, -6.5))
@@ -125,6 +125,10 @@ public class AKS74UFactory {
 //            GL11.glTranslatef(0f, 0f, 1f);
         })        .withCompatibleAttachment(Attachments2.PT1Stock, (model) -> {
 //            GL11.glTranslatef(0f, 0f, 1f);
+        })        .withCompatibleAttachment(Attachments2.PT1StockTan, (model) -> {
+//            GL11.glTranslatef(0f, 0f, 1f);
+        })        .withCompatibleAttachment(Attachments2.PT1StockGreen, (model) -> {
+//            GL11.glTranslatef(0f, 0f, 1f);
         })
         .withCompatibleAttachment(Attachments2.AKMStock, (model) -> {
 //          GL11.glTranslatef(0f, 0f, 1f);
@@ -177,6 +181,12 @@ public class AKS74UFactory {
         .withCompatibleAttachment(Attachments.AKS74UHandguard, (model) -> {
 //            GL11.glTranslatef(0f, 0f, 1f);
         })
+        .withCompatibleAttachment(Attachments2.AKSUMHandguard, (model) -> {
+//            GL11.glTranslatef(0f, 0f, 1f);
+        })
+        .withCompatibleAttachment(Attachments2.AKSUMPlumHandguard, (model) -> {
+//            GL11.glTranslatef(0f, 0f, 1f);
+        })
                 .withCompatibleAttachment(Attachments3.Laser2, (p, s) -> {
                     GL11.glTranslatef(-0.22F, -1.21F, -4F);
                     GL11.glScaled(0.8F, 0.8F, 0.8F);
@@ -206,11 +216,20 @@ public class AKS74UFactory {
 //            GL11.glTranslatef(0.02f, 0.2f, -0.4f);
 //            GL11.glScaled(1.2F, 1.2F, 1.2F);
         })
-        .withCompatibleAttachment(Attachments.AK101Grip, true, (model) -> {
+        .withCompatibleAttachment(Attachments.AK101Grip, (model) -> {
 //            GL11.glTranslatef(0.02f, 0.2f, -0.4f);
 //            GL11.glScaled(1.2F, 1.2F, 1.2F);
         })
         .withCompatibleAttachment(Attachments.AK101GreenGrip, (model) -> {
+//            GL11.glTranslatef(0.02f, 0.2f, -0.4f);
+//            GL11.glScaled(1.2F, 1.2F, 1.2F);
+        })        .withCompatibleAttachment(Attachments2.RK3Grip, (model) -> {
+//            GL11.glTranslatef(0.02f, 0.2f, -0.4f);
+//            GL11.glScaled(1.2F, 1.2F, 1.2F);
+        })        .withCompatibleAttachment(Attachments2.RK3GripTan, (model) -> {
+//            GL11.glTranslatef(0.02f, 0.2f, -0.4f);
+//            GL11.glScaled(1.2F, 1.2F, 1.2F);
+        })        .withCompatibleAttachment(Attachments2.RK3GripGreen, (model) -> {
 //            GL11.glTranslatef(0.02f, 0.2f, -0.4f);
 //            GL11.glScaled(1.2F, 1.2F, 1.2F);
         })
@@ -218,7 +237,7 @@ public class AKS74UFactory {
 //            GL11.glTranslatef(0.02f, 0.2f, -0.4f);
 //            GL11.glScaled(1.2F, 1.2F, 1.2F);
         })
-        .withCompatibleAttachment(Attachments.AK101PlumGrip, (model) -> {
+        .withCompatibleAttachment(Attachments.AK101PlumGrip, true, (model) -> {
 //            GL11.glTranslatef(0.02f, 0.2f, -0.4f);
 //            GL11.glScaled(1.2F, 1.2F, 1.2F);
         })

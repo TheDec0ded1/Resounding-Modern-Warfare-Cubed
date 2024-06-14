@@ -54,7 +54,7 @@ public class M32MGLFactory implements GunFactory {
                 3f, // y
                 2f) // z
         
-        .withCreativeTab(ModernWarfareMod.AssaultRiflesTab)
+        .withCreativeTab(ModernWarfareMod.GadgetsTab)
         .withInformationProvider(stack -> Arrays.asList("Type: Multiple Grenade Launcher", 
         "Cartridge: 40mm Grenade", "Fire Rate: Semi"))
         .withCompatibleAttachment(Bullets.Grenade40mm, (model) -> {})

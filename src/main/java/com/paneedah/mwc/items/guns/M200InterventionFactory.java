@@ -29,7 +29,7 @@ public class M200InterventionFactory implements GunFactory {
         .withEjectSpentRoundSound("m200_intervention_boltaction")
         .withRecoil(9f)
         .withZoom(0.8f)
-        .withConfigGroup(GunConfigurationGroup.LONG_RANGE_RIFLES)
+        .withConfigGroup(GunConfigurationGroup.HEAVY)
         .withMaxShots(1)
         .withShootSound("m200_intervention")
         .withPumpTimeout(1000)
@@ -47,7 +47,7 @@ public class M200InterventionFactory implements GunFactory {
         .withFlashOffsetX(() -> 0.08f)
         .withFlashOffsetY(() -> 0.11f)
         .withShellCasingEjectEnabled(false)
-        .withCreativeTab(ModernWarfareMod.AssaultRiflesTab)
+        .withCreativeTab(ModernWarfareMod.PrecisionRiflesTab)
         .withInformationProvider(stack -> Arrays.asList(
         "Type: Sniper Rifle",
         "Damage: 20", 

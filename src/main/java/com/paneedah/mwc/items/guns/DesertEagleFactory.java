@@ -27,7 +27,7 @@ public class DesertEagleFactory implements GunFactory {
         .withFireRate(0.2f)
         .withRecoil(20f)
         .withZoom(0.9f)
-        .withConfigGroup(GunConfigurationGroup.SIDEARM)
+        .withConfigGroup(GunConfigurationGroup.REVOLVER)
         .withMuzzlePosition(new Vec3d(-0.14400000429153445, -0.8639999959468836, -2.355999876499175))
         .withShellType(Type.PISTOL)
         .withMaxShots(1)
@@ -46,7 +46,7 @@ public class DesertEagleFactory implements GunFactory {
         .withFlashOffsetX(() -> 0.13f)
         .withFlashOffsetY(() -> 0.14f)
 //      .withShellCasingForwardOffset(0.001f)
-        .withCreativeTab(ModernWarfareMod.AssaultRiflesTab)
+        .withCreativeTab(ModernWarfareMod.PistolsTab)
         .useNewSystem()
         .withRecoilParam(new RecoilParam(
         		// The weapon power

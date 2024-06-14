@@ -34,7 +34,7 @@ public class RPK16Factory {
         .withFireRate(0.6f)
         .withRecoil(3.5f)
         .withZoom(0.9f)
-        .withConfigGroup(GunConfigurationGroup.RIFLES)
+        .withConfigGroup(GunConfigurationGroup.LMG)
         .hasFlashPedals()
         .withMaxShots(1, 2, Integer.MAX_VALUE)
         .withMuzzlePosition(new Vec3d(-0.16400000488758082, -1.0, -6.5))
@@ -53,7 +53,7 @@ public class RPK16Factory {
         .withFlashScale(() -> 0.5f)
         .withFlashOffsetX(() -> 0.12f)
         .withFlashOffsetY(() -> 0.16f)
-        .withCreativeTab(ModernWarfareMod.AssaultRiflesTab)
+        .withCreativeTab(ModernWarfareMod.LMGsTab)
         .useNewSystem()
         .withRecoilParam(new RecoilParam(
 				// The weapon power

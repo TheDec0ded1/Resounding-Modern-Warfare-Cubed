@@ -32,12 +32,12 @@ public class QBZ95Factory {
         .withFireRate(0.75f)
         .withRecoil(2.5f)
         .withZoom(0.9f)
-        .withConfigGroup(GunConfigurationGroup.RIFLES)
+        .withConfigGroup(GunConfigurationGroup.AR)
         .hasFlashPedals()
         .withMaxShots(1, Integer.MAX_VALUE)
         //.withMaxShots(5)
         .withShootSound("qbz95")
-        .withSilencedShootSound("qbz_silenced")
+        .withSilencedShootSound("qbz95_silenced")
         .withReloadSound("fnfal_reload")
         .withUnloadSound("fnfal_unload")
         .withInspectSound("inspection")
@@ -89,23 +89,22 @@ public class QBZ95Factory {
         		CraftingEntry(MWCItems.gunmetalPlate, 10), new
         		CraftingEntry(MWCItems.steelIngot, 3))
         
-        .withUnremovableAttachmentCategories(AttachmentCategory.GUARD)
+        .withUnremovableAttachmentCategories(AttachmentCategory.STOCK)
+       .withUnremovableAttachmentCategories(AttachmentCategory.RECEIVER)
         .withUnremovableAttachmentCategories(AttachmentCategory.BACKGRIP)
         
+
         .withCompatibleAttachment(AuxiliaryAttachments.QBZ95Action, true, (model) -> {
-//            GL11.glTranslatef(0f, 0f, 1f);
- //               GL11.glScaled(0.03F, 0.03F, 0.03F);
+        })
+        .withCompatibleAttachment(Attachments2.QBZ95Body, true, (model) -> {
+        })
+        .withCompatibleAttachment(Attachments2.QBZ95Cover, true, (model) -> {
+        })
+        .withCompatibleAttachment(Attachments2.QBZ95Upper, true, (model) -> {
         })
         .withCompatibleAttachment(Magazines.QBZ95Mag, (model) -> {
-//        	GL11.glRotatef(20.000000f, 1f, 0f, 0f);
-//            GL11.glTranslatef(0f, 0f, -0f);
-    //            GL11.glScaled(0.03F, 0.03F, 0.03F);
         })
-        .withCompatibleAttachment(Attachments.FamasF1ScopeMount, (model) -> {
-            if(model instanceof AKRail) {
-                GL11.glTranslatef(-0.218F, -2.13F, -2.85f);
-                GL11.glScaled(0.7F, 0.6F, 1.2F);
-            }
+        .withCompatibleAttachment(Magazines.QBB95Mag, (model) -> {
         })
         .withCompatibleAttachment(Attachments3.NightRaider, (player, stack) -> {
             GL11.glTranslatef(-0.21F, -2.2F, -2F);
@@ -259,6 +258,22 @@ public class QBZ95Factory {
 	            GL11.glScaled(0.15F, 0.15F, 0.15F);
 	        }
 	    })
+        .withCompatibleAttachment(Attachments3.Grip2, (model) -> {
+            GL11.glTranslatef(-0.2F, -0.1F, -2.5F);
+            GL11.glScaled(1F, 1F, 1F);
+        })
+        .withCompatibleAttachment(Attachments3.StubbyGrip, (model) -> {
+        	GL11.glTranslatef(-0.2F, -0.1F, -2.5F);
+            GL11.glScaled(1F, 1F, 1F);
+        })
+        .withCompatibleAttachment(Attachments3.AngledGrip, (model) -> {
+        	GL11.glTranslatef(-0.2F, -0.05F, -2.5F);
+            GL11.glScaled(1F, 1F, 1F);
+        })
+        .withCompatibleAttachment(Attachments3.VGrip, (model) -> {
+        	GL11.glTranslatef(-0.2F, -0.1F, -2.5F);
+            GL11.glScaled(1F, 1F, 1F);
+        })
         .withCompatibleAttachment(Attachments3.Laser2, (p, s) -> {
         	GL11.glTranslatef(0.15F, -1F, -3.3F);
             GL11.glScaled(0.8F, 0.8F, 0.8F);
@@ -271,12 +286,12 @@ public class QBZ95Factory {
         	GL11.glTranslatef(-0.2F, -1.15F, -5.8F);
             GL11.glScaled(1F, 1F, 1F);
         })
-        .withTextureNames("aek971")
+        .withTextureNames("qbz95")
         .withRenderer(new WeaponRenderer.Builder()
 
             .withModel(new QBZ95())
-             .withActionPiece(AuxiliaryAttachments.QBZ95Action)
-                .withActionTransform(new Transform().withPosition(0, 0, 1.5))
+            .withActionPiece(AuxiliaryAttachments.QBZ95Action)
+            .withActionTransform(new Transform().withPosition(0, 0, 1))
             //.withTextureName("AK47")
             //.withWeaponProximity(0.99F)
             //.withYOffsetZoom(5F)
@@ -294,7 +309,7 @@ public class QBZ95Factory {
 					.withPosition(-1.425000f, 5.185000f, -4.205000f)
 					.withRotation(0.000000f, 1.000000f, 6.821898f)
 					.withRotationPoint(-0.350000f, -2.900000f, -0.100000f)
-                    .withScale(2.8, 2.8, 2.8)
+                    .withScale(3.0, 3.0, 3.0)
                 )
                 
                 .withFirstPersonHandPositioning(
@@ -303,7 +318,7 @@ public class QBZ95Factory {
                         new Transform()
                         .withPosition(1.170000f, 0.025000f, 0.060000f)
                         .withBBRotation(-8.1997, -23.6991, 57.7232)
-                        .withScale(2.8, 2.8, 2.8)
+                        .withScale(2.6, 2.6, 4.0)
                         .withRotationPoint(0, 0, 0),
                         
                         
@@ -312,14 +327,15 @@ public class QBZ95Factory {
                         new Transform()
                         .withPosition(-0.200000f, -0.020000f, 1.560000f)
                         .withRotation(-5.4027, -4.7805, -1.6694)
-                        .withScale(2.8, 2.8, 2.8)
+                        .withScale(3, 3, 3)
                         .withRotationPoint(0, 0, 0)
                 
                 )
                 
-                .setupModernAnimations("famas", AuxiliaryAttachments.QBZ95Action)
-                .setupModernMagazineAnimations("famas", 
-                		Magazines.QBZ95Mag)
+                .setupModernAnimations("qbz95", AuxiliaryAttachments.QBZ95Action)
+                .setupModernMagazineAnimations("qbz95", 
+                		Magazines.QBZ95Mag,
+                                Magazines.QBB95Mag)
             
             .withThirdPersonPositioning((renderContext) -> {
                 GL11.glScaled(0.45F, 0.45F, 0.45F);
@@ -329,11 +345,11 @@ public class QBZ95Factory {
                 })
             
             .withFirstPersonPositioningCustomRecoiled(AuxiliaryAttachments.QBZ95Action.getRenderablePart(), (renderContext) -> {
-                GL11.glTranslatef(0f, 0f, 1.5f);
+                GL11.glTranslatef(0f, 0f, 1f);
                 })
                 
             .withFirstPersonPositioningCustomZoomingRecoiled(AuxiliaryAttachments.QBZ95Action.getRenderablePart(), (renderContext) -> {
-                GL11.glTranslatef(0f, 0f, 1.5f);
+                GL11.glTranslatef(0f, 0f, 1f);
                 })
                     
             .withThirdPersonPositioningReloading(
@@ -533,7 +549,6 @@ public class QBZ95Factory {
                 
                 // Everything else
                 else {
-                       GL11.glTranslatef(0F, 0.47f, 0f);
                 }
                 
             
@@ -740,7 +755,7 @@ public class QBZ95Factory {
                     }, 300, 0))
              
             .build())
-        .withSpawnEntityDamage(6.8f)
+        .withSpawnEntityDamage(6f)
         .withSpawnEntityGravityVelocity(0.0118f)
                 
         .build(ModernWarfareMod.MOD_CONTEXT);

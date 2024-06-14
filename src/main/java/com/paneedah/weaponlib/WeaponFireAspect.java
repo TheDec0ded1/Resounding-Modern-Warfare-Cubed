@@ -10,10 +10,13 @@ import com.paneedah.weaponlib.render.shells.ShellParticleSimulator.Shell;
 import com.paneedah.weaponlib.state.Aspect;
 import com.paneedah.weaponlib.state.PermitManager;
 import com.paneedah.weaponlib.state.StateManager;
+import net.minecraft.advancements.CriteriaTriggers;
 import net.minecraft.client.audio.PositionedSoundRecord;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.entity.player.EntityPlayerMP;
 import net.minecraft.item.ItemStack;
+import net.minecraft.item.Item;
 import net.minecraft.util.SoundCategory;
 import net.minecraft.util.SoundEvent;
 import net.minecraft.util.math.Vec3d;
@@ -31,6 +34,7 @@ import java.util.function.Predicate;
 
 import static com.paneedah.mwc.proxies.ClientProxy.mc;
 import static com.paneedah.mwc.utils.ModReference.log;
+import static net.minecraft.util.EnumHand.MAIN_HAND;
 
 
 /*
@@ -420,6 +424,7 @@ public class WeaponFireAspect implements Aspect<WeaponState, PlayerWeaponInstanc
         }
         
         Tags.setAmmo(itemStack, --currentServerAmmo);
+        itemStack.damageItem(1, player);
         
         if(spawnEntityWith == null) {
             spawnEntityWith = weapon.builder.spawnEntityWith;

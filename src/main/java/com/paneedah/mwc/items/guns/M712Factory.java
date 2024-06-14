@@ -44,7 +44,7 @@ public class M712Factory implements GunFactory {
         .withFlashOffsetY(() -> 0.18f)
 //      .withShellCasingForwardOffset(0.001f)
         //         .withInaccuracy(1)
-        .withCreativeTab(ModernWarfareMod.AssaultRiflesTab)
+        .withCreativeTab(ModernWarfareMod.PistolsTab)
         .withInformationProvider(stack -> Arrays.asList(
         "Type: Machine Pistol", 
         "Damage: 5.4", 

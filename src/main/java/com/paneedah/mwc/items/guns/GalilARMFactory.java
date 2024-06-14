@@ -34,7 +34,7 @@ public class GalilARMFactory {
         .withFireRate(0.6f)
         .withRecoil(3.5f)
         .withZoom(0.9f)
-        .withConfigGroup(GunConfigurationGroup.RIFLES)
+        .withConfigGroup(GunConfigurationGroup.AR)
         .hasFlashPedals()
         .withMaxShots(1, Integer.MAX_VALUE)
         .withMuzzlePosition(new Vec3d(-0.16400000488758082, -1.0, -6.5))
@@ -394,7 +394,7 @@ public class GalilARMFactory {
                     
                     // Everything else
                     else {
-                        GL11.glTranslatef(0F, 0.04f, 0f);
+                        GL11.glTranslatef(0F, 0.05f, 0f);
                     }
                     
                 

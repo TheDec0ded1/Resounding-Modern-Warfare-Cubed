@@ -51,7 +51,7 @@ public class HK_P2000Factory implements GunFactory {
         .withFlashOffsetY(() -> 0.17f)
 //      .withShellCasingForwardOffset(0.001f)
         //         .withInaccuracy(3)
-        .withCreativeTab(ModernWarfareMod.AssaultRiflesTab)
+        .withCreativeTab(ModernWarfareMod.PistolsTab)
         .useNewSystem()
         .withRecoilParam(new RecoilParam(
         		// The weapon power

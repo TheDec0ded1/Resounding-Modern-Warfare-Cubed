@@ -34,7 +34,7 @@ public class RPKFactory {
         .withFireRate(0.6f)
         .withRecoil(4f)
         .withZoom(0.9f)
-        .withConfigGroup(GunConfigurationGroup.RIFLES)
+        .withConfigGroup(GunConfigurationGroup.LMG)
         .hasFlashPedals()
         .withMaxShots(1, Integer.MAX_VALUE)
         .withMuzzlePosition(new Vec3d(-0.16400000488758082, -1.0, -6.5))
@@ -53,7 +53,7 @@ public class RPKFactory {
         .withFlashScale(() -> 0.5f)
         .withFlashOffsetX(() -> 0.12f)
         .withFlashOffsetY(() -> 0.16f)
-        .withCreativeTab(ModernWarfareMod.AssaultRiflesTab)
+        .withCreativeTab(ModernWarfareMod.LMGsTab)
         .useNewSystem()
         .withRecoilParam(new RecoilParam(
 				// The weapon power
@@ -130,6 +130,10 @@ public class RPKFactory {
         .withCompatibleAttachment(Attachments.AK47Stock, (model) -> {
 //            GL11.glTranslatef(0f, 0f, 1f);
         })        .withCompatibleAttachment(Attachments2.PT1Stock, (model) -> {
+//            GL11.glTranslatef(0f, 0f, 1f);
+        })        .withCompatibleAttachment(Attachments2.PT1StockTan, (model) -> {
+//            GL11.glTranslatef(0f, 0f, 1f);
+        })        .withCompatibleAttachment(Attachments2.PT1StockGreen, (model) -> {
 //            GL11.glTranslatef(0f, 0f, 1f);
         })
         .withCompatibleAttachment(Attachments.RPKStock, true, (model) -> {
@@ -261,6 +265,10 @@ public class RPKFactory {
             }
         })          .withCompatibleAttachment(Attachments2.SportRifleHandGuard, (model) -> {
 
+        })          .withCompatibleAttachment(Attachments2.SportRifleHandGuardTan, (model) -> {
+
+        })          .withCompatibleAttachment(Attachments2.SportRifleHandGuardGreen, (model) -> {
+
         })
         .withCompatibleAttachment(Attachments.AK101DustCover, (model) -> {
 //            GL11.glTranslatef(0f, 0f, 1f);
@@ -279,6 +287,18 @@ public class RPKFactory {
         })        .withCompatibleAttachment(Attachments2.B30HandGuard, (model) -> {
 
         })         .withCompatibleAttachment(Attachments2.SportCarbineHandGuard, (model) -> {
+
+        })        .withCompatibleAttachment(Attachments2.B33DustCoverTan, (model) -> {
+
+        })        .withCompatibleAttachment(Attachments2.B30HandGuardTan, (model) -> {
+
+        })         .withCompatibleAttachment(Attachments2.SportCarbineHandGuardTan, (model) -> {
+
+        })        .withCompatibleAttachment(Attachments2.B33DustCoverGreen, (model) -> {
+
+        })        .withCompatibleAttachment(Attachments2.B30HandGuardGreen, (model) -> {
+
+        })         .withCompatibleAttachment(Attachments2.SportCarbineHandGuardGreen, (model) -> {
 
         })
         .withCompatibleAttachment(Attachments.CollapsableMOEStock, (model) -> {
@@ -322,6 +342,15 @@ public class RPKFactory {
 //            GL11.glScaled(1.2F, 1.2F, 1.2F);
         })
         .withCompatibleAttachment(Attachments.AK101GreenGrip, (model) -> {
+//            GL11.glTranslatef(0.02f, 0.2f, -0.4f);
+//            GL11.glScaled(1.2F, 1.2F, 1.2F);
+        })        .withCompatibleAttachment(Attachments2.RK3Grip, (model) -> {
+//            GL11.glTranslatef(0.02f, 0.2f, -0.4f);
+//            GL11.glScaled(1.2F, 1.2F, 1.2F);
+        })        .withCompatibleAttachment(Attachments2.RK3GripTan, (model) -> {
+//            GL11.glTranslatef(0.02f, 0.2f, -0.4f);
+//            GL11.glScaled(1.2F, 1.2F, 1.2F);
+        })        .withCompatibleAttachment(Attachments2.RK3GripGreen, (model) -> {
 //            GL11.glTranslatef(0.02f, 0.2f, -0.4f);
 //            GL11.glScaled(1.2F, 1.2F, 1.2F);
         })

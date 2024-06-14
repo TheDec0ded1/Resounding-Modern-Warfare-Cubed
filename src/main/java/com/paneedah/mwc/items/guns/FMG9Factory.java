@@ -34,7 +34,7 @@ public class FMG9Factory implements GunFactory {
 		.withFireRate(0.8f)
 		.withRecoil(1f)
 		.withZoom(0.9f)
-		.withConfigGroup(GunConfigurationGroup.RIFLES)
+		.withConfigGroup(GunConfigurationGroup.SIDEARM)
 		.hasFlashPedals()
 		.withMaxShots(1, Integer.MAX_VALUE)
 		.withMuzzlePosition(new Vec3d(-0.06400000190734866, -0.8879999966621398, -3.099999898672101))
@@ -56,7 +56,7 @@ public class FMG9Factory implements GunFactory {
 		.withShellCasingForwardOffset(0.05f)
 		.withShellCasingVerticalOffset(-0.03f)
 //		.withShellCasingEjectEnabled(false)
-		.withCreativeTab(ModernWarfareMod.AssaultRiflesTab)
+		.withCreativeTab(ModernWarfareMod.SMGsTab)
 		.useNewSystem()
 		.withRecoilParam(new RecoilParam(
 				// The weapon power

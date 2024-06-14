@@ -25,7 +25,7 @@ public class G11Factory {
         .withFireRate(0.9f)
         .withRecoil(1f)
         .withZoom(0.9f)
-        .withConfigGroup(GunConfigurationGroup.RIFLES)
+        .withConfigGroup(GunConfigurationGroup.AR)
         .withMaxShots(1, 3, Integer.MAX_VALUE)
         //.withMaxShots(5)
         .withShootSound("g11")

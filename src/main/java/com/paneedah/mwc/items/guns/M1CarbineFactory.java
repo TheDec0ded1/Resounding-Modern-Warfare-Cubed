@@ -24,7 +24,7 @@ public class M1CarbineFactory {
         .withFireRate(0.55f)
         .withRecoil(4.5f)
         .withZoom(0.9f)
-        .withConfigGroup(GunConfigurationGroup.RIFLES)
+        .withConfigGroup(GunConfigurationGroup.MSR)
         .withMaxShots(1)
         //.withMaxShots(5)
         .withShootSound("m1carbine")

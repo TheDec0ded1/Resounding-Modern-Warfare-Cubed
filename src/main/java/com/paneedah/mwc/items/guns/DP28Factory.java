@@ -27,7 +27,7 @@ public class DP28Factory {
         .withFireRate(0.5f)
         .withRecoil(4f)
         .withZoom(0.9f)
-        .withConfigGroup(GunConfigurationGroup.HEAVY)
+        .withConfigGroup(GunConfigurationGroup.GPMG)
         .withMaxShots(1, Integer.MAX_VALUE)
         //.withMaxShots(5)
         .withShootSound("dp28")
@@ -45,7 +45,7 @@ public class DP28Factory {
         .withFlashOffsetX(() -> 0.09f)
         .withFlashOffsetY(() -> 0.14f)
         .withShellCasingEjectEnabled(false)
-        .withCreativeTab(ModernWarfareMod.AssaultRiflesTab)
+        .withCreativeTab(ModernWarfareMod.LMGsTab)
         .withInformationProvider(stack -> Arrays.asList(
         "Type: Light Machine Gun",
         "Damage: 14", 

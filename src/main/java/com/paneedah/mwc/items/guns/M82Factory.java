@@ -32,7 +32,7 @@ public class M82Factory implements GunFactory {
         .withFireRate(0.1f)
         .withRecoil(15f)
         .withZoom(0.8f)
-        .withConfigGroup(GunConfigurationGroup.LONG_RANGE_RIFLES)
+        .withConfigGroup(GunConfigurationGroup.HEAVY)
         .withMuzzlePosition(new Vec3d(-0.1480000044107437, -1.0880000026226049, -10.836000129222878))
         .hasFlashPedals()
         .withMaxShots(1)
@@ -51,7 +51,7 @@ public class M82Factory implements GunFactory {
         .withFlashScale(() -> 0.6f)
         .withFlashOffsetX(() -> 0.08f)
         .withFlashOffsetY(() -> 0.08f)
-        .withCreativeTab(ModernWarfareMod.AssaultRiflesTab)
+        .withCreativeTab(ModernWarfareMod.PrecisionRiflesTab)
         .useNewSystem()
         .withRecoilParam(new RecoilParam(
         		// The weapon power

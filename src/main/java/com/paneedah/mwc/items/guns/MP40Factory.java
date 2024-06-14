@@ -26,7 +26,7 @@ public class MP40Factory {
         .withFireRate(0.55f)
         .withRecoil(1.5f)
         .withZoom(0.9f)
-        .withConfigGroup(GunConfigurationGroup.SIDEARM)
+        .withConfigGroup(GunConfigurationGroup.SMG)
         .withMaxShots(1, Integer.MAX_VALUE)
         //.withMaxShots(5)
         .withShootSound("mp40")
@@ -44,7 +44,7 @@ public class MP40Factory {
         .withFlashOffsetX(() -> 0.1f)
         .withFlashOffsetY(() -> 0.13f)
         //         .withInaccuracy(2f)
-        .withCreativeTab(ModernWarfareMod.AssaultRiflesTab)
+        .withCreativeTab(ModernWarfareMod.SMGsTab)
         .withInformationProvider(stack -> Arrays.asList(
         "Type: Sub Machine Gun",
         "Damage: 5", 

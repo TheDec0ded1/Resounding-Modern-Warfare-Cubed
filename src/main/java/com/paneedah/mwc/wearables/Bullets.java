@@ -10,6 +10,8 @@ import org.lwjgl.opengl.GL11;
 public class Bullets {
 
     public static ItemBullet Bullet20x82mm;
+
+    public static ItemBullet Bullet127x55mmShAK;
     public static ItemBullet Bullet50BMG;
     public static ItemBullet Bullet408CT;
     public static ItemBullet Bullet308Winchester;
@@ -498,7 +500,7 @@ public class Bullets {
 
                 .withCreativeTab(ModernWarfareMod.AmmoTab)
                 .withName("Bullet762x39")
-                .withModel(new com.paneedah.mwc.models.BulletBig(), "bullet762x39.png")
+                .withModel(new com.paneedah.mwc.models.BulletBig(), "bullet545x39.png")
                 .withFirstPersonPositioning((player, itemStack) -> {
                     GL11.glTranslatef(0.2F, -1.9F, 0.5F);
                     GL11.glRotatef(30F, 0f, 1f, 0f);
@@ -642,6 +644,30 @@ public class Bullets {
         	
             .withCreativeTab(ModernWarfareMod.AmmoTab)
             .withName("Bullet45ACP")
+            .withModel(new com.paneedah.mwc.models.BulletSmall(), "bulletsmall.png")
+            .withFirstPersonPositioning((player, itemStack) -> {
+                GL11.glTranslatef(0.2F, -1.9F, 0.5F);
+                GL11.glRotatef(30F, 0f, 1f, 0f);
+                GL11.glScaled(0.55F, 0.55F, 0.55F);
+            }).withThirdPersonPositioning((player, itemStack) -> {
+                GL11.glTranslatef(-0.2F, -0.3F, 0.4F);
+                GL11.glRotatef(-50F, 0f, 1f, 0f);
+                GL11.glRotatef(80F, 1f, 0f, 0f);
+                GL11.glScaled(0.45F, 0.45F, 0.45F);
+            }).withInventoryPositioning((itemStack) -> {
+                GL11.glTranslatef(-0.8F, -4F, 0.7F);
+                GL11.glRotatef(10F, 0f, 1f, 0f);
+                GL11.glRotatef(2F, 1f, 0f, 0f);
+                GL11.glRotatef(0F, 0f, 0f, 1f);
+                GL11.glScaled(2.4F, 2.4F, 2.4f);
+            })
+            .withTextureName("Dummy.png")
+            .build(ModernWarfareMod.MOD_CONTEXT, ItemBullet.class);
+
+        Bullet127x55mmShAK = new ItemBullet.Builder()
+        	
+            .withCreativeTab(ModernWarfareMod.AmmoTab)
+            .withName("Bullet127x55mmShAK")
             .withModel(new com.paneedah.mwc.models.BulletSmall(), "bulletsmall.png")
             .withFirstPersonPositioning((player, itemStack) -> {
                 GL11.glTranslatef(0.2F, -1.9F, 0.5F);
@@ -857,7 +883,7 @@ public class Bullets {
 
                 .withCreativeTab(ModernWarfareMod.AmmoTab)
                 .withName("Bullet9x39mm")
-                .withModel(new com.paneedah.mwc.models.BulletSmall(), "bullet50ae.png")
+                .withModel(new com.paneedah.mwc.models.BulletBig(), "bullet545x39.png")
                 .withFirstPersonPositioning((player, itemStack) -> {
                     GL11.glTranslatef(0.2F, -1.9F, 0.5F);
                     GL11.glRotatef(30F, 0f, 1f, 0f);

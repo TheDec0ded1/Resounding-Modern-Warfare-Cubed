@@ -34,7 +34,7 @@ public class MP5kPDWFactory {
         .withFireRate(0.8f)
         .withRecoil(1.5f)
         .withZoom(0.9f)
-        .withConfigGroup(GunConfigurationGroup.SIDEARM)
+        .withConfigGroup(GunConfigurationGroup.SMG)
         .withShellType(Type.PISTOL)
         .withMaxShots(1, 3, Integer.MAX_VALUE)
         //.withMaxShots(5)
@@ -53,7 +53,7 @@ public class MP5kPDWFactory {
         .withFlashOffsetX(() -> 0.13f)
         .withFlashOffsetY(() -> 0.17f)
         //         //         .withInaccuracy(2f)
-        .withCreativeTab(ModernWarfareMod.AssaultRiflesTab)
+        .withCreativeTab(ModernWarfareMod.SMGsTab)
         .useNewSystem()
         .withRecoilParam(new RecoilParam(
 				// The weapon power

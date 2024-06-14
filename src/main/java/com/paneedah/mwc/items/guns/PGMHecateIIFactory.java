@@ -36,7 +36,7 @@ public class PGMHecateIIFactory implements GunFactory {
         .withEjectSpentRoundSound("pgmhecateii_boltaction")
         .withRecoil(14f)
         .withZoom(0.8f)
-        .withConfigGroup(GunConfigurationGroup.LONG_RANGE_RIFLES)
+        .withConfigGroup(GunConfigurationGroup.HEAVY)
         .withMaxShots(1)
         .withShootSound("pgmhecateii")
         .withPumpTimeout(1100)
@@ -54,7 +54,7 @@ public class PGMHecateIIFactory implements GunFactory {
         .withFlashOffsetX(() -> 0.09f)
         .withFlashOffsetY(() -> 0.095f)
         .withShellCasingEjectEnabled(false)
-        .withCreativeTab(ModernWarfareMod.AssaultRiflesTab)
+        .withCreativeTab(ModernWarfareMod.PrecisionRiflesTab)
         .withInformationProvider(stack -> Arrays.asList(
         "Type: Anti-Materiel Rifle",
         "Damage: 25", 

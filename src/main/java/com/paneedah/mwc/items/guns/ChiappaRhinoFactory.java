@@ -47,7 +47,7 @@ public class ChiappaRhinoFactory implements GunFactory {
         .withFlashOffsetY(() -> 0.15f)
         //         .withInaccuracy(3)
         .withShellCasingEjectEnabled(false)
-        .withCreativeTab(ModernWarfareMod.AssaultRiflesTab) 
+        .withCreativeTab(ModernWarfareMod.PistolsTab) 
         
         .withInformationProvider(stack -> Arrays.asList(
                 "Type: Revolver",

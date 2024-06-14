@@ -47,7 +47,7 @@ public class GL06Factory implements GunFactory {
                 3f, // y
                 2f) // z
         
-        .withCreativeTab(ModernWarfareMod.AssaultRiflesTab)
+        .withCreativeTab(ModernWarfareMod.GadgetsTab)
         .withInformationProvider(stack -> Arrays.asList("Type: Grenade Launcher", "Damage: 70", 
         "Cartridge: 40mm Grenade", "Fire Rate: Semi"))
         .withCompatibleAttachment(Bullets.Grenade40mm, (model) -> {})

@@ -29,7 +29,7 @@ public class AR15Factory implements GunFactory {
 		.withFireRate(0.8f)
 		.withRecoil(4f)
 		.withZoom(0.9f)
-		.withConfigGroup(GunConfigurationGroup.RIFLES)
+		.withConfigGroup(GunConfigurationGroup.AR)
 		.hasFlashPedals()
 		.withMaxShots(1)
 		.withShootSound("m4a1")

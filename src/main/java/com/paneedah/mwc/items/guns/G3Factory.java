@@ -33,7 +33,7 @@ public class G3Factory {
         .withFireRate(0.5f)
         .withRecoil(3f)
         .withZoom(0.9f)
-        .withConfigGroup(GunConfigurationGroup.DMR)
+        .withConfigGroup(GunConfigurationGroup.BR)
         .withMaxShots(1, Integer.MAX_VALUE)
         //.withMaxShots(5)
         .withShootSound("g3")

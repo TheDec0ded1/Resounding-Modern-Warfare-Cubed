@@ -31,7 +31,7 @@ public class QCW05Factory {
         .withFireRate(0.8f)
         .withRecoil(2.5f)
         .withZoom(0.9f)
-        .withConfigGroup(GunConfigurationGroup.RIFLES)
+        .withConfigGroup(GunConfigurationGroup.PDW)
         .hasFlashPedals()
         .withMaxShots(1, Integer.MAX_VALUE)
         //.withMaxShots(5)
@@ -49,7 +49,7 @@ public class QCW05Factory {
         .withFlashScale(() -> 0.5f)
         .withFlashOffsetX(() -> 0.09f)
         .withFlashOffsetY(() -> 0.2f)
-        .withCreativeTab(ModernWarfareMod.AssaultRiflesTab)
+        .withCreativeTab(ModernWarfareMod.SMGsTab)
         .useNewSystem()
         .withRecoilParam(new RecoilParam(
 				// The weapon power

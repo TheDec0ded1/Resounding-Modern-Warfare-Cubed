@@ -34,7 +34,7 @@ public class FALIFactory {
         .withFireRate(0.6f)
         .withRecoil(5f)
         .withZoom(0.9f)
-        .withConfigGroup(GunConfigurationGroup.DMR)
+        .withConfigGroup(GunConfigurationGroup.BR)
         .withMuzzlePosition(new Vec3d(-0.13600000405311594, -0.9239999977350232, -8.896000071406363))
         .withMaxShots(1, Integer.MAX_VALUE)
         //.withMaxShots(5)

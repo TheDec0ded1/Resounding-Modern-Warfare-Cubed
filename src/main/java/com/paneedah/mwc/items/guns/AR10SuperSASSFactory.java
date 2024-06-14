@@ -50,7 +50,7 @@ public class AR10SuperSASSFactory implements GunFactory {
 		.withShellCasingForwardOffset(0.05f)
 		.withShellCasingVerticalOffset(-0.03f)
 //		.withShellCasingEjectEnabled(false)
-		.withCreativeTab(ModernWarfareMod.AssaultRiflesTab)
+		.withCreativeTab(ModernWarfareMod.PrecisionRiflesTab)
 		.useNewSystem()
         .withRecoilParam(new RecoilParam(
         		// The weapon power

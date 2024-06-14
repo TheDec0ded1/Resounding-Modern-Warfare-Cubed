@@ -33,7 +33,7 @@ public class AK12Factory {
         .withFireRate(0.7f)
         .withRecoil(3f)
         .withZoom(0.9f)
-        .withConfigGroup(GunConfigurationGroup.RIFLES)
+        .withConfigGroup(GunConfigurationGroup.AR)
         .hasFlashPedals()
         .withMaxShots(1, 2, Integer.MAX_VALUE)
         //.withMaxShots(5)

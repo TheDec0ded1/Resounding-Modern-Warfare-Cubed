@@ -43,7 +43,7 @@ public class M202Factory implements GunFactory {
         .withFlashOffsetY(() -> 0.14f)
         .withShellCasingEjectEnabled(false)
         .withDestroyingBlocks(false)
-        .withCreativeTab(ModernWarfareMod.AssaultRiflesTab)
+        .withCreativeTab(ModernWarfareMod.GadgetsTab)
         
         .withScreenShaking(RenderableState.SHOOTING, 
                 1f, // x 

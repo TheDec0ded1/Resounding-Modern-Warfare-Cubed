@@ -54,7 +54,7 @@ public class KS23Factory implements GunFactory {
         .withFlashScale(() -> 0.6f)
         .withFlashOffsetX(() -> 0.05f)
         .withFlashOffsetY(() -> 0.09f)
-        .withCreativeTab(ModernWarfareMod.AssaultRiflesTab)
+        .withCreativeTab(ModernWarfareMod.ShotgunsTab)
         .withInformationProvider(stack -> Arrays.asList(
         "Type: Carbine/Shotgun",
         "Damage per Pellet: 7.5",

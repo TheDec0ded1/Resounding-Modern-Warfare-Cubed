@@ -125,8 +125,6 @@ public class MWCUtil {
     public static ItemStack consumeItemsFromPlayerInventory(final List<? extends ItemMagazine> items, final Comparator<ItemStack> comparator, final EntityPlayer player) {
         ItemStack maxStack = null;
 
-        if (player.isCreative())
-            return items.stream().map(ItemMagazine::createItemStack).max(comparator).orElse(null);
 
         for (final ItemStack currentStack : player.inventory.mainInventory)
             if (items.contains(currentStack.getItem()) && (maxStack == null || comparator.compare(currentStack, maxStack) > 0))

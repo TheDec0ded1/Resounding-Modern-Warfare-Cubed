@@ -17,6 +17,222 @@
       }
     ]
   },
+  "svu": {
+    "category": "master",
+    "sounds": [
+      {
+       "name": "mwc:svu",
+       "stream": false
+      }
+    ]
+  },
+  "ash12": {
+    "category": "master",
+    "sounds": [
+      {
+       "name": "mwc:ash12",
+       "stream": false
+      }
+    ]
+  },
+  "ash12_silenced": {
+    "category": "master",
+    "sounds": [
+      {
+       "name": "mwc:ash12_silenced",
+       "stream": false
+      }
+    ]
+  },
+  "ashmag_insert": {
+    "category": "master",
+    "sounds": [
+      {
+       "name": "mwc:ashmag_insert",
+       "stream": false
+      }
+    ]
+  },
+  "ashmag_touchgun": {
+    "category": "master",
+    "sounds": [
+      {
+       "name": "mwc:ashmag_touchgun",
+       "stream": false
+      }
+    ]
+  },
+  "ashmag_unload": {
+    "category": "master",
+    "sounds": [
+      {
+       "name": "mwc:ashmag_unload",
+       "stream": false
+      }
+    ]
+  },
+  "ashaction_back": {
+    "category": "master",
+    "sounds": [
+      {
+       "name": "mwc:ashaction_back",
+       "stream": false
+      }
+    ]
+  },
+  "ashaction_forward": {
+    "category": "master",
+    "sounds": [
+      {
+       "name": "mwc:ashaction_forward",
+       "stream": false
+      }
+    ]
+  },
+  "pp19v_silenced": {
+    "category": "master",
+    "sounds": [
+      {
+       "name": "mwc:pp19v_silenced",
+       "stream": false
+      }
+    ]
+  },
+  "pp19b_silenced": {
+    "category": "master",
+    "sounds": [
+      {
+       "name": "mwc:pp19b_silenced",
+       "stream": false
+      }
+    ]
+  },
+  "pkm": {
+    "category": "master",
+    "sounds": [
+      {
+       "name": "mwc:pkm",
+       "stream": false
+      }
+    ]
+  },
+  "pkm_beltplace": {
+    "category": "master",
+    "sounds": [
+      {
+       "name": "mwc:pkm_beltplace",
+       "stream": false
+      }
+    ]
+  },
+  "pkm_beltrattle": {
+    "category": "master",
+    "sounds": [
+      {
+       "name": "mwc:pkm_beltrattle",
+       "stream": false
+      }
+    ]
+  },
+  "pkm_boltback": {
+    "category": "master",
+    "sounds": [
+      {
+       "name": "mwc:pkm_boltback",
+       "stream": false
+      }
+    ]
+  },
+  "pkm_boxattach": {
+    "category": "master",
+    "sounds": [
+      {
+       "name": "mwc:pkm_boxattach",
+       "stream": false
+      }
+    ]
+  },
+  "pkm_boxdetach": {
+    "category": "master",
+    "sounds": [
+      {
+       "name": "mwc:pkm_boxdetach",
+       "stream": false
+      }
+    ]
+  },
+  "pkm_boxload": {
+    "category": "master",
+    "sounds": [
+      {
+       "name": "mwc:pkm_boxload",
+       "stream": false
+      }
+    ]
+  },
+  "pkm_boxunload": {
+    "category": "master",
+    "sounds": [
+      {
+       "name": "mwc:pkm_boxunload",
+       "stream": false
+      }
+    ]
+  },
+  "pkm_coverclose": {
+    "category": "master",
+    "sounds": [
+      {
+       "name": "mwc:pkm_coverclose",
+       "stream": false
+      }
+    ]
+  },
+  "pkm_coveropen": {
+    "category": "master",
+    "sounds": [
+      {
+       "name": "mwc:pkm_coveropen",
+       "stream": false
+      }
+    ]
+  },
+  "pkm_coverslam": {
+    "category": "master",
+    "sounds": [
+      {
+       "name": "mwc:pkm_coverslam",
+       "stream": false
+      }
+    ]
+  },
+  "pkm_foley1": {
+    "category": "master",
+    "sounds": [
+      {
+       "name": "mwc:pkm_foley1",
+       "stream": false
+      }
+    ]
+  },
+  "pkm_foley2": {
+    "category": "master",
+    "sounds": [
+      {
+       "name": "mwc:pkm_foley2",
+       "stream": false
+      }
+    ]
+  },
+  "pkm_handleforward": {
+    "category": "master",
+    "sounds": [
+      {
+       "name": "mwc:pkm_handleforward",
+       "stream": false
+      }
+    ]
+  },
       "g36action_back": {
     "category": "master",
     "sounds": [
@@ -521,11 +737,11 @@
       }
     ]
   },
-   "qbz_silenced": {
+   "qbz95_silenced": {
     "category": "master",
     "sounds": [
       {
-       "name": "mwc:qbz_silenced",
+       "name": "mwc:qbz95_silenced",
        "stream": false
       }
     ]
@@ -535,6 +751,87 @@
     "sounds": [
       {
        "name": "mwc:qbz95",
+       "stream": false
+      }
+    ]
+  },
+   "qbz95b": {
+    "category": "master",
+    "sounds": [
+      {
+       "name": "mwc:qbz95b",
+       "stream": false
+      }
+    ]
+  },
+   "qbb95": {
+    "category": "master",
+    "sounds": [
+      {
+       "name": "mwc:qbb95",
+       "stream": false
+      }
+    ]
+  },
+   "qbz95_1boltrelease": {
+    "category": "master",
+    "sounds": [
+      {
+       "name": "mwc:qbz95_1boltrelease",
+       "stream": false
+      }
+    ]
+  },
+   "qbz95_boltback": {
+    "category": "master",
+    "sounds": [
+      {
+       "name": "mwc:qbz95_boltback",
+       "stream": false
+      }
+    ]
+  },
+   "qbz95_boltforward": {
+    "category": "master",
+    "sounds": [
+      {
+       "name": "mwc:qbz95_boltforward",
+       "stream": false
+      }
+    ]
+  },
+   "qbz95_foley": {
+    "category": "master",
+    "sounds": [
+      {
+       "name": "mwc:qbz95_foley",
+       "stream": false
+      }
+    ]
+  },
+   "qbz95_maginsert": {
+    "category": "master",
+    "sounds": [
+      {
+       "name": "mwc:qbz95_maginsert",
+       "stream": false
+      }
+    ]
+  },
+   "qbz95_magsmack": {
+    "category": "master",
+    "sounds": [
+      {
+       "name": "mwc:qbz95_magsmack",
+       "stream": false
+      }
+    ]
+  },
+   "qbz95_magunload": {
+    "category": "master",
+    "sounds": [
+      {
+       "name": "mwc:qbz95_magunload",
        "stream": false
       }
     ]
@@ -1381,15 +1678,6 @@
     "sounds": [
       {
        "name": "mwc:m4a1_silenced",
-       "stream": false
-      }
-    ]
-  },
-  "m4a1_reload": {
-    "category": "master",
-    "sounds": [
-      {
-       "name": "mwc:m4a1_reload",
        "stream": false
       }
     ]
@@ -2969,29 +3257,11 @@
       }
     ]
   },
-  "dp28_draw": {
-    "category": "master",
-    "sounds": [
-      {
-       "name": "mwc:dp28_draw",
-       "stream": false
-      }
-    ]
-  },
   "g43_gewehr": {
     "category": "master",
     "sounds": [
       {
        "name": "mwc:g43_gewehr",
-       "stream": false
-      }
-    ]
-  },
-  "g43_gewehr_draw": {
-    "category": "master",
-    "sounds": [
-      {
-       "name": "mwc:g43_gewehr_draw",
        "stream": false
       }
     ]
@@ -3014,47 +3284,11 @@
       }
     ]
   },
-  "socom": {
-    "category": "master",
-    "sounds": [
-      {
-       "name": "mwc:socom",
-       "stream": false
-      }
-    ]
-  },
-  "socom_draw": {
-    "category": "master",
-    "sounds": [
-      {
-       "name": "mwc:socom_draw",
-       "stream": false
-      }
-    ]
-  },
   "m17": {
     "category": "master",
     "sounds": [
       {
        "name": "mwc:m17",
-       "stream": false
-      }
-    ]
-  },
-  "m17_draw": {
-    "category": "master",
-    "sounds": [
-      {
-       "name": "mwc:m17_draw",
-       "stream": false
-      }
-    ]
-  },
-  "g95": {
-    "category": "master",
-    "sounds": [
-      {
-       "name": "mwc:g95",
        "stream": false
       }
     ]
@@ -3068,78 +3302,6 @@
       }
     ]
   },
-  "l131a1": {
-    "category": "master",
-    "sounds": [
-      {
-       "name": "mwc:l131a1",
-       "stream": false
-      }
-    ]
-  },
-  "sa80": {
-    "category": "master",
-    "sounds": [
-      {
-       "name": "mwc:sa80",
-       "stream": false
-      }
-    ]
-  },
-  "sa80_draw": {
-    "category": "master",
-    "sounds": [
-      {
-       "name": "mwc:sa80_draw",
-       "stream": false
-      }
-    ]
-  },
-  "mp7a1": {
-    "category": "master",
-    "sounds": [
-      {
-       "name": "mwc:mp7a1",
-       "stream": false
-      }
-    ]
-  },
-  "mp7a1_draw": {
-    "category": "master",
-    "sounds": [
-      {
-       "name": "mwc:mp7a1_draw",
-       "stream": false
-      }
-    ]
-  },
-  "p2022": {
-    "category": "master",
-    "sounds": [
-      {
-       "name": "mwc:p2022",
-       "stream": false
-      }
-    ]
-  },
-  "mp443_grach": {
-    "category": "master",
-    "sounds": [
-      {
-       "name": "mwc:mp443_grach",
-       "stream": false
-      }
-    ]
-  },
-  "ak12_draw": {
-    "category": "master",
-    "sounds": [
-      {
-       "name": "mwc:ak12_draw",
-       "stream": false
-      }
-    ]
-  },
   "ka_ak12": {
     "category": "master",
     "sounds": [
@@ -3149,92 +3311,11 @@
       }
     ]
   },
-  "tokyo90_draw": {
-    "category": "master",
-    "sounds": [
-      {
-       "name": "mwc:tokyo90_draw",
-       "stream": false
-      }
-    ]
-  },
-  "tokyo90_pump": {
-    "category": "master",
-    "sounds": [
-      {
-       "name": "mwc:tokyo90_pump",
-       "stream": false
-      }
-    ]
-  },
-  "tokyo90_load_shell": {
-    "category": "master",
-    "sounds": [
-      {
-       "name": "mwc:tokyo90_load_shell",
-       "stream": false
-      }
-    ]
-  },
-  "tokyo90": {
-    "category": "master",
-    "sounds": [
-      {
-       "name": "mwc:tokyo90",
-       "stream": false
-      }
-    ]
-  },
-  "c8_sfw": {
-    "category": "master",
-    "sounds": [
-      {
-       "name": "mwc:c8_sfw",
-       "stream": false
-      }
-    ]
-  },
-  "ax50_boltaction": {
-    "category": "master",
-    "sounds": [
-      {
-       "name": "mwc:ax50_boltaction",
-       "stream": false
-      }
-    ]
-  },
-  "ax50": {
-    "category": "master",
-    "sounds": [
-      {
-       "name": "mwc:ax50",
-       "stream": false
-      }
-    ]
-  },
-  "ax50_draw": {
-    "category": "master",
-    "sounds": [
-      {
-       "name": "mwc:ax50_draw",
-       "stream": false
-      }
-    ]
-  },
   "ak74": {
     "category": "master",
     "sounds": [
       {
        "name": "mwc:ak74",
-       "stream": false
-      }
-    ]
-  },
-  "cz805brens1": {
-    "category": "master",
-    "sounds": [
-      {
-       "name": "mwc:cz805brens1",
        "stream": false
       }
     ]
@@ -3253,24 +3334,6 @@
     "sounds": [
       {
        "name": "mwc:r700_boltaction",
-       "stream": false
-      }
-    ]
-  },
-  "m4a4": {
-    "category": "master",
-    "sounds": [
-      {
-       "name": "mwc:m4a4",
-       "stream": false
-      }
-    ]
-  },
-  "akmvulcan": {
-    "category": "master",
-    "sounds": [
-      {
-       "name": "mwc:akmvulcan",
        "stream": false
       }
     ]
@@ -3307,15 +3370,6 @@
     "sounds": [
       {
        "name": "mwc:pgmhecateii_boltaction",
-       "stream": false
-      }
-    ]
-  },
-  "osipr": {
-    "category": "master",
-    "sounds": [
-      {
-       "name": "mwc:osipr",
        "stream": false
       }
     ]
@@ -3545,33 +3599,6 @@
       }
     ]
   },
-  "tyke_hurt": {
-    "category": "master",
-    "sounds": [
-      {
-       "name": "mwc:tyke_hurt",
-       "stream": false
-      }
-    ]
-  },
-  "tyke_ambient": {
-    "category": "master",
-    "sounds": [
-      {
-       "name": "mwc:tyke_ambient",
-       "stream": false
-      }
-    ]
-  },
-  "tyke_step": {
-    "category": "master",
-    "sounds": [
-      {
-       "name": "mwc:tyke_step",
-       "stream": false
-      }
-    ]
-  },
   "sg556": {
     "category": "master",
     "sounds": [
@@ -3685,15 +3712,6 @@
     "sounds": [
       {
        "name": "mwc:ak19",
-       "stream": false
-      }
-    ]
-  },
-  "tyke_death": {
-    "category": "master",
-    "sounds": [
-      {
-       "name": "mwc:tyke_death",
        "stream": false
       }
     ]

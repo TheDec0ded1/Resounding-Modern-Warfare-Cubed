@@ -541,6 +541,7 @@ public class Attachments {
     public static ItemAttachment<Weapon> AKIron;
     public static ItemAttachment<Weapon> AK12Iron;
     public static ItemAttachment<Weapon> Remington870Pump;
+    public static ItemAttachment<Weapon> MP133Pump;
     public static ItemAttachment<Weapon> Remington870PoliceMagnumPump;
     public static ItemAttachment<Weapon> Remington870MagpulPump;
     public static ItemAttachment<Weapon> Remington870FABDefensePump;
@@ -3849,7 +3850,6 @@ C8HandGuard = new AttachmentBuilder<Weapon>().withCategory(AttachmentCategory.GU
                 .withCreativeTab(ModernWarfareMod.AttachmentsTab)
                 .withModel(new com.paneedah.mwc.models.M14DMRSocomChassis(), "m14dmr.png")
                 .withModel(new FALIron(), "gun.png")
-                .withModel(new com.paneedah.mwc.models.AKRail(), "akrail.png")
                 .withModernRecipe(
                     	CraftingGroup.ATTACHMENT_MODIFICATION,
                     	new CraftingEntry(MWCItems.gunmetalIngot, 4), 
@@ -12504,13 +12504,13 @@ G36KRHGRAL = new AttachmentBuilder<Weapon>().withCategory(AttachmentCategory.GUA
  DragunovDarkGripStock = new AttachmentBuilder<Weapon>()
         		.withCategory(AttachmentCategory.STOCK)
                 .withCreativeTab(ModernWarfareMod.AttachmentsTab)
-                .withModel(new com.paneedah.mwc.models.DragunovStock(), "dragunovdark.png")
+                .withModel(new com.paneedah.mwc.models.TigrStock(), "dragunovdark.png")
                 .withModernRecipe(
                     	CraftingGroup.ATTACHMENT_MODIFICATION,
                     	new CraftingEntry(MWCItems.gunmetalIngot, 5), 
                     	new CraftingEntry(Blocks.PLANKS, 4))
                 .withInventoryModelPositioning((model, s) -> {
-                    if (model instanceof com.paneedah.mwc.models.DragunovStock) {
+                    if (model instanceof com.paneedah.mwc.models.TigrStock) {
                         GL11.glTranslatef(-0.6F, 0F, 1.6F);
                         GL11.glRotatef(10F, 1f, 0f, 0f);
                         GL11.glRotatef(-190F, 0f, 1f, 0f);
@@ -12520,7 +12520,7 @@ G36KRHGRAL = new AttachmentBuilder<Weapon>().withCategory(AttachmentCategory.GUA
                         GL11.glScalef(0f, 0f, 0f);
                     }
                 }).withFirstPersonModelPositioning((model, itemStack) -> {
-                    if (model instanceof com.paneedah.mwc.models.DragunovStock) {
+                    if (model instanceof com.paneedah.mwc.models.TigrStock) {
                         GL11.glTranslatef(0.1F, -0.8F, 0.4F);
                         GL11.glRotatef(30F, 0f, 1f, 0f);
                         GL11.glScaled(0.7F, 0.7F, 0.7F);
@@ -12529,7 +12529,7 @@ G36KRHGRAL = new AttachmentBuilder<Weapon>().withCategory(AttachmentCategory.GUA
                     }
 
                 }).withThirdPersonModelPositioning((model, itemStack) -> {
-                    if (model instanceof com.paneedah.mwc.models.DragunovStock) {
+                    if (model instanceof com.paneedah.mwc.models.TigrStock) {
                         GL11.glTranslatef(-0.8F, -0.5F, 0.8F);
                         GL11.glRotatef(-50F, 0f, 1f, 0f);
                         GL11.glRotatef(80F, 1f, 0f, 0f);
@@ -16563,6 +16563,42 @@ G36KRHGRAL = new AttachmentBuilder<Weapon>().withCategory(AttachmentCategory.GUA
                 
                 .withTextureName("Dummy.png")
                 .build(ModernWarfareMod.MOD_CONTEXT);
+
+        MP133Pump = new AttachmentBuilder<Weapon>().withCategory(AttachmentCategory.GUARD)
+                .withCreativeTab(ModernWarfareMod.AttachmentsTab)
+                .withRenderablePart()
+                .withModel(new com.paneedah.mwc.models.MP133Pump(), "remington870.png")
+                .withFirstPersonModelPositioning((model, itemStack) -> {
+                    if (model instanceof com.paneedah.mwc.models.MP133Pump) {
+                        GL11.glTranslatef(0.5F, -1.3F, -0.1F);
+                        GL11.glRotatef(30F, 0f, 1f, 0f);
+                        GL11.glScaled(0.6F, 0.6F, 0.6F);
+                    }
+
+                }).withThirdPersonModelPositioning((model, itemStack) -> {
+                    if (model instanceof com.paneedah.mwc.models.MP133Pump) {
+                        GL11.glTranslatef(-0.7F, -0.5F, 0.6F);
+                        GL11.glRotatef(-50F, 0f, 1f, 0f);
+                        GL11.glRotatef(80F, 1f, 0f, 0f);
+                        GL11.glScaled(0.5F, 0.5F, 0.5F);
+                    }
+                }).withInventoryModelPositioning((model, itemStack) -> {
+                    if (model instanceof com.paneedah.mwc.models.MP133Pump) {
+                        GL11.glTranslatef(0.6F, 0.6F, -2F);
+                        GL11.glRotatef(-180F, 0f, 1f, 0f);
+                        GL11.glRotatef(0F, 0f, 0f, 1f);
+                        GL11.glScaled(0.75F, 0.75F, 0.75f);
+                    }
+                }).withEntityModelPositioning((model, itemStack) -> {
+                    if (model instanceof com.paneedah.mwc.models.MP133Pump) {
+                        GL11.glTranslatef(0.1F, 0.2F, 0.4F);
+                        GL11.glRotatef(90F, 0f, 0f, 1f);
+                        GL11.glScaled(0.4F, 0.4F, 0.4F);
+                    }
+                }).withName("MP133Pump")
+                
+                .withTextureName("Dummy.png")
+                .build(ModernWarfareMod.MOD_CONTEXT);
         
         Remington870MagpulPump = new AttachmentBuilder<Weapon>().withCategory(AttachmentCategory.GUARD)
                 .withCreativeTab(ModernWarfareMod.AttachmentsTab)
@@ -17191,7 +17227,7 @@ G36KRHGRAL = new AttachmentBuilder<Weapon>().withCategory(AttachmentCategory.GUA
                 .withTextureName("Dummy.png")
                 .build(ModernWarfareMod.MOD_CONTEXT);
         
-        RPKBarrel = new AttachmentBuilder<Weapon>().withCategory(AttachmentCategory.FRONTSIGHT)
+        RPKBarrel = new AttachmentBuilder<Weapon>().withCategory(AttachmentCategory.EXTRA3)
                 .withCreativeTab(ModernWarfareMod.AttachmentsTab)
                 .withModel(new com.paneedah.mwc.models.RPKbarrel(), "gun.png")
                 .withModel(new com.paneedah.mwc.models.AKiron3(), "gun")
@@ -17236,7 +17272,7 @@ G36KRHGRAL = new AttachmentBuilder<Weapon>().withCategory(AttachmentCategory.GUA
                 .withTextureName("Dummy.png")
                 .build(ModernWarfareMod.MOD_CONTEXT);
         
-        AKIron = new AttachmentBuilder<Weapon>().withCategory(AttachmentCategory.FRONTSIGHT)
+        AKIron = new AttachmentBuilder<Weapon>().withCategory(AttachmentCategory.EXTRA3)
                 .withCreativeTab(ModernWarfareMod.AttachmentsTab)
                 .withModel(new com.paneedah.mwc.models.AKiron3(), "gun")
                 .withModel(new com.paneedah.mwc.models.AKMiron2(), "gun")

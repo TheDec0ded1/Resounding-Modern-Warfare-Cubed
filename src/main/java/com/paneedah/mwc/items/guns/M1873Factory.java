@@ -50,7 +50,7 @@ public class M1873Factory implements GunFactory {
         .withFlashScale(() -> 0.5f)
         .withFlashOffsetX(() -> 0.11f)
         .withFlashOffsetY(() -> 0.06f)
-        .withCreativeTab(ModernWarfareMod.AssaultRiflesTab)
+        .withCreativeTab(ModernWarfareMod.PrecisionRiflesTab)
         .withInformationProvider(stack -> Arrays.asList(
         "Type: Lever Action Rifle",
         "Damage: 5.5",

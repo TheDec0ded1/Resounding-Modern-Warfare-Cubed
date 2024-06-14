@@ -34,7 +34,7 @@ public class SIG556Factory implements GunFactory {
 		.withFireRate(0.8f)
 		.withRecoil(3f)
 		.withZoom(0.9f)
-		.withConfigGroup(GunConfigurationGroup.RIFLES)
+		.withConfigGroup(GunConfigurationGroup.AR)
 		.hasFlashPedals()
 		.withMaxShots(1, 3, Integer.MAX_VALUE)
 		.withShootSound("sg556")

@@ -34,7 +34,7 @@ public class UMP45Factory {
         .withFireRate(0.6f)
         .withRecoil(2f)
         .withZoom(0.9f)
-        .withConfigGroup(GunConfigurationGroup.SIDEARM)
+        .withConfigGroup(GunConfigurationGroup.SMG)
                 .withShellType(ShellParticleSimulator.Shell.Type.PISTOL)
         .hasFlashPedals()
         .withMaxShots(1, 2, Integer.MAX_VALUE)
@@ -54,7 +54,7 @@ public class UMP45Factory {
         .withFlashOffsetX(() -> 0.13f)
         .withFlashOffsetY(() -> 0.17f)
 //         .withInaccuracy(2f)
-        .withCreativeTab(ModernWarfareMod.AssaultRiflesTab)
+        .withCreativeTab(ModernWarfareMod.SMGsTab)
         .useNewSystem()
         .withRecoilParam(new RecoilParam(
 				// The weapon power

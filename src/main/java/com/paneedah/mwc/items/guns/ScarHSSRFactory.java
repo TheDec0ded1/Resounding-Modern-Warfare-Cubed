@@ -35,7 +35,7 @@ public class ScarHSSRFactory implements GunFactory {
         .withFireRate(0.6f)
         .withRecoil(3f)
         .withZoom(0.9f)
-        .withConfigGroup(GunConfigurationGroup.RIFLES)
+        .withConfigGroup(GunConfigurationGroup.DMR)
         .hasFlashPedals()
         .withMaxShots(1)
         .withShootSound("scar_h")
@@ -55,7 +55,7 @@ public class ScarHSSRFactory implements GunFactory {
         .withFlashOffsetY(() -> 0.17f)
         .withShellCasingForwardOffset(0.05f)
         .withShellCasingVerticalOffset(-0.03f)
-        .withCreativeTab(ModernWarfareMod.AssaultRiflesTab)
+        .withCreativeTab(ModernWarfareMod.PrecisionRiflesTab)
         .useNewSystem()
 		.withRecoilParam(new RecoilParam(
 				// The weapon power

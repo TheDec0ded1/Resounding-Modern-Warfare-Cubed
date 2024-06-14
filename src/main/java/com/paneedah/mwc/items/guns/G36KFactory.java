@@ -33,7 +33,7 @@ public class G36KFactory implements GunFactory {
         .withFireRate(0.75f)
         .withRecoil(2.5f)
         .withZoom(0.9f)
-        .withConfigGroup(GunConfigurationGroup.RIFLES)
+        .withConfigGroup(GunConfigurationGroup.AR)
         .hasFlashPedals()
         .withMaxShots(1, 2, Integer.MAX_VALUE)
         .withShootSound("g36k")

@@ -15,6 +15,6 @@ public class AssaultRiflesTab extends CreativeTabs {
 	@Override
 	@SideOnly(Side.CLIENT)
 	public ItemStack createIcon() {
-		return new ItemStack(Guns.M16A4);
+		return new ItemStack(Guns.M4A1);
 	}
 }

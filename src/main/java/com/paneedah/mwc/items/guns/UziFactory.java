@@ -34,7 +34,7 @@ public class UziFactory implements GunFactory {
         .withFireRate(0.7f)
         .withRecoil(2f)
         .withZoom(0.9f)
-        .withConfigGroup(GunConfigurationGroup.SIDEARM)
+        .withConfigGroup(GunConfigurationGroup.SMG)
                 .withShellType(ShellParticleSimulator.Shell.Type.PISTOL)
         .withMuzzlePosition(new Vec3d(-0.12400000369548798, -0.7799999934434887, -3.427999908447264))
         .withMaxShots(1, Integer.MAX_VALUE)
@@ -54,7 +54,7 @@ public class UziFactory implements GunFactory {
         .withFlashOffsetY(() -> 0.23f)
 //      .withShellCasingForwardOffset(0.001f)
 //         .withInaccuracy(3)
-        .withCreativeTab(ModernWarfareMod.AssaultRiflesTab)
+        .withCreativeTab(ModernWarfareMod.SMGsTab)
         .useNewSystem()
 		.withRecoilParam(new RecoilParam(
 				// The weapon power

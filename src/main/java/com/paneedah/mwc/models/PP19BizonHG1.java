@@ -5,7 +5,7 @@ import net.minecraft.client.model.ModelBox;
 import net.minecraft.client.model.ModelRenderer;
 import net.minecraft.entity.Entity;
 
-// Made with Blockbench 4.9.3
+// Made with Blockbench 4.9.4
 // Exported for Minecraft version 1.7 - 1.12
 // Paste this class into your mod and generate all required imports
 
@@ -45,8 +45,6 @@ public class PP19BizonHG1 extends ModelBase {
 		handguard.cubeList.add(new ModelBox(handguard, 121, 4, -0.984F, -37.9007F, -36.3331F, 1, 5, 3, 0.0F, false));
 		handguard.cubeList.add(new ModelBox(handguard, 143, 17, -3.016F, -37.9007F, -36.3331F, 2, 5, 3, 0.0F, false));
 		handguard.cubeList.add(new ModelBox(handguard, 140, 10, -3.016F, -35.9007F, -51.3331F, 1, 2, 15, 0.0F, false));
-		handguard.cubeList.add(new ModelBox(handguard, 140, 3, -1.316F, -37.7007F, -51.3331F, 1, 2, 15, 0.0F, false));
-		handguard.cubeList.add(new ModelBox(handguard, 140, 3, -2.616F, -37.7007F, -51.3331F, 1, 2, 15, 0.0F, false));
 		handguard.cubeList.add(new ModelBox(handguard, 129, 4, -0.984F, -35.9007F, -51.3331F, 1, 2, 15, 0.0F, false));
 		handguard.cubeList.add(new ModelBox(handguard, 129, 4, -2.984F, -33.9007F, -51.3331F, 2, 0, 15, 0.0F, false));
 		handguard.cubeList.add(new ModelBox(handguard, 142, 12, -3.016F, -33.9007F, -49.3331F, 1, 1, 13, 0.0F, false));
@@ -61,6 +59,8 @@ public class PP19BizonHG1 extends ModelBase {
 		handguard.cubeList.add(new ModelBox(handguard, 130, 2, -3.016F, -38.4007F, -51.3331F, 2, 1, 21, 0.0F, false));
 		handguard.cubeList.add(new ModelBox(handguard, 125, 3, -2.3404F, -39.138F, -51.3331F, 1, 1, 21, 0.0F, false));
 		handguard.cubeList.add(new ModelBox(handguard, 142, 10, -1.6596F, -39.138F, -51.3331F, 1, 1, 21, 0.0F, false));
+		handguard.cubeList.add(new ModelBox(handguard, 125, 12, -2.0F, -36.3F, -51.0F, 1, 1, 20, 0.0F, true));
+		handguard.cubeList.add(new ModelBox(handguard, 125, 12, -2.0F, -37.8F, -51.0F, 1, 1, 20, 0.0F, true));
 
 		cube_r1 = new ModelRenderer(this);
 		cube_r1.setRotationPoint(-2.8881F, -34.9007F, -35.2224F);
