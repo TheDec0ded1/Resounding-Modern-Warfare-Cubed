@@ -50,6 +50,8 @@ public class UniversalSoundRegistry {
 		UniversalSoundLookup.registerSoundToLookup("vssmag_insert");
 		UniversalSoundLookup.registerSoundToLookup("vssmag_touchgun");
 		UniversalSoundLookup.registerSoundToLookup("vssmag_unload");
+		UniversalSoundLookup.registerSoundToLookup("vssaction_back");
+		UniversalSoundLookup.registerSoundToLookup("vssaction_forward");
 		UniversalSoundLookup.registerSoundToLookup("pistolmag_insert");
 		UniversalSoundLookup.registerSoundToLookup("pistolmag_touchgun");
 		UniversalSoundLookup.registerSoundToLookup("pistolmag_unload");

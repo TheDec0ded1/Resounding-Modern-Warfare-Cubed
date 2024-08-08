@@ -40,7 +40,7 @@ public class KrissVectorFactory {
         .withMuzzlePosition(new Vec3d(-0.09600000286102293, -0.13599997425079366, -4.6919999461174))
         //.withMaxShots(5)
         .withShootSound("vector")
-        .withSilencedShootSound("ump_silenced")
+        .withSilencedShootSound("vector_silenced")
         .withReloadSound("vector_reload")
         .withUnloadSound("vector_unload")
         .withInspectSound("inspection")

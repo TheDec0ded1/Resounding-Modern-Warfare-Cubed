@@ -4,6 +4,7 @@ import akka.japi.Pair;
 import com.google.common.collect.Maps;
 import com.paneedah.mwc.skins.CustomSkin;
 import com.paneedah.mwc.utils.ModReference;
+import com.paneedah.mwc.utils.MWCUtil;
 import com.paneedah.weaponlib.animation.*;
 import com.paneedah.weaponlib.animation.DebugPositioner.TransitionConfiguration;
 import com.paneedah.weaponlib.animation.MultipartPositioning.Positioner;
@@ -20,7 +21,9 @@ import com.paneedah.weaponlib.config.BalancePackManager;
 import com.paneedah.weaponlib.config.ModernConfigManager;
 import com.paneedah.weaponlib.jim.util.VMWHooksHandler;
 import com.paneedah.weaponlib.render.*;
+import com.paneedah.weaponlib.render.bgl.*;
 import com.paneedah.weaponlib.shader.jim.Shader;
+import com.paneedah.weaponlib.shader.jim.ShaderLoader;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.client.entity.AbstractClientPlayer;
 import net.minecraft.client.gui.ScaledResolution;
@@ -80,6 +83,7 @@ import java.util.stream.Collectors;
 
 import static com.paneedah.mwc.proxies.ClientProxy.mc;
 import static com.paneedah.mwc.utils.ModReference.log;
+import static com.paneedah.weaponlib.render.MuzzleFlashRenderer.renderFlash;
 
 public class WeaponRenderer extends ModelSourceRenderer implements IBakedModel {
 
@@ -3229,31 +3233,31 @@ public class WeaponRenderer extends ModelSourceRenderer implements IBakedModel {
 			//flash = ShaderLoader.loadShader(new ResourceLocation(ModReference.id + ":shaders/flash"));
 		
 
-                //	Bloom.bindBloomBuffer();
-		//
+                	/*Bloom.bindBloomBuffer();
 
-		    //MuzzleFlashRenderer.renderFlash(renderContext.getPlayer().getEntityId(), weaponItemStack, true);
-			//mc.getFramebuffer().bindFramebuffer(false);
-			
-			
-			//Vec3d iP  = MWCUtil.getInterpolatedPlayerPos();
-			//PostProcessPipeline.getLightManager().addLight((float) iP.x, (float) iP.y, (float) iP.z, 1.0f, 0.623f, 0.262f, 0.1f, 0.009f, 0.032f);
 
-			MuzzleFlashRenderer.renderFlash(renderContext.getPlayer().getEntityId(), weaponItemStack, false);
+		    renderFlash(renderContext.getPlayer().getEntityId(), weaponItemStack, true);
+			mc.getFramebuffer().bindFramebuffer(false);
+			
+
+			Vec3d iP  = MWCUtil.getInterpolatedPlayerPos();
+			PostProcessPipeline.getLightManager().addLight((float) iP.x, (float) iP.y, (float) iP.z, 1.0f, 0.623f, 0.262f, 0.1f, 0.009f, 0.032f);
+*/
+			renderFlash(renderContext.getPlayer().getEntityId(), weaponItemStack, false);
 
 			//Vec3d distortPos = new Vec3d(0, 0, 1).rotateYaw((float) -Math.toRadians(mc.player.rotationYaw)).add(mc.player.getPositionEyes(1.0f));
 			
 			//PostProcessPipeline.createDistortionPoint((float) distortPos.x, (float) distortPos.y, (float) distortPos.z, 1f, 300);
 			
-			/*
+/*
 			Bloom.bindBloomBuffer();
 			
 			
-			//Dloom.bloomData.bindFramebuffer(false);
+			Dloom.bloomData.bindFramebuffer(false);
 			renderFlash(weaponItemStack, true);
 			mc.getFramebuffer().bindFramebuffer(false);
 			renderFlash(weaponItemStack, false);
-			*/
+*/
 		}
 		//ClientEventHandler.muzzleFlashMap.clear();
 		//ClientEventHandler.uploadFlash(mc.player.getEntityId());

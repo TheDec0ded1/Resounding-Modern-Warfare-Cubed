@@ -30,7 +30,7 @@ public class ASMFactory {
     public Item createGun(CommonProxy commonProxy) {
         return new Weapon.Builder()
         
-        .withName("asm_val")
+        .withName("asm")
         .withFireRate(0.7f)
         .withRecoil(1.5f)
         .withZoom(0.9f)

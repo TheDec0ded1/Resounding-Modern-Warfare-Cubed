@@ -785,8 +785,8 @@ public class AnimationModeProcessor {
 			GlStateManager.rotate(90f, 1, 0, 0);
 			renderCircleOutline(Color.RED, 0.2, 0, 0, size, innerSize);
 			GlStateManager.popMatrix();
-		}
-		*/
+		}*/
+
 
 		//Bloom.unapplyMultisample();
 	}

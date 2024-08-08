@@ -313,6 +313,24 @@ public class SVDDragunovFactory {
                  GL11.glScaled(0.8F, 0.8F, 0.8F);
              }
         })
+	 .withCompatibleAttachment(Attachments3.PSO4x24M, (player, stack) -> {
+            GL11.glTranslatef(0.14F, -0.9F, -1.5F);
+            GL11.glScaled(1.2F, 1.2F, 1.2F);
+        },(model) -> {
+            if(model instanceof PSO1reticle) {
+                GL11.glTranslatef(-0.212F, -0.486F, 1.27F);
+                GL11.glScaled(0.017F, 0.017F, 0.017F);
+            }
+        })
+	 .withCompatibleAttachment(Attachments3.PSO6x42, (player, stack) -> {
+            GL11.glTranslatef(0.14F, -0.9F, -1.5F);
+            GL11.glScaled(1.2F, 1.2F, 1.2F);
+        },(model) -> {
+            if(model instanceof PSO1reticle) {
+                GL11.glTranslatef(-0.212F, -0.486F, 1.27F);
+                GL11.glScaled(0.017F, 0.017F, 0.017F);
+            }
+        })
         .withCompatibleAttachment(Attachments3.NSPU, (player, stack) -> {
             GL11.glTranslatef(0.14F, -0.9F, -1.5F);
             GL11.glScaled(1.2F, 1.2F, 1.2F);
@@ -638,6 +656,16 @@ public class SVDDragunovFactory {
                 
              // ACOG Zoom
                 if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.PSO1)) {
+                    //System.out.println("Position me for Acog");
+                    GL11.glTranslatef(-0.01F, 0.13f, -0.4f);
+                } 
+             // ACOG Zoom
+                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.PSO4x24M)) {
+                    //System.out.println("Position me for Acog");
+                    GL11.glTranslatef(-0.01F, 0.13f, -0.4f);
+                } 
+             // ACOG Zoom
+                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.PSO6x42)) {
                     //System.out.println("Position me for Acog");
                     GL11.glTranslatef(-0.01F, 0.13f, -0.4f);
                 } 

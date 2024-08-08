@@ -10,16 +10,19 @@ import com.paneedah.weaponlib.RenderContext;
 import com.paneedah.weaponlib.RenderableState;
 import com.paneedah.weaponlib.config.ModernConfigManager;
 import com.paneedah.weaponlib.model.ScreenModel;
+import com.paneedah.weaponlib.render.Dloom;
 import com.paneedah.weaponlib.render.Shaders;
 import com.paneedah.weaponlib.render.Bloom;
 import com.paneedah.weaponlib.render.scopes.CyclicList;
 import com.paneedah.weaponlib.render.scopes.Reticle;
 import com.paneedah.weaponlib.shader.jim.Shader;
+import com.paneedah.weaponlib.shader.jim.ShaderLoader;
 import net.minecraft.client.model.ModelBase;
 import net.minecraft.client.model.ModelBox;
 import net.minecraft.client.model.ModelRenderer;
 import net.minecraft.client.renderer.BufferBuilder;
 import net.minecraft.client.renderer.GlStateManager;
+import net.minecraft.client.renderer.OpenGlHelper;
 import net.minecraft.client.renderer.Tessellator;
 import net.minecraft.client.renderer.block.model.ItemCameraTransforms;
 import net.minecraft.client.renderer.vertex.DefaultVertexFormats;
@@ -28,14 +31,12 @@ import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.math.Vec3d;
-import org.lwjgl.opengl.GL11;
-import org.lwjgl.opengl.GL12;
-import org.lwjgl.opengl.GL13;
-import org.lwjgl.opengl.GL20;
+import org.lwjgl.opengl.*;
 
 import java.util.function.BiConsumer;
 
 import static com.paneedah.mwc.proxies.ClientProxy.mc;
+import static com.paneedah.weaponlib.render.bgl.GLCompatible.glFramebufferTexture2D;
 
 public class ReflexScreen extends ModelBase implements CustomRenderer<RenderableState>{
 	
@@ -170,10 +171,10 @@ public class ReflexScreen extends ModelBase implements CustomRenderer<Renderable
 		GL20.glUniform3f(GL20.glGetUniformLocation(Shaders.reflexReticle.getShaderId(), "background"), (float) currentReticle.getBackgroundColor().x, (float) currentReticle.getBackgroundColor().y, (float) currentReticle.getBackgroundColor().z);
 		GlStateManager.enableCull();
 		
-                //OpenGlHelper.glFramebufferTexture2D(OpenGlHelper.GL_FRAMEBUFFER, GL30.GL_COLOR_ATTACHMENT1, GL11.GL_TEXTURE_2D, Bloom.data.framebufferTexture, 0);
-		//GL20.glDrawBuffers(intBuf);
+        /*        OpenGlHelper.glFramebufferTexture2D(OpenGlHelper.GL_FRAMEBUFFER, GL30.GL_COLOR_ATTACHMENT1, GL11.GL_TEXTURE_2D, Bloom.data.framebufferTexture, 0);
+		GL20.glDrawBuffers(intBuf);
 		
-		//glFramebufferTexture2D(GL_FRAMEBUFFER, GL_COLOR_ATTACHMENT2, GL_TEXTURE_2D, gAlbedoSpec, 0);
+		glFramebufferTexture2D(GL_FRAMEBUFFER, GL_COLOR_ATTACHMENT2, GL_TEXTURE_2D, gAlbedoSpec, 0); */
 		
 		GlStateManager.pushMatrix();
 		positioning.accept(renderContext.getPlayer(), renderContext.getWeapon());
@@ -198,7 +199,7 @@ public class ReflexScreen extends ModelBase implements CustomRenderer<Renderable
 		//renderReticle(renderContext, true);
 		
 		if(ModernConfigManager.enableAllShaders && ModernConfigManager.enableReticleShaders) {
-		//	mc.getFramebuffer().bindFramebuffer(true);
+			//mc.getFramebuffer().bindFramebuffer(true);
 			renderReticle(renderContext, false);
 		} else {
 			
@@ -212,7 +213,7 @@ public class ReflexScreen extends ModelBase implements CustomRenderer<Renderable
 			
 			
 		
-		//	GlStateManager.translate(0, -3, 0);
+			//GlStateManager.translate(0, -3, 0);
 			positioning.accept(renderContext.getPlayer(), renderContext.getWeapon());
 			
 
@@ -281,8 +282,8 @@ public class ReflexScreen extends ModelBase implements CustomRenderer<Renderable
 		
 		
 
-		//reflexReticle = ShaderLoader.loadShader(new ResourceLocation(ModReference.id + ":shaders/reflex"));
+		//reflexReticle = ShaderLoader.loadShader("reflex");
 		//first
-	//	Dloom.bloomData.bindFramebuffer(true);\
+		//Dloom.bloomData.bindFramebuffer(true);
 	}
 }

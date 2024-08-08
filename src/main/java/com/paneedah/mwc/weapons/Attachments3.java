@@ -17,6 +17,8 @@ public class Attachments3 {
 
    public static ItemAttachment<Weapon> OKP7;
     public static ItemAttachment<Weapon> PSO1;
+    public static ItemAttachment<Weapon> PSO4x24M;
+    public static ItemAttachment<Weapon> PSO6x42;
     public static ItemAttachment<Weapon> NSPU;
     public static ItemAttachment<Weapon> PKAA;
     public static ItemAttachment<Weapon> FMG9Sight;
@@ -2434,6 +2436,115 @@ public class Attachments3 {
                     }
                 })
                 .withName("PSO1")
+                .withTextureName("Dummy.png").build(ModernWarfareMod.MOD_CONTEXT);
+
+        PSO4x24M = new ItemScope.Builder()
+        		.withSniperReticle(Reticles.RETICLE_PSO762)
+        		.withOpticalZoom()
+        		.withZoomRange(0.22f, 0.06f)
+                .withViewfinderPositioning((p, s) -> {
+                    GL11.glScalef(1.15f, 1.15f, 1.1f);
+                    GL11.glTranslatef(-0.299f, 0.215f, 1.15f);
+                }).withCategory(AttachmentCategory.SCOPE).withCreativeTab(ModernWarfareMod.AttachmentsTab).withCrosshair("LP")
+                .withModel(new com.paneedah.mwc.models.PSO4x24M(), "pso4x24m.png")
+                .withModernRecipe(
+                    	CraftingGroup.ATTACHMENT_NORMAL,
+                    	new CraftingEntry(MWCItems.gunmetalIngot, 4), 
+                    	new CraftingEntry(MWCItems.steelIngot, 5))
+                .withFirstPersonModelPositioning((model, itemStack) -> {
+                    if (model instanceof com.paneedah.mwc.models.PSO4x24M) {
+                        GL11.glTranslatef(0.1F, -0.8F, 0.4F);
+                        GL11.glRotatef(30F, 0f, 1f, 0f);
+                        GL11.glScaled(0.7F, 0.7F, 0.7F);
+                    } else if (model instanceof com.paneedah.mwc.models.PSO1reticle) {
+                        GL11.glScaled(0F, 0F, 0F);
+                    }
+
+                }).withThirdPersonModelPositioning((model, itemStack) -> {
+                    if (model instanceof com.paneedah.mwc.models.PSO4x24M) {
+                        GL11.glTranslatef(-0.8F, -0.5F, 0.8F);
+                        GL11.glRotatef(-50F, 0f, 1f, 0f);
+                        GL11.glRotatef(80F, 1f, 0f, 0f);
+                        GL11.glScaled(0.5F, 0.5F, 0.5F);
+                    } else if (model instanceof com.paneedah.mwc.models.PSO1reticle) {
+                        GL11.glScaled(0F, 0F, 0F);
+                    }
+
+                }).withInventoryModelPositioning((model, itemStack) -> {
+                    if (model instanceof com.paneedah.mwc.models.PSO4x24M) {
+                        GL11.glTranslatef(-0.6F, -0.3F, 0.7F);
+                        GL11.glRotatef(10F, 1f, 0f, 0f);
+                        GL11.glRotatef(-190F, 0f, 1f, 0f);
+                        GL11.glRotatef(0F, 0f, 0f, 1f);
+                        GL11.glScaled(1F, 1F, 1f);
+                    } else if (model instanceof com.paneedah.mwc.models.PSO1reticle) {
+                        GL11.glScaled(0F, 0F, 0F);
+                    }
+                }).withEntityModelPositioning((model, itemStack) -> {
+                    if (model instanceof com.paneedah.mwc.models.PSO4x24M) {
+                        GL11.glTranslatef(0.1F, 0.2F, 0.4F);
+                        GL11.glRotatef(90F, 0f, 0f, 1f);
+                        GL11.glScaled(0.4F, 0.4F, 0.4F);
+                    } else if (model instanceof com.paneedah.mwc.models.PSO1reticle) {
+                        GL11.glScaled(0F, 0F, 0F);
+                    }
+                })
+                .withName("PSO4x24M")
+                .withTextureName("Dummy.png").build(ModernWarfareMod.MOD_CONTEXT);
+
+
+        PSO6x42 = new ItemScope.Builder()
+        		.withSniperReticle(Reticles.RETICLE_PSO762)
+        		.withOpticalZoom()
+        		.withZoomRange(0.22f, 0.06f)
+                .withViewfinderPositioning((p, s) -> {
+                    GL11.glScalef(1.15f, 1.15f, 1.1f);
+                    GL11.glTranslatef(-0.299f, 0.215f, 1.15f);
+                }).withCategory(AttachmentCategory.SCOPE).withCreativeTab(ModernWarfareMod.AttachmentsTab).withCrosshair("LP")
+                .withModel(new com.paneedah.mwc.models.PSO6x42(), "pso6x42.png")
+                .withModernRecipe(
+                    	CraftingGroup.ATTACHMENT_NORMAL,
+                    	new CraftingEntry(MWCItems.gunmetalIngot, 4), 
+                    	new CraftingEntry(MWCItems.steelIngot, 5))
+                .withFirstPersonModelPositioning((model, itemStack) -> {
+                    if (model instanceof com.paneedah.mwc.models.PSO6x42) {
+                        GL11.glTranslatef(0.1F, -0.8F, 0.4F);
+                        GL11.glRotatef(30F, 0f, 1f, 0f);
+                        GL11.glScaled(0.7F, 0.7F, 0.7F);
+                    } else if (model instanceof com.paneedah.mwc.models.PSO1reticle) {
+                        GL11.glScaled(0F, 0F, 0F);
+                    }
+
+                }).withThirdPersonModelPositioning((model, itemStack) -> {
+                    if (model instanceof com.paneedah.mwc.models.PSO6x42) {
+                        GL11.glTranslatef(-0.8F, -0.5F, 0.8F);
+                        GL11.glRotatef(-50F, 0f, 1f, 0f);
+                        GL11.glRotatef(80F, 1f, 0f, 0f);
+                        GL11.glScaled(0.5F, 0.5F, 0.5F);
+                    } else if (model instanceof com.paneedah.mwc.models.PSO1reticle) {
+                        GL11.glScaled(0F, 0F, 0F);
+                    }
+
+                }).withInventoryModelPositioning((model, itemStack) -> {
+                    if (model instanceof com.paneedah.mwc.models.PSO6x42) {
+                        GL11.glTranslatef(-0.6F, -0.3F, 0.7F);
+                        GL11.glRotatef(10F, 1f, 0f, 0f);
+                        GL11.glRotatef(-190F, 0f, 1f, 0f);
+                        GL11.glRotatef(0F, 0f, 0f, 1f);
+                        GL11.glScaled(1F, 1F, 1f);
+                    } else if (model instanceof com.paneedah.mwc.models.PSO1reticle) {
+                        GL11.glScaled(0F, 0F, 0F);
+                    }
+                }).withEntityModelPositioning((model, itemStack) -> {
+                    if (model instanceof com.paneedah.mwc.models.PSO6x42) {
+                        GL11.glTranslatef(0.1F, 0.2F, 0.4F);
+                        GL11.glRotatef(90F, 0f, 0f, 1f);
+                        GL11.glScaled(0.4F, 0.4F, 0.4F);
+                    } else if (model instanceof com.paneedah.mwc.models.PSO1reticle) {
+                        GL11.glScaled(0F, 0F, 0F);
+                    }
+                })
+                .withName("PSO6x42")
                 .withTextureName("Dummy.png").build(ModernWarfareMod.MOD_CONTEXT);
     
 

@@ -30,7 +30,7 @@ public class VSSVintorezFactory {
     public Item createGun(CommonProxy commonProxy) {
         return new Weapon.Builder()
         
-        .withName("vss_vintorez")
+        .withName("vssvintorez")
         .withFireRate(0.7f)
         .withRecoil(1.5f)
         .withZoom(0.9f)

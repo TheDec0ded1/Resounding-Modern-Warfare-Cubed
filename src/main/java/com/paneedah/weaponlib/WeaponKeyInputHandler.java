@@ -351,7 +351,7 @@ public class WeaponKeyInputHandler {
                 instance.getWeapon().decrementZoom(instance);
         }
 
-        else if (mc.isSingleplayer() && KeyBindings.proningSwitchKey.isPressed()) {
+        else if (KeyBindings.proningSwitchKey.isPressed()) {
             modContext.getChannel().sendToServer(new EntityControlMessage(player, CompatibleExtraEntityFlags.PRONING | CompatibleExtraEntityFlags.FLIP, 0));
         }
     }

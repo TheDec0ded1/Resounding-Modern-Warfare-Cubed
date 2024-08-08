@@ -251,6 +251,24 @@
       }
     ]
   },
+      "vssaction_back": {
+    "category": "master",
+    "sounds": [
+      {
+       "name": "mwc:vssaction_back",
+       "stream": false
+      }
+    ]
+  },
+      "vssaction_forward": {
+    "category": "master",
+    "sounds": [
+      {
+       "name": "mwc:vssaction_forward",
+       "stream": false
+      }
+    ]
+  },
       "scarbolt_press": {
     "category": "master",
     "sounds": [
@@ -292,6 +310,15 @@
     "sounds": [
       {
        "name": "mwc:scarmag_unload",
+       "stream": false
+      }
+    ]
+  },
+  "akm": {
+    "category": "master",
+    "sounds": [
+      {
+       "name": "mwc:akm",
        "stream": false
       }
     ]
@@ -3221,6 +3248,15 @@
       }
     ]
   },
+  "vector_silenced": {
+    "category": "master",
+    "sounds": [
+      {
+       "name": "mwc:vector_silenced",
+       "stream": false
+      }
+    ]
+  },
   "molded_ambient": {
     "category": "master",
     "sounds": [
@@ -3469,6 +3505,15 @@
     "sounds": [
       {
        "name": "mwc:makarov",
+       "stream": false
+      }
+    ]
+  },
+  "makarovpb": {
+    "category": "master",
+    "sounds": [
+      {
+       "name": "mwc:makarovpb",
        "stream": false
       }
     ]

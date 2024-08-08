@@ -899,6 +899,9 @@ public class PostProcessPipeline {
 	public static void doPostProcess() {
 		if (!ModernConfigManager.enableScreenShaders)
 			return;
+
+		if (ModernConfigManager.bloomEffect)
+			Bloom.doBloom();
 		
 		// if(true) return;
 

@@ -34,7 +34,7 @@ public class MakarovPMFactory implements GunFactory {
         .withConfigGroup(GunConfigurationGroup.SIDEARM)
         .withMaxShots(1)
         .withShootSound("makarov")
-        .withSilencedShootSound("colt_m45a1_silenced")
+        .withSilencedShootSound("makarovpb")
         .withReloadSound("makarovreload")
         .withUnloadSound("makarovunload")
         .withInspectSound("inspection")

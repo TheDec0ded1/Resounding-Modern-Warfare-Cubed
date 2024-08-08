@@ -64,6 +64,7 @@ public class AuxiliaryAttachments {
     public static ItemAttachment<Weapon> Grozaaction;
     public static ItemAttachment<Weapon> KBP9A91action;
     public static ItemAttachment<Weapon> AK15action;
+    public static ItemAttachment<Weapon> SaigaSporterAction;
     public static ItemAttachment<Weapon> PP19VityazAction;
     public static ItemAttachment<Weapon> PP19BizonAction;
     public static ItemAttachment<Weapon> GalilAction;
@@ -82,6 +83,8 @@ public class AuxiliaryAttachments {
     public static ItemAttachment<Weapon> L96A1BoltAction;
     public static ItemAttachment<Weapon> InterventionBoltAction;
     public static ItemAttachment<Weapon> VSSVintorezAction;
+    public static ItemAttachment<Weapon> VSS_Action;
+    public static ItemAttachment<Weapon> VSSM_Action;
     public static ItemAttachment<Weapon> SR3VikhrAction;
     public static ItemAttachment<Weapon> Type64SMGAction;
     public static ItemAttachment<Weapon> K50MAction;
@@ -1362,6 +1365,22 @@ public class AuxiliaryAttachments {
                 .withName("VSSVintorezAction")
                 .withRenderablePart().withTextureName("Dummy.png")
                 .build(ModernWarfareMod.MOD_CONTEXT);
+
+        VSS_Action = new AttachmentBuilder<Weapon>()
+                .withCategory(AttachmentCategory.EXTRA)
+                // .withCreativeTab(ModernWarfareMod.gunsTab)
+                .withModel(new com.paneedah.mwc.models.VSS_Action(), "vssmetal.png")
+                .withName("VSS_Action")
+                .withRenderablePart().withTextureName("Dummy.png")
+                .build(ModernWarfareMod.MOD_CONTEXT);
+
+        VSSM_Action = new AttachmentBuilder<Weapon>()
+                .withCategory(AttachmentCategory.EXTRA)
+                // .withCreativeTab(ModernWarfareMod.gunsTab)
+                .withModel(new com.paneedah.mwc.models.VSSM_VintorezAction(), "vssmmetal.png")
+                .withName("VSSM_Action")
+                .withRenderablePart().withTextureName("Dummy.png")
+                .build(ModernWarfareMod.MOD_CONTEXT);
      
   SR3VikhrAction = new AttachmentBuilder<Weapon>()
                 .withCategory(AttachmentCategory.EXTRA)
@@ -1456,6 +1475,14 @@ public class AuxiliaryAttachments {
                 // .withCreativeTab(ModernWarfareMod.gunsTab)
                 .withModel(new com.paneedah.mwc.models.AK15Action(), "ak15.png")
                 .withName("AK15action")
+                .withRenderablePart().withTextureName("Dummy.png")
+                .build(ModernWarfareMod.MOD_CONTEXT);
+
+        SaigaSporterAction = new AttachmentBuilder<Weapon>()
+                .withCategory(AttachmentCategory.EXTRA)
+                // .withCreativeTab(ModernWarfareMod.gunsTab)
+                .withModel(new com.paneedah.mwc.models.SaigaSporterAction(), "saigasporter.png")
+                .withName("SaigaSporterAction")
                 .withRenderablePart().withTextureName("Dummy.png")
                 .build(ModernWarfareMod.MOD_CONTEXT);
 
