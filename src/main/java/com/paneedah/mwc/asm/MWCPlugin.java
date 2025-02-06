@@ -17,7 +17,9 @@ public class MWCPlugin implements IFMLLoadingPlugin, IEarlyMixinLoader {
 
     @Override
     public String[] getASMTransformerClass() {
-        return new String[]{};
+        return new String[]{
+                "com.paneedah.mwc.asm.MWCClassTransformer"
+        };
     }
 
     @Override
