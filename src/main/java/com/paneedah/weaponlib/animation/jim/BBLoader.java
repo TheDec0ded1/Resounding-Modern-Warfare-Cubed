@@ -154,7 +154,7 @@ public class BBLoader {
         // lines up. Alert the user if it's a different version so the developer can make adjustments.
         if (!masterJSON.has("format_version")) {
 
-            LOGGER.error("Could not locate \"format_version\" key, cannot read file {} ", fileName);
+            LOGGER.error("Could not locate \"format_version\" key, cannot readVector3D file {} ", fileName);
             return null;
         } else if (!masterJSON.get("format_version").getAsString().equals(version)) {
             LOGGER.error("Warning, this file is running version {}, and this version of VMW is looking for {}", masterJSON.get("format_version").getAsString(), version);

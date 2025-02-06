@@ -110,7 +110,12 @@ like knowing which weapon is better or whether an attachment will be useful to y
 - Fixed fire mode key not doing well with longer key names
 - Fixed open door HUD depending on the ammunition counter
 - Fixed crash when looking at a door while loading the world
+<<<<<<< Updated upstream
 - Fixed Grid shader 
+||||||| Stash base
+=======
+- Fixed positions of many things in the mod being glitchy when getting far away from world origin
+>>>>>>> Stashed changes
 
 ### Removed
 
@@ -145,9 +150,9 @@ like knowing which weapon is better or whether an attachment will be useful to y
 - Updated [MixinBooter](https://www.curseforge.com/minecraft/mc-mods/mixin-booter) dependency to 10.2
 - Updated to [org.jetbrains.gradle.plugin.idea-ext](https://github.com/JetBrains/gradle-idea-ext-plugin) 1.1.9
 - Props now use Red Core `AABBUtil`
-- Updated [Red Core](https://www.curseforge.com/minecraft/mc-mods/red-core) dependency to 0.6-Dev-8
 - Lombokified most of the codebase
 - Updated [foojay-resolver](https://github.com/gradle/foojay-toolchains) to version 0.9.0
+- Updated [Red Core](https://www.curseforge.com/minecraft/mc-mods/red-core) dependency to 0.6
 
 ## Modern Warfare Cubed Version 0.1.9 Changelog - 2024-11-25
 

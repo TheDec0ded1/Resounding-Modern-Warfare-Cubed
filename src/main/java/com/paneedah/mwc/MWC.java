@@ -15,11 +15,9 @@ import com.paneedah.weaponlib.command.BalancePackCommand;
 import com.paneedah.weaponlib.command.CraftingFileCommand;
 import com.paneedah.weaponlib.command.DebugCommand;
 import com.paneedah.weaponlib.config.BalancePackManager;
-import com.paneedah.weaponlib.config.ModernConfigManager;
-import io.redstudioragnarok.redcore.RedCore;
+import dev.redstudio.redcore.utils.OptiNotFine;
 import net.minecraft.block.material.Material;
 import net.minecraft.creativetab.CreativeTabs;
-import net.minecraftforge.client.ClientCommandHandler;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.SidedProxy;
@@ -149,7 +147,7 @@ public final class MWC {
     @Mod.EventHandler
     @SideOnly(Side.CLIENT)
     public void postInitClient(FMLPostInitializationEvent postInitializationEvent) {
-        RedCore.forceOptiFineFastRenderOff();
+        OptiNotFine.forceOptiFineFastRenderOff();
     }
 
     @Mod.EventHandler
