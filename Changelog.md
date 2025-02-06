@@ -110,12 +110,8 @@ like knowing which weapon is better or whether an attachment will be useful to y
 - Fixed fire mode key not doing well with longer key names
 - Fixed open door HUD depending on the ammunition counter
 - Fixed crash when looking at a door while loading the world
-<<<<<<< Updated upstream
-- Fixed Grid shader 
-||||||| Stash base
-=======
+- Fixed Grid shader
 - Fixed positions of many things in the mod being glitchy when getting far away from world origin
->>>>>>> Stashed changes
 
 ### Removed
 
