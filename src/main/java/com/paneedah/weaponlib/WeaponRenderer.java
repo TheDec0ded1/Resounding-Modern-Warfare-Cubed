@@ -3914,25 +3914,26 @@ public class WeaponRenderer extends ModelSource implements IBakedModel {
                 if (!OpenGLSelectionHelper.isInSelectionPass && AnimationModeProcessor.getInstance().getFPSMode()) {
 
                     GlStateManager.pushMatrix();
-                    ResourceLocation loc = new ResourceLocation(ID + ":textures/hud/grid.png");
+                    ResourceLocation gridImage = new ResourceLocation(ID + ":textures/hud/grid.png");
 
                     Shader grid = Shaders.grid;
-                    // GlStateManager.rotate(45f, 0, 1, 0);
-                    // GlStateManager.disableTexture2D();
-                    //MC.getTextureManager().bindTexture(loc);
-                    // GlStateManager.disableDepth();
+                    GlStateManager.rotate(180f, 0, 1, 0);
+                    GlStateManager.rotate(90f, 1, 0, 0);
+                    GlStateManager.disableTexture2D();
+                    MC.getTextureManager().bindTexture(gridImage);
+                    GlStateManager.disableDepth();
                     grid.use();
                     GlStateManager.disableCull();
-                    Tessellator t = Tessellator.getInstance();
-                    BufferBuilder bb = t.getBuffer();
-                    bb.begin(GL11.GL_QUADS, DefaultVertexFormats.POSITION_TEX);
+                    Tessellator tessellator = Tessellator.getInstance();
+                    BufferBuilder tessellatorBuffer = tessellator.getBuffer();
+                    tessellatorBuffer.begin(GL11.GL_QUADS, DefaultVertexFormats.POSITION_TEX);
                     double sL = 30.0;
                     double y = 10;
-                    bb.pos(-1 * sL, y, -1 * sL).tex(1, 0).endVertex();
-                    bb.pos(1 * sL, y, -1 * sL).tex(1, 1).endVertex();
-                    bb.pos(1 * sL, y, 1 * sL).tex(0, 1).endVertex();
-                    bb.pos(-1 * sL, y, 1 * sL).tex(1, 1).endVertex();
-                    t.draw();
+                    tessellatorBuffer.pos(-1 * sL, y, -1 * sL).tex(1, 0).endVertex();
+                    tessellatorBuffer.pos(1 * sL, y, -1 * sL).tex(1, 1).endVertex();
+                    tessellatorBuffer.pos(1 * sL, y, 1 * sL).tex(0, 1).endVertex();
+                    tessellatorBuffer.pos(-1 * sL, y, 1 * sL).tex(1, 1).endVertex();
+                    tessellator.draw();
 
                     GlStateManager.enableDepth();
                     GlStateManager.popMatrix();
