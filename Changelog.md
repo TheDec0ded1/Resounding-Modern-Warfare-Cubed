@@ -93,6 +93,7 @@ like knowing which weapon is better or whether an attachment will be useful to y
 - Improved the blending of the smoke grenades smoke
 - Adjusted configuration categories for all weapons
   - SMG -> SUBMACHINE_GUN, RIFLES -> RIFLE, SIDEARM / REVOLVER -> HANDGUN 
+- Improved and cleaned up Blood particles (Now supports arbitrary sizes like 64x64)
 
 ### Fixed
 
