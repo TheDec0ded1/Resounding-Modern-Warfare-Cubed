@@ -1035,8 +1035,14 @@ public class WeaponRenderer extends ModelSource implements IBakedModel {
 
         private String animationFileName;
 
+        /**
+         * Configures modern animations for a weapon based on the provided animation file.
+         *
+         * @param animationFile      The name of the animation file to load. (Usually the weapon name)
+         * @param parts   A list of weapon parts associated with the animations.
+         *
+         */
         public Builder setupModernMagazineAnimations(String animationFile, Part... parts) {
-            // .withFirstPersonCustomPositioningReloading(Magazines.M38Mag,
 
             this.setAnimationFileName(animationFile);
 
@@ -1106,12 +1112,15 @@ public class WeaponRenderer extends ModelSource implements IBakedModel {
 
         }
 
-        public static boolean isOnServer() {
-            return FMLCommonHandler.instance().getMinecraftServerInstance().getServerOwner() != null;
-        }
-
-
-        public Builder setupModernAnimations(String animationFile, ItemAttachment<Weapon> aR15Action) {
+        /**
+         * Configures modern animations for a weapon based on the provided animation file.
+         *
+         * @param animationFile      The name of the animation file to load. (Usually the weapon name)
+         * @param actionAttachment   The weapon attachment associated with the action animations.
+         *
+         * <p>Note: This method has no effect if executed on the server side.</p>
+         */
+        public Builder setupModernAnimations(String animationFile, ItemAttachment<Weapon> actionAttachment) {
             if (FMLCommonHandler.instance().getSide().isServer()) {
                 return this;
             }
@@ -1121,8 +1130,7 @@ public class WeaponRenderer extends ModelSource implements IBakedModel {
             final String rightBoneName = "righthand";
 
             // Makes sure the file is loaded
-
-            AnimationSet set = BBLoader.getAnimationSet(animationFile);
+            AnimationSet animationSet = BBLoader.getAnimationSet(animationFile);
 
 
 
@@ -1133,44 +1141,44 @@ public class WeaponRenderer extends ModelSource implements IBakedModel {
              * ==============
              */
 
-            if (set.containsKey(BBLoader.KEY_LOAD_EMPTY)) {
+            if (animationSet.containsKey(BBLoader.KEY_LOAD_EMPTY)) {
                 hasLoadEmpty = true;
             }
-            if (set.containsKey(BBLoader.KEY_UNLOAD_EMPTY)) {
+            if (animationSet.containsKey(BBLoader.KEY_UNLOAD_EMPTY)) {
                 hasUnloadEmpty = true;
             }
-            if (set.containsKey(BBLoader.KEY_TACTICAL_RELOAD)) {
+            if (animationSet.containsKey(BBLoader.KEY_TACTICAL_RELOAD)) {
                 hasTacticalReload = true;
             }
-            if (set.containsKey(BBLoader.KEY_COMPOUND_RELOAD)) {
+            if (animationSet.containsKey(BBLoader.KEY_COMPOUND_RELOAD)) {
                 hasCompoundReload = true;
             }
-            if (set.containsKey(BBLoader.KEY_COMPOUND_RELOAD_EMPTY)) {
+            if (animationSet.containsKey(BBLoader.KEY_COMPOUND_RELOAD_EMPTY)) {
                 hasCompoundReloadEmpty = true;
             }
-            if (set.containsKey(BBLoader.KEY_INSPECT)) {
+            if (animationSet.containsKey(BBLoader.KEY_INSPECT)) {
                 hasInspect = true;
             }
-            if (set.containsKey(BBLoader.KEY_DRAW)) {
+            if (animationSet.containsKey(BBLoader.KEY_DRAW)) {
                 hasDraw = true;
             }
-            if (set.containsKey(BBLoader.KEY_LOAD)) {
+            if (animationSet.containsKey(BBLoader.KEY_LOAD)) {
                 hasLoad = true;
             }
-            if (set.containsKey(BBLoader.KEY_UNLOAD)) {
+            if (animationSet.containsKey(BBLoader.KEY_UNLOAD)) {
                 hasUnload = true;
             }
 
-            if (set.containsKey(BBLoader.KEY_EJECT_SPENT_ROUND)) {
+            if (animationSet.containsKey(BBLoader.KEY_EJECT_SPENT_ROUND)) {
                 hasEjectSpentRound = true;
             }
 
-            if (set.containsKey(BBLoader.KEY_EJECT_SPENT_ROUND_AIMED)) {
+            if (animationSet.containsKey(BBLoader.KEY_EJECT_SPENT_ROUND_AIMED)) {
                 hasEjectSpentRoundAimed = true;
             }
 
             // Check if compound & compound empty should use tactical functionality
-            SingleAnimation compound = set.getSingleAnimation(BBLoader.KEY_COMPOUND_RELOAD);
+            SingleAnimation compound = animationSet.getSingleAnimation(BBLoader.KEY_COMPOUND_RELOAD);
             if (compound != null) {
                 if (compound.hasBone(BBLoader.KEY_MAGIC_MAGAZINE)) {
                     if (compound.getBone(BBLoader.KEY_MAGIC_MAGAZINE).getBbTransition().size() > 1) {
@@ -1179,7 +1187,7 @@ public class WeaponRenderer extends ModelSource implements IBakedModel {
                 }
             }
 
-            SingleAnimation compoundEmpty = set.getSingleAnimation(BBLoader.KEY_COMPOUND_RELOAD_EMPTY);
+            SingleAnimation compoundEmpty = animationSet.getSingleAnimation(BBLoader.KEY_COMPOUND_RELOAD_EMPTY);
             if (compoundEmpty != null) {
                 if (compoundEmpty.hasBone(BBLoader.KEY_MAGIC_MAGAZINE)) {
                     if (compoundEmpty.getBone(BBLoader.KEY_MAGIC_MAGAZINE).getBbTransition().size() > 1) {
@@ -1229,7 +1237,7 @@ public class WeaponRenderer extends ModelSource implements IBakedModel {
                 setupModernEjectSpentRoundAimedAnimation(animationFile);
             }
 
-            setupCustomKeyedPart(aR15Action, animationFile, BBLoader.KEY_ACTION);
+            setupCustomKeyedPart(actionAttachment, animationFile, BBLoader.KEY_ACTION);
 
             return this;
         }
