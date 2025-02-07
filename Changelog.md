@@ -91,12 +91,14 @@ like knowing which weapon is better or whether an attachment will be useful to y
 - Gas Detector's and some attachments won't unnecessarily hide your crosshair anymore
 - Reworked headers in the workbench (Workbench, Crafting, Inventory)
 - Improved the blending of the smoke grenades smoke
+- Adjusted configuration categories for all weapons
+  - SMG -> SUBMACHINE_GUN, RIFLES -> RIFLE, SIDEARM / REVOLVER -> HANDGUN 
 
 ### Fixed
 
 - Fixed the default craftingmappings.json
 - Fixed the position of the RPG-7 and M202 projectiles
-- Fixed compatiblity with GroovyScript 1.2+
+- Fixed compatibility with GroovyScript 1.2+
 - Fixed certain sounds not being registered:
   - revolver_reload
   - revolverbullet
