@@ -23,7 +23,7 @@ public class G43GewehrFactory implements GunFactory {
                 .withFireRate(0.25f)
                 .withRecoil(4.5f)
                 .withZoom(0.9f)
-                .withConfigGroup(GunConfigurationGroup.RIFLES)
+                .withConfigGroup(GunConfigurationGroup.RIFLE)
                 .withMaxShots(1)
                 //.withMaxShots(5)
                 .withShootSound("g43_gewehr")

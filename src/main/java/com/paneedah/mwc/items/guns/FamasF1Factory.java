@@ -28,7 +28,7 @@ public class FamasF1Factory implements GunFactory {
                 .withFireRate(0.8f)
                 .withRecoil(2.5f)
                 .withZoom(0.9f)
-                .withConfigGroup(GunConfigurationGroup.RIFLES)
+                .withConfigGroup(GunConfigurationGroup.RIFLE)
                 .hasFlashPedals()
                 .withMaxShots(1, 3, Integer.MAX_VALUE)
                 //.withMaxShots(5)

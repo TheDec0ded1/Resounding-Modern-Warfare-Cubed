@@ -30,7 +30,7 @@ public class KBP9A91Factory implements GunFactory {
                 .withFireRate(0.7f)
                 .withRecoil(2f)
                 .withZoom(0.9f)
-                .withConfigGroup(GunConfigurationGroup.RIFLES)
+                .withConfigGroup(GunConfigurationGroup.RIFLE)
                 .withShellType(Type.PISTOL)
                 .hasFlashPedals()
                 .withMaxShots(1, Integer.MAX_VALUE)
