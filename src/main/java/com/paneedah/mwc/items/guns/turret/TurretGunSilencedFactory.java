@@ -1,6 +1,7 @@
-package com.paneedah.mwc.items.guns;
+package com.paneedah.mwc.items.guns.turret;
 
 import com.paneedah.mwc.MWC;
+import com.paneedah.mwc.items.guns.GunFactory;
 import com.paneedah.mwc.models.Glock18C;
 import com.paneedah.mwc.proxies.CommonProxy;
 import com.paneedah.mwc.weapons.AuxiliaryAttachments;
@@ -15,7 +16,7 @@ import com.paneedah.weaponlib.config.BalancePackManager.GunConfigurationGroup;
 import net.minecraft.item.Item;
 import org.lwjgl.opengl.GL11;
 
-public class turretgunsilencedFactory implements GunFactory {
+public class TurretGunSilencedFactory implements GunFactory {
 
 
     public Item createGun(CommonProxy commonProxy) {

@@ -156,7 +156,7 @@ public class WeaponRenderer extends ModelSource implements IBakedModel {
 
     private final ItemOverrideList itemOverrideList = new WeaponItemOverrideList(Collections.emptyList());
 
-    ItemCameraTransforms.TransformType transformType;
+    @Setter ItemCameraTransforms.TransformType transformType;
 
     public static class Builder {
 
@@ -3687,14 +3687,10 @@ public class WeaponRenderer extends ModelSource implements IBakedModel {
         GL11.glTranslatef(xOffset, yOffset, zOffset);
     }
 
-    public static WeaponRotationHandler wrh = new WeaponRotationHandler();
+    public static WeaponRotationHandler weaponRotationHandler = new WeaponRotationHandler();
 
     public static void captureAtlasPosition() {
         GL11.glGetFloat(GL11.GL_MODELVIEW_MATRIX, atlasMatrix);
-    }
-
-    public void setTransformType(ItemCameraTransforms.TransformType type) {
-        this.transformType = type;
     }
 
     @SideOnly(Side.CLIENT)
@@ -4123,7 +4119,7 @@ public class WeaponRenderer extends ModelSource implements IBakedModel {
 
 			}*/
 
-                wrh.run(renderContext, stateDescriptor);
+                weaponRotationHandler.run(renderContext, stateDescriptor);
                 //ads.applyTransformations();
                 // AnimationModeProcessor.instance.applyCameraTransforms();
                 if (DebugPositioner.isDebugModeEnabled()) {

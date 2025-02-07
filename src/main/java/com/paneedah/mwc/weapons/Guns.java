@@ -1,6 +1,7 @@
 package com.paneedah.mwc.weapons;
 
 import com.paneedah.mwc.items.guns.*;
+import com.paneedah.mwc.items.guns.turret.*;
 import com.paneedah.mwc.proxies.CommonProxy;
 import net.minecraft.item.Item;
 
@@ -324,8 +325,8 @@ public class Guns {
         GL06 = new GL06Factory().createGun(proxy);
         M79 = new M79Factory().createGun(proxy);
         Chainsaw = new ChainsawFactory().createGun(proxy);
-        turretgun = new turretgunFactory().createGun(proxy);
-        turretgunupgraded = new turretgunupgradedFactory().createGun(proxy);
-        turretgunsilenced = new turretgunsilencedFactory().createGun(proxy);
+        turretgun = new TurretGunFactory().createGun(proxy);
+        turretgunupgraded = new TurretGunUpgradedFactory().createGun(proxy);
+        turretgunsilenced = new TurretGunSilencedFactory().createGun(proxy);
     }
 }
