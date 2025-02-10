@@ -62,6 +62,7 @@ like knowing which weapon is better or whether an attachment will be useful to y
   - Added wiki
   - Added helper methods to avoid typing enums strings
   - Added more validations
+- New enableFancyRainDrops config, allows you to disable the raindrops that appear during rain
 
 ### Changed
 
@@ -94,6 +95,10 @@ like knowing which weapon is better or whether an attachment will be useful to y
 - Adjusted configuration categories for all weapons
   - SMG -> SUBMACHINE_GUN, RIFLES -> RIFLE, SIDEARM / REVOLVER -> HANDGUN 
 - Improved and cleaned up Blood particles (Now supports arbitrary sizes like 64x64)
+- Improved Fancy Rain
+  - Uses different textures based on rain intensity 
+  - Fades out closer to the ground 
+  - Supports recoloring Fog and Rain 
 
 ### Fixed
 

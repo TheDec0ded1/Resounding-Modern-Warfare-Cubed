@@ -10,6 +10,7 @@ import com.paneedah.weaponlib.render.DepthTexture;
 import com.paneedah.weaponlib.render.HDRFramebuffer;
 import com.paneedah.weaponlib.render.Shaders;
 import com.paneedah.weaponlib.render.bgl.weather.ModernWeatherRenderer;
+import lombok.Getter;
 import net.minecraft.client.gui.ScaledResolution;
 import net.minecraft.client.particle.ParticleRain;
 import net.minecraft.client.renderer.BufferBuilder;
@@ -49,14 +50,14 @@ public class PostProcessPipeline {
     private static int height = -1;
 
     // Textures
-    public static final ResourceLocation HEAT_DISTORTION = new ResourceLocation(ID, "textures/maps/heatdistortion.png");
-    public static final ResourceLocation CLOUD_SPRITE = new ResourceLocation(ID, "textures/maps/cloudsprite.png");
+    public static final ResourceLocation HEAT_DISTORTION_MAP = new ResourceLocation(ID, "textures/maps/heatdistortion.png");
+    public static final ResourceLocation CLOUD_SPRITE_MAP = new ResourceLocation(ID, "textures/maps/cloudsprite.png");
     public static final ResourceLocation RAIN_DROP_TEXTURE = new ResourceLocation(ID, "textures/maps/raindrop.png");
     public static final ResourceLocation SNOW_FLAKE_TEXTURE = new ResourceLocation(ID, "textures/maps/snowflake.png");
 
     // Float buffers
-    private static final FloatBuffer projectionBuffer = BufferUtils.createFloatBuffer(16);
-    private static final FloatBuffer modelViewBuffer = BufferUtils.createFloatBuffer(16);
+    private static final FloatBuffer PROJECTION_BUFFER = BufferUtils.createFloatBuffer(16);
+    private static final FloatBuffer MODELVIEW_BUFFER = BufferUtils.createFloatBuffer(16);
 
     private static final FloatBuffer PROJECTION_MATRIX_BUFFER = BufferUtils.createFloatBuffer(16);
     private static final FloatBuffer MODELVIEW_MATRIX_BUFFER = BufferUtils.createFloatBuffer(16);
@@ -77,25 +78,21 @@ public class PostProcessPipeline {
 	private static int depthTexture = -1;
 	*/
 
-    private static final int fauxColorTexture = -1;
-
-
-    private static DepthTexture scopeDepthTexture;
+    @Getter private static DepthTexture scopeDepthTexture;
     private static DepthTexture normalDepthTexture;
 
     // Gives us the original weather renderer to swap back to
     private static IRenderHandler originalWeatherRenderer = null;
     private static boolean isOriginalWeatherRendererDirty = true;
 
-
-    private static final ModernWeatherRenderer modernWeatherRenderer = new ModernWeatherRenderer();
+    /// Our Custom Weather Renderer, controls the custom rain effects
+    private static final ModernWeatherRenderer MODERN_WEATHER_RENDERER = new ModernWeatherRenderer();
 
     private static final float ALPHA_MULTIPLIER_DISTORTION = 0.5f;
 
     // Constants
     private static final int MAX_RAINDROPS_ON_SCREEN = 16;
     private static final float BASE_FOG_INTENSITY = 0.2f;
-    private static final float[] BASE_FOG_COLOR = new float[]{0.6f, 0.6f, 0.6f};
 
     /**
      * This is a useful tool to easily renderer things to the distortion buffer
@@ -104,6 +101,7 @@ public class PostProcessPipeline {
      * @author Homer Riva-Cambrin, 2022
      * @version September 28th, 2022
      */
+    @Getter
     public static class DistortionPoint {
         private final float x;
         private final float y;
@@ -125,34 +123,6 @@ public class PostProcessPipeline {
         public void update() {
             this.alpha = 1.0f - (System.currentTimeMillis() - creationTime) / life;
 
-        }
-
-        public float getAlpha() {
-            return this.alpha;
-        }
-
-        public float getX() {
-            return this.x;
-        }
-
-        public float getY() {
-            return this.y;
-        }
-
-        public float getZ() {
-            return this.z;
-        }
-
-        public float getSize() {
-            return this.size;
-        }
-
-        public float getLife() {
-            return this.life;
-        }
-
-        public long getBirthTime() {
-            return creationTime;
         }
 
     }
@@ -186,7 +156,7 @@ public class PostProcessPipeline {
      * @return the weather renderer
      */
     public static ModernWeatherRenderer getWeatherRenderer() {
-        return modernWeatherRenderer;
+        return MODERN_WEATHER_RENDERER;
     }
 
     /**
@@ -195,13 +165,13 @@ public class PostProcessPipeline {
     public static void setWorldElements() {
         final IRenderHandler currentWeatherRenderer = MC.world.provider.getWeatherRenderer();
 
-        if (isOriginalWeatherRendererDirty || (currentWeatherRenderer != modernWeatherRenderer && currentWeatherRenderer != originalWeatherRenderer)) {
+        if (isOriginalWeatherRendererDirty || (currentWeatherRenderer != MODERN_WEATHER_RENDERER && currentWeatherRenderer != originalWeatherRenderer)) {
             originalWeatherRenderer = currentWeatherRenderer;
             isOriginalWeatherRendererDirty = false;
         }
 
         if (ModernConfigManager.enableFancyRainAndSnow) {
-            MC.world.provider.setWeatherRenderer(modernWeatherRenderer);
+            MC.world.provider.setWeatherRenderer(MODERN_WEATHER_RENDERER);
             MC.effectRenderer.registerParticle(EnumParticleTypes.WATER_DROP.getParticleID(), new ParticleFancyRain.Factory());
         } else {
             MC.world.provider.setWeatherRenderer(originalWeatherRenderer);
@@ -356,10 +326,6 @@ public class PostProcessPipeline {
 
     }
 
-    public static DepthTexture getScopeDepthTexture() {
-        return scopeDepthTexture;
-    }
-
     public static void blitDepth() {
 
         Framebuffer buffer = MC.getFramebuffer();
@@ -469,7 +435,7 @@ public class PostProcessPipeline {
 		distortionBuffer.bindFramebuffer(false);
 
 		*/
-        distortionList.removeIf((s) -> (System.currentTimeMillis() - s.getBirthTime() > s.getLife()));
+        distortionList.removeIf((s) -> (System.currentTimeMillis() - s.getCreationTime() > s.getLife()));
 
         for (DistortionPoint dp : distortionList)
             dp.update();
@@ -493,26 +459,26 @@ public class PostProcessPipeline {
         GlStateManager.enableBlend();
         GlStateManager.alphaFunc(GL11.GL_GREATER, 0.0F);
         GlStateManager.blendFunc(SourceFactor.ONE, DestFactor.ONE_MINUS_SRC_ALPHA);
-        MC.getTextureManager().bindTexture(CLOUD_SPRITE);
+        MC.getTextureManager().bindTexture(CLOUD_SPRITE_MAP);
 
         GlStateManager.enableDepth();
 
         GlStateManager.depthMask(false);
 
-        modelViewBuffer.rewind();
-        projectionBuffer.rewind();
+        MODELVIEW_BUFFER.rewind();
+        PROJECTION_BUFFER.rewind();
 
-        GL11.glGetFloat(GL11.GL_MODELVIEW_MATRIX, modelViewBuffer);
-        GL11.glGetFloat(GL11.GL_PROJECTION_MATRIX, projectionBuffer);
+        GL11.glGetFloat(GL11.GL_MODELVIEW_MATRIX, MODELVIEW_BUFFER);
+        GL11.glGetFloat(GL11.GL_PROJECTION_MATRIX, PROJECTION_BUFFER);
 
-        modelViewBuffer.rewind();
-        projectionBuffer.rewind();
+        MODELVIEW_BUFFER.rewind();
+        PROJECTION_BUFFER.rewind();
 
         Matrix4f modelViewMatrix = new Matrix4f();
         Matrix4f projectionMatrix = new Matrix4f();
 
-        modelViewMatrix.load(modelViewBuffer);
-        projectionMatrix.load(projectionBuffer);
+        modelViewMatrix.load(MODELVIEW_BUFFER);
+        projectionMatrix.load(PROJECTION_BUFFER);
 
         Matrix4f viewProjection = new Matrix4f();
         Matrix4f.mul(projectionMatrix, modelViewMatrix, viewProjection);
@@ -574,10 +540,6 @@ public class PostProcessPipeline {
         return BASE_FOG_INTENSITY * MC.world.getRainStrength(MC.getRenderPartialTicks());
     }
 
-    public static float[] getBaseFogColor() {
-        return BASE_FOG_COLOR;
-    }
-
     /**
      * Called at the end of the world renderer, copies the framebuffer into a second
      * buffer, applies post effects, and renders it back
@@ -586,8 +548,6 @@ public class PostProcessPipeline {
         if (!ModernConfigManager.enableWorldShaders) {
             return;
         }
-
-        //Shaders.postWorld = ShaderLoader.loadVMWShader("postworld");
 
         // Check if buffers need to be remade
         if (shouldRecreateFramebuffer()) {
@@ -614,15 +574,18 @@ public class PostProcessPipeline {
         Shaders.postWorld.use();
         Shaders.postWorld.uniform1i("depthBuf", 6);
         Shaders.postWorld.uniform1f("fogIntensity", getFogIntensity());
-        Shaders.postWorld.uniform3f("baseFogColor", getBaseFogColor()[0], getBaseFogColor()[1], getBaseFogColor()[2]);
-        // Shaders.postWorld.uniform1f("help", 0.2f);
-        // Shaders.postWorld.uniform1f("joe[0]", 1.0f);
+        float fogRed = (float) ModernConfigManager.baseFogColorRed;
+        float fogGreen = (float) ModernConfigManager.baseFogColorGreen;
+        float fogBlue = (float) ModernConfigManager.baseFogColorBlue;
 
-        // GL20.glUniform1f(GL20.getloc, v0);
+        if (!MC.world.isDaytime()) { // Reduce brightness during the night
+            fogRed *= 0.01f;
+            fogGreen *= 0.01f;
+            fogBlue *= 0.5f; // Keep a bit of blue for a night-like feel
+        }
 
-        // Shaders.post.uniform3f("fk3f[0]", 5f, 0f, 0f);
+        Shaders.postWorld.uniform3f("baseFogColor", fogRed, fogGreen, fogBlue);
 
-        // Shaders.post.uniform1f("help", 0.0f);
         // Send light data to the shader and
         // update the light manager
         lightManager.updateUniforms(Shaders.postWorld);
@@ -747,8 +710,6 @@ public class PostProcessPipeline {
         // Prepare
         prepareRainBuffer();
         /*
-         * ResourceLocation res = new ResourceLocation("mw" + ":" +
-         * "textures/maps/snowflake.png");
          *
          * GL11.glTexParameteri(GL11.GL_TEXTURE_2D, GL11.GL_TEXTURE_MIN_FILTER,
          * GL11.GL_LINEAR); GL11.glTexParameteri(GL11.GL_TEXTURE_2D,
@@ -758,7 +719,8 @@ public class PostProcessPipeline {
         rainKeepAlive = false;
 
         double dt = 0.05;
-        for (float[] raindrop : rainDrops) {
+        if (ModernConfigManager.enableFancyRainDrops){
+            for (float[] raindrop : rainDrops) {
             if (raindrop[7] == 0f) {
                 continue;
             }
@@ -790,8 +752,8 @@ public class PostProcessPipeline {
             }
 
             // Apply friction to velocity
-            raindrop[2] *= 0.9999;
-            raindrop[3] *= 0.992;
+            raindrop[2] *= 0.9999f;
+            raindrop[3] *= 0.992f;
 
             // Semi-implicit euler integration
             float vertical = (float) (raindrop[3] * dt);
@@ -807,7 +769,8 @@ public class PostProcessPipeline {
                 alphaFade = 1.0f - (raindrop[6] - raindrop[7] / 2.0f) / (raindrop[7] / 2);
             }
 
-            drawRaindrop(raindrop[0], raindrop[1], raindrop[4], raindrop[8], alphaFade);
+                drawRaindrop(raindrop[0], raindrop[1], raindrop[4], raindrop[8], alphaFade);
+            }
         }
 
         //System.out.println("There are " + (rainKeepAlive ? "still" : "no") + " drops left.");
@@ -889,7 +852,7 @@ public class PostProcessPipeline {
 
     /**
      * Should be called at the end of rendering, applies to all rendering including
-     * the hand. This effects are effects that transcend things like the world, and
+     * the hand. These effects are effects that transcend things like the world, and
      * are flat (i.e. film grain)
      */
     public static void doPostProcess() {
@@ -901,8 +864,6 @@ public class PostProcessPipeline {
             Bloom.doBloom();
         }
 
-        // if(true) return;
-
         if (AnimationModeProcessor.getInstance().getFPSMode()) {
             return;
         }
@@ -913,10 +874,6 @@ public class PostProcessPipeline {
         if (shouldRecreateFramebuffer()) {
             recreateFramebuffers();
         }
-
-        // MC.player.world.play
-        // Draws rain droplets
-        // drawRainBuffer();
 
         GlStateManager.enableBlend();
         GlStateManager.disableAlpha();
@@ -934,7 +891,7 @@ public class PostProcessPipeline {
 
         // Heat distortion texture
         GlStateManager.setActiveTexture(GL13.GL_TEXTURE0 + 4);
-        MC.getTextureManager().bindTexture(HEAT_DISTORTION);
+        MC.getTextureManager().bindTexture(HEAT_DISTORTION_MAP);
         GL11.glTexParameteri(GL11.GL_TEXTURE_2D, GL11.GL_TEXTURE_MIN_FILTER, GL11.GL_LINEAR);
 
         // Return to default texture unit
@@ -963,9 +920,6 @@ public class PostProcessPipeline {
         Bloom.renderFboTriangle(boof, boof.framebufferWidth, boof.framebufferHeight);
 
         Shaders.post.release();
-
-        // drawRainBuffer();
-
     }
 
 }
