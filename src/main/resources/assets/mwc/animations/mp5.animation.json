@@ -60,6 +60,11 @@
 						"1.2": [0, 0, 0]
 					}
 				}
+			},
+			"sound_effects": {
+				"0.5": {
+					"effect": "mp5bolt_smack"
+				}
 			}
 		},
 		"animation.MP5.inspect": {
@@ -289,26 +294,20 @@
 				"0.0": {
 					"effect": "gun_unrest"
 				},
+				"0.2": {
+					"effect": "mp5_touchaction"
+				},
 				"0.3": {
 					"effect": "mp5bolt_back"
 				},
-				"0.5": {
+				"0.6": {
 					"effect": "mp5bolt_back2"
 				},
-				"0.7": {
-					"effect": "gun_foley"
+				"1.9": {
+					"effect": "mp5mag_load"
 				},
-				"2.4": {
-					"effect": "pistolmag_touchgun"
-				},
-				"2.5": {
-					"effect": "smallmag_insert"
-				},
-				"3.2": {
-					"effect": "mp5bolt_release"
-				},
-				"3.6": {
-					"effect": "gun_rest"
+				"3.5": {
+					"effect": "mp5bolt_smack"
 				}
 			}
 		},
@@ -415,20 +414,17 @@
 				}
 			},
 			"sound_effects": {
-				"0.0": {
-					"effect": "gun_unrest"
+				"0.3": {
+					"effect": "mp5mag_unload"
 				},
-				"0.4": {
-					"effect": "smallmag_unload"
-				},
-				"0.8": {
-					"effect": "gun_foley2"
+				"2.3": {
+					"effect": "mp5_touchaction"
 				},
 				"2.4": {
 					"effect": "mp5bolt_back"
 				},
-				"2.5": {
-					"effect": "mp5bolt_release"
+				"2.7": {
+					"effect": "mp5bolt_smack"
 				}
 			}
 		},
@@ -646,32 +642,23 @@
 				}
 			},
 			"sound_effects": {
-				"0.0": {
-					"effect": "gun_unrest"
+				"0.2": {
+					"effect": "mp5_touchaction"
 				},
 				"0.3": {
 					"effect": "mp5bolt_back"
 				},
-				"0.5": {
+				"0.6": {
 					"effect": "mp5bolt_back2"
 				},
-				"0.6": {
-					"effect": "gun_foley"
+				"1.5": {
+					"effect": "mp5mag_unload"
 				},
-				"1.9": {
-					"effect": "smallmag_unload"
+				"1.7": {
+					"effect": "mp5mag_load"
 				},
-				"2.2": {
-					"effect": "pistolmag_touchgun"
-				},
-				"2.3": {
-					"effect": "smallmag_insert"
-				},
-				"3.3": {
-					"effect": "mp5bolt_release"
-				},
-				"4.1": {
-					"effect": "gun_rest"
+				"3.5": {
+					"effect": "mp5bolt_smack"
 				}
 			}
 		},
@@ -842,32 +829,23 @@
 				}
 			},
 			"sound_effects": {
-				"0.0": {
-					"effect": "gun_unrest"
+				"0.2": {
+					"effect": "mp5_touchaction"
 				},
 				"0.3": {
 					"effect": "mp5bolt_back"
 				},
-				"0.5": {
+				"0.6": {
 					"effect": "mp5bolt_back2"
 				},
-				"1.2": {
-					"effect": "smallmag_unload"
+				"0.9": {
+					"effect": "mp5mag_unload"
 				},
-				"1.7": {
-					"effect": "gun_foley"
+				"2.6": {
+					"effect": "mp5mag_load"
 				},
-				"3.1": {
-					"effect": "pistolmag_touchgun"
-				},
-				"3.2": {
-					"effect": "smallmag_insert"
-				},
-				"4.1": {
+				"4.2": {
 					"effect": "mp5bolt_smack"
-				},
-				"4.5": {
-					"effect": "gun_rest"
 				}
 			}
 		},
@@ -1038,32 +1016,23 @@
 				}
 			},
 			"sound_effects": {
-				"0.0": {
-					"effect": "gun_unrest"
+				"0.1": {
+					"effect": "mp5_touchaction"
 				},
-				"0.3": {
+				"0.2": {
 					"effect": "mp5bolt_back"
 				},
-				"0.5": {
+				"0.6": {
 					"effect": "mp5bolt_back2"
 				},
-				"1.2": {
-					"effect": "smallmag_unload"
+				"0.9": {
+					"effect": "mp5mag_unload"
 				},
-				"1.7": {
-					"effect": "gun_foley"
+				"2.5": {
+					"effect": "mp5mag_load"
 				},
-				"3.1": {
-					"effect": "pistolmag_touchgun"
-				},
-				"3.2": {
-					"effect": "smallmag_insert"
-				},
-				"4.1": {
+				"4.2": {
 					"effect": "mp5bolt_smack"
-				},
-				"4.5": {
-					"effect": "gun_rest"
 				}
 			}
 		}

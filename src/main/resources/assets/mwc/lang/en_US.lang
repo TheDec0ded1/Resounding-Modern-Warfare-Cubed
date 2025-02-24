@@ -988,6 +988,7 @@ item.mwc_KS23ExtendedBarrel.name=KS-23 Extended Barrel
 item.mwc_USPMatchCompensator.name=P12 Compensator
 item.mwc_DSR1Barrel.name=DSR1 Barrel
 item.mwc_DSR1BarrelLong.name=DSR-1 Extended Barrel
+
 item.aek971.name=AEK-971
 item.aek973.name=AEK-973
 item.mwc_AIMSHandguard.name=Romainian Bakelite AK Handguard
@@ -1409,6 +1410,39 @@ item.mwc_QBZ95BUpper.name=QBZ-95B Upper Handguard
 item.mwc_QBZ95Cover.name=QBZ-95 Dustcover
 item.mwc_QBZ95Mag.name=30rnd 5.8x42mm DAP QBZ-95 Magazine
 item.mwc_QBZ95Upper.name=QBZ-95 Upper Handguard
+item.aa12.name=AA12
+item.mwc_AA12Body.name=AA12 Body
+item.mwc_AA12BoxMag.name=8rnd 12G AA12 Magazine
+item.mwc_AA12Irons.name=AA12 Iron Sights
+item.mwc_AA12RailMount.name=AA12 Rail Mount
+item.m2_carbine.name=M2 Carbine
+item.micro_uzi.name=Micro UZI
+item.mwc_MicroUziGrip.name=Micro UZI Grip
+item.mwc_MicroUziStock.name=Micro UZI Stock
+item.mini_uzi.name=Mini UZI
+item.mwc_MiniUziGrip.name=Mini UZI Grip
+item.mwc_MiniUziHandguard.name=Mini UZI Handguard
+item.mwc_MiniUziStock.name=Mini UZI Stock
+item.mwc_PKMBox.name=100rnd 7.62x54R PKM Belt Box
+item.saiga545.name=Saiga 5.45 Sporter
+item.mwc_Saiga545Mag.name=10rnd 5.45x39mm AK74 Magazine
+item.mwc_SaigaSporterDC.name=Saiga Sporter Dustcover
+item.mwc_SaigaSporterPolymerHG.name=Saiga Sporter Polymer Handguard
+item.mwc_SaigaSporterPolymerStock.name=Saiga Sporter Polymer Stock
+item.mwc_SaigaSporterWoodenHG.name=Saiga Sporter Wooden Handguard
+item.mwc_SaigaSporterWoodenStock.name=Saiga Sporter Wooden Stock
+item.mwc_UziGrip.name=UZI Grip
+item.mwc_UziHandguard.name=UZI Handguard
+item.mwc_UziHandguardVert.name=UZI Vertical Grip Handguard
+item.mwc_UziMag20.name=20rnd 9x19mm UZI Magazine
+item.mwc_UziMag25.name=25rnd 9x19mm UZI Magazine
+item.mwc_UziMag32.name=32rnd 9x19mm UZI Magazine
+item.mwc_UziMag50.name=50rnd 9x19mm UZI Magazine
+item.mwc_UziStock.name=UZI Stock
+item.mwc_UziStockFolded.name=UZI Stock (Folded)
+item.mwc_UziSuppressor.name=UZI Suppressor
+item.mwc_UziWoodStock.name=UZI Wooden Stock
+
 
 
 tile.weapon_workbench.name=Weapons/Armor Workbench
@@ -1549,25 +1583,37 @@ tile.mwc_swat_truck.name=SWAT Truck
 
 itemGroup.guns_tab=Vic's Modern Warfare Resources
 
-itemGroup.AssaultRifles_tab=Vmwc Guns
+itemGroup.AssaultRifles_tab=Assault Rifles
 
-itemGroup.props_tab=Vmwc Props (Contagion) (Creative Use Only)
+itemGroup.BattleRifles_tab=Battle Rifles
 
-itemGroup.AmmoTab=Vmwc Ammunition
+itemGroup.SMGs_tab=Submachine Guns
 
-itemGroup.AttachmentsTab=Vmwc Attachments
+itemGroup.Pistols_tab=Handguns
 
-itemGroup.ArmorTab=Vmwc Armor
+itemGroup.PrecisionRifles_tab=Precision Rifles
 
-itemGroup.GrenadesTab=Vmwc Grenades
+itemGroup.Shotguns_tab=Shotguns
 
-itemGroup.SpartanTab=Vmwc Spartan Armors Tab
+itemGroup.LMGs_tab=Machine Guns
 
-itemGroup.GadgetsTab=Vmwc Gadgets
+itemGroup.props_tab=MW Props (Contagion) (Creative Use Only)
 
-itemGroup.BlocksTab=Vmwc Blocks & Ingots
+itemGroup.AmmoTab=MW Ammunition
 
-itemGroup.CombatServer_tab=Vmwc Arcade Weapons
+itemGroup.AttachmentsTab=MW Attachments
+
+itemGroup.ArmorTab=MW Armor
+
+itemGroup.GrenadesTab=MW Grenades
+
+itemGroup.SpartanTab=MW Spartan Armors Tab
+
+itemGroup.GadgetsTab=MW Gadgets
+
+itemGroup.BlocksTab=MW Blocks & Ingots
+
+itemGroup.CombatServer_tab=MW Arcade Weapons
 
 key.categories.weaponlib=Modern Warfare
 

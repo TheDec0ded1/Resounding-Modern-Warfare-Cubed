@@ -62,6 +62,9 @@ public class UniversalSoundRegistry {
 		UniversalSoundLookup.registerSoundToLookup("mp5bolt_back2");
 		UniversalSoundLookup.registerSoundToLookup("mp5bolt_release");
 		UniversalSoundLookup.registerSoundToLookup("mp5bolt_smack");
+		UniversalSoundLookup.registerSoundToLookup("mp5_touchgun");
+		UniversalSoundLookup.registerSoundToLookup("mp5mag_load");
+		UniversalSoundLookup.registerSoundToLookup("mp5mag_unload");
 		UniversalSoundLookup.registerSoundToLookup("smallmag_insert");
 		UniversalSoundLookup.registerSoundToLookup("smallmag_unload");
 		UniversalSoundLookup.registerSoundToLookup("attachmenton");
@@ -123,5 +126,18 @@ public class UniversalSoundRegistry {
 		UniversalSoundLookup.registerSoundToLookup("qbz95_maginsert");
 		UniversalSoundLookup.registerSoundToLookup("qbz95_magsmack");
 		UniversalSoundLookup.registerSoundToLookup("qbz95_magunload");
+		UniversalSoundLookup.registerSoundToLookup("qbz03_boltback");
+		UniversalSoundLookup.registerSoundToLookup("qbz03_boltforward");
+		UniversalSoundLookup.registerSoundToLookup("aa12_foley1");
+		UniversalSoundLookup.registerSoundToLookup("aa12_foley2");
+		UniversalSoundLookup.registerSoundToLookup("aa12action_back");
+		UniversalSoundLookup.registerSoundToLookup("aa12handle_forward");
+		UniversalSoundLookup.registerSoundToLookup("aa12mag_insert");
+		UniversalSoundLookup.registerSoundToLookup("aa12mag_unload");
+		UniversalSoundLookup.registerSoundToLookup("uzibolt_back");
+		UniversalSoundLookup.registerSoundToLookup("uzihandle_forward");
+		UniversalSoundLookup.registerSoundToLookup("uzimag_insert");
+		UniversalSoundLookup.registerSoundToLookup("microuzibolt_back");
+		UniversalSoundLookup.registerSoundToLookup("microuzibolt_forward");
 	}
 }

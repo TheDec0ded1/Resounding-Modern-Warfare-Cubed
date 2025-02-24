@@ -53,7 +53,7 @@ public class SL8Factory implements GunFactory {
         .withFlashOffsetY(() -> 0.2f)
         .withShellCasingForwardOffset(0.05f)
         .withShellCasingVerticalOffset(-0.03f)
-        .withCreativeTab(ModernWarfareMod.PrecisionRiflesTab)
+        .withCreativeTab(ModernWarfareMod.AssaultRiflesTab)
         .useNewSystem()
 		.withRecoilParam(new RecoilParam(
 				// The weapon power

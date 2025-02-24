@@ -454,7 +454,7 @@ public class QBZ95Factory {
             .withFirstPersonPositioningZooming((renderContext) -> {
 //                GL11.glRotatef(45F, 0f, 1f, 0f);
                 GL11.glScalef(3.000000f, 3.000000f, 3.000000f);
-                GL11.glTranslatef(0.14f, 1.41f, -1.1f);
+                GL11.glTranslatef(0.14f, 1.30f, -1.1f);
 
                 
              // ACOG Zoom

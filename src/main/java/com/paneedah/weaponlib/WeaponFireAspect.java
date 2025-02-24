@@ -291,7 +291,7 @@ public class WeaponFireAspect implements Aspect<WeaponState, PlayerWeaponInstanc
         	if(!VMWHooksHandler.isOnServer()) {
         		
         		//
-        		PositionedSoundRecord psr = new PositionedSoundRecord(shootSound, SoundCategory.PLAYERS, silencerOn ? weapon.getSilencedShootSoundVolume() * 0.4f : weapon.getShootSoundVolume() * 0.4f, 1.0F, mc.player.getPosition().up(5));
+        		PositionedSoundRecord psr = new PositionedSoundRecord(shootSound, SoundCategory.PLAYERS, silencerOn ? weapon.getSilencedShootSoundVolume() * 0.4f : weapon.getShootSoundVolume() * 0.4f, 1.0F, mc.player.getPosition().up(3));
             	playShootSound(psr);
         		//mc.getSoundHandler().playSound(psr);
         	}

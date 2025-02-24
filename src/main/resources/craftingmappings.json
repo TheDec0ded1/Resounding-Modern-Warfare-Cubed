@@ -1359,12 +1359,33 @@
         }
       ]
     },
+ {
+      "entryName": "mwc:aa12",
+      "craftingGroup": "GUN",
+      "recipe": [
+        {
+          "entryName": "mwc:synthetic_polymer_composite",
+          "isOreDictionary": false,
+          "count": 8
+        },
+        {
+          "entryName": "mwc:gunmetal_plate",
+          "isOreDictionary": false,
+          "count": 12
+        },
+        {
+          "entryName": "mwc:steel_ingot",
+          "isOreDictionary": false,
+          "count": 3
+        }
+      ]
+    },
     {
       "entryName": "mwc:FABDefenseMount",
       "craftingGroup": "ATTACHMENT_MODIFICATION",
       "recipe": [
         {
-          "entryName": "mwc:gunmetal_ingot",
+          "entryName": "mwc:steel_ingot",
           "isOreDictionary": false,
           "count": 1
         }
@@ -1375,7 +1396,7 @@
       "craftingGroup": "ATTACHMENT_MODIFICATION",
       "recipe": [
         {
-          "entryName": "mwc:gunmetal_ingot",
+          "entryName": "mwc:steel_ingot",
           "isOreDictionary": false,
           "count": 2
         }
@@ -1386,7 +1407,7 @@
       "craftingGroup": "ATTACHMENT_MODIFICATION",
       "recipe": [
         {
-          "entryName": "mwc:gunmetal_ingot",
+          "entryName": "mwc:steel_ingot",
           "isOreDictionary": false,
           "count": 3
         }
@@ -1397,7 +1418,7 @@
       "craftingGroup": "ATTACHMENT_MODIFICATION",
       "recipe": [
         {
-          "entryName": "mwc:gunmetal_ingot",
+          "entryName": "mwc:steel_ingot",
           "isOreDictionary": false,
           "count": 3
         }
@@ -1408,14 +1429,9 @@
       "craftingGroup": "ATTACHMENT_MODIFICATION",
       "recipe": [
         {
-          "entryName": "mwc:gunmetal_ingot",
-          "isOreDictionary": false,
-          "count": 3
-        },
-        {
           "entryName": "mwc:steel_ingot",
           "isOreDictionary": false,
-          "count": 1
+          "count": 3
         }
       ]
     },
@@ -1424,7 +1440,7 @@
       "craftingGroup": "ATTACHMENT_MODIFICATION",
       "recipe": [
         {
-          "entryName": "mwc:gunmetal_ingot",
+          "entryName": "mwc:steel_ingot",
           "isOreDictionary": false,
           "count": 3
         }
@@ -1435,7 +1451,7 @@
       "craftingGroup": "ATTACHMENT_MODIFICATION",
       "recipe": [
         {
-          "entryName": "mwc:gunmetal_ingot",
+          "entryName": "mwc:mwc:steel_ingot",
           "isOreDictionary": false,
           "count": 3
         }
@@ -1446,14 +1462,9 @@
       "craftingGroup": "ATTACHMENT_MODIFICATION",
       "recipe": [
         {
-          "entryName": "mwc:gunmetal_ingot",
-          "isOreDictionary": false,
-          "count": 3
-        },
-        {
           "entryName": "mwc:steel_ingot",
           "isOreDictionary": false,
-          "count": 1
+          "count": 3
         }
       ]
     },
@@ -1462,14 +1473,9 @@
       "craftingGroup": "ATTACHMENT_MODIFICATION",
       "recipe": [
         {
-          "entryName": "mwc:gunmetal_ingot",
-          "isOreDictionary": false,
-          "count": 3
-        },
-        {
           "entryName": "mwc:steel_ingot",
           "isOreDictionary": false,
-          "count": 1
+          "count": 3
         }
       ]
     },
@@ -1478,7 +1484,7 @@
       "craftingGroup": "ATTACHMENT_MODIFICATION",
       "recipe": [
         {
-          "entryName": "mwc:gunmetal_ingot",
+          "entryName": "mwc:steel_ingot",
           "isOreDictionary": false,
           "count": 2
         }
@@ -1489,7 +1495,7 @@
       "craftingGroup": "ATTACHMENT_MODIFICATION",
       "recipe": [
         {
-          "entryName": "mwc:gunmetal_ingot",
+          "entryName": "mwc:steel_ingot",
           "isOreDictionary": false,
           "count": 3
         }
@@ -1500,35 +1506,9 @@
       "craftingGroup": "ATTACHMENT_MODIFICATION",
       "recipe": [
         {
-          "entryName": "mwc:gunmetal_ingot",
+          "entryName": "mwc:mwc:steel_ingot",
           "isOreDictionary": false,
           "count": 3
-        }
-      ]
-    },
-    {
-      "entryName": "mwc:KrissVector556Handguard",
-      "craftingGroup": "ATTACHMENT_MODIFICATION",
-      "recipe": [
-        {
-          "entryName": "mwc:gunmetal_ingot",
-          "isOreDictionary": false,
-          "count": 4
-        },
-        {
-          "entryName": "mwc:steel_ingot",
-          "isOreDictionary": false,
-          "count": 5
-        },
-        {
-          "entryName": "minecraft:string",
-          "isOreDictionary": false,
-          "count": 4
-        },
-        {
-          "entryName": "minecraft:paper",
-          "isOreDictionary": false,
-          "count": 5
         }
       ]
     },
@@ -1537,14 +1517,9 @@
       "craftingGroup": "ATTACHMENT_MODIFICATION",
       "recipe": [
         {
-          "entryName": "mwc:gunmetal_ingot",
-          "isOreDictionary": false,
-          "count": 3
-        },
-        {
           "entryName": "mwc:steel_ingot",
           "isOreDictionary": false,
-          "count": 2
+          "count": 3
         }
       ]
     },
@@ -1553,14 +1528,9 @@
       "craftingGroup": "ATTACHMENT_MODIFICATION",
       "recipe": [
         {
-          "entryName": "mwc:gunmetal_ingot",
-          "isOreDictionary": false,
-          "count": 3
-        },
-        {
           "entryName": "mwc:steel_ingot",
           "isOreDictionary": false,
-          "count": 2
+          "count": 3
         }
       ]
     },
@@ -1569,7 +1539,7 @@
       "craftingGroup": "ATTACHMENT_MODIFICATION",
       "recipe": [
         {
-          "entryName": "mwc:gunmetal_ingot",
+          "entryName": "mwc:steel_ingot",
           "isOreDictionary": false,
           "count": 3
         },
@@ -1590,14 +1560,9 @@
       "craftingGroup": "ATTACHMENT_MODIFICATION",
       "recipe": [
         {
-          "entryName": "mwc:gunmetal_ingot",
-          "isOreDictionary": false,
-          "count": 3
-        },
-        {
           "entryName": "mwc:steel_ingot",
           "isOreDictionary": false,
-          "count": 2
+          "count": 3
         }
       ]
     },
@@ -1606,14 +1571,9 @@
       "craftingGroup": "ATTACHMENT_MODIFICATION",
       "recipe": [
         {
-          "entryName": "mwc:gunmetal_ingot",
-          "isOreDictionary": false,
-          "count": 2
-        },
-        {
           "entryName": "mwc:steel_ingot",
           "isOreDictionary": false,
-          "count": 1
+          "count": 2
         }
       ]
     },
@@ -1622,14 +1582,9 @@
       "craftingGroup": "ATTACHMENT_MODIFICATION",
       "recipe": [
         {
-          "entryName": "mwc:gunmetal_ingot",
-          "isOreDictionary": false,
-          "count": 3
-        },
-        {
           "entryName": "mwc:steel_ingot",
           "isOreDictionary": false,
-          "count": 1
+          "count": 3
         }
       ]
     },
@@ -1638,7 +1593,7 @@
       "craftingGroup": "ATTACHMENT_MODIFICATION",
       "recipe": [
         {
-          "entryName": "mwc:gunmetal_ingot",
+          "entryName": "mwc:steel_ingot",
           "isOreDictionary": false,
           "count": 3
         }
@@ -1649,14 +1604,9 @@
       "craftingGroup": "ATTACHMENT_MODIFICATION",
       "recipe": [
         {
-          "entryName": "mwc:gunmetal_ingot",
-          "isOreDictionary": false,
-          "count": 2
-        },
-        {
           "entryName": "mwc:steel_ingot",
           "isOreDictionary": false,
-          "count": 1
+          "count": 3
         }
       ]
     },
@@ -1665,14 +1615,9 @@
       "craftingGroup": "ATTACHMENT_MODIFICATION",
       "recipe": [
         {
-          "entryName": "mwc:gunmetal_ingot",
-          "isOreDictionary": false,
-          "count": 2
-        },
-        {
           "entryName": "mwc:steel_ingot",
           "isOreDictionary": false,
-          "count": 1
+          "count": 2
         }
       ]
     },
@@ -1681,14 +1626,9 @@
       "craftingGroup": "ATTACHMENT_MODIFICATION",
       "recipe": [
         {
-          "entryName": "mwc:gunmetal_ingot",
-          "isOreDictionary": false,
-          "count": 2
-        },
-        {
           "entryName": "mwc:steel_ingot",
           "isOreDictionary": false,
-          "count": 1
+          "count": 2
         }
       ]
     },
@@ -1697,7 +1637,7 @@
       "craftingGroup": "ATTACHMENT_MODIFICATION",
       "recipe": [
         {
-          "entryName": "mwc:gunmetal_ingot",
+          "entryName": "mwc:steel_ingot",
           "isOreDictionary": false,
           "count": 3
         }
@@ -1708,7 +1648,7 @@
       "craftingGroup": "ATTACHMENT_MODIFICATION",
       "recipe": [
         {
-          "entryName": "mwc:gunmetal_ingot",
+          "entryName": "mwc:steel_ingot",
           "isOreDictionary": false,
           "count": 3
         }
@@ -7371,12 +7311,7 @@
       "craftingGroup": "GEAR",
       "recipe": [
         {
-          "entryName": "mwc:steel_ingot",
-          "isOreDictionary": false,
-          "count": 2
-        },
-        {
-          "entryName": "mwc:synthetic_plastic",
+          "entryName": "minecraft:wool",
           "isOreDictionary": false,
           "count": 9
         }

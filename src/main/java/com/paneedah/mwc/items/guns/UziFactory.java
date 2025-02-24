@@ -8,6 +8,7 @@ import com.paneedah.mwc.init.MWCItems;
 import com.paneedah.mwc.models.*;
 import com.paneedah.mwc.proxies.CommonProxy;
 import com.paneedah.mwc.weapons.Attachments;
+import com.paneedah.mwc.weapons.Attachments2;
 import com.paneedah.mwc.weapons.Attachments3;
 import com.paneedah.mwc.weapons.AuxiliaryAttachments;
 import com.paneedah.mwc.weapons.Magazines;
@@ -31,7 +32,7 @@ public class UziFactory implements GunFactory {
         return new Weapon.Builder()
         
         .withName("uzi")
-        .withFireRate(0.7f)
+        .withFireRate(0.5f)
         .withRecoil(2f)
         .withZoom(0.9f)
         .withConfigGroup(GunConfigurationGroup.SMG)
@@ -87,79 +88,46 @@ public class UziFactory implements GunFactory {
                  2f, // x 
                  0.1f, // y
                  3f) // z
+
+        .withUnremovableAttachmentCategories(AttachmentCategory.BACKGRIP)
+        .withUnremovableAttachmentCategories(AttachmentCategory.GUARD)
          
-        .withCompatibleAttachment(Magazines.UziMag, (model) -> {
-        	 GL11.glTranslatef(0F, 0F, 0F);
+        .withCompatibleAttachment(Magazines.UziMag20, (model) -> {
+        })
+        .withCompatibleAttachment(Magazines.UziMag25, (model) -> {
+        })
+        .withCompatibleAttachment(Magazines.UziMag32, (model) -> {
+        })
+        .withCompatibleAttachment(Magazines.UziMag50, (model) -> {
         })
         .withCompatibleAttachment(AuxiliaryAttachments.UziAction, true, (model) -> {
-//            GL11.glTranslatef(0F, 0.2F, 0.12F);
-//            GL11.glRotatef(-10.000000f, 1f, 0f, 0f);
-//            GL11.glTranslatef(0F, 1F, 0.4F);
         })
-        .withCompatibleAttachment(AuxiliaryAttachments.UziRelease, true, (model) -> {
-//        	 GL11.glTranslatef(0F, 0F, 0.6F);
+        .withCompatibleAttachment(AuxiliaryAttachments.UziHandle, true, (model) -> {
         })
-        .withCompatibleAttachment(AuxiliaryAttachments.UziIronSight, true, (model) -> {
-            if(model instanceof UziRearSight) {
-                GL11.glTranslatef(-0.274F, -1.415F, 0.78F);
-                GL11.glScaled(0.48F, 0.47F, 0.67F);
-            } else if(model instanceof UziFrontSight) {
-                GL11.glTranslatef(-0.25F, -1.415F, -2.3F);
-                GL11.glScaled(0.4F, 0.47F, 0.67F);
-            }
+        .withCompatibleAttachment(Attachments2.MicroUziGrip, (model) -> {
         })
-        .withCompatibleAttachment(AuxiliaryAttachments.Extra, true, (model) -> {
-            if(model instanceof M4Iron1) {
-                GL11.glTranslatef(0.17F, -1.42F, 0.43F);
-                GL11.glScaled(0F, 0F, 0F);
-            } else if(model instanceof M4Iron2) {
-                GL11.glTranslatef(-0.11F, -1.29F, -9.7F);
-                GL11.glScaled(0F, 0F, 0F);
-            } else if(model instanceof P90iron) {
-                GL11.glTranslatef(0.26F, -1.55F, -2.35F);
-                GL11.glScaled(0F, 0F, 0F);
-            } else if(model instanceof AKMiron1) {
-                GL11.glTranslatef(0.125F, -1.8F, -0.5F);
-                GL11.glScaled(0F, 0F, 0F);
-            } else if(model instanceof AKMiron2) {
-                GL11.glTranslatef(0.13F, -1.55F, -3.05F);
-                GL11.glScaled(0F, 0F, 0F);
-            } else if(model instanceof AK47iron) {
-                GL11.glTranslatef(-0.03F, -1.5F, -4.5F);
-                GL11.glScaled(0F, 0F, 0F);
-                GL11.glRotatef(-180F, 0f, 0f, 1f);
-            } else if(model instanceof G36CIron1) {
-                GL11.glTranslatef(-0.22F, -1.94F, -1F);
-                GL11.glScaled(0F, 0F, 0F);
-            } else if(model instanceof G36CIron2) {
-                GL11.glTranslatef(-0.207F, -1.245F, -9.165F);
-                GL11.glScaled(0F, 0F, 0F);
-            } else if(model instanceof ScarIron1) {
-                GL11.glTranslatef(0.165F, -1.65F, 1F);
-                GL11.glScaled(0F, 0F, 0F);
-            } else if(model instanceof ScarIron2) {
-                GL11.glTranslatef(0.25F, -1.55F, -2F);
-                GL11.glScaled(0F, 0F, 0F);
-            } else if(model instanceof FALIron) {
-                GL11.glTranslatef(-0.11F, -1.2F, -2.3F);
-                GL11.glScaled(0.13F, 0.5F, 0.8F);
-                GL11.glRotatef(-180F, 0f, 0f, 1f);
-            } else if(model instanceof M14Iron) {
-                GL11.glTranslatef(0.129F, -1.63F, -2.08F);
-                GL11.glScaled(0F, 0F, 0F);
-            } else if(model instanceof MP5Iron) {
-                GL11.glTranslatef(0.215F, -1.54F, 1.2F);
-                GL11.glScaled(0F, 0F, 0F);
-            }
+        .withCompatibleAttachment(Attachments2.MiniUziGrip, (model) -> {
         })
-        .withCompatibleAttachment(Attachments3.Silencer9mm, (model) -> {
-            GL11.glTranslatef(-0.22F, -1.11F, -4.7F);
-            GL11.glScaled(1.3F, 1.3F, 1.3F);
+        .withCompatibleAttachment(Attachments2.UziGrip, true, (model) -> {
         })
-        .withTextureNames("gun")
+        .withCompatibleAttachment(Attachments2.UziStock, true, (model) -> {
+        })
+        .withCompatibleAttachment(Attachments2.UziStockFolded, (model) -> {
+        })
+        .withCompatibleAttachment(Attachments2.UziWoodStock, (model) -> {
+        })
+        .withCompatibleAttachment(Attachments2.UziHandguard, true, (model) -> {
+        })
+        .withCompatibleAttachment(Attachments2.UziHandguardVert, (model) -> {
+        })
+        .withCompatibleAttachment(Attachments2.UziSuppressor, (model) -> {
+        })
+        .withTextureNames("uzi")
         .withRenderer(new WeaponRenderer.Builder()
             
             .withModel(new Uzi())
+            .withActionPiece(AuxiliaryAttachments.UziAction)
+            .withActionTransform(new Transform().withPosition(0, 0, -0.5))
             //.withTextureName("M9")
             //.withWeaponProximity(0.99F)
             //.withYOffsetZoom(5F)
@@ -190,12 +158,12 @@ public class UziFactory implements GunFactory {
                 .withFirstPersonHandPositioning(
                         
                         // Left hand
-                        new Transform()
-                        .withPosition(1.210000f, 0.505000f, 0.620000f)
-                        .withBBRotation(-7.2749, -30.8463, 56.4758)
-                        .withScale(2.6, 2.6, 4.0)
-                        .withRotationPoint(0, 0, 0),
-                        
+			new Transform()
+			.withPosition(1.210000f, 0.265000f, 0.680000f)
+			.withRotation(7.141500f, 27.300301f, 52.643299f)
+			.withRotationPoint(0.000000f, 0.000000f, 0.000000f)
+			.withScale(2.800000f, 2.800000f, 4.000000f),
+
                         
                         
                         // Right hand
@@ -207,9 +175,19 @@ public class UziFactory implements GunFactory {
                 
                 )
                 
-                .setupModernAnimations("uzi", AuxiliaryAttachments.UziRelease)
+                .setupModernAnimations("uzi", AuxiliaryAttachments.UziAction)
+                .setupCustomKeyedPart(AuxiliaryAttachments.UziHandle, "uzi", "handle")
                 .setupModernMagazineAnimations("uzi", 
-                		Magazines.UziMag)
+                		Magazines.UziMag20,
+				Magazines.UziMag25,
+				Magazines.UziMag32,
+				Magazines.UziMag50)
+
+            .withFirstPersonCustomPositioning(AuxiliaryAttachments.UziAction.getRenderablePart(), (renderContext) -> {
+                if(renderContext.getWeaponInstance().getAmmo() == 0) {
+                	GL11.glTranslatef(0f, 0f, -0.5f);
+                }
+              })
                     
             .withThirdPersonPositioningReloading(
                     
@@ -290,7 +268,7 @@ public class UziFactory implements GunFactory {
                     }, 250, 1000)
                     )
                     
-            .withThirdPersonCustomPositioningReloading(AuxiliaryAttachments.UziRelease.getRenderablePart(),
+            .withThirdPersonCustomPositioningReloading(AuxiliaryAttachments.UziAction.getRenderablePart(),
                     new Transition((renderContext) -> {
                     }, 250, 1000),
                     new Transition((renderContext) -> {
@@ -312,7 +290,7 @@ public class UziFactory implements GunFactory {
                 
             .withFirstPersonPositioningZooming((renderContext) -> {
                 GL11.glScaled(3F, 3F, 3F);
-                GL11.glTranslatef(0.14f, 0.79f, -1.6f);
+                GL11.glTranslatef(0.14f, 0.83f, -1.6f);
                 
                 if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.RMR)) {
                     //System.out.println("Position me for Holo");

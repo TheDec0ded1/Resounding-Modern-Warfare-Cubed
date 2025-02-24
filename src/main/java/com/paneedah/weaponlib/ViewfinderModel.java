@@ -95,6 +95,7 @@ public class ViewfinderModel extends ModelBase {
 		
 	
 		boolean isNightVisionOn = false;
+		boolean isThermalVisionOn = false;
 		boolean useWhitePhosphor = false;
 		if(renderContext.getWeaponInstance() != null) {
 			ItemAttachment<Weapon> scope = renderContext.getWeaponInstance().getAttachmentItemWithCategory(AttachmentCategory.SCOPE);
@@ -177,6 +178,7 @@ public class ViewfinderModel extends ModelBase {
     	scopeShader.uniform2f("resolution", mc.displayWidth, mc.displayHeight);
     	scopeShader.boolean1b("isNightVisionOn", isNightVisionOn);
     	scopeShader.boolean1b("useWhitePhosphor", useWhitePhosphor);
+		scopeShader.boolean1b("isThermalVisionOn", isThermalVisionOn);
     	scopeShader.uniform1f("time", ClientValueRepo.TICKER.getLerpedFloat());
  
     	

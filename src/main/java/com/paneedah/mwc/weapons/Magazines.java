@@ -20,6 +20,7 @@ public class Magazines {
     public static ItemMagazine ASh_12Mag20;
     public static ItemMagazine ShAK_12Mag10;
     public static ItemMagazine ShAK_12Mag20;
+    public static ItemMagazine QBZ03Mag;
     public static ItemMagazine S710TricunMag;
     public static ItemMagazine M4A1Mag;
     public static ItemMagazine M16Mag;
@@ -169,6 +170,7 @@ public class Magazines {
     public static ItemMagazine SaigaMag;
     public static ItemMagazine Origin12Mag;
     public static ItemMagazine Origin12DrumMag;
+    public static ItemMagazine AA12BoxMag;
     public static ItemMagazine ScarHMag;
     public static ItemMagazine Scar40Mag;
     public static ItemMagazine Scar60Mag;
@@ -192,7 +194,10 @@ public class Magazines {
     public static ItemMagazine BrenMag;
     public static ItemMagazine JohnsonMAG;
     public static ItemMagazine SV98Mag;
-    public static ItemMagazine UziMag;
+    public static ItemMagazine UziMag20;
+    public static ItemMagazine UziMag25;
+    public static ItemMagazine UziMag32;
+    public static ItemMagazine UziMag50;
     public static ItemMagazine VP70Mag;
     public static ItemMagazine HoneyBadgerMag;
     public static ItemMagazine VectorMag;
@@ -295,7 +300,7 @@ public class Magazines {
                     GL11.glRotatef(-15F, 0f, 0f, 1f);
                     GL11.glScaled(0.8F, 0.8F, 0.8f);
                 })
-                .withMaxStackSize(6)
+                .withMaxStackSize(4)
                 .withCrafting(CraftingComplexity.MEDIUM,
                           MWCItems.steelIngot,
                           MWCItems.gunmetalIngot)
@@ -324,7 +329,7 @@ public class Magazines {
                     GL11.glRotatef(10F, 0f, 0f, 1f);
                     GL11.glScaled(0.8F, 0.8F, 0.8f);
                 })
-                .withMaxStackSize(6)
+                .withMaxStackSize(4)
                 .withCrafting(CraftingComplexity.MEDIUM,
                               MWCItems.steelIngot,
                           MWCItems.gunmetalIngot)
@@ -355,7 +360,7 @@ public class Magazines {
                     GL11.glRotatef(-30F, 0f, 0f, 1f);
                     GL11.glScaled(0.9F, 0.9F, 0.9f);
                 })
-                .withMaxStackSize(5)
+                .withMaxStackSize(6)
                 .withTextureName("Dummy.png").build(ModernWarfareMod.MOD_CONTEXT, ItemMagazine.class);
         
         Magazines.VectorDrumMag = new ItemMagazine.Builder()
@@ -383,7 +388,7 @@ public class Magazines {
                     GL11.glRotatef(-30F, 0f, 0f, 1f);
                     GL11.glScaled(0.9F, 0.9F, 0.9f);
                 })
-                .withMaxStackSize(5)
+                .withMaxStackSize(2)
                 .withTextureName("Dummy.png").build(ModernWarfareMod.MOD_CONTEXT, ItemMagazine.class);
         
         Magazines.M4A1Mag = new ItemMagazine.Builder()
@@ -410,7 +415,7 @@ public class Magazines {
                     GL11.glRotatef(-15F, 0f, 0f, 1f);
                     GL11.glScaled(1.1F, 1.1F, 1.1f);
                 })
-                .withMaxStackSize(6)
+                .withMaxStackSize(5)
                 .withTextureName("Dummy.png").build(ModernWarfareMod.MOD_CONTEXT, ItemMagazine.class);
 
         Magazines.M16Mag = new ItemMagazine.Builder()
@@ -437,7 +442,7 @@ public class Magazines {
                     GL11.glRotatef(-15F, 0f, 0f, 1f);
                     GL11.glScaled(1.1F, 1.1F, 1.1f);
                 })
-                .withMaxStackSize(6)
+                .withMaxStackSize(8)
                 .withTextureName("Dummy.png").build(ModernWarfareMod.MOD_CONTEXT, ItemMagazine.class);
         
         Magazines.NGSWRMag = new ItemMagazine.Builder()
@@ -464,7 +469,7 @@ public class Magazines {
                     GL11.glRotatef(-15F, 0f, 0f, 1f);
                     GL11.glScaled(1F, 1F, 1f);
                 })
-                .withMaxStackSize(6)
+                .withMaxStackSize(4)
                 .withTextureName("Dummy.png").build(ModernWarfareMod.MOD_CONTEXT, ItemMagazine.class);
 
         Magazines.NGSWRMetalMag = new ItemMagazine.Builder()
@@ -491,7 +496,7 @@ public class Magazines {
                     GL11.glRotatef(-15F, 0f, 0f, 1f);
                     GL11.glScaled(1F, 1F, 1f);
                 })
-                .withMaxStackSize(6)
+                .withMaxStackSize(4)
                 .withTextureName("Dummy.png").build(ModernWarfareMod.MOD_CONTEXT, ItemMagazine.class);
 
         Magazines.NGSWR25RDMag = new ItemMagazine.Builder()
@@ -518,7 +523,7 @@ public class Magazines {
                     GL11.glRotatef(-15F, 0f, 0f, 1f);
                     GL11.glScaled(1F, 1F, 1f);
                 })
-                .withMaxStackSize(6)
+                .withMaxStackSize(3)
                 .withTextureName("Dummy.png").build(ModernWarfareMod.MOD_CONTEXT, ItemMagazine.class);
         
         Magazines.FamasF1Mag = new ItemMagazine.Builder()
@@ -546,7 +551,7 @@ public class Magazines {
                     GL11.glRotatef(-15F, 0f, 0f, 1f);
                     GL11.glScaled(1F, 1F, 1f);
                 })
-                .withMaxStackSize(6)
+                .withMaxStackSize(5)
                 .withTextureName("Dummy.png").build(ModernWarfareMod.MOD_CONTEXT, ItemMagazine.class);
 
         Magazines.QBZ95Mag = new ItemMagazine.Builder()
@@ -573,7 +578,7 @@ public class Magazines {
                     GL11.glRotatef(-15F, 0f, 0f, 1f);
                     GL11.glScaled(1F, 1F, 1f);
                 })
-                .withMaxStackSize(6)
+                .withMaxStackSize(5)
                 .withTextureName("Dummy.png").build(ModernWarfareMod.MOD_CONTEXT, ItemMagazine.class);
 
         Magazines.QBB95Mag = new ItemMagazine.Builder()
@@ -600,7 +605,34 @@ public class Magazines {
                     GL11.glRotatef(-15F, 0f, 0f, 1f);
                     GL11.glScaled(1F, 1F, 1f);
                 })
-                .withMaxStackSize(6)
+                .withMaxStackSize(1)
+                .withTextureName("Dummy.png").build(ModernWarfareMod.MOD_CONTEXT, ItemMagazine.class);
+
+        Magazines.QBZ03Mag = new ItemMagazine.Builder()
+        		.withAmmo(30)
+        		.withCompatibleBullet(Bullets.Bullet58x42)
+        		.withName("QBZ03Mag")
+        		.withRotationPoint(-0.12000000357627871, 1.0400000309944155, -2.0400000607967383)
+                
+                .withCreativeTab(ModernWarfareMod.AmmoTab)
+                .withModel(new com.paneedah.mwc.models.QBZ03_Magazine(), "qbz03.png")
+                .withFirstPersonPositioning((player, itemStack) -> {
+                    GL11.glTranslatef(0.1F, -0.3F, 0.4F);
+                    GL11.glRotatef(30F, 0f, 1f, 0f);
+                    GL11.glScaled(0.7F, 0.7F, 0.7F);
+                }).withThirdPersonPositioning((player, itemStack) -> {
+                    GL11.glTranslatef(-0.3F, 0.5F, 0.1F);
+                    GL11.glRotatef(-50F, 0f, 1f, 0f);
+                    GL11.glRotatef(10F, 1f, 0f, 0f);
+                    GL11.glScaled(0.7F, 0.7F, 0.7F);
+                }).withInventoryPositioning((itemStack) -> {
+                    GL11.glTranslatef(0.3F, 0.7F, -2.7F);
+                    GL11.glRotatef(-150F, 0f, 1f, 0f);
+                    GL11.glRotatef(0F, 1f, 0f, 0f);
+                    GL11.glRotatef(-5F, 0f, 0f, 1f);
+                    GL11.glScaled(0.8F, 0.8F, 0.8f);
+                })
+                .withMaxStackSize(5)
                 .withTextureName("Dummy.png").build(ModernWarfareMod.MOD_CONTEXT, ItemMagazine.class);
 
         Magazines.QCW05Mag = new ItemMagazine.Builder()
@@ -656,7 +688,7 @@ public class Magazines {
                     GL11.glRotatef(-15F, 0f, 0f, 1f);
                     GL11.glScaled(0.9F, 0.9F, 0.9f);
                 })
-                .withMaxStackSize(6)
+                .withMaxStackSize(5)
                 .withTextureName("Dummy.png").build(ModernWarfareMod.MOD_CONTEXT, ItemMagazine.class);
 
         
@@ -685,7 +717,7 @@ public class Magazines {
                     GL11.glRotatef(-15F, 0f, 0f, 1f);
                     GL11.glScaled(1.1F, 1.1F, 1.1f);
                 })
-                .withMaxStackSize(6)
+                .withMaxStackSize(1)
                 .withCrafting(CraftingComplexity.MEDIUM,
                           MWCItems.steelIngot,
                           MWCItems.gunmetalIngot)
@@ -737,7 +769,7 @@ public class Magazines {
                     GL11.glRotatef(-15F, 0f, 0f, 1f);
                     GL11.glScaled(1.1F, 1.1F, 1.1f);
                 })
-                .withMaxStackSize(6)
+                .withMaxStackSize(12)
                 .withCrafting(CraftingComplexity.MEDIUM,
                           MWCItems.steelIngot,
                           MWCItems.gunmetalIngot)
@@ -763,7 +795,7 @@ public class Magazines {
                     GL11.glRotatef(-15F, 0f, 0f, 1f);
                     GL11.glScaled(1.1F, 1.1F, 1.1f);
                 })
-                .withMaxStackSize(6)
+                .withMaxStackSize(8)
                 .withCrafting(CraftingComplexity.MEDIUM,
                           MWCItems.steelIngot,
                           MWCItems.gunmetalIngot)
@@ -789,7 +821,7 @@ public class Magazines {
                     GL11.glRotatef(-15F, 0f, 0f, 1f);
                     GL11.glScaled(1.1F, 1.1F, 1.1f);
                 })
-                .withMaxStackSize(6)
+                .withMaxStackSize(5)
                 .withCrafting(CraftingComplexity.MEDIUM,
                           MWCItems.steelIngot,
                           MWCItems.gunmetalIngot)
@@ -815,7 +847,7 @@ public class Magazines {
                     GL11.glRotatef(-15F, 0f, 0f, 1f);
                     GL11.glScaled(1.1F, 1.1F, 1.1f);
                 })
-                .withMaxStackSize(6)
+                .withMaxStackSize(3)
                 .withCrafting(CraftingComplexity.MEDIUM,
                           MWCItems.steelIngot,
                           MWCItems.gunmetalIngot)
@@ -840,7 +872,7 @@ public class Magazines {
                     GL11.glRotatef(-15F, 0f, 0f, 1f);
                     GL11.glScaled(1.1F, 1.1F, 1.1f);
                 })
-                .withMaxStackSize(6)
+                .withMaxStackSize(2)
                 .withCrafting(CraftingComplexity.MEDIUM,
                           MWCItems.steelIngot,
                           MWCItems.gunmetalIngot)
@@ -865,7 +897,7 @@ public class Magazines {
                     GL11.glRotatef(-15F, 0f, 0f, 1f);
                     GL11.glScaled(1.1F, 1.1F, 1.1f);
                 })
-                .withMaxStackSize(6)
+                .withMaxStackSize(4)
                 .withCrafting(CraftingComplexity.MEDIUM,
                           MWCItems.steelIngot,
                           MWCItems.gunmetalIngot)
@@ -890,7 +922,7 @@ public class Magazines {
                     GL11.glRotatef(-15F, 0f, 0f, 1f);
                     GL11.glScaled(1.1F, 1.1F, 1.1f);
                 })
-                .withMaxStackSize(6)
+                .withMaxStackSize(2)
                 .withCrafting(CraftingComplexity.MEDIUM,
                           MWCItems.steelIngot,
                           MWCItems.gunmetalIngot)
@@ -915,7 +947,7 @@ public class Magazines {
                     GL11.glRotatef(-15F, 0f, 0f, 1f);
                     GL11.glScaled(1.1F, 1.1F, 1.1f);
                 })
-                .withMaxStackSize(6)
+                .withMaxStackSize(4)
                 .withCrafting(CraftingComplexity.MEDIUM,
                           MWCItems.steelIngot,
                           MWCItems.gunmetalIngot)
@@ -970,7 +1002,7 @@ public class Magazines {
                     GL11.glRotatef(-15F, 0f, 0f, 1f);
                     GL11.glScaled(0.9F, 0.9F, 0.9f);
                 })
-                .withMaxStackSize(6)
+                .withMaxStackSize(1)
                 .withCrafting(CraftingComplexity.MEDIUM,
                           MWCItems.steelIngot,
                           MWCItems.gunmetalIngot)
@@ -996,7 +1028,7 @@ public class Magazines {
                     GL11.glRotatef(-15F, 0f, 0f, 1f);
                     GL11.glScaled(0.9F, 0.9F, 0.9f);
                 })
-                .withMaxStackSize(6)
+                .withMaxStackSize(1)
                 .withCrafting(CraftingComplexity.MEDIUM,
                           MWCItems.steelIngot,
                           MWCItems.gunmetalIngot)
@@ -1027,7 +1059,7 @@ public class Magazines {
                     GL11.glRotatef(-15F, 0f, 0f, 1f);
                     GL11.glScaled(0.8F, 0.8F, 0.8f);
                 })
-                .withMaxStackSize(6)
+                .withMaxStackSize(1)
                 .withCrafting(CraftingComplexity.MEDIUM,
                           MWCItems.steelIngot,
                           MWCItems.gunmetalIngot)
@@ -1058,7 +1090,7 @@ public class Magazines {
                     GL11.glRotatef(-15F, 0f, 0f, 1f);
                     GL11.glScaled(0.8F, 0.8F, 0.8f);
                 })
-                .withMaxStackSize(6)
+                .withMaxStackSize(1)
                 .withCrafting(CraftingComplexity.MEDIUM,
                           MWCItems.steelIngot,
                           MWCItems.gunmetalIngot)
@@ -1089,7 +1121,7 @@ public class Magazines {
                     GL11.glRotatef(-15F, 0f, 0f, 1f);
                     GL11.glScaled(0.8F, 0.8F, 0.8f);
                 })
-                .withMaxStackSize(6)
+                .withMaxStackSize(1)
                 .withCrafting(CraftingComplexity.MEDIUM,
                           MWCItems.steelIngot,
                           MWCItems.gunmetalIngot)
@@ -1115,7 +1147,7 @@ public class Magazines {
                     GL11.glRotatef(-15F, 0f, 0f, 1f);
                     GL11.glScaled(0.8F, 0.8F, 0.8f);
                 })
-                .withMaxStackSize(6)
+                .withMaxStackSize(1)
                 .withCrafting(CraftingComplexity.MEDIUM,
                           MWCItems.steelIngot,
                           MWCItems.gunmetalIngot)
@@ -1146,7 +1178,7 @@ public class Magazines {
                     GL11.glRotatef(-15F, 0f, 0f, 1f);
                     GL11.glScaled(1.1F, 1.1F, 1.1f);
                 })
-                .withMaxStackSize(6)
+                .withMaxStackSize(5)
                 .withTextureName("Dummy.png").build(ModernWarfareMod.MOD_CONTEXT, ItemMagazine.class);
         
         Magazines.M38Mag = new ItemMagazine.Builder()
@@ -1174,7 +1206,7 @@ public class Magazines {
                     GL11.glRotatef(-15F, 0f, 0f, 1f);
                     GL11.glScaled(1.1F, 1.1F, 1.1f);
                 })
-                .withMaxStackSize(6)
+                .withMaxStackSize(5)
                 .withTextureName("Dummy.png").build(ModernWarfareMod.MOD_CONTEXT, ItemMagazine.class);
         
         Magazines.SOCOM_Mag = new ItemMagazine.Builder()
@@ -1200,7 +1232,7 @@ public class Magazines {
                     GL11.glRotatef(-15F, 0f, 0f, 1f);
                     GL11.glScaled(1.1F, 1.1F, 1.1f);
                 })
-                .withMaxStackSize(6)
+                .withMaxStackSize(5)
                 .withTextureName("Dummy.png").build(ModernWarfareMod.MOD_CONTEXT, ItemMagazine.class);
         
         Magazines.HK417Mag = new ItemMagazine.Builder()
@@ -1225,7 +1257,7 @@ public class Magazines {
                     GL11.glRotatef(-15F, 0f, 0f, 1f);
                     GL11.glScaled(1.1F, 1.1F, 1.1f);
                 })
-                .withMaxStackSize(6)
+                .withMaxStackSize(4)
                 .withTextureName("Dummy.png").build(ModernWarfareMod.MOD_CONTEXT, ItemMagazine.class);
         
 
@@ -1253,7 +1285,7 @@ public class Magazines {
                     GL11.glRotatef(-15F, 0f, 0f, 1f);
                     GL11.glScaled(1F, 1F, 1f);
                 })
-                .withMaxStackSize(6)
+                .withMaxStackSize(2)
                 .withTextureName("Dummy.png").build(ModernWarfareMod.MOD_CONTEXT, ItemMagazine.class);
         
         Magazines.Stanag60 = new ItemMagazine.Builder()
@@ -1280,7 +1312,7 @@ public class Magazines {
                     GL11.glRotatef(-15F, 0f, 0f, 1f);
                     GL11.glScaled(1F, 1F, 1f);
                 })
-                .withMaxStackSize(6)
+                .withMaxStackSize(2)
                 .withTextureName("Dummy.png").build(ModernWarfareMod.MOD_CONTEXT, ItemMagazine.class);
         
         Magazines.Stanag100 = new ItemMagazine.Builder()
@@ -1306,7 +1338,7 @@ public class Magazines {
                     GL11.glRotatef(-15F, 0f, 0f, 1f);
                     GL11.glScaled(1.2F, 1.2F, 1.2f);
                 })
-                .withMaxStackSize(6)
+                .withMaxStackSize(1)
                 .withTextureName("Dummy.png").build(ModernWarfareMod.MOD_CONTEXT, ItemMagazine.class);
         
         Magazines.G36CMag = new ItemMagazine.Builder()
@@ -1334,7 +1366,7 @@ public class Magazines {
                     GL11.glRotatef(-15F, 0f, 0f, 1f);
                     GL11.glScaled(0.8F, 0.8F, 0.8f);
                 })
-                .withMaxStackSize(6)
+                .withMaxStackSize(5)
                 .withTextureName("Dummy.png").build(ModernWarfareMod.MOD_CONTEXT, ItemMagazine.class);
 
         Magazines.SL8Mag = new ItemMagazine.Builder()
@@ -1362,7 +1394,7 @@ public class Magazines {
                     GL11.glRotatef(-15F, 0f, 0f, 1f);
                     GL11.glScaled(0.8F, 0.8F, 0.8f);
                 })
-                .withMaxStackSize(6)
+                .withMaxStackSize(10)
                 .withTextureName("Dummy.png").build(ModernWarfareMod.MOD_CONTEXT, ItemMagazine.class);
 
         Magazines.MG36Mag = new ItemMagazine.Builder()
@@ -1390,7 +1422,7 @@ public class Magazines {
                     GL11.glRotatef(-15F, 0f, 0f, 1f);
                     GL11.glScaled(0.8F, 0.8F, 0.8f);
                 })
-                .withMaxStackSize(6)
+                .withMaxStackSize(1)
                 .withTextureName("Dummy.png").build(ModernWarfareMod.MOD_CONTEXT, ItemMagazine.class);
 
         Magazines.G36CMagRAL = new ItemMagazine.Builder()
@@ -1418,7 +1450,7 @@ public class Magazines {
                     GL11.glRotatef(-15F, 0f, 0f, 1f);
                     GL11.glScaled(0.8F, 0.8F, 0.8f);
                 })
-                .withMaxStackSize(6)
+                .withMaxStackSize(5)
                 .withTextureName("Dummy.png").build(ModernWarfareMod.MOD_CONTEXT, ItemMagazine.class);
 
 
@@ -1447,7 +1479,7 @@ public class Magazines {
                     GL11.glRotatef(-5F, 0f, 0f, 1f);
                     GL11.glScaled(0.8F, 0.8F, 0.8f);
                 })
-                .withMaxStackSize(6)
+                .withMaxStackSize(5)
                 .withTextureName("Dummy.png").build(ModernWarfareMod.MOD_CONTEXT, ItemMagazine.class);
 
         Magazines.PP19VityazMag = new ItemMagazine.Builder()
@@ -1504,7 +1536,7 @@ public class Magazines {
                     GL11.glRotatef(-5F, 0f, 0f, 1f);
                     GL11.glScaled(0.8F, 0.8F, 0.8f);
                 })
-                .withMaxStackSize(6)
+                .withMaxStackSize(3)
                 .withTextureName("Dummy.png").build(ModernWarfareMod.MOD_CONTEXT, ItemMagazine.class);
 
         Magazines.BerylMag = new ItemMagazine.Builder()
@@ -1532,7 +1564,7 @@ public class Magazines {
                     GL11.glRotatef(-5F, 0f, 0f, 1f);
                     GL11.glScaled(0.8F, 0.8F, 0.8f);
                 })
-                .withMaxStackSize(6)
+                .withMaxStackSize(5)
                 .withTextureName("Dummy.png").build(ModernWarfareMod.MOD_CONTEXT, ItemMagazine.class);
 
         Magazines.GalilMag = new ItemMagazine.Builder()
@@ -1560,7 +1592,7 @@ public class Magazines {
                     GL11.glRotatef(-5F, 0f, 0f, 1f);
                     GL11.glScaled(0.8F, 0.8F, 0.8f);
                 })
-                .withMaxStackSize(6)
+                .withMaxStackSize(5)
                 .withTextureName("Dummy.png").build(ModernWarfareMod.MOD_CONTEXT, ItemMagazine.class);
         
         Magazines.AK74Mag = new ItemMagazine.Builder()
@@ -1588,7 +1620,7 @@ public class Magazines {
                     GL11.glRotatef(-5F, 0f, 0f, 1f);
                     GL11.glScaled(0.8F, 0.8F, 0.8f);
                 })
-                .withMaxStackSize(6)
+                .withMaxStackSize(5)
                 .withTextureName("Dummy.png").build(ModernWarfareMod.MOD_CONTEXT, ItemMagazine.class);
 
         Magazines.Saiga545Mag = new ItemMagazine.Builder()
@@ -1616,7 +1648,7 @@ public class Magazines {
                     GL11.glRotatef(-5F, 0f, 0f, 1f);
                     GL11.glScaled(0.8F, 0.8F, 0.8f);
                 })
-                .withMaxStackSize(6)
+                .withMaxStackSize(12)
                 .withTextureName("Dummy.png").build(ModernWarfareMod.MOD_CONTEXT, ItemMagazine.class);
  
 Magazines.RPK74Mag = new ItemMagazine.Builder()
@@ -1644,7 +1676,7 @@ Magazines.RPK74Mag = new ItemMagazine.Builder()
                     GL11.glRotatef(-5F, 0f, 0f, 1f);
                     GL11.glScaled(0.8F, 0.8F, 0.8f);
                 })
-                .withMaxStackSize(6)
+                .withMaxStackSize(3)
                 .withTextureName("Dummy.png").build(ModernWarfareMod.MOD_CONTEXT, ItemMagazine.class);
 
         Magazines.AK74BlackMag = new ItemMagazine.Builder()
@@ -1672,7 +1704,7 @@ Magazines.RPK74Mag = new ItemMagazine.Builder()
                     GL11.glRotatef(-5F, 0f, 0f, 1f);
                     GL11.glScaled(0.8F, 0.8F, 0.8f);
                 })
-                .withMaxStackSize(6)
+                .withMaxStackSize(5)
                 .withTextureName("Dummy.png").build(ModernWarfareMod.MOD_CONTEXT, ItemMagazine.class);
 
         Magazines.RPK74MBlackMag = new ItemMagazine.Builder()
@@ -1700,7 +1732,7 @@ Magazines.RPK74Mag = new ItemMagazine.Builder()
                     GL11.glRotatef(-5F, 0f, 0f, 1f);
                     GL11.glScaled(0.8F, 0.8F, 0.8f);
                 })
-                .withMaxStackSize(6)
+                .withMaxStackSize(3)
                 .withTextureName("Dummy.png").build(ModernWarfareMod.MOD_CONTEXT, ItemMagazine.class);
 
         Magazines.AK74GreenMag = new ItemMagazine.Builder()
@@ -1728,7 +1760,7 @@ Magazines.RPK74Mag = new ItemMagazine.Builder()
                     GL11.glRotatef(-5F, 0f, 0f, 1f);
                     GL11.glScaled(0.8F, 0.8F, 0.8f);
                 })
-                .withMaxStackSize(6)
+                .withMaxStackSize(5)
                 .withTextureName("Dummy.png").build(ModernWarfareMod.MOD_CONTEXT, ItemMagazine.class);
 
         Magazines.AK74PearlMag = new ItemMagazine.Builder()
@@ -1756,7 +1788,7 @@ Magazines.RPK74Mag = new ItemMagazine.Builder()
                     GL11.glRotatef(-5F, 0f, 0f, 1f);
                     GL11.glScaled(0.8F, 0.8F, 0.8f);
                 })
-                .withMaxStackSize(6)
+                .withMaxStackSize(5)
                 .withTextureName("Dummy.png").build(ModernWarfareMod.MOD_CONTEXT, ItemMagazine.class);
 
         Magazines.AK74PlumMag = new ItemMagazine.Builder()
@@ -1784,7 +1816,7 @@ Magazines.RPK74Mag = new ItemMagazine.Builder()
                     GL11.glRotatef(-5F, 0f, 0f, 1f);
                     GL11.glScaled(0.8F, 0.8F, 0.8f);
                 })
-                .withMaxStackSize(6)
+                .withMaxStackSize(5)
                 .withTextureName("Dummy.png").build(ModernWarfareMod.MOD_CONTEXT, ItemMagazine.class);
 
         Magazines.RPK74MPlumMag = new ItemMagazine.Builder()
@@ -1812,7 +1844,7 @@ Magazines.RPK74Mag = new ItemMagazine.Builder()
                     GL11.glRotatef(-5F, 0f, 0f, 1f);
                     GL11.glScaled(0.8F, 0.8F, 0.8f);
                 })
-                .withMaxStackSize(6)
+                .withMaxStackSize(3)
                 .withTextureName("Dummy.png").build(ModernWarfareMod.MOD_CONTEXT, ItemMagazine.class);
 
         Magazines.AK74WhiteMag = new ItemMagazine.Builder()
@@ -1840,7 +1872,7 @@ Magazines.RPK74Mag = new ItemMagazine.Builder()
                     GL11.glRotatef(-5F, 0f, 0f, 1f);
                     GL11.glScaled(0.8F, 0.8F, 0.8f);
                 })
-                .withMaxStackSize(6)
+                .withMaxStackSize(5)
                 .withTextureName("Dummy.png").build(ModernWarfareMod.MOD_CONTEXT, ItemMagazine.class);
         
         Magazines.AK74Mag60 = new ItemMagazine.Builder()
@@ -1868,7 +1900,7 @@ Magazines.RPK74Mag = new ItemMagazine.Builder()
                     GL11.glRotatef(-5F, 0f, 0f, 1f);
                     GL11.glScaled(0.6F, 0.6F, 0.6f);
                 })
-                .withMaxStackSize(6)
+                .withMaxStackSize(2)
                 .withTextureName("Dummy.png").build(ModernWarfareMod.MOD_CONTEXT, ItemMagazine.class);
         
 
@@ -1897,7 +1929,7 @@ Magazines.RPK74Mag = new ItemMagazine.Builder()
                     GL11.glRotatef(-5F, 0f, 0f, 1f);
                     GL11.glScaled(0.6F, 0.6F, 0.6f);
                 })
-                .withMaxStackSize(6)
+                .withMaxStackSize(2)
                 .withTextureName("Dummy.png").build(ModernWarfareMod.MOD_CONTEXT, ItemMagazine.class);
         
         Magazines.AK15Mag = new ItemMagazine.Builder()
@@ -1925,7 +1957,7 @@ Magazines.RPK74Mag = new ItemMagazine.Builder()
                     GL11.glRotatef(-5F, 0f, 0f, 1f);
                     GL11.glScaled(0.7F, 0.7F, 0.7f);
                 })
-                .withMaxStackSize(6)
+                .withMaxStackSize(5)
                 .withTextureName("Dummy.png").build(ModernWarfareMod.MOD_CONTEXT, ItemMagazine.class);
 
         Magazines.GrozaMag = new ItemMagazine.Builder()
@@ -1953,7 +1985,7 @@ Magazines.RPK74Mag = new ItemMagazine.Builder()
                     GL11.glRotatef(-15F, 0f, 0f, 1f);
                     GL11.glScaled(1F, 1F, 1f);
                 })
-                .withMaxStackSize(6)
+                .withMaxStackSize(5)
                 .withTextureName("Dummy.png").build(ModernWarfareMod.MOD_CONTEXT, ItemMagazine.class);
         
         Magazines.AK12Mag545x39 = new ItemMagazine.Builder()
@@ -1981,7 +2013,7 @@ Magazines.RPK74Mag = new ItemMagazine.Builder()
                     GL11.glRotatef(-5F, 0f, 0f, 1f);
                     GL11.glScaled(0.7F, 0.7F, 0.7f);
                 })
-                .withMaxStackSize(6)
+                .withMaxStackSize(5)
                 .withTextureName("Dummy.png").build(ModernWarfareMod.MOD_CONTEXT, ItemMagazine.class);
         
         Magazines.AK75Mag545x39 = new ItemMagazine.Builder()
@@ -2008,7 +2040,7 @@ Magazines.RPK74Mag = new ItemMagazine.Builder()
                     GL11.glRotatef(-5F, 0f, 0f, 1f);
                     GL11.glScaled(1F, 1F, 1f);
                 })
-                .withMaxStackSize(6)
+                .withMaxStackSize(1)
                 .withTextureName("Dummy.png").build(ModernWarfareMod.MOD_CONTEXT, ItemMagazine.class);
         
         Magazines.AK12Mag = new ItemMagazine.Builder()
@@ -2035,7 +2067,7 @@ Magazines.RPK74Mag = new ItemMagazine.Builder()
                     GL11.glRotatef(-5F, 0f, 0f, 1f);
                     GL11.glScaled(0.9F, 0.9F, 0.9f);
                 })
-                .withMaxStackSize(6)
+                .withMaxStackSize(5)
                 .withTextureName("Dummy.png").build(ModernWarfareMod.MOD_CONTEXT, ItemMagazine.class);
         
         Magazines.AK47PMAGTan = new ItemMagazine.Builder()
@@ -2063,7 +2095,7 @@ Magazines.RPK74Mag = new ItemMagazine.Builder()
                     GL11.glRotatef(-5F, 0f, 0f, 1f);
                     GL11.glScaled(0.7F, 0.7F, 0.7f);
                 })
-                .withMaxStackSize(6)
+                .withMaxStackSize(5)
                 .withTextureName("Dummy.png").build(ModernWarfareMod.MOD_CONTEXT, ItemMagazine.class);
         
         Magazines.AK47Mag = new ItemMagazine.Builder()
@@ -2091,7 +2123,7 @@ Magazines.RPK74Mag = new ItemMagazine.Builder()
                     GL11.glRotatef(-5F, 0f, 0f, 1f);
                     GL11.glScaled(0.7F, 0.7F, 0.7f);
                 })
-                .withMaxStackSize(6)
+                .withMaxStackSize(5)
                 .withTextureName("Dummy.png").build(ModernWarfareMod.MOD_CONTEXT, ItemMagazine.class);
 
         Magazines.AKMMag = new ItemMagazine.Builder()
@@ -2119,7 +2151,7 @@ Magazines.RPK74Mag = new ItemMagazine.Builder()
                     GL11.glRotatef(-5F, 0f, 0f, 1f);
                     GL11.glScaled(0.7F, 0.7F, 0.7f);
                 })
-                .withMaxStackSize(6)
+                .withMaxStackSize(5)
                 .withTextureName("Dummy.png").build(ModernWarfareMod.MOD_CONTEXT, ItemMagazine.class);
 
         Magazines.AKMGreenMag = new ItemMagazine.Builder()
@@ -2147,7 +2179,7 @@ Magazines.RPK74Mag = new ItemMagazine.Builder()
                     GL11.glRotatef(-5F, 0f, 0f, 1f);
                     GL11.glScaled(0.7F, 0.7F, 0.7f);
                 })
-                .withMaxStackSize(6)
+                .withMaxStackSize(5)
                 .withTextureName("Dummy.png").build(ModernWarfareMod.MOD_CONTEXT, ItemMagazine.class);
 
         Magazines.AK103Mag = new ItemMagazine.Builder()
@@ -2175,7 +2207,7 @@ Magazines.RPK74Mag = new ItemMagazine.Builder()
                     GL11.glRotatef(-5F, 0f, 0f, 1f);
                     GL11.glScaled(0.7F, 0.7F, 0.7f);
                 })
-                .withMaxStackSize(6)
+                .withMaxStackSize(5)
                 .withTextureName("Dummy.png").build(ModernWarfareMod.MOD_CONTEXT, ItemMagazine.class);
         
         Magazines.AK50Mag = new ItemMagazine.Builder()
@@ -2203,7 +2235,7 @@ Magazines.RPK74Mag = new ItemMagazine.Builder()
                     GL11.glRotatef(-5F, 0f, 0f, 1f);
                     GL11.glScaled(0.9F, 0.9F, 0.9f);
                 })
-                .withMaxStackSize(6)
+                .withMaxStackSize(2)
                 .withTextureName("Dummy.png").build(ModernWarfareMod.MOD_CONTEXT, ItemMagazine.class);
         
         Magazines.AK75Mag = new ItemMagazine.Builder()
@@ -2230,7 +2262,7 @@ Magazines.RPK74Mag = new ItemMagazine.Builder()
                     GL11.glRotatef(-5F, 0f, 0f, 1f);
                     GL11.glScaled(1F, 1F, 1f);
                 })
-                .withMaxStackSize(6)
+                .withMaxStackSize(1)
                 .withTextureName("Dummy.png").build(ModernWarfareMod.MOD_CONTEXT, ItemMagazine.class);
         
         Magazines.AK100Mag = new ItemMagazine.Builder()
@@ -2258,7 +2290,7 @@ Magazines.RPK74Mag = new ItemMagazine.Builder()
                     GL11.glRotatef(-5F, 0f, 0f, 1f);
                     GL11.glScaled(0.8F, 0.8F, 0.8f);
                 })
-                .withMaxStackSize(6)
+                .withMaxStackSize(1)
                 .withTextureName("Dummy.png").build(ModernWarfareMod.MOD_CONTEXT, ItemMagazine.class);
         
         Magazines.DragunovMag = new ItemMagazine.Builder()
@@ -2286,7 +2318,7 @@ Magazines.RPK74Mag = new ItemMagazine.Builder()
                     GL11.glRotatef(-5F, 0f, 0f, 1f);
                     GL11.glScaled(0.7F, 0.7F, 0.7f);
                 })
-                .withMaxStackSize(6)
+                .withMaxStackSize(5)
                 .withTextureName("Dummy.png")
                 .build(ModernWarfareMod.MOD_CONTEXT, ItemMagazine.class);
 
@@ -2315,7 +2347,7 @@ Magazines.RPK74Mag = new ItemMagazine.Builder()
                     GL11.glRotatef(-5F, 0f, 0f, 1f);
                     GL11.glScaled(0.7F, 0.7F, 0.7f);
                 })
-                .withMaxStackSize(6)
+                .withMaxStackSize(3)
                 .withTextureName("Dummy.png")
                 .build(ModernWarfareMod.MOD_CONTEXT, ItemMagazine.class);
 
@@ -2344,7 +2376,7 @@ Magazines.RPK74Mag = new ItemMagazine.Builder()
                     GL11.glRotatef(-5F, 0f, 0f, 1f);
                     GL11.glScaled(0.7F, 0.7F, 0.7f);
                 })
-                .withMaxStackSize(6)
+                .withMaxStackSize(3)
                 .withTextureName("Dummy.png")
                 .build(ModernWarfareMod.MOD_CONTEXT, ItemMagazine.class);
         
@@ -2368,7 +2400,7 @@ Magazines.RPK74Mag = new ItemMagazine.Builder()
                     GL11.glRotatef(-5F, 0f, 0f, 1f);
                     GL11.glScaled(0.7F, 0.7F, 0.7f);
                 })
-                .withMaxStackSize(6)
+                .withMaxStackSize(4)
                 .withCrafting(CraftingComplexity.MEDIUM,
                           MWCItems.steelIngot,
                           MWCItems.gunmetalIngot)
@@ -2398,7 +2430,7 @@ Magazines.RPK74Mag = new ItemMagazine.Builder()
                     GL11.glRotatef(-5F, 0f, 0f, 1f);
                     GL11.glScaled(0.7F, 0.7F, 0.7f);
                 })
-                .withMaxStackSize(6)
+                .withMaxStackSize(4)
                 .withTextureName("Dummy.png").build(ModernWarfareMod.MOD_CONTEXT, ItemMagazine.class);
         
         Magazines.Origin12DrumMag = new ItemMagazine.Builder()
@@ -2425,7 +2457,34 @@ Magazines.RPK74Mag = new ItemMagazine.Builder()
                     GL11.glRotatef(-5F, 0f, 0f, 1f);
                     GL11.glScaled(0.7F, 0.7F, 0.7f);
                 })
-                .withMaxStackSize(6)
+                .withMaxStackSize(1)
+                .withTextureName("Dummy.png").build(ModernWarfareMod.MOD_CONTEXT, ItemMagazine.class);
+
+        Magazines.AA12BoxMag = new ItemMagazine.Builder()
+        		.withAmmo(8)
+                .withCompatibleBullet(Bullets.Shotgun12Guage)
+                .withName("AA12BoxMag")
+                .withRotationPoint(-0.12000000357627871, 1.0000000298023226, -1.9200000572204607)
+                .withCreativeTab(ModernWarfareMod.AmmoTab)
+                .withModel(new com.paneedah.mwc.models.AA12BoxMag(), "aa12.png")
+
+                .withFirstPersonPositioning((player, itemStack) -> {
+                    GL11.glTranslatef(0.1F, -0.3F, 0.4F);
+                    GL11.glRotatef(30F, 0f, 1f, 0f);
+                    GL11.glScaled(0.7F, 0.7F, 0.7F);
+                }).withThirdPersonPositioning((player, itemStack) -> {
+                    GL11.glTranslatef(-0.3F, 0.5F, 0.1F);
+                    GL11.glRotatef(-50F, 0f, 1f, 0f);
+                    GL11.glRotatef(10F, 1f, 0f, 0f);
+                    GL11.glScaled(0.7F, 0.7F, 0.7F);
+                }).withInventoryPositioning((itemStack) -> {
+                    GL11.glTranslatef(0.3F, 0.7f, -2.7F);
+                    GL11.glRotatef(-150F, 0f, 1f, 0f);
+                    GL11.glRotatef(0F, 1f, 0f, 0f);
+                    GL11.glRotatef(-5F, 0f, 0f, 1f);
+                    GL11.glScaled(0.7F, 0.7F, 0.7f);
+                })
+                .withMaxStackSize(4)
                 .withTextureName("Dummy.png").build(ModernWarfareMod.MOD_CONTEXT, ItemMagazine.class);
         
         Magazines.M9A1Mag = new ItemMagazine.Builder()
@@ -2453,7 +2512,7 @@ Magazines.RPK74Mag = new ItemMagazine.Builder()
                     GL11.glRotatef(-5F, 0f, 0f, 1f);
                     GL11.glScaled(0.9F, 0.9F, 0.9f);
                 })
-                .withMaxStackSize(6)
+                .withMaxStackSize(8)
                 .withTextureName("Dummy.png").build(ModernWarfareMod.MOD_CONTEXT, ItemMagazine.class);
 
         Magazines.M93RMag = new ItemMagazine.Builder()
@@ -2508,7 +2567,7 @@ Magazines.RPK74Mag = new ItemMagazine.Builder()
                     GL11.glRotatef(-5F, 0f, 0f, 1f);
                     GL11.glScaled(0.9F, 0.9F, 0.9f);
                 })
-                .withMaxStackSize(6)
+                .withMaxStackSize(8)
                 .withTextureName("Dummy.png").build(ModernWarfareMod.MOD_CONTEXT, ItemMagazine.class);
 
         Magazines.FiveSeven30Mag = new ItemMagazine.Builder()
@@ -2562,7 +2621,7 @@ Magazines.RPK74Mag = new ItemMagazine.Builder()
                     GL11.glRotatef(-5F, 0f, 0f, 1f);
                     GL11.glScaled(0.9F, 0.9F, 0.9f);
                 })
-                .withMaxStackSize(6)
+                .withMaxStackSize(1)
                 .withTextureName("Dummy.png").build(ModernWarfareMod.MOD_CONTEXT, ItemMagazine.class);
         
         Magazines.SamuraiEdgeMag = new ItemMagazine.Builder().withAmmo(15).withCompatibleBullet(Bullets.Bullet40SW)
@@ -2586,7 +2645,7 @@ Magazines.RPK74Mag = new ItemMagazine.Builder()
                     GL11.glRotatef(-5F, 0f, 0f, 1f);
                     GL11.glScaled(0.9F, 0.9F, 0.9f);
                 })
-                .withMaxStackSize(6)
+                .withMaxStackSize(8)
                 .withTextureName("Dummy.png").build(ModernWarfareMod.MOD_CONTEXT, ItemMagazine.class);
         
         Magazines.SCCYCPX2Mag = new ItemMagazine.Builder()
@@ -2614,7 +2673,7 @@ Magazines.RPK74Mag = new ItemMagazine.Builder()
                     GL11.glRotatef(-5F, 0f, 0f, 1f);
                     GL11.glScaled(0.9F, 0.9F, 0.9f);
                 })
-                .withMaxStackSize(6)
+                .withMaxStackSize(8)
                 .withTextureName("Dummy.png").build(ModernWarfareMod.MOD_CONTEXT, ItemMagazine.class);
         
         Magazines.SCCYCPX2MagExt = new ItemMagazine.Builder()
@@ -2696,7 +2755,7 @@ Magazines.RPK74Mag = new ItemMagazine.Builder()
                     GL11.glRotatef(-5F, 0f, 0f, 1f);
                     GL11.glScaled(0.75F, 0.75F, 0.75f);
                 })
-                .withMaxStackSize(6)
+                .withMaxStackSize(4)
                 .withTextureName("Dummy.png").build(ModernWarfareMod.MOD_CONTEXT, ItemMagazine.class);
         
         Magazines.M9DrumMag = new ItemMagazine.Builder().withAmmo(65).withCompatibleBullet(Bullets.Bullet9x19mm).withName("M9DrumMag")
@@ -2719,7 +2778,7 @@ Magazines.RPK74Mag = new ItemMagazine.Builder()
                     GL11.glRotatef(-5F, 0f, 0f, 1f);
                     GL11.glScaled(0.75F, 0.75F, 0.75f);
                 })
-                .withMaxStackSize(6)
+                .withMaxStackSize(1)
                 .withTextureName("Dummy.png").build(ModernWarfareMod.MOD_CONTEXT, ItemMagazine.class);
 
         Magazines.QZS92Mag = new ItemMagazine.Builder()
@@ -2746,7 +2805,7 @@ Magazines.RPK74Mag = new ItemMagazine.Builder()
                     GL11.glRotatef(-5F, 0f, 0f, 1f);
                     GL11.glScaled(0.9F, 0.9F, 0.9f);
                 })
-                .withMaxStackSize(6)
+                .withMaxStackSize(8)
                 .withTextureName("Dummy.png").build(ModernWarfareMod.MOD_CONTEXT, ItemMagazine.class);
         
         Magazines.MP443Mag = new ItemMagazine.Builder()
@@ -2773,7 +2832,7 @@ Magazines.RPK74Mag = new ItemMagazine.Builder()
                     GL11.glRotatef(-5F, 0f, 0f, 1f);
                     GL11.glScaled(0.7F, 0.7F, 0.7f);
                 })
-                .withMaxStackSize(6)
+                .withMaxStackSize(8)
                 .withTextureName("Dummy.png").build(ModernWarfareMod.MOD_CONTEXT, ItemMagazine.class);
         
         Magazines.M45A1Mag = new ItemMagazine.Builder().withAmmo(7).withCompatibleBullet(Bullets.Bullet45ACP).withName("M45A1Mag_2")
@@ -2796,7 +2855,7 @@ Magazines.RPK74Mag = new ItemMagazine.Builder()
                     GL11.glRotatef(-5F, 0f, 0f, 1f);
                     GL11.glScaled(0.9F, 0.9F, 0.9f);
                 })
-                .withMaxStackSize(6)
+                .withMaxStackSize(8)
                 .withCrafting(CraftingComplexity.MEDIUM,
                           MWCItems.steelIngot,
                           MWCItems.gunmetalIngot)
@@ -2849,7 +2908,7 @@ Magazines.RPK74Mag = new ItemMagazine.Builder()
                     GL11.glRotatef(-5F, 0f, 0f, 1f);
                     GL11.glScaled(0.75F, 0.75F, 0.75f);
                 })
-                .withMaxStackSize(6)
+                .withMaxStackSize(4)
                 .withCrafting(CraftingComplexity.MEDIUM,
                           MWCItems.steelIngot,
                           MWCItems.gunmetalIngot)
@@ -2879,7 +2938,7 @@ Magazines.RPK74Mag = new ItemMagazine.Builder()
                     GL11.glRotatef(-5F, 0f, 0f, 1f);
                     GL11.glScaled(0.9F, 0.9F, 0.9f);
                 })
-                .withMaxStackSize(6)
+                .withMaxStackSize(8)
                 .withTextureName("Dummy.png").build(ModernWarfareMod.MOD_CONTEXT, ItemMagazine.class);
         
         Magazines.MakarovMag = new ItemMagazine.Builder().withAmmo(8)
@@ -2904,7 +2963,7 @@ Magazines.RPK74Mag = new ItemMagazine.Builder()
                     GL11.glRotatef(-5F, 0f, 0f, 1f);
                     GL11.glScaled(0.9F, 0.9F, 0.9f);
                 })
-                .withMaxStackSize(6)
+                .withMaxStackSize(8)
                 .withTextureName("Dummy.png").build(ModernWarfareMod.MOD_CONTEXT, ItemMagazine.class);
 
         
@@ -2927,7 +2986,7 @@ Magazines.RPK74Mag = new ItemMagazine.Builder()
                     GL11.glRotatef(-5F, 0f, 0f, 1f);
                     GL11.glScaled(0.9F, 0.9F, 0.9f);
                 })
-                .withMaxStackSize(6)
+                .withMaxStackSize(8)
                 .withTextureName("Dummy.png").build(ModernWarfareMod.MOD_CONTEXT, ItemMagazine.class);
 
         Magazines.P2000Mag = new ItemMagazine.Builder().withAmmo(13).withCompatibleBullet(Bullets.Bullet9x19mm).withName("P2000Mag")
@@ -2949,7 +3008,7 @@ Magazines.RPK74Mag = new ItemMagazine.Builder()
                     GL11.glRotatef(-5F, 0f, 0f, 1f);
                     GL11.glScaled(0.9F, 0.9F, 0.9f);
                 })
-                .withMaxStackSize(6)
+                .withMaxStackSize(8)
                 .withTextureName("Dummy.png").build(ModernWarfareMod.MOD_CONTEXT, ItemMagazine.class);
         
         Magazines.HiPowerMag = new ItemMagazine.Builder().withAmmo(13).withCompatibleBullet(Bullets.Bullet9x19mm).withName("HiPowerMag")
@@ -2972,7 +3031,7 @@ Magazines.RPK74Mag = new ItemMagazine.Builder()
                     GL11.glRotatef(-5F, 0f, 0f, 1f);
                     GL11.glScaled(0.9F, 0.9F, 0.9f);
                 })
-                .withMaxStackSize(6)
+                .withMaxStackSize(8)
                 .withCrafting(CraftingComplexity.MEDIUM,
                           MWCItems.steelIngot,
                           MWCItems.gunmetalIngot)
@@ -2998,7 +3057,7 @@ Magazines.RPK74Mag = new ItemMagazine.Builder()
                     GL11.glRotatef(-5F, 0f, 0f, 1f);
                     GL11.glScaled(0.8F, 0.8F, 0.8f);
                 })
-                .withMaxStackSize(6)
+                .withMaxStackSize(8)
                 .withCrafting(CraftingComplexity.MEDIUM,
                           MWCItems.steelIngot,
                           MWCItems.gunmetalIngot)
@@ -3028,7 +3087,7 @@ Magazines.RPK74Mag = new ItemMagazine.Builder()
                     GL11.glRotatef(-5F, 0f, 0f, 1f);
                     GL11.glScaled(0.8F, 0.8F, 0.8f);
                 })
-                .withMaxStackSize(6)
+                .withMaxStackSize(8)
                 .withTextureName("Dummy.png").build(ModernWarfareMod.MOD_CONTEXT, ItemMagazine.class);
 
         Magazines.PSSMag = new ItemMagazine.Builder()
@@ -3055,7 +3114,7 @@ Magazines.RPK74Mag = new ItemMagazine.Builder()
                     GL11.glRotatef(-5F, 0f, 0f, 1f);
                     GL11.glScaled(0.8F, 0.8F, 0.8f);
                 })
-                .withMaxStackSize(6)
+                .withMaxStackSize(8)
                 .withTextureName("Dummy.png").build(ModernWarfareMod.MOD_CONTEXT, ItemMagazine.class);
         
         Magazines.GlockMag13 = new ItemMagazine.Builder().withAmmo(17).withCompatibleBullet(Bullets.Bullet9x19mm).withName("GlockMag13")
@@ -3078,11 +3137,11 @@ Magazines.RPK74Mag = new ItemMagazine.Builder()
                     GL11.glRotatef(-5F, 0f, 0f, 1f);
                     GL11.glScaled(0.8F, 0.8F, 0.8f);
                 })
-                .withMaxStackSize(6)
+                .withMaxStackSize(8)
                 .withTextureName("Dummy.png").build(ModernWarfareMod.MOD_CONTEXT, ItemMagazine.class);
         
 
-        Magazines.Glock18CMag = new ItemMagazine.Builder().withAmmo(20).withCompatibleBullet(Bullets.Bullet9x19mm).withName("Glock18Cmag_2")
+        Magazines.Glock18CMag = new ItemMagazine.Builder().withAmmo(33).withCompatibleBullet(Bullets.Bullet9x19mm).withName("Glock18Cmag_2")
                 .withCreativeTab(ModernWarfareMod.AmmoTab)
                 .withModel(new com.paneedah.mwc.models.Glock18Cmag(), "glock18c.png")
 
@@ -3102,7 +3161,7 @@ Magazines.RPK74Mag = new ItemMagazine.Builder()
                     GL11.glRotatef(-5F, 0f, 0f, 1f);
                     GL11.glScaled(0.6F, 0.6F, 0.6f);
                 })
-                .withMaxStackSize(6)
+                .withMaxStackSize(4)
                 .withTextureName("Dummy.png").build(ModernWarfareMod.MOD_CONTEXT, ItemMagazine.class);
         
         Magazines.GlockMag50 = new ItemMagazine.Builder().withAmmo(50).withCompatibleBullet(Bullets.Bullet9x19mm).withName("GlockMag50")
@@ -3125,7 +3184,7 @@ Magazines.RPK74Mag = new ItemMagazine.Builder()
                     GL11.glRotatef(-5F, 0f, 0f, 1f);
                     GL11.glScaled(0.75F, 0.75F, 0.75f);
                 })
-                .withMaxStackSize(6)
+                .withMaxStackSize(1)
                 .withTextureName("Dummy.png").build(ModernWarfareMod.MOD_CONTEXT, ItemMagazine.class);
         
         Magazines.AS50Mag = new ItemMagazine.Builder().withAmmo(10).withCompatibleBullet(Bullets.Bullet50BMG).withName("AS50Mag_2")
@@ -3148,7 +3207,7 @@ Magazines.RPK74Mag = new ItemMagazine.Builder()
                     GL11.glRotatef(-5F, 0f, 0f, 1f);
                     GL11.glScaled(0.8F, 0.8F, 0.8f);
                 })
-                .withMaxStackSize(6)
+                .withMaxStackSize(2)
                 .withCrafting(CraftingComplexity.MEDIUM,
                           MWCItems.steelIngot,
                           MWCItems.gunmetalIngot)
@@ -3179,7 +3238,7 @@ Magazines.RPK74Mag = new ItemMagazine.Builder()
                     GL11.glRotatef(-5F, 0f, 0f, 1f);
                     GL11.glScaled(1F, 1F, 1f);
                 })
-                .withMaxStackSize(6)
+                .withMaxStackSize(2)
                 .withTextureName("Dummy.png").build(ModernWarfareMod.MOD_CONTEXT, ItemMagazine.class);
 
         Magazines.M99Mag = new ItemMagazine.Builder()
@@ -3207,7 +3266,7 @@ Magazines.RPK74Mag = new ItemMagazine.Builder()
                     GL11.glRotatef(-5F, 0f, 0f, 1f);
                     GL11.glScaled(1F, 1F, 1f);
                 })
-                .withMaxStackSize(6)
+                .withMaxStackSize(2)
                 .withTextureName("Dummy.png").build(ModernWarfareMod.MOD_CONTEXT, ItemMagazine.class);
         
         Magazines.NTW20Mag = new ItemMagazine.Builder().withAmmo(3).withCompatibleBullet(Bullets.Bullet20x82mm).withName("NTW20Mag")
@@ -3230,7 +3289,7 @@ Magazines.RPK74Mag = new ItemMagazine.Builder()
                     GL11.glRotatef(-5F, 0f, 0f, 1f);
                     GL11.glScaled(1F, 1F, 1f);
                 })
-                .withMaxStackSize(6)
+                .withMaxStackSize(1)
                 .withCrafting(CraftingComplexity.MEDIUM,
                           MWCItems.steelIngot,
                           MWCItems.gunmetalIngot)
@@ -3260,7 +3319,7 @@ Magazines.RPK74Mag = new ItemMagazine.Builder()
                     GL11.glRotatef(-5F, 0f, 0f, 1f);
                     GL11.glScaled(0.8F, 0.8F, 0.8f);
                 })
-                .withMaxStackSize(6)
+                .withMaxStackSize(5)
                 .withTextureName("Dummy.png").build(ModernWarfareMod.MOD_CONTEXT, ItemMagazine.class);
         
         Magazines.KedrMag = new ItemMagazine.Builder().withAmmo(20).withCompatibleBullet(Bullets.Bullet9x18mm).withName("KedrMag_2")
@@ -3283,7 +3342,7 @@ Magazines.RPK74Mag = new ItemMagazine.Builder()
                     GL11.glRotatef(-5F, 0f, 0f, 1f);
                     GL11.glScaled(0.8F, 0.8F, 0.8f);
                 })
-                .withMaxStackSize(6)
+                .withMaxStackSize(8)
                 .withTextureName("Dummy.png").build(ModernWarfareMod.MOD_CONTEXT, ItemMagazine.class);
 
         Magazines.Kedr30Mag = new ItemMagazine.Builder().withAmmo(30).withCompatibleBullet(Bullets.Bullet9x18mm).withName("Kedr30Mag")
@@ -3329,7 +3388,7 @@ Magazines.RPK74Mag = new ItemMagazine.Builder()
                     GL11.glRotatef(-5F, 0f, 0f, 1f);
                     GL11.glScaled(1.4F, 1.4F, 1.4f);
                 })
-                .withMaxStackSize(6)
+                .withMaxStackSize(4)
                 .withCrafting(CraftingComplexity.MEDIUM,
                           MWCItems.steelIngot,
                           MWCItems.gunmetalIngot)
@@ -3359,7 +3418,7 @@ Magazines.RPK74Mag = new ItemMagazine.Builder()
                     GL11.glRotatef(-5F, 0f, 0f, 1f);
                     GL11.glScaled(1.4F, 1.4F, 1.4f);
                 })
-                .withMaxStackSize(6)
+                .withMaxStackSize(5)
                 .withCrafting(CraftingComplexity.MEDIUM,
                           MWCItems.steelIngot,
                           MWCItems.gunmetalIngot)
@@ -3389,7 +3448,7 @@ Magazines.RPK74Mag = new ItemMagazine.Builder()
                     GL11.glRotatef(-5F, 0f, 0f, 1f);
                     GL11.glScaled(1.4F, 1.4F, 1.4f);
                 })
-                .withMaxStackSize(6)
+                .withMaxStackSize(2)
                 .withCrafting(CraftingComplexity.MEDIUM,
                           MWCItems.steelIngot,
                           MWCItems.gunmetalIngot)
@@ -3418,7 +3477,7 @@ Magazines.RPK74Mag = new ItemMagazine.Builder()
                     GL11.glRotatef(-5F, 0f, 0f, 1f);
                     GL11.glScaled(1.1F, 1.1F, 1.1f);
                 })
-                .withMaxStackSize(6)
+                .withMaxStackSize(2)
                 .withCrafting(CraftingComplexity.MEDIUM,
                           MWCItems.steelIngot,
                           MWCItems.gunmetalIngot)
@@ -3448,7 +3507,7 @@ Magazines.RPK74Mag = new ItemMagazine.Builder()
                     GL11.glRotatef(-5F, 0f, 0f, 1f);
                     GL11.glScaled(1.1F, 1.1F, 1.1f);
                 })
-                .withMaxStackSize(6)
+                .withMaxStackSize(2)
                 .withCrafting(CraftingComplexity.MEDIUM,
                           MWCItems.steelIngot,
                           MWCItems.gunmetalIngot)
@@ -3475,7 +3534,7 @@ Magazines.RPK74Mag = new ItemMagazine.Builder()
                     GL11.glRotatef(-5F, 0f, 0f, 1f);
                     GL11.glScaled(1.5F, 1.5F, 1.5f);
                 })
-                .withMaxStackSize(6)
+                .withMaxStackSize(5)
                 .withCrafting(CraftingComplexity.MEDIUM,
                           MWCItems.steelIngot,
                           MWCItems.gunmetalIngot)
@@ -3501,7 +3560,7 @@ Magazines.RPK74Mag = new ItemMagazine.Builder()
                     GL11.glRotatef(-5F, 0f, 0f, 1f);
                     GL11.glScaled(1.5F, 1.5F, 1.5f);
                 })
-                .withMaxStackSize(6)
+                .withMaxStackSize(2)
                 .withCrafting(CraftingComplexity.MEDIUM,
                           MWCItems.steelIngot,
                           MWCItems.gunmetalIngot)
@@ -3530,7 +3589,7 @@ Magazines.RPK74Mag = new ItemMagazine.Builder()
                     GL11.glRotatef(-5F, 0f, 0f, 1f);
                     GL11.glScaled(1.5F, 1.5F, 1.5f);
                 })
-                .withMaxStackSize(6)
+                .withMaxStackSize(5)
                 .withCrafting(CraftingComplexity.MEDIUM,
                           MWCItems.steelIngot,
                           MWCItems.gunmetalIngot)
@@ -3559,7 +3618,7 @@ Magazines.RPK74Mag = new ItemMagazine.Builder()
                     GL11.glRotatef(-5F, 0f, 0f, 1f);
                     GL11.glScaled(1.1F, 1.1F, 1.1f);
                 })
-                .withMaxStackSize(6)
+                .withMaxStackSize(2)
                 .withCrafting(CraftingComplexity.MEDIUM,
                           MWCItems.steelIngot,
                           MWCItems.gunmetalIngot)
@@ -3588,7 +3647,7 @@ Magazines.RPK74Mag = new ItemMagazine.Builder()
                     GL11.glRotatef(-15F, 0f, 0f, 1f);
                     GL11.glScaled(1F, 1F, 1f);
                 })
-                .withMaxStackSize(6)
+                .withMaxStackSize(4)
                 .withTextureName("Dummy.png").build(ModernWarfareMod.MOD_CONTEXT, ItemMagazine.class);
 
         Magazines.M110Mag10 = new ItemMagazine.Builder()
@@ -3614,7 +3673,7 @@ Magazines.RPK74Mag = new ItemMagazine.Builder()
                     GL11.glRotatef(-15F, 0f, 0f, 1f);
                     GL11.glScaled(1F, 1F, 1f);
                 })
-                .withMaxStackSize(6)
+                .withMaxStackSize(8)
                 .withTextureName("Dummy.png").build(ModernWarfareMod.MOD_CONTEXT, ItemMagazine.class);
         
         Magazines.Z10Mag = new ItemMagazine.Builder()
@@ -3641,7 +3700,7 @@ Magazines.RPK74Mag = new ItemMagazine.Builder()
                     GL11.glRotatef(-15F, 0f, 0f, 1f);
                     GL11.glScaled(1F, 1F, 1f);
                 })
-                .withMaxStackSize(6)
+                .withMaxStackSize(4)
                 .withTextureName("Dummy.png").build(ModernWarfareMod.MOD_CONTEXT, ItemMagazine.class);
         
         Magazines.M1928Mag = new ItemMagazine.Builder().withAmmo(50).withCompatibleBullet(Bullets.Bullet45ACP).withName("M1928Mag")
@@ -3664,7 +3723,7 @@ Magazines.RPK74Mag = new ItemMagazine.Builder()
                     GL11.glRotatef(-15F, 0f, 0f, 1f);
                     GL11.glScaled(0.9F, 0.9F, 0.9f);
                 })
-                .withMaxStackSize(6)
+                .withMaxStackSize(1)
                 .withCrafting(CraftingComplexity.MEDIUM,
                           MWCItems.steelIngot,
                           MWCItems.gunmetalIngot)
@@ -3743,7 +3802,7 @@ Magazines.RPK74Mag = new ItemMagazine.Builder()
                     GL11.glRotatef(-15F, 0f, 0f, 1f);
                     GL11.glScaled(1F, 1F, 1f);
                 })
-                .withMaxStackSize(6)
+                .withMaxStackSize(2)
                 .withCrafting(CraftingComplexity.MEDIUM,
                           MWCItems.steelIngot,
                           MWCItems.gunmetalIngot)
@@ -3769,7 +3828,7 @@ Magazines.RPK74Mag = new ItemMagazine.Builder()
                     GL11.glRotatef(-50F, 0f, 0f, 1f);
                     GL11.glScaled(0.9F, 0.9F, 0.9f);
                 })
-                .withMaxStackSize(6)
+                .withMaxStackSize(2)
                 .withCrafting(CraftingComplexity.MEDIUM,
                           MWCItems.steelIngot,
                           MWCItems.gunmetalIngot)
@@ -3830,7 +3889,7 @@ Magazines.RPK74Mag = new ItemMagazine.Builder()
                     GL11.glRotatef(-15F, 0f, 0f, 1f);
                     GL11.glScaled(0.8F, 0.8F, 0.8f);
                 })
-                .withMaxStackSize(6)
+                .withMaxStackSize(4)
                 .withTextureName("Dummy.png").build(ModernWarfareMod.MOD_CONTEXT, ItemMagazine.class);
 
         Magazines.FNFAL30Mag = new ItemMagazine.Builder()
@@ -3858,7 +3917,7 @@ Magazines.RPK74Mag = new ItemMagazine.Builder()
                     GL11.glRotatef(-15F, 0f, 0f, 1f);
                     GL11.glScaled(0.8F, 0.8F, 0.8f);
                 })
-                .withMaxStackSize(6)
+                .withMaxStackSize(2)
                 .withTextureName("Dummy.png").build(ModernWarfareMod.MOD_CONTEXT, ItemMagazine.class);
 
         Magazines.FNFALL1A1Mag = new ItemMagazine.Builder()
@@ -3886,7 +3945,7 @@ Magazines.RPK74Mag = new ItemMagazine.Builder()
                     GL11.glRotatef(-15F, 0f, 0f, 1f);
                     GL11.glScaled(0.8F, 0.8F, 0.8f);
                 })
-                .withMaxStackSize(6)
+                .withMaxStackSize(2)
                 .withTextureName("Dummy.png").build(ModernWarfareMod.MOD_CONTEXT, ItemMagazine.class);
         
         Magazines.G3Mag = new ItemMagazine.Builder()
@@ -3914,7 +3973,7 @@ Magazines.RPK74Mag = new ItemMagazine.Builder()
                     GL11.glRotatef(-15F, 0f, 0f, 1f);
                     GL11.glScaled(0.8F, 0.8F, 0.8f);
                 })
-                .withMaxStackSize(6)
+                .withMaxStackSize(4)
                 .withTextureName("Dummy.png").build(ModernWarfareMod.MOD_CONTEXT, ItemMagazine.class);
         
         Magazines.Mk14EBRMag = new ItemMagazine.Builder()
@@ -3942,7 +4001,7 @@ Magazines.RPK74Mag = new ItemMagazine.Builder()
                     GL11.glRotatef(-15F, 0f, 0f, 1f);
                     GL11.glScaled(1F, 1F, 1f);
                 })
-                .withMaxStackSize(6)
+                .withMaxStackSize(4)
                 .withTextureName("Dummy.png").build(ModernWarfareMod.MOD_CONTEXT, ItemMagazine.class);
         
         Magazines.M14Drum50 = new ItemMagazine.Builder()
@@ -3970,7 +4029,7 @@ Magazines.RPK74Mag = new ItemMagazine.Builder()
                     GL11.glRotatef(-15F, 0f, 0f, 1f);
                     GL11.glScaled(1.2F, 1.2F, 1.2f);
                 })
-                .withMaxStackSize(6)
+                .withMaxStackSize(1)
                 .withTextureName("Dummy.png").build(ModernWarfareMod.MOD_CONTEXT, ItemMagazine.class);
 
         Magazines.Mini14Mag20B = new ItemMagazine.Builder()
@@ -3998,7 +4057,7 @@ Magazines.RPK74Mag = new ItemMagazine.Builder()
                     GL11.glRotatef(-15F, 0f, 0f, 1f);
                     GL11.glScaled(1F, 1F, 1f);
                 })
-                .withMaxStackSize(6)
+                .withMaxStackSize(7)
                 .withTextureName("Dummy.png").build(ModernWarfareMod.MOD_CONTEXT, ItemMagazine.class);
 
         Magazines.Mini14Mag30B = new ItemMagazine.Builder()
@@ -4026,7 +4085,7 @@ Magazines.RPK74Mag = new ItemMagazine.Builder()
                     GL11.glRotatef(-15F, 0f, 0f, 1f);
                     GL11.glScaled(1F, 1F, 1f);
                 })
-                .withMaxStackSize(6)
+                .withMaxStackSize(5)
                 .withTextureName("Dummy.png").build(ModernWarfareMod.MOD_CONTEXT, ItemMagazine.class);
 
         Magazines.Mini14Mag5B = new ItemMagazine.Builder()
@@ -4054,7 +4113,7 @@ Magazines.RPK74Mag = new ItemMagazine.Builder()
                     GL11.glRotatef(-15F, 0f, 0f, 1f);
                     GL11.glScaled(1F, 1F, 1f);
                 })
-                .withMaxStackSize(6)
+                .withMaxStackSize(16)
                 .withTextureName("Dummy.png").build(ModernWarfareMod.MOD_CONTEXT, ItemMagazine.class);
 
         Magazines.Mini14Mag20 = new ItemMagazine.Builder()
@@ -4082,7 +4141,7 @@ Magazines.RPK74Mag = new ItemMagazine.Builder()
                     GL11.glRotatef(-15F, 0f, 0f, 1f);
                     GL11.glScaled(1F, 1F, 1f);
                 })
-                .withMaxStackSize(6)
+                .withMaxStackSize(7)
                 .withTextureName("Dummy.png").build(ModernWarfareMod.MOD_CONTEXT, ItemMagazine.class);
 
         Magazines.Mini14Mag30 = new ItemMagazine.Builder()
@@ -4110,7 +4169,7 @@ Magazines.RPK74Mag = new ItemMagazine.Builder()
                     GL11.glRotatef(-15F, 0f, 0f, 1f);
                     GL11.glScaled(1F, 1F, 1f);
                 })
-                .withMaxStackSize(6)
+                .withMaxStackSize(5)
                 .withTextureName("Dummy.png").build(ModernWarfareMod.MOD_CONTEXT, ItemMagazine.class);
 
         Magazines.Mini14Mag5 = new ItemMagazine.Builder()
@@ -4138,7 +4197,7 @@ Magazines.RPK74Mag = new ItemMagazine.Builder()
                     GL11.glRotatef(-15F, 0f, 0f, 1f);
                     GL11.glScaled(1F, 1F, 1f);
                 })
-                .withMaxStackSize(6)
+                .withMaxStackSize(16)
                 .withTextureName("Dummy.png").build(ModernWarfareMod.MOD_CONTEXT, ItemMagazine.class);
         
         Magazines.MP40Mag = new ItemMagazine.Builder().withAmmo(32).withCompatibleBullet(Bullets.Bullet9x19mm).withName("MP40Mag_2")
@@ -4360,7 +4419,7 @@ Magazines.RPK74Mag = new ItemMagazine.Builder()
                     GL11.glRotatef(-15F, 0f, 0f, 1f);
                     GL11.glScaled(0.9F, 0.9F, 0.9f);
                 })
-                .withMaxStackSize(6)
+                .withMaxStackSize(1)
                 .withTextureName("Dummy.png").build(ModernWarfareMod.MOD_CONTEXT, ItemMagazine.class);
         
         Magazines.MP7Mag = new ItemMagazine.Builder()
@@ -4416,7 +4475,7 @@ Magazines.RPK74Mag = new ItemMagazine.Builder()
                     GL11.glRotatef(-15F, 0f, 0f, 1f);
                     GL11.glScaled(0.9F, 0.9F, 0.9f);
                 })
-                .withMaxStackSize(6)
+                .withMaxStackSize(14)
                 .withTextureName("Dummy.png").build(ModernWarfareMod.MOD_CONTEXT, ItemMagazine.class);
 
         Magazines.SR2Mmag30 = new ItemMagazine.Builder()
@@ -4472,7 +4531,7 @@ Magazines.RPK74Mag = new ItemMagazine.Builder()
                     GL11.glRotatef(-15F, 0f, 0f, 1f);
                     GL11.glScaled(0.9F, 0.9F, 0.9f);
                 })
-                .withMaxStackSize(6)
+                .withMaxStackSize(14)
                 .withTextureName("Dummy.png").build(ModernWarfareMod.MOD_CONTEXT, ItemMagazine.class);
         
         Magazines.Type64SMGMag = new ItemMagazine.Builder()
@@ -4500,7 +4559,7 @@ Magazines.RPK74Mag = new ItemMagazine.Builder()
                     GL11.glRotatef(-15F, 0f, 0f, 1f);
                     GL11.glScaled(0.75F, 0.75F, 0.75f);
                 })
-                .withMaxStackSize(6)
+                .withMaxStackSize(10)
                 .withTextureName("Dummy.png").build(ModernWarfareMod.MOD_CONTEXT, ItemMagazine.class);
         
 
@@ -4753,7 +4812,7 @@ Magazines.RPK74Mag = new ItemMagazine.Builder()
                     GL11.glRotatef(5F, 0f, 0f, 1f);
                     GL11.glScaled(0.5F, 0.5F, 0.5f);
                 })
-                .withMaxStackSize(6)
+                .withMaxStackSize(3)
                 .withTextureName("Dummy.png").build(ModernWarfareMod.MOD_CONTEXT, ItemMagazine.class);
         
         Magazines.P90TerminatorMag = new ItemMagazine.Builder().withAmmo(65).withCompatibleBullet(Bullets.Bullet46x30mm)
@@ -4777,7 +4836,7 @@ Magazines.RPK74Mag = new ItemMagazine.Builder()
                     GL11.glRotatef(-15F, 0f, 0f, 1f);
                     GL11.glScaled(1.1F, 1.1F, 1.1f);
                 })
-                .withMaxStackSize(6)
+                .withMaxStackSize(5)
                 .withCrafting(CraftingComplexity.MEDIUM,
                           MWCItems.steelIngot,
                           MWCItems.gunmetalIngot)
@@ -4832,7 +4891,7 @@ Magazines.RPK74Mag = new ItemMagazine.Builder()
                     GL11.glRotatef(-15F, 0f, 0f, 1f);
                     GL11.glScaled(0.5F, 0.5F, 0.5f);
                 })
-                .withMaxStackSize(6)
+                .withMaxStackSize(3)
                 .withCrafting(CraftingComplexity.MEDIUM,
                           MWCItems.steelIngot,
                           MWCItems.gunmetalIngot)
@@ -4863,7 +4922,7 @@ Magazines.RPK74Mag = new ItemMagazine.Builder()
                     GL11.glRotatef(-15F, 0f, 0f, 1f);
                     GL11.glScaled(1.0F, 1.0F, 1.0f);
                 })
-                .withMaxStackSize(6)
+                .withMaxStackSize(4)
                 .withTextureName("Dummy.png").build(ModernWarfareMod.MOD_CONTEXT, ItemMagazine.class);
         
         Magazines.Scar40Mag = new ItemMagazine.Builder()
@@ -4891,7 +4950,7 @@ Magazines.RPK74Mag = new ItemMagazine.Builder()
                     GL11.glRotatef(-15F, 0f, 0f, 1f);
                     GL11.glScaled(1.0F, 1.0F, 1.0f);
                 })
-                .withMaxStackSize(6)
+                .withMaxStackSize(4)
                 .withTextureName("Dummy.png").build(ModernWarfareMod.MOD_CONTEXT, ItemMagazine.class);
         
         Magazines.Scar60Mag = new ItemMagazine.Builder()
@@ -4947,7 +5006,7 @@ Magazines.RPK74Mag = new ItemMagazine.Builder()
                      GL11.glRotatef(-15F, 0f, 0f, 1f);
                      GL11.glScaled(0.75F, 0.75F, 0.75f);
                 })
-                .withMaxStackSize(6)
+                .withMaxStackSize(10)
                 .withTextureName("Dummy.png").build(ModernWarfareMod.MOD_CONTEXT, ItemMagazine.class);
         
         Magazines.ASValMag = new ItemMagazine.Builder()
@@ -4975,7 +5034,7 @@ Magazines.RPK74Mag = new ItemMagazine.Builder()
                     GL11.glRotatef(-15F, 0f, 0f, 1f);
                     GL11.glScaled(0.75F, 0.75F, 0.75f);
                 })
-                .withMaxStackSize(6)
+                .withMaxStackSize(5)
                 .withTextureName("Dummy.png").build(ModernWarfareMod.MOD_CONTEXT, ItemMagazine.class);
         
 
@@ -5004,7 +5063,7 @@ Magazines.RPK74Mag = new ItemMagazine.Builder()
                     GL11.glRotatef(-15F, 0f, 0f, 1f);
                     GL11.glScaled(0.75F, 0.75F, 0.75f);
                 })
-                .withMaxStackSize(6)
+                .withMaxStackSize(3)
                 .withTextureName("Dummy.png").build(ModernWarfareMod.MOD_CONTEXT, ItemMagazine.class);
 
         Magazines.ASValMagB = new ItemMagazine.Builder()
@@ -5032,7 +5091,7 @@ Magazines.RPK74Mag = new ItemMagazine.Builder()
                     GL11.glRotatef(-15F, 0f, 0f, 1f);
                     GL11.glScaled(0.75F, 0.75F, 0.75f);
                 })
-                .withMaxStackSize(6)
+                .withMaxStackSize(5)
                 .withTextureName("Dummy.png").build(ModernWarfareMod.MOD_CONTEXT, ItemMagazine.class);
         
 
@@ -5061,7 +5120,7 @@ Magazines.RPK74Mag = new ItemMagazine.Builder()
                     GL11.glRotatef(-15F, 0f, 0f, 1f);
                     GL11.glScaled(0.75F, 0.75F, 0.75f);
                 })
-                .withMaxStackSize(6)
+                .withMaxStackSize(3)
                 .withTextureName("Dummy.png").build(ModernWarfareMod.MOD_CONTEXT, ItemMagazine.class);
 
                    Magazines.SR3MMag = new ItemMagazine.Builder()
@@ -5089,7 +5148,7 @@ Magazines.RPK74Mag = new ItemMagazine.Builder()
                     GL11.glRotatef(-15F, 0f, 0f, 1f);
                     GL11.glScaled(0.75F, 0.75F, 0.75f);
                 })
-                .withMaxStackSize(6)
+                .withMaxStackSize(3)
                 .withTextureName("Dummy.png").build(ModernWarfareMod.MOD_CONTEXT, ItemMagazine.class);
 
         Magazines.VSS_Mag = new ItemMagazine.Builder()
@@ -5117,7 +5176,7 @@ Magazines.RPK74Mag = new ItemMagazine.Builder()
                      GL11.glRotatef(-15F, 0f, 0f, 1f);
                      GL11.glScaled(0.75F, 0.75F, 0.75f);
                 })
-                .withMaxStackSize(6)
+                .withMaxStackSize(10)
                 .withTextureName("Dummy.png").build(ModernWarfareMod.MOD_CONTEXT, ItemMagazine.class);
 
         Magazines.AS_Mag = new ItemMagazine.Builder()
@@ -5145,7 +5204,7 @@ Magazines.RPK74Mag = new ItemMagazine.Builder()
                      GL11.glRotatef(-15F, 0f, 0f, 1f);
                      GL11.glScaled(0.75F, 0.75F, 0.75f);
                 })
-                .withMaxStackSize(6)
+                .withMaxStackSize(5)
                 .withTextureName("Dummy.png").build(ModernWarfareMod.MOD_CONTEXT, ItemMagazine.class);
 
         Magazines.ASM_Mag = new ItemMagazine.Builder()
@@ -5173,7 +5232,7 @@ Magazines.RPK74Mag = new ItemMagazine.Builder()
                      GL11.glRotatef(-15F, 0f, 0f, 1f);
                      GL11.glScaled(0.75F, 0.75F, 0.75f);
                 })
-                .withMaxStackSize(6)
+                .withMaxStackSize(3)
                 .withTextureName("Dummy.png").build(ModernWarfareMod.MOD_CONTEXT, ItemMagazine.class);
 
         Magazines.VSS_MagP = new ItemMagazine.Builder()
@@ -5201,7 +5260,7 @@ Magazines.RPK74Mag = new ItemMagazine.Builder()
                      GL11.glRotatef(-15F, 0f, 0f, 1f);
                      GL11.glScaled(0.75F, 0.75F, 0.75f);
                 })
-                .withMaxStackSize(6)
+                .withMaxStackSize(10)
                 .withTextureName("Dummy.png").build(ModernWarfareMod.MOD_CONTEXT, ItemMagazine.class);
 
         Magazines.AS_MagP = new ItemMagazine.Builder()
@@ -5229,7 +5288,7 @@ Magazines.RPK74Mag = new ItemMagazine.Builder()
                      GL11.glRotatef(-15F, 0f, 0f, 1f);
                      GL11.glScaled(0.75F, 0.75F, 0.75f);
                 })
-                .withMaxStackSize(6)
+                .withMaxStackSize(5)
                 .withTextureName("Dummy.png").build(ModernWarfareMod.MOD_CONTEXT, ItemMagazine.class);
 
         Magazines.ASM_MagP = new ItemMagazine.Builder()
@@ -5257,7 +5316,7 @@ Magazines.RPK74Mag = new ItemMagazine.Builder()
                      GL11.glRotatef(-15F, 0f, 0f, 1f);
                      GL11.glScaled(0.75F, 0.75F, 0.75f);
                 })
-                .withMaxStackSize(6)
+                .withMaxStackSize(3)
                 .withTextureName("Dummy.png").build(ModernWarfareMod.MOD_CONTEXT, ItemMagazine.class);
 
         Magazines.VSS_MagB = new ItemMagazine.Builder()
@@ -5285,7 +5344,7 @@ Magazines.RPK74Mag = new ItemMagazine.Builder()
                      GL11.glRotatef(-15F, 0f, 0f, 1f);
                      GL11.glScaled(0.75F, 0.75F, 0.75f);
                 })
-                .withMaxStackSize(6)
+                .withMaxStackSize(10)
                 .withTextureName("Dummy.png").build(ModernWarfareMod.MOD_CONTEXT, ItemMagazine.class);
 
         Magazines.AS_MagB = new ItemMagazine.Builder()
@@ -5313,7 +5372,7 @@ Magazines.RPK74Mag = new ItemMagazine.Builder()
                      GL11.glRotatef(-15F, 0f, 0f, 1f);
                      GL11.glScaled(0.75F, 0.75F, 0.75f);
                 })
-                .withMaxStackSize(6)
+                .withMaxStackSize(5)
                 .withTextureName("Dummy.png").build(ModernWarfareMod.MOD_CONTEXT, ItemMagazine.class);
 
         Magazines.ASM_MagB = new ItemMagazine.Builder()
@@ -5341,7 +5400,7 @@ Magazines.RPK74Mag = new ItemMagazine.Builder()
                      GL11.glRotatef(-15F, 0f, 0f, 1f);
                      GL11.glScaled(0.75F, 0.75F, 0.75f);
                 })
-                .withMaxStackSize(6)
+                .withMaxStackSize(3)
                 .withTextureName("Dummy.png").build(ModernWarfareMod.MOD_CONTEXT, ItemMagazine.class);
         
         Magazines.STG44Mag = new ItemMagazine.Builder().withAmmo(30).withCompatibleBullet(Bullets.Bullet792x33Kurz).withName("STG44Mag_2")
@@ -5364,7 +5423,7 @@ Magazines.RPK74Mag = new ItemMagazine.Builder()
                     GL11.glRotatef(-15F, 0f, 0f, 1f);
                     GL11.glScaled(0.6F, 0.6F, 0.6f);
                 })
-                .withMaxStackSize(6)
+                .withMaxStackSize(5)
                 .withCrafting(CraftingComplexity.MEDIUM,
                           MWCItems.steelIngot,
                           MWCItems.gunmetalIngot)
@@ -5390,7 +5449,7 @@ Magazines.RPK74Mag = new ItemMagazine.Builder()
                     GL11.glRotatef(-15F, 0f, 0f, 1f);
                     GL11.glScaled(1.4F, 1.4F, 1.4f);
                 })
-                .withMaxStackSize(6)
+                .withMaxStackSize(5)
                 .withCrafting(CraftingComplexity.MEDIUM,
                           MWCItems.steelIngot,
                           MWCItems.gunmetalIngot)
@@ -5416,20 +5475,51 @@ Magazines.RPK74Mag = new ItemMagazine.Builder()
                     GL11.glRotatef(-15F, 0f, 0f, 1f);
                     GL11.glScaled(1.2F, 1.2F, 1.2f);
                 })
-                .withMaxStackSize(6)
+                .withMaxStackSize(4)
                 .withCrafting(CraftingComplexity.MEDIUM,
                           MWCItems.steelIngot,
                           MWCItems.gunmetalIngot)
                 .withTextureName("Dummy.png").build(ModernWarfareMod.MOD_CONTEXT, ItemMagazine.class);
         
-        Magazines.UziMag = new ItemMagazine.Builder()
-        		.withAmmo(32)
+        Magazines.UziMag20 = new ItemMagazine.Builder()
+        		.withAmmo(20)
         		.withCompatibleBullet(Bullets.Bullet9x19mm)
-        		.withName("UziMag_2")
+        		.withName("UziMag20")
         		.withRotationPoint(-0.040000001192092904, 0.7200000214576723, -0.40000001192092904)
                 
                 .withCreativeTab(ModernWarfareMod.AmmoTab)
-                .withModel(new com.paneedah.mwc.models.UziMag(), "gun.png")
+                .withModel(new com.paneedah.mwc.models.UziMag20(), "uzi.png")
+
+                .withFirstPersonPositioning((player, itemStack) -> {
+                    GL11.glTranslatef(0.1F, -0.3F, 0.4F);
+                    GL11.glRotatef(30F, 0f, 1f, 0f);
+                    GL11.glScaled(0.7F, 0.7F, 0.7F);
+                }).withThirdPersonPositioning((player, itemStack) -> {
+                    GL11.glTranslatef(-0.3F, 0.5F, 0.1F);
+                    GL11.glRotatef(-50F, 0f, 1f, 0f);
+                    GL11.glRotatef(10F, 1f, 0f, 0f);
+                    GL11.glScaled(0.7F, 0.7F, 0.7F);
+                }).withInventoryPositioning((itemStack) -> {
+                    GL11.glTranslatef(0.3F, 0.3F, -0.8F);
+                    GL11.glRotatef(-150F, 0f, 1f, 0f);
+                    GL11.glRotatef(-6F, 1f, 0f, 0f);
+                    GL11.glRotatef(-15F, 0f, 0f, 1f);
+                    GL11.glScaled(0.9F, 0.9F, 0.9f);
+                })
+                .withMaxStackSize(10)
+                .withCrafting(CraftingComplexity.MEDIUM,
+                          MWCItems.steelIngot,
+                          MWCItems.gunmetalIngot)
+                .withTextureName("Dummy.png").build(ModernWarfareMod.MOD_CONTEXT, ItemMagazine.class);
+
+        Magazines.UziMag25 = new ItemMagazine.Builder()
+        		.withAmmo(25)
+        		.withCompatibleBullet(Bullets.Bullet9x19mm)
+        		.withName("UziMag25")
+        		.withRotationPoint(-0.040000001192092904, 0.7200000214576723, -0.40000001192092904)
+                
+                .withCreativeTab(ModernWarfareMod.AmmoTab)
+                .withModel(new com.paneedah.mwc.models.UziMag25(), "uzi.png")
 
                 .withFirstPersonPositioning((player, itemStack) -> {
                     GL11.glTranslatef(0.1F, -0.3F, 0.4F);
@@ -5448,6 +5538,68 @@ Magazines.RPK74Mag = new ItemMagazine.Builder()
                     GL11.glScaled(0.9F, 0.9F, 0.9f);
                 })
                 .withMaxStackSize(6)
+                .withCrafting(CraftingComplexity.MEDIUM,
+                          MWCItems.steelIngot,
+                          MWCItems.gunmetalIngot)
+                .withTextureName("Dummy.png").build(ModernWarfareMod.MOD_CONTEXT, ItemMagazine.class);
+
+        Magazines.UziMag32 = new ItemMagazine.Builder()
+        		.withAmmo(32)
+        		.withCompatibleBullet(Bullets.Bullet9x19mm)
+        		.withName("UziMag32")
+        		.withRotationPoint(-0.040000001192092904, 0.7200000214576723, -0.40000001192092904)
+                
+                .withCreativeTab(ModernWarfareMod.AmmoTab)
+                .withModel(new com.paneedah.mwc.models.UziMag32(), "uzi.png")
+
+                .withFirstPersonPositioning((player, itemStack) -> {
+                    GL11.glTranslatef(0.1F, -0.3F, 0.4F);
+                    GL11.glRotatef(30F, 0f, 1f, 0f);
+                    GL11.glScaled(0.7F, 0.7F, 0.7F);
+                }).withThirdPersonPositioning((player, itemStack) -> {
+                    GL11.glTranslatef(-0.3F, 0.5F, 0.1F);
+                    GL11.glRotatef(-50F, 0f, 1f, 0f);
+                    GL11.glRotatef(10F, 1f, 0f, 0f);
+                    GL11.glScaled(0.7F, 0.7F, 0.7F);
+                }).withInventoryPositioning((itemStack) -> {
+                    GL11.glTranslatef(0.3F, 0.3F, -0.8F);
+                    GL11.glRotatef(-150F, 0f, 1f, 0f);
+                    GL11.glRotatef(-6F, 1f, 0f, 0f);
+                    GL11.glRotatef(-15F, 0f, 0f, 1f);
+                    GL11.glScaled(0.9F, 0.9F, 0.9f);
+                })
+                .withMaxStackSize(4)
+                .withCrafting(CraftingComplexity.MEDIUM,
+                          MWCItems.steelIngot,
+                          MWCItems.gunmetalIngot)
+                .withTextureName("Dummy.png").build(ModernWarfareMod.MOD_CONTEXT, ItemMagazine.class);
+
+        Magazines.UziMag50 = new ItemMagazine.Builder()
+        		.withAmmo(50)
+        		.withCompatibleBullet(Bullets.Bullet9x19mm)
+        		.withName("UziMag50")
+        		.withRotationPoint(-0.040000001192092904, 0.7200000214576723, -0.40000001192092904)
+                
+                .withCreativeTab(ModernWarfareMod.AmmoTab)
+                .withModel(new com.paneedah.mwc.models.UziMag50(), "uzi.png")
+
+                .withFirstPersonPositioning((player, itemStack) -> {
+                    GL11.glTranslatef(0.1F, -0.3F, 0.4F);
+                    GL11.glRotatef(30F, 0f, 1f, 0f);
+                    GL11.glScaled(0.7F, 0.7F, 0.7F);
+                }).withThirdPersonPositioning((player, itemStack) -> {
+                    GL11.glTranslatef(-0.3F, 0.5F, 0.1F);
+                    GL11.glRotatef(-50F, 0f, 1f, 0f);
+                    GL11.glRotatef(10F, 1f, 0f, 0f);
+                    GL11.glScaled(0.7F, 0.7F, 0.7F);
+                }).withInventoryPositioning((itemStack) -> {
+                    GL11.glTranslatef(0.3F, 0.3F, -0.8F);
+                    GL11.glRotatef(-150F, 0f, 1f, 0f);
+                    GL11.glRotatef(-6F, 1f, 0f, 0f);
+                    GL11.glRotatef(-15F, 0f, 0f, 1f);
+                    GL11.glScaled(0.9F, 0.9F, 0.9f);
+                })
+                .withMaxStackSize(2)
                 .withCrafting(CraftingComplexity.MEDIUM,
                           MWCItems.steelIngot,
                           MWCItems.gunmetalIngot)
@@ -5534,7 +5686,7 @@ Magazines.RPK74Mag = new ItemMagazine.Builder()
                     GL11.glRotatef(-15F, 0f, 0f, 1f);
                     GL11.glScaled(0.75F, 0.75F, 0.75f);
                 })
-                .withMaxStackSize(6)
+                .withMaxStackSize(1)
                 .withTextureName("Dummy.png").build(ModernWarfareMod.MOD_CONTEXT, ItemMagazine.class);
 
         Magazines.Type81Mag = new ItemMagazine.Builder()
@@ -5562,7 +5714,7 @@ Magazines.RPK74Mag = new ItemMagazine.Builder()
                     GL11.glRotatef(-5F, 0f, 0f, 1f);
                     GL11.glScaled(0.7F, 0.7F, 0.7f);
                 })
-                .withMaxStackSize(6)
+                .withMaxStackSize(5)
                 .withTextureName("Dummy.png").build(ModernWarfareMod.MOD_CONTEXT, ItemMagazine.class);
 
     }

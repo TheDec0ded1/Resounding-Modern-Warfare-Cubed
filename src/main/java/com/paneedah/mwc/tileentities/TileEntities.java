@@ -2,7 +2,7 @@ package com.paneedah.mwc.tileentities;
 
 import com.paneedah.mwc.ModernWarfareMod;
 import com.paneedah.mwc.proxies.CommonProxy;
-import com.paneedah.mwc.weapons.Guns;
+import com.paneedah.mwc.weapons.*;
 import com.paneedah.weaponlib.tile.CustomTileEntityBlock;
 import com.paneedah.weaponlib.tile.LootBoxConfiguration;
 import net.minecraft.block.material.Material;
@@ -49,8 +49,12 @@ public class TileEntities {
             GL11.glTranslatef(0.7f, 1.1f, 0.5f);
         })
 //        .withEquipmentOption(Guns.M4A1, EnumDifficulty.EASY, 1f)
+        .withEquipmentOption(Guns.AK74, EnumDifficulty.EASY, 0.1f, Magazines.AK74Mag)
+        .withEquipmentOption(Guns.AKS74U, EnumDifficulty.EASY, 0.1f, Magazines.AK74Mag)
+        .withEquipmentOption(Guns.MakarovPM, EnumDifficulty.EASY, 0.1f, Magazines.MakarovMag)
+        .withEquipmentOption(Guns.SVDDragunov, EnumDifficulty.EASY, 0.1f, Magazines.DragunovMag,Attachments3.PSO1)
 //        .withEquipmentOption(null, EnumDifficulty.EASY, 25f, 1)
-        .withEquipmentDispenseTimeout(10)
+        .withEquipmentDispenseTimeout(300)
         .build(ModernWarfareMod.MOD_CONTEXT);
         
         new LootBoxConfiguration()

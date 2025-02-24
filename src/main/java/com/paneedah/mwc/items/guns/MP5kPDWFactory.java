@@ -38,7 +38,7 @@ public class MP5kPDWFactory {
         .withShellType(Type.PISTOL)
         .withMaxShots(1, 3, Integer.MAX_VALUE)
         //.withMaxShots(5)
-        .withShootSound("mp5")
+        .withShootSound("mp5k")
         .withSilencedShootSound("mp5sd")
         .withReloadSound("mp5_reload")
         .withUnloadSound("mp5_unload")

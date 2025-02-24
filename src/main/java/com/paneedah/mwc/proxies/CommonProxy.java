@@ -77,13 +77,13 @@ public class CommonProxy {
         ModernWarfareMod.MOD_CONTEXT.setExplosionSound("grenadeexplosion");
         ModernWarfareMod.MOD_CONTEXT.setFlashExplosionSound("flashbang");
 
-        ModernWarfareMod.MOD_CONTEXT.setMaterialImpactSounds(Material.ROCK, 1.5f, "bullet_3_rock", "bullet_2_rock", "bullet_4_rock", "bullet_12_stone");
-        ModernWarfareMod.MOD_CONTEXT.setMaterialImpactSounds(Material.WOOD, 1.5f, "bullet_3_rock", "bullet_2_rock", "bullet_4_rock", "bullet_12_stone", "bullet_10_snap");
-        ModernWarfareMod.MOD_CONTEXT.setMaterialImpactSounds(Material.GRASS, 1.5f, "bullet_5_grass", "bullet_9_grass", "bullet_11_grass", "bullet_10_snap", "bullet_13_snap");
-        ModernWarfareMod.MOD_CONTEXT.setMaterialImpactSounds(Material.GROUND, 1.5f, "bullet_5_grass", "bullet_9_grass", "bullet_11_grass", "bullet_10_snap", "bullet_13_snap");
-        ModernWarfareMod.MOD_CONTEXT.setMaterialImpactSounds(Material.SAND, 1.5f, "bullet_5_grass", "bullet_9_grass", "bullet_11_grass", "bullet_10_snap", "bullet_13_snap");
-        ModernWarfareMod.MOD_CONTEXT.setMaterialImpactSounds(Material.SNOW, 1.5f, "bullet_5_grass", "bullet_9_grass", "bullet_11_grass", "bullet_10_snap", "bullet_13_snap");
-        ModernWarfareMod.MOD_CONTEXT.setMaterialImpactSounds(Material.IRON, 1.5f, "bullet_6_iron", "bullet_7_iron", "bullet_8_iron");
+        ModernWarfareMod.MOD_CONTEXT.setMaterialImpactSounds(Material.ROCK, 1.5f, "impact_rock1", "impact_rock2", "impact_rock3");
+        ModernWarfareMod.MOD_CONTEXT.setMaterialImpactSounds(Material.WOOD, 1.5f, "impact_wood1", "impact_wood2", "impact_wood3");
+        ModernWarfareMod.MOD_CONTEXT.setMaterialImpactSounds(Material.GRASS, 1.5f, "impact_dirt1", "impact_dirt2", "impact_dirt3");
+        ModernWarfareMod.MOD_CONTEXT.setMaterialImpactSounds(Material.GROUND, 1.5f, "impact_dirt1", "impact_dirt2", "impact_dirt3");
+        ModernWarfareMod.MOD_CONTEXT.setMaterialImpactSounds(Material.SAND, 1.5f, "impact_dirt1", "impact_dirt2", "impact_dirt3");
+        ModernWarfareMod.MOD_CONTEXT.setMaterialImpactSounds(Material.SNOW, 1.5f, "impact_dirt1", "impact_dirt2", "impact_dirt3");
+        ModernWarfareMod.MOD_CONTEXT.setMaterialImpactSounds(Material.IRON, 1.5f, "impact_metal1", "impact_metal2", "impact_metal3");
         UniversalSoundRegistry.init();
         UniversalSoundLookup.initialize(ModernWarfareMod.MOD_CONTEXT);
 

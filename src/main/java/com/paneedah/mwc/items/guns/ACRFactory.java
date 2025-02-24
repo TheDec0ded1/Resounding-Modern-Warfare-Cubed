@@ -179,7 +179,7 @@ public class ACRFactory implements GunFactory {
         })
 
         // Compatible ACR attachment ACRHandGuard
-        .withCompatibleAttachment(Attachments.ACRHandGuard, true, (model) -> {
+        .withCompatibleAttachment(Attachments.ACRHandGuard, (model) -> {
             if(model instanceof AKRail) {
                 GL11.glTranslatef(0.19F, -1.15F, -3.9F);
                 GL11.glScaled(0.85F, 0.85F, 0.8F);
@@ -249,7 +249,7 @@ public class ACRFactory implements GunFactory {
         })
 
         // Compatible ACR attachment ACRPolymerHandGuardTan
-        .withCompatibleAttachment(Attachments.ACRPolymerHandGuardTan, (model) -> {
+        .withCompatibleAttachment(Attachments.ACRPolymerHandGuardTan, true, (model) -> {
 //        	GL11.glTranslatef(0.01f, -0.35f, -0.15f);
 //            GL11.glScaled(1.1F, 1.1F, 1.1F);
         })
@@ -686,7 +686,6 @@ public class ACRFactory implements GunFactory {
     
             .withModel(new BushmasterACR())
             .withActionPiece(AuxiliaryAttachments.ACRAction)
-            .withActionTransform(new Transform().withPosition(0, 0, 1))
             //.withTextureName("M4A1")
             //.withWeaponProximity(0.99F)
             //.withYOffsetZoom(5F)
@@ -743,11 +742,6 @@ public class ACRFactory implements GunFactory {
                 		Magazines.Stanag60,
                 		Magazines.SOCOM_Mag)
                 
-            .withFirstPersonCustomPositioning(AuxiliaryAttachments.ACRAction.getRenderablePart(), (renderContext) -> {
-                if(renderContext.getWeaponInstance().getAmmo() == 0) {
-                    GL11.glTranslatef(0F, 0F, 1F);
-                }
-            })
                     
             .withThirdPersonPositioningReloading(
                     new Transition((renderContext) -> { // Reload position

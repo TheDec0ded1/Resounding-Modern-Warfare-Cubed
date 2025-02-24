@@ -208,7 +208,7 @@ public class AS_ValFactory {
             GL11.glTranslatef(-0.2F, -0.1F, -3.5F);
             GL11.glScaled(1F, 1F, 1F);
         })
-        .withTextureNames("vssmetal")
+        .withTextureNames("asval")
         .withRenderer(new WeaponRenderer.Builder()
             
             .withModel(new AS_Val())

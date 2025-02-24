@@ -121,6 +121,8 @@ public interface ModContext {
 
 	public CommonModContext setMaterialImpactSounds(Material material, float volume, String... sounds);
 
+	//public CommonModContext setBulletPassbySounds(float volume, String... sounds);
+
 	public int getRegisteredTextureId(String textureName);
 
 	public int registerTexture(String explosionParticleTextureName);

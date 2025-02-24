@@ -13194,7 +13194,7 @@ G36KRHGRAL = new AttachmentBuilder<Weapon>().withCategory(AttachmentCategory.GUA
 
         SR3VikhrStock = new AttachmentBuilder<Weapon>().withCategory(AttachmentCategory.STOCK)
                 .withCreativeTab(ModernWarfareMod.AttachmentsTab)
-                .withModel(new com.paneedah.mwc.models.SR3VikhrStock(), "vssvintorez.png")
+                .withModel(new com.paneedah.mwc.models.SR3VikhrStock(), "sr3compact.png")
                 .withModernRecipe(
                     	CraftingGroup.ATTACHMENT_MODIFICATION,
                     	new CraftingEntry(MWCItems.gunmetalIngot, 3), 
@@ -15342,7 +15342,7 @@ G36KRHGRAL = new AttachmentBuilder<Weapon>().withCategory(AttachmentCategory.GUA
 
         SR3VikhrHG = new AttachmentBuilder<Weapon>().withCategory(AttachmentCategory.GUARD)
                 .withCreativeTab(ModernWarfareMod.AttachmentsTab)
-                .withModel(new com.paneedah.mwc.models.SR3VikhrHG(), "vssvintorez.png")
+                .withModel(new com.paneedah.mwc.models.SR3VikhrHG(), "valplastic.png")
                 .withModernRecipe(
                     	CraftingGroup.ATTACHMENT_MODIFICATION,
                     	new CraftingEntry(MWCItems.gunmetalIngot, 3))
@@ -15991,7 +15991,7 @@ G36KRHGRAL = new AttachmentBuilder<Weapon>().withCategory(AttachmentCategory.GUA
 
         SR3VikhrDC = new AttachmentBuilder<Weapon>().withCategory(AttachmentCategory.RAILING)
                 .withCreativeTab(ModernWarfareMod.AttachmentsTab)
-                .withModel(new com.paneedah.mwc.models.SR3VikhrDC(), "vssvintorez.png")
+                .withModel(new com.paneedah.mwc.models.SR3VikhrDC(), "sr3compact.png")
                 .withModernRecipe(
                     	CraftingGroup.ATTACHMENT_MODIFICATION,
                     	new CraftingEntry(MWCItems.gunmetalIngot, 3))

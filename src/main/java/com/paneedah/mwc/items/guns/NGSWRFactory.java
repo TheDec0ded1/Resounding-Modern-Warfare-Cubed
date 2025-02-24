@@ -478,7 +478,7 @@ public class NGSWRFactory implements GunFactory {
                 
                 .setupModernAnimations("ngswr", AuxiliaryAttachments.AKaction)
                 .setupModernMagazineAnimations("ngswr", 
-                		Magazines.NGSWRMag, Magazines.NGSWR25RDMag)
+                		Magazines.NGSWRMag, Magazines.NGSWRMetalMag, Magazines.NGSWR25RDMag)
                     
             .withThirdPersonPositioningReloading(
                     new Transition((renderContext) -> { // Reload position

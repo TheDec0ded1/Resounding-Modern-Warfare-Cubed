@@ -15,6 +15,14 @@ public class AuxiliaryAttachments {
     public static ItemAttachment<Weapon> PKMBelt;
     public static ItemAttachment<Weapon> PKMFeedTray;
     public static ItemAttachment<Weapon> PKMCover;
+    public static ItemAttachment<Weapon> AA12Action;
+    public static ItemAttachment<Weapon> AA12Handle;
+    public static ItemAttachment<Weapon> MicroUziAction;
+    public static ItemAttachment<Weapon> MicroUziHandle;
+    public static ItemAttachment<Weapon> MiniUziAction;
+    public static ItemAttachment<Weapon> MiniUziHandle;
+    public static ItemAttachment<Weapon> UziAction;
+    public static ItemAttachment<Weapon> UziHandle;
     public static ItemAttachment<Weapon> AR15Iron;
     public static ItemAttachment<Weapon> Extra;
     public static ItemAttachment<Weapon> AR15Action;
@@ -77,6 +85,7 @@ public class AuxiliaryAttachments {
     public static ItemAttachment<Weapon> FELINAction;
     public static ItemAttachment<Weapon> QCW05Action;
     public static ItemAttachment<Weapon> QBZ95Action;
+    public static ItemAttachment<Weapon> QBZ03Action;
     public static ItemAttachment<Weapon> LAPAFA03Action;
     public static ItemAttachment<Weapon> AK12action;
     public static ItemAttachment<Weapon> SV98BoltAction;
@@ -122,8 +131,6 @@ public class AuxiliaryAttachments {
     public static ItemAttachment<Weapon> KragAction2;
     public static ItemAttachment<Weapon> KragChamber;
     public static ItemAttachment<Weapon> M712action;
-    public static ItemAttachment<Weapon> UziAction;
-    public static ItemAttachment<Weapon> UziRelease;
     public static ItemAttachment<Weapon> UziIronSight;
     public static ItemAttachment<Weapon> L115Bolt1;
     public static ItemAttachment<Weapon> L115Bolt2;
@@ -409,6 +416,70 @@ public class AuxiliaryAttachments {
                 // .withCreativeTab(ModernWarfareMod.gunsTab)
                 .withModel(new com.paneedah.mwc.models.Origin12Action(), "origin12.png")
                 .withName("Origin12Action")
+                .withRenderablePart().withTextureName("Dummy.png")
+                .build(ModernWarfareMod.MOD_CONTEXT);
+
+        AA12Action = new AttachmentBuilder<Weapon>()
+                .withCategory(AttachmentCategory.EXTRA)
+                // .withCreativeTab(ModernWarfareMod.gunsTab)
+                .withModel(new com.paneedah.mwc.models.AA12Action(), "aa12.png")
+                .withName("AA12Action")
+                .withRenderablePart().withTextureName("Dummy.png")
+                .build(ModernWarfareMod.MOD_CONTEXT);
+
+        AA12Handle = new AttachmentBuilder<Weapon>()
+                .withCategory(AttachmentCategory.EXTRA2)
+                // .withCreativeTab(ModernWarfareMod.gunsTab)
+                .withModel(new com.paneedah.mwc.models.AA12Handle(), "aa12.png")
+                .withName("AA12Handle")
+                .withRenderablePart().withTextureName("Dummy.png")
+                .build(ModernWarfareMod.MOD_CONTEXT);
+
+        MicroUziAction = new AttachmentBuilder<Weapon>()
+                .withCategory(AttachmentCategory.EXTRA)
+                // .withCreativeTab(ModernWarfareMod.gunsTab)
+                .withModel(new com.paneedah.mwc.models.MicroUziAction(), "microuzi.png")
+                .withName("MicroUziAction")
+                .withRenderablePart().withTextureName("Dummy.png")
+                .build(ModernWarfareMod.MOD_CONTEXT);
+
+        MicroUziHandle = new AttachmentBuilder<Weapon>()
+                .withCategory(AttachmentCategory.EXTRA2)
+                // .withCreativeTab(ModernWarfareMod.gunsTab)
+                .withModel(new com.paneedah.mwc.models.MicroUziHandle(), "microuzi.png")
+                .withName("MicroUziHandle")
+                .withRenderablePart().withTextureName("Dummy.png")
+                .build(ModernWarfareMod.MOD_CONTEXT);
+
+        MiniUziAction = new AttachmentBuilder<Weapon>()
+                .withCategory(AttachmentCategory.EXTRA)
+                // .withCreativeTab(ModernWarfareMod.gunsTab)
+                .withModel(new com.paneedah.mwc.models.MiniUziAction(), "miniuzi.png")
+                .withName("MiniUziAction")
+                .withRenderablePart().withTextureName("Dummy.png")
+                .build(ModernWarfareMod.MOD_CONTEXT);
+
+        MiniUziHandle = new AttachmentBuilder<Weapon>()
+                .withCategory(AttachmentCategory.EXTRA2)
+                // .withCreativeTab(ModernWarfareMod.gunsTab)
+                .withModel(new com.paneedah.mwc.models.MiniUziHandle(), "miniuzi.png")
+                .withName("MiniUziHandle")
+                .withRenderablePart().withTextureName("Dummy.png")
+                .build(ModernWarfareMod.MOD_CONTEXT);
+
+        UziAction = new AttachmentBuilder<Weapon>()
+                .withCategory(AttachmentCategory.EXTRA)
+                // .withCreativeTab(ModernWarfareMod.gunsTab)
+                .withModel(new com.paneedah.mwc.models.UziAction(), "uzi.png")
+                .withName("UziAction")
+                .withRenderablePart().withTextureName("Dummy.png")
+                .build(ModernWarfareMod.MOD_CONTEXT);
+
+        UziHandle = new AttachmentBuilder<Weapon>()
+                .withCategory(AttachmentCategory.EXTRA2)
+                // .withCreativeTab(ModernWarfareMod.gunsTab)
+                .withModel(new com.paneedah.mwc.models.UziHandle(), "uzi.png")
+                .withName("UziHandle")
                 .withRenderablePart().withTextureName("Dummy.png")
                 .build(ModernWarfareMod.MOD_CONTEXT);
         
@@ -1369,7 +1440,7 @@ public class AuxiliaryAttachments {
         VSS_Action = new AttachmentBuilder<Weapon>()
                 .withCategory(AttachmentCategory.EXTRA)
                 // .withCreativeTab(ModernWarfareMod.gunsTab)
-                .withModel(new com.paneedah.mwc.models.VSS_Action(), "vssmetal.png")
+                .withModel(new com.paneedah.mwc.models.AS_Action(), "asval.png")
                 .withName("VSS_Action")
                 .withRenderablePart().withTextureName("Dummy.png")
                 .build(ModernWarfareMod.MOD_CONTEXT);
@@ -1385,7 +1456,7 @@ public class AuxiliaryAttachments {
   SR3VikhrAction = new AttachmentBuilder<Weapon>()
                 .withCategory(AttachmentCategory.EXTRA)
                 // .withCreativeTab(ModernWarfareMod.gunsTab)
-                .withModel(new com.paneedah.mwc.models.SR3VikhrAction(), "vssvintorez.png")
+                .withModel(new com.paneedah.mwc.models.SR3VikhrAction(), "sr3compact.png")
                 .withName("SR3VikhrAction")
                 .withRenderablePart().withTextureName("Dummy.png")
                 .build(ModernWarfareMod.MOD_CONTEXT);
@@ -1635,6 +1706,14 @@ public class AuxiliaryAttachments {
                 .withRenderablePart().withTextureName("Dummy.png")
                 .build(ModernWarfareMod.MOD_CONTEXT);
 
+        QBZ03Action = new AttachmentBuilder<Weapon>()
+                .withCategory(AttachmentCategory.EXTRA2)
+                // .withCreativeTab(ModernWarfareMod.gunsTab)
+                .withModel(new com.paneedah.mwc.models.QBZ03_Action(), "qbz03.png")
+                .withName("QBZ03Action")
+                .withRenderablePart().withTextureName("Dummy.png")
+                .build(ModernWarfareMod.MOD_CONTEXT);
+
         
         AK12action = new AttachmentBuilder<Weapon>()
                 .withCategory(AttachmentCategory.EXTRA)
@@ -1675,22 +1754,6 @@ public class AuxiliaryAttachments {
                 .withModel(new com.paneedah.mwc.models.M9A1frontsight(), "M9A1frontsight")
                 .withModel(new com.paneedah.mwc.models.M9A1rearsight(), "M9A1rearsight")
                 .withName("albert01R_slide")
-                .withRenderablePart().withTextureName("Dummy.png")
-                .build(ModernWarfareMod.MOD_CONTEXT);
-        
-        UziAction = new AttachmentBuilder<Weapon>()
-                .withCategory(AttachmentCategory.EXTRA)
-                // .withCreativeTab(ModernWarfareMod.gunsTab)
-                .withModel(new com.paneedah.mwc.models.UziAction(), "gun.png")
-                .withName("UziAction")
-                .withRenderablePart().withTextureName("Dummy.png")
-                .build(ModernWarfareMod.MOD_CONTEXT);
-        
-        UziRelease = new AttachmentBuilder<Weapon>()
-                .withCategory(AttachmentCategory.EXTRA2)
-                // .withCreativeTab(ModernWarfareMod.gunsTab)
-                .withModel(new com.paneedah.mwc.models.UziRelease(), "gun.png")
-                .withName("UziRelease")
                 .withRenderablePart().withTextureName("Dummy.png")
                 .build(ModernWarfareMod.MOD_CONTEXT);
         

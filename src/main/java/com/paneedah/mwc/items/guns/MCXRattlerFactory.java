@@ -132,6 +132,16 @@ public class MCXRattlerFactory implements GunFactory {
                 GL11.glScaled(0.32F, 0.32F, 0.32F);
               }
         }, true, false)
+
+        .withCompatibleAttachment(Attachments3.HK416A5Irons, (model) -> {
+	    	if(model instanceof G95_frontsights) {
+            		GL11.glTranslatef(-0.155F, -1.85F, -3.5F);
+                	GL11.glScaled(0.32F, 0.32F, 0.32F);
+			} else if(model instanceof G95_rearsights) {
+        	  	GL11.glTranslatef(-0.157F, -1.82F, -0.5F);
+               		GL11.glScaled(0.32F, 0.32F, 0.32F);
+			}
+        })
         .withCompatibleAttachment(Attachments.MBUSFrontSight, renderContext -> {
             PlayerWeaponInstance instance = renderContext.getWeaponInstance();
             if(instance != null) {

@@ -160,6 +160,7 @@ AttachmentContainer, Reloadable, Inspectable, Modifiable, Updatable, IModernCraf
         String smokeParticleTexture;
 
         float flashIntensity = 0.2f;
+        protected int MaxDamage = 400;
 
         Supplier<Float> flashScale = () -> 1f;
 
@@ -362,6 +363,12 @@ AttachmentContainer, Reloadable, Inspectable, Modifiable, Updatable, IModernCraf
             }
             return this;
         }
+
+        public Builder withMaxDamage(int MaxDamage) {
+            this.MaxDamage = MaxDamage;
+            return this;
+        }
+
         
         public Builder withOneClickBurst() {
             this.isOneClickBurstAllowed = true;
@@ -438,6 +445,7 @@ AttachmentContainer, Reloadable, Inspectable, Modifiable, Updatable, IModernCraf
             this.silencedShootSound = silencedShootSound.toLowerCase();
             return this;
         }
+
         
         public Builder withBurstShootSound(String burstShootSound) {
             this.burstShootSound = burstShootSound.toLowerCase(); //ModReference.id + ":" + shootSound;
@@ -1111,7 +1119,8 @@ AttachmentContainer, Reloadable, Inspectable, Modifiable, Updatable, IModernCraf
         this.modContext = modContext;
         setMaxStackSize(1);
         isDamageable();
-        setMaxDamage(5000);
+        setMaxDamage(2500);
+        setNoRepair();
     }
 
     public String getName() {

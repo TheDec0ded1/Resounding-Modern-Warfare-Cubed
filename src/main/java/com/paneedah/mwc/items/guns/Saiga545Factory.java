@@ -57,7 +57,7 @@ public class Saiga545Factory {
 //        .withSpawnEntityModel(ammoModel)
 //        .withSpawnEntityModelTexture(ammoModelTextureName)
         .withShellCasingVerticalOffset(-0.05f)
-        .withCreativeTab(ModernWarfareMod.PrecisionRiflesTab)
+        .withCreativeTab(ModernWarfareMod.AssaultRiflesTab)
         .useNewSystem()
         .withRecoilParam(new RecoilParam(
 				// The weapon power
@@ -550,7 +550,7 @@ public class Saiga545Factory {
                 .withFirstPersonPositioningZooming((renderContext) -> {
 //                    GL11.glRotatef(45F, 0f, 1f, 0f);
 //                    GL11.glScalef(3.000000f, 3.000000f, 3.000000f);
-                	GL11.glTranslatef(0.18f, -0.23f, 0.7f);
+                	GL11.glTranslatef(0.18f, -0.24f, 0.7f);
 
                     
              // ACOG Zoom

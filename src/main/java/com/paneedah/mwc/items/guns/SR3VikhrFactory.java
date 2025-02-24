@@ -48,7 +48,7 @@ public class SR3VikhrFactory {
         .withCrosshair("gun")
         .withCrosshairRunning("Running")
         .withCrosshairZoomed("Sight")
-        .withFlashIntensity(0.4f)
+        .withFlashIntensity(0f)
         .withFlashScale(() -> 0.4f)
         .withFlashOffsetX(() -> 0.1f)
         .withFlashOffsetY(() -> 0.11f)
@@ -73,7 +73,7 @@ public class SR3VikhrFactory {
 				1.0
 		))
         .withInformationProvider(stack -> Arrays.asList(
-        "Type: Special Carbine",
+        "Type: Special Sniper Rifle",
         "Damage: 7", 
         "Cartridge: 9x39mm",
         "Fire Rate: SEMI, AUTO",
@@ -93,7 +93,8 @@ public class SR3VikhrFactory {
          
          .withUnremovableAttachmentCategories(AttachmentCategory.GUARD)
          .withUnremovableAttachmentCategories(AttachmentCategory.STOCK)
-         .withUnremovableAttachmentCategories(AttachmentCategory.RAILING)
+        .withUnremovableAttachmentCategories(AttachmentCategory.RECEIVER)
+        .withUnremovableAttachmentCategories(AttachmentCategory.BACKGRIP)
          
         .withCompatibleAttachment(AuxiliaryAttachments.SR3VikhrAction, true, (model) -> {
         })
@@ -103,26 +104,37 @@ public class SR3VikhrFactory {
         })
         .withCompatibleAttachment(Attachments.SR3VikhrHG, true, (model) -> {
         })
-        .withCompatibleAttachment(Attachments2.SR3VikhrStockB, (model) -> {
-        })
         .withCompatibleAttachment(Attachments2.SR3VikhrHGB, (model) -> {
         })
-        .withCompatibleAttachment(Magazines.VSSVintorezMag, (model) -> {
+        .withCompatibleAttachment(Attachments2.SR3VikhrHGRetro, (model) -> {
         })
-        .withCompatibleAttachment(Magazines.ASValMag, (model) -> {
+        .withCompatibleAttachment(Attachments2.SR3VikhrHGRetroB, (model) -> {
         })
-        .withCompatibleAttachment(Magazines.Val30Mag, (model) -> {
+        .withCompatibleAttachment(Attachments2.AS_Grip, true, (model) -> {
         })
-        .withCompatibleAttachment(Magazines.ASValMagB, (model) -> {
+        .withCompatibleAttachment(Attachments2.AS_GripPale, (model) -> {
         })
-        .withCompatibleAttachment(Magazines.Val30MagB, (model) -> {
+        .withCompatibleAttachment(Attachments2.AS_GripBlack, (model) -> {
         })
-        .withCompatibleAttachment(Magazines.SR3MMag, (model) -> {
+        .withCompatibleAttachment(Magazines.VSS_Mag, (model) -> {
         })
-        .withCompatibleAttachment(Attachments3.SuppressorSR3M, (model) -> {
+        .withCompatibleAttachment(Magazines.AS_Mag, (model) -> {
         })
-       
-        .withTextureNames("vssvintorez")
+        .withCompatibleAttachment(Magazines.ASM_Mag, (model) -> {
+        })
+        .withCompatibleAttachment(Magazines.VSS_MagP, (model) -> {
+        })
+        .withCompatibleAttachment(Magazines.AS_MagP, (model) -> {
+        })
+        .withCompatibleAttachment(Magazines.ASM_MagP, (model) -> {
+        })
+        .withCompatibleAttachment(Magazines.VSS_MagB, (model) -> {
+        })
+        .withCompatibleAttachment(Magazines.AS_MagB, (model) -> {
+        })
+        .withCompatibleAttachment(Magazines.ASM_MagB, (model) -> {
+        })
+        .withTextureNames("sr3compact")
         .withRenderer(new WeaponRenderer.Builder()
             
             .withModel(new SR3Vikhr())
@@ -176,7 +188,7 @@ public class SR3VikhrFactory {
                 )
                 
                 .setupModernAnimations("sr3", AuxiliaryAttachments.SR3VikhrAction)
-                .setupModernMagazineAnimations("sr3", Magazines.ASValMag, Magazines.Val30Mag, Magazines.ASValMagB, Magazines.Val30MagB, Magazines.SR3MMag, Magazines.VSSVintorezMag)
+                .setupModernMagazineAnimations("sr3", Magazines.AS_Mag, Magazines.ASM_Mag, Magazines.VSS_Mag, Magazines.AS_MagP, Magazines.ASM_MagP, Magazines.VSS_MagP, Magazines.AS_MagB, Magazines.ASM_MagB, Magazines.VSS_MagB)
             
                 .withFirstPersonPositioningCustomRecoiled(AuxiliaryAttachments.SR3VikhrAction.getRenderablePart(), (renderContext) -> {
                     GL11.glTranslatef(0f, 0f, 1f);
@@ -286,6 +298,137 @@ public class SR3VikhrFactory {
 //                GL11.glRotatef(45F, 0f, 1f, 0f);
                 GL11.glScalef(3.000000f, 3.000000f, 3.000000f);
                 GL11.glTranslatef(0.14f, 0.72f, -0.2f);
+
+                
+                // ACOG Zoom
+                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.PSO1)) {
+                    //System.out.println("Position me for Acog");
+                    GL11.glTranslatef(-0.015F, 0.28f, -0.1f);
+                } 
+
+                // ACOG Zoom
+                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.NSPU)) {
+                    //System.out.println("Position me for Acog");
+                    GL11.glTranslatef(-0.015F, 0.28f, -0.1f);
+                } 
+                
+             // ACOG Zoom
+                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.OKP7)) {
+                    //System.out.println("Position me for Acog");
+                    GL11.glTranslatef(-0.04F, 0.24f, -0.2f);
+                } 
+                
+             // ACOG Zoom
+                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.KobraMount)) {
+                    //System.out.println("Position me for Acog");
+                    GL11.glTranslatef(0F, 0.36f, 0f);
+                } 
+                
+             // ACOG Zoom
+                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.MicroReflex)) {
+                    //System.out.println("Position me for Acog");
+                    GL11.glTranslatef(0F, 0.315f, 0f);
+                } 
+                
+             // ACOG Zoom
+                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.HolographicAlt)) {
+                    //System.out.println("Position me for Acog");
+                    GL11.glTranslatef(0F, 0.315f, 0f);
+                } 
+                
+             // ACOG Zoom
+                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.Holographic)) {
+                    //System.out.println("Position me for Acog");
+                    GL11.glTranslatef(0F, 0.315f, 0f);
+                } 
+                
+             // ACOG Zoom
+                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.VortexRedux)) {
+                    //System.out.println("Position me for Acog");
+                    GL11.glTranslatef(0F, 0.315f, 0f);
+                } 
+                
+             // ACOG Zoom
+                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.BijiaReflex)) {
+                    //System.out.println("Position me for Acog");
+                    GL11.glTranslatef(0F, 0.26f, 0f);
+                } 
+                
+             // ACOG Zoom
+                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.AimpointCompM2)) {
+                    //System.out.println("Position me for Acog");
+                    GL11.glTranslatef(0F, 0.31f, 0.2f);
+                } 
+                
+             // ACOG Zoom
+                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.AimpointCompM5)) {
+                    //System.out.println("Position me for Acog");
+                    GL11.glTranslatef(0F, 0.29f, 0f);
+                } 
+                
+             // ACOG Zoom
+                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.MicroT1)) {
+                    //System.out.println("Position me for Acog");
+                    GL11.glTranslatef(0F, 0.29f, 0f);
+                } 
+                
+             // ACOG Zoom
+                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.LeupoldRailScope)) {
+                    //System.out.println("Position me for Acog");
+                    GL11.glTranslatef(0F, 0.26f, 0.2f);
+                } 
+                
+             // ACOG Zoom
+                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.NightRaider)) {
+                    //System.out.println("Position me for Acog");
+                    GL11.glTranslatef(0F, 0.3f, 0.2f);
+                } 
+                
+             // ACOG Zoom
+                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.ACOG)) {
+                    //System.out.println("Position me for Acog");
+                    GL11.glTranslatef(0F, 0.31f, 0.4f);
+                } 
+                
+             // ACOG Zoom
+                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.EotechHybrid2)) {
+                    //System.out.println("Position me for Acog");
+                    GL11.glTranslatef(0F, 0.32f, 0.0f);
+                } 
+                
+             // ACOG Zoom
+                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.Kobra)) {
+                    //System.out.println("Position me for Acog");
+                    GL11.glTranslatef(0F, 0.32f, 0.0f);
+                } 
+                
+             // ACOG Zoom
+                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.KobraGen3)) {
+                    //System.out.println("Position me for Acog");
+                    GL11.glTranslatef(0F, 0.32f, 0.0f);
+                } 
+                
+             // ACOG Zoom
+                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.Reflex)) {
+                    //System.out.println("Position me for Acog");
+                    GL11.glTranslatef(0F, 0.31f, 0.0f);
+                } 
+                
+             // ACOG Zoom
+                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.Specter)) {
+                    //System.out.println("Position me for Acog");
+                    GL11.glTranslatef(0F, 0.25f, 0.2f);
+                } 
+                
+             // ACOG Zoom
+                if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.RMR)) {
+                    //System.out.println("Position me for Acog");
+                    GL11.glTranslatef(0F, 0.21f, 0.2f);
+                } 
+                
+                // Everything else
+                else {
+                }
                 
             
                 })
@@ -491,7 +634,7 @@ public class SR3VikhrFactory {
                     }, 280, 0))
              
             .build())
-        .withSpawnEntityDamage(7f)
+        .withSpawnEntityDamage(6f)
         .withSpawnEntityGravityVelocity(0.0118f)
                 
         .build(ModernWarfareMod.MOD_CONTEXT);

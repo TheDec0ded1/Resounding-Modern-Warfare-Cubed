@@ -26,7 +26,7 @@ public class CZ805BrenFactory implements GunFactory {
         return new Weapon.Builder()
 
         .withName("cz805_bren")
-        .withFireRate(0.8f)
+        .withFireRate(0.6f)
         .withRecoil(3f)
         .withZoom(0.9f)
         .withConfigGroup(GunConfigurationGroup.AR)

@@ -37,6 +37,7 @@ public class AK19Factory {
         .withConfigGroup(GunConfigurationGroup.AR)
         .hasFlashPedals()
         .withMaxShots(1, 2, Integer.MAX_VALUE)
+        .withMaxDamage(2500)
         .withMuzzlePosition(new Vec3d(-0.16400000488758082, -1.0, -6.5))
         //.withMaxShots(5)
         .withShootSound("ak19")
@@ -83,6 +84,7 @@ public class AK19Factory {
         "30rnd 5.45x39mm Magazine",
         "60rnd 5.45x39mm Casket Magazine",
         "75rnd 5.45x39mm Drum Magazine"))
+
         
         .withScreenShaking(RenderableState.SHOOTING, 
                 1.5f, // x 

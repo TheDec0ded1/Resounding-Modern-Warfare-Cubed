@@ -107,6 +107,8 @@ public class Attachments3 {
     public static ItemAttachment<Weapon> M4RearIron;
     public static ItemAttachment<Weapon> LR300FrontSight;
 
+    public static ItemAttachment<Weapon> HK416A5Irons;
+
     public static void init(Object mod) {
 
         AngledGrip = new AttachmentBuilder<Weapon>().withCategory(AttachmentCategory.GRIP)
@@ -4644,6 +4646,50 @@ public class Attachments3 {
                     }
                 })
                 .withName("LR300FrontSight").withTextureName("Dummy.png")
+                .build(ModernWarfareMod.MOD_CONTEXT);
+
+        HK416A5Irons = new AttachmentBuilder<Weapon>().withCategory(AttachmentCategory.FRONTSIGHT)
+                .withCreativeTab(ModernWarfareMod.AttachmentsTab)
+                .withModel(new com.paneedah.mwc.models.G95_frontsights(), "gun.png")
+                .withModel(new com.paneedah.mwc.models.G95_rearsights(), "gun.png")
+                .withRequiredAttachments(Attachments.VeprDustCover, Attachments.AK200DustCover, Attachments2.PP19VityazSNDC, Attachments2.B33DustCover, Attachments2.B33DustCoverTan, Attachments2.B33DustCoverGreen, Attachments.AK15DustCover, Attachments.Placeholder,
+                        Attachments.MIMP5TRRail, Attachments.MIMP5MRail, Attachments.ShotgunRail, Attachments.Kar98Krail, Attachments.M60Rail,
+                        Attachments.P90Placeholder, Attachments.AUGA2handguard, Attachments.AUGA3handguard, Attachments.M4Receiver,
+                        Attachments.VLTORReceiver, Attachments.AR57Receiver, Attachments.EF88Handguard,
+                        Attachments.KrissVectorReceiver, Attachments.KrissVectorReceiverBlack, Attachments.Vector556Handguard, Attachments.Origin12Grip, Attachments.HKS20Grip,
+                        Attachments.Beowulf50CalReceiver, Attachments.HK417Receiver, Attachments.HK417ReceiverTan, 
+                        Attachments.M110Receiver, Attachments.Z10Receiver)
+                .withInventoryModelPositioning((model, s) -> {
+                    if (model instanceof com.paneedah.mwc.models.G95_frontsights) {
+                        GL11.glTranslatef(-0.6F, -1.2F, 0.3F);
+                        GL11.glRotatef(10F, 1f, 0f, 0f);
+                        GL11.glRotatef(-190F, 0f, 1f, 0f);
+                        GL11.glRotatef(0F, 0f, 0f, 1f);
+                        GL11.glScaled(0.9F, 0.9F, 0.9f);
+                    } else {
+                        GL11.glScalef(0f, 0f, 0f);
+                    }
+                }).withFirstPersonModelPositioning((model, itemStack) -> {
+                    if (model instanceof com.paneedah.mwc.models.G95_frontsights) {
+                        GL11.glTranslatef(0.1F, -0.8F, 0.4F);
+                        GL11.glRotatef(30F, 0f, 1f, 0f);
+                        GL11.glScaled(0.7F, 0.7F, 0.7F);
+                    } else {
+                        GL11.glScaled(0F, 0F, 0F);
+                    }
+
+                }).withThirdPersonModelPositioning((model, itemStack) -> {
+                    if (model instanceof com.paneedah.mwc.models.G95_frontsights) {
+                        GL11.glTranslatef(-0.8F, -0.5F, 0.8F);
+                        GL11.glRotatef(-50F, 0f, 1f, 0f);
+                        GL11.glRotatef(80F, 1f, 0f, 0f);
+                        GL11.glScaled(0.5F, 0.5F, 0.5F);
+                    } else {
+                        GL11.glScaled(0F, 0F, 0F);
+                    }
+                })
+                .withName("HK416A5Irons")
+                .withRenderablePart().withTextureName("Dummy.png")
                 .build(ModernWarfareMod.MOD_CONTEXT);
 
     }

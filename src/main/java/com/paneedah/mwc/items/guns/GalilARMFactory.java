@@ -287,7 +287,7 @@ public class GalilARMFactory {
                 .withFirstPersonPositioningZooming((renderContext) -> {
 //                    GL11.glRotatef(45F, 0f, 1f, 0f);
 //                    GL11.glScalef(3.000000f, 3.000000f, 3.000000f);
-                	GL11.glTranslatef(0.18f, -0.23f, 0.4f);
+                	GL11.glTranslatef(0.18f, -0.24f, 0.4f);
 
                     
                  // ACOG Zoom

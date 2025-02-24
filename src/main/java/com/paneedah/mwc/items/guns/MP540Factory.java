@@ -38,7 +38,7 @@ public class MP540Factory {
         .withShellType(Type.PISTOL)
         .withMaxShots(1, Integer.MAX_VALUE)
         //.withMaxShots(5)
-        .withShootSound("mp5")
+        .withShootSound("mp540")
         .withSilencedShootSound("mp5sd")
         .withReloadSound("mp5_reload")
         .withUnloadSound("mp5_unload")

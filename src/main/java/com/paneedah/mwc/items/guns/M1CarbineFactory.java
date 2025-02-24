@@ -41,7 +41,7 @@ public class M1CarbineFactory {
         .withFlashOffsetX(() -> 0.1f)
         .withFlashOffsetY(() -> 0.1f)
         //         .withInaccuracy(1f)
-        .withCreativeTab(ModernWarfareMod.PrecisionRiflesTab)
+        .withCreativeTab(ModernWarfareMod.AssaultRiflesTab)
         .withInformationProvider(stack -> Arrays.asList(
         "Type: Semi-Automatic Rifle",
         "Damage: 6", 
