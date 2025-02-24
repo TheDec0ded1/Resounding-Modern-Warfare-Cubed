@@ -8,11 +8,17 @@ This is my fork of Paneedah's, which will set the groundwork for more unique sou
 
 # Latest Update
 
-I am experimenting with adding attachments, magazines, and hopefully guns. At the moment they'll just be reskinned versions of existing models, until I can figure out how on earth to work the animation/positioning system __without__ manually inputting and individually testing each value until it looks right.
+Things have gotten out of hand and the catalog of guns has been *massively* expanded from my original goals. Lots of stuff needs polish and some features are commented out for the moment while I fight bugs. 
+
+# What's New, And What's Coming?
+
+Weapon durability is implemented, along with a safety stop, so a 'broken' gun will just stop working, rather than breaking like a normal tool and disappearing along with all your attachments. Eventually this will be tied to a weapon jamming feature, but that's still very much in development.
+Bullet impacts have been improved, and I intend to add bullet snaps/whizzes.
+Specific creative inventory tabs are back, there are enough guns now to make having one creative tab completely impractical.
 
 ---
 
-### How do I compile?
+### How do I compile it myself?
 1. Install Intellij IDEA
 2. (Optional) Rename the 'Resounding-Modern-Warfare-active' Folder to RMWC to shorten the compiled file name.
 3. Open Intellij IDEA, click Open Project, and select the RMWC folder.
