@@ -1,10 +1,10 @@
 package com.paneedah.mwc;
 
-import com.paneedah.weaponlib.UniversalSoundLookup;
+import com.paneedah.weaponlib2.UniversalSoundLookup;
 
 /**
  * 
- * Creates a sound registry for WeaponLib to access in order to play
+ * Creates a sound registry for weaponlib2 to access in order to play
  * reloading noises.
  * 
  * @author Jim Holden, 2022
@@ -42,7 +42,7 @@ public class UniversalSoundRegistry {
 		UniversalSoundLookup.registerSoundToLookup("ashmag_insert");
 		UniversalSoundLookup.registerSoundToLookup("ashmag_touchgun");
 		UniversalSoundLookup.registerSoundToLookup("ashmag_unload");
-                UniversalSoundLookup.registerSoundToLookup("svdaction_back");
+        UniversalSoundLookup.registerSoundToLookup("svdaction_back");
 		UniversalSoundLookup.registerSoundToLookup("svdaction_forward");
 		UniversalSoundLookup.registerSoundToLookup("svdmag_insert");
 		UniversalSoundLookup.registerSoundToLookup("svdmag_touchgun");
@@ -124,7 +124,7 @@ public class UniversalSoundRegistry {
 		UniversalSoundLookup.registerSoundToLookup("qbz95_boltforward");
 		UniversalSoundLookup.registerSoundToLookup("qbz95_foley");
 		UniversalSoundLookup.registerSoundToLookup("qbz95_maginsert");
-		UniversalSoundLookup.registerSoundToLookup("qbz95_magsmack");
+		UniversalSoundLookup.registerSoundToLookup("qbz95_magtouchgun");
 		UniversalSoundLookup.registerSoundToLookup("qbz95_magunload");
 		UniversalSoundLookup.registerSoundToLookup("qbz03_boltback");
 		UniversalSoundLookup.registerSoundToLookup("qbz03_boltforward");
@@ -139,5 +139,24 @@ public class UniversalSoundRegistry {
 		UniversalSoundLookup.registerSoundToLookup("uzimag_insert");
 		UniversalSoundLookup.registerSoundToLookup("microuzibolt_back");
 		UniversalSoundLookup.registerSoundToLookup("microuzibolt_forward");
+		UniversalSoundLookup.registerSoundToLookup("qbu88_boltback");
+		UniversalSoundLookup.registerSoundToLookup("qbu88_boltforward");
+		UniversalSoundLookup.registerSoundToLookup("qbu88mag_insert");
+		UniversalSoundLookup.registerSoundToLookup("qbu88mag_unload");
+		UniversalSoundLookup.registerSoundToLookup("stoner63beltdraw");
+		UniversalSoundLookup.registerSoundToLookup("stoner63beltlocate");
+		UniversalSoundLookup.registerSoundToLookup("stoner63boltback");
+		UniversalSoundLookup.registerSoundToLookup("stoner63boltforward");
+		UniversalSoundLookup.registerSoundToLookup("stoner63boxattach");
+		UniversalSoundLookup.registerSoundToLookup("stoner63boxdraw");
+		UniversalSoundLookup.registerSoundToLookup("stoner63boxremove");
+		UniversalSoundLookup.registerSoundToLookup("stoner63coverlock");
+		UniversalSoundLookup.registerSoundToLookup("stoner63covermove");
+		UniversalSoundLookup.registerSoundToLookup("stoner63coveropen");
+		UniversalSoundLookup.registerSoundToLookup("stoner63handleforward");
+		UniversalSoundLookup.registerSoundToLookup("stoner63magin");
+		UniversalSoundLookup.registerSoundToLookup("stoner63magout");
+		UniversalSoundLookup.registerSoundToLookup("stoner63magtouch");
+		UniversalSoundLookup.registerSoundToLookup("qcw05bolt_back");
 	}
 }

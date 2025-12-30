@@ -1,8 +1,8 @@
 package com.paneedah.mwc.utils;
 
 import com.paneedah.mwc.vectors.Vector3D;
-import com.paneedah.weaponlib.ItemMagazine;
-import com.paneedah.weaponlib.config.ModernConfigManager;
+import com.paneedah.weaponlib2.ItemMagazine;
+import com.paneedah.weaponlib2.config.ModernConfigManager;
 import net.jafama.FastMath;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;

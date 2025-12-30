@@ -5,7 +5,7 @@ import net.minecraft.client.model.ModelBox;
 import net.minecraft.client.model.ModelRenderer;
 import net.minecraft.entity.Entity;
 
-// Made with Blockbench 4.12.2
+// Made with Blockbench 4.12.5
 // Exported for Minecraft version 1.7 - 1.12
 // Paste this class into your mod and generate all required imports
 
@@ -43,13 +43,13 @@ public class QBZ03_Grip extends ModelBase {
 		Grip7.setRotationPoint(-1.5F, -20.0F, 73.0F);
 		grip.addChild(Grip7);
 		setRotationAngle(Grip7, -2.6769F, 0.0F, 0.0F);
-		Grip7.cubeList.add(new ModelBox(Grip7, 369, 258, -2.0F, 40.4005F, 59.1689F, 4, 2, 2, 0.0F, false));
+		Grip7.cubeList.add(new ModelBox(Grip7, 352, 258, -2.0F, 40.4005F, 59.1689F, 4, 2, 2, 0.0F, false));
 
 		Grip8 = new ModelRenderer(this);
 		Grip8.setRotationPoint(-1.5F, -20.0F, 63.0F);
 		grip.addChild(Grip8);
 		setRotationAngle(Grip8, 0.2231F, 0.0F, 0.0F);
-		Grip8.cubeList.add(new ModelBox(Grip8, 344, 388, -2.0F, -11.6267F, -66.1666F, 4, 1, 1, 0.0F, false));
+		Grip8.cubeList.add(new ModelBox(Grip8, 43, 367, -2.0F, -11.6267F, -66.1666F, 4, 1, 1, 0.0F, false));
 
 		Grip9 = new ModelRenderer(this);
 		Grip9.setRotationPoint(-1.5F, -7.1F, 64.9F);

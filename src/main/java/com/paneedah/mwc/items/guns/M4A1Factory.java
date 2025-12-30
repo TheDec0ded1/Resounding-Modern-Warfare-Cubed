@@ -7,13 +7,13 @@ import com.paneedah.mwc.proxies.CommonProxy;
 import com.paneedah.mwc.weapons.Attachments;
 import com.paneedah.mwc.weapons.Attachments3;
 import com.paneedah.mwc.weapons.AuxiliaryAttachments;
-import com.paneedah.mwc.weapons.Magazines;
-import com.paneedah.weaponlib.*;
-import com.paneedah.weaponlib.animation.Transform;
-import com.paneedah.weaponlib.animation.Transition;
-import com.paneedah.weaponlib.compatibility.RecoilParam;
-import com.paneedah.weaponlib.config.BalancePackManager.GunConfigurationGroup;
-import com.paneedah.weaponlib.crafting.CraftingEntry;
+import com.paneedah.mwc.weapons.STANAGMagazines;
+import com.paneedah.weaponlib2.*;
+import com.paneedah.weaponlib2.animation.Transform;
+import com.paneedah.weaponlib2.animation.Transition;
+import com.paneedah.weaponlib2.compatibility.RecoilParam;
+import com.paneedah.weaponlib2.config.BalancePackManager.GunConfigurationGroup;
+import com.paneedah.weaponlib2.crafting.CraftingEntry;
 import net.minecraft.item.Item;
 import net.minecraft.util.math.Vec3d;
 import org.lwjgl.opengl.GL11;
@@ -399,45 +399,43 @@ public class M4A1Factory implements GunFactory {
             GL11.glTranslatef(0F, -0.05F, 0F);
             GL11.glScaled(1F, 0.95F, 1F);
         })
-        .withCompatibleAttachment(Magazines.M4A1Mag, (model) -> {
+        .withCompatibleAttachment(STANAGMagazines.M4A1Mag, (model) -> {
 		    GL11.glTranslatef(-0.335F, 0.4F, -1.25F);
             GL11.glScaled(1.05F, 1.2F, 1.15F);
             
 //            GL11.glTranslatef(0F, 0.35F, 0F);
         })
-        .withCompatibleAttachment(Magazines.M16Mag, (model) -> {
+        .withCompatibleAttachment(STANAGMagazines.M16Mag, (model) -> {
 		    GL11.glTranslatef(-0.335F, 0.4F, -1.25F);
             GL11.glScaled(1.05F, 1.2F, 1.15F);
             
 //            GL11.glTranslatef(0F, 0.35F, 0F);
         })
-		.withCompatibleAttachment(Magazines.SOCOM_Mag, (model) -> {
+        .withCompatibleAttachment(STANAGMagazines.C8Mag, (model) -> {
 		    GL11.glTranslatef(-0.335F, 0.4F, -1.25F);
             GL11.glScaled(1.05F, 1.2F, 1.15F);
         })
-        .withCompatibleAttachment(Magazines.M38Mag, (model) -> {
+		.withCompatibleAttachment(STANAGMagazines.SOCOM_Mag, (model) -> {
+		    GL11.glTranslatef(-0.335F, 0.4F, -1.25F);
+            GL11.glScaled(1.05F, 1.2F, 1.15F);
+        })
+        .withCompatibleAttachment(STANAGMagazines.M38Mag, (model) -> {
           GL11.glTranslatef(-0.335F, 0.4F, -1.25F);
             GL11.glScaled(1.05F, 1.2F, 1.15F);
         })
-        .withCompatibleAttachment(Magazines.Stanag50, (model) -> {
+        .withCompatibleAttachment(STANAGMagazines.Stanag50, (model) -> {
             GL11.glTranslatef(0F, 0.05F, 0F);
 //            GL11.glScaled(1.15F, 1.2F, 1.2F);
         })
-        .withCompatibleAttachment(Magazines.Stanag60, (model) -> {
+        .withCompatibleAttachment(STANAGMagazines.Stanag60, (model) -> {
             GL11.glRotatef(-10F, 1f, 0f, 0f);
             GL11.glTranslatef(0F, 0.25F, -0F);
 //            GL11.glScaled(1.15F, 1.2F, 1.2F);
         })
-        .withCompatibleAttachment(Magazines.Stanag100, (model) -> {
+        .withCompatibleAttachment(STANAGMagazines.Stanag100, (model) -> {
             GL11.glTranslatef(-0.35F, 0.69F, -1.25F);
             GL11.glScaled(1.15F, 1.2F, 1.15F);
         })
-//        .withCompatibleAttachment(Magazines.P90Mag, (model) -> {
-//            GL11.glTranslatef(-0.046F, -0.47F, -2.35F);
-//            GL11.glScaled(0.6F, 0.7F, 0.55F);
-//            
-////            GL11.glRotatef(10F, 1f, 1f, 0f);
-//      })
 		.withCompatibleAttachment(AuxiliaryAttachments.AR15Action, true, (model) -> {
             GL11.glTranslatef(-0.175F, -1.28F, -0.67F);
             GL11.glScaled(0.7F, 0.4F, 0.7F);
@@ -445,40 +443,76 @@ public class M4A1Factory implements GunFactory {
 		.withCompatibleAttachment(AuxiliaryAttachments.M4EjectorAction, true, (model) -> {
 //            GL11.glTranslatef(-0.175F, -1.28F, -0.67F);
 //            GL11.glScaled(0.7F, 0.4F, 0.7F);
-        }).withCompatibleAttachment(Magazines.M4A1Mag, (model) -> {
+        }).withCompatibleAttachment(STANAGMagazines.M4A1Mag, (model) -> {
 		    GL11.glTranslatef(-0.335F, 0.4F, -1.25F);
             GL11.glScaled(1.05F, 1.2F, 1.15F);
             
 //            GL11.glTranslatef(0F, 0.35F, 0F);
         })
-.withCompatibleAttachment(Magazines.M16Mag, (model) -> {
+.withCompatibleAttachment(STANAGMagazines.M16Mag, (model) -> {
 		    GL11.glTranslatef(-0.335F, 0.4F, -1.25F);
             GL11.glScaled(1.05F, 1.2F, 1.15F);
             
 //            GL11.glTranslatef(0F, 0.35F, 0F);
         })
-		.withCompatibleAttachment(Magazines.SOCOM_Mag, (model) -> {
+		.withCompatibleAttachment(STANAGMagazines.SOCOM_Mag, (model) -> {
 		    GL11.glTranslatef(-0.335F, 0.4F, -1.25F);
             GL11.glScaled(1.05F, 1.2F, 1.15F);
         })
-        .withCompatibleAttachment(Magazines.M38Mag, (model) -> {
+        .withCompatibleAttachment(STANAGMagazines.M38Mag, (model) -> {
           GL11.glTranslatef(-0.335F, 0.4F, -1.25F);
             GL11.glScaled(1.05F, 1.2F, 1.15F);
         })
-        .withCompatibleAttachment(Magazines.Stanag50, (model) -> {
+        .withCompatibleAttachment(STANAGMagazines.Stanag50, (model) -> {
             GL11.glTranslatef(0F, 0.05F, 0F);
 //            GL11.glScaled(1.15F, 1.2F, 1.2F);
         })
-        .withCompatibleAttachment(Magazines.Stanag60, (model) -> {
+        .withCompatibleAttachment(STANAGMagazines.Stanag60, (model) -> {
             GL11.glRotatef(-10F, 1f, 0f, 0f);
             GL11.glTranslatef(0F, 0.25F, -0F);
 //            GL11.glScaled(1.15F, 1.2F, 1.2F);
         })
-        .withCompatibleAttachment(Magazines.Stanag100, (model) -> {
+        .withCompatibleAttachment(STANAGMagazines.Stanag100, (model) -> {
             GL11.glTranslatef(-0.35F, 0.69F, -1.25F);
             GL11.glScaled(1.15F, 1.2F, 1.15F);
         })
-	   .withCompatibleAttachment(AuxiliaryAttachments.AR15Iron, true, (model) -> {
+                .withCompatibleAttachment(STANAGMagazines.LancerMag10ClearGrey, (model) -> {
+                    GL11.glTranslatef(-0.335F, 0.4F, -1.25F);
+                    GL11.glScaled(1.05F, 1.2F, 1.15F);
+                })
+                .withCompatibleAttachment(STANAGMagazines.LancerMag20ClearGrey, (model) -> {
+                    GL11.glTranslatef(-0.335F, 0.4F, -1.25F);
+                    GL11.glScaled(1.05F, 1.2F, 1.15F);
+                })
+                .withCompatibleAttachment(STANAGMagazines.LancerMag30ClearGrey, (model) -> {
+                    GL11.glTranslatef(-0.335F, 0.4F, -1.25F);
+                    GL11.glScaled(1.05F, 1.2F, 1.15F);
+                })
+                .withCompatibleAttachment(STANAGMagazines.LancerMag10ClearGreen, (model) -> {
+                    GL11.glTranslatef(-0.335F, 0.4F, -1.25F);
+                    GL11.glScaled(1.05F, 1.2F, 1.15F);
+                })
+                .withCompatibleAttachment(STANAGMagazines.LancerMag20ClearGreen, (model) -> {
+                    GL11.glTranslatef(-0.335F, 0.4F, -1.25F);
+                    GL11.glScaled(1.05F, 1.2F, 1.15F);
+                })
+                .withCompatibleAttachment(STANAGMagazines.LancerMag30ClearGreen, (model) -> {
+                    GL11.glTranslatef(-0.335F, 0.4F, -1.25F);
+                    GL11.glScaled(1.05F, 1.2F, 1.15F);
+                })
+                .withCompatibleAttachment(STANAGMagazines.LancerMag10ClearBlue, (model) -> {
+                    GL11.glTranslatef(-0.335F, 0.4F, -1.25F);
+                    GL11.glScaled(1.05F, 1.2F, 1.15F);
+                })
+                .withCompatibleAttachment(STANAGMagazines.LancerMag20ClearBlue, (model) -> {
+                    GL11.glTranslatef(-0.335F, 0.4F, -1.25F);
+                    GL11.glScaled(1.05F, 1.2F, 1.15F);
+                })
+                .withCompatibleAttachment(STANAGMagazines.LancerMag30ClearBlue, (model) -> {
+                    GL11.glTranslatef(-0.335F, 0.4F, -1.25F);
+                    GL11.glScaled(1.05F, 1.2F, 1.15F);
+                })
+                .withCompatibleAttachment(AuxiliaryAttachments.AR15Iron, true, (model) -> {
             if(model instanceof M4Iron1) {
                 GL11.glTranslatef(-0.145F, -1.55F, -0.35F);
                 GL11.glScaled(0F, 0F, 0F);
@@ -1040,13 +1074,23 @@ public class M4A1Factory implements GunFactory {
                 
                 .setupModernAnimations("m4a1", AuxiliaryAttachments.AKaction)
                 .setupModernMagazineAnimations("m4a1", 
-                		Magazines.M4A1Mag, 
-                		Magazines.M16Mag,
-                		Magazines.M38Mag, 
-                		Magazines.Stanag100,
-                		Magazines.Stanag50,
-                		Magazines.Stanag60,
-                		Magazines.SOCOM_Mag)
+                		STANAGMagazines.M4A1Mag, 
+                		STANAGMagazines.M16Mag,
+                		STANAGMagazines.M38Mag, 
+                		STANAGMagazines.Stanag100,
+                		STANAGMagazines.Stanag50,
+                		STANAGMagazines.Stanag60,
+                		STANAGMagazines.SOCOM_Mag,
+                        STANAGMagazines.LancerMag10ClearBlue,
+                        STANAGMagazines.LancerMag20ClearBlue,
+                        STANAGMagazines.LancerMag30ClearBlue,
+                        STANAGMagazines.LancerMag10ClearGreen,
+                        STANAGMagazines.LancerMag20ClearGreen,
+                        STANAGMagazines.LancerMag30ClearGreen,
+                        STANAGMagazines.LancerMag10ClearGrey,
+                        STANAGMagazines.LancerMag20ClearGrey,
+                        STANAGMagazines.LancerMag30ClearGrey,
+                		STANAGMagazines.C8Mag)
                 
 			.withThirdPersonPositioning((renderContext) -> {
 			    GL11.glScaled(0.6F, 0.6F, 0.6F);
@@ -1067,15 +1111,11 @@ public class M4A1Factory implements GunFactory {
 //			    GL11.glTranslatef(0f, 0f, 0.5f);
                 })
                 
-            .withFirstPersonCustomPositioning(Magazines.M4A1Mag, (renderContext) -> {
+            .withFirstPersonCustomPositioning(STANAGMagazines.M4A1Mag, (renderContext) -> {
 //            	 GL11.glTranslatef(0.2f, 0.35f, 0f);
 //            	 GL11.glRotatef(-20F, 0f, 0f, 1f);
                 })
-            
-            .withFirstPersonCustomPositioning(Magazines.P90Mag, (renderContext) -> {
-//           	 GL11.glTranslatef(0.45f, -0.35f, 0f);
-//           	 GL11.glRotatef(10F, 1f, 1f, 0f);
-               })
+
                     
             .withThirdPersonPositioningReloading(
                     new Transition((renderContext) -> { // Reload position

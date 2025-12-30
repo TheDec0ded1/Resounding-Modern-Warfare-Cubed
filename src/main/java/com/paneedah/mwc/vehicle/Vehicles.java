@@ -4,9 +4,9 @@ import com.paneedah.mwc.ModernWarfareMod;
 import com.paneedah.mwc.models.VehicleKey;
 import com.paneedah.mwc.models.VehicleLock;
 import com.paneedah.mwc.proxies.CommonProxy;
-import com.paneedah.weaponlib.render.QRL;
-import com.paneedah.weaponlib.vehicle.AccessibleVehicleGUI;
-import com.paneedah.weaponlib.vehicle.GeneralVehicleSounds;
+import com.paneedah.weaponlib2.render.QRL;
+import com.paneedah.weaponlib2.vehicle.AccessibleVehicleGUI;
+import com.paneedah.weaponlib2.vehicle.GeneralVehicleSounds;
 
 public class Vehicles {
 	
@@ -15,7 +15,7 @@ public class Vehicles {
 		// Panda: Is this still the case? I don't think so.
 
 		// due to the fact that advanced warfare cannot be accessed from
-		// weaponlib, here are things that need to be set from this end.
+		// weaponlib2, here are things that need to be set from this end.
 		GeneralVehicleSounds.setup(ModernWarfareMod.MOD_CONTEXT);
 		AccessibleVehicleGUI.remotelySetModels(new VehicleKey(), new VehicleLock(),
 				QRL.quickLoc("gui", "vehiclekey"), QRL.quickLoc("gui", "keylock"));

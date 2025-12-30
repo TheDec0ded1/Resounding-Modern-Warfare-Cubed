@@ -1,6 +1,6 @@
 package com.paneedah.mwc.vehicle.engines;
 
-import com.paneedah.weaponlib.vehicle.jimphysics.Engine;
+import com.paneedah.weaponlib2.vehicle.jimphysics.Engine;
 
 public class McLarenSennaEngine extends Engine {
 

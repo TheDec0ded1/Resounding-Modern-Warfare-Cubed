@@ -7,13 +7,13 @@ import com.paneedah.mwc.proxies.CommonProxy;
 import com.paneedah.mwc.weapons.Attachments;
 import com.paneedah.mwc.weapons.Attachments3;
 import com.paneedah.mwc.weapons.AuxiliaryAttachments;
-import com.paneedah.mwc.weapons.Magazines;
-import com.paneedah.weaponlib.*;
-import com.paneedah.weaponlib.animation.Transform;
-import com.paneedah.weaponlib.animation.Transition;
-import com.paneedah.weaponlib.compatibility.RecoilParam;
-import com.paneedah.weaponlib.config.BalancePackManager.GunConfigurationGroup;
-import com.paneedah.weaponlib.crafting.CraftingEntry;
+import com.paneedah.mwc.weapons.STANAGMagazines;
+import com.paneedah.weaponlib2.*;
+import com.paneedah.weaponlib2.animation.Transform;
+import com.paneedah.weaponlib2.animation.Transition;
+import com.paneedah.weaponlib2.compatibility.RecoilParam;
+import com.paneedah.weaponlib2.config.BalancePackManager.GunConfigurationGroup;
+import com.paneedah.weaponlib2.crafting.CraftingEntry;
 import net.minecraft.item.Item;
 import net.minecraft.util.math.Vec3d;
 import org.lwjgl.opengl.GL11;
@@ -26,6 +26,7 @@ public class Type20Factory implements GunFactory {
 		return new Weapon.Builder()
 		
 		.withName("type20")
+                //.withWeight("-0.15")
 		.withFireRate(0.65f)
 		.withRecoil(3f)
 		.withZoom(0.9f)
@@ -112,24 +113,24 @@ public class Type20Factory implements GunFactory {
 //          GL11.glTranslatef(-0.35F, 0.3F, -1.31F);
 //          GL11.glScaled(1.15F, 1.2F, 1.2F);
         })
-        .withCompatibleAttachment(Magazines.M4A1Mag, (model) -> {
+        .withCompatibleAttachment(STANAGMagazines.M4A1Mag, (model) -> {
             GL11.glTranslatef(-0.322F, 0.5F, -1.25F);
             GL11.glScaled(0.97F, 1.5F, 1.5F);
         })
-        .withCompatibleAttachment(Magazines.M38Mag, (model) -> {
+        .withCompatibleAttachment(STANAGMagazines.M38Mag, (model) -> {
         	GL11.glTranslatef(-0.322F, 0.5F, -1.25F);
             GL11.glScaled(0.97F, 1.5F, 1.5F);
         })
-        .withCompatibleAttachment(Magazines.Stanag50, (model) -> {
+        .withCompatibleAttachment(STANAGMagazines.Stanag50, (model) -> {
             GL11.glTranslatef(0F, -0.06F, -0.1F);
 //            GL11.glScaled(1.15F, 1.2F, 1.2F);
         })
-        .withCompatibleAttachment(Magazines.Stanag60, (model) -> {
+        .withCompatibleAttachment(STANAGMagazines.Stanag60, (model) -> {
             GL11.glRotatef(-10F, 1f, 0f, 0f);
             GL11.glTranslatef(0F, 0.2F, -0.15F);
 //            GL11.glScaled(1.15F, 1.2F, 1.2F);
         })
-        .withCompatibleAttachment(Magazines.Stanag100, (model) -> {
+        .withCompatibleAttachment(STANAGMagazines.Stanag100, (model) -> {
             GL11.glTranslatef(-0.36F, 0.5F, -1.31F);
             GL11.glScaled(1.2F, 1.2F, 1.2F);
         })
@@ -390,12 +391,12 @@ public class Type20Factory implements GunFactory {
                 
                 .setupModernAnimations("acr", AuxiliaryAttachments.AKaction)
                 .setupModernMagazineAnimations("acr", 
-                		Magazines.M4A1Mag, 
-                		Magazines.M38Mag, 
-                		Magazines.Stanag100,
-                		Magazines.Stanag50,
-                		Magazines.Stanag60,
-                		Magazines.SOCOM_Mag)
+                		STANAGMagazines.M4A1Mag, 
+                		STANAGMagazines.M38Mag, 
+                		STANAGMagazines.Stanag100,
+                		STANAGMagazines.Stanag50,
+                		STANAGMagazines.Stanag60,
+                		STANAGMagazines.SOCOM_Mag)
                 
             .withFirstPersonCustomPositioning(AuxiliaryAttachments.ACRAction.getRenderablePart(), (renderContext) -> {
                 if(renderContext.getWeaponInstance().getAmmo() == 0) {

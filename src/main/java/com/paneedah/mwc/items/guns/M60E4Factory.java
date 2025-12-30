@@ -7,9 +7,9 @@ import com.paneedah.mwc.weapons.Attachments;
 import com.paneedah.mwc.weapons.Attachments3;
 import com.paneedah.mwc.weapons.AuxiliaryAttachments;
 import com.paneedah.mwc.weapons.Magazines;
-import com.paneedah.weaponlib.*;
-import com.paneedah.weaponlib.animation.Transition;
-import com.paneedah.weaponlib.config.BalancePackManager.GunConfigurationGroup;
+import com.paneedah.weaponlib2.*;
+import com.paneedah.weaponlib2.animation.Transition;
+import com.paneedah.weaponlib2.config.BalancePackManager.GunConfigurationGroup;
 import net.minecraft.item.Item;
 import org.lwjgl.opengl.GL11;
 
@@ -21,7 +21,7 @@ public class M60E4Factory {
         return new Weapon.Builder()
 
         .withName("m60e4")
-        .withFireRate(0.6f)
+        .withFireRate(0.45f)
         .withRecoil(2f)
         .withZoom(0.9f)
         .withConfigGroup(GunConfigurationGroup.GPMG)

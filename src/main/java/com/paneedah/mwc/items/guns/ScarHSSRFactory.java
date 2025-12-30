@@ -12,12 +12,12 @@ import com.paneedah.mwc.weapons.Attachments2;
 import com.paneedah.mwc.weapons.Attachments3;
 import com.paneedah.mwc.weapons.AuxiliaryAttachments;
 import com.paneedah.mwc.weapons.Magazines;
-import com.paneedah.weaponlib.*;
-import com.paneedah.weaponlib.animation.Transform;
-import com.paneedah.weaponlib.animation.Transition;
-import com.paneedah.weaponlib.compatibility.RecoilParam;
-import com.paneedah.weaponlib.config.BalancePackManager.GunConfigurationGroup;
-import com.paneedah.weaponlib.crafting.CraftingEntry;
+import com.paneedah.weaponlib2.*;
+import com.paneedah.weaponlib2.animation.Transform;
+import com.paneedah.weaponlib2.animation.Transition;
+import com.paneedah.weaponlib2.compatibility.RecoilParam;
+import com.paneedah.weaponlib2.config.BalancePackManager.GunConfigurationGroup;
+import com.paneedah.weaponlib2.crafting.CraftingEntry;
 import net.minecraft.item.Item;
 import net.minecraft.util.math.Vec3d;
 import org.lwjgl.opengl.GL11;
@@ -58,23 +58,23 @@ public class ScarHSSRFactory implements GunFactory {
         .withCreativeTab(ModernWarfareMod.PrecisionRiflesTab)
         .useNewSystem()
 		.withRecoilParam(new RecoilParam(
-				// The weapon power
-				15.0,
-				// Muzzle climb divisor
-				15.75,
-				// "Stock Length"
-				50.0,
-				// Recovery rate from initial shot
-				0.4,
-				// Recovery rate @ "stock"
-				0.3125,
-				// Recoil rotation (Y)
-				0.0,
-				// Recoil rotation (Z)
-				0.0,
-				// Ads similarity divisor
-				1.0
-		))
+		// The weapon power
+		22.5,
+		// Muzzle climb divisor
+		13.125,
+		// "Stock Length"
+		50.0,
+		// Recovery rate from initial shot
+		0.525,
+		// Recovery rate @ "stock"
+		0.5625,
+		// Recoil rotation (Y)
+		0.0,
+		// Recoil rotation (Z)
+		0.0,
+		// Ads similarity divisor
+		2.0125
+))
         .withInformationProvider(stack -> Arrays.asList(
         "Type: Carbine", 
         "Damage: 6", 

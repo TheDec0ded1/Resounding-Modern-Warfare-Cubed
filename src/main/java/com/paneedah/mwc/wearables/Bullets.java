@@ -2,8 +2,8 @@ package com.paneedah.mwc.wearables;
 
 import com.paneedah.mwc.ModernWarfareMod;
 import com.paneedah.mwc.init.MWCItems;
-import com.paneedah.weaponlib.ItemBullet;
-import com.paneedah.weaponlib.crafting.CraftingComplexity;
+import com.paneedah.weaponlib2.ItemBullet;
+import com.paneedah.weaponlib2.crafting.CraftingComplexity;
 import net.minecraft.init.Items;
 import org.lwjgl.opengl.GL11;
 

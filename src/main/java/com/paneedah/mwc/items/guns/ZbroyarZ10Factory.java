@@ -8,12 +8,12 @@ import com.paneedah.mwc.weapons.Attachments;
 import com.paneedah.mwc.weapons.Attachments3;
 import com.paneedah.mwc.weapons.AuxiliaryAttachments;
 import com.paneedah.mwc.weapons.Magazines;
-import com.paneedah.weaponlib.*;
-import com.paneedah.weaponlib.animation.Transform;
-import com.paneedah.weaponlib.animation.Transition;
-import com.paneedah.weaponlib.compatibility.RecoilParam;
-import com.paneedah.weaponlib.config.BalancePackManager.GunConfigurationGroup;
-import com.paneedah.weaponlib.crafting.CraftingEntry;
+import com.paneedah.weaponlib2.*;
+import com.paneedah.weaponlib2.animation.Transform;
+import com.paneedah.weaponlib2.animation.Transition;
+import com.paneedah.weaponlib2.compatibility.RecoilParam;
+import com.paneedah.weaponlib2.config.BalancePackManager.GunConfigurationGroup;
+import com.paneedah.weaponlib2.crafting.CraftingEntry;
 import net.minecraft.item.Item;
 import net.minecraft.util.math.Vec3d;
 import org.lwjgl.opengl.GL11;
@@ -26,6 +26,7 @@ public class ZbroyarZ10Factory implements GunFactory {
         return new Weapon.Builder()
 
         .withName("zbroyar_z10")
+        //.withWeight("-0.15")
         .withFireRate(0.65f)
         .withRecoil(6f)
         .withZoom(0.9f)

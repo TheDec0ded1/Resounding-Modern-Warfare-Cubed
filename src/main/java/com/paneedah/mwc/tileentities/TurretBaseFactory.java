@@ -1,8 +1,8 @@
 package com.paneedah.mwc.tileentities;
 
 import com.paneedah.mwc.ModernWarfareMod;
-import com.paneedah.weaponlib.ModContext;
-import com.paneedah.weaponlib.tile.LootBoxConfiguration;
+import com.paneedah.weaponlib2.ModContext;
+import com.paneedah.weaponlib2.tile.LootBoxConfiguration;
 import net.minecraft.block.material.Material;
 import net.minecraftforge.event.LootTableLoadEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;

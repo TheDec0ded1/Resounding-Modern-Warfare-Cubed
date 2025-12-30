@@ -12,13 +12,13 @@ import com.paneedah.mwc.weapons.Attachments2;
 import com.paneedah.mwc.weapons.Attachments3;
 import com.paneedah.mwc.weapons.AuxiliaryAttachments;
 import com.paneedah.mwc.weapons.Magazines;
-import com.paneedah.weaponlib.*;
-import com.paneedah.weaponlib.animation.Transform;
-import com.paneedah.weaponlib.animation.Transition;
-import com.paneedah.weaponlib.compatibility.RecoilParam;
-import com.paneedah.weaponlib.config.BalancePackManager.GunConfigurationGroup;
-import com.paneedah.weaponlib.crafting.CraftingEntry;
-import com.paneedah.weaponlib.render.shells.ShellParticleSimulator;
+import com.paneedah.weaponlib2.*;
+import com.paneedah.weaponlib2.animation.Transform;
+import com.paneedah.weaponlib2.animation.Transition;
+import com.paneedah.weaponlib2.compatibility.RecoilParam;
+import com.paneedah.weaponlib2.config.BalancePackManager.GunConfigurationGroup;
+import com.paneedah.weaponlib2.crafting.CraftingEntry;
+import com.paneedah.weaponlib2.render.shells.ShellParticleSimulator;
 import net.minecraft.item.Item;
 import net.minecraft.util.math.Vec3d;
 import org.lwjgl.opengl.GL11;
@@ -57,23 +57,23 @@ public class MiniUziFactory implements GunFactory {
 //         .withInaccuracy(3)
         .withCreativeTab(ModernWarfareMod.SMGsTab)
         .useNewSystem()
-		.withRecoilParam(new RecoilParam(
+	.withRecoilParam(new RecoilParam(
 				// The weapon power
-				15.0,
+				20.0,
 				// Muzzle climb divisor
-				15.75,
+				30.0,
 				// "Stock Length"
 				50.0,
 				// Recovery rate from initial shot
-				0.4,
+				0.15,
 				// Recovery rate @ "stock"
-				0.3125,
+				0.5625,
 				// Recoil rotation (Y)
 				0.0,
 				// Recoil rotation (Z)
 				0.0,
 				// Ads similarity divisor
-				1.0
+				1.5625
 		))
         .withInformationProvider(stack -> Arrays.asList(
         "Type: Submachine Gun", 

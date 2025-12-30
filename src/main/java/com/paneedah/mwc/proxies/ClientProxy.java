@@ -6,16 +6,16 @@ import com.paneedah.mwc.init.MWCItems;
 import com.paneedah.mwc.models.Workbench;
 import com.paneedah.mwc.utils.ModReference;
 import com.paneedah.mwc.wearables.Armors;
-import com.paneedah.weaponlib.crafting.ammopress.TESRAmmoPress;
-import com.paneedah.weaponlib.crafting.ammopress.TileEntityAmmoPress;
-import com.paneedah.weaponlib.crafting.ammopress.model.AmmoPress;
-import com.paneedah.weaponlib.crafting.workbench.TESRWorkbench;
-import com.paneedah.weaponlib.crafting.workbench.TileEntityWorkbench;
-import com.paneedah.weaponlib.inventory.BackpackInventoryTab;
-import com.paneedah.weaponlib.inventory.CustomPlayerInventoryTab;
-import com.paneedah.weaponlib.inventory.InventoryTabs;
-import com.paneedah.weaponlib.inventory.StandardPlayerInventoryTab;
-import com.paneedah.weaponlib.render.CustomArmorLayer;
+import com.paneedah.weaponlib2.crafting.ammopress.TESRAmmoPress;
+import com.paneedah.weaponlib2.crafting.ammopress.TileEntityAmmoPress;
+import com.paneedah.weaponlib2.crafting.ammopress.model.AmmoPress;
+import com.paneedah.weaponlib2.crafting.workbench.TESRWorkbench;
+import com.paneedah.weaponlib2.crafting.workbench.TileEntityWorkbench;
+import com.paneedah.weaponlib2.inventory.BackpackInventoryTab;
+import com.paneedah.weaponlib2.inventory.CustomPlayerInventoryTab;
+import com.paneedah.weaponlib2.inventory.InventoryTabs;
+import com.paneedah.weaponlib2.inventory.StandardPlayerInventoryTab;
+import com.paneedah.weaponlib2.render.CustomArmorLayer;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.ItemModelMesher;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
@@ -88,9 +88,6 @@ public class ClientProxy extends CommonProxy {
         modelMesher.register(Armors.Santachest, 0, new ModelResourceLocation(ModReference.id + ":santa_chest", "inventory"));
         modelMesher.register(Armors.Santahelmet, 0, new ModelResourceLocation(ModReference.id + ":santa_helmet", "inventory"));
 
-        modelMesher.register(Armors.NaziSantaboots, 0, new ModelResourceLocation(ModReference.id + ":nazisanta_boots", "inventory"));
-        modelMesher.register(Armors.NaziSantachest, 0, new ModelResourceLocation(ModReference.id + ":nazisanta_chest", "inventory"));
-        modelMesher.register(Armors.NaziSantahelmet, 0, new ModelResourceLocation(ModReference.id + ":nazisanta_helmet", "inventory"));
 
         modelMesher.register(Armors.SpecOpsboots, 0, new ModelResourceLocation(ModReference.id + ":spec_ops_boots", "inventory"));
         modelMesher.register(Armors.SpecOpschest, 0, new ModelResourceLocation(ModReference.id + ":spec_ops_chest", "inventory"));

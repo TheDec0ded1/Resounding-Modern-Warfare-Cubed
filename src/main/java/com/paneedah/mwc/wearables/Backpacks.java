@@ -1,9 +1,9 @@
 package com.paneedah.mwc.wearables;
 
 import com.paneedah.mwc.ModernWarfareMod;
-import com.paneedah.weaponlib.ItemStorage;
-import com.paneedah.weaponlib.Weapon;
-import com.paneedah.weaponlib.animation.Transform;
+import com.paneedah.weaponlib2.ItemStorage;
+import com.paneedah.weaponlib2.Weapon;
+import com.paneedah.weaponlib2.animation.Transform;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import org.lwjgl.opengl.GL11;

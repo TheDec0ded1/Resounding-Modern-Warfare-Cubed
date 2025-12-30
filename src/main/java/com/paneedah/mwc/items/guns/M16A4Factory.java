@@ -7,13 +7,13 @@ import com.paneedah.mwc.proxies.CommonProxy;
 import com.paneedah.mwc.weapons.Attachments;
 import com.paneedah.mwc.weapons.Attachments3;
 import com.paneedah.mwc.weapons.AuxiliaryAttachments;
-import com.paneedah.mwc.weapons.Magazines;
-import com.paneedah.weaponlib.*;
-import com.paneedah.weaponlib.animation.Transform;
-import com.paneedah.weaponlib.animation.Transition;
-import com.paneedah.weaponlib.compatibility.RecoilParam;
-import com.paneedah.weaponlib.config.BalancePackManager.GunConfigurationGroup;
-import com.paneedah.weaponlib.crafting.CraftingEntry;
+import com.paneedah.mwc.weapons.STANAGMagazines;
+import com.paneedah.weaponlib2.*;
+import com.paneedah.weaponlib2.animation.Transform;
+import com.paneedah.weaponlib2.animation.Transition;
+import com.paneedah.weaponlib2.compatibility.RecoilParam;
+import com.paneedah.weaponlib2.config.BalancePackManager.GunConfigurationGroup;
+import com.paneedah.weaponlib2.crafting.CraftingEntry;
 import net.minecraft.item.Item;
 import net.minecraft.util.math.Vec3d;
 import org.lwjgl.opengl.GL11;
@@ -357,36 +357,36 @@ public class M16A4Factory implements GunFactory {
             GL11.glTranslatef(0F, -0.05F, 0F);
             GL11.glScaled(1F, 0.95F, 1F);
         })
-        .withCompatibleAttachment(Magazines.M4A1Mag, (model) -> {
+        .withCompatibleAttachment(STANAGMagazines.M4A1Mag, (model) -> {
 		    GL11.glTranslatef(-0.335F, 0.4F, -1.25F);
             GL11.glScaled(1.05F, 1.2F, 1.15F);
             
 //            GL11.glTranslatef(0F, 0.35F, 0F);
         })
-        .withCompatibleAttachment(Magazines.M16Mag, (model) -> {
+        .withCompatibleAttachment(STANAGMagazines.M16Mag, (model) -> {
 		    GL11.glTranslatef(-0.335F, 0.4F, -1.25F);
             GL11.glScaled(1.05F, 1.2F, 1.15F);
             
 //            GL11.glTranslatef(0F, 0.35F, 0F);
         })
-		.withCompatibleAttachment(Magazines.SOCOM_Mag, (model) -> {
+		.withCompatibleAttachment(STANAGMagazines.SOCOM_Mag, (model) -> {
 		    GL11.glTranslatef(-0.335F, 0.4F, -1.25F);
             GL11.glScaled(1.05F, 1.2F, 1.15F);
         })
-        .withCompatibleAttachment(Magazines.M38Mag, (model) -> {
+        .withCompatibleAttachment(STANAGMagazines.M38Mag, (model) -> {
           GL11.glTranslatef(-0.335F, 0.4F, -1.25F);
             GL11.glScaled(1.05F, 1.2F, 1.15F);
         })
-        .withCompatibleAttachment(Magazines.Stanag50, (model) -> {
+        .withCompatibleAttachment(STANAGMagazines.Stanag50, (model) -> {
             GL11.glTranslatef(0F, 0.05F, 0F);
 //            GL11.glScaled(1.15F, 1.2F, 1.2F);
         })
-        .withCompatibleAttachment(Magazines.Stanag60, (model) -> {
+        .withCompatibleAttachment(STANAGMagazines.Stanag60, (model) -> {
             GL11.glRotatef(-10F, 1f, 0f, 0f);
             GL11.glTranslatef(0F, 0.25F, -0F);
 //            GL11.glScaled(1.15F, 1.2F, 1.2F);
         })
-        .withCompatibleAttachment(Magazines.Stanag100, (model) -> {
+        .withCompatibleAttachment(STANAGMagazines.Stanag100, (model) -> {
             GL11.glTranslatef(-0.35F, 0.69F, -1.25F);
             GL11.glScaled(1.15F, 1.2F, 1.15F);
         })
@@ -789,13 +789,13 @@ public class M16A4Factory implements GunFactory {
                 
                 .setupModernAnimations("m4a1", AuxiliaryAttachments.AKaction)
                 .setupModernMagazineAnimations("m4a1", 
-                		Magazines.M4A1Mag, 
-                		Magazines.M16Mag,
-                		Magazines.M38Mag, 
-                		Magazines.Stanag100,
-                		Magazines.Stanag50,
-                		Magazines.Stanag60,
-                		Magazines.SOCOM_Mag)
+                		STANAGMagazines.M4A1Mag, 
+                		STANAGMagazines.M16Mag,
+                		STANAGMagazines.M38Mag, 
+                		STANAGMagazines.Stanag100,
+                		STANAGMagazines.Stanag50,
+                		STANAGMagazines.Stanag60,
+                		STANAGMagazines.SOCOM_Mag)
 		
 			.withFirstPersonCustomPositioning(AuxiliaryAttachments.AR15Action.getRenderablePart(), (renderContext) -> {
 //			    GL11.glTranslatef(0f, 0f, 0.5f);
@@ -809,7 +809,7 @@ public class M16A4Factory implements GunFactory {
                 GL11.glTranslatef(0f, 0f, 0.7f);
                 })
                 
-            .withFirstPersonCustomPositioning(Magazines.M4A1Mag, (renderContext) -> {
+            .withFirstPersonCustomPositioning(STANAGMagazines.M4A1Mag, (renderContext) -> {
 //            	 GL11.glTranslatef(0.2f, 0.35f, 0f);
 //            	 GL11.glRotatef(-20F, 0f, 0f, 1f);
                 })

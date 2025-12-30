@@ -5,7 +5,7 @@ import net.minecraft.client.model.ModelBox;
 import net.minecraft.client.model.ModelRenderer;
 import net.minecraft.entity.Entity;
 
-// Made with Blockbench 4.12.3
+// Made with Blockbench 4.12.5
 // Exported for Minecraft version 1.7 - 1.12
 // Paste this class into your mod and generate all required imports
 
@@ -43,8 +43,8 @@ public class QBU88Bipod extends ModelBase {
 	private final ModelRenderer accessory18_r1;
 
 	public QBU88Bipod() {
-		textureWidth = 576;
-		textureHeight = 576;
+		textureWidth = 544;
+		textureHeight = 544;
 
 		bipod = new ModelRenderer(this);
 		bipod.setRotationPoint(-3.0F, 23.1F, -90.4F);
@@ -59,44 +59,44 @@ public class QBU88Bipod extends ModelBase {
 		gun15 = new ModelRenderer(this);
 		gun15.setRotationPoint(-2.0F, -40.0F, -70.5F);
 		bone3.addChild(gun15);
-		gun15.cubeList.add(new ModelBox(gun15, 542, 273, 0.0F, 11.0F, -3.1F, 1, 1, 2, 0.0F, false));
-		gun15.cubeList.add(new ModelBox(gun15, 540, 341, 0.0F, 12.4142F, -3.1F, 1, 1, 2, 0.0F, false));
+		gun15.cubeList.add(new ModelBox(gun15, 529, 385, 0.0F, 11.0F, -3.1F, 1, 1, 2, 0.0F, false));
+		gun15.cubeList.add(new ModelBox(gun15, 529, 389, 0.0F, 12.4142F, -3.1F, 1, 1, 2, 0.0F, false));
 
 		gun16 = new ModelRenderer(this);
 		gun16.setRotationPoint(-1.0F, -40.0F, -70.5F);
 		bone3.addChild(gun16);
 		setRotationAngle(gun16, 0.0F, 0.0F, 0.7854F);
-		gun16.cubeList.add(new ModelBox(gun16, 116, 541, 7.7782F, 7.7782F, -3.1F, 1, 1, 2, 0.0F, false));
+		gun16.cubeList.add(new ModelBox(gun16, 529, 393, 7.7782F, 7.7782F, -3.1F, 1, 1, 2, 0.0F, false));
 
 		gun19 = new ModelRenderer(this);
 		gun19.setRotationPoint(-3.0F, -39.0F, -70.5F);
 		bone3.addChild(gun19);
-		gun19.cubeList.add(new ModelBox(gun19, 540, 337, 0.2929F, 10.7071F, -3.1F, 1, 1, 2, 0.0F, false));
-		gun19.cubeList.add(new ModelBox(gun19, 274, 542, 1.7071F, 10.7071F, -3.1F, 1, 1, 2, 0.0F, false));
+		gun19.cubeList.add(new ModelBox(gun19, 529, 397, 0.2929F, 10.7071F, -3.1F, 1, 1, 2, 0.0F, false));
+		gun19.cubeList.add(new ModelBox(gun19, 529, 401, 1.7071F, 10.7071F, -3.1F, 1, 1, 2, 0.0F, false));
 
 		gun20 = new ModelRenderer(this);
 		gun20.setRotationPoint(-1.0F, -37.0F, -70.5F);
 		bone3.addChild(gun20);
 		setRotationAngle(gun20, 0.0F, 0.0F, -2.3562F);
-		gun20.cubeList.add(new ModelBox(gun20, 540, 333, -7.364F, -7.364F, -3.1F, 1, 1, 2, 0.0F, false));
+		gun20.cubeList.add(new ModelBox(gun20, 408, 529, -7.364F, -7.364F, -3.1F, 1, 1, 2, 0.0F, false));
 
 		gun25 = new ModelRenderer(this);
 		gun25.setRotationPoint(-3.0F, -46.0F, -70.5F);
 		bone3.addChild(gun25);
 		setRotationAngle(gun25, 0.0F, 0.0F, -0.7854F);
-		gun25.cubeList.add(new ModelBox(gun25, 123, 541, -12.3137F, 12.7279F, -3.1F, 1, 1, 2, 0.0F, false));
+		gun25.cubeList.add(new ModelBox(gun25, 415, 529, -12.3137F, 12.7279F, -3.1F, 1, 1, 2, 0.0F, false));
 
 		gun26 = new ModelRenderer(this);
 		gun26.setRotationPoint(-3.0F, -45.0F, -70.5F);
 		bone3.addChild(gun26);
 		setRotationAngle(gun26, 0.0F, 0.0F, -0.7854F);
-		gun26.cubeList.add(new ModelBox(gun26, 207, 541, -12.3137F, 12.7279F, -3.1F, 1, 1, 2, 0.0F, false));
+		gun26.cubeList.add(new ModelBox(gun26, 422, 529, -12.3137F, 12.7279F, -3.1F, 1, 1, 2, 0.0F, false));
 
 		bone = new ModelRenderer(this);
 		bone.setRotationPoint(3.0F, -32.1F, -45.6F);
 		bipod.addChild(bone);
 		setRotationAngle(bone, 0.0F, 0.0F, 0.6109F);
-		bone.cubeList.add(new ModelBox(bone, 513, 159, -6.0762F, 1.2723F, 1.2F, 2, 5, 2, 0.0F, false));
+		bone.cubeList.add(new ModelBox(bone, 521, 452, -6.0762F, 1.2723F, 1.2F, 2, 5, 2, 0.0F, false));
 
 		accessory27 = new ModelRenderer(this);
 		accessory27.setRotationPoint(1.441F, -2.0744F, 37.7F);
@@ -107,7 +107,7 @@ public class QBU88Bipod extends ModelBase {
 		accessory27_r1.setRotationPoint(2.6F, 1.9697F, -14.3574F);
 		accessory27.addChild(accessory27_r1);
 		setRotationAngle(accessory27_r1, -0.0436F, 0.0F, 0.0F);
-		accessory27_r1.cubeList.add(new ModelBox(accessory27_r1, 540, 328, -10.6603F, 5.2486F, 7.149F, 2, 3, 1, 0.0F, false));
+		accessory27_r1.cubeList.add(new ModelBox(accessory27_r1, 0, 529, -10.6603F, 5.2486F, 7.149F, 2, 3, 1, 0.0F, false));
 
 		accessory24 = new ModelRenderer(this);
 		accessory24.setRotationPoint(2.141F, -1.5744F, 29.6F);
@@ -118,7 +118,7 @@ public class QBU88Bipod extends ModelBase {
 		accessory24_r1.setRotationPoint(1.9F, 1.4697F, -6.2574F);
 		accessory24.addChild(accessory24_r1);
 		setRotationAngle(accessory24_r1, -0.0436F, 0.0F, 0.0F);
-		accessory24_r1.cubeList.add(new ModelBox(accessory24_r1, 540, 279, -10.1322F, 5.7226F, -0.9085F, 1, 2, 2, 0.0F, false));
+		accessory24_r1.cubeList.add(new ModelBox(accessory24_r1, 391, 528, -10.1322F, 5.7226F, -0.9085F, 1, 2, 2, 0.0F, false));
 
 		accessory23 = new ModelRenderer(this);
 		accessory23.setRotationPoint(3.441F, -1.1245F, 13.3F);
@@ -130,7 +130,7 @@ public class QBU88Bipod extends ModelBase {
 		accessory23_r1.setRotationPoint(0.6873F, 2.3197F, 10.037F);
 		accessory23.addChild(accessory23_r1);
 		setRotationAngle(accessory23_r1, -0.0436F, 0.0F, 0.0004F);
-		accessory23_r1.cubeList.add(new ModelBox(accessory23_r1, 438, 523, -9.7634F, 4.9273F, -11.8089F, 1, 1, 19, 0.0F, false));
+		accessory23_r1.cubeList.add(new ModelBox(accessory23_r1, 237, 501, -9.7634F, 4.9273F, -11.8089F, 1, 1, 19, 0.0F, false));
 
 		accessory21 = new ModelRenderer(this);
 		accessory21.setRotationPoint(2.541F, -1.3745F, 3.6F);
@@ -141,7 +141,7 @@ public class QBU88Bipod extends ModelBase {
 		accessory21_r1.setRotationPoint(1.5F, 1.2697F, 19.7426F);
 		accessory21.addChild(accessory21_r1);
 		setRotationAngle(accessory21_r1, -0.0436F, 0.0F, 0.0F);
-		accessory21_r1.cubeList.add(new ModelBox(accessory21_r1, 329, 413, -9.5603F, 5.976F, -21.528F, 1, 1, 29, 0.0F, false));
+		accessory21_r1.cubeList.add(new ModelBox(accessory21_r1, 0, 419, -9.5603F, 5.976F, -21.528F, 1, 1, 29, 0.0F, false));
 
 		accessory20 = new ModelRenderer(this);
 		accessory20.setRotationPoint(2.541F, -0.8745F, 3.6F);
@@ -152,13 +152,13 @@ public class QBU88Bipod extends ModelBase {
 		accessory20_r1.setRotationPoint(1.5F, 0.7697F, 19.7426F);
 		accessory20.addChild(accessory20_r1);
 		setRotationAngle(accessory20_r1, -0.0436F, 0.0F, 0.0F);
-		accessory20_r1.cubeList.add(new ModelBox(accessory20_r1, 268, 413, -9.5603F, 6.476F, -21.528F, 1, 1, 29, 0.0F, false));
+		accessory20_r1.cubeList.add(new ModelBox(accessory20_r1, 390, 413, -9.5603F, 6.476F, -21.528F, 1, 1, 29, 0.0F, false));
 
 		bone2 = new ModelRenderer(this);
 		bone2.setRotationPoint(17.3952F, -47.0357F, -45.6F);
 		bipod.addChild(bone2);
 		setRotationAngle(bone2, 0.0F, 0.0F, -0.6109F);
-		bone2.cubeList.add(new ModelBox(bone2, 215, 505, -23.6548F, 0.0881F, 1.2F, 2, 5, 2, 0.0F, false));
+		bone2.cubeList.add(new ModelBox(bone2, 195, 522, -23.6548F, 0.0881F, 1.2F, 2, 5, 2, 0.0F, false));
 
 		accessory28 = new ModelRenderer(this);
 		accessory28.setRotationPoint(-3.9F, -0.95F, 37.7F);
@@ -169,7 +169,7 @@ public class QBU88Bipod extends ModelBase {
 		accessory28_r1.setRotationPoint(0.6983F, 1.9711F, -14.3465F);
 		accessory28.addChild(accessory28_r1);
 		setRotationAngle(accessory28_r1, -0.0436F, 0.0F, 0.0F);
-		accessory28_r1.cubeList.add(new ModelBox(accessory28_r1, 333, 540, -19.9427F, 3.0995F, 7.0443F, 2, 3, 1, 0.0F, false));
+		accessory28_r1.cubeList.add(new ModelBox(accessory28_r1, 7, 529, -19.9427F, 3.0995F, 7.0443F, 2, 3, 1, 0.0F, false));
 
 		accessory25 = new ModelRenderer(this);
 		accessory25.setRotationPoint(-3.6F, -0.45F, 29.6F);
@@ -180,7 +180,7 @@ public class QBU88Bipod extends ModelBase {
 		accessory25_r1.setRotationPoint(0.3983F, 1.4711F, -6.2465F);
 		accessory25.addChild(accessory25_r1);
 		setRotationAngle(accessory25_r1, -0.0436F, 0.0F, 0.0F);
-		accessory25_r1.cubeList.add(new ModelBox(accessory25_r1, 540, 298, -19.6427F, 3.5995F, -1.0557F, 1, 2, 2, 0.0F, false));
+		accessory25_r1.cubeList.add(new ModelBox(accessory25_r1, 291, 529, -19.6427F, 3.5995F, -1.0557F, 1, 2, 2, 0.0F, false));
 
 		accessory22 = new ModelRenderer(this);
 		accessory22.setRotationPoint(-3.9F, 0.0F, 13.3F);
@@ -192,7 +192,7 @@ public class QBU88Bipod extends ModelBase {
 		accessory22_r1.setRotationPoint(0.6108F, 1.0211F, 10.0592F);
 		accessory22.addChild(accessory22_r1);
 		setRotationAngle(accessory22_r1, -0.0436F, 0.0F, -0.0004F);
-		accessory22_r1.cubeList.add(new ModelBox(accessory22_r1, 523, 417, -19.8381F, 4.0769F, -12.1058F, 1, 1, 19, 0.0F, false));
+		accessory22_r1.cubeList.add(new ModelBox(accessory22_r1, 196, 501, -19.8381F, 4.0769F, -12.1058F, 1, 1, 19, 0.0F, false));
 
 		accessory19 = new ModelRenderer(this);
 		accessory19.setRotationPoint(-4.0F, 0.25F, 3.6F);
@@ -203,7 +203,7 @@ public class QBU88Bipod extends ModelBase {
 		accessory19_r1.setRotationPoint(0.7983F, 0.7711F, 19.7535F);
 		accessory19.addChild(accessory19_r1);
 		setRotationAngle(accessory19_r1, -0.0436F, 0.0F, 0.0F);
-		accessory19_r1.cubeList.add(new ModelBox(accessory19_r1, 0, 419, -20.0427F, 4.3269F, -21.6327F, 1, 1, 29, 0.0F, false));
+		accessory19_r1.cubeList.add(new ModelBox(accessory19_r1, 329, 413, -20.0427F, 4.3269F, -21.6327F, 1, 1, 29, 0.0F, false));
 
 		accessory18 = new ModelRenderer(this);
 		accessory18.setRotationPoint(-4.0F, -0.25F, 3.6F);
@@ -214,7 +214,7 @@ public class QBU88Bipod extends ModelBase {
 		accessory18_r1.setRotationPoint(0.7983F, 1.2711F, 19.7535F);
 		accessory18.addChild(accessory18_r1);
 		setRotationAngle(accessory18_r1, -0.0436F, 0.0F, 0.0F);
-		accessory18_r1.cubeList.add(new ModelBox(accessory18_r1, 390, 413, -20.0427F, 3.8269F, -21.6327F, 1, 1, 29, 0.0F, false));
+		accessory18_r1.cubeList.add(new ModelBox(accessory18_r1, 268, 413, -20.0427F, 3.8269F, -21.6327F, 1, 1, 29, 0.0F, false));
 	}
 
 	@Override

@@ -7,9 +7,9 @@ import com.paneedah.mwc.weapons.Attachments;
 import com.paneedah.mwc.weapons.Attachments3;
 import com.paneedah.mwc.weapons.AuxiliaryAttachments;
 import com.paneedah.mwc.weapons.Magazines;
-import com.paneedah.weaponlib.*;
-import com.paneedah.weaponlib.animation.Transition;
-import com.paneedah.weaponlib.config.BalancePackManager.GunConfigurationGroup;
+import com.paneedah.weaponlib2.*;
+import com.paneedah.weaponlib2.animation.Transition;
+import com.paneedah.weaponlib2.config.BalancePackManager.GunConfigurationGroup;
 import net.minecraft.item.Item;
 import org.lwjgl.opengl.GL11;
 
@@ -497,11 +497,7 @@ public class S710TricunFactory implements GunFactory {
 			.withFirstPersonCustomPositioning(AuxiliaryAttachments.S710TricunActionPully.getRenderablePart(), (renderContext) -> {
 //			    GL11.glTranslatef(0f, 0f, 0.5f);
                 })
-                
-            .withFirstPersonCustomPositioning(Magazines.M4A1Mag, (renderContext) -> {
-//            	 GL11.glTranslatef(0.2f, 0.35f, 0f);
-//            	 GL11.glRotatef(-20F, 0f, 0f, 1f);
-                })
+
 				
             .withFirstPersonPositioningReloading(
 			        

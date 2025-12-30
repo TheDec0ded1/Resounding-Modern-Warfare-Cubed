@@ -2,11 +2,11 @@ package com.paneedah.mwc.entities;
 
 import com.paneedah.mwc.weapons.Guns;
 import com.paneedah.mwc.weapons.Magazines;
-import com.paneedah.weaponlib.ModContext;
-import com.paneedah.weaponlib.ai.BetterAINearestAttackableTarget;
-import com.paneedah.weaponlib.ai.EntityAIAttackRangedWeapon;
-import com.paneedah.weaponlib.ai.EntityConfiguration;
-import com.paneedah.weaponlib.ai.EntityCustomMob;
+import com.paneedah.weaponlib2.ModContext;
+import com.paneedah.weaponlib2.ai.BetterAINearestAttackableTarget;
+import com.paneedah.weaponlib2.ai.EntityAIAttackRangedWeapon;
+import com.paneedah.weaponlib2.ai.EntityConfiguration;
+import com.paneedah.weaponlib2.ai.EntityCustomMob;
 import net.minecraft.entity.EntityCreature;
 import net.minecraft.entity.ai.*;
 import net.minecraft.entity.boss.EntityDragon;

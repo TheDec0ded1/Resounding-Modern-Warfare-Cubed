@@ -1,13 +1,13 @@
 package com.paneedah.mwc;
 
 import com.paneedah.mwc.models.GasDetector;
-import com.paneedah.weaponlib.ItemAttachment;
-import com.paneedah.weaponlib.electronics.ItemHandheld;
-import com.paneedah.weaponlib.electronics.ItemTablet;
-import com.paneedah.weaponlib.electronics.ItemWirelessCamera;
-import com.paneedah.weaponlib.model.CameraModel;
-import com.paneedah.weaponlib.model.TabletModel;
-import com.paneedah.weaponlib.perspective.GasDetectorScreenPerspective;
+import com.paneedah.weaponlib2.ItemAttachment;
+import com.paneedah.weaponlib2.electronics.ItemHandheld;
+import com.paneedah.weaponlib2.electronics.ItemTablet;
+import com.paneedah.weaponlib2.electronics.ItemWirelessCamera;
+import com.paneedah.weaponlib2.model.CameraModel;
+import com.paneedah.weaponlib2.model.TabletModel;
+import com.paneedah.weaponlib2.perspective.GasDetectorScreenPerspective;
 import org.lwjgl.opengl.GL11;
 
 public class Electronics {

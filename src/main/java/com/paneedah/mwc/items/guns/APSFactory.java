@@ -11,16 +11,16 @@ import com.paneedah.mwc.weapons.Attachments;
 import com.paneedah.mwc.weapons.Attachments3;
 import com.paneedah.mwc.weapons.AuxiliaryAttachments;
 import com.paneedah.mwc.weapons.Magazines;
-import com.paneedah.weaponlib.AttachmentCategory;
-import com.paneedah.weaponlib.RenderableState;
-import com.paneedah.weaponlib.Weapon;
-import com.paneedah.weaponlib.WeaponRenderer;
-import com.paneedah.weaponlib.animation.Transform;
-import com.paneedah.weaponlib.animation.Transition;
-import com.paneedah.weaponlib.compatibility.RecoilParam;
-import com.paneedah.weaponlib.config.BalancePackManager.GunConfigurationGroup;
-import com.paneedah.weaponlib.crafting.CraftingEntry;
-import com.paneedah.weaponlib.render.shells.ShellParticleSimulator.Shell.Type;
+import com.paneedah.weaponlib2.AttachmentCategory;
+import com.paneedah.weaponlib2.RenderableState;
+import com.paneedah.weaponlib2.Weapon;
+import com.paneedah.weaponlib2.WeaponRenderer;
+import com.paneedah.weaponlib2.animation.Transform;
+import com.paneedah.weaponlib2.animation.Transition;
+import com.paneedah.weaponlib2.compatibility.RecoilParam;
+import com.paneedah.weaponlib2.config.BalancePackManager.GunConfigurationGroup;
+import com.paneedah.weaponlib2.crafting.CraftingEntry;
+import com.paneedah.weaponlib2.render.shells.ShellParticleSimulator.Shell.Type;
 import net.minecraft.item.Item;
 import org.lwjgl.opengl.GL11;
 
@@ -39,7 +39,7 @@ public class APSFactory implements GunFactory {
         .withShellType(Type.PISTOL)
         .withMaxShots(1, Integer.MAX_VALUE)
         .withShootSound("aps")
-        .withSilencedShootSound("m9a1_silenced")
+        .withSilencedShootSound("apb")
         .withReloadSound("aps_reload")
         .withUnloadSound("pistol_unload")
         .withInspectSound("inspection")

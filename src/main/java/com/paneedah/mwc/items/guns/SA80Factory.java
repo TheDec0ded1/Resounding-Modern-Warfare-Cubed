@@ -6,10 +6,10 @@ import com.paneedah.mwc.proxies.CommonProxy;
 import com.paneedah.mwc.weapons.Attachments;
 import com.paneedah.mwc.weapons.Attachments3;
 import com.paneedah.mwc.weapons.AuxiliaryAttachments;
-import com.paneedah.mwc.weapons.Magazines;
-import com.paneedah.weaponlib.*;
-import com.paneedah.weaponlib.animation.Transition;
-import com.paneedah.weaponlib.config.BalancePackManager.GunConfigurationGroup;
+import com.paneedah.mwc.weapons.STANAGMagazines;
+import com.paneedah.weaponlib2.*;
+import com.paneedah.weaponlib2.animation.Transition;
+import com.paneedah.weaponlib2.config.BalancePackManager.GunConfigurationGroup;
 import net.minecraft.item.Item;
 import org.lwjgl.opengl.GL11;
 
@@ -74,7 +74,7 @@ public class SA80Factory implements GunFactory {
             GL11.glTranslatef(0.01f, -0.19f, -0.2f);
             GL11.glScaled(0F, 0F, 0F);
         })
-        .withCompatibleAttachment(Magazines.SA80Mag, (model) -> {
+        .withCompatibleAttachment(STANAGMagazines.SA80Mag, (model) -> {
             GL11.glTranslatef(-0.35F, 0.5F, 1.3F);
             GL11.glScaled(1.15F, 1.25F, 1.25F);
         })
@@ -174,7 +174,7 @@ public class SA80Factory implements GunFactory {
                 GL11.glTranslatef(0f, 0f, 0.8f);
                 })
                 
-            .withFirstPersonCustomPositioning(Magazines.SA80Mag, (renderContext) -> {
+            .withFirstPersonCustomPositioning(STANAGMagazines.SA80Mag, (renderContext) -> {
 //                GL11.glTranslatef(0F, 0.5F, 0F);
                 })
                 
@@ -277,7 +277,7 @@ public class SA80Factory implements GunFactory {
                 }, 250, 1000)
                     )
                     
-            .withFirstPersonCustomPositioningReloading(Magazines.SA80Mag,
+            .withFirstPersonCustomPositioningReloading(STANAGMagazines.SA80Mag,
                     new Transition((renderContext) -> {
                         GL11.glTranslatef(0F, 2F, 1.5F);
                         GL11.glRotatef(50F, 1f, 0f, 0f);
@@ -295,7 +295,7 @@ public class SA80Factory implements GunFactory {
                 }, 250, 1000)
                     )
                     
-            .withFirstPersonCustomPositioningUnloading(Magazines.SA80Mag,
+            .withFirstPersonCustomPositioningUnloading(STANAGMagazines.SA80Mag,
                     new Transition((renderContext) -> {
                     }, 250, 1000),
                     new Transition((renderContext) -> {

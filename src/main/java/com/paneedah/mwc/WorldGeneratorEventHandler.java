@@ -1,7 +1,7 @@
 package com.paneedah.mwc;
 
 import com.paneedah.mwc.init.MWCBlocks;
-import com.paneedah.weaponlib.config.ModernConfigManager;
+import com.paneedah.weaponlib2.config.ModernConfigManager;
 import net.minecraft.block.Block;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;

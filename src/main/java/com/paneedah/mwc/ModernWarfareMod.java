@@ -4,11 +4,11 @@ import com.paneedah.mwc.creativetab.*;
 import com.paneedah.mwc.init.MWCRecipes;
 import com.paneedah.mwc.proxies.CommonProxy;
 import com.paneedah.mwc.utils.ModReference;
-import com.paneedah.weaponlib.ModContext;
-import com.paneedah.weaponlib.command.BalancePackCommand;
-import com.paneedah.weaponlib.command.CraftingFileCommand;
-import com.paneedah.weaponlib.config.BalancePackManager;
-import com.paneedah.weaponlib.crafting.CraftingFileManager;
+import com.paneedah.weaponlib2.ModContext;
+import com.paneedah.weaponlib2.command.BalancePackCommand;
+import com.paneedah.weaponlib2.command.CraftingFileCommand;
+import com.paneedah.weaponlib2.config.BalancePackManager;
+import com.paneedah.weaponlib2.crafting.CraftingFileManager;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
@@ -20,12 +20,12 @@ import net.minecraftforge.fml.common.event.FMLServerStartingEvent;
 import net.minecraftforge.fml.common.network.NetworkRegistry;
 import net.minecraftforge.fml.common.network.simpleimpl.SimpleNetworkWrapper;
 
-@Mod(modid = ModReference.id, name = ModReference.name, version = ModReference.version, guiFactory = "com.paneedah.weaponlib.config.ConfigGUIFactory")
+@Mod(modid = ModReference.id, name = ModReference.name, version = ModReference.version, guiFactory = "com.paneedah.weaponlib2.config.ConfigGUIFactory")
 public class ModernWarfareMod {
 
     private static final String DEFAULT_CONFIG_RESOURCE = "/mwc.cfg";
 
-    @SidedProxy(serverSide = "com.paneedah.weaponlib.CommonModContext", clientSide = "com.paneedah.weaponlib.ClientModContext")
+    @SidedProxy(serverSide = "com.paneedah.weaponlib2.CommonModContext", clientSide = "com.paneedah.weaponlib2.ClientModContext")
     public static ModContext MOD_CONTEXT;
 
     // Todo: Make this configurable via the future YAML config system from FBP.

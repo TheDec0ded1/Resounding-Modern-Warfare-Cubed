@@ -4,16 +4,13 @@ import com.paneedah.mwc.ModernWarfareMod;
 import com.paneedah.mwc.init.MWCItems;
 import com.paneedah.mwc.models.*;
 import com.paneedah.mwc.proxies.CommonProxy;
-import com.paneedah.mwc.weapons.Attachments;
-import com.paneedah.mwc.weapons.Attachments3;
-import com.paneedah.mwc.weapons.AuxiliaryAttachments;
-import com.paneedah.mwc.weapons.Magazines;
-import com.paneedah.weaponlib.*;
-import com.paneedah.weaponlib.animation.Transform;
-import com.paneedah.weaponlib.animation.Transition;
-import com.paneedah.weaponlib.compatibility.RecoilParam;
-import com.paneedah.weaponlib.config.BalancePackManager.GunConfigurationGroup;
-import com.paneedah.weaponlib.crafting.CraftingEntry;
+import com.paneedah.mwc.weapons.*;
+import com.paneedah.weaponlib2.*;
+import com.paneedah.weaponlib2.animation.Transform;
+import com.paneedah.weaponlib2.animation.Transition;
+import com.paneedah.weaponlib2.compatibility.RecoilParam;
+import com.paneedah.weaponlib2.config.BalancePackManager.GunConfigurationGroup;
+import com.paneedah.weaponlib2.crafting.CraftingEntry;
 import net.minecraft.item.Item;
 import org.lwjgl.opengl.GL11;
 
@@ -96,285 +93,54 @@ public class AR15Factory implements GunFactory {
         .withUnremovableAttachmentCategories(AttachmentCategory.GUARD)
         .withUnremovableAttachmentCategories(AttachmentCategory.BACKGRIP)
         .withUnremovableAttachmentCategories(AttachmentCategory.RECEIVER)
-        .withCompatibleAttachment(Attachments.CollapsableMOEStock, (model) -> {
-        	GL11.glTranslatef(0f, -0.28f, -0f);
-            GL11.glScaled(1F, 1F, 1F);
-        })
-        .withCompatibleAttachment(Attachments.MagpulCTRStock, (model) -> {
-        	GL11.glTranslatef(0f, -0.28f, -0f);
-            GL11.glScaled(1F, 1F, 1F);
-        })
-        .withCompatibleAttachment(Attachments.HeraArmsStock, (model) -> {
-            GL11.glTranslatef(0.01f, -0.1f, -0.2f);
-            GL11.glScaled(1.1F, 1.2F, 1F);
-        })
-        .withCompatibleAttachment(Attachments.MilSpecStock, true, (model) -> {
-        	 GL11.glTranslatef(0f, -0.28f, -0f);
-             GL11.glScaled(1F, 1F, 1F);
-        })
-        .withCompatibleAttachment(Attachments.HK416Stock, (model) -> {
-        	GL11.glTranslatef(0f, -0.28f, -0f);
-            GL11.glScaled(1F, 1F, 1F);
-        })
-        .withCompatibleAttachment(Attachments.M16Stock, (model) -> {
-//            GL11.glTranslatef(0f, -0.28f, -0.55f);
-//            GL11.glScaled(1F, 1F, 0.85F);
-        })
-        .withCompatibleAttachment(Attachments.MagpulCTRStockTan, (model) -> {
-        	GL11.glTranslatef(0f, -0.28f, -0f);
-            GL11.glScaled(1F, 1F, 1F);
-        })
-        .withCompatibleAttachment(Attachments.MilSpecStockTan, (model) -> {
-        	GL11.glTranslatef(0f, -0.28f, -0f);
-            GL11.glScaled(1F, 1F, 1F);
-        })
-        .withCompatibleAttachment(Attachments.HK416StockTan, (model) -> {
-        	GL11.glTranslatef(0f, -0.28f, -0f);
-            GL11.glScaled(1F, 1F, 1F);
-        })
-        .withCompatibleAttachment(Attachments.M4FrontSight, renderContext -> {
-            PlayerWeaponInstance instance = renderContext.getWeaponInstance();
-            if(instance != null) {
-                ItemAttachment<Weapon> activeAttachment = WeaponAttachmentAspect.getActiveAttachment(
-                        AttachmentCategory.GUARD, instance);
-                if(activeAttachment == Attachments.Mk18HandGuard || 
-                		activeAttachment == Attachments.Block2SOCOMHandguard ||
-                		activeAttachment == Attachments.Mk18HandGuardBlack) {
-                    GL11.glTranslatef(0F, 0F, -0.6F);
-                    GL11.glScaled(1F, 1F, 1F);
-                } else if(activeAttachment == Attachments.M16A4HandGuard ||
-                          activeAttachment == Attachments.M16HandGuard) {
-                    GL11.glTranslatef(0F, 0F, -1.2F);
-                    GL11.glScaled(1F, 1F, 1F);
-                } else {
-                    GL11.glTranslatef(0F, 0F, 0F);
-                    GL11.glScaled(1F, 1F, 1F);
-                }
-            }
-        },(model) -> {
-            if(model instanceof M4Iron2) {
-                GL11.glTranslatef(-0.055F, -1.35F, -4.05F);
-                GL11.glScaled(0.8F, 0.68F, 1F);
-          } else if(model instanceof FALIron) {
-                  GL11.glTranslatef(-0.185F, -1.55F, -4.05F);
-                  GL11.glScaled(0.55F, 0.5F, 1F);
-              }
-        }, false, false)
-        
-        .withCompatibleAttachment(Attachments.HK416FrontSight, renderContext -> {
-            PlayerWeaponInstance instance = renderContext.getWeaponInstance();
-            if(instance != null) {
-                ItemAttachment<Weapon> activeAttachment = WeaponAttachmentAspect.getActiveAttachment(
-                        AttachmentCategory.GUARD, instance);
-                if(activeAttachment == Attachments.Mk18HandGuard) {
-                    GL11.glTranslatef(0F, 0F, -0.35F);
-                    GL11.glScaled(1F, 1F, 1F);
-                } else if(activeAttachment == Attachments.M16A4HandGuard) {
-                    GL11.glTranslatef(0F, 0F, -0.8F);
-                    GL11.glScaled(1F, 1F, 1F);
-                } else {
-                    GL11.glTranslatef(0F, 0F, 0F);
-                    GL11.glScaled(1F, 1F, 1F);
-                }
-            }
-        },(model) -> {
-            if(model instanceof G95_upright_frontsights) {
-            	GL11.glTranslatef(-0.155F, -1.55F, -3.5F);
-                GL11.glScaled(0.32F, 0.32F, 0.32F);
-              }
-        }, false, false)
-        
-        .withCompatibleAttachment(Attachments.MBUSFrontSight, renderContext -> {
-            PlayerWeaponInstance instance = renderContext.getWeaponInstance();
-            if(instance != null) {
-                ItemAttachment<Weapon> activeAttachment = WeaponAttachmentAspect.getActiveAttachment(
-                        AttachmentCategory.GUARD, instance);
-                if(activeAttachment == Attachments.Mk18HandGuard) {
-                    GL11.glTranslatef(0F, 0F, -0.6F);
-                    GL11.glScaled(1F, 1F, 1F);
-                } else if(activeAttachment == Attachments.M38HandGuard) {
-                    GL11.glTranslatef(0F, 0F, -0.4F);
-                    GL11.glScaled(1F, 1F, 1F);
-                } else if(activeAttachment == Attachments.M16A4HandGuard || 
-                		activeAttachment == Attachments.AR15HandGuard) {
-                    GL11.glTranslatef(0F, 0F, -1.2F);
-                    GL11.glScaled(1F, 1F, 1F);
-                } else {
-                    GL11.glTranslatef(0F, 0F, 0F);
-                    GL11.glScaled(1F, 1F, 1F);
-                }
-            }
-        },(model) -> {
-            if(model instanceof MBUSFrontSight) {
-            	GL11.glTranslatef(-0.16F, -1.5F, -3.3F);
-                GL11.glScaled(0.35F, 0.35F, 0.35F);
-              }
-        }, true, false)
-        
-        .withCompatibleAttachment(Attachments.M38FrontSight, renderContext -> {
-            PlayerWeaponInstance instance = renderContext.getWeaponInstance();
-            if(instance != null) {
-                ItemAttachment<Weapon> activeAttachment = WeaponAttachmentAspect.getActiveAttachment(
-                        AttachmentCategory.GUARD, instance);
-                if(activeAttachment == Attachments.Mk18HandGuard) {
-                    GL11.glTranslatef(-0.004F, -0.1F, 2.5F);
-                    GL11.glScaled(1F, 1F, 1F);
-                } else {
-                    GL11.glTranslatef(0F, 0F, 0F);
-                    GL11.glScaled(1F, 1F, 1F);
-                }
-            }
-        },(model) -> {
-            if(model instanceof AKMiron2) {
-                GL11.glTranslatef(-0.18F, -1.5F, -3.73F);
-                GL11.glScaled(0.55F, 0.55F, 1F);
-          } else if(model instanceof FALIron) {
-              GL11.glTranslatef(-0.1F, -1.34F, -3.7F);
-              GL11.glScaled(0.1F, 0.9F, 0.3F);
-              GL11.glRotatef(180F, 0f, 0f, 1f);
-          } else if(model instanceof AK47iron) {
-              GL11.glTranslatef(-0.235F, -1.85F, -3.7F);
-              GL11.glScaled(0.75F, 0.95F, 0.3F);
-          }
-        }, false, false)
-        .withCompatibleAttachment(Attachments.M4HandGuard, (model) -> {
-        })
-        .withCompatibleAttachment(Attachments.M16HandGuard, (model) -> {
-        })
-        .withCompatibleAttachment(Attachments.M4MagpulHandGuard, (model) -> {
-        })
-        .withCompatibleAttachment(Attachments.M4MagpulHandGuardTan, (model) -> {
-        })
-        .withCompatibleAttachment(Attachments.M4CarbineHandGuard, (model) -> {
-            if(model instanceof AKRail) {
-              GL11.glTranslatef(0.13F, -1.17F, -3.5F);
-              GL11.glScaled(0.6F, 0.6F, 0.6F);
-              GL11.glRotatef(90F, 0f, 0f, 1f);
-          } else if(model instanceof AKRail2) {
-              GL11.glTranslatef(-0.37F, -1.005F, -3.5F);
-              GL11.glScaled(0.6F, 0.6F, 0.6F);
-              GL11.glRotatef(-90F, 0f, 0f, 1f);
-          } else if(model instanceof AKRail3) {
-              GL11.glTranslatef(-0.03F, -0.84F, -3.64F);
-              GL11.glScaled(0.6F, 0.6F, 0.65F);
-              GL11.glRotatef(180F, 0f, 0f, 1f);
-          } else if(model instanceof AKRail5) {
-              GL11.glTranslatef(-0.2F, -1.32F, -3.65f);
-              GL11.glScaled(0.6F, 0.8F, 0.68F);
-          }
-        })
-        .withCompatibleAttachment(Attachments.M16A4HandGuard, (model) -> {
-            if(model instanceof AKRail) {
-              GL11.glTranslatef(0.13F, -1.17F, -4.45F);
-              GL11.glScaled(0.6F, 0.6F, 1F);
-              GL11.glRotatef(90F, 0f, 0f, 1f);
-          } else if(model instanceof AKRail2) {
-              GL11.glTranslatef(-0.37F, -1.005F, -4.45F);
-              GL11.glScaled(0.6F, 0.6F, 1F);
-              GL11.glRotatef(-90F, 0f, 0f, 1f);
-          } else if(model instanceof AKRail3) {
-              GL11.glTranslatef(-0.03F, -0.84F, -4.85F);
-              GL11.glScaled(0.6F, 0.6F, 1.15F);
-              GL11.glRotatef(180F, 0f, 0f, 1f);
-          } else if(model instanceof AKRail5) {
-              GL11.glTranslatef(-0.2F, -1.32F, -4.85f);
-              GL11.glScaled(0.6F, 0.8F, 1.15F);
-          }
-        })
-        .withCompatibleAttachment(Attachments.Mk18HandGuard, (model) -> {
-            if(model instanceof AKRail) {
-              GL11.glTranslatef(0.13F, -1.17F, -4.3F);
-              GL11.glScaled(0.6F, 0.6F, 1F);
-              GL11.glRotatef(90F, 0f, 0f, 1f);
-          } else if(model instanceof AKRail2) {
-              GL11.glTranslatef(-0.37F, -1.005F, -4.3F);
-              GL11.glScaled(0.6F, 0.6F, 1F);
-              GL11.glRotatef(-90F, 0f, 0f, 1f);
-          } else if(model instanceof AKRail3) {
-              GL11.glTranslatef(-0.03F, -0.84F, -4.3F);
-              GL11.glScaled(0.6F, 0.6F, 1F);
-              GL11.glRotatef(180F, 0f, 0f, 1f);
-          } else if(model instanceof AKRail5) {
-              GL11.glTranslatef(-0.2F, -1.32F, -4.3f);
-              GL11.glScaled(0.6F, 0.8F, 1F);
-          }
-        })
-        .withCompatibleAttachment(Attachments.Mk18HandGuardBlack, (model) -> {
-            if(model instanceof AKRail) {
-              GL11.glTranslatef(0.13F, -1.14F, -4.1F);
-              GL11.glScaled(0.6F, 0.6F, 0.9F);
-              GL11.glRotatef(90F, 0f, 0f, 1f);
-          } else if(model instanceof AKRail2) {
-              GL11.glTranslatef(-0.37F, -0.98F, -4.1F);
-              GL11.glScaled(0.6F, 0.6F, 0.9F);
-              GL11.glRotatef(-90F, 0f, 0f, 1f);
-          } else if(model instanceof AKRail3) {
-              GL11.glTranslatef(-0.03F, -0.84F, -4.1F);
-              GL11.glScaled(0.6F, 0.6F, 0.9F);
-              GL11.glRotatef(180F, 0f, 0f, 1f);
-          } else if(model instanceof AKRail5) {
-              GL11.glTranslatef(-0.182F, -1.32F, -4.1f);
-              GL11.glScaled(0.5F, 0.8F, 0.9F);
-          }
-        })
-        .withCompatibleAttachment(Attachments.Block2SOCOMHandguard, (model) -> {
-        	if(model instanceof AKRail) {
-                GL11.glTranslatef(0.13F, -1.14F, -4.1F);
-                GL11.glScaled(0.6F, 0.6F, 0.9F);
-                GL11.glRotatef(90F, 0f, 0f, 1f);
-            } else if(model instanceof AKRail2) {
-                GL11.glTranslatef(-0.37F, -0.98F, -4.1F);
-                GL11.glScaled(0.6F, 0.6F, 0.9F);
-                GL11.glRotatef(-90F, 0f, 0f, 1f);
-            } else if(model instanceof AKRail3) {
-                GL11.glTranslatef(-0.03F, -0.84F, -4.1F);
-                GL11.glScaled(0.6F, 0.6F, 0.9F);
-                GL11.glRotatef(180F, 0f, 0f, 1f);
-          } else if(model instanceof AKRail5) {
-        	  GL11.glTranslatef(-0.182F, -1.32F, -4.1f);
-              GL11.glScaled(0.5F, 0.8F, 0.9F);
-          }
-        })
-        .withCompatibleAttachment(Attachments.LVOAVHandGuard, (model) -> {
-            if(model instanceof AKRail) {
-                GL11.glTranslatef(-0.2F, -1.32F, -3.45f);
-                GL11.glScaled(0.6F, 0.8F, 0.68F);
-          } else if(model instanceof AKRail2) {
-              GL11.glTranslatef(-0.2F, -1.32F, -5f);
-              GL11.glScaled(0.6F, 0.8F, 0.68F);
-          } else if(model instanceof AKRail3) {
-              GL11.glTranslatef(-0.03F, -0.84F, -3.45F);
-              GL11.glScaled(0.6F, 0.6F, 0.65F);
-              GL11.glRotatef(180F, 0f, 0f, 1f);
-          } else if(model instanceof AKRail5) {
-              GL11.glTranslatef(-0.03F, -0.84F, -4.8F);
-              GL11.glScaled(0.6F, 0.6F, 0.65F);
-              GL11.glRotatef(180F, 0f, 0f, 1f);
-          }
-        })
-        .withCompatibleAttachment(Attachments.AR15HandGuard, true, (model) -> {
-            if(model instanceof AKRail) {
-                GL11.glTranslatef(-0.2F, -1.32F, -3.45f);
-                GL11.glScaled(0.6F, 0.8F, 0.68F);
-          } else if(model instanceof AKRail2) {
-              GL11.glTranslatef(-0.2F, -1.32F, -5f);
-              GL11.glScaled(0.6F, 0.8F, 0.68F);
-          } 
-        })
-        .withCompatibleAttachment(Attachments.M4Receiver, true, (model) -> {
-            if(model instanceof M4Receiver) {
-          } else if(model instanceof AKRail) {
-              GL11.glTranslatef(-0.2F, -1.319F, -1.82f);
-              GL11.glScaled(0.6F, 0.8F, 0.78F);
-          }
-        })
-        .withCompatibleAttachment(Attachments.VLTORReceiver, (model) -> {
-            if(model instanceof VLTORReceiver) {
-            } else if(model instanceof AKRail) {
-            	GL11.glTranslatef(-0.2F, -1.319F, -1.82f);
-                GL11.glScaled(0.6F, 0.8F, 0.78F);
-            }
-        })
+        .withUnremovableAttachmentCategories(AttachmentCategory.RECEIVER2)
+        .withUnremovableAttachmentCategories(AttachmentCategory.STOCKADAPTER)
+        .withUnremovableAttachmentCategories(AttachmentCategory.BARREL)
+        .withUnremovableAttachmentCategories(AttachmentCategory.HANDLE)
+        .withUnremovableAttachmentCategories(AttachmentCategory.ACTION)
+
+        .withCompatibleAttachment(ARParts.M16Action, true, (model) -> {})
+        .withCompatibleAttachment(ARParts.M16ChargingHandle, true, (model) -> {})
+        .withCompatibleAttachment(ARParts.N4Lower, (model) -> {})
+        .withCompatibleAttachment(ARParts.N4Handguard795, (model) -> {})
+        .withCompatibleAttachment(ARParts.ARBarrel795, (model) -> {})
+        .withCompatibleAttachment(ARParts.M4BufferTube, (model) -> {})
+        .withCompatibleAttachment(ARParts.M4PistolGrip, (model) -> {})
+        .withCompatibleAttachment(ARParts.M4Stock, (model) -> {})
+        .withCompatibleAttachment(ARParts.DDStock, (model) -> {})
+        .withCompatibleAttachment(ARParts.DDGrip, (model) -> {})
+        .withCompatibleAttachment(ARParts.DDLower, (model) -> {})
+        .withCompatibleAttachment(ARParts.RIS2_115, (model) -> {})
+        .withCompatibleAttachment(ARParts.RIS3_145, (model) -> {})
+        .withCompatibleAttachment(ARParts.M4RIS, (model) -> {})
+        .withCompatibleAttachment(ARParts.M4Barrel103, (model) -> {})
+        .withCompatibleAttachment(ARParts.M4Barrel145, (model) -> {})
+        .withCompatibleAttachment(ARParts.M4A1Handguard, (model) -> {})
+        .withCompatibleAttachment(ARParts.N4Handguard115,  (model) -> {})
+        .withCompatibleAttachment(ARParts.ARBarrel115,  (model) -> {})
+        .withCompatibleAttachment(ARParts.N4Handguard145,  (model) -> {})
+        .withCompatibleAttachment(ARParts.ARBarrel145,  (model) -> {})
+        .withCompatibleAttachment(ARParts.M4Lower,  (model) -> {})
+        .withCompatibleAttachment(ARParts.M16A2Stock,  (model) -> {})
+        .withCompatibleAttachment(ARParts.M16A2BufferTube,  (model) -> {})
+        .withCompatibleAttachment(ARParts.M16A2Upper,  (model) -> {})
+        .withCompatibleAttachment(ARParts.M16A2Barrel701,  (model) -> {})
+        .withCompatibleAttachment(ARParts.M16A2Handguard,  (model) -> {})
+        .withCompatibleAttachment(ARParts.M16A1Lower,  (model) -> {})
+        .withCompatibleAttachment(ARParts.M16A1Upper,  (model) -> {})
+        .withCompatibleAttachment(ARParts.M16A1Barrel613,  (model) -> {})
+        .withCompatibleAttachment(ARParts.XM16Handguard, true, (model) -> {})
+        .withCompatibleAttachment(ARParts.XM16Stock, true, (model) -> {})
+		.withCompatibleAttachment(ARParts.XM16Lower, true, (model) -> {})
+        .withCompatibleAttachment(ARParts.M16PistolGrip, true, (model) -> {})
+        .withCompatibleAttachment(ARParts.C7Upper,  (model) -> {})
+        .withCompatibleAttachment(ARParts.M16Upper,true, (model) -> {})
+        .withCompatibleAttachment(ARParts.M16Lower,  (model) -> {})
+        .withCompatibleAttachment(ARParts.M16Barrel602, true, (model) -> {})
+        .withCompatibleAttachment(ARParts.M16Barrel605,  (model) -> {})
+        .withCompatibleAttachment(ARParts.M16Barrel606,  (model) -> {})
+        .withCompatibleAttachment(ARParts.M16BufferTube, true, (model) -> {})
+
         .withCompatibleAttachment(Attachments.M4Grip, true, (model) -> {
 //            GL11.glTranslatef(0f, 0f, 1f);
         })
@@ -388,174 +154,74 @@ public class AR15Factory implements GunFactory {
             GL11.glTranslatef(0F, -0.05F, 0F);
             GL11.glScaled(1F, 0.95F, 1F);
         })
-        .withCompatibleAttachment(Magazines.M4A1Mag, (model) -> {
+        .withCompatibleAttachment(STANAGMagazines.M4A1Mag, (model) -> {
 		    GL11.glTranslatef(-0.335F, 0.4F, -1.25F);
             GL11.glScaled(1.05F, 1.2F, 1.15F);
             
 //            GL11.glTranslatef(0F, 0.35F, 0F);
         })
-        .withCompatibleAttachment(Magazines.M16Mag, (model) -> {
+        .withCompatibleAttachment(STANAGMagazines.M16Mag, (model) -> {
 		    GL11.glTranslatef(-0.335F, 0.4F, -1.25F);
             GL11.glScaled(1.05F, 1.2F, 1.15F);
             
 //            GL11.glTranslatef(0F, 0.35F, 0F);
         })
-		.withCompatibleAttachment(Magazines.SOCOM_Mag, (model) -> {
+		.withCompatibleAttachment(STANAGMagazines.SOCOM_Mag, (model) -> {
 		    GL11.glTranslatef(-0.335F, 0.4F, -1.25F);
             GL11.glScaled(1.05F, 1.2F, 1.15F);
         })
-        .withCompatibleAttachment(Magazines.M38Mag, (model) -> {
+        .withCompatibleAttachment(STANAGMagazines.M38Mag, (model) -> {
           GL11.glTranslatef(-0.335F, 0.4F, -1.25F);
             GL11.glScaled(1.05F, 1.2F, 1.15F);
         })
-        .withCompatibleAttachment(Magazines.Stanag50, (model) -> {
+                .withCompatibleAttachment(STANAGMagazines.LancerMag10ClearGrey, (model) -> {
+                    GL11.glTranslatef(-0.335F, 0.4F, -1.25F);
+                    GL11.glScaled(1.05F, 1.2F, 1.15F);
+                })
+                .withCompatibleAttachment(STANAGMagazines.LancerMag20ClearGrey, (model) -> {
+                    GL11.glTranslatef(-0.335F, 0.4F, -1.25F);
+                    GL11.glScaled(1.05F, 1.2F, 1.15F);
+                })
+                .withCompatibleAttachment(STANAGMagazines.LancerMag30ClearGrey, (model) -> {
+                    GL11.glTranslatef(-0.335F, 0.4F, -1.25F);
+                    GL11.glScaled(1.05F, 1.2F, 1.15F);
+                })
+                .withCompatibleAttachment(STANAGMagazines.LancerMag10ClearGreen, (model) -> {
+                    GL11.glTranslatef(-0.335F, 0.4F, -1.25F);
+                    GL11.glScaled(1.05F, 1.2F, 1.15F);
+                })
+                .withCompatibleAttachment(STANAGMagazines.LancerMag20ClearGreen, (model) -> {
+                    GL11.glTranslatef(-0.335F, 0.4F, -1.25F);
+                    GL11.glScaled(1.05F, 1.2F, 1.15F);
+                })
+                .withCompatibleAttachment(STANAGMagazines.LancerMag30ClearGreen, (model) -> {
+                    GL11.glTranslatef(-0.335F, 0.4F, -1.25F);
+                    GL11.glScaled(1.05F, 1.2F, 1.15F);
+                })
+                .withCompatibleAttachment(STANAGMagazines.LancerMag10ClearBlue, (model) -> {
+                    GL11.glTranslatef(-0.335F, 0.4F, -1.25F);
+                    GL11.glScaled(1.05F, 1.2F, 1.15F);
+                })
+                .withCompatibleAttachment(STANAGMagazines.LancerMag20ClearBlue, (model) -> {
+                    GL11.glTranslatef(-0.335F, 0.4F, -1.25F);
+                    GL11.glScaled(1.05F, 1.2F, 1.15F);
+                })
+                .withCompatibleAttachment(STANAGMagazines.LancerMag30ClearBlue, (model) -> {
+                    GL11.glTranslatef(-0.335F, 0.4F, -1.25F);
+                    GL11.glScaled(1.05F, 1.2F, 1.15F);
+                })
+        .withCompatibleAttachment(STANAGMagazines.Stanag50, (model) -> {
             GL11.glTranslatef(0F, 0.05F, 0F);
 //            GL11.glScaled(1.15F, 1.2F, 1.2F);
         })
-        .withCompatibleAttachment(Magazines.Stanag60, (model) -> {
+        .withCompatibleAttachment(STANAGMagazines.Stanag60, (model) -> {
             GL11.glRotatef(-10F, 1f, 0f, 0f);
             GL11.glTranslatef(0F, 0.25F, -0F);
 //            GL11.glScaled(1.15F, 1.2F, 1.2F);
         })
-        .withCompatibleAttachment(Magazines.Stanag100, (model) -> {
+        .withCompatibleAttachment(STANAGMagazines.Stanag100, (model) -> {
             GL11.glTranslatef(-0.35F, 0.69F, -1.25F);
             GL11.glScaled(1.15F, 1.2F, 1.15F);
-        })
-		.withCompatibleAttachment(AuxiliaryAttachments.AR15Action, true, (model) -> {
-            GL11.glTranslatef(-0.175F, -1.28F, -0.67F);
-            GL11.glScaled(0.7F, 0.4F, 0.7F);
-        })
-		.withCompatibleAttachment(AuxiliaryAttachments.M4EjectorAction, true, (model) -> {
-//          GL11.glTranslatef(-0.175F, -1.28F, -0.67F);
-//          GL11.glScaled(0.7F, 0.4F, 0.7F);
-      })
-		.withCompatibleAttachment(AuxiliaryAttachments.Extra, true, (model) -> {
-	    	if(model instanceof M4Iron1) {
-				GL11.glTranslatef(0.162F, -1.75F, 1F);
-				GL11.glScaled(0F, 0F, 0F);
-			} else if(model instanceof M4Iron2) {
-//				GL11.glTranslatef(-0.055F, -1.35F, -4.05F);
-//				GL11.glScaled(0.8F, 0.68F, 1F);
-				GL11.glScaled(0F, 0F, 0F);
-			} else if(model instanceof P90iron) {
-				GL11.glTranslatef(0.26F, -1.55F, -2.35F);
-				GL11.glScaled(0F, 0F, 0F);
-			} else if(model instanceof AKMiron1) {
-				GL11.glTranslatef(0.125F, -1.8F, -0.5F);
-				GL11.glScaled(0F, 0F, 0F);
-			} else if(model instanceof AKMiron2) {
-				GL11.glTranslatef(0.13F, -1.55F, -3.05F);
-				GL11.glScaled(0F, 0F, 0F);
-			} else if(model instanceof AK47iron) {
-				GL11.glTranslatef(0.092F, -1.91F, -0.9F);
-				GL11.glScaled(0F, 0F, 0F);
-			} else if(model instanceof G36CIron1) {
-				GL11.glTranslatef(-0.22F, -1.94F, 0.13F);
-				GL11.glScaled(0F, 0F, 0F);
-			} else if(model instanceof G36CIron2) {
-				GL11.glTranslatef(-0.205F, -1.9F, -3.15F);
-				GL11.glScaled(0F, 0F, 0F);
-			} else if(model instanceof ScarIron1) {
-				GL11.glTranslatef(0.165F, -1.65F, 1F);
-				GL11.glScaled(0F, 0F, 0F);
-			} else if(model instanceof ScarIron2) {
-				GL11.glTranslatef(0.25F, -1.55F, -2F);
-				GL11.glScaled(0F, 0F, 0F);
-			} else if(model instanceof FALIron) {
-//				GL11.glTranslatef(-0.185F, -1.53F, -4.05F);
-//				GL11.glScaled(0.55F, 0.5F, 1F);
-				GL11.glScaled(0F, 0F, 0F);
-			} else if(model instanceof M14Iron) {
-				GL11.glTranslatef(0.129F, -1.63F, -2.08F);
-				GL11.glScaled(0F, 0F, 0F);
-			} else if(model instanceof MP5Iron) {
-				GL11.glTranslatef(0.215F, -1.54F, 1.2F);
-				GL11.glScaled(0F, 0F, 0F);
-			}
-		})
-	   .withCompatibleAttachment(AuxiliaryAttachments.AR15Iron, (model) -> {
-            if(model instanceof M4Iron1) {
-                GL11.glTranslatef(-0.145F, -1.55F, -0.35F);
-                GL11.glScaled(0F, 0F, 0F);
-            } else if(model instanceof M4Iron2) {
-                GL11.glTranslatef(-0.055F, -1.35F, -4.05F);
-                GL11.glScaled(0F, 0F, 0F);
-            } else if(model instanceof FALIron) {
-                GL11.glTranslatef(-0.185F, -1.53F, -4.05F);
-                GL11.glScaled(0F, 0F, 0F);
-            } else if(model instanceof ARCarryHandle) {
-                GL11.glTranslatef(-0.1425F, -1.533F, -0.12F);
-                GL11.glScaled(0.29F, 0.29F, 0.29F);
-            } else if(model instanceof MP5Iron) {
-                GL11.glTranslatef(0.215F, -1.54F, 1.2F);
-                GL11.glScaled(0F, 0F, 0F);
-            }
-        })
-	   .withCompatibleAttachment(Attachments3.TritiumRearSights, (model) -> {
-           if(model instanceof TritiumRearSights) {
-           	 GL11.glTranslatef(-0.16F, -1.5F, -0.3F);
-                GL11.glScaled(0.35F, 0.35F, 0.35F);
-           }
-       })
-	   .withCompatibleAttachment(Attachments3.HK416RearSights, (model) -> {
-           if(model instanceof G95_upright_rearsights) {
-        	   GL11.glTranslatef(-0.158F, -1.53F, -0.2F);
-               GL11.glScaled(0.32F, 0.32F, 0.32F);
-           }
-       })
-	   .withCompatibleAttachment(Attachments3.MBUSRearSights, true, (model) -> {
-           if(model instanceof MBUSRearSight) {
-        	   GL11.glTranslatef(-0.16F, -1.5F, -0.3F);
-               GL11.glScaled(0.35F, 0.35F, 0.35F);
-           }
-       })
-		 .withCompatibleAttachment(Attachments3.AKMIron, (model) -> {
-            if(model instanceof M4Iron1) {
-                GL11.glTranslatef(0.215F, -1.54F, 1.2F);
-                GL11.glScaled(0F, 0F, 0F); 
-            } else if(model instanceof M4Iron2) {
-                GL11.glTranslatef(0.255F, -1.55F, -2.25F);
-                GL11.glScaled(0F, 0F, 0F);
-            } else if(model instanceof P90iron) {
-                GL11.glTranslatef(0.26F, -1.55F, -2.35F);
-                GL11.glScaled(0F, 0F, 0F);
-            } else if(model instanceof AKMiron1) {
-                GL11.glTranslatef(0.125F, -1.8F, -0.5F);
-                GL11.glScaled(0F, 0F, 0F);
-            } else if(model instanceof AKMiron2) {
-                GL11.glTranslatef(0.13F, -1.55F, -3.05F);
-                GL11.glScaled(0F, 0F, 0F);
-            } else if(model instanceof AK47iron) {
-                GL11.glTranslatef(0.092F, -1.91F, -0.9F);
-                GL11.glScaled(0F, 0F, 0F);
-            } else if(model instanceof G36CIron1) {
-                GL11.glTranslatef(-0.22F, -1.94F, 0.13F);
-                GL11.glScaled(0F, 0F, 0F);
-            } else if(model instanceof G36CIron2) {
-                GL11.glTranslatef(-0.205F, -1.9F, -3.15F);
-                GL11.glScaled(0F, 0F, 0F);
-            } else if(model instanceof ScarIron1) {
-                GL11.glTranslatef(0.165F, -1.65F, 1F);
-                GL11.glScaled(0F, 0F, 0F);
-            } else if(model instanceof ScarIron2) {
-                GL11.glTranslatef(0.25F, -1.55F, -2F);
-                GL11.glScaled(0F, 0F, 0F);
-            } else if(model instanceof FALIron) {
-                GL11.glTranslatef(0.127F, -1.77F, -2.22F);
-                GL11.glScaled(0F, 0F, 0F);
-            } else if(model instanceof M14Iron) {
-                GL11.glTranslatef(0.129F, -1.63F, -2.08F);
-                GL11.glScaled(0F, 0F, 0F);
-            } else if(model instanceof MP5Iron) {
-                GL11.glTranslatef(0.215F, -1.54F, 1.2F);
-                GL11.glScaled(0F, 0F, 0F); 
-            } else if(model instanceof M27rearsight) {
-                GL11.glTranslatef(-0.16F, -1.5F, -0.3F);
-                GL11.glScaled(0.35F, 0.35F, 0.35F);
-            } else if(model instanceof MBUSiron) {
-                GL11.glTranslatef(0.215F, -1.54F, 1.2F);
-                GL11.glScaled(0F, 0F, 0F); 
-            }
         })
         
         .withCompatibleAttachment(Attachments3.NightRaider, (player, stack) -> {
@@ -764,12 +430,10 @@ public class AR15Factory implements GunFactory {
 			GL11.glTranslatef(-0.2F, -1.235F, -7.5F);
 			GL11.glScaled(1F, 1F, 1F);
 		})
-		.withTextureNames("ar15")
-		.withRenderer(new WeaponRenderer.Builder()
-			
-			.withModel(new AR15())
-			.withActionPiece(AuxiliaryAttachments.AR15Action)
-            .withActionTransform(new Transform().withPosition(0, 0, 0.7))
+        .withTextureNames("glock19")
+        .withRenderer(new WeaponRenderer.Builder()
+
+            .withModel(new Glock18C())
 			.withEntityPositioning(itemStack -> {
 				GL11.glScaled(0.5F, 0.5F, 0.5F);
 				GL11.glTranslatef(0, 0f, 3f);
@@ -817,23 +481,32 @@ public class AR15Factory implements GunFactory {
                 
                 .setupModernAnimations("m4a1", AuxiliaryAttachments.AKaction)
                 .setupModernMagazineAnimations("m4a1", 
-                		Magazines.M4A1Mag, 
-                		Magazines.M16Mag,
-                		Magazines.M38Mag, 
-                		Magazines.Stanag100,
-                		Magazines.Stanag50,
-                		Magazines.Stanag60,
-                		Magazines.SOCOM_Mag)
+                		STANAGMagazines.M4A1Mag, 
+                		STANAGMagazines.M16Mag,
+                		STANAGMagazines.M38Mag, 
+                		STANAGMagazines.Stanag100,
+                		STANAGMagazines.Stanag50,
+                		STANAGMagazines.Stanag60,
+                        	STANAGMagazines.LancerMag10ClearBlue,
+                        	STANAGMagazines.LancerMag20ClearBlue,
+                        	STANAGMagazines.LancerMag30ClearBlue,
+                        	STANAGMagazines.LancerMag10ClearGreen,
+                       		STANAGMagazines.LancerMag20ClearGreen,
+                        	STANAGMagazines.LancerMag30ClearGreen,
+                        	STANAGMagazines.LancerMag10ClearGrey,
+                        	STANAGMagazines.LancerMag20ClearGrey,
+                        	STANAGMagazines.LancerMag30ClearGrey,
+                		STANAGMagazines.SOCOM_Mag)
 		
-			.withFirstPersonCustomPositioning(AuxiliaryAttachments.AR15Action.getRenderablePart(), (renderContext) -> {
+			.withFirstPersonCustomPositioning(ARParts.M4Action.getRenderablePart(), (renderContext) -> {
 //			    GL11.glTranslatef(0f, 0f, 0.5f);
                 })
 			
-			.withFirstPersonPositioningCustomRecoiled(AuxiliaryAttachments.M4EjectorAction.getRenderablePart(), (renderContext) -> {
+			.withFirstPersonPositioningCustomRecoiled(ARParts.M4Action.getRenderablePart(), (renderContext) -> {
                 GL11.glTranslatef(0f, 0f, 0.7f);
                 })
                 
-            .withFirstPersonPositioningCustomZoomingRecoiled(AuxiliaryAttachments.M4EjectorAction.getRenderablePart(), (renderContext) -> {
+            .withFirstPersonPositioningCustomZoomingRecoiled(ARParts.M4Action.getRenderablePart(), (renderContext) -> {
                 GL11.glTranslatef(0f, 0f, 0.7f);
                 })
                     

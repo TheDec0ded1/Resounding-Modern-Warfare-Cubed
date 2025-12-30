@@ -2,11 +2,11 @@ package com.paneedah.mwc.items.melee;
 
 import com.paneedah.mwc.ModernWarfareMod;
 import com.paneedah.mwc.proxies.CommonProxy;
-import com.paneedah.weaponlib.RenderContext;
-import com.paneedah.weaponlib.animation.Transition;
-import com.paneedah.weaponlib.melee.ItemMelee;
-import com.paneedah.weaponlib.melee.MeleeRenderer;
-import com.paneedah.weaponlib.melee.RenderableState;
+import com.paneedah.weaponlib2.RenderContext;
+import com.paneedah.weaponlib2.animation.Transition;
+import com.paneedah.weaponlib2.melee.ItemMelee;
+import com.paneedah.weaponlib2.melee.MeleeRenderer;
+import com.paneedah.weaponlib2.melee.RenderableState;
 import net.minecraft.item.Item;
 import org.lwjgl.opengl.GL11;
 

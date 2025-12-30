@@ -1,10 +1,10 @@
 package com.paneedah.mwc;
 
-import com.paneedah.weaponlib.Part;
-import com.paneedah.weaponlib.PlayerTransitionProvider;
-import com.paneedah.weaponlib.RenderContext;
-import com.paneedah.weaponlib.RenderableState;
-import com.paneedah.weaponlib.animation.MultipartTransition;
+import com.paneedah.weaponlib2.Part;
+import com.paneedah.weaponlib2.PlayerTransitionProvider;
+import com.paneedah.weaponlib2.RenderContext;
+import com.paneedah.weaponlib2.RenderableState;
+import com.paneedah.weaponlib2.animation.MultipartTransition;
 import org.lwjgl.opengl.GL11;
 
 public class PlayerAnimations {

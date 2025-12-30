@@ -10,13 +10,13 @@ import com.paneedah.mwc.proxies.CommonProxy;
 import com.paneedah.mwc.weapons.Attachments;
 import com.paneedah.mwc.weapons.Attachments3;
 import com.paneedah.mwc.weapons.AuxiliaryAttachments;
-import com.paneedah.mwc.weapons.Magazines;
-import com.paneedah.weaponlib.*;
-import com.paneedah.weaponlib.animation.Transform;
-import com.paneedah.weaponlib.animation.Transition;
-import com.paneedah.weaponlib.compatibility.RecoilParam;
-import com.paneedah.weaponlib.config.BalancePackManager.GunConfigurationGroup;
-import com.paneedah.weaponlib.crafting.CraftingEntry;
+import com.paneedah.mwc.weapons.STANAGMagazines;
+import com.paneedah.weaponlib2.*;
+import com.paneedah.weaponlib2.animation.Transform;
+import com.paneedah.weaponlib2.animation.Transition;
+import com.paneedah.weaponlib2.compatibility.RecoilParam;
+import com.paneedah.weaponlib2.config.BalancePackManager.GunConfigurationGroup;
+import com.paneedah.weaponlib2.crafting.CraftingEntry;
 import net.minecraft.item.Item;
 import net.minecraft.util.math.Vec3d;
 import org.lwjgl.opengl.GL11;
@@ -54,23 +54,23 @@ public class ACRFactory implements GunFactory {
         .withFlashOffsetY(() -> 0.16f) // Flash offset Y
 		.withCreativeTab(ModernWarfareMod.AssaultRiflesTab) // Creative tab
 		.useNewSystem() // Use new system
-		.withRecoilParam(new RecoilParam( // Recoil param
+		.withRecoilParam(new RecoilParam(
 				// The weapon power
-				15.0,
+				45.0,
 				// Muzzle climb divisor
-				15.75,
+				25.0,
 				// "Stock Length"
 				50.0,
 				// Recovery rate from initial shot
-				0.4,
+				1.0,
 				// Recovery rate @ "stock"
-				0.3125,
+				0.5625,
 				// Recoil rotation (Y)
 				0.0,
 				// Recoil rotation (Z)
 				0.0,
 				// Ads similarity divisor
-				1.0
+				1.5625
 		))
 		.withInformationProvider(stack -> Arrays.asList( // Information provider
         "Type: Modular Assault Rifle", // Information
@@ -279,32 +279,32 @@ public class ACRFactory implements GunFactory {
         })
 
         // Compatible ACR attachment M4A1Mag
-        .withCompatibleAttachment(Magazines.M4A1Mag, (model) -> {
+        .withCompatibleAttachment(STANAGMagazines.M4A1Mag, (model) -> {
             GL11.glTranslatef(-0.35F, 0.3F, -1.31F);
             GL11.glScaled(1.1F, 1.2F, 1.2F);
         })
 
         // Compatible ACR attachment M38Mag
-        .withCompatibleAttachment(Magazines.M38Mag, (model) -> {
+        .withCompatibleAttachment(STANAGMagazines.M38Mag, (model) -> {
             GL11.glTranslatef(-0.35F, 0.3F, -1.31F);
             GL11.glScaled(1.15F, 1.2F, 1.2F);
         })
 
         // Compatible ACR attachment Stanag50
-        .withCompatibleAttachment(Magazines.Stanag50, (model) -> {
+        .withCompatibleAttachment(STANAGMagazines.Stanag50, (model) -> {
             GL11.glTranslatef(0F, -0.15F, -0.1F);
 //            GL11.glScaled(1.15F, 1.2F, 1.2F);
         })
 
         // Compatible ACR attachment Stanag60
-        .withCompatibleAttachment(Magazines.Stanag60, (model) -> {
+        .withCompatibleAttachment(STANAGMagazines.Stanag60, (model) -> {
             GL11.glRotatef(-10F, 1f, 0f, 0f);
             GL11.glTranslatef(0F, 0.08F, -0.15F);
 //            GL11.glScaled(1.15F, 1.2F, 1.2F);
         })
 
         // Compatible ACR attachment Stanag100
-        .withCompatibleAttachment(Magazines.Stanag100, (model) -> {
+        .withCompatibleAttachment(STANAGMagazines.Stanag100, (model) -> {
             GL11.glTranslatef(-0.35F, 0.5F, -1.31F);
             GL11.glScaled(1.2F, 1.2F, 1.2F);
         })
@@ -735,12 +735,12 @@ public class ACRFactory implements GunFactory {
                 
                 .setupModernAnimations("acr", AuxiliaryAttachments.AKaction)
                 .setupModernMagazineAnimations("acr", 
-                		Magazines.M4A1Mag, 
-                		Magazines.M38Mag, 
-                		Magazines.Stanag100,
-                		Magazines.Stanag50,
-                		Magazines.Stanag60,
-                		Magazines.SOCOM_Mag)
+                		STANAGMagazines.M4A1Mag, 
+                		STANAGMagazines.M38Mag, 
+                		STANAGMagazines.Stanag100,
+                		STANAGMagazines.Stanag50,
+                		STANAGMagazines.Stanag60,
+                		STANAGMagazines.SOCOM_Mag)
                 
                     
             .withThirdPersonPositioningReloading(

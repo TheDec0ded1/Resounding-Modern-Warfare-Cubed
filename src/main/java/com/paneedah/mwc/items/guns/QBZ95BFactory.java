@@ -9,15 +9,15 @@ import com.paneedah.mwc.weapons.Attachments2;
 import com.paneedah.mwc.weapons.Attachments3;
 import com.paneedah.mwc.weapons.AuxiliaryAttachments;
 import com.paneedah.mwc.weapons.Magazines;
-import com.paneedah.weaponlib.AttachmentCategory;
-import com.paneedah.weaponlib.RenderableState;
-import com.paneedah.weaponlib.Weapon;
-import com.paneedah.weaponlib.WeaponRenderer;
-import com.paneedah.weaponlib.animation.Transform;
-import com.paneedah.weaponlib.animation.Transition;
-import com.paneedah.weaponlib.compatibility.RecoilParam;
-import com.paneedah.weaponlib.config.BalancePackManager.GunConfigurationGroup;
-import com.paneedah.weaponlib.crafting.CraftingEntry;
+import com.paneedah.weaponlib2.AttachmentCategory;
+import com.paneedah.weaponlib2.RenderableState;
+import com.paneedah.weaponlib2.Weapon;
+import com.paneedah.weaponlib2.WeaponRenderer;
+import com.paneedah.weaponlib2.animation.Transform;
+import com.paneedah.weaponlib2.animation.Transition;
+import com.paneedah.weaponlib2.compatibility.RecoilParam;
+import com.paneedah.weaponlib2.config.BalancePackManager.GunConfigurationGroup;
+import com.paneedah.weaponlib2.crafting.CraftingEntry;
 import net.minecraft.item.Item;
 import org.lwjgl.opengl.GL11;
 
@@ -36,7 +36,7 @@ public class QBZ95BFactory {
         .hasFlashPedals()
         .withMaxShots(1, Integer.MAX_VALUE)
         //.withMaxShots(5)
-        .withShootSound("qbz95b")
+        .withShootSound("qbz95")
         .withSilencedShootSound("qbz95_silenced")
         .withReloadSound("fnfal_reload")
         .withUnloadSound("fnfal_unload")
@@ -91,16 +91,22 @@ public class QBZ95BFactory {
         
         .withUnremovableAttachmentCategories(AttachmentCategory.STOCK)
        .withUnremovableAttachmentCategories(AttachmentCategory.RECEIVER)
-        .withUnremovableAttachmentCategories(AttachmentCategory.BACKGRIP)
+        .withUnremovableAttachmentCategories(AttachmentCategory.GUARD)
         
 
         .withCompatibleAttachment(AuxiliaryAttachments.QBZ95Action, true, (model) -> {
         })
         .withCompatibleAttachment(Attachments2.QBZ95BBody, true, (model) -> {
         })
-        .withCompatibleAttachment(Attachments2.QBZ95Cover, true, (model) -> {
+        .withCompatibleAttachment(Attachments2.QBZ95Dustcover, (model) -> {
+        })
+        .withCompatibleAttachment(Attachments2.QBZ95BDustcover, true, (model) -> {
+        })
+        .withCompatibleAttachment(Attachments2.QBB95Dustcover, (model) -> {
         })
         .withCompatibleAttachment(Attachments2.QBZ95BUpper, true, (model) -> {
+        })
+        .withCompatibleAttachment(Attachments2.QBZ95BLongbow, (model) -> {
         })
         .withCompatibleAttachment(Attachments2.QBZ95BMuzzle, true, (model) -> {
         })
@@ -109,7 +115,7 @@ public class QBZ95BFactory {
         .withCompatibleAttachment(Magazines.QBB95Mag, (model) -> {
         })
         .withCompatibleAttachment(Attachments3.NightRaider, (player, stack) -> {
-            GL11.glTranslatef(-0.21F, -2.2F, -2F);
+            GL11.glTranslatef(-0.21F, -1.87F, -1.4F);
             GL11.glScaled(0.75F, 0.75F, 0.75F);
         },(model) -> {
             if(model instanceof JPUreticle) {
@@ -118,7 +124,7 @@ public class QBZ95BFactory {
             }
         })
         .withCompatibleAttachment(Attachments3.ACOG, (player, stack) -> {
-            GL11.glTranslatef(-0.295F, -2.25F, -0.7F);
+            GL11.glTranslatef(-0.295F, -1.92F, 0.2F);
             GL11.glScaled(0.73F, 0.73F, 0.73F);
         },(model) -> {
             if(model instanceof AcogScope2) {
@@ -132,7 +138,7 @@ public class QBZ95BFactory {
         })
         
         .withCompatibleAttachment(Attachments3.LeupoldRailScope, (player, stack) -> {
-		            GL11.glTranslatef(-0.155F, -2.08F, -1.6F);
+		            GL11.glTranslatef(-0.155F, -1.75F, -1F);
 		            GL11.glScaled(0.43F, 0.43F, 0.43F);
 		},(model) -> {
 		     if(model instanceof JPUreticle) {
@@ -142,7 +148,7 @@ public class QBZ95BFactory {
 		})
         
         .withCompatibleAttachment(Attachments3.Specter, (player, stack) -> {
-		            GL11.glTranslatef(-0.185F, -1.93F, -1F);
+		            GL11.glTranslatef(-0.185F, -1.6F, -0.4F);
 		            GL11.glScaled(0.4F, 0.4F, 0.4F);
 		},(model) -> {
 		    if(model instanceof Acog2) {
@@ -152,7 +158,7 @@ public class QBZ95BFactory {
 		})
         
 		.withCompatibleAttachment(Attachments3.MicroReflex, (player, stack) -> {
-		    GL11.glTranslatef(-0.15F, -2.74F, -1F);
+		    GL11.glTranslatef(-0.15F, -2.41F, -0F);
 		    GL11.glScaled(0.35F, 0.35F, 0.35F);
 		    },(model) -> {
 		        if(model instanceof Reflex2) {
@@ -165,7 +171,7 @@ public class QBZ95BFactory {
 		    })
         
         .withCompatibleAttachment(Attachments3.MicroT1, (player, stack) -> {
-        	GL11.glTranslatef(-0.177F, -2.22F, -1.2F);
+        	GL11.glTranslatef(-0.177F, -1.89F, -0.6F);
             GL11.glScaled(0.36F, 0.36F, 0.36F);
         },(model) -> {
             if(model instanceof Reflex2) {
@@ -174,7 +180,7 @@ public class QBZ95BFactory {
             }
         })
         .withCompatibleAttachment(Attachments3.AimpointCompM5, (player, stack) -> {
-        	GL11.glTranslatef(-0.177F, -1.52F, -1.2F);
+        	GL11.glTranslatef(-0.177F, -1.89F, -0.6F);
             GL11.glScaled(0.36F, 0.36F, 0.36F);
 	    },(model) -> {
 	        if(model instanceof Reflex2) {
@@ -183,7 +189,7 @@ public class QBZ95BFactory {
 	        }
 	    })
         .withCompatibleAttachment(Attachments3.Reflex, (player, stack) -> {
-            GL11.glTranslatef(-0.065F, -2.02F, -1.2F);
+            GL11.glTranslatef(-0.065F, -1.69F, -0.3F);
             GL11.glScaled(0.45F, 0.45F, 0.45F);
             },(model) -> {
                 if(model instanceof Reflex2) {
@@ -192,7 +198,7 @@ public class QBZ95BFactory {
                 }
             })
         .withCompatibleAttachment(Attachments3.BijiaReflex, (player, stack) -> {
-            GL11.glTranslatef(-0.066F, -2.02F, -1.2F);
+            GL11.glTranslatef(-0.066F, -1.69F, -0.3F);
             GL11.glScaled(0.45F, 0.45F, 0.45F);
         },(model) -> {
         if(model instanceof Reflex2) {
@@ -201,7 +207,7 @@ public class QBZ95BFactory {
         }
         })
         .withCompatibleAttachment(Attachments3.Holographic, (player, stack) -> {
-        	GL11.glTranslatef(-0.042F, -2.08F, -1.2F);
+        	GL11.glTranslatef(-0.042F, -1.75F, -0.5F);
             GL11.glScaled(0.65F, 0.65F, 0.65F);
             },(model) -> {
                 if(model instanceof Holo2) {
@@ -210,7 +216,7 @@ public class QBZ95BFactory {
                 }
             })
         .withCompatibleAttachment(Attachments3.HolographicAlt, (player, stack) -> {
-        	GL11.glTranslatef(-0.042F, -2.08F, -1.2F);
+        	GL11.glTranslatef(-0.042F, -1.75F, -0.5F);
             GL11.glScaled(0.65F, 0.65F, 0.65F);
         },(model) -> {
             if(model instanceof Holo2) {
@@ -220,7 +226,7 @@ public class QBZ95BFactory {
         })
         
         .withCompatibleAttachment(Attachments3.EotechHybrid2, (player, stack) -> {
-        	GL11.glTranslatef(-0.042F, -2.08F, -1.2F);
+        	GL11.glTranslatef(-0.042F, -1.75F, -0.6F);
             GL11.glScaled(0.65F, 0.65F, 0.65F);
 		},(model) -> {
 		    if(model instanceof EotechScopeRing) {
@@ -234,7 +240,7 @@ public class QBZ95BFactory {
 		})
         
         .withCompatibleAttachment(Attachments3.VortexRedux, (player, stack) -> {
-            GL11.glTranslatef(-0.3F, -2.25F, -1.3F);
+            GL11.glTranslatef(-0.3F, -1.92F, -0.7F);
             GL11.glScaled(0.45F, 0.45F, 0.45F);
 	    },(model) -> {
 	        if(model instanceof Holo2) {
@@ -243,7 +249,7 @@ public class QBZ95BFactory {
 	        }
 	    })
         .withCompatibleAttachment(Attachments3.Kobra, (player, stack) -> {
-        	GL11.glTranslatef(-0.044F, -2.07F, -1F);
+        	GL11.glTranslatef(-0.044F, -1.74F, -0.1F);
             GL11.glScaled(0.65F, 0.65F, 0.65F);
         },(model) -> {
             if(model instanceof Reflex2) {
@@ -252,7 +258,7 @@ public class QBZ95BFactory {
             }
         })
         .withCompatibleAttachment(Attachments3.KobraGen3, (player, stack) -> {
-        	GL11.glTranslatef(-0.044F, -2.07F, -1F);
+        	GL11.glTranslatef(-0.044F, -1.74F, -0.1F);
             GL11.glScaled(0.65F, 0.65F, 0.65F);
 	    },(model) -> {
 	        if(model instanceof Reflex2) {
@@ -260,25 +266,10 @@ public class QBZ95BFactory {
 	            GL11.glScaled(0.15F, 0.15F, 0.15F);
 	        }
 	    })
-        .withCompatibleAttachment(Attachments3.Grip2, (model) -> {
-            GL11.glTranslatef(-0.2F, -0.1F, -2.5F);
-            GL11.glScaled(1F, 1F, 1F);
-        })
-        .withCompatibleAttachment(Attachments3.StubbyGrip, (model) -> {
-        	GL11.glTranslatef(-0.2F, -0.1F, -2.5F);
-            GL11.glScaled(1F, 1F, 1F);
-        })
-        .withCompatibleAttachment(Attachments3.AngledGrip, (model) -> {
-        	GL11.glTranslatef(-0.2F, -0.05F, -2.5F);
-            GL11.glScaled(1F, 1F, 1F);
-        })
-        .withCompatibleAttachment(Attachments3.VGrip, (model) -> {
-        	GL11.glTranslatef(-0.2F, -0.1F, -2.5F);
-            GL11.glScaled(1F, 1F, 1F);
-        })
         .withCompatibleAttachment(Attachments3.Laser2, (p, s) -> {
-        	GL11.glTranslatef(0.15F, -1F, -3.3F);
+		    GL11.glTranslatef(-0.22F, -1.35F, -2.5F);
             GL11.glScaled(0.8F, 0.8F, 0.8F);
+            GL11.glRotatef(-90F, 0f, 0f, 1f);
 		})
 		.withCompatibleAttachment(Attachments3.Laser, (p, s) -> {
 			GL11.glTranslatef(0.15F, -1F, -3.3F);

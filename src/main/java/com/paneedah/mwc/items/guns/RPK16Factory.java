@@ -12,12 +12,12 @@ import com.paneedah.mwc.weapons.Attachments2;
 import com.paneedah.mwc.weapons.Attachments3;
 import com.paneedah.mwc.weapons.AuxiliaryAttachments;
 import com.paneedah.mwc.weapons.Magazines;
-import com.paneedah.weaponlib.*;
-import com.paneedah.weaponlib.animation.Transform;
-import com.paneedah.weaponlib.animation.Transition;
-import com.paneedah.weaponlib.compatibility.RecoilParam;
-import com.paneedah.weaponlib.config.BalancePackManager.GunConfigurationGroup;
-import com.paneedah.weaponlib.crafting.CraftingEntry;
+import com.paneedah.weaponlib2.*;
+import com.paneedah.weaponlib2.animation.Transform;
+import com.paneedah.weaponlib2.animation.Transition;
+import com.paneedah.weaponlib2.compatibility.RecoilParam;
+import com.paneedah.weaponlib2.config.BalancePackManager.GunConfigurationGroup;
+import com.paneedah.weaponlib2.crafting.CraftingEntry;
 import net.minecraft.item.Item;
 import net.minecraft.util.math.Vec3d;
 import org.lwjgl.opengl.GL11;
@@ -126,31 +126,17 @@ public class RPK16Factory {
                 GL11.glScaled(0.7F, 0.8F, 0.5F);
             } 
         })
-        .withCompatibleAttachment(Attachments.AK15DustCover, true, (model) -> {
-            if(model instanceof AK15DustCover) {
-//                GL11.glScaled(1F, 0.98F, 1);
-            } else if(model instanceof AKRail) {
-                GL11.glTranslatef(-0.205F, -1.3F, -2.75f);
-                GL11.glScaled(0.6F, 0.8F, 1.12F);
-            }
+        .withCompatibleAttachment(Attachments2.AK15DustCover, true, (model) -> {
         })
         .withCompatibleAttachment(Attachments.CollapsableMOEStock, true, (model) -> {
             GL11.glTranslatef(0.02f, 0.2f, -0.2f);
             GL11.glScaled(1.2F, 1.2F, 1.2F);
         })
-        .withCompatibleAttachment(Attachments.CollapsableMOEStockGreen, (model) -> {
-            GL11.glTranslatef(0.02f, 0.2f, -0.2f);
-            GL11.glScaled(1.2F, 1.2F, 1.2F);
+        .withCompatibleAttachment(Attachments2.AK400Stock, (model) -> {
         })
-       .withCompatibleAttachment(Attachments.CollapsableMOEStockTan, (model) -> {
-            GL11.glTranslatef(0.02f, 0.2f, -0.2f);
-            GL11.glScaled(1.2F, 1.2F, 1.2F);
+        .withCompatibleAttachment(Attachments2.AK15StockLate, (model) -> {
         })
-        .withCompatibleAttachment(Attachments2.AK19Stock, (model) -> {
-        })
-        .withCompatibleAttachment(Attachments2.AK19StockGreen, (model) -> {
-        })
-        .withCompatibleAttachment(Attachments2.AK19StockTan, (model) -> {
+        .withCompatibleAttachment(Attachments2.AK15StockEarly, (model) -> {
         })
         .withCompatibleAttachment(Attachments.AKErgoGripGreen, (model) -> {
 //          GL11.glTranslatef(0.02f, 0.2f, -0.4f);

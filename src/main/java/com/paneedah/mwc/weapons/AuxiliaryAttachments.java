@@ -2,10 +2,10 @@ package com.paneedah.mwc.weapons;
 
 import com.paneedah.mwc.ModernWarfareMod;
 import com.paneedah.mwc.models.*;
-import com.paneedah.weaponlib.AttachmentBuilder;
-import com.paneedah.weaponlib.AttachmentCategory;
-import com.paneedah.weaponlib.ItemAttachment;
-import com.paneedah.weaponlib.Weapon;
+import com.paneedah.weaponlib2.AttachmentBuilder;
+import com.paneedah.weaponlib2.AttachmentCategory;
+import com.paneedah.weaponlib2.ItemAttachment;
+import com.paneedah.weaponlib2.Weapon;
 import org.lwjgl.opengl.GL11;
 
 public class AuxiliaryAttachments {
@@ -15,6 +15,13 @@ public class AuxiliaryAttachments {
     public static ItemAttachment<Weapon> PKMBelt;
     public static ItemAttachment<Weapon> PKMFeedTray;
     public static ItemAttachment<Weapon> PKMCover;
+    public static ItemAttachment<Weapon> Stoner63LMGBelt;
+    public static ItemAttachment<Weapon> Stoner63LMGCover;
+    public static ItemAttachment<Weapon> Stoner63LMGAction;
+    public static ItemAttachment<Weapon> Stoner63RifleAction;
+    public static ItemAttachment<Weapon> Stoner63RifleHandle;
+    public static ItemAttachment<Weapon> Stoner63AutoRifleAction;
+    public static ItemAttachment<Weapon> Stoner63AutoRifleHandle;
     public static ItemAttachment<Weapon> AA12Action;
     public static ItemAttachment<Weapon> AA12Handle;
     public static ItemAttachment<Weapon> MicroUziAction;
@@ -86,6 +93,7 @@ public class AuxiliaryAttachments {
     public static ItemAttachment<Weapon> QCW05Action;
     public static ItemAttachment<Weapon> QBZ95Action;
     public static ItemAttachment<Weapon> QBZ03Action;
+    public static ItemAttachment<Weapon> QBU88Action;
     public static ItemAttachment<Weapon> LAPAFA03Action;
     public static ItemAttachment<Weapon> AK12action;
     public static ItemAttachment<Weapon> SV98BoltAction;
@@ -1657,6 +1665,58 @@ public class AuxiliaryAttachments {
                 .withName("PKMCover")
                 .withRenderablePart().withTextureName("Dummy.png")
                 .build(ModernWarfareMod.MOD_CONTEXT);
+
+        Stoner63LMGAction = new AttachmentBuilder<Weapon>()
+                .withCategory(AttachmentCategory.EXTRA)
+                // .withCreativeTab(ModernWarfareMod.gunsTab)
+                .withModel(new com.paneedah.mwc.models.Stoner63LMGAction(), "stoner63lmg.png")
+                .withName("Stoner63LMGAction")
+                .withRenderablePart().withTextureName("Dummy.png")
+                .build(ModernWarfareMod.MOD_CONTEXT);
+        Stoner63RifleAction = new AttachmentBuilder<Weapon>()
+                .withCategory(AttachmentCategory.EXTRA)
+                // .withCreativeTab(ModernWarfareMod.gunsTab)
+                .withModel(new com.paneedah.mwc.models.Stoner63RifleAction(), "stoner63r.png")
+                .withName("Stoner63RifleAction")
+                .withRenderablePart().withTextureName("Dummy.png")
+                .build(ModernWarfareMod.MOD_CONTEXT);
+        Stoner63RifleHandle = new AttachmentBuilder<Weapon>()
+                .withCategory(AttachmentCategory.EXTRA2)
+                // .withCreativeTab(ModernWarfareMod.gunsTab)
+                .withModel(new com.paneedah.mwc.models.Stoner63RifleHandle(), "stoner63r.png")
+                .withName("Stoner63RifleHandle")
+                .withRenderablePart().withTextureName("Dummy.png")
+                .build(ModernWarfareMod.MOD_CONTEXT);
+        Stoner63AutoRifleAction = new AttachmentBuilder<Weapon>()
+                .withCategory(AttachmentCategory.EXTRA)
+                // .withCreativeTab(ModernWarfareMod.gunsTab)
+                .withModel(new com.paneedah.mwc.models.Stoner63AutoRifleAction(), "stoner63ar.png")
+                .withName("Stoner63AutoRifleAction")
+                .withRenderablePart().withTextureName("Dummy.png")
+                .build(ModernWarfareMod.MOD_CONTEXT);
+        Stoner63AutoRifleHandle = new AttachmentBuilder<Weapon>()
+                .withCategory(AttachmentCategory.EXTRA2)
+                // .withCreativeTab(ModernWarfareMod.gunsTab)
+                .withModel(new com.paneedah.mwc.models.Stoner63AutoRifleHandle(), "stoner63ar.png")
+                .withName("Stoner63AutoRifleHandle")
+                .withRenderablePart().withTextureName("Dummy.png")
+                .build(ModernWarfareMod.MOD_CONTEXT);
+        Stoner63LMGCover = new AttachmentBuilder<Weapon>()
+                .withCategory(AttachmentCategory.EXTRA5)
+                .withRotationPoint(-0.08000000238418581, -1.24000003695488, -2.760000082254411)
+                // .withCreativeTab(ModernWarfareMod.gunsTab)
+                .withModel(new com.paneedah.mwc.models.Stoner63LMGCover(), "stoner63lmg.png")
+                .withName("Stoner63LMGCover")
+                .withRenderablePart().withTextureName("Dummy.png")
+                .build(ModernWarfareMod.MOD_CONTEXT);
+        Stoner63LMGBelt = new AttachmentBuilder<Weapon>()
+                .withCategory(AttachmentCategory.EXTRA3)
+                // .withCreativeTab(ModernWarfareMod.gunsTab)
+                .withRotationPoint(-0.7600000226497652, -0.24000000715255743, -2.6800000798702257)
+                .withModel(new com.paneedah.mwc.models.Stoner63LMGBelt(), "stoner63lmg.png")
+                .withName("Stoner63LMGBelt")
+                .withRenderablePart().withTextureName("Dummy.png")
+                .build(ModernWarfareMod.MOD_CONTEXT);
         
         FNFALActionLever = new AttachmentBuilder<Weapon>()
                 .withCategory(AttachmentCategory.EXTRA)
@@ -1693,7 +1753,7 @@ public class AuxiliaryAttachments {
         QCW05Action = new AttachmentBuilder<Weapon>()
                 .withCategory(AttachmentCategory.EXTRA2)
                 // .withCreativeTab(ModernWarfareMod.gunsTab)
-                .withModel(new com.paneedah.mwc.models.QCW05Action(), "aek971.png")
+                .withModel(new com.paneedah.mwc.models.QCW05Action(), "qcw05.png")
                 .withName("QCW05Action")
                 .withRenderablePart().withTextureName("Dummy.png")
                 .build(ModernWarfareMod.MOD_CONTEXT);
@@ -1711,6 +1771,14 @@ public class AuxiliaryAttachments {
                 // .withCreativeTab(ModernWarfareMod.gunsTab)
                 .withModel(new com.paneedah.mwc.models.QBZ03_Action(), "qbz03.png")
                 .withName("QBZ03Action")
+                .withRenderablePart().withTextureName("Dummy.png")
+                .build(ModernWarfareMod.MOD_CONTEXT);
+
+        QBU88Action = new AttachmentBuilder<Weapon>()
+                .withCategory(AttachmentCategory.EXTRA2)
+                // .withCreativeTab(ModernWarfareMod.gunsTab)
+                .withModel(new com.paneedah.mwc.models.QBU88Action(), "qbu88.png")
+                .withName("QBU88Action")
                 .withRenderablePart().withTextureName("Dummy.png")
                 .build(ModernWarfareMod.MOD_CONTEXT);
 

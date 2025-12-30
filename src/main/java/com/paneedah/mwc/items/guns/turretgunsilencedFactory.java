@@ -4,14 +4,14 @@ import com.paneedah.mwc.ModernWarfareMod;
 import com.paneedah.mwc.models.Glock18C;
 import com.paneedah.mwc.proxies.CommonProxy;
 import com.paneedah.mwc.weapons.AuxiliaryAttachments;
-import com.paneedah.mwc.weapons.Magazines;
-import com.paneedah.weaponlib.AttachmentCategory;
-import com.paneedah.weaponlib.RenderableState;
-import com.paneedah.weaponlib.Weapon;
-import com.paneedah.weaponlib.WeaponRenderer;
-import com.paneedah.weaponlib.animation.Transform;
-import com.paneedah.weaponlib.animation.Transition;
-import com.paneedah.weaponlib.config.BalancePackManager.GunConfigurationGroup;
+import com.paneedah.mwc.weapons.STANAGMagazines;
+import com.paneedah.weaponlib2.AttachmentCategory;
+import com.paneedah.weaponlib2.RenderableState;
+import com.paneedah.weaponlib2.Weapon;
+import com.paneedah.weaponlib2.WeaponRenderer;
+import com.paneedah.weaponlib2.animation.Transform;
+import com.paneedah.weaponlib2.animation.Transition;
+import com.paneedah.weaponlib2.config.BalancePackManager.GunConfigurationGroup;
 import net.minecraft.item.Item;
 import org.lwjgl.opengl.GL11;
 
@@ -24,6 +24,7 @@ public class turretgunsilencedFactory implements GunFactory {
         return new Weapon.Builder()
 
         .withName("turretgunsilenced")
+                //.withWeight("-0.15")
         .withFireRate(0.6f)
         .withRecoil(3f)
         .withZoom(0.9f)
@@ -124,12 +125,12 @@ public class turretgunsilencedFactory implements GunFactory {
                 
                 .setupModernAnimations("scar", AuxiliaryAttachments.ScarAction)
                 .setupModernMagazineAnimations("scar", 
-                		Magazines.M4A1Mag, 
-                		Magazines.M38Mag, 
-                		Magazines.Stanag100,
-                		Magazines.Stanag50,
-                		Magazines.Stanag60,
-                		Magazines.SOCOM_Mag)
+                		STANAGMagazines.M4A1Mag, 
+                		STANAGMagazines.M38Mag, 
+                		STANAGMagazines.Stanag100,
+                		STANAGMagazines.Stanag50,
+                		STANAGMagazines.Stanag60,
+                		STANAGMagazines.SOCOM_Mag)
         
             .withFirstPersonCustomPositioning(AuxiliaryAttachments.ScarAction.getRenderablePart(), (renderContext) -> {
               if(renderContext.getWeaponInstance().getAmmo() == 0) {

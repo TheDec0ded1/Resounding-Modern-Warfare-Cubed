@@ -1,9 +1,9 @@
 package com.paneedah.mwc.wearables;
 
 import com.paneedah.mwc.ModernWarfareMod;
-import com.paneedah.weaponlib.CustomArmor;
-import com.paneedah.weaponlib.CustomArmor.Builder;
-import com.paneedah.weaponlib.ModContext;
+import com.paneedah.weaponlib2.CustomArmor;
+import com.paneedah.weaponlib2.CustomArmor.Builder;
+import com.paneedah.weaponlib2.ModContext;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemArmor.ArmorMaterial;
 import net.minecraftforge.common.util.EnumHelper;
@@ -58,10 +58,6 @@ public class Armors {
     public static Item Juggernautboots;
     public static Item Juggernauthelmet;
     
-    public static Item NaziSantachest;
-    public static Item NaziSantaboots;
-    public static Item NaziSantahelmet;
-    
     public static Item Santachest;
     public static Item Santaboots;
     public static Item Santahelmet;
@@ -76,9 +72,9 @@ public class Armors {
     public static Item scpGuardboots;
     public static Item scpGuardhelmet;
 
-    public static Item ratnikWoodlandchest;
-    public static Item ratnikWoodlandboots;
-    public static Item ratnikWoodlandhelmet;
+    public static Item flecktarnchest;
+    public static Item flecktarnboots;
+    public static Item flecktarnhelmet;
 
     public static Item ratnikAridchest;
     public static Item ratnikAridboots;
@@ -217,15 +213,6 @@ public class Armors {
         Armors.Santachest = santaArmorBuilder.buildChest(modContext.isClient());
         Armors.Santaboots = santaArmorBuilder.buildBoots(modContext.isClient());
         
-        Builder nazisantaArmorBuilder = new CustomArmor.Builder().withMaterial(Armors.Marine)
-                .withUnlocalizedName("Nazisanta")
-                .withTextureName("santasuit_nazi")
-                .withModelClass("com.paneedah.mwc.models.SantaSuit")
-                .withCreativeTab(ModernWarfareMod.ArmorTab);
-
-        Armors.NaziSantahelmet = nazisantaArmorBuilder.buildHelmet(modContext);
-        Armors.NaziSantachest = nazisantaArmorBuilder.buildChest(modContext.isClient());
-        Armors.NaziSantaboots = nazisantaArmorBuilder.buildBoots(modContext.isClient());
         
         Builder juggernautsuitArmorBuilder = new CustomArmor.Builder().withMaterial(Armors.Juggernaut)
                 .withUnlocalizedName("Juggernaut")
@@ -320,16 +307,16 @@ public class Armors {
         Armors.scpGuardchest = scpGuardArmorBuilder.buildChest(modContext.isClient());
         Armors.scpGuardboots = scpGuardArmorBuilder.buildBoots(modContext.isClient());
 
-       Builder ratnikWoodlandArmorBuilder = new CustomArmor.Builder()
+       Builder flecktarnArmorBuilder = new CustomArmor.Builder()
         		.withMaterial(Armors.Marine)
-                .withUnlocalizedName("Ratnik_Woodland")
-                .withTextureName("woodland_emr")
-                .withModelClass("com.paneedah.mwc.models.Ratnik_Uniform")
+                .withUnlocalizedName("FlecktarnArmor")
+                .withTextureName("militaryuniformflecktarn")
+                .withModelClass("com.paneedah.mwc.models.USMC")
                 .withCreativeTab(ModernWarfareMod.ArmorTab);
 
-        Armors.ratnikWoodlandhelmet = ratnikWoodlandArmorBuilder.buildHelmet(modContext);
-        Armors.ratnikWoodlandchest = ratnikWoodlandArmorBuilder.buildChest(modContext.isClient());
-        Armors.ratnikWoodlandboots = ratnikWoodlandArmorBuilder.buildBoots(modContext.isClient());
+        Armors.flecktarnhelmet = flecktarnArmorBuilder.buildHelmet(modContext);
+        Armors.flecktarnchest = flecktarnArmorBuilder.buildChest(modContext.isClient());
+        Armors.flecktarnboots = flecktarnArmorBuilder.buildBoots(modContext.isClient());
 
        Builder ratnikSteppeArmorBuilder = new CustomArmor.Builder()
         		.withMaterial(Armors.Marine)

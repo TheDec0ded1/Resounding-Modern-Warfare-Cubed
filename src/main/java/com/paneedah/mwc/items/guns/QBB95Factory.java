@@ -9,15 +9,15 @@ import com.paneedah.mwc.weapons.Attachments2;
 import com.paneedah.mwc.weapons.Attachments3;
 import com.paneedah.mwc.weapons.AuxiliaryAttachments;
 import com.paneedah.mwc.weapons.Magazines;
-import com.paneedah.weaponlib.AttachmentCategory;
-import com.paneedah.weaponlib.RenderableState;
-import com.paneedah.weaponlib.Weapon;
-import com.paneedah.weaponlib.WeaponRenderer;
-import com.paneedah.weaponlib.animation.Transform;
-import com.paneedah.weaponlib.animation.Transition;
-import com.paneedah.weaponlib.compatibility.RecoilParam;
-import com.paneedah.weaponlib.config.BalancePackManager.GunConfigurationGroup;
-import com.paneedah.weaponlib.crafting.CraftingEntry;
+import com.paneedah.weaponlib2.AttachmentCategory;
+import com.paneedah.weaponlib2.RenderableState;
+import com.paneedah.weaponlib2.Weapon;
+import com.paneedah.weaponlib2.WeaponRenderer;
+import com.paneedah.weaponlib2.animation.Transform;
+import com.paneedah.weaponlib2.animation.Transition;
+import com.paneedah.weaponlib2.compatibility.RecoilParam;
+import com.paneedah.weaponlib2.config.BalancePackManager.GunConfigurationGroup;
+import com.paneedah.weaponlib2.crafting.CraftingEntry;
 import net.minecraft.item.Item;
 import org.lwjgl.opengl.GL11;
 
@@ -36,7 +36,7 @@ public class QBB95Factory {
         .hasFlashPedals()
         .withMaxShots(Integer.MAX_VALUE, 1)
         //.withMaxShots(5)
-        .withShootSound("qbb95")
+        .withShootSound("qbz95")
         .withSilencedShootSound("qbz95_silenced")
         .withReloadSound("fnfal_reload")
         .withUnloadSound("fnfal_unload")
@@ -91,16 +91,22 @@ public class QBB95Factory {
         
         .withUnremovableAttachmentCategories(AttachmentCategory.STOCK)
        .withUnremovableAttachmentCategories(AttachmentCategory.RECEIVER)
-        .withUnremovableAttachmentCategories(AttachmentCategory.BACKGRIP)
+        .withUnremovableAttachmentCategories(AttachmentCategory.GUARD)
         
 
         .withCompatibleAttachment(AuxiliaryAttachments.QBZ95Action, true, (model) -> {
         })
         .withCompatibleAttachment(Attachments2.QBB95Body, true, (model) -> {
         })
-        .withCompatibleAttachment(Attachments2.QBZ95Cover, true, (model) -> {
+        .withCompatibleAttachment(Attachments2.QBZ95Dustcover, (model) -> {
+        })
+        .withCompatibleAttachment(Attachments2.QBZ95BDustcover, (model) -> {
+        })
+        .withCompatibleAttachment(Attachments2.QBB95Dustcover, true, (model) -> {
         })
         .withCompatibleAttachment(Attachments2.QBB95Upper, true, (model) -> {
+        })
+        .withCompatibleAttachment(Attachments2.QBZ95Upper, (model) -> {
         })
         .withCompatibleAttachment(Attachments2.QBB95Bipod, true, (model) -> {
         })
@@ -192,11 +198,11 @@ public class QBB95Factory {
                 }
             })
         .withCompatibleAttachment(Attachments3.BijiaReflex, (player, stack) -> {
-            GL11.glTranslatef(-0.066F, -2.02F, -1.2F);
+            GL11.glTranslatef(-0.066F, -1.02F, -1.2F);
             GL11.glScaled(0.45F, 0.45F, 0.45F);
         },(model) -> {
         if(model instanceof Reflex2) {
-            GL11.glTranslatef(-0.125F, -0.68F, -0.4F);
+            GL11.glTranslatef(-0.125F, 0.32F, -0.4F);
             GL11.glScaled(0.15F, 0.15F, 0.15F);
         }
         })

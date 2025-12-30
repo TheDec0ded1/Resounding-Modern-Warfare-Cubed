@@ -269,11 +269,191 @@
       }
     ]
   },
+  "maxim9": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "mwc:maxim9",
+        "stream": false
+      }
+    ]
+  },
+  "stoner63ar": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "mwc:stoner63ar",
+        "stream": false
+      }
+    ]
+  },
+  "stoner63beltdraw": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "mwc:stoner63beltdraw",
+        "stream": false
+      }
+    ]
+  },
+  "stoner63beltlocate": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "mwc:stoner63beltlocate",
+        "stream": false
+      }
+    ]
+  },
+  "stoner63boltback": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "mwc:stoner63boltback",
+        "stream": false
+      }
+    ]
+  },
+  "stoner63boltforward": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "mwc:stoner63boltforward",
+        "stream": false
+      }
+    ]
+  },
+  "stoner63boxattach": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "mwc:stoner63boxattach",
+        "stream": false
+      }
+    ]
+  },
+  "stoner63boxdraw": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "mwc:stoner63boxdraw",
+        "stream": false
+      }
+    ]
+  },
+  "stoner63boxremove": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "mwc:stoner63boxremove",
+        "stream": false
+      }
+    ]
+  },
+  "stoner63coverlock": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "mwc:stoner63coverlock",
+        "stream": false
+      }
+    ]
+  },
+  "stoner63covermove": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "mwc:stoner63covermove",
+        "stream": false
+      }
+    ]
+  },
+  "stoner63coveropen": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "mwc:stoner63coveropen",
+        "stream": false
+      }
+    ]
+  },
+  "stoner63handleforward": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "mwc:stoner63handleforward",
+        "stream": false
+      }
+    ]
+  },
+  "stoner63lmg": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "mwc:stoner63lmg",
+        "stream": false
+      }
+    ]
+  },
+  "stoner63magin": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "mwc:stoner63magin",
+        "stream": false
+      }
+    ]
+  },
+  "stoner63magout": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "mwc:stoner63magout",
+        "stream": false
+      }
+    ]
+  },
+  "stoner63magtouch": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "mwc:stoner63magtouch",
+        "stream": false
+      }
+    ]
+  },
+  "stoner63r": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "mwc:stoner63r",
+        "stream": false
+      }
+    ]
+  },
   "svu": {
     "category": "master",
     "sounds": [
       {
        "name": "mwc:svu",
+       "stream": false
+      }
+    ]
+  },
+  "mp43ereload": {
+    "category": "master",
+    "sounds": [
+      {
+       "name": "mwc:mp43ereload",
+       "stream": false
+      }
+    ]
+  },
+  "g2contender_reload": {
+    "category": "master",
+    "sounds": [
+      {
+       "name": "mwc:g2contender_reload",
        "stream": false
       }
     ]
@@ -1142,29 +1322,20 @@
       }
     ]
   },
-   "qbz95b": {
-    "category": "master",
-    "sounds": [
-      {
-       "name": "mwc:qbz95b",
-       "stream": false
-      }
-    ]
-  },
-   "qbb95": {
-    "category": "master",
-    "sounds": [
-      {
-       "name": "mwc:qbb95",
-       "stream": false
-      }
-    ]
-  },
    "qbz03": {
     "category": "master",
     "sounds": [
       {
        "name": "mwc:qbz03",
+       "stream": false
+      }
+    ]
+  },
+   "qbu88": {
+    "category": "master",
+    "sounds": [
+      {
+       "name": "mwc:qbu88",
        "stream": false
       }
     ]
@@ -1196,6 +1367,24 @@
       }
     ]
   },
+   "qbu88_boltback": {
+    "category": "master",
+    "sounds": [
+      {
+       "name": "mwc:qbu88_boltback",
+       "stream": false
+      }
+    ]
+  },
+   "qbu88_boltforward": {
+    "category": "master",
+    "sounds": [
+      {
+       "name": "mwc:qbu88_boltforward",
+       "stream": false
+      }
+    ]
+  },
    "qbz95_foley": {
     "category": "master",
     "sounds": [
@@ -1210,6 +1399,33 @@
     "sounds": [
       {
        "name": "mwc:qbz95_maginsert",
+       "stream": false
+      }
+    ]
+  },
+   "qbz95_magtouchgun": {
+    "category": "master",
+    "sounds": [
+      {
+       "name": "mwc:qbz95_magtouchgun",
+       "stream": false
+      }
+    ]
+  },
+   "qbu88mag_insert": {
+    "category": "master",
+    "sounds": [
+      {
+       "name": "mwc:qbu88mag_insert",
+       "stream": false
+      }
+    ]
+  },
+   "qbu88mag_unload": {
+    "category": "master",
+    "sounds": [
+      {
+       "name": "mwc:qbu88mag_unload",
        "stream": false
       }
     ]
@@ -3176,38 +3392,11 @@
       }
     ]
   },
-  "g36c": {
-    "category": "master",
-    "sounds": [
-      {
-       "name": "mwc:g36c",
-       "stream": false
-      }
-    ]
-  },
-  "g36k": {
-    "category": "master",
-    "sounds": [
-      {
-       "name": "mwc:g36k",
-       "stream": false
-      }
-    ]
-  },
   "g36e": {
     "category": "master",
     "sounds": [
       {
        "name": "mwc:g36e",
-       "stream": false
-      }
-    ]
-  },
-  "mg36": {
-    "category": "master",
-    "sounds": [
-      {
-       "name": "mwc:mg36",
        "stream": false
       }
     ]
@@ -3262,15 +3451,6 @@
     "sounds": [
       {
        "name": "mwc:acr_draw",
-       "stream": false
-      }
-    ]
-  },
-  "sl8": {
-    "category": "master",
-    "sounds": [
-      {
-       "name": "mwc:sl8",
        "stream": false
       }
     ]
@@ -3698,11 +3878,20 @@
       }
     ]
   },
-  "m1941": {
+  "m1941r": {
     "category": "master",
     "sounds": [
       {
-       "name": "mwc:m1941",
+       "name": "mwc:m1941r",
+       "stream": false
+      }
+    ]
+  },
+    "m1941lmg": {
+    "category": "master",
+    "sounds": [
+      {
+       "name": "mwc:m1941lmg",
        "stream": false
       }
     ]
@@ -4004,6 +4193,15 @@
       }
     ]
   },
+  "apb": {
+    "category": "master",
+    "sounds": [
+      {
+       "name": "mwc:apb",
+       "stream": false
+      }
+    ]
+  },
   "arx160": {
     "category": "master",
     "sounds": [
@@ -4234,6 +4432,15 @@
     "sounds": [
       {
        "name": "mwc:beowulf",
+       "stream": false
+      }
+    ]
+  },
+    "qcw05bolt_back": {
+    "category": "master",
+    "sounds": [
+      {
+       "name": "mwc:qcw05bolt_back",
        "stream": false
       }
     ]

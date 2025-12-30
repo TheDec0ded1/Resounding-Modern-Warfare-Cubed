@@ -5,8 +5,8 @@ import com.paneedah.mwc.models.ATV;
 import com.paneedah.mwc.models.SampleVehicleControlArm;
 import com.paneedah.mwc.models.SampleVehicleSteeringWheel;
 import com.paneedah.mwc.models.Wheel;
-import com.paneedah.weaponlib.ModContext;
-import com.paneedah.weaponlib.vehicle.*;
+import com.paneedah.weaponlib2.ModContext;
+import com.paneedah.weaponlib2.vehicle.*;
 
 public class SampleVehicleFactory implements VehicleFactory {
 

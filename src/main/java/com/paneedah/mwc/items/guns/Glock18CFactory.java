@@ -7,16 +7,16 @@ import com.paneedah.mwc.proxies.CommonProxy;
 import com.paneedah.mwc.weapons.Attachments;
 import com.paneedah.mwc.weapons.Attachments3;
 import com.paneedah.mwc.weapons.Magazines;
-import com.paneedah.weaponlib.AttachmentCategory;
-import com.paneedah.weaponlib.RenderableState;
-import com.paneedah.weaponlib.Weapon;
-import com.paneedah.weaponlib.WeaponRenderer;
-import com.paneedah.weaponlib.animation.Transform;
-import com.paneedah.weaponlib.animation.Transition;
-import com.paneedah.weaponlib.compatibility.RecoilParam;
-import com.paneedah.weaponlib.config.BalancePackManager.GunConfigurationGroup;
-import com.paneedah.weaponlib.crafting.CraftingEntry;
-import com.paneedah.weaponlib.render.shells.ShellParticleSimulator.Shell.Type;
+import com.paneedah.weaponlib2.AttachmentCategory;
+import com.paneedah.weaponlib2.RenderableState;
+import com.paneedah.weaponlib2.Weapon;
+import com.paneedah.weaponlib2.WeaponRenderer;
+import com.paneedah.weaponlib2.animation.Transform;
+import com.paneedah.weaponlib2.animation.Transition;
+import com.paneedah.weaponlib2.compatibility.RecoilParam;
+import com.paneedah.weaponlib2.config.BalancePackManager.GunConfigurationGroup;
+import com.paneedah.weaponlib2.crafting.CraftingEntry;
+import com.paneedah.weaponlib2.render.shells.ShellParticleSimulator.Shell.Type;
 import net.minecraft.item.Item;
 import net.minecraft.util.math.Vec3d;
 import org.lwjgl.opengl.GL11;
@@ -99,19 +99,7 @@ public class Glock18CFactory implements GunFactory {
             GL11.glTranslatef(0.01f, -0.19f, -0.4f);
             GL11.glScaled(0F, 0F, 0F);
         })
-//        .withCompatibleAttachment(Attachments.Glock18CBody, true, (model) -> {
-////          GL11.glTranslatef(0.01f, -0.19f, -0.4f);
-////          GL11.glScaled(0F, 0F, 0F);
-//        })
-        .withCompatibleAttachment(Attachments.Glock19Body, (model) -> {
-//            GL11.glTranslatef(0.01f, -0.19f, -0.4f);
-//            GL11.glScaled(0F, 0F, 0F);
-        })
         .withCompatibleAttachment(Attachments.Glock19XBody, true, (model) -> {
-//          GL11.glTranslatef(0.01f, -0.19f, -0.4f);
-//          GL11.glScaled(0F, 0F, 0F);
-        })
-        .withCompatibleAttachment(Attachments.Glock19RazorbackBody, (model) -> {
 //          GL11.glTranslatef(0.01f, -0.19f, -0.4f);
 //          GL11.glScaled(0F, 0F, 0F);
         })
@@ -322,7 +310,7 @@ public class Glock18CFactory implements GunFactory {
                 )
                     
                     
-            .withThirdPersonCustomPositioningReloading(Attachments.Glock19Slide.getRenderablePart(),
+            .withThirdPersonCustomPositioningReloading(Attachments.Glock18CSlide.getRenderablePart(),
                     new Transition((renderContext) -> {
                     }, 250, 1000),
                     new Transition((renderContext) -> {

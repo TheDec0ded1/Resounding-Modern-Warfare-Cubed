@@ -8,15 +8,15 @@ import com.paneedah.mwc.weapons.Attachments;
 import com.paneedah.mwc.weapons.Attachments3;
 import com.paneedah.mwc.weapons.AuxiliaryAttachments;
 import com.paneedah.mwc.weapons.Magazines;
-import com.paneedah.weaponlib.AttachmentCategory;
-import com.paneedah.weaponlib.RenderableState;
-import com.paneedah.weaponlib.Weapon;
-import com.paneedah.weaponlib.WeaponRenderer;
-import com.paneedah.weaponlib.animation.Transform;
-import com.paneedah.weaponlib.animation.Transition;
-import com.paneedah.weaponlib.compatibility.RecoilParam;
-import com.paneedah.weaponlib.config.BalancePackManager.GunConfigurationGroup;
-import com.paneedah.weaponlib.crafting.CraftingEntry;
+import com.paneedah.weaponlib2.AttachmentCategory;
+import com.paneedah.weaponlib2.RenderableState;
+import com.paneedah.weaponlib2.Weapon;
+import com.paneedah.weaponlib2.WeaponRenderer;
+import com.paneedah.weaponlib2.animation.Transform;
+import com.paneedah.weaponlib2.animation.Transition;
+import com.paneedah.weaponlib2.compatibility.RecoilParam;
+import com.paneedah.weaponlib2.config.BalancePackManager.GunConfigurationGroup;
+import com.paneedah.weaponlib2.crafting.CraftingEntry;
 import net.minecraft.item.Item;
 import org.lwjgl.opengl.GL11;
 
@@ -53,21 +53,21 @@ public class FamasF1Factory {
         .useNewSystem()
         .withRecoilParam(new RecoilParam(
 				// The weapon power
-				15.0,
+				45.0,
 				// Muzzle climb divisor
-				15.75,
+				25.0,
 				// "Stock Length"
 				50.0,
 				// Recovery rate from initial shot
-				0.4,
+				0.9,
 				// Recovery rate @ "stock"
-				0.3125,
+				0.5625,
 				// Recoil rotation (Y)
 				0.0,
 				// Recoil rotation (Z)
 				0.0,
 				// Ads similarity divisor
-				1.0
+				2.0125
 		))
         .withInformationProvider(stack -> Arrays.asList(
         "Type: Bullpup Assault Rifle",

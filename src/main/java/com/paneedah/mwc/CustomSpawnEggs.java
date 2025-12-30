@@ -2,7 +2,7 @@ package com.paneedah.mwc;
 
 import com.paneedah.mwc.proxies.CommonProxy;
 import com.paneedah.mwc.utils.ModReference;
-import com.paneedah.weaponlib.HighIQSpawnEgg;
+import com.paneedah.weaponlib2.HighIQSpawnEgg;
 
 public class CustomSpawnEggs {
 	
