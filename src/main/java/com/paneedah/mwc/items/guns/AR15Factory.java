@@ -577,12 +577,8 @@ public class AR15Factory implements GunFactory {
 			
             .withFirstPersonPositioningZooming((renderContext) -> {
 				GL11.glScalef(3.000000f, 3.000000f, 3.000000f);
-				GL11.glTranslatef(0.14f, 1.06f, -0.3f);
+				GL11.glTranslatef(0.14f, 1.30f, -0.3f);
 				
-				// Standard Iron Sight Zoom
-				if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), AuxiliaryAttachments.AR15Iron)) {
-                        GL11.glTranslatef(0F, 0.028f, -0.3f);
-				} 
 				
 				// Standard Iron Sight Zoom
 				if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.TritiumRearSights)) {

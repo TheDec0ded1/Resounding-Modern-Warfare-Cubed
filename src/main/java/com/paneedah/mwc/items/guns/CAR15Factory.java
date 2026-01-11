@@ -313,7 +313,7 @@ public class CAR15Factory implements GunFactory {
                 GL11.glTranslatef(-0.185F, -1.53F, -4.05F);
                 GL11.glScaled(0F, 0F, 0F);
             } else if(model instanceof ARCarryHandle) {
-                GL11.glTranslatef(-0.1425F, -1.533F, -0.12F);
+                GL11.glTranslatef(-0.1425F, -1.633F, -0.12F);
                 GL11.glScaled(0.29F, 0.29F, 0.29F);
             } else if(model instanceof MP5Iron) {
                 GL11.glTranslatef(0.215F, -1.54F, 1.2F);
@@ -388,7 +388,7 @@ public class CAR15Factory implements GunFactory {
         })
         
         .withCompatibleAttachment(Attachments3.NightRaider, (player, stack) -> {
-                    GL11.glTranslatef(-0.21F, -1.4F, -1.8F);
+                    GL11.glTranslatef(-0.21F, -1.5F, -1.8F);
                     GL11.glScaled(0.75F, 0.75F, 0.75F);
         },(model) -> {
             if(model instanceof JPUreticle) {
@@ -398,7 +398,7 @@ public class CAR15Factory implements GunFactory {
         })
         
 		.withCompatibleAttachment(Attachments3.ACOG, (player, stack) -> {
-                    GL11.glTranslatef(-0.28F, -1.41F, -0.5F);
+                    GL11.glTranslatef(-0.28F, -1.5F, -0.5F);
                     GL11.glScaled(0.7F, 0.7F, 0.7F);
 		},(model) -> {
 		    if(model instanceof AcogScope2) {
@@ -412,7 +412,7 @@ public class CAR15Factory implements GunFactory {
         })
 		
 		.withCompatibleAttachment(Attachments3.Specter, (player, stack) -> {
-                    GL11.glTranslatef(-0.18F, -1.1F, -0.7F);
+                    GL11.glTranslatef(-0.18F, -1.2F, -0.7F);
                     GL11.glScaled(0.4F, 0.4F, 0.4F);
         },(model) -> {
             if(model instanceof Acog2) {
@@ -422,7 +422,7 @@ public class CAR15Factory implements GunFactory {
         })
 		
 		.withCompatibleAttachment(Attachments3.LeupoldRailScope, (player, stack) -> {
-		            GL11.glTranslatef(-0.151F, -1.25F, -1.2F);
+		            GL11.glTranslatef(-0.151F, -1.35F, -1.2F);
 		            GL11.glScaled(0.4F, 0.4F, 0.4F);
         },(model) -> {
              if(model instanceof JPUreticle) {
@@ -432,7 +432,7 @@ public class CAR15Factory implements GunFactory {
         })
 		
 		.withCompatibleAttachment(Attachments3.MicroReflex, (player, stack) -> {
-            GL11.glTranslatef(-0.15F, -1.93F, -1F);
+            GL11.glTranslatef(-0.15F, -2.03F, -1F);
             GL11.glScaled(0.35F, 0.35F, 0.35F);
             },(model) -> {
                 if(model instanceof Reflex2) {
@@ -445,7 +445,7 @@ public class CAR15Factory implements GunFactory {
             })
 		
 		.withCompatibleAttachment(Attachments3.Reflex, (player, stack) -> {
-                    GL11.glTranslatef(-0.066F, -1.21F, -0.9F);
+                    GL11.glTranslatef(-0.066F, -1.31F, -0.9F);
                     GL11.glScaled(0.45F, 0.45F, 0.45F);
 		},(model) -> {
             if(model instanceof Reflex2) {
@@ -454,7 +454,7 @@ public class CAR15Factory implements GunFactory {
 			}
 		})
 		.withCompatibleAttachment(Attachments3.BijiaReflex, (player, stack) -> {
-	                    GL11.glTranslatef(-0.062F, -1.2F, -1F);
+	                    GL11.glTranslatef(-0.062F, -1.3F, -1F);
 	                    GL11.glScaled(0.48F, 0.48F, 0.48F);
 			},(model) -> {
 	        if(model instanceof Reflex2) {
@@ -464,7 +464,7 @@ public class CAR15Factory implements GunFactory {
 			})
 		
 		.withCompatibleAttachment(Attachments3.Holographic, (player, stack) -> {
-                    GL11.glTranslatef(-0.041F, -1.25F, -0.7F);
+                    GL11.glTranslatef(-0.041F, -1.35F, -0.7F);
                     GL11.glScaled(0.65F, 0.65F, 0.65F);
 			},(model) -> {
 	            if(model instanceof Holo2) {
@@ -474,7 +474,7 @@ public class CAR15Factory implements GunFactory {
 	        })
 		
 		.withCompatibleAttachment(Attachments3.HolographicAlt, (player, stack) -> {
-                    GL11.glTranslatef(-0.041F, -1.25F, -0.7F);
+                    GL11.glTranslatef(-0.041F, -1.35F, -0.7F);
                     GL11.glScaled(0.65F, 0.65F, 0.65F);
         },(model) -> {
             if(model instanceof Holo2) {
@@ -484,7 +484,7 @@ public class CAR15Factory implements GunFactory {
         })
 		
 		.withCompatibleAttachment(Attachments3.EotechHybrid2, (player, stack) -> {
-                    GL11.glTranslatef(-0.041F, -1.25F, -1.3F);
+                    GL11.glTranslatef(-0.041F, -1.35F, -1.3F);
                     GL11.glScaled(0.65F, 0.65F, 0.65F);
         },(model) -> {
             if(model instanceof EotechScopeRing) {
@@ -498,7 +498,7 @@ public class CAR15Factory implements GunFactory {
         })
 		
 		.withCompatibleAttachment(Attachments3.VortexRedux, (player, stack) -> {
-            GL11.glTranslatef(-0.3F, -1.45F, -1.1F);
+            GL11.glTranslatef(-0.3F, -1.55F, -1.1F);
             GL11.glScaled(0.45F, 0.45F, 0.45F);
 	    },(model) -> {
 	        if(model instanceof Holo2) {
@@ -508,7 +508,7 @@ public class CAR15Factory implements GunFactory {
 	    })
 	    
 		.withCompatibleAttachment(Attachments3.Kobra, (player, stack) -> {
-                    GL11.glTranslatef(-0.041F, -1.26F, -0.7F);
+                    GL11.glTranslatef(-0.041F, -1.36F, -0.7F);
                     GL11.glScaled(0.65F, 0.65F, 0.65F);
 		},(model) -> {
             if(model instanceof Reflex2) {
@@ -523,10 +523,10 @@ public class CAR15Factory implements GunFactory {
                 ItemAttachment<Weapon> activeAttachment = WeaponAttachmentAspect.getActiveAttachment(
                         AttachmentCategory.GUARD, instance);
                 if(activeAttachment == Attachments.AR57Handguard) {
-                    GL11.glTranslatef(-0.041F, -1.37F, -0.7F);
+                    GL11.glTranslatef(-0.041F, -1.47F, -0.7F);
                     GL11.glScaled(0.65F, 0.65F, 0.65F);
                 } else {
-                    GL11.glTranslatef(-0.041F, -1.26F, -0.7F);
+                    GL11.glTranslatef(-0.041F, -1.36F, -0.7F);
                     GL11.glScaled(0.65F, 0.65F, 0.65F);
                     }
                 }
@@ -538,7 +538,7 @@ public class CAR15Factory implements GunFactory {
         }, false, false)
 		
 		.withCompatibleAttachment(Attachments3.MicroT1, (player, stack) -> {
-                    GL11.glTranslatef(-0.18F, -1.45F, -1F);
+                    GL11.glTranslatef(-0.18F, -1.55F, -1F);
                     GL11.glScaled(0.38F, 0.38F, 0.38F);
             },(model) -> {
                 if(model instanceof Reflex2) {
@@ -548,7 +548,7 @@ public class CAR15Factory implements GunFactory {
             })
 		
 		.withCompatibleAttachment(Attachments3.AimpointCompM5, (player, stack) -> {
-                    GL11.glTranslatef(-0.18F, -1.45F, -1F);
+                    GL11.glTranslatef(-0.18F, -1.55F, -1F);
                     GL11.glScaled(0.38F, 0.38F, 0.38F);
         },(model) -> {
             if(model instanceof Reflex2) {

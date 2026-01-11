@@ -1703,7 +1703,7 @@ public class AuxiliaryAttachments {
                 .build(ModernWarfareMod.MOD_CONTEXT);
         Stoner63LMGCover = new AttachmentBuilder<Weapon>()
                 .withCategory(AttachmentCategory.EXTRA5)
-                .withRotationPoint(-0.08000000238418581, -1.24000003695488, -2.760000082254411)
+                .withRotationPoint(-0.08000000238419003, -1.5600000464916233, -2.1200000631809255)
                 // .withCreativeTab(ModernWarfareMod.gunsTab)
                 .withModel(new com.paneedah.mwc.models.Stoner63LMGCover(), "stoner63lmg.png")
                 .withName("Stoner63LMGCover")
@@ -1712,7 +1712,7 @@ public class AuxiliaryAttachments {
         Stoner63LMGBelt = new AttachmentBuilder<Weapon>()
                 .withCategory(AttachmentCategory.EXTRA3)
                 // .withCreativeTab(ModernWarfareMod.gunsTab)
-                .withRotationPoint(-0.7600000226497652, -0.24000000715255743, -2.6800000798702257)
+                .withRotationPoint(0.44000001311301773, -1.1200000333786013, -1.6400000488758113)
                 .withModel(new com.paneedah.mwc.models.Stoner63LMGBelt(), "stoner63lmg.png")
                 .withName("Stoner63LMGBelt")
                 .withRenderablePart().withTextureName("Dummy.png")

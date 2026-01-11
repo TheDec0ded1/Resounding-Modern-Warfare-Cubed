@@ -1135,7 +1135,7 @@ public class Magazines {
                 .withAmmo(100)
                 .withCompatibleBullet(Bullets.Bullet556x45)
                 .withName("Stoner63LMGBox")
-                .withRotationPoint(0.8812000082910061, 0.8648000418066975, -1.40640004143715)
+                .withRotationPoint(0.44000001311301773, -1.1200000333786013, -1.6400000488758113)
 
                 .withCreativeTab(ModernWarfareMod.AmmoTab)
                 .withModel(new com.paneedah.mwc.models.Stoner63LMGBox(), "stoner63lmg.png")
@@ -1166,6 +1166,7 @@ public class Magazines {
                 .withAmmo(30)
                 .withCompatibleBullet(Bullets.Bullet556x45)
                 .withName("Stoner63AutoRifleMag")
+				.withRotationPoint(-0.12000000357628293, -1.640000048875809, -2.1600000643730173)
                 .withCreativeTab(ModernWarfareMod.AmmoTab)
                 .withModel(new com.paneedah.mwc.models.Stoner63AutoRifleMag(), "stoner63ar.png")
                 .withFirstPersonPositioning((player, itemStack) -> {

@@ -55,23 +55,23 @@ public class Origin12Factory {
         .withCreativeTab(ModernWarfareMod.ShotgunsTab)
         .useNewSystem()
         .withRecoilParam(new RecoilParam(
-        		// The weapon power
-        		32.5,
-        		// Muzzle climb divisor
-        		24.0,
-        		// "Stock Length"
-        		50.0,
-        		// Recovery rate from initial shot
-        		0.3875,
-        		// Recovery rate @ "stock"
-        		0.45,
-        		// Recoil rotation (Y)
-        		0.0,
-        		// Recoil rotation (Z)
-        		0.0,
-        		// Ads similarity divisor
-        		1.0
-        ))
+		// The weapon power
+		95.0,
+		// Muzzle climb divisor
+		20.625,
+		// "Stock Length"
+		20.0,
+		// Recovery rate from initial shot
+		0.4875,
+		// Recovery rate @ "stock"
+		0.4875,
+		// Recoil rotation (Y)
+		0.0,
+		// Recoil rotation (Z)
+		0.0,
+		// Ads similarity divisor
+		1.45
+))
         .withInformationProvider(stack -> Arrays.asList(
         "Type: Semi-Automatic Tactical Shotgun",
         "Damage per Pellet: 6",

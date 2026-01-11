@@ -1322,6 +1322,15 @@
       }
     ]
   },
+   "qbz97": {
+    "category": "master",
+    "sounds": [
+      {
+       "name": "mwc:qbz97",
+       "stream": false
+      }
+    ]
+  },
    "qbz03": {
     "category": "master",
     "sounds": [

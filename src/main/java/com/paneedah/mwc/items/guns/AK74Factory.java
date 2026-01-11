@@ -61,21 +61,21 @@ public class AK74Factory {
         .useNewSystem()
         .withRecoilParam(new RecoilParam(
 		// The weapon power
-		15.0,
+		20.0,
 		// Muzzle climb divisor
-		11.25,
+		20.25,
 		// "Stock Length"
-		70.0,
+		55.00000000000001,
 		// Recovery rate from initial shot
-		0.5,
+		0.55,
 		// Recovery rate @ "stock"
-		0.5375,
+		0.55,
 		// Recoil rotation (Y)
 		0.0,
 		// Recoil rotation (Z)
 		0.0,
 		// Ads similarity divisor
-		2.2375
+		1.45
 ))
         .withInformationProvider(stack -> Arrays.asList(
         "Type: Assault Rifle",

@@ -263,6 +263,8 @@ public class Guns {
 	public static Item Stoner63AutoRifle;
 	public static Item Stoner63Rifle;
     public static Item QBZ97;
+    public static Item QBZ97B;
+    public static Item QBB97;
 
     
     public static void init(Object mod, CommonProxy proxy) {
@@ -366,6 +368,7 @@ public class Guns {
         QBZ95B = new QBZ95BFactory().createGun(proxy);
         QBZ03 = new QBZ03Factory().createGun(proxy);
         QBZ97 = new QBZ97Factory().createGun(proxy);
+        QBZ97B = new QBZ97BFactory().createGun(proxy);
         STG44 = new STG44Factory().createGun(proxy);
         M1Carbine = new M1CarbineFactory().createGun(proxy);
         M2Carbine = new M2CarbineFactory().createGun(proxy);
@@ -421,6 +424,7 @@ public class Guns {
         RPK74 = new RPK74Factory().createGun(proxy);
         RPK16 = new RPK16Factory().createGun(proxy);
         QBB95 = new QBB95Factory().createGun(proxy);
+        QBB97 = new QBB97Factory().createGun(proxy);
         MG36 = new MG36Factory().createGun(proxy);
 
         DP28 = new DP28Factory().createGun(proxy);

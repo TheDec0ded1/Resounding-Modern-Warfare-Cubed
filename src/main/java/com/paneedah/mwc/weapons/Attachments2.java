@@ -7560,7 +7560,7 @@ public class Attachments2 {
                         GL11.glRotatef(90F, 0f, 0f, 1f);
                         GL11.glScaled(0.4F, 0.4F, 0.4F);
                     }
-                }).withName("QBZ95Dustcover ")
+                }).withName("QBZ95Dustcover")
                 
                 .withTextureName("Dummy.png")
                 .build(ModernWarfareMod.MOD_CONTEXT);
@@ -7594,7 +7594,7 @@ public class Attachments2 {
                         GL11.glRotatef(90F, 0f, 0f, 1f);
                         GL11.glScaled(0.4F, 0.4F, 0.4F);
                     }
-                }).withName("QBZ95BDustcover ")
+                }).withName("QBZ95BDustcover")
                 
                 .withTextureName("Dummy.png")
                 .build(ModernWarfareMod.MOD_CONTEXT);
@@ -7628,7 +7628,7 @@ public class Attachments2 {
                         GL11.glRotatef(90F, 0f, 0f, 1f);
                         GL11.glScaled(0.4F, 0.4F, 0.4F);
                     }
-                }).withName("QBB95Dustcover ")
+                }).withName("QBB95Dustcover")
                 
                 .withTextureName("Dummy.png")
                 .build(ModernWarfareMod.MOD_CONTEXT);

@@ -49,23 +49,23 @@ public class Stoner63AutoRifleFactory {
         .withCreativeTab(ModernWarfareMod.LMGsTab)
         .useNewSystem()
         .withRecoilParam(new RecoilParam(
-				// The weapon power
-				15.0,
-				// Muzzle climb divisor
-				15.75,
-				// "Stock Length"
-				50.0,
-				// Recovery rate from initial shot
-				0.4,
-				// Recovery rate @ "stock"
-				0.3125,
-				// Recoil rotation (Y)
-				0.0,
-				// Recoil rotation (Z)
-				0.0,
-				// Ads similarity divisor
-				1.0
-		))
+		// The weapon power
+		20.0,
+		// Muzzle climb divisor
+		20.625,
+		// "Stock Length"
+		100.0,
+		// Recovery rate from initial shot
+		0.2,
+		// Recovery rate @ "stock"
+		0.2,
+		// Recoil rotation (Y)
+		0.0,
+		// Recoil rotation (Z)
+		0.0,
+		// Ads similarity divisor
+		1.45
+))
          
          .withUnremovableAttachmentCategories(AttachmentCategory.GUARD)
          .withUnremovableAttachmentCategories(AttachmentCategory.FRONTSIGHT)
@@ -153,7 +153,7 @@ public class Stoner63AutoRifleFactory {
           
             
                 .withFirstPersonPositioningZooming((renderContext) -> {
-                	GL11.glTranslatef(0.18f, -0.23f, 0.7f);
+                	GL11.glTranslatef(-0.05f, 0.17f, 0.7f);
                 
              // ACOG Zoom
                 if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.Kobra)) {

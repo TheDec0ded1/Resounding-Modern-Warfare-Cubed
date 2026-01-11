@@ -5,14 +5,12 @@ import net.minecraft.client.model.ModelBox;
 import net.minecraft.client.model.ModelRenderer;
 import net.minecraft.entity.Entity;
 
-// Made with Blockbench 5.0.5
+// Made with Blockbench 5.0.7
 // Exported for Minecraft version 1.7 - 1.12
 // Paste this class into your mod and generate all required imports
 
 
 public class QBB97 extends ModelWithAttachments {
-	private final ModelRenderer righthand;
-	private final ModelRenderer lefthand;
 	private final ModelRenderer gun;
 	private final ModelRenderer barrelandreciever;
 	private final ModelRenderer cube_r1;
@@ -65,16 +63,6 @@ public class QBB97 extends ModelWithAttachments {
 	public QBB97() {
 		textureWidth = 352;
 		textureHeight = 352;
-
-		righthand = new ModelRenderer(this);
-		righthand.setRotationPoint(-4.4F, 0.7F, 25.9F);
-		setRotationAngle(righthand, -0.0943F, -0.0834F, -0.0291F);
-		righthand.cubeList.add(new ModelBox(righthand, 0, 0, -4.5F, -4.65F, -33.0F, 9, 9, 33, 0.0F, false));
-
-		lefthand = new ModelRenderer(this);
-		lefthand.setRotationPoint(13.0F, 1.0F, 11.7F);
-		setRotationAngle(lefthand, 0.1431F, 0.4136F, 1.0075F);
-		lefthand.cubeList.add(new ModelBox(lefthand, 0, 0, -4.4F, -4.55F, -38.0F, 9, 9, 38, 0.0F, false));
 
 		gun = new ModelRenderer(this);
 		gun.setRotationPoint(0.0F, 24.0F, 0.0F);
@@ -475,8 +463,6 @@ public class QBB97 extends ModelWithAttachments {
 
 	@Override
 	public void render(Entity entity, float f, float f1, float f2, float f3, float f4, float f5) {
-		righthand.render(f5);
-		lefthand.render(f5);
 		gun.render(f5);
 	}
 

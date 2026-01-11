@@ -8,7 +8,7 @@ import com.paneedah.mwc.weapons.Attachments;
 import com.paneedah.mwc.weapons.Attachments2;
 import com.paneedah.mwc.weapons.Attachments3;
 import com.paneedah.mwc.weapons.AuxiliaryAttachments;
-import com.paneedah.mwc.weapons.Magazines;
+import com.paneedah.mwc.weapons.STANAGMagazines;
 import com.paneedah.weaponlib2.AttachmentCategory;
 import com.paneedah.weaponlib2.RenderableState;
 import com.paneedah.weaponlib2.Weapon;
@@ -23,21 +23,21 @@ import org.lwjgl.opengl.GL11;
 
 import java.util.Arrays;
 
-public class QCW05Factory {
+public class QBB97Factory {
 
     public Item createGun(CommonProxy commonProxy) {
         return new Weapon.Builder()
 
-        .withName("qcw05")
+        .withName("qbb97")
         .withFireRate(0.75f)
         .withRecoil(2.5f)
         .withZoom(0.9f)
-        .withConfigGroup(GunConfigurationGroup.SMG)
+        .withConfigGroup(GunConfigurationGroup.AR)
         .hasFlashPedals()
         .withMaxShots(1, Integer.MAX_VALUE)
         //.withMaxShots(5)
-        .withShootSound("qcw05")
-        .withSilencedShootSound("qcw05_silenced")
+        .withShootSound("qbz97")
+        .withSilencedShootSound("qbz95_silenced")
         .withReloadSound("fnfal_reload")
         .withUnloadSound("fnfal_unload")
         .withInspectSound("inspection")
@@ -50,7 +50,7 @@ public class QCW05Factory {
         .withFlashScale(() -> 0.5f)
         .withFlashOffsetX(() -> 0.09f)
         .withFlashOffsetY(() -> 0.2f)
-        .withCreativeTab(ModernWarfareMod.SMGsTab)
+        .withCreativeTab(ModernWarfareMod.LMGsTab)
         .useNewSystem()
         .withRecoilParam(new RecoilParam(
 				// The weapon power
@@ -94,20 +94,78 @@ public class QCW05Factory {
         .withUnremovableAttachmentCategories(AttachmentCategory.GUARD)
         
 
-        .withCompatibleAttachment(AuxiliaryAttachments.QCW05Action, true, (model) -> {
+        .withCompatibleAttachment(AuxiliaryAttachments.QBZ95Action, true, (model) -> {
         })
-        .withCompatibleAttachment(Attachments2.QCW05Body, true, (model) -> {
+         .withCompatibleAttachment(Attachments2.QBB95Body, true, (model) -> {
         })
-        .withCompatibleAttachment(Attachments2.QCW05Dustcover, true, (model) -> {
+        .withCompatibleAttachment(Attachments2.QBZ95Dustcover, (model) -> {
         })
-        .withCompatibleAttachment(Attachments2.QCW05Upper, true, (model) -> {
+        .withCompatibleAttachment(Attachments2.QBZ95BDustcover, (model) -> {
         })
-        .withCompatibleAttachment(Attachments2.QCW05Suppressor, true, (model) -> {
+        .withCompatibleAttachment(Attachments2.QBB95Dustcover, true, (model) -> {
         })
-        .withCompatibleAttachment(Magazines.QCW05Mag, (model) -> {
+        .withCompatibleAttachment(Attachments2.QBB95Upper, true, (model) -> {
         })
+        .withCompatibleAttachment(Attachments2.QBZ95Upper, (model) -> {
+        })
+        .withCompatibleAttachment(Attachments2.QBZ95Longbow, (model) -> {
+        })
+        .withCompatibleAttachment(Attachments2.QBB95Bipod, true, (model) -> {
+        })
+        .withCompatibleAttachment(STANAGMagazines.M4A1Mag, (model) -> {
+		    GL11.glTranslatef(-0.335F, 0.4F, 1.65F);
+            GL11.glScaled(1.05F, 1.2F, 1.15F);
+            
+//            GL11.glTranslatef(0F, 0.35F, 0F);
+        })
+        .withCompatibleAttachment(STANAGMagazines.M16Mag, (model) -> {
+		    GL11.glTranslatef(-0.335F, 0.4F, 1.65F);
+            GL11.glScaled(1.05F, 1.2F, 1.15F);
+            
+//            GL11.glTranslatef(0F, 0.35F, 0F);
+        })
+		.withCompatibleAttachment(STANAGMagazines.C8Mag, (model) -> {
+		    GL11.glTranslatef(-0.335F, 0.4F, 1.65F);
+            GL11.glScaled(1.05F, 1.2F, 1.15F);
+        })
+                .withCompatibleAttachment(STANAGMagazines.LancerMag10ClearGrey, (model) -> {
+                    GL11.glTranslatef(-0.335F, 0.4F, 1.65F);
+                    GL11.glScaled(1.05F, 1.2F, 1.15F);
+                })
+                .withCompatibleAttachment(STANAGMagazines.LancerMag20ClearGrey, (model) -> {
+                    GL11.glTranslatef(-0.335F, 0.4F, 1.65F);
+                    GL11.glScaled(1.05F, 1.2F, 1.15F);
+                })
+                .withCompatibleAttachment(STANAGMagazines.LancerMag30ClearGrey, (model) -> {
+                    GL11.glTranslatef(-0.335F, 0.4F, 1.65F);
+                    GL11.glScaled(1.05F, 1.2F, 1.15F);
+                })
+                .withCompatibleAttachment(STANAGMagazines.LancerMag10ClearGreen, (model) -> {
+                    GL11.glTranslatef(-0.335F, 0.4F, 1.65F);
+                    GL11.glScaled(1.05F, 1.2F, 1.15F);
+                })
+                .withCompatibleAttachment(STANAGMagazines.LancerMag20ClearGreen, (model) -> {
+                    GL11.glTranslatef(-0.335F, 0.4F, 1.65F);
+                    GL11.glScaled(1.05F, 1.2F, 1.15F);
+                })
+                .withCompatibleAttachment(STANAGMagazines.LancerMag30ClearGreen, (model) -> {
+                    GL11.glTranslatef(-0.335F, 0.4F, 1.65F);
+                    GL11.glScaled(1.05F, 1.2F, 1.15F);
+                })
+                .withCompatibleAttachment(STANAGMagazines.LancerMag10ClearBlue, (model) -> {
+                    GL11.glTranslatef(-0.335F, 0.4F, 1.65F);
+                    GL11.glScaled(1.05F, 1.2F, 1.15F);
+                })
+                .withCompatibleAttachment(STANAGMagazines.LancerMag20ClearBlue, (model) -> {
+                    GL11.glTranslatef(-0.335F, 0.4F, 1.65F);
+                    GL11.glScaled(1.05F, 1.2F, 1.15F);
+                })
+                .withCompatibleAttachment(STANAGMagazines.LancerMag30ClearBlue, (model) -> {
+                    GL11.glTranslatef(-0.335F, 0.4F, 1.65F);
+                    GL11.glScaled(1.05F, 1.2F, 1.15F);
+                })      
         .withCompatibleAttachment(Attachments3.NightRaider, (player, stack) -> {
-            GL11.glTranslatef(-0.21F, -2.2F, -2F);
+            GL11.glTranslatef(-0.21F, -1.87F, -1.4F);
             GL11.glScaled(0.75F, 0.75F, 0.75F);
         },(model) -> {
             if(model instanceof JPUreticle) {
@@ -116,7 +174,7 @@ public class QCW05Factory {
             }
         })
         .withCompatibleAttachment(Attachments3.ACOG, (player, stack) -> {
-            GL11.glTranslatef(-0.295F, -2.25F, -0.7F);
+            GL11.glTranslatef(-0.295F, -1.92F, 0.2F);
             GL11.glScaled(0.73F, 0.73F, 0.73F);
         },(model) -> {
             if(model instanceof AcogScope2) {
@@ -140,7 +198,7 @@ public class QCW05Factory {
 		})
         
         .withCompatibleAttachment(Attachments3.Specter, (player, stack) -> {
-		            GL11.glTranslatef(-0.185F, -1.93F, -1F);
+		            GL11.glTranslatef(-0.185F, -1.6F, -0.2F);
 		            GL11.glScaled(0.4F, 0.4F, 0.4F);
 		},(model) -> {
 		    if(model instanceof Acog2) {
@@ -150,7 +208,7 @@ public class QCW05Factory {
 		})
         
 		.withCompatibleAttachment(Attachments3.MicroReflex, (player, stack) -> {
-		    GL11.glTranslatef(-0.15F, -2.74F, -1F);
+		    GL11.glTranslatef(-0.15F, -2.41F, -0F);
 		    GL11.glScaled(0.35F, 0.35F, 0.35F);
 		    },(model) -> {
 		        if(model instanceof Reflex2) {
@@ -163,7 +221,7 @@ public class QCW05Factory {
 		    })
         
         .withCompatibleAttachment(Attachments3.MicroT1, (player, stack) -> {
-        	GL11.glTranslatef(-0.177F, -2.22F, -1.2F);
+        	GL11.glTranslatef(-0.177F, -1.89F, -0.6F);
             GL11.glScaled(0.36F, 0.36F, 0.36F);
         },(model) -> {
             if(model instanceof Reflex2) {
@@ -172,7 +230,7 @@ public class QCW05Factory {
             }
         })
         .withCompatibleAttachment(Attachments3.AimpointCompM5, (player, stack) -> {
-        	GL11.glTranslatef(-0.177F, -1.52F, -1.2F);
+        	GL11.glTranslatef(-0.177F, -1.89F, -0.6F);
             GL11.glScaled(0.36F, 0.36F, 0.36F);
 	    },(model) -> {
 	        if(model instanceof Reflex2) {
@@ -181,7 +239,7 @@ public class QCW05Factory {
 	        }
 	    })
         .withCompatibleAttachment(Attachments3.Reflex, (player, stack) -> {
-            GL11.glTranslatef(-0.065F, -2.02F, -1.2F);
+            GL11.glTranslatef(-0.065F, -1.69F, -0.3F);
             GL11.glScaled(0.45F, 0.45F, 0.45F);
             },(model) -> {
                 if(model instanceof Reflex2) {
@@ -190,7 +248,7 @@ public class QCW05Factory {
                 }
             })
         .withCompatibleAttachment(Attachments3.BijiaReflex, (player, stack) -> {
-            GL11.glTranslatef(-0.066F, -2.02F, -1.2F);
+            GL11.glTranslatef(-0.066F, -1.69F, -0.3F);
             GL11.glScaled(0.45F, 0.45F, 0.45F);
         },(model) -> {
         if(model instanceof Reflex2) {
@@ -232,7 +290,7 @@ public class QCW05Factory {
 		})
         
         .withCompatibleAttachment(Attachments3.VortexRedux, (player, stack) -> {
-            GL11.glTranslatef(-0.3F, -2.25F, -1.3F);
+            GL11.glTranslatef(-0.3F, -1.92F, -0.5F);
             GL11.glScaled(0.45F, 0.45F, 0.45F);
 	    },(model) -> {
 	        if(model instanceof Holo2) {
@@ -241,7 +299,7 @@ public class QCW05Factory {
 	        }
 	    })
         .withCompatibleAttachment(Attachments3.Kobra, (player, stack) -> {
-        	GL11.glTranslatef(-0.044F, -2.07F, -1F);
+        	GL11.glTranslatef(-0.044F, -1.74F, -0.1F);
             GL11.glScaled(0.65F, 0.65F, 0.65F);
         },(model) -> {
             if(model instanceof Reflex2) {
@@ -250,7 +308,7 @@ public class QCW05Factory {
             }
         })
         .withCompatibleAttachment(Attachments3.KobraGen3, (player, stack) -> {
-        	GL11.glTranslatef(-0.044F, -2.07F, -1F);
+        	GL11.glTranslatef(-0.044F, -1.74F, -0.1F);
             GL11.glScaled(0.65F, 0.65F, 0.65F);
 	    },(model) -> {
 	        if(model instanceof Reflex2) {
@@ -259,35 +317,40 @@ public class QCW05Factory {
 	        }
 	    })
         .withCompatibleAttachment(Attachments3.Grip2, (model) -> {
-            GL11.glTranslatef(-0.2F, -0.1F, -2.5F);
+            GL11.glTranslatef(-0.2F, -0.1F, -2.0F);
             GL11.glScaled(1F, 1F, 1F);
         })
         .withCompatibleAttachment(Attachments3.StubbyGrip, (model) -> {
-        	GL11.glTranslatef(-0.2F, -0.1F, -2.5F);
+        	GL11.glTranslatef(-0.2F, -0.1F, -2.0F);
             GL11.glScaled(1F, 1F, 1F);
         })
         .withCompatibleAttachment(Attachments3.AngledGrip, (model) -> {
-        	GL11.glTranslatef(-0.2F, -0.05F, -2.5F);
+        	GL11.glTranslatef(-0.2F, -0.05F, -2.0F);
             GL11.glScaled(1F, 1F, 1F);
         })
         .withCompatibleAttachment(Attachments3.VGrip, (model) -> {
-        	GL11.glTranslatef(-0.2F, -0.1F, -2.5F);
+        	GL11.glTranslatef(-0.2F, -0.1F, -2.0F);
             GL11.glScaled(1F, 1F, 1F);
         })
         .withCompatibleAttachment(Attachments3.Laser2, (p, s) -> {
-        	GL11.glTranslatef(0.15F, -1F, -3.3F);
+		    GL11.glTranslatef(-0.22F, -1.35F, -2.5F);
             GL11.glScaled(0.8F, 0.8F, 0.8F);
+            GL11.glRotatef(-90F, 0f, 0f, 1f);
 		})
 		.withCompatibleAttachment(Attachments3.Laser, (p, s) -> {
 			GL11.glTranslatef(0.15F, -1F, -3.3F);
             GL11.glScaled(0.8F, 0.8F, 0.8F);
 		})
-        .withTextureNames("qcw05")
+        .withCompatibleAttachment(Attachments3.Silencer556x45, (model) -> {
+        	GL11.glTranslatef(-0.2F, -1.15F, -5.8F);
+            GL11.glScaled(1F, 1F, 1F);
+        })
+        .withTextureNames("qbb97")
         .withRenderer(new WeaponRenderer.Builder()
 
-            .withModel(new QCW05())
-            .withActionPiece(AuxiliaryAttachments.QCW05Action)
-            .withActionTransform(new Transform().withPosition(0, 0, -0.8))
+            .withModel(new QBB97())
+            .withActionPiece(AuxiliaryAttachments.QBZ95Action)
+            .withActionTransform(new Transform().withPosition(0, 0, 1))
             //.withTextureName("AK47")
             //.withWeaponProximity(0.99F)
             //.withYOffsetZoom(5F)
@@ -328,9 +391,20 @@ public class QCW05Factory {
                 
                 )
                 
-                .setupModernAnimations("qcw05", AuxiliaryAttachments.QCW05Action)
-                .setupModernMagazineAnimations("qcw05", 
-                		Magazines.QCW05Mag)
+                .setupModernAnimations("qbz97", AuxiliaryAttachments.QBZ95Action)
+                .setupModernMagazineAnimations("qbz97", 
+                		STANAGMagazines.M4A1Mag, 
+                		STANAGMagazines.M16Mag, 
+                        	STANAGMagazines.LancerMag10ClearBlue,
+                        	STANAGMagazines.LancerMag20ClearBlue,
+                        	STANAGMagazines.LancerMag30ClearBlue,
+                        	STANAGMagazines.LancerMag10ClearGreen,
+                       		STANAGMagazines.LancerMag20ClearGreen,
+                        	STANAGMagazines.LancerMag30ClearGreen,
+                        	STANAGMagazines.LancerMag10ClearGrey,
+                        	STANAGMagazines.LancerMag20ClearGrey,
+                        	STANAGMagazines.LancerMag30ClearGrey,
+                		STANAGMagazines.C8Mag)
             
             .withThirdPersonPositioning((renderContext) -> {
                 GL11.glScaled(0.45F, 0.45F, 0.45F);
@@ -339,16 +413,17 @@ public class QCW05Factory {
                 GL11.glRotatef(70F, 1f, 0f, 0f);
                 })
             
-            .withFirstPersonPositioningCustomRecoiled(AuxiliaryAttachments.QCW05Action.getRenderablePart(), (renderContext) -> {
-                GL11.glTranslatef(0f, 0f, -0.8f);
+            .withFirstPersonPositioningCustomRecoiled(AuxiliaryAttachments.QBZ95Action.getRenderablePart(), (renderContext) -> {
+                GL11.glTranslatef(0f, 0f, 1f);
                 })
                 
-            .withFirstPersonPositioningCustomZoomingRecoiled(AuxiliaryAttachments.QCW05Action.getRenderablePart(), (renderContext) -> {
-                GL11.glTranslatef(0f, 0f, -0.8f);
+            .withFirstPersonPositioningCustomZoomingRecoiled(AuxiliaryAttachments.QBZ95Action.getRenderablePart(), (renderContext) -> {
+                GL11.glTranslatef(0f, 0f, 1f);
                 })
-            .withFirstPersonCustomPositioning(AuxiliaryAttachments.QCW05Action.getRenderablePart(), (renderContext) -> {
+
+			.withFirstPersonCustomPositioning(AuxiliaryAttachments.QBZ95Action.getRenderablePart(), (renderContext) -> {
                 if(renderContext.getWeaponInstance().getAmmo() == 0) {
-                	GL11.glTranslatef(0f, 0f, -0.8f);
+                	GL11.glTranslatef(0f, 0f, 1.25f);
                 }
               })
                     
@@ -454,98 +529,98 @@ public class QCW05Factory {
             .withFirstPersonPositioningZooming((renderContext) -> {
 //                GL11.glRotatef(45F, 0f, 1f, 0f);
                 GL11.glScalef(3.000000f, 3.000000f, 3.000000f);
-                GL11.glTranslatef(0.14f, 1.2f, -1.1f);
+                GL11.glTranslatef(0.14f, 1.30f, -1.1f);
 
                 
              // ACOG Zoom
                 if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.NightRaider)) {
                     //System.out.println("Position me for Acog");
-                    GL11.glTranslatef(0F, 0.45f, 0.95f);
+                    GL11.glTranslatef(0F, 0.25f, 0.5f);
                 } 
                 
                 // ACOG Zoom
                 if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.ACOG)) {
                     //System.out.println("Position me for Acog");
-                    GL11.glTranslatef(0F, 0.5f, 1.15f);
+                    GL11.glTranslatef(0F, 0.30f, 0.25f);
                 } 
                 
              // ACOG Zoom
                 if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.LeupoldRailScope)) {
                     //System.out.println("Position me for Acog");
-                    GL11.glTranslatef(0F, 0.45f, 0.75f);
+                    GL11.glTranslatef(0F, 0.25f, 0.25f);
                 } 
                 
              // ACOG Zoom
                 if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.Specter)) {
                     //System.out.println("Position me for Acog");
-                    GL11.glTranslatef(0F, 0.41f, 1.2f);
+                    GL11.glTranslatef(0F, 0.22f, 0.3f);
                 } 
                 
              // ACOG Zoom
                 if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.MicroReflex)) {
                     //System.out.println("Position me for Acog");
-                    GL11.glTranslatef(0F, 0.48f, 0.7f);
+                    GL11.glTranslatef(0F, 0.28f, 0.3f);
                 } 
                 
              // ACOG Zoom
                 if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.MicroT1)) {
                     //System.out.println("Position me for Acog");
-                	GL11.glTranslatef(0F, 0.445f, 0.9f);
+                	GL11.glTranslatef(0F, 0.23f, 0.3f);
                 } 
                 
              // ACOG Zoom
                 if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.AimpointCompM5)) {
                     //System.out.println("Position me for Acog");
-                	GL11.glTranslatef(0F, 0.445f, 0.9f);
+                	GL11.glTranslatef(0F, 0.24f, 0.3f);
                 } 
                 
              // ACOG Zoom
                 if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.Reflex)) {
                     //System.out.println("Position me for Acog");
-                    GL11.glTranslatef(0F, 0.435f, 0.7f);
+                    GL11.glTranslatef(0F, 0.22f, 0.3f);
                 } 
                 
              // ACOG Zoom
                 if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.BijiaReflex)) {
                     //System.out.println("Position me for Acog");
-                    GL11.glTranslatef(0F, 0.42f, 0.7f);
+                    GL11.glTranslatef(0F, 0.22f, 0.3f);
                 } 
                 
              // ACOG Zoom
                 if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.Holographic)) {
                     //System.out.println("Position me for Acog");
-                	GL11.glTranslatef(0F, 0.50f, 0.7f);
+                	GL11.glTranslatef(0F, 0.27f, 0.4f);
                 } 
                 
              // ACOG Zoom
                 if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.HolographicAlt)) {
                     //System.out.println("Position me for Acog");
-                	GL11.glTranslatef(0F, 0.50f, 0.7f);
+                	GL11.glTranslatef(0F, 0.27f, 0.4f);
                 } 
                 
              // ACOG Zoom
                 if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.EotechHybrid2)) {
                     //System.out.println("Position me for Acog");
-                	GL11.glTranslatef(0F, 0.50f, 0.85f);
+                	GL11.glTranslatef(0F, 0.27f, 0.4f);
                 } 
                 
              // ACOG Zoom
                 if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.VortexRedux)) {
                     //System.out.println("Position me for Acog");
-                    GL11.glTranslatef(0F, 0.49f, 0.7f);
+                    GL11.glTranslatef(0F, 0.3f, 0.2f);
                 } 
                 
              // ACOG Zoom
                 if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.Kobra)) {
                     //System.out.println("Position me for Acog");
-                	GL11.glTranslatef(0F, 0.48f, 0.7f);
+                	GL11.glTranslatef(0F, 0.28f, 0.7f);
                 } 
                 
              // ACOG Zoom
                 if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), Attachments3.KobraGen3)) {
                     //System.out.println("Position me for Acog");
-                	GL11.glTranslatef(0F, 0.48f, 0.7f);
-                } 
+                	GL11.glTranslatef(0F, 0.28f, 0.7f);
+                }
                 
                 // Everything else
                 else {

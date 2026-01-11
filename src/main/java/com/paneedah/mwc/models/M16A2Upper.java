@@ -1,11 +1,4 @@
-package com.paneedah.mwc.models;
-
-import net.minecraft.client.model.ModelBase;
-import net.minecraft.client.model.ModelBox;
-import net.minecraft.client.model.ModelRenderer;
-import net.minecraft.entity.Entity;
-
-// Made with Blockbench 5.0.3
+// Made with Blockbench 5.0.7
 // Exported for Minecraft version 1.7 - 1.12
 // Paste this class into your mod and generate all required imports
 
@@ -97,13 +90,16 @@ public class M16A2Upper extends ModelBase {
 
 		upper = new ModelRenderer(this);
 		upper.setRotationPoint(0.0F, 24.0F, 0.0F);
-		upper.cubeList.add(new ModelBox(upper, 108, 437, -2.0F, -41.325F, 0.05F, 1, 1, 2, 0.0F, false));
-		upper.cubeList.add(new ModelBox(upper, 156, 444, -1.401F, -40.301F, -22.701F, 1, 1, 1, 0.0F, false));
-		upper.cubeList.add(new ModelBox(upper, 228, 438, -2.601F, -40.301F, -22.702F, 2, 1, 1, 0.0F, false));
+		upper.cubeList.add(new ModelBox(upper, 156, 444, -1.401F, -41.051F, -22.701F, 1, 1, 1, 0.0F, false));
+		upper.cubeList.add(new ModelBox(upper, 228, 438, -2.601F, -41.051F, -22.702F, 2, 1, 1, 0.0F, false));
 		upper.cubeList.add(new ModelBox(upper, 300, 437, -0.6F, -39.85F, -18.5F, 1, 1, 2, 0.0F, false));
 		upper.cubeList.add(new ModelBox(upper, 160, 444, -0.599F, -39.85F, -19.0F, 1, 1, 1, 0.0F, false));
-		upper.cubeList.add(new ModelBox(upper, 326, 375, -1.4F, -40.3F, -22.0F, 1, 1, 23, 0.0F, false));
-		upper.cubeList.add(new ModelBox(upper, 374, 375, -2.6F, -40.3F, -22.0F, 1, 1, 23, 0.0F, false));
+		upper.cubeList.add(new ModelBox(upper, 326, 375, -1.4F, -41.05F, -22.0F, 1, 1, 23, 0.0F, false));
+		upper.cubeList.add(new ModelBox(upper, 374, 375, -2.6F, -41.05F, -22.0F, 1, 1, 23, 0.0F, false));
+		upper.cubeList.add(new ModelBox(upper, 374, 375, -2.6F, -40.05F, -22.0F, 1, 1, 23, 0.0F, false));
+		upper.cubeList.add(new ModelBox(upper, 156, 444, -1.401F, -40.051F, -22.701F, 1, 1, 1, 0.0F, false));
+		upper.cubeList.add(new ModelBox(upper, 326, 375, -1.4F, -40.05F, -22.0F, 1, 1, 23, 0.0F, false));
+		upper.cubeList.add(new ModelBox(upper, 228, 438, -2.601F, -40.051F, -22.702F, 2, 1, 1, 0.0F, false));
 		upper.cubeList.add(new ModelBox(upper, 164, 444, -2.0F, -39.8F, -23.699F, 1, 1, 1, 0.0F, false));
 		upper.cubeList.add(new ModelBox(upper, 168, 444, -0.7F, -38.5F, -23.697F, 1, 1, 1, 0.0F, false));
 		upper.cubeList.add(new ModelBox(upper, 172, 444, -3.3F, -38.5F, -23.697F, 1, 1, 1, 0.0F, false));
