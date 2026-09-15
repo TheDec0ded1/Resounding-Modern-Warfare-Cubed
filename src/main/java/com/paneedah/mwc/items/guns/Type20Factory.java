@@ -4,10 +4,7 @@ import com.paneedah.mwc.ModernWarfareMod;
 import com.paneedah.mwc.init.MWCItems;
 import com.paneedah.mwc.models.*;
 import com.paneedah.mwc.proxies.CommonProxy;
-import com.paneedah.mwc.weapons.Attachments;
-import com.paneedah.mwc.weapons.Attachments3;
-import com.paneedah.mwc.weapons.AuxiliaryAttachments;
-import com.paneedah.mwc.weapons.STANAGMagazines;
+import com.paneedah.mwc.weapons.*;
 import com.paneedah.weaponlib2.*;
 import com.paneedah.weaponlib2.animation.Transform;
 import com.paneedah.weaponlib2.animation.Transition;
@@ -35,8 +32,8 @@ public class Type20Factory implements GunFactory {
 		.hasFlashPedals()
 		.withMaxShots(1, 3, Integer.MAX_VALUE)
 		//.withMaxShots(5)
-		.withShootSound("acr")
-		.withSilencedShootSound("m4a1_silenced")
+		.withShootSound("type20")
+		.withSilencedShootSound("acr_silenced")
 		.withReloadSound("acr_reload")
 		.withUnloadSound("acr_unload")
 		.withDrawSound("acr_draw")
@@ -51,23 +48,23 @@ public class Type20Factory implements GunFactory {
 		.withCreativeTab(ModernWarfareMod.AssaultRiflesTab)
 		.useNewSystem()
 		.withRecoilParam(new RecoilParam(
-				// The weapon power
-				15.0,
-				// Muzzle climb divisor
-				15.75,
-				// "Stock Length"
-				50.0,
-				// Recovery rate from initial shot
-				0.4,
-				// Recovery rate @ "stock"
-				0.3125,
-				// Recoil rotation (Y)
-				0.0,
-				// Recoil rotation (Z)
-				0.0,
-				// Ads similarity divisor
-				1.0
-		))
+		// The weapon power
+		37.5,
+		// Muzzle climb divisor
+		23.25,
+		// "Stock Length"
+		50.0,
+		// Recovery rate from initial shot
+		0.2125,
+		// Recovery rate @ "stock"
+		0.2125,
+		// Recoil rotation (Y)
+		0.0,
+		// Recoil rotation (Z)
+		0.0,
+		// Ads similarity divisor
+		1.0
+))
 		.withInformationProvider(stack -> Arrays.asList(
         "Type: Modular Assault Rifle", 
         "Damage: 6", 
@@ -94,25 +91,30 @@ public class Type20Factory implements GunFactory {
         .withCreativeTab(ModernWarfareMod.AssaultRiflesTab)
         .withUnremovableAttachmentCategories(AttachmentCategory.GUARD)
         .withUnremovableAttachmentCategories(AttachmentCategory.RECEIVER)
-        .withUnremovableAttachmentCategories(AttachmentCategory.RAILING)
+        .withUnremovableAttachmentCategories(AttachmentCategory.RECEIVER2)
+        .withUnremovableAttachmentCategories(AttachmentCategory.STOCK)
         .withUnremovableAttachmentCategories(AttachmentCategory.BACKGRIP)
-        .withCompatibleAttachment(Attachments.Placeholder, true, (model) -> {
-            GL11.glTranslatef(0.01f, -0.19f, -0.4f);
-            GL11.glScaled(0F, 0F, 0F);
-        })
-        .withCompatibleAttachment(Attachments.M4Grip, true, (model) -> {
-//          GL11.glTranslatef(0f, 0f, 1f);
-        })
-	      .withCompatibleAttachment(Attachments.M4GripTan, (model) -> {
-	//          GL11.glTranslatef(0f, 0f, 1f);
-	      })
-	      .withCompatibleAttachment(Attachments.M4GripGray, (model) -> {
-	//          GL11.glTranslatef(0f, 0f, 1f);
-	      })
-        .withCompatibleAttachment(Attachments.Type20Handguard, true, (model) -> {
-//          GL11.glTranslatef(-0.35F, 0.3F, -1.31F);
-//          GL11.glScaled(1.15F, 1.2F, 1.2F);
-        })
+        .withCompatibleAttachment(ARParts.M4PistolGrip, (model) -> {})
+        .withCompatibleAttachment(ARParts.M16PistolGrip, (model) -> {})
+        .withCompatibleAttachment(ARParts.M4GripTan, (model) -> {})
+        .withCompatibleAttachment(ARParts.M4GripGray, (model) -> {})
+        .withCompatibleAttachment(ARParts.CQGrip, (model) -> {})
+        .withCompatibleAttachment(ARParts.M110Grip, (model) -> {})
+        .withCompatibleAttachment(ARParts.HK416Grip, true, (model) -> {})
+        .withCompatibleAttachment(ARParts.HK416GripTan, (model) -> {})
+        .withCompatibleAttachment(ARParts.LMG68Grip, (model) -> {})
+        .withCompatibleAttachment(ARParts.DDGrip, (model) -> {})
+        .withCompatibleAttachment(Attachments2.Type20Handguard, true, (model) -> {})
+        .withCompatibleAttachment(Attachments2.Type20Lower, true, (model) -> {})
+        .withCompatibleAttachment(Attachments2.Type20Receiver, true, (model) -> {})
+        .withCompatibleAttachment(Attachments2.Type20Stock, true, (model) -> {})
+        .withCompatibleAttachment(Attachments2.Type20Cover, true, (model) -> {})
+        .withCompatibleAttachment(Attachments2.Type20HandguardTan, (model) -> {})
+        .withCompatibleAttachment(Attachments2.Type20LowerTan, (model) -> {})
+        .withCompatibleAttachment(Attachments2.Type20ReceiverTan, (model) -> {})
+        .withCompatibleAttachment(Attachments2.Type20StockTan, (model) -> {})
+        .withCompatibleAttachment(AuxiliaryAttachments.Type20Action, true, (model) -> {})
+
         .withCompatibleAttachment(STANAGMagazines.M4A1Mag, (model) -> {
             GL11.glTranslatef(-0.322F, 0.5F, -1.25F);
             GL11.glScaled(0.97F, 1.5F, 1.5F);
@@ -123,12 +125,10 @@ public class Type20Factory implements GunFactory {
         })
         .withCompatibleAttachment(STANAGMagazines.Stanag50, (model) -> {
             GL11.glTranslatef(0F, -0.06F, -0.1F);
-//            GL11.glScaled(1.15F, 1.2F, 1.2F);
         })
         .withCompatibleAttachment(STANAGMagazines.Stanag60, (model) -> {
             GL11.glRotatef(-10F, 1f, 0f, 0f);
             GL11.glTranslatef(0F, 0.2F, -0.15F);
-//            GL11.glScaled(1.15F, 1.2F, 1.2F);
         })
         .withCompatibleAttachment(STANAGMagazines.Stanag100, (model) -> {
             GL11.glTranslatef(-0.36F, 0.5F, -1.31F);
@@ -336,11 +336,11 @@ public class Type20Factory implements GunFactory {
               GL11.glScaled(0.35F, 0.35F, 0.35F);
            }
       })
-        .withTextureNames("type20")
+		.withTextureNames("glock19")
         .withRenderer(new WeaponRenderer.Builder()
 
-            .withModel(new Type20())
-            .withActionPiece(AuxiliaryAttachments.ACRAction)
+            .withModel(new Glock18C())
+            .withActionPiece(AuxiliaryAttachments.Type20Action)
             .withActionTransform(new Transform().withPosition(0, 0, 1))
             //.withTextureName("M4A1")
             //.withWeaponProximity(0.99F)
@@ -389,7 +389,7 @@ public class Type20Factory implements GunFactory {
                 
                 )
                 
-                .setupModernAnimations("acr", AuxiliaryAttachments.AKaction)
+                .setupModernAnimations("acr", AuxiliaryAttachments.Type20Action)
                 .setupModernMagazineAnimations("acr", 
                 		STANAGMagazines.M4A1Mag, 
                 		STANAGMagazines.M38Mag, 
@@ -398,7 +398,7 @@ public class Type20Factory implements GunFactory {
                 		STANAGMagazines.Stanag60,
                 		STANAGMagazines.SOCOM_Mag)
                 
-            .withFirstPersonCustomPositioning(AuxiliaryAttachments.ACRAction.getRenderablePart(), (renderContext) -> {
+            .withFirstPersonCustomPositioning(AuxiliaryAttachments.Type20Action.getRenderablePart(), (renderContext) -> {
                 if(renderContext.getWeaponInstance().getAmmo() == 0) {
                     GL11.glTranslatef(0F, 0F, 1F);
                 }

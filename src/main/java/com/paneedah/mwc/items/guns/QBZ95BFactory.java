@@ -53,23 +53,23 @@ public class QBZ95BFactory {
         .withCreativeTab(ModernWarfareMod.AssaultRiflesTab)
         .useNewSystem()
         .withRecoilParam(new RecoilParam(
-				// The weapon power
-				15.0,
-				// Muzzle climb divisor
-				15.75,
-				// "Stock Length"
-				50.0,
-				// Recovery rate from initial shot
-				0.4,
-				// Recovery rate @ "stock"
-				0.3125,
-				// Recoil rotation (Y)
-				0.0,
-				// Recoil rotation (Z)
-				0.0,
-				// Ads similarity divisor
-				1.0
-		))
+		// The weapon power
+		35.0,
+		// Muzzle climb divisor
+		20.0,
+		// "Stock Length"
+		72.5,
+		// Recovery rate from initial shot
+		0.5875,
+		// Recovery rate @ "stock"
+		0.5875,
+		// Recoil rotation (Y)
+		0.0,
+		// Recoil rotation (Z)
+		0.0,
+		// Ads similarity divisor
+		1.0
+))
         .withInformationProvider(stack -> Arrays.asList(
         "Type: Bullpup Assault Rifle",
         "Damage: 6", 
@@ -113,6 +113,8 @@ public class QBZ95BFactory {
         .withCompatibleAttachment(Magazines.QBZ95Mag, (model) -> {
         })
         .withCompatibleAttachment(Magazines.QBB95Mag, (model) -> {
+        })
+        .withCompatibleAttachment(Magazines.QBZ191Magazine, (model) -> {
         })
         .withCompatibleAttachment(Attachments3.ACOG, (player, stack) -> {
             GL11.glTranslatef(-0.295F, -1.92F, 0.2F);
@@ -323,9 +325,10 @@ public class QBZ95BFactory {
                 )
                 
                 .setupModernAnimations("qbz95b", AuxiliaryAttachments.QBZ95Action)
-                .setupModernMagazineAnimations("qbz95b", 
+                .setupModernMagazineAnimations("qbz95b",
+						Magazines.QBZ191Magazine,
                 		Magazines.QBZ95Mag,
-                                Magazines.QBB95Mag)
+                        Magazines.QBB95Mag)
             
             .withThirdPersonPositioning((renderContext) -> {
                 GL11.glScaled(0.45F, 0.45F, 0.45F);

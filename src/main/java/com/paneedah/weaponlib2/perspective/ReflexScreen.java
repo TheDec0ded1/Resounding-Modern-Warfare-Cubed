@@ -153,7 +153,7 @@ public class ReflexScreen extends ModelBase implements CustomRenderer<Renderable
 		Shaders.reflexReticle.use();
 		
 		
-		//mc.getFramebuffer().bindFramebuffer(true);
+		mc.getFramebuffer().bindFramebuffer(true);
 
 		// upload uniforms
 		

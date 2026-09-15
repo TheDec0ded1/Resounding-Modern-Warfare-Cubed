@@ -55,23 +55,23 @@ public class FNFALFactory {
         .withCreativeTab(ModernWarfareMod.AssaultRiflesTab)
         .useNewSystem()
         .withRecoilParam(new RecoilParam(
-				// The weapon power
-				15.0,
-				// Muzzle climb divisor
-				15.75,
-				// "Stock Length"
-				50.0,
-				// Recovery rate from initial shot
-				0.4,
-				// Recovery rate @ "stock"
-				0.3125,
-				// Recoil rotation (Y)
-				0.0,
-				// Recoil rotation (Z)
-				0.0,
-				// Ads similarity divisor
-				1.0
-		))
+		// The weapon power
+		62.5,
+		// Muzzle climb divisor
+		26.625,
+		// "Stock Length"
+		100.0,
+		// Recovery rate from initial shot
+		0.5875,
+		// Recovery rate @ "stock"
+		0.5875,
+		// Recoil rotation (Y)
+		0.0,
+		// Recoil rotation (Z)
+		0.0,
+		// Ads similarity divisor
+		1.0
+))
         .withInformationProvider(stack -> Arrays.asList(
         "Type: Battle rifle",
         "Damage: 10", 

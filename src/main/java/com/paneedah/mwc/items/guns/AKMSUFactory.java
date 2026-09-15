@@ -8,7 +8,7 @@ import com.paneedah.mwc.init.MWCItems;
 import com.paneedah.mwc.models.*;
 import com.paneedah.mwc.proxies.CommonProxy;
 import com.paneedah.mwc.weapons.Attachments;
-import com.paneedah.mwc.weapons.Attachments2;
+import com.paneedah.mwc.weapons.AKParts;
 import com.paneedah.mwc.weapons.Attachments3;
 import com.paneedah.mwc.weapons.AuxiliaryAttachments;
 import com.paneedah.mwc.weapons.Magazines;
@@ -60,23 +60,23 @@ public class AKMSUFactory {
         .withCreativeTab(ModernWarfareMod.AssaultRiflesTab)
         .useNewSystem()
         .withRecoilParam(new RecoilParam(
-				// The weapon power
-				15.0,
-				// Muzzle climb divisor
-				15.75,
-				// "Stock Length"
-				50.0,
-				// Recovery rate from initial shot
-				0.4,
-				// Recovery rate @ "stock"
-				0.3125,
-				// Recoil rotation (Y)
-				0.0,
-				// Recoil rotation (Z)
-				0.0,
-				// Ads similarity divisor
-				1.0
-		))
+		// The weapon power
+		55.0,
+		// Muzzle climb divisor
+		23.25,
+		// "Stock Length"
+		72.5,
+		// Recovery rate from initial shot
+		0.5875,
+		// Recovery rate @ "stock"
+		0.5875,
+		// Recoil rotation (Y)
+		0.0,
+		// Recoil rotation (Z)
+		0.0,
+		// Ads similarity divisor
+		1.0
+))
         .withInformationProvider(stack -> Arrays.asList(
         "Type: Assault Rifle/Carbine",
         "Damage: 6", 
@@ -100,91 +100,91 @@ public class AKMSUFactory {
         .withUnremovableAttachmentCategories(AttachmentCategory.GUARD)
         .withUnremovableAttachmentCategories(AttachmentCategory.BACKGRIP)
 //        .withUnremovableAttachmentCategories(AttachmentCategory.RAILING)
-        .withCompatibleAttachment(Attachments2.MPIKMStock, (model) -> {
+        .withCompatibleAttachment(AKParts.MPIKMStock, (model) -> {
       })
-        .withCompatibleAttachment(Attachments2.MPIKMGrip, (model) -> {
+        .withCompatibleAttachment(AKParts.MPIKMGrip, (model) -> {
       })
-        .withCompatibleAttachment(Attachments2.AMD63Stock, (model) -> {
+        .withCompatibleAttachment(AKParts.AMD63Stock, (model) -> {
       })
-        .withCompatibleAttachment(Attachments2.AMD63Grip, (model) -> {
+        .withCompatibleAttachment(AKParts.AMD63Grip, (model) -> {
       })
-        .withCompatibleAttachment(Attachments2.AMD65Grip, (model) -> {
+        .withCompatibleAttachment(AKParts.AMD65Grip, (model) -> {
       })
-        .withCompatibleAttachment(Attachments2.AK47BlondeStock, (model) -> {
+        .withCompatibleAttachment(AKParts.AK47BlondeStock, (model) -> {
       })
-        .withCompatibleAttachment(Attachments2.AK47BlondeGrip, (model) -> {
+        .withCompatibleAttachment(AKParts.AK47BlondeGrip, (model) -> {
       })
-        .withCompatibleAttachment(Attachments2.Type562Stock, (model) -> {
+        .withCompatibleAttachment(AKParts.Type562Stock, (model) -> {
       })
-        .withCompatibleAttachment(Attachments2.Type562Grip, (model) -> {
+        .withCompatibleAttachment(AKParts.Type562Grip, (model) -> {
       })
-        .withCompatibleAttachment(Attachments2.Type562Grip2, (model) -> {
+        .withCompatibleAttachment(AKParts.Type562Grip2, (model) -> {
       })
       
-        .withCompatibleAttachment(Attachments.AK47Stock, (model) -> {
+        .withCompatibleAttachment(AKParts.AK47Stock, (model) -> {
 //            GL11.glTranslatef(0f, 0f, 1f);
-        })        .withCompatibleAttachment(Attachments2.PT1Stock, (model) -> {
+        })        .withCompatibleAttachment(AKParts.PT1Stock, (model) -> {
 //            GL11.glTranslatef(0f, 0f, 1f);
-        })        .withCompatibleAttachment(Attachments2.PT1StockTan, (model) -> {
+        })        .withCompatibleAttachment(AKParts.PT1StockTan, (model) -> {
 //            GL11.glTranslatef(0f, 0f, 1f);
-        })        .withCompatibleAttachment(Attachments2.PT1StockGreen, (model) -> {
+        })        .withCompatibleAttachment(AKParts.PT1StockGreen, (model) -> {
 //            GL11.glTranslatef(0f, 0f, 1f);
         })
-        .withCompatibleAttachment(Attachments2.AKMStock, (model) -> {
+        .withCompatibleAttachment(AKParts.AKMStock, (model) -> {
 //          GL11.glTranslatef(0f, 0f, 1f);
         })
-        .withCompatibleAttachment(Attachments.RPKStock, (model) -> {
+        .withCompatibleAttachment(AKParts.RPKStock, (model) -> {
 //          GL11.glTranslatef(0f, 0f, 1f);
         })
-        .withCompatibleAttachment(Attachments2.RPK74Stock, (model) -> {
+        .withCompatibleAttachment(AKParts.RPK74Stock, (model) -> {
 //          GL11.glTranslatef(0f, 0f, 1f);
         })
-        .withCompatibleAttachment(Attachments2.RPK74MStock, (model) -> {
+        .withCompatibleAttachment(AKParts.RPK74MStock, (model) -> {
 //          GL11.glTranslatef(0f, 0f, 1f);
         })
-        .withCompatibleAttachment(Attachments2.RPK74MPlumStock, (model) -> {
+        .withCompatibleAttachment(AKParts.RPK74MPlumStock, (model) -> {
 //          GL11.glTranslatef(0f, 0f, 1f);
         })
-        .withCompatibleAttachment(Attachments.AK101Stock, (model) -> {
+        .withCompatibleAttachment(AKParts.AK101Stock, (model) -> {
 //            GL11.glTranslatef(0f, 0f, 1f);
         })
-        .withCompatibleAttachment(Attachments.AK101GreenStock, (model) -> {
+        .withCompatibleAttachment(AKParts.AK101GreenStock, (model) -> {
 //            GL11.glTranslatef(0f, 0f, 1f);
         })
-        .withCompatibleAttachment(Attachments.AK101PearlStock, (model) -> {
+        .withCompatibleAttachment(AKParts.AK101PearlStock, (model) -> {
 //            GL11.glTranslatef(0f, 0f, 1f);
         })
-        .withCompatibleAttachment(Attachments.AK101PlumStock, (model) -> {
+        .withCompatibleAttachment(AKParts.AK101PlumStock, (model) -> {
 //            GL11.glTranslatef(0f, 0f, 1f);
         })
-        .withCompatibleAttachment(Attachments.AK101WhiteStock, (model) -> {
+        .withCompatibleAttachment(AKParts.AK101WhiteStock, (model) -> {
 //            GL11.glTranslatef(0f, 0f, 1f);
         })
-        .withCompatibleAttachment(Attachments.AK74Stock, (model) -> {
+        .withCompatibleAttachment(AKParts.AK74Stock, (model) -> {
 //          GL11.glTranslatef(0f, 0f, 1f);
         })
-        .withCompatibleAttachment(Attachments.AK74GreenStock, (model) -> {
+        .withCompatibleAttachment(AKParts.AK74GreenStock, (model) -> {
 //          GL11.glTranslatef(0f, 0f, 1f);
         })
-        .withCompatibleAttachment(Attachments.AKSUStock, true, (model) -> {
+        .withCompatibleAttachment(AKParts.AKSUStock, true, (model) -> {
 //            GL11.glTranslatef(0f, 0f, 1f);
         })
-        .withCompatibleAttachment(Attachments.AKRStock, (model) -> {
+        .withCompatibleAttachment(AKParts.AKRStock, (model) -> {
 //            GL11.glTranslatef(0f, 0f, 1f);
         })
-        .withCompatibleAttachment(Attachments.AKSUDustCover, true, (model) -> {
+        .withCompatibleAttachment(AKParts.AKSUDustCover, true, (model) -> {
 //          GL11.glTranslatef(0f, 0f, 1f);
         })
-        .withCompatibleAttachment(Attachments.AKSUHandguard, true, (model) -> {
+        .withCompatibleAttachment(AKParts.AKSUHandguard, true, (model) -> {
 //            GL11.glTranslatef(0f, 0f, 1f);
         })
-        .withCompatibleAttachment(Attachments.AKS74UHandguard, (model) -> {
+        .withCompatibleAttachment(AKParts.AKS74UHandguard, (model) -> {
 //            GL11.glTranslatef(0f, 0f, 1f);
         })
-        .withCompatibleAttachment(Attachments2.AKSUMHandguard, (model) -> {
+        .withCompatibleAttachment(AKParts.AKSUMHandguard, (model) -> {
 //            GL11.glTranslatef(0f, 0f, 1f);
         })
-        .withCompatibleAttachment(Attachments2.AKSUMPlumHandguard, (model) -> {
+        .withCompatibleAttachment(AKParts.AKSUMPlumHandguard, (model) -> {
 //            GL11.glTranslatef(0f, 0f, 1f);
         })
                 .withCompatibleAttachment(Attachments3.Laser2, (p, s) -> {
@@ -208,48 +208,48 @@ public class AKMSUFactory {
             GL11.glTranslatef(0.02f, 0.2f, -0.4f);
             GL11.glScaled(1.2F, 1.2F, 1.2F);
         })
-        .withCompatibleAttachment(Attachments.AK47Grip, (model) -> {
+        .withCompatibleAttachment(AKParts.AK47Grip, (model) -> {
 //            GL11.glTranslatef(0.02f, 0.2f, -0.4f);
 //            GL11.glScaled(1.2F, 1.2F, 1.2F);
         })
-        .withCompatibleAttachment(Attachments.TantalGrip, (model) -> {
+        .withCompatibleAttachment(AKParts.TantalGrip, (model) -> {
 //            GL11.glTranslatef(0.02f, 0.2f, -0.4f);
 //            GL11.glScaled(1.2F, 1.2F, 1.2F);
         })
-        .withCompatibleAttachment(Attachments.AK101Grip, (model) -> {
+        .withCompatibleAttachment(AKParts.AK101Grip, (model) -> {
 //            GL11.glTranslatef(0.02f, 0.2f, -0.4f);
 //            GL11.glScaled(1.2F, 1.2F, 1.2F);
         })
-        .withCompatibleAttachment(Attachments.AK101GreenGrip, (model) -> {
+        .withCompatibleAttachment(AKParts.AK101GreenGrip, (model) -> {
 //            GL11.glTranslatef(0.02f, 0.2f, -0.4f);
 //            GL11.glScaled(1.2F, 1.2F, 1.2F);
-        })        .withCompatibleAttachment(Attachments2.RK3Grip, (model) -> {
+        })        .withCompatibleAttachment(AKParts.RK3Grip, (model) -> {
 //            GL11.glTranslatef(0.02f, 0.2f, -0.4f);
 //            GL11.glScaled(1.2F, 1.2F, 1.2F);
-        })        .withCompatibleAttachment(Attachments2.RK3GripTan, (model) -> {
+        })        .withCompatibleAttachment(AKParts.RK3GripTan, (model) -> {
 //            GL11.glTranslatef(0.02f, 0.2f, -0.4f);
 //            GL11.glScaled(1.2F, 1.2F, 1.2F);
-        })        .withCompatibleAttachment(Attachments2.RK3GripGreen, (model) -> {
-//            GL11.glTranslatef(0.02f, 0.2f, -0.4f);
-//            GL11.glScaled(1.2F, 1.2F, 1.2F);
-        })
-        .withCompatibleAttachment(Attachments.AK101PearlGrip, (model) -> {
+        })        .withCompatibleAttachment(AKParts.RK3GripGreen, (model) -> {
 //            GL11.glTranslatef(0.02f, 0.2f, -0.4f);
 //            GL11.glScaled(1.2F, 1.2F, 1.2F);
         })
-        .withCompatibleAttachment(Attachments.AK101PlumGrip, true, (model) -> {
+        .withCompatibleAttachment(AKParts.AK101PearlGrip, (model) -> {
 //            GL11.glTranslatef(0.02f, 0.2f, -0.4f);
 //            GL11.glScaled(1.2F, 1.2F, 1.2F);
         })
-        .withCompatibleAttachment(Attachments.AK101WhiteGrip, (model) -> {
+        .withCompatibleAttachment(AKParts.AK101PlumGrip, true, (model) -> {
 //            GL11.glTranslatef(0.02f, 0.2f, -0.4f);
 //            GL11.glScaled(1.2F, 1.2F, 1.2F);
         })
-        .withCompatibleAttachment(Attachments.AKErgoGrip, (model) -> {
+        .withCompatibleAttachment(AKParts.AK101WhiteGrip, (model) -> {
 //            GL11.glTranslatef(0.02f, 0.2f, -0.4f);
 //            GL11.glScaled(1.2F, 1.2F, 1.2F);
         })
-        .withCompatibleAttachment(Attachments.AKErgoGripTan, (model) -> {
+        .withCompatibleAttachment(AKParts.AKErgoGrip, (model) -> {
+//            GL11.glTranslatef(0.02f, 0.2f, -0.4f);
+//            GL11.glScaled(1.2F, 1.2F, 1.2F);
+        })
+        .withCompatibleAttachment(AKParts.AKErgoGripTan, (model) -> {
 //          GL11.glTranslatef(0.02f, 0.2f, -0.4f);
 //          GL11.glScaled(1.2F, 1.2F, 1.2F);
         })

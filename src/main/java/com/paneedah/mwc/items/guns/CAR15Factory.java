@@ -50,23 +50,23 @@ public class CAR15Factory implements GunFactory {
 		.withCreativeTab(ModernWarfareMod.AssaultRiflesTab)
 		.useNewSystem()
 		.withRecoilParam(new RecoilParam(
-				// The weapon power
-				15.0,
-				// Muzzle climb divisor
-				15.75,
-				// "Stock Length"
-				50.0,
-				// Recovery rate from initial shot
-				0.4,
-				// Recovery rate @ "stock"
-				0.3125,
-				// Recoil rotation (Y)
-				0.0,
-				// Recoil rotation (Z)
-				0.0,
-				// Ads similarity divisor
-				1.0
-		))
+		// The weapon power
+		30.0,
+		// Muzzle climb divisor
+		24.0,
+		// "Stock Length"
+		50.0,
+		// Recovery rate from initial shot
+		0.2125,
+		// Recovery rate @ "stock"
+		0.2125,
+		// Recoil rotation (Y)
+		0.0,
+		// Recoil rotation (Z)
+		0.0,
+		// Ads similarity divisor
+		1.0
+))
 		.withInformationProvider(stack -> Arrays.asList(
 		"Type: Semi-Automatic Rifle", 
 		"Damage: 6", 
@@ -101,48 +101,78 @@ public class CAR15Factory implements GunFactory {
 
         .withCompatibleAttachment(ARParts.M4Action, true, (model) -> {})
         .withCompatibleAttachment(ARParts.M4ChargingHandle, true, (model) -> {})
-        .withCompatibleAttachment(ARParts.N4Upper, true, (model) -> {})
-        .withCompatibleAttachment(ARParts.N4Lower, true, (model) -> {})
-        .withCompatibleAttachment(ARParts.N4Handguard795, true, (model) -> {})
-        .withCompatibleAttachment(ARParts.ARBarrel795, true, (model) -> {})
+        .withCompatibleAttachment(ARParts.N4Upper, (model) -> {})
+        .withCompatibleAttachment(ARParts.N4Lower, (model) -> {})
+        .withCompatibleAttachment(ARParts.N4Handguard795, (model) -> {})
+        .withCompatibleAttachment(ARParts.N4Handguard115, (model) -> {})
+        .withCompatibleAttachment(ARParts.N4Handguard145, (model) -> {})
+        .withCompatibleAttachment(ARParts.N4UpperTan, (model) -> {})
+        .withCompatibleAttachment(ARParts.N4LowerTan, (model) -> {})
+        .withCompatibleAttachment(ARParts.N4Handguard795Tan, (model) -> {})
+        .withCompatibleAttachment(ARParts.N4Handguard115Tan, (model) -> {})
+        .withCompatibleAttachment(ARParts.N4Handguard145Tan, (model) -> {})
+        .withCompatibleAttachment(ARParts.N4UpperBlack, (model) -> {})
+        .withCompatibleAttachment(ARParts.N4LowerBlack, (model) -> {})
+        .withCompatibleAttachment(ARParts.N4Handguard795Black, (model) -> {})
+        .withCompatibleAttachment(ARParts.N4Handguard115Black, (model) -> {})
+        .withCompatibleAttachment(ARParts.N4Handguard145Black, (model) -> {})
+        .withCompatibleAttachment(ARParts.ARBarrel795, (model) -> {})
         .withCompatibleAttachment(ARParts.M4BufferTube, true, (model) -> {})
         .withCompatibleAttachment(ARParts.M4PistolGrip, true, (model) -> {})
         .withCompatibleAttachment(ARParts.M4Stock, true, (model) -> {})
         .withCompatibleAttachment(ARParts.DDStock, (model) -> {})
         .withCompatibleAttachment(ARParts.DDGrip, (model) -> {})
+        .withCompatibleAttachment(ARParts.LMG68Grip, (model) -> {})
         .withCompatibleAttachment(ARParts.DDUpper, (model) -> {})
         .withCompatibleAttachment(ARParts.DDLower, (model) -> {})
         .withCompatibleAttachment(ARParts.RIS2_115, (model) -> {})
         .withCompatibleAttachment(ARParts.RIS3_145, (model) -> {})
         .withCompatibleAttachment(ARParts.M4RIS, (model) -> {})
         .withCompatibleAttachment(ARParts.M4Barrel103, (model) -> {})
-        .withCompatibleAttachment(ARParts.M4Barrel145, (model) -> {})
-        .withCompatibleAttachment(ARParts.M4A1Handguard, (model) -> {})
-        .withCompatibleAttachment(ARParts.N4Handguard115,  (model) -> {})
-        .withCompatibleAttachment(ARParts.ARBarrel115,  (model) -> {})
-        .withCompatibleAttachment(ARParts.N4Handguard145,  (model) -> {})
-        .withCompatibleAttachment(ARParts.ARBarrel145,  (model) -> {})
-        .withCompatibleAttachment(ARParts.M4Lower,  (model) -> {})
-        .withCompatibleAttachment(ARParts.M4Upper,  (model) -> {})
-        .withCompatibleAttachment(ARParts.M16A2Stock,  (model) -> {})
-        .withCompatibleAttachment(ARParts.M16A2BufferTube,  (model) -> {})
-        .withCompatibleAttachment(ARParts.M16A2Barrel701,  (model) -> {})
-        .withCompatibleAttachment(ARParts.M16A2Handguard,  (model) -> {})
-        .withCompatibleAttachment(ARParts.M16A1Lower,  (model) -> {})
-        .withCompatibleAttachment(ARParts.M16A1Barrel613,  (model) -> {})
-        .withCompatibleAttachment(ARParts.XM16Handguard,  (model) -> {})
-        .withCompatibleAttachment(ARParts.XM16Stock,  (model) -> {})
-		.withCompatibleAttachment(ARParts.XM16Lower,  (model) -> {})
-        .withCompatibleAttachment(ARParts.M16PistolGrip,  (model) -> {})
-        .withCompatibleAttachment(ARParts.M16Lower,  (model) -> {})
-        .withCompatibleAttachment(ARParts.M16Barrel602,  (model) -> {})
-        .withCompatibleAttachment(ARParts.M16Barrel605,  (model) -> {})
-        .withCompatibleAttachment(ARParts.M16Barrel606,  (model) -> {})
-        .withCompatibleAttachment(ARParts.M16BufferTube,  (model) -> {})
-        .withCompatibleAttachment(ARParts.ARPistolBufferTube,  (model) -> {})
-        .withCompatibleAttachment(ARParts.AngstadtSCW_Stock,  (model) -> {})
-        .withCompatibleAttachment(ARParts.MaximSCW_Stock,  (model) -> {})
-        .withCompatibleAttachment(ARParts.MaximCCS_Stock,  (model) -> {})
+        .withCompatibleAttachment(ARParts.M4Barrel145, true, (model) -> {})
+        .withCompatibleAttachment(ARParts.M4A1Handguard, true, (model) -> {})
+        .withCompatibleAttachment(ARParts.ARBarrel115, (model) -> {})
+        .withCompatibleAttachment(ARParts.ARBarrel145, (model) -> {})
+        .withCompatibleAttachment(ARParts.M4Lower, true, (model) -> {})
+        .withCompatibleAttachment(ARParts.M4Upper, true, (model) -> {})
+        .withCompatibleAttachment(ARParts.M16A2Stock, (model) -> {})
+        .withCompatibleAttachment(ARParts.M16A2BufferTube, (model) -> {})
+        .withCompatibleAttachment(ARParts.M16A2Barrel701, (model) -> {})
+        .withCompatibleAttachment(ARParts.M16A2Handguard, (model) -> {})
+        .withCompatibleAttachment(ARParts.M16A1Lower, (model) -> {})
+        .withCompatibleAttachment(ARParts.M16A1Barrel613, (model) -> {})
+        .withCompatibleAttachment(ARParts.XM16Handguard, (model) -> {})
+        .withCompatibleAttachment(ARParts.XM16Stock, (model) -> {})
+		.withCompatibleAttachment(ARParts.XM16Lower, (model) -> {})
+        .withCompatibleAttachment(ARParts.M16PistolGrip, (model) -> {})
+        .withCompatibleAttachment(ARParts.M16Lower, (model) -> {})
+        .withCompatibleAttachment(ARParts.M16Barrel602, (model) -> {})
+        .withCompatibleAttachment(ARParts.M16Barrel605, (model) -> {})
+        .withCompatibleAttachment(ARParts.M16Barrel606, (model) -> {})
+        .withCompatibleAttachment(ARParts.M16BufferTube, (model) -> {})
+        .withCompatibleAttachment(ARParts.ARPistolBufferTube, (model) -> {})
+        .withCompatibleAttachment(ARParts.AngstadtSCW_Stock, (model) -> {})
+        .withCompatibleAttachment(ARParts.MaximSCW_Stock, (model) -> {})
+        .withCompatibleAttachment(ARParts.MaximCCS_Stock, (model) -> {})
+        .withCompatibleAttachment(ARParts.M4GripTan, (model) -> {})
+        .withCompatibleAttachment(ARParts.M4GripGray, (model) -> {})
+        .withCompatibleAttachment(ARParts.CQGrip, (model) -> {})
+        .withCompatibleAttachment(ARParts.M110Grip, (model) -> {})
+        .withCompatibleAttachment(ARParts.HK416Grip, (model) -> {})
+        .withCompatibleAttachment(ARParts.HK416GripTan, (model) -> {})
+        .withCompatibleAttachment(ARParts.HK416CGrip, (model) -> {})
+        .withCompatibleAttachment(ARParts.HK416CGripTan, (model) -> {})
+        .withCompatibleAttachment(ARParts.HK416A8Grip, (model) -> {})
+        .withCompatibleAttachment(ARParts.HK416A8GripTan, (model) -> {})
+        .withCompatibleAttachment(ARParts.HK433Grip, (model) -> {})
+        .withCompatibleAttachment(ARParts.HK433GripTan, (model) -> {})
+        .withCompatibleAttachment(ARParts.LMG68Grip, (model) -> {})
+        .withCompatibleAttachment(ARParts.HKChunkyStock, (model) -> {})
+        .withCompatibleAttachment(ARParts.HKSlimlineStock, (model) -> {})
+        .withCompatibleAttachment(ARParts.HKCheekpieceStock, (model) -> {})
+        .withCompatibleAttachment(ARParts.HKChunkyStockTan, (model) -> {})
+        .withCompatibleAttachment(ARParts.HKSlimlineStockTan, (model) -> {})
+        .withCompatibleAttachment(ARParts.HKCheekpieceStockTan, (model) -> {})
 
         .withCompatibleAttachment(Attachments.HK416FrontSight, renderContext -> {
             PlayerWeaponInstance instance = renderContext.getWeaponInstance();
@@ -162,7 +192,7 @@ public class CAR15Factory implements GunFactory {
             }
         },(model) -> {
             if(model instanceof G95_upright_frontsights) {
-            	GL11.glTranslatef(-0.155F, -1.55F, -3.5F);
+            	GL11.glTranslatef(-0.155F, -1.58F, -3.5F);
                 GL11.glScaled(0.32F, 0.32F, 0.32F);
               }
         }, false, false)
@@ -189,44 +219,12 @@ public class CAR15Factory implements GunFactory {
             }
         },(model) -> {
             if(model instanceof MBUSFrontSight) {
-            	GL11.glTranslatef(-0.16F, -1.5F, -3.3F);
+            	GL11.glTranslatef(-0.16F, -1.53F, -3.3F);
                 GL11.glScaled(0.35F, 0.35F, 0.35F);
               }
         }, true, false)
         
-        .withCompatibleAttachment(Attachments.M38FrontSight, renderContext -> {
-            PlayerWeaponInstance instance = renderContext.getWeaponInstance();
-            if(instance != null) {
-                ItemAttachment<Weapon> activeAttachment = WeaponAttachmentAspect.getActiveAttachment(
-                        AttachmentCategory.GUARD, instance);
-                if(activeAttachment == Attachments.Mk18HandGuard) {
-                    GL11.glTranslatef(-0.004F, -0.1F, 2.5F);
-                    GL11.glScaled(1F, 1F, 1F);
-                } else {
-                    GL11.glTranslatef(0F, 0F, 0F);
-                    GL11.glScaled(1F, 1F, 1F);
-                }
-            }
-        },(model) -> {
-            if(model instanceof AKMiron2) {
-                GL11.glTranslatef(-0.18F, -1.5F, -3.73F);
-                GL11.glScaled(0.55F, 0.55F, 1F);
-          } else if(model instanceof FALIron) {
-              GL11.glTranslatef(-0.1F, -1.34F, -3.7F);
-              GL11.glScaled(0.1F, 0.9F, 0.3F);
-              GL11.glRotatef(180F, 0f, 0f, 1f);
-          } else if(model instanceof AK47iron) {
-              GL11.glTranslatef(-0.235F, -1.85F, -3.7F);
-              GL11.glScaled(0.75F, 0.95F, 0.3F);
-          }
-        }, false, false)
         .withCompatibleAttachment(Attachments.M4Grip, true, (model) -> {
-//            GL11.glTranslatef(0f, 0f, 1f);
-        })
-        .withCompatibleAttachment(Attachments.M4GripTan, (model) -> {
-//            GL11.glTranslatef(0f, 0f, 1f);
-        })
-        .withCompatibleAttachment(Attachments.M4GripGray, (model) -> {
 //            GL11.glTranslatef(0f, 0f, 1f);
         })
         .withCompatibleAttachment(Attachments.HeraArmsGrip, (model) -> {
@@ -302,7 +300,7 @@ public class CAR15Factory implements GunFactory {
             GL11.glTranslatef(-0.35F, 0.69F, -1.25F);
             GL11.glScaled(1.15F, 1.2F, 1.15F);
         })
-	   .withCompatibleAttachment(AuxiliaryAttachments.AR15Iron, (model) -> {
+	   .withCompatibleAttachment(AuxiliaryAttachments.AR15Iron, true, (model) -> {
             if(model instanceof M4Iron1) {
                 GL11.glTranslatef(-0.145F, -1.55F, -0.35F);
                 GL11.glScaled(0F, 0F, 0F);
@@ -322,70 +320,22 @@ public class CAR15Factory implements GunFactory {
         })
 	   .withCompatibleAttachment(Attachments3.TritiumRearSights, (model) -> {
            if(model instanceof TritiumRearSights) {
-           	 GL11.glTranslatef(-0.16F, -1.5F, -0.3F);
+           	 GL11.glTranslatef(-0.16F, -1.53F, -0.3F);
                 GL11.glScaled(0.35F, 0.35F, 0.35F);
            }
        })
 	   .withCompatibleAttachment(Attachments3.HK416RearSights, (model) -> {
            if(model instanceof G95_upright_rearsights) {
-        	   GL11.glTranslatef(-0.158F, -1.53F, -0.2F);
+        	   GL11.glTranslatef(-0.158F, -1.56F, -0.2F);
                GL11.glScaled(0.32F, 0.32F, 0.32F);
            }
        })
-	   .withCompatibleAttachment(Attachments3.MBUSRearSights, true, (model) -> {
+	   .withCompatibleAttachment(Attachments3.MBUSRearSights, (model) -> {
            if(model instanceof MBUSRearSight) {
-        	   GL11.glTranslatef(-0.16F, -1.5F, -0.3F);
+        	   GL11.glTranslatef(-0.16F, -1.53F, -0.3F);
                GL11.glScaled(0.35F, 0.35F, 0.35F);
            }
        })
-		 .withCompatibleAttachment(Attachments3.AKMIron, (model) -> {
-            if(model instanceof M4Iron1) {
-                GL11.glTranslatef(0.215F, -1.54F, 1.2F);
-                GL11.glScaled(0F, 0F, 0F); 
-            } else if(model instanceof M4Iron2) {
-                GL11.glTranslatef(0.255F, -1.55F, -2.25F);
-                GL11.glScaled(0F, 0F, 0F);
-            } else if(model instanceof P90iron) {
-                GL11.glTranslatef(0.26F, -1.55F, -2.35F);
-                GL11.glScaled(0F, 0F, 0F);
-            } else if(model instanceof AKMiron1) {
-                GL11.glTranslatef(0.125F, -1.8F, -0.5F);
-                GL11.glScaled(0F, 0F, 0F);
-            } else if(model instanceof AKMiron2) {
-                GL11.glTranslatef(0.13F, -1.55F, -3.05F);
-                GL11.glScaled(0F, 0F, 0F);
-            } else if(model instanceof AK47iron) {
-                GL11.glTranslatef(0.092F, -1.91F, -0.9F);
-                GL11.glScaled(0F, 0F, 0F);
-            } else if(model instanceof G36CIron1) {
-                GL11.glTranslatef(-0.22F, -1.94F, 0.13F);
-                GL11.glScaled(0F, 0F, 0F);
-            } else if(model instanceof G36CIron2) {
-                GL11.glTranslatef(-0.205F, -1.9F, -3.15F);
-                GL11.glScaled(0F, 0F, 0F);
-            } else if(model instanceof ScarIron1) {
-                GL11.glTranslatef(0.165F, -1.65F, 1F);
-                GL11.glScaled(0F, 0F, 0F);
-            } else if(model instanceof ScarIron2) {
-                GL11.glTranslatef(0.25F, -1.55F, -2F);
-                GL11.glScaled(0F, 0F, 0F);
-            } else if(model instanceof FALIron) {
-                GL11.glTranslatef(0.127F, -1.77F, -2.22F);
-                GL11.glScaled(0F, 0F, 0F);
-            } else if(model instanceof M14Iron) {
-                GL11.glTranslatef(0.129F, -1.63F, -2.08F);
-                GL11.glScaled(0F, 0F, 0F);
-            } else if(model instanceof MP5Iron) {
-                GL11.glTranslatef(0.215F, -1.54F, 1.2F);
-                GL11.glScaled(0F, 0F, 0F); 
-            } else if(model instanceof M27rearsight) {
-                GL11.glTranslatef(-0.16F, -1.5F, -0.3F);
-                GL11.glScaled(0.35F, 0.35F, 0.35F);
-            } else if(model instanceof MBUSiron) {
-                GL11.glTranslatef(0.215F, -1.54F, 1.2F);
-                GL11.glScaled(0F, 0F, 0F); 
-            }
-        })
         
         .withCompatibleAttachment(Attachments3.NightRaider, (player, stack) -> {
                     GL11.glTranslatef(-0.21F, -1.5F, -1.8F);
@@ -740,7 +690,7 @@ public class CAR15Factory implements GunFactory {
 			
             .withFirstPersonPositioningZooming((renderContext) -> {
 				GL11.glScalef(3.000000f, 3.000000f, 3.000000f);
-				GL11.glTranslatef(0.14f, 1.06f, -0.3f);
+				GL11.glTranslatef(0.14f, 1.15f, -0.3f);
 				
 				// Standard Iron Sight Zoom
 				if(Weapon.isActiveAttachment(renderContext.getWeaponInstance(), AuxiliaryAttachments.AR15Iron)) {

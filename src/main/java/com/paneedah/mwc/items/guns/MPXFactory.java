@@ -7,10 +7,7 @@ import com.paneedah.mwc.ModernWarfareMod;
 import com.paneedah.mwc.init.MWCItems;
 import com.paneedah.mwc.models.*;
 import com.paneedah.mwc.proxies.CommonProxy;
-import com.paneedah.mwc.weapons.Attachments;
-import com.paneedah.mwc.weapons.Attachments3;
-import com.paneedah.mwc.weapons.AuxiliaryAttachments;
-import com.paneedah.mwc.weapons.Magazines;
+import com.paneedah.mwc.weapons.*;
 import com.paneedah.weaponlib2.*;
 import com.paneedah.weaponlib2.animation.Transform;
 import com.paneedah.weaponlib2.animation.Transition;
@@ -109,18 +106,16 @@ public class MPXFactory implements GunFactory {
         })
         .withCompatibleAttachment(Attachments.MPXHandguardExtended, (model) -> {
         })
-        .withCompatibleAttachment(Attachments.HK416Grip, (model) -> {
-//          GL11.glTranslatef(0f, 0f, 1f);
-        })
-        .withCompatibleAttachment(Attachments.M4Grip, true, (model) -> {
-//            GL11.glTranslatef(0f, 0f, 1f);
-        })
-        .withCompatibleAttachment(Attachments.M4GripTan, (model) -> {
-//            GL11.glTranslatef(0f, 0f, 1f);
-        })//50
-        .withCompatibleAttachment(Attachments.M4GripGray, (model) -> {
-//            GL11.glTranslatef(0f, 0f, 1f);
-        })
+        .withCompatibleAttachment(ARParts.M4PistolGrip, (model) -> {})
+        .withCompatibleAttachment(ARParts.M16PistolGrip, (model) -> {})
+        .withCompatibleAttachment(ARParts.M4GripTan, (model) -> {})
+        .withCompatibleAttachment(ARParts.M4GripGray, (model) -> {})
+        .withCompatibleAttachment(ARParts.CQGrip, (model) -> {})
+        .withCompatibleAttachment(ARParts.M110Grip, (model) -> {})
+        .withCompatibleAttachment(ARParts.HK416Grip, (model) -> {})
+        .withCompatibleAttachment(ARParts.HK416GripTan, (model) -> {})
+        .withCompatibleAttachment(ARParts.LMG68Grip, (model) -> {})
+        .withCompatibleAttachment(ARParts.DDGrip, (model) -> {})
 		.withCompatibleAttachment(Magazines.MPXMag, (model) -> {
 //		    GL11.glTranslatef(-0.35F, 0.5F, -1.25F);
 //            GL11.glScaled(1.15F, 1.2F, 1.15F);

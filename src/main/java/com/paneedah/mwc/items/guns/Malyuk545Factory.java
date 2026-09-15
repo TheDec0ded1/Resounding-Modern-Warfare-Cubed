@@ -55,23 +55,23 @@ public class Malyuk545Factory {
         .withCreativeTab(ModernWarfareMod.AssaultRiflesTab)
         .useNewSystem()
         .withRecoilParam(new RecoilParam(
-				// The weapon power
-				15.0,
-				// Muzzle climb divisor
-				15.75,
-				// "Stock Length"
-				50.0,
-				// Recovery rate from initial shot
-				0.4,
-				// Recovery rate @ "stock"
-				0.3125,
-				// Recoil rotation (Y)
-				0.0,
-				// Recoil rotation (Z)
-				0.0,
-				// Ads similarity divisor
-				1.0
-		))
+		// The weapon power
+		40.0,
+		// Muzzle climb divisor
+		23.25,
+		// "Stock Length"
+		72.5,
+		// Recovery rate from initial shot
+		0.5875,
+		// Recovery rate @ "stock"
+		0.5875,
+		// Recoil rotation (Y)
+		0.0,
+		// Recoil rotation (Z)
+		0.0,
+		// Ads similarity divisor
+		1.0
+))
         .withInformationProvider(stack -> Arrays.asList(
         "Type: Bullpup Assault rifle",
         "Damage: 6.6", 

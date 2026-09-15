@@ -96,6 +96,7 @@ public class CommonProxy {
         Armors.init(mod, ModernWarfareMod.MOD_CONTEXT);
         Attachments.init(mod);
         Attachments2.init(mod);
+        AKParts.init(mod);
         ARParts.init(mod);
 		GlockParts.init(mod);
         Attachments3.init(mod);

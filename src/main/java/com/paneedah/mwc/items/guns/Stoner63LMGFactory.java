@@ -123,12 +123,12 @@ public class Stoner63LMGFactory {
                     })
             
             .withFirstPersonPositioning(
-    					new Transform()
-    					.withPosition(-1.225000f, 3.705000f, -2.525000f)
-    					.withRotation(0.000000f, 1.000000f, 6.300000f)
-                        .withRotationPoint(-0.350000f, -2.900000f, -0.100000f)
-                        .withScale(3.0, 3.0, 3.0)
-                    )
+					new Transform()
+					.withPosition(-1.425000f, 3.825000f, -2.525000f)
+					.withRotation(0.000000f, 1.000000f, 6.300000f)
+                    .withRotationPoint(-0.350000f, -2.900000f, -0.100000f)
+                    .withScale(3.0, 3.0, 3.0)
+                )
                     
                     .withFirstPersonHandPositioning(
                             

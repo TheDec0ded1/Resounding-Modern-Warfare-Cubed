@@ -11,30 +11,30 @@ import java.util.Map;
 import java.util.UUID;
 
 public class ScreenShakingAnimationManager {
-    
-    public static enum State { 
+
+    public static enum State {
         SHOOTING(0, 0.1f), RELOADING(-5, 0f), AIMING(-10, 0f), DEFAULT(Integer.MIN_VALUE, 0f);
-        
+
         private int priority;
         private float stepAdjustement;
         State(int priority, float stepAdjustement) {
             this.priority = priority;
         }
-        
+
         int getPriority() {
             return priority;
         }
-        
+
         public float getStepAdjustement() {
             return stepAdjustement;
         }
     }
-    
+
     private static class Key {
         UUID playerId;
         State state;
         Weapon weapon;
-        
+
         public Key(EntityPlayer player, State state, Weapon weapon) {
             this.playerId = player.getPersistentID();
             this.state = state;
@@ -74,8 +74,8 @@ public class ScreenShakingAnimationManager {
                 return false;
             return true;
         }
-        
-        
+
+
     }
 
     private Map<Key, PlayerAnimation> allPlayerAnimations = new HashMap<>();
@@ -84,7 +84,7 @@ public class ScreenShakingAnimationManager {
     private float maxPitch = 2f;
     private long transitionDuration = 2000;
     private State lastTargetState;
-    
+
     public ScreenShakingAnimationManager setMaxYaw(float maxYaw) {
         this.maxYaw = maxYaw;
         return this;
@@ -99,10 +99,10 @@ public class ScreenShakingAnimationManager {
         this.transitionDuration = transitionDuration;
         return this;
     }
-    
+
     public void update(EntityPlayer player, PlayerWeaponInstance weaponInstance, RenderableState weaponState) {
         State targetState = toManagedState(weaponState);
-        
+
 //        System.out.println("Target state: " + targetState + ", render state: " + weaponState);
         PlayerAnimation activeAnimation = activeAnimations.get(player);
 //        activeAnimations.clear();
@@ -114,24 +114,23 @@ public class ScreenShakingAnimationManager {
         } else {
             State currentAnimationState = activeAnimation.getState();
 //            System.out.println("Current state: " + currentState);
-            
+
            // System.out.println(currentAnimationState.getPriority() + " | " + targetState.getPriority());
-            
-           
+
+
             if(currentAnimationState == targetState) {
-            	
+
                 if(targetState != lastTargetState) {
 //                    System.out.println("Target state: " + targetState + ", last: " + lastTargetState + ", resetting...");
                     activeAnimation.reset(player, false);
                 }
             }  else if(currentAnimationState.getPriority() < targetState.getPriority() || activeAnimation.isCompleted()) {
-                
+
             	activeAnimation = getAnimationForManagedState(player, weaponInstance, targetState);
                 activeAnimation.reset(player, true);
                 activeAnimations.put(player, activeAnimation);
             }
         }
-        
         activeAnimation.update(player, fadeOut);
         lastTargetState = targetState;
     }
@@ -140,7 +139,7 @@ public class ScreenShakingAnimationManager {
 //        PlayerAnimation activeAnimation = getActiveAnimation(player, weaponState);
 //        activeAnimation.reset(player);
     }
-    
+
     public static State toManagedState(RenderableState weaponState) {
         if(weaponState == null) {
             return State.DEFAULT;
@@ -161,9 +160,9 @@ public class ScreenShakingAnimationManager {
         }
         return managedState;
     }
-    
+
     private PlayerAnimation createAnimationForManagedState(EntityPlayer player, State managedState, Weapon weapon) {
-    	
+
     	PlayerAnimation animation;
         switch(managedState) {
         case AIMING:
@@ -193,7 +192,7 @@ public class ScreenShakingAnimationManager {
     }
 
     private PlayerAnimation getAnimationForManagedState(EntityPlayer player, PlayerWeaponInstance instance, State managedState) {
-        return allPlayerAnimations.computeIfAbsent(new Key(player, managedState, instance.getWeapon()), 
+        return allPlayerAnimations.computeIfAbsent(new Key(player, managedState, instance.getWeapon()),
                 k -> createAnimationForManagedState(player, k.state, instance.getWeapon()));
     }
 

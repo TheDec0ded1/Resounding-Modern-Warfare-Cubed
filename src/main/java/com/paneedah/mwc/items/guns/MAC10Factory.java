@@ -39,7 +39,7 @@ public class MAC10Factory {
         .withMaxShots(1, Integer.MAX_VALUE)
         //.withMaxShots(5)
         .withShootSound("mac10")
-        .withSilencedShootSound("mp5_silenced")
+        .withSilencedShootSound("mac10_silenced")
         .withReloadSound("mac10_reload")
         .withUnloadSound("mac10_unload")
         .withInspectSound("inspection")

@@ -33,7 +33,7 @@ public class SV98Factory implements GunFactory {
         .withMaxShots(1)
         .withShootSound("sv98")
         .withPumpTimeout(1000)
-        .withSilencedShootSound("sniper_silenced")
+        .withSilencedShootSound("silenced_308win")
         .withReloadSound("sv98_reload")
         .withUnloadSound("m40a6_unload")
         .withInspectSound("inspection")

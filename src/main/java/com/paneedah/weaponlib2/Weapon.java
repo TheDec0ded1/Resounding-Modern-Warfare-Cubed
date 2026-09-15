@@ -220,7 +220,7 @@ AttachmentContainer, Reloadable, Inspectable, Modifiable, Updatable, IModernCraf
         private com.paneedah.weaponlib2.render.shells.ShellParticleSimulator.Shell.Type shellType = Type.ASSAULT;
         
         private Set<AttachmentCategory> unremovableAttachmentCategories = new HashSet<>();
-//        private Map<RenderableState, ScreenShaking> screenShakings = new HashMap<>();
+        private Map<RenderableState, ScreenShaking> screenShakings = new HashMap<>();
         private Map<RenderableState, ScreenShakeAnimation.Builder> screenShakingBuilders = new HashMap<>();
         
         private float zoom;
@@ -1683,9 +1683,9 @@ AttachmentContainer, Reloadable, Inspectable, Modifiable, Updatable, IModernCraf
         return builder.spawnEntityRocketParticles;
     }
     
-//    public ScreenShaking getScreenShaking(RenderableState state) {
-//        return builder.screenShakings.get(state);
-//    }
+   public ScreenShaking getScreenShaking(RenderableState state) {
+       return builder.screenShakings.get(state);
+    }
     
     public Pair<Double, Double> getModernScreenShakeParameters() {
         return this.builder.screenShakingParameters;

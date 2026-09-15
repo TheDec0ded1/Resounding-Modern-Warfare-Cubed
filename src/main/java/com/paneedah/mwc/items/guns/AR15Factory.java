@@ -50,23 +50,23 @@ public class AR15Factory implements GunFactory {
 		.withCreativeTab(ModernWarfareMod.AssaultRiflesTab)
 		.useNewSystem()
 		.withRecoilParam(new RecoilParam(
-				// The weapon power
-				15.0,
-				// Muzzle climb divisor
-				15.75,
-				// "Stock Length"
-				50.0,
-				// Recovery rate from initial shot
-				0.4,
-				// Recovery rate @ "stock"
-				0.3125,
-				// Recoil rotation (Y)
-				0.0,
-				// Recoil rotation (Z)
-				0.0,
-				// Ads similarity divisor
-				1.0
-		))
+		// The weapon power
+		30.0,
+		// Muzzle climb divisor
+		24.0,
+		// "Stock Length"
+		50.0,
+		// Recovery rate from initial shot
+		0.2125,
+		// Recovery rate @ "stock"
+		0.2125,
+		// Recoil rotation (Y)
+		0.0,
+		// Recoil rotation (Z)
+		0.0,
+		// Ads similarity divisor
+		1.0
+))
 		.withInformationProvider(stack -> Arrays.asList(
 		"Type: Semi-Automatic Rifle", 
 		"Damage: 6", 
@@ -140,14 +140,15 @@ public class AR15Factory implements GunFactory {
         .withCompatibleAttachment(ARParts.M16Barrel605,  (model) -> {})
         .withCompatibleAttachment(ARParts.M16Barrel606,  (model) -> {})
         .withCompatibleAttachment(ARParts.M16BufferTube, true, (model) -> {})
+        .withCompatibleAttachment(ARParts.M4GripTan, (model) -> {})
+        .withCompatibleAttachment(ARParts.M4GripGray, (model) -> {})
+        .withCompatibleAttachment(ARParts.CQGrip, (model) -> {})
+        .withCompatibleAttachment(ARParts.M110Grip, (model) -> {})
+        .withCompatibleAttachment(ARParts.HK416Grip, (model) -> {})
+        .withCompatibleAttachment(ARParts.HK416GripTan, (model) -> {})
+        .withCompatibleAttachment(ARParts.LMG68Grip, (model) -> {})
 
         .withCompatibleAttachment(Attachments.M4Grip, true, (model) -> {
-//            GL11.glTranslatef(0f, 0f, 1f);
-        })
-        .withCompatibleAttachment(Attachments.M4GripTan, (model) -> {
-//            GL11.glTranslatef(0f, 0f, 1f);
-        })
-        .withCompatibleAttachment(Attachments.M4GripGray, (model) -> {
 //            GL11.glTranslatef(0f, 0f, 1f);
         })
         .withCompatibleAttachment(Attachments.HeraArmsGrip, (model) -> {

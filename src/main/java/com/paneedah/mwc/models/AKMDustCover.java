@@ -5,266 +5,266 @@ import net.minecraft.client.model.ModelBox;
 import net.minecraft.client.model.ModelRenderer;
 import net.minecraft.entity.Entity;
 
-// Made with Blockbench 3.8.4
+// Made with Blockbench 5.0.7
 // Exported for Minecraft version 1.7 - 1.12
 // Paste this class into your mod and generate all required imports
 
 
 public class AKMDustCover extends ModelBase {
 	private final ModelRenderer dustcover;
-	private final ModelRenderer DustCover40;
-	private final ModelRenderer DustCover39;
-	private final ModelRenderer DustCover43;
-	private final ModelRenderer DustCover41;
-	private final ModelRenderer DustCover42;
-	private final ModelRenderer DustCover8;
-	private final ModelRenderer DustCover9;
-	private final ModelRenderer DustCover10;
-	private final ModelRenderer DustCover44;
-	private final ModelRenderer DustCover5;
-	private final ModelRenderer DustCover22;
-	private final ModelRenderer DustCover35;
-	private final ModelRenderer DustCover3;
-	private final ModelRenderer DustCover2;
-	private final ModelRenderer DustCover4;
-	private final ModelRenderer DustCover1;
+	private final ModelRenderer DustCover7;
+	private final ModelRenderer DustCover23;
+	private final ModelRenderer DustCover24;
+	private final ModelRenderer DustCover25;
+	private final ModelRenderer DustCover26;
+	private final ModelRenderer DustCover27;
+	private final ModelRenderer DustCover28;
+	private final ModelRenderer DustCover29;
+	private final ModelRenderer DustCover30;
+	private final ModelRenderer DustCover31;
+	private final ModelRenderer DustCover32;
+	private final ModelRenderer DustCover33;
+	private final ModelRenderer DustCover34;
+	private final ModelRenderer DustCover45;
+	private final ModelRenderer DustCover46;
+	private final ModelRenderer DustCover48;
 	private final ModelRenderer DustCover9_r1;
 	private final ModelRenderer DustCover8_r1;
 	private final ModelRenderer DustCover6_r1;
 	private final ModelRenderer DustCover5_r1;
-	private final ModelRenderer DustCover16;
-	private final ModelRenderer DustCover47;
-	private final ModelRenderer DustCover15;
-	private final ModelRenderer DustCover21;
-	private final ModelRenderer DustCover14;
-	private final ModelRenderer DustCover36;
-	private final ModelRenderer DustCover12;
-	private final ModelRenderer DustCover11;
-	private final ModelRenderer DustCover13;
-	private final ModelRenderer DustCover20;
-	private final ModelRenderer DustCover38;
-	private final ModelRenderer DustCover37;
-	private final ModelRenderer DustCover18;
-	private final ModelRenderer DustCover17;
-	private final ModelRenderer DustCover19;
+	private final ModelRenderer DustCover49;
+	private final ModelRenderer DustCover50;
+	private final ModelRenderer DustCover51;
+	private final ModelRenderer DustCover52;
+	private final ModelRenderer DustCover53;
+	private final ModelRenderer DustCover54;
+	private final ModelRenderer DustCover55;
+	private final ModelRenderer DustCover56;
+	private final ModelRenderer DustCover57;
+	private final ModelRenderer DustCover58;
+	private final ModelRenderer DustCover59;
+	private final ModelRenderer DustCover60;
+	private final ModelRenderer DustCover61;
+	private final ModelRenderer DustCover62;
+	private final ModelRenderer DustCover63;
 
 	public AKMDustCover() {
-		textureWidth = 128;
-		textureHeight = 128;
+		textureWidth = 320;
+		textureHeight = 320;
 
 		dustcover = new ModelRenderer(this);
 		dustcover.setRotationPoint(0.0F, 24.0F, 0.0F);
 		
 
-		DustCover40 = new ModelRenderer(this);
-		DustCover40.setRotationPoint(-3.7F, -37.5F, 2.2F);
-		dustcover.addChild(DustCover40);
-		setRotationAngle(DustCover40, -0.9295F, 0.0F, 0.0F);
-		DustCover40.cubeList.add(new ModelBox(DustCover40, 14, 4, 0.001F, 0.0F, 0.0F, 2, 2, 2, 0.0F, false));
+		DustCover7 = new ModelRenderer(this);
+		DustCover7.setRotationPoint(-3.7F, -37.5F, 2.2F);
+		dustcover.addChild(DustCover7);
+		setRotationAngle(DustCover7, -0.9295F, 0.0F, 0.0F);
+		DustCover7.cubeList.add(new ModelBox(DustCover7, 18, 301, 0.001F, 0.0F, 0.0F, 2, 2, 2, 0.0F, false));
 
-		DustCover39 = new ModelRenderer(this);
-		DustCover39.setRotationPoint(-1.3F, -37.5F, 2.2F);
-		dustcover.addChild(DustCover39);
-		setRotationAngle(DustCover39, -0.9295F, 0.0F, 0.0F);
-		DustCover39.cubeList.add(new ModelBox(DustCover39, 14, 13, -0.001F, 0.0F, 0.0F, 2, 2, 2, 0.0F, false));
+		DustCover23 = new ModelRenderer(this);
+		DustCover23.setRotationPoint(-1.3F, -37.5F, 2.2F);
+		dustcover.addChild(DustCover23);
+		setRotationAngle(DustCover23, -0.9295F, 0.0F, 0.0F);
+		DustCover23.cubeList.add(new ModelBox(DustCover23, 26, 301, -0.001F, 0.0F, 0.0F, 2, 2, 2, 0.0F, false));
 
-		DustCover43 = new ModelRenderer(this);
-		DustCover43.setRotationPoint(-1.2F, -39.3F, 0.88F);
-		dustcover.addChild(DustCover43);
-		setRotationAngle(DustCover43, -0.9295F, 0.0F, 0.0F);
-		DustCover43.cubeList.add(new ModelBox(DustCover43, 0, 6, 0.0F, 0.0F, 0.0F, 1, 1, 4, 0.0F, false));
+		DustCover24 = new ModelRenderer(this);
+		DustCover24.setRotationPoint(-1.2F, -39.3F, 0.88F);
+		dustcover.addChild(DustCover24);
+		setRotationAngle(DustCover24, -0.9295F, 0.0F, 0.0F);
+		DustCover24.cubeList.add(new ModelBox(DustCover24, 298, 104, 0.0F, 0.0F, 0.0F, 1, 1, 4, 0.0F, false));
 
-		DustCover41 = new ModelRenderer(this);
-		DustCover41.setRotationPoint(-2.8F, -39.3F, 0.88F);
-		dustcover.addChild(DustCover41);
-		setRotationAngle(DustCover41, -0.9295F, 0.0F, 0.0F);
-		DustCover41.cubeList.add(new ModelBox(DustCover41, 0, 13, 0.0F, 0.0F, 0.0F, 1, 1, 4, 0.0F, false));
+		DustCover25 = new ModelRenderer(this);
+		DustCover25.setRotationPoint(-2.8F, -39.3F, 0.88F);
+		dustcover.addChild(DustCover25);
+		setRotationAngle(DustCover25, -0.9295F, 0.0F, 0.0F);
+		DustCover25.cubeList.add(new ModelBox(DustCover25, 298, 109, 0.0F, 0.0F, 0.0F, 1, 1, 4, 0.0F, false));
 
-		DustCover42 = new ModelRenderer(this);
-		DustCover42.setRotationPoint(-2.0F, -39.8F, 0.5F);
-		dustcover.addChild(DustCover42);
-		setRotationAngle(DustCover42, -0.9295F, 0.0F, 0.0F);
-		DustCover42.cubeList.add(new ModelBox(DustCover42, 0, 0, 0.0F, 0.0F, 0.0F, 1, 1, 5, 0.0F, false));
+		DustCover26 = new ModelRenderer(this);
+		DustCover26.setRotationPoint(-2.0F, -39.8F, 0.5F);
+		dustcover.addChild(DustCover26);
+		setRotationAngle(DustCover26, -0.9295F, 0.0F, 0.0F);
+		DustCover26.cubeList.add(new ModelBox(DustCover26, 254, 179, 0.0F, 0.0F, 0.0F, 1, 1, 5, 0.0F, false));
 
-		DustCover8 = new ModelRenderer(this);
-		DustCover8.setRotationPoint(-3.9F, -37.5F, -21.5F);
-		dustcover.addChild(DustCover8);
-		setRotationAngle(DustCover8, 0.0F, 0.0F, -0.7808F);
-		DustCover8.cubeList.add(new ModelBox(DustCover8, 0, 18, 0.0F, 0.0F, 0.0F, 2, 1, 3, 0.0F, false));
+		DustCover27 = new ModelRenderer(this);
+		DustCover27.setRotationPoint(-3.9F, -37.5F, -21.5F);
+		dustcover.addChild(DustCover27);
+		setRotationAngle(DustCover27, 0.0F, 0.0F, -0.7808F);
+		DustCover27.cubeList.add(new ModelBox(DustCover27, 296, 31, 0.0F, 0.0F, 0.0F, 2, 1, 3, 0.0F, false));
 
-		DustCover9 = new ModelRenderer(this);
-		DustCover9.setRotationPoint(-3.9F, -37.5F, -21.5F);
-		dustcover.addChild(DustCover9);
-		DustCover9.cubeList.add(new ModelBox(DustCover9, 14, 17, 0.0F, 0.0F, 0.0F, 1, 1, 3, 0.0F, false));
+		DustCover28 = new ModelRenderer(this);
+		DustCover28.setRotationPoint(-3.9F, -37.5F, -21.5F);
+		dustcover.addChild(DustCover28);
+		DustCover28.cubeList.add(new ModelBox(DustCover28, 34, 301, 0.0F, 0.0F, 0.0F, 1, 1, 3, 0.0F, false));
 
-		DustCover10 = new ModelRenderer(this);
-		DustCover10.setRotationPoint(-3.8F, -37.5F, -19.1F);
-		dustcover.addChild(DustCover10);
-		setRotationAngle(DustCover10, 0.0F, 0.0F, -0.7436F);
-		DustCover10.cubeList.add(new ModelBox(DustCover10, 14, 0, 0.0F, 0.0F, 0.0F, 1, 1, 9, 0.0F, false));
+		DustCover29 = new ModelRenderer(this);
+		DustCover29.setRotationPoint(-3.8F, -37.5F, -19.1F);
+		dustcover.addChild(DustCover29);
+		setRotationAngle(DustCover29, 0.0F, 0.0F, -0.7436F);
+		DustCover29.cubeList.add(new ModelBox(DustCover29, 278, 104, 0.0F, 0.0F, 0.0F, 1, 1, 9, 0.0F, false));
 
-		DustCover44 = new ModelRenderer(this);
-		DustCover44.setRotationPoint(-3.7F, -37.5F, -11.0F);
-		dustcover.addChild(DustCover44);
-		setRotationAngle(DustCover44, 0.0F, 0.0F, -0.7436F);
-		DustCover44.cubeList.add(new ModelBox(DustCover44, 0, 0, 0.0F, 0.0F, 0.0F, 1, 1, 12, 0.0F, false));
+		DustCover30 = new ModelRenderer(this);
+		DustCover30.setRotationPoint(-3.7F, -37.5F, -11.0F);
+		dustcover.addChild(DustCover30);
+		setRotationAngle(DustCover30, 0.0F, 0.0F, -0.7436F);
+		DustCover30.cubeList.add(new ModelBox(DustCover30, 276, 271, 0.0F, 0.0F, 0.0F, 1, 1, 12, 0.0F, false));
 
-		DustCover5 = new ModelRenderer(this);
-		DustCover5.setRotationPoint(-2.8F, -39.2F, -21.5F);
-		dustcover.addChild(DustCover5);
-		setRotationAngle(DustCover5, 0.0F, 0.0F, 0.3346F);
-		DustCover5.cubeList.add(new ModelBox(DustCover5, 72, 36, 0.0F, 0.0F, -0.001F, 1, 2, 22, 0.0F, false));
+		DustCover31 = new ModelRenderer(this);
+		DustCover31.setRotationPoint(-2.8F, -39.2F, -21.5F);
+		dustcover.addChild(DustCover31);
+		setRotationAngle(DustCover31, 0.0F, 0.0F, 0.3346F);
+		DustCover31.cubeList.add(new ModelBox(DustCover31, 256, 80, 0.0F, 0.0F, -0.001F, 1, 2, 22, 0.0F, false));
 
-		DustCover22 = new ModelRenderer(this);
-		DustCover22.setRotationPoint(0.7F, -37.5F, -25.0F);
-		dustcover.addChild(DustCover22);
-		setRotationAngle(DustCover22, 0.0F, 0.0F, 2.3051F);
-		DustCover22.cubeList.add(new ModelBox(DustCover22, 30, 71, 0.0F, 0.0F, 0.0F, 1, 1, 26, 0.0F, false));
+		DustCover32 = new ModelRenderer(this);
+		DustCover32.setRotationPoint(0.7F, -37.5F, -25.0F);
+		dustcover.addChild(DustCover32);
+		setRotationAngle(DustCover32, 0.0F, 0.0F, 2.3051F);
+		DustCover32.cubeList.add(new ModelBox(DustCover32, 0, 256, 0.0F, 0.0F, 0.0F, 1, 1, 26, 0.0F, false));
 
-		DustCover35 = new ModelRenderer(this);
-		DustCover35.setRotationPoint(0.8F, -37.5F, -33.5F);
-		dustcover.addChild(DustCover35);
-		setRotationAngle(DustCover35, 0.0F, 0.0F, 2.3051F);
-		DustCover35.cubeList.add(new ModelBox(DustCover35, 14, 13, 0.0F, 0.0F, 0.0F, 1, 1, 9, 0.0F, false));
+		DustCover33 = new ModelRenderer(this);
+		DustCover33.setRotationPoint(0.8F, -37.5F, -33.5F);
+		dustcover.addChild(DustCover33);
+		setRotationAngle(DustCover33, 0.0F, 0.0F, 2.3051F);
+		DustCover33.cubeList.add(new ModelBox(DustCover33, 96, 291, 0.0F, 0.0F, 0.0F, 1, 1, 9, 0.0F, false));
 
-		DustCover3 = new ModelRenderer(this);
-		DustCover3.setRotationPoint(-0.17F, -39.25F, -33.5F);
-		dustcover.addChild(DustCover3);
-		setRotationAngle(DustCover3, 0.0F, 0.0F, 1.3013F);
-		DustCover3.cubeList.add(new ModelBox(DustCover3, 0, 0, 0.0F, 0.0F, -0.001F, 2, 1, 34, 0.0F, false));
+		DustCover34 = new ModelRenderer(this);
+		DustCover34.setRotationPoint(-0.17F, -39.25F, -33.5F);
+		dustcover.addChild(DustCover34);
+		setRotationAngle(DustCover34, 0.0F, 0.0F, 1.3013F);
+		DustCover34.cubeList.add(new ModelBox(DustCover34, 184, 80, 0.0F, 0.0F, -0.001F, 2, 1, 34, 0.0F, false));
 
-		DustCover2 = new ModelRenderer(this);
-		DustCover2.setRotationPoint(-1.0F, -39.8F, -33.5F);
-		dustcover.addChild(DustCover2);
-		setRotationAngle(DustCover2, 0.0F, 0.0F, 0.5949F);
-		DustCover2.cubeList.add(new ModelBox(DustCover2, 36, 36, 0.0F, 0.0F, 0.0F, 1, 1, 34, 0.0F, false));
+		DustCover45 = new ModelRenderer(this);
+		DustCover45.setRotationPoint(-1.0F, -39.8F, -33.5F);
+		dustcover.addChild(DustCover45);
+		setRotationAngle(DustCover45, 0.0F, 0.0F, 0.5949F);
+		DustCover45.cubeList.add(new ModelBox(DustCover45, 90, 184, 0.0F, 0.0F, 0.0F, 1, 1, 34, 0.0F, false));
 
-		DustCover4 = new ModelRenderer(this);
-		DustCover4.setRotationPoint(-2.0F, -39.8F, -33.5F);
-		dustcover.addChild(DustCover4);
-		setRotationAngle(DustCover4, 0.0F, 0.0F, 0.9295F);
-		DustCover4.cubeList.add(new ModelBox(DustCover4, 0, 35, 0.0F, 0.0F, 0.0F, 1, 1, 34, 0.0F, false));
+		DustCover46 = new ModelRenderer(this);
+		DustCover46.setRotationPoint(-2.0F, -39.8F, -33.5F);
+		dustcover.addChild(DustCover46);
+		setRotationAngle(DustCover46, 0.0F, 0.0F, 0.9295F);
+		DustCover46.cubeList.add(new ModelBox(DustCover46, 184, 115, 0.0F, 0.0F, 0.0F, 1, 1, 34, 0.0F, false));
 
-		DustCover1 = new ModelRenderer(this);
-		DustCover1.setRotationPoint(-2.0F, -39.8F, -33.5F);
-		dustcover.addChild(DustCover1);
-		DustCover1.cubeList.add(new ModelBox(DustCover1, 38, 1, 0.0F, 0.0F, 0.0F, 1, 1, 34, 0.0F, false));
-		DustCover1.cubeList.add(new ModelBox(DustCover1, 7, 18, 0.0F, -0.1F, 4.5F, 1, 1, 1, 0.0F, false));
-		DustCover1.cubeList.add(new ModelBox(DustCover1, 0, 8, 0.0F, -0.1F, 14.5F, 1, 1, 1, 0.0F, false));
-		DustCover1.cubeList.add(new ModelBox(DustCover1, 0, 6, 0.0F, -0.1F, 24.5F, 1, 1, 1, 0.0F, false));
-		DustCover1.cubeList.add(new ModelBox(DustCover1, 14, 0, 0.0F, -0.3F, 0.2F, 1, 1, 3, -0.2F, false));
-		DustCover1.cubeList.add(new ModelBox(DustCover1, 36, 48, 0.0F, -0.3F, 5.95F, 1, 1, 8, -0.2F, false));
-		DustCover1.cubeList.add(new ModelBox(DustCover1, 0, 48, 0.0F, -0.3F, 16.05F, 1, 1, 8, -0.2F, false));
-		DustCover1.cubeList.add(new ModelBox(DustCover1, 20, 23, 0.0F, -0.3F, 26.15F, 1, 1, 6, -0.2F, false));
+		DustCover48 = new ModelRenderer(this);
+		DustCover48.setRotationPoint(-2.0F, -39.8F, -33.5F);
+		dustcover.addChild(DustCover48);
+		DustCover48.cubeList.add(new ModelBox(DustCover48, 184, 150, 0.0F, 0.0F, 0.0F, 1, 1, 34, 0.0F, false));
+		DustCover48.cubeList.add(new ModelBox(DustCover48, 54, 307, 0.0F, -0.1F, 4.5F, 1, 1, 1, 0.0F, false));
+		DustCover48.cubeList.add(new ModelBox(DustCover48, 58, 307, 0.0F, -0.1F, 14.5F, 1, 1, 1, 0.0F, false));
+		DustCover48.cubeList.add(new ModelBox(DustCover48, 70, 307, 0.0F, -0.1F, 24.5F, 1, 1, 1, 0.0F, false));
+		DustCover48.cubeList.add(new ModelBox(DustCover48, 124, 301, 0.0F, -0.3F, 0.2F, 1, 1, 3, -0.2F, false));
+		DustCover48.cubeList.add(new ModelBox(DustCover48, 288, 235, 0.0F, -0.3F, 5.95F, 1, 1, 8, -0.2F, false));
+		DustCover48.cubeList.add(new ModelBox(DustCover48, 176, 292, 0.0F, -0.3F, 16.05F, 1, 1, 8, -0.2F, false));
+		DustCover48.cubeList.add(new ModelBox(DustCover48, 238, 292, 0.0F, -0.3F, 26.15F, 1, 1, 6, -0.2F, false));
 
 		DustCover9_r1 = new ModelRenderer(this);
 		DustCover9_r1.setRotationPoint(1.83F, 0.46F, 13.5F);
-		DustCover1.addChild(DustCover9_r1);
+		DustCover48.addChild(DustCover9_r1);
 		setRotationAngle(DustCover9_r1, 0.0F, 0.0F, 1.2741F);
-		DustCover9_r1.cubeList.add(new ModelBox(DustCover9_r1, 14, 23, 0.0F, 0.0F, -9.0F, 2, 1, 1, 0.0F, false));
-		DustCover9_r1.cubeList.add(new ModelBox(DustCover9_r1, 0, 22, 0.0F, 0.0F, 11.0F, 2, 1, 1, 0.0F, false));
-		DustCover9_r1.cubeList.add(new ModelBox(DustCover9_r1, 20, 23, 0.0F, 0.0F, 1.0F, 2, 1, 1, 0.0F, false));
+		DustCover9_r1.cubeList.add(new ModelBox(DustCover9_r1, 96, 305, 0.0F, 0.0F, -9.0F, 2, 1, 1, 0.0F, false));
+		DustCover9_r1.cubeList.add(new ModelBox(DustCover9_r1, 102, 305, 0.0F, 0.0F, 11.0F, 2, 1, 1, 0.0F, false));
+		DustCover9_r1.cubeList.add(new ModelBox(DustCover9_r1, 108, 305, 0.0F, 0.0F, 1.0F, 2, 1, 1, 0.0F, false));
 
 		DustCover8_r1 = new ModelRenderer(this);
 		DustCover8_r1.setRotationPoint(-0.8F, 0.5F, 24.5F);
-		DustCover1.addChild(DustCover8_r1);
+		DustCover48.addChild(DustCover8_r1);
 		setRotationAngle(DustCover8_r1, 0.0F, 0.0F, -1.2217F);
-		DustCover8_r1.cubeList.add(new ModelBox(DustCover8_r1, 6, 22, -2.0F, 0.0F, 0.0F, 2, 1, 1, 0.0F, false));
-		DustCover8_r1.cubeList.add(new ModelBox(DustCover8_r1, 24, 10, -2.0F, 0.0F, -10.0F, 2, 1, 1, 0.0F, false));
+		DustCover8_r1.cubeList.add(new ModelBox(DustCover8_r1, 114, 305, -2.0F, 0.0F, 0.0F, 2, 1, 1, 0.0F, false));
+		DustCover8_r1.cubeList.add(new ModelBox(DustCover8_r1, 120, 305, -2.0F, 0.0F, -10.0F, 2, 1, 1, 0.0F, false));
 
 		DustCover6_r1 = new ModelRenderer(this);
 		DustCover6_r1.setRotationPoint(0.0F, -0.1F, 4.5F);
-		DustCover1.addChild(DustCover6_r1);
+		DustCover48.addChild(DustCover6_r1);
 		setRotationAngle(DustCover6_r1, 0.0F, 0.0F, -0.6458F);
-		DustCover6_r1.cubeList.add(new ModelBox(DustCover6_r1, 7, 0, -1.0F, 0.0F, 0.0F, 1, 1, 1, 0.0F, false));
-		DustCover6_r1.cubeList.add(new ModelBox(DustCover6_r1, 0, 0, -1.0F, 0.0F, 20.0F, 1, 1, 1, 0.0F, false));
-		DustCover6_r1.cubeList.add(new ModelBox(DustCover6_r1, 7, 2, -1.0F, 0.0F, 10.0F, 1, 1, 1, 0.0F, false));
+		DustCover6_r1.cubeList.add(new ModelBox(DustCover6_r1, 74, 307, -1.0F, 0.0F, 0.0F, 1, 1, 1, 0.0F, false));
+		DustCover6_r1.cubeList.add(new ModelBox(DustCover6_r1, 78, 307, -1.0F, 0.0F, 20.0F, 1, 1, 1, 0.0F, false));
+		DustCover6_r1.cubeList.add(new ModelBox(DustCover6_r1, 82, 307, -1.0F, 0.0F, 10.0F, 1, 1, 1, 0.0F, false));
 
 		DustCover5_r1 = new ModelRenderer(this);
 		DustCover5_r1.setRotationPoint(1.0F, -0.1F, 15.5F);
-		DustCover1.addChild(DustCover5_r1);
+		DustCover48.addChild(DustCover5_r1);
 		setRotationAngle(DustCover5_r1, 0.0F, 0.0F, 0.5934F);
-		DustCover5_r1.cubeList.add(new ModelBox(DustCover5_r1, 0, 2, 0.0F, 0.0F, 9.0F, 1, 1, 1, 0.0F, false));
-		DustCover5_r1.cubeList.add(new ModelBox(DustCover5_r1, 0, 13, 0.0F, 0.0F, -1.0F, 1, 1, 1, 0.0F, false));
-		DustCover5_r1.cubeList.add(new ModelBox(DustCover5_r1, 0, 15, 0.0F, 0.0F, -11.0F, 1, 1, 1, 0.0F, false));
+		DustCover5_r1.cubeList.add(new ModelBox(DustCover5_r1, 86, 307, 0.0F, 0.0F, 9.0F, 1, 1, 1, 0.0F, false));
+		DustCover5_r1.cubeList.add(new ModelBox(DustCover5_r1, 90, 307, 0.0F, 0.0F, -1.0F, 1, 1, 1, 0.0F, false));
+		DustCover5_r1.cubeList.add(new ModelBox(DustCover5_r1, 94, 307, 0.0F, 0.0F, -11.0F, 1, 1, 1, 0.0F, false));
 
-		DustCover16 = new ModelRenderer(this);
-		DustCover16.setRotationPoint(-3.8F, -37.2F, -8.1F);
-		dustcover.addChild(DustCover16);
-		DustCover16.cubeList.add(new ModelBox(DustCover16, 14, 35, 0.0F, 0.0F, 0.0F, 1, 1, 9, 0.0F, false));
+		DustCover49 = new ModelRenderer(this);
+		DustCover49.setRotationPoint(-3.8F, -37.2F, -8.1F);
+		dustcover.addChild(DustCover49);
+		DustCover49.cubeList.add(new ModelBox(DustCover49, 116, 291, 0.0F, 0.0F, 0.0F, 1, 1, 9, 0.0F, false));
 
-		DustCover47 = new ModelRenderer(this);
-		DustCover47.setRotationPoint(-3.7F, -36.5F, -9.5F);
-		dustcover.addChild(DustCover47);
-		DustCover47.cubeList.add(new ModelBox(DustCover47, 19, 0, 0.0F, 0.0F, 0.0F, 1, 1, 1, 0.0F, false));
+		DustCover50 = new ModelRenderer(this);
+		DustCover50.setRotationPoint(-3.7F, -36.5F, -9.5F);
+		dustcover.addChild(DustCover50);
+		DustCover50.cubeList.add(new ModelBox(DustCover50, 98, 307, 0.0F, 0.0F, 0.0F, 1, 1, 1, 0.0F, false));
 
-		DustCover15 = new ModelRenderer(this);
-		DustCover15.setRotationPoint(-3.7F, -36.5F, -9.1F);
-		dustcover.addChild(DustCover15);
-		DustCover15.cubeList.add(new ModelBox(DustCover15, 36, 36, -0.001F, 0.0F, 0.0F, 1, 1, 11, 0.0F, false));
+		DustCover51 = new ModelRenderer(this);
+		DustCover51.setRotationPoint(-3.7F, -36.5F, -9.1F);
+		dustcover.addChild(DustCover51);
+		DustCover51.cubeList.add(new ModelBox(DustCover51, 276, 284, -0.001F, 0.0F, 0.0F, 1, 1, 11, 0.0F, false));
 
-		DustCover21 = new ModelRenderer(this);
-		DustCover21.setRotationPoint(-0.2F, -37.2F, -22.5F);
-		dustcover.addChild(DustCover21);
-		DustCover21.cubeList.add(new ModelBox(DustCover21, 74, 0, 0.0F, 0.0F, 0.0F, 1, 1, 22, 0.0F, false));
+		DustCover52 = new ModelRenderer(this);
+		DustCover52.setRotationPoint(-0.2F, -37.2F, -22.5F);
+		dustcover.addChild(DustCover52);
+		DustCover52.cubeList.add(new ModelBox(DustCover52, 264, 40, 0.0F, 0.0F, 0.0F, 1, 1, 22, 0.0F, false));
 
-		DustCover14 = new ModelRenderer(this);
-		DustCover14.setRotationPoint(-3.7F, -37.5F, -10.1F);
-		dustcover.addChild(DustCover14);
-		DustCover14.cubeList.add(new ModelBox(DustCover14, 0, 13, 0.0F, 0.0F, 0.0F, 1, 1, 12, 0.0F, false));
+		DustCover53 = new ModelRenderer(this);
+		DustCover53.setRotationPoint(-3.7F, -37.5F, -10.1F);
+		dustcover.addChild(DustCover53);
+		DustCover53.cubeList.add(new ModelBox(DustCover53, 0, 283, 0.0F, 0.0F, 0.0F, 1, 1, 12, 0.0F, false));
 
-		DustCover36 = new ModelRenderer(this);
-		DustCover36.setRotationPoint(-0.2F, -37.5F, -24.5F);
-		dustcover.addChild(DustCover36);
-		setRotationAngle(DustCover36, -1.1525F, 0.0F, 0.0F);
-		DustCover36.cubeList.add(new ModelBox(DustCover36, 6, 6, 0.001F, 0.0F, 0.0F, 1, 1, 2, 0.0F, false));
+		DustCover54 = new ModelRenderer(this);
+		DustCover54.setRotationPoint(-0.2F, -37.5F, -24.5F);
+		dustcover.addChild(DustCover54);
+		setRotationAngle(DustCover54, -1.1525F, 0.0F, 0.0F);
+		DustCover54.cubeList.add(new ModelBox(DustCover54, 200, 304, 0.001F, 0.0F, 0.0F, 1, 1, 2, 0.0F, false));
 
-		DustCover12 = new ModelRenderer(this);
-		DustCover12.setRotationPoint(-3.8F, -37.5F, -10.1F);
-		dustcover.addChild(DustCover12);
-		setRotationAngle(DustCover12, -0.8923F, 0.0F, 0.0F);
-		DustCover12.cubeList.add(new ModelBox(DustCover12, 19, 17, 0.0F, 0.0F, 0.0F, 1, 1, 1, 0.0F, false));
+		DustCover55 = new ModelRenderer(this);
+		DustCover55.setRotationPoint(-3.8F, -37.5F, -10.1F);
+		dustcover.addChild(DustCover55);
+		setRotationAngle(DustCover55, -0.8923F, 0.0F, 0.0F);
+		DustCover55.cubeList.add(new ModelBox(DustCover55, 102, 307, 0.0F, 0.0F, 0.0F, 1, 1, 1, 0.0F, false));
 
-		DustCover11 = new ModelRenderer(this);
-		DustCover11.setRotationPoint(-3.8F, -37.5F, -19.1F);
-		dustcover.addChild(DustCover11);
-		DustCover11.cubeList.add(new ModelBox(DustCover11, 38, 0, 0.001F, 0.0F, 0.0F, 1, 1, 9, 0.0F, false));
+		DustCover56 = new ModelRenderer(this);
+		DustCover56.setRotationPoint(-3.8F, -37.5F, -19.1F);
+		dustcover.addChild(DustCover56);
+		DustCover56.cubeList.add(new ModelBox(DustCover56, 288, 63, 0.001F, 0.0F, 0.0F, 1, 1, 9, 0.0F, false));
 
-		DustCover13 = new ModelRenderer(this);
-		DustCover13.setRotationPoint(-3.8F, -35.0F, -9.5F);
-		dustcover.addChild(DustCover13);
-		setRotationAngle(DustCover13, 2.1935F, 0.0F, 0.0F);
-		DustCover13.cubeList.add(new ModelBox(DustCover13, 6, 13, -0.001F, 0.0F, 0.0F, 1, 1, 2, 0.0F, false));
+		DustCover57 = new ModelRenderer(this);
+		DustCover57.setRotationPoint(-3.8F, -35.0F, -9.5F);
+		dustcover.addChild(DustCover57);
+		setRotationAngle(DustCover57, 2.1935F, 0.0F, 0.0F);
+		DustCover57.cubeList.add(new ModelBox(DustCover57, 224, 304, -0.001F, 0.0F, 0.0F, 1, 1, 2, 0.0F, false));
 
-		DustCover20 = new ModelRenderer(this);
-		DustCover20.setRotationPoint(-0.3F, -37.5F, -25.0F);
-		dustcover.addChild(DustCover20);
-		DustCover20.cubeList.add(new ModelBox(DustCover20, 58, 71, 0.0F, 0.0F, 0.0F, 1, 2, 27, 0.0F, false));
+		DustCover58 = new ModelRenderer(this);
+		DustCover58.setRotationPoint(-0.3F, -37.5F, -25.0F);
+		dustcover.addChild(DustCover58);
+		DustCover58.cubeList.add(new ModelBox(DustCover58, 160, 214, 0.0F, 0.0F, 0.0F, 1, 2, 27, 0.0F, false));
 
-		DustCover38 = new ModelRenderer(this);
-		DustCover38.setRotationPoint(-0.2F, -37.5F, -33.5F);
-		dustcover.addChild(DustCover38);
-		DustCover38.cubeList.add(new ModelBox(DustCover38, 38, 10, 0.0F, 0.0F, 0.0F, 1, 1, 9, 0.0F, false));
+		DustCover59 = new ModelRenderer(this);
+		DustCover59.setRotationPoint(-0.2F, -37.5F, -33.5F);
+		dustcover.addChild(DustCover59);
+		DustCover59.cubeList.add(new ModelBox(DustCover59, 136, 291, 0.0F, 0.0F, 0.0F, 1, 1, 9, 0.0F, false));
 
-		DustCover37 = new ModelRenderer(this);
-		DustCover37.setRotationPoint(-0.2F, -37.0F, -33.5F);
-		dustcover.addChild(DustCover37);
-		DustCover37.cubeList.add(new ModelBox(DustCover37, 38, 20, -0.001F, 0.0F, 0.0F, 1, 1, 9, 0.0F, false));
+		DustCover60 = new ModelRenderer(this);
+		DustCover60.setRotationPoint(-0.2F, -37.0F, -33.5F);
+		dustcover.addChild(DustCover60);
+		DustCover60.cubeList.add(new ModelBox(DustCover60, 156, 291, -0.001F, 0.0F, 0.0F, 1, 1, 9, 0.0F, false));
 
-		DustCover18 = new ModelRenderer(this);
-		DustCover18.setRotationPoint(-3.8F, -36.0F, 2.5F);
-		dustcover.addChild(DustCover18);
-		DustCover18.cubeList.add(new ModelBox(DustCover18, 14, 10, 0.0F, -0.001F, 0.001F, 4, 1, 1, 0.0F, false));
+		DustCover61 = new ModelRenderer(this);
+		DustCover61.setRotationPoint(-3.8F, -36.0F, 2.5F);
+		dustcover.addChild(DustCover61);
+		DustCover61.cubeList.add(new ModelBox(DustCover61, 228, 212, 0.0F, -0.001F, 0.001F, 4, 1, 1, 0.0F, false));
 
-		DustCover17 = new ModelRenderer(this);
-		DustCover17.setRotationPoint(-3.8F, -36.0F, -9.5F);
-		dustcover.addChild(DustCover17);
-		DustCover17.cubeList.add(new ModelBox(DustCover17, 0, 35, 0.0F, 0.0F, 0.0F, 1, 1, 12, 0.0F, false));
+		DustCover62 = new ModelRenderer(this);
+		DustCover62.setRotationPoint(-3.8F, -36.0F, -9.5F);
+		dustcover.addChild(DustCover62);
+		DustCover62.cubeList.add(new ModelBox(DustCover62, 26, 283, 0.0F, 0.0F, 0.0F, 1, 1, 12, 0.0F, false));
 
-		DustCover19 = new ModelRenderer(this);
-		DustCover19.setRotationPoint(-0.2F, -36.0F, -24.5F);
-		dustcover.addChild(DustCover19);
-		DustCover19.cubeList.add(new ModelBox(DustCover19, 0, 70, 0.0F, 0.0F, 0.0F, 1, 1, 28, 0.0F, false));
+		DustCover63 = new ModelRenderer(this);
+		DustCover63.setRotationPoint(-0.2F, -36.0F, -24.5F);
+		dustcover.addChild(DustCover63);
+		DustCover63.cubeList.add(new ModelBox(DustCover63, 160, 185, 0.0F, 0.0F, 0.0F, 1, 1, 28, 0.0F, false));
 	}
 
 	@Override

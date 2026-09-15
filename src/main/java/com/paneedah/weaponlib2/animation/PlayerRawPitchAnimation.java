@@ -31,9 +31,14 @@ public class PlayerRawPitchAnimation implements PlayerAnimation {
     private EntityPlayer clientPlayer;
 
     private boolean forceResetYawPitch;
-    private State state;
+    private ScreenShakingAnimationManager.State state;
     
-    public PlayerRawPitchAnimation(State state) {
+    public PlayerRawPitchAnimation(final ScreenShakingAnimationManager.State state) {
+        this.maxYaw = 2.0f;
+        this.maxPitch = 2.0f;
+        this.attenuation = 0.5f;
+        this.rand = new Random();
+        this.transitionDuration = 2000L;
         this.state = state;
     }
 
@@ -112,7 +117,7 @@ public class PlayerRawPitchAnimation implements PlayerAnimation {
     }
 
     @Override
-    public State getState() {
-        return state;
+    public ScreenShakingAnimationManager.State getState() {
+        return this.state;
     }
 }

@@ -33,11 +33,11 @@ public interface PlayerAnimation {
         }
 
         @Override
-        public State getState() {
-            return State.DEFAULT;
+        public ScreenShakingAnimationManager.State getState() {
+            return ScreenShakingAnimationManager.State.DEFAULT;
         }
     };
     
-    public State getState();
+    ScreenShakingAnimationManager.State getState();
     
 }

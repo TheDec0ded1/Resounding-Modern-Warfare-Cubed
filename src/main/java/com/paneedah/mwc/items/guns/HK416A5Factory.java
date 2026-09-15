@@ -7,10 +7,7 @@ import com.paneedah.mwc.ModernWarfareMod;
 import com.paneedah.mwc.init.MWCItems;
 import com.paneedah.mwc.models.*;
 import com.paneedah.mwc.proxies.CommonProxy;
-import com.paneedah.mwc.weapons.Attachments;
-import com.paneedah.mwc.weapons.Attachments3;
-import com.paneedah.mwc.weapons.AuxiliaryAttachments;
-import com.paneedah.mwc.weapons.STANAGMagazines;
+import com.paneedah.mwc.weapons.*;
 import com.paneedah.weaponlib2.*;
 import com.paneedah.weaponlib2.animation.Transform;
 import com.paneedah.weaponlib2.animation.Transition;
@@ -202,19 +199,14 @@ public class HK416A5Factory implements GunFactory {
         })
         .withCompatibleAttachment(Attachments.HK416A5Receiver, true, (model) -> {
         })
-        .withCompatibleAttachment(Attachments.HK416Grip, (model) -> {
-          GL11.glTranslatef(0f, -0.025f, 0f);
-        })
-        .withCompatibleAttachment(Attachments.HK416GripTan, true, (model) -> {
-            GL11.glTranslatef(0f, -0.025f, 0f);
-          })
+        .withCompatibleAttachment(ARParts.M4GripTan, (model) -> {})
+        .withCompatibleAttachment(ARParts.M4GripGray, (model) -> {})
+        .withCompatibleAttachment(ARParts.CQGrip, (model) -> {})
+        .withCompatibleAttachment(ARParts.M110Grip, (model) -> {})
+        .withCompatibleAttachment(ARParts.HK416Grip, (model) -> {})
+        .withCompatibleAttachment(ARParts.HK416GripTan, (model) -> {})
+        .withCompatibleAttachment(ARParts.LMG68Grip, (model) -> {})
         .withCompatibleAttachment(Attachments.M4Grip, (model) -> {
-        	GL11.glTranslatef(0f, -0.025f, 0f);
-        })
-        .withCompatibleAttachment(Attachments.M4GripTan, (model) -> {
-        	GL11.glTranslatef(0f, -0.025f, 0f);
-        })
-        .withCompatibleAttachment(Attachments.M4GripGray, (model) -> {
         	GL11.glTranslatef(0f, -0.025f, 0f);
         })
         .withCompatibleAttachment(Attachments.HeraArmsGrip, (model) -> {

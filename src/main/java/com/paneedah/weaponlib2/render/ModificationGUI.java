@@ -77,9 +77,12 @@ public class ModificationGUI {
 	private static final ModificationTab REARSIGHT_TAB = new ModificationTab(5, "Rear Sight", AttachmentCategory.REARSIGHT, 150, 0, ModificationGroup.MODIFICATION);
 	private static final ModificationTab RAILING_TAB = new ModificationTab(6, "Railing", AttachmentCategory.RAILING, 0, -50, ModificationGroup.MODIFICATION);
 	private static final ModificationTab STOCK_TAB = new ModificationTab(7, "Stock", AttachmentCategory.STOCK, -100, -50, ModificationGroup.MODIFICATION);
+	private static final ModificationTab RAILADAPTER_TAB = new ModificationTab(9, "Rail Adapter", AttachmentCategory.RAILADAPTER, 50, 100, ModificationGroup.MODIFICATION);
 
 	private static final ModificationTab WEAPON_SKIN_TAB = new ModificationTab(8, "Skin", AttachmentCategory.SKIN, 50, 100, ModificationGroup.CUSTOMIZATION);
 	private static final ModificationTab ACTION_TAB = new ModificationTab(9, "Action", AttachmentCategory.ACTION, -50, 50, ModificationGroup.CUSTOMIZATION);
+	private static final ModificationTab HANDLE_TAB = new ModificationTab(5, "Handle", AttachmentCategory.HANDLE, 150, 0, ModificationGroup.CUSTOMIZATION);
+	private static final ModificationTab DECOR_TAB = new ModificationTab(6, "Decorative", AttachmentCategory.DECOR, 0, -50, ModificationGroup.CUSTOMIZATION);
 
 	
 	
@@ -133,9 +136,13 @@ public class ModificationGUI {
 		tabList.add(STOCKADAPTER_TAB);
 		tabList.add(RAILING_TAB);
 		tabList.add(REARSIGHT_TAB);
+		tabList.add(RAILADAPTER_TAB);
 
 		// customization
 		tabList.add(WEAPON_SKIN_TAB);
+		tabList.add(DECOR_TAB);
+		tabList.add(ACTION_TAB);
+		tabList.add(HANDLE_TAB);
 	}
 	
 	// Useful to see what tab has its dropdown

@@ -208,19 +208,6 @@ public class S710TricunFactory implements GunFactory {
         .withCompatibleAttachment(Attachments.S710TricunGrip, true, (model) -> {
 //          GL11.glTranslatef(0f, 0f, 1f);
       })
-        .withCompatibleAttachment(Attachments.M4Grip, (model) -> {
-//            GL11.glTranslatef(0f, 0f, 1f);
-        })
-        .withCompatibleAttachment(Attachments.M4GripTan, (model) -> {
-//            GL11.glTranslatef(0f, 0f, 1f);
-        })
-        .withCompatibleAttachment(Attachments.M4GripGray, (model) -> {
-//            GL11.glTranslatef(0f, 0f, 1f);
-        })
-        .withCompatibleAttachment(Attachments.HeraArmsGrip, (model) -> {
-            GL11.glTranslatef(0F, -0.05F, 0F);
-            GL11.glScaled(1F, 0.95F, 1F);
-        })
         .withCompatibleAttachment(Magazines.S710TricunMag, (model) -> {
 //            GL11.glTranslatef(-0.33F, 0.5F, -1.3F);
 //            GL11.glScaled(1.05F, 1.2F, 1F);

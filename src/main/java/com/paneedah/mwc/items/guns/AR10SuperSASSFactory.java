@@ -7,6 +7,7 @@ import com.paneedah.mwc.proxies.CommonProxy;
 import com.paneedah.mwc.weapons.Attachments;
 import com.paneedah.mwc.weapons.Attachments3;
 import com.paneedah.mwc.weapons.AuxiliaryAttachments;
+import com.paneedah.mwc.weapons.ARParts;
 import com.paneedah.mwc.weapons.Magazines;
 import com.paneedah.weaponlib2.*;
 import com.paneedah.weaponlib2.animation.Transform;
@@ -313,10 +314,10 @@ public class AR10SuperSASSFactory implements GunFactory {
         .withCompatibleAttachment(Attachments.M4Grip, true, (model) -> {
 //            GL11.glTranslatef(0f, 0f, 1f);
         })
-        .withCompatibleAttachment(Attachments.M4GripTan, (model) -> {
+        .withCompatibleAttachment(ARParts.M4GripTan, (model) -> {
 //            GL11.glTranslatef(0f, 0f, 1f);
         })
-        .withCompatibleAttachment(Attachments.M4GripGray, (model) -> {
+        .withCompatibleAttachment(ARParts.M4GripGray, (model) -> {
 //            GL11.glTranslatef(0f, 0f, 1f);
         })
         .withCompatibleAttachment(Attachments.HeraArmsGrip, (model) -> {

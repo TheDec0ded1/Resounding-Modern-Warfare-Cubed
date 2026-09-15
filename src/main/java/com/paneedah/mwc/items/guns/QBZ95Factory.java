@@ -4,11 +4,7 @@ import com.paneedah.mwc.ModernWarfareMod;
 import com.paneedah.mwc.init.MWCItems;
 import com.paneedah.mwc.models.*;
 import com.paneedah.mwc.proxies.CommonProxy;
-import com.paneedah.mwc.weapons.Attachments;
-import com.paneedah.mwc.weapons.Attachments2;
-import com.paneedah.mwc.weapons.Attachments3;
-import com.paneedah.mwc.weapons.AuxiliaryAttachments;
-import com.paneedah.mwc.weapons.Magazines;
+import com.paneedah.mwc.weapons.*;
 import com.paneedah.weaponlib2.AttachmentCategory;
 import com.paneedah.weaponlib2.RenderableState;
 import com.paneedah.weaponlib2.Weapon;
@@ -53,23 +49,23 @@ public class QBZ95Factory {
         .withCreativeTab(ModernWarfareMod.AssaultRiflesTab)
         .useNewSystem()
         .withRecoilParam(new RecoilParam(
-				// The weapon power
-				15.0,
-				// Muzzle climb divisor
-				15.75,
-				// "Stock Length"
-				50.0,
-				// Recovery rate from initial shot
-				0.4,
-				// Recovery rate @ "stock"
-				0.3125,
-				// Recoil rotation (Y)
-				0.0,
-				// Recoil rotation (Z)
-				0.0,
-				// Ads similarity divisor
-				1.0
-		))
+		// The weapon power
+		35.0,
+		// Muzzle climb divisor
+		23.25,
+		// "Stock Length"
+		72.5,
+		// Recovery rate from initial shot
+		0.5875,
+		// Recovery rate @ "stock"
+		0.5875,
+		// Recoil rotation (Y)
+		0.0,
+		// Recoil rotation (Z)
+		0.0,
+		// Ads similarity divisor
+		1.0
+))
         .withInformationProvider(stack -> Arrays.asList(
         "Type: Bullpup Assault Rifle",
         "Damage: 6", 
@@ -102,18 +98,13 @@ public class QBZ95Factory {
         })
         .withCompatibleAttachment(Attachments2.QBZ97NSR_Body, (model) -> {
         })
-        .withCompatibleAttachment(Attachments.M4Grip, (model) -> {
-            GL11.glTranslatef(0f, 0f, 0.15f);
-        })
-        .withCompatibleAttachment(Attachments.C7Grip, (model) -> {
-            GL11.glTranslatef(0f, 0f, 0.15f);
-        })
-        .withCompatibleAttachment(Attachments.M4GripTan, (model) -> {
-            GL11.glTranslatef(0f, 0f, 0.15f);
-        })//50
-        .withCompatibleAttachment(Attachments.M4GripGray, (model) -> {
-            GL11.glTranslatef(0f, 0f, 0.15f);
-        })
+        .withCompatibleAttachment(ARParts.M4PistolGrip, (model) -> {})
+        .withCompatibleAttachment(ARParts.M16PistolGrip, (model) -> {})
+        .withCompatibleAttachment(ARParts.M4GripTan, (model) -> {})
+        .withCompatibleAttachment(ARParts.M4GripGray, (model) -> {})
+        .withCompatibleAttachment(ARParts.CQGrip, (model) -> {})
+        .withCompatibleAttachment(ARParts.M110Grip, (model) -> {})
+        .withCompatibleAttachment(ARParts.DDGrip, (model) -> {})
         .withCompatibleAttachment(Attachments2.QBZ95Dustcover, true, (model) -> {
         })
         .withCompatibleAttachment(Attachments2.QBZ95BDustcover, (model) -> {
@@ -129,6 +120,8 @@ public class QBZ95Factory {
         .withCompatibleAttachment(Magazines.QBZ95Mag, (model) -> {
         })
         .withCompatibleAttachment(Magazines.QBB95Mag, (model) -> {
+        })
+        .withCompatibleAttachment(Magazines.QBZ191Magazine, (model) -> {
         })
         .withCompatibleAttachment(Attachments3.NightRaider, (player, stack) -> {
             GL11.glTranslatef(-0.21F, -1.87F, -1.4F);
@@ -359,8 +352,9 @@ public class QBZ95Factory {
                 
                 .setupModernAnimations("qbz95", AuxiliaryAttachments.QBZ95Action)
                 .setupModernMagazineAnimations("qbz95", 
-                		Magazines.QBZ95Mag,
-                                Magazines.QBB95Mag)
+                		Magazines.QBZ191Magazine,
+						Magazines.QBZ95Mag,
+                        Magazines.QBB95Mag)
             
             .withThirdPersonPositioning((renderContext) -> {
                 GL11.glScaled(0.45F, 0.45F, 0.45F);

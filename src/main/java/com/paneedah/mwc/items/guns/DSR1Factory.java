@@ -33,7 +33,7 @@ public class DSR1Factory implements GunFactory {
         .withMaxShots(1)
         .withShootSound("l96a1")
         .withPumpTimeout(1000)
-        .withSilencedShootSound("sniper_silenced")
+        .withSilencedShootSound("silenced_308win")
         .withReloadSound("l96a1_reload")
         .withUnloadSound("m40a6_unload")
         .withInspectSound("inspection")

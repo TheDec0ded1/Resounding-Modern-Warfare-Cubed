@@ -1,0 +1,211 @@
+package com.paneedah.mwc.models;
+
+import net.minecraft.client.model.ModelBase;
+import net.minecraft.client.model.ModelBox;
+import net.minecraft.client.model.ModelRenderer;
+import net.minecraft.entity.Entity;
+
+// Made with Blockbench 5.1.5
+// Exported for Minecraft version 1.7 - 1.12
+// Paste this class into your mod and generate all required imports
+
+
+public class M27IAR_BufferTube extends ModelBase {
+	private final ModelRenderer extensionHK;
+	private final ModelRenderer extension_r1;
+	private final ModelRenderer extension_r2;
+	private final ModelRenderer extension_r3;
+	private final ModelRenderer extension_r4;
+	private final ModelRenderer extension_r5;
+	private final ModelRenderer extension_r6;
+	private final ModelRenderer extension_r7;
+	private final ModelRenderer extension_r8;
+	private final ModelRenderer extension_r9;
+	private final ModelRenderer extension_r10;
+	private final ModelRenderer extension_r11;
+	private final ModelRenderer extension_r12;
+	private final ModelRenderer extension_r13;
+	private final ModelRenderer extension_r14;
+	private final ModelRenderer extension_r15;
+	private final ModelRenderer extension_r16;
+	private final ModelRenderer extension_r17;
+	private final ModelRenderer extension_r18;
+	private final ModelRenderer extension_r19;
+	private final ModelRenderer extension_r20;
+	private final ModelRenderer extension_r21;
+	private final ModelRenderer extension_r22;
+	private final ModelRenderer extension_r23;
+	private final ModelRenderer extension_r24;
+	private final ModelRenderer extension_r25;
+
+	public M27IAR_BufferTube() {
+		textureWidth = 416;
+		textureHeight = 416;
+
+		extensionHK = new ModelRenderer(this);
+		extensionHK.setRotationPoint(0.0F, 31.25F, -2.0F);
+		extensionHK.cubeList.add(new ModelBox(extensionHK, 186, 341, -2.0F, -47.1F, 4.999F, 1, 1, 23, 0.0F, false));
+		extensionHK.cubeList.add(new ModelBox(extensionHK, 380, 273, -2.0F, -47.225F, 4.499F, 1, 1, 3, 0.05F, false));
+
+		extension_r1 = new ModelRenderer(this);
+		extension_r1.setRotationPoint(-2.8606F, -45.2878F, 17.999F);
+		extensionHK.addChild(extension_r1);
+		setRotationAngle(extension_r1, 0.0F, 0.0F, -1.5708F);
+		extension_r1.cubeList.add(new ModelBox(extension_r1, 126, 381, -0.5F, -0.5766F, -13.5F, 1, 1, 3, 0.05F, false));
+
+		extension_r2 = new ModelRenderer(this);
+		extension_r2.setRotationPoint(-2.8453F, -45.3648F, 17.999F);
+		extensionHK.addChild(extension_r2);
+		setRotationAngle(extension_r2, 0.0F, 0.0F, -1.1781F);
+		extension_r2.cubeList.add(new ModelBox(extension_r2, 118, 381, 0.2413F, -0.7241F, -13.5F, 1, 1, 3, 0.05F, false));
+
+		extension_r3 = new ModelRenderer(this);
+		extension_r3.setRotationPoint(-2.8453F, -45.2107F, 17.999F);
+		extensionHK.addChild(extension_r3);
+		setRotationAngle(extension_r3, 0.0F, 0.0F, -1.9635F);
+		extension_r3.cubeList.add(new ModelBox(extension_r3, 110, 381, -1.2413F, -0.7241F, -13.5F, 1, 1, 3, 0.05F, false));
+
+		extension_r4 = new ModelRenderer(this);
+		extension_r4.setRotationPoint(-1.5F, -43.9272F, 17.999F);
+		extensionHK.addChild(extension_r4);
+		setRotationAngle(extension_r4, 0.0F, 0.0F, 3.1416F);
+		extension_r4.cubeList.add(new ModelBox(extension_r4, 102, 381, -0.5F, -0.5766F, -13.5F, 1, 1, 3, 0.05F, false));
+
+		extension_r5 = new ModelRenderer(this);
+		extension_r5.setRotationPoint(-1.5771F, -43.9425F, 17.999F);
+		extensionHK.addChild(extension_r5);
+		setRotationAngle(extension_r5, 0.0F, 0.0F, -2.7489F);
+		extension_r5.cubeList.add(new ModelBox(extension_r5, 94, 381, 0.2413F, -0.7241F, -13.5F, 1, 1, 3, 0.05F, false));
+
+		extension_r6 = new ModelRenderer(this);
+		extension_r6.setRotationPoint(-1.4229F, -43.9425F, 17.999F);
+		extensionHK.addChild(extension_r6);
+		setRotationAngle(extension_r6, 0.0F, 0.0F, 2.7489F);
+		extension_r6.cubeList.add(new ModelBox(extension_r6, 376, 216, -1.2413F, -0.7241F, -13.5F, 1, 1, 3, 0.05F, false));
+
+		extension_r7 = new ModelRenderer(this);
+		extension_r7.setRotationPoint(-0.1394F, -45.2878F, 17.999F);
+		extensionHK.addChild(extension_r7);
+		setRotationAngle(extension_r7, 0.0F, 0.0F, 1.5708F);
+		extension_r7.cubeList.add(new ModelBox(extension_r7, 86, 381, -0.5F, -0.5766F, -13.5F, 1, 1, 3, 0.05F, false));
+
+		extension_r8 = new ModelRenderer(this);
+		extension_r8.setRotationPoint(-0.1547F, -45.2107F, 17.999F);
+		extensionHK.addChild(extension_r8);
+		setRotationAngle(extension_r8, 0.0F, 0.0F, 1.9635F);
+		extension_r8.cubeList.add(new ModelBox(extension_r8, 78, 381, 0.2413F, -0.7241F, -13.5F, 1, 1, 3, 0.05F, false));
+
+		extension_r9 = new ModelRenderer(this);
+		extension_r9.setRotationPoint(-0.1547F, -45.3648F, 17.999F);
+		extensionHK.addChild(extension_r9);
+		setRotationAngle(extension_r9, 0.0F, 0.0F, 1.1781F);
+		extension_r9.cubeList.add(new ModelBox(extension_r9, 70, 381, -1.2413F, -0.7241F, -13.5F, 1, 1, 3, 0.05F, false));
+
+		extension_r10 = new ModelRenderer(this);
+		extension_r10.setRotationPoint(-2.3477F, -46.5564F, 17.999F);
+		extensionHK.addChild(extension_r10);
+		setRotationAngle(extension_r10, 0.0F, 0.0F, -0.3927F);
+		extension_r10.cubeList.add(new ModelBox(extension_r10, 380, 281, -0.5F, -0.5F, -13.5F, 1, 1, 3, 0.05F, false));
+
+		extension_r11 = new ModelRenderer(this);
+		extension_r11.setRotationPoint(-0.6523F, -46.5564F, 17.999F);
+		extensionHK.addChild(extension_r11);
+		setRotationAngle(extension_r11, 0.0F, 0.0F, 0.3927F);
+		extension_r11.cubeList.add(new ModelBox(extension_r11, 380, 277, -0.5F, -0.5F, -13.5F, 1, 1, 3, 0.05F, false));
+
+		extension_r12 = new ModelRenderer(this);
+		extension_r12.setRotationPoint(-0.2701F, -45.2934F, 18.499F);
+		extensionHK.addChild(extension_r12);
+		setRotationAngle(extension_r12, 0.0F, 0.0F, 1.1781F);
+		extension_r12.cubeList.add(new ModelBox(extension_r12, 352, 244, -1.2413F, -0.7241F, -13.5F, 1, 1, 23, 0.0F, false));
+
+		extension_r13 = new ModelRenderer(this);
+		extension_r13.setRotationPoint(-0.2701F, -45.2934F, 18.499F);
+		extensionHK.addChild(extension_r13);
+		setRotationAngle(extension_r13, 0.0F, 0.0F, 1.9635F);
+		extension_r13.cubeList.add(new ModelBox(extension_r13, 352, 128, 0.2413F, -0.7241F, -13.5F, 1, 1, 23, 0.0F, false));
+
+		extension_r14 = new ModelRenderer(this);
+		extension_r14.setRotationPoint(-0.2701F, -45.2934F, 18.499F);
+		extensionHK.addChild(extension_r14);
+		setRotationAngle(extension_r14, 0.0F, 0.0F, 1.5708F);
+		extension_r14.cubeList.add(new ModelBox(extension_r14, 352, 104, -0.5F, -0.5766F, -13.5F, 1, 1, 23, 0.0F, false));
+
+		extension_r15 = new ModelRenderer(this);
+		extension_r15.setRotationPoint(-1.5F, -44.0635F, 18.499F);
+		extensionHK.addChild(extension_r15);
+		setRotationAngle(extension_r15, 0.0F, 0.0F, 2.7489F);
+		extension_r15.cubeList.add(new ModelBox(extension_r15, 0, 348, -1.2413F, -0.7241F, -13.5F, 1, 1, 23, 0.0F, false));
+
+		extension_r16 = new ModelRenderer(this);
+		extension_r16.setRotationPoint(-1.5F, -44.0635F, 18.499F);
+		extensionHK.addChild(extension_r16);
+		setRotationAngle(extension_r16, 0.0F, 0.0F, -2.7489F);
+		extension_r16.cubeList.add(new ModelBox(extension_r16, 346, 338, 0.2413F, -0.7241F, -13.5F, 1, 1, 23, 0.0F, false));
+
+		extension_r17 = new ModelRenderer(this);
+		extension_r17.setRotationPoint(-2.0F, -43.5696F, 13.101F);
+		extensionHK.addChild(extension_r17);
+		setRotationAngle(extension_r17, 0.6109F, 0.0F, 3.1416F);
+		extension_r17.cubeList.add(new ModelBox(extension_r17, 26, 379, -1.5F, -0.5766F, -1.5F, 2, 2, 3, 0.0F, false));
+
+		extension_r18 = new ModelRenderer(this);
+		extension_r18.setRotationPoint(-2.0F, -44.8135F, 18.499F);
+		extensionHK.addChild(extension_r18);
+		setRotationAngle(extension_r18, 0.0F, 0.0F, 3.1416F);
+		extension_r18.cubeList.add(new ModelBox(extension_r18, 294, 387, -1.5F, -0.5766F, 8.5F, 2, 2, 1, 0.0F, false));
+
+		extension_r19 = new ModelRenderer(this);
+		extension_r19.setRotationPoint(-2.0F, -42.8135F, 18.499F);
+		extensionHK.addChild(extension_r19);
+		setRotationAngle(extension_r19, 0.0F, 0.0F, 3.1416F);
+		extension_r19.cubeList.add(new ModelBox(extension_r19, 352, 152, -1.5F, -0.5766F, -4.5F, 2, 2, 14, 0.0F, false));
+
+		extension_r20 = new ModelRenderer(this);
+		extension_r20.setRotationPoint(-1.5F, -44.0635F, 18.499F);
+		extensionHK.addChild(extension_r20);
+		setRotationAngle(extension_r20, 0.0F, 0.0F, 3.1416F);
+		extension_r20.cubeList.add(new ModelBox(extension_r20, 48, 346, -0.5F, -0.5766F, -13.5F, 1, 1, 23, 0.0F, false));
+
+		extension_r21 = new ModelRenderer(this);
+		extension_r21.setRotationPoint(-2.7299F, -45.2934F, 18.499F);
+		extensionHK.addChild(extension_r21);
+		setRotationAngle(extension_r21, 0.0F, 0.0F, -1.9635F);
+		extension_r21.cubeList.add(new ModelBox(extension_r21, 120, 345, -1.2413F, -0.7241F, -13.5F, 1, 1, 23, 0.0F, false));
+
+		extension_r22 = new ModelRenderer(this);
+		extension_r22.setRotationPoint(-2.7299F, -45.2934F, 18.499F);
+		extensionHK.addChild(extension_r22);
+		setRotationAngle(extension_r22, 0.0F, 0.0F, -1.1781F);
+		extension_r22.cubeList.add(new ModelBox(extension_r22, 344, 0, 0.2413F, -0.7241F, -13.5F, 1, 1, 23, 0.0F, false));
+
+		extension_r23 = new ModelRenderer(this);
+		extension_r23.setRotationPoint(-2.7299F, -45.2934F, 18.499F);
+		extensionHK.addChild(extension_r23);
+		setRotationAngle(extension_r23, 0.0F, 0.0F, -1.5708F);
+		extension_r23.cubeList.add(new ModelBox(extension_r23, 342, 286, -0.5F, -0.5766F, -13.5F, 1, 1, 23, 0.0F, false));
+
+		extension_r24 = new ModelRenderer(this);
+		extension_r24.setRotationPoint(-2.2706F, -46.4467F, 18.499F);
+		extensionHK.addChild(extension_r24);
+		setRotationAngle(extension_r24, 0.0F, 0.0F, -0.3927F);
+		extension_r24.cubeList.add(new ModelBox(extension_r24, 342, 192, -0.5F, -0.5F, -13.5F, 1, 1, 23, 0.0F, false));
+
+		extension_r25 = new ModelRenderer(this);
+		extension_r25.setRotationPoint(-0.7294F, -46.4467F, 18.499F);
+		extensionHK.addChild(extension_r25);
+		setRotationAngle(extension_r25, 0.0F, 0.0F, 0.3927F);
+		extension_r25.cubeList.add(new ModelBox(extension_r25, 342, 168, -0.5F, -0.5F, -13.5F, 1, 1, 23, 0.0F, false));
+	}
+
+	@Override
+	public void render(Entity entity, float f, float f1, float f2, float f3, float f4, float f5) {
+		extensionHK.render(f5);
+	}
+
+	public void setRotationAngle(ModelRenderer modelRenderer, float x, float y, float z) {
+		modelRenderer.rotateAngleX = x;
+		modelRenderer.rotateAngleY = y;
+		modelRenderer.rotateAngleZ = z;
+	}
+}

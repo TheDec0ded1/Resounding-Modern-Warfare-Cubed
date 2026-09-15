@@ -654,7 +654,7 @@ public class AnimationModeProcessor {
 	
 	public void renderRotAxis(float scalar) {
 		GlStateManager.color(1, 1, 1);
-		//Bloom.initializeMultisample();
+		Bloom.initializeMultisample();
 		GL11.glLineWidth(5f);
 		GlStateManager.disableTexture2D();
 		GlStateManager.disableLighting();

@@ -158,5 +158,20 @@ public class UniversalSoundRegistry {
 		UniversalSoundLookup.registerSoundToLookup("stoner63magout");
 		UniversalSoundLookup.registerSoundToLookup("stoner63magtouch");
 		UniversalSoundLookup.registerSoundToLookup("qcw05bolt_back");
+		UniversalSoundLookup.registerSoundToLookup("qbz191_boltdrop");
+		UniversalSoundLookup.registerSoundToLookup("vz58_boltback");
+		UniversalSoundLookup.registerSoundToLookup("vz58_boltforward");
+		UniversalSoundLookup.registerSoundToLookup("tavorboltback");
+		UniversalSoundLookup.registerSoundToLookup("tavorboltforward");
+		UniversalSoundLookup.registerSoundToLookup("ax50mag_load");
+		UniversalSoundLookup.registerSoundToLookup("ax50mag_unload");
+		UniversalSoundLookup.registerSoundToLookup("ax50mag_touchgun");
+		UniversalSoundLookup.registerSoundToLookup("ax50mag_smack");
+		UniversalSoundLookup.registerSoundToLookup("hamr_boltback");
+		UniversalSoundLookup.registerSoundToLookup("hamr_boltforward");
+		UniversalSoundLookup.registerSoundToLookup("mp9_boltback");
+		UniversalSoundLookup.registerSoundToLookup("mp9_boltforward");
+		UniversalSoundLookup.registerSoundToLookup("osv96_boltback");
+		UniversalSoundLookup.registerSoundToLookup("osv96_boltforward");
 	}
 }

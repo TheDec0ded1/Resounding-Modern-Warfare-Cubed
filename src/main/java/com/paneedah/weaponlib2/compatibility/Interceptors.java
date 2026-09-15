@@ -4,6 +4,8 @@ import com.paneedah.mwc.utils.MathUtil;
 import com.paneedah.weaponlib2.*;
 import com.paneedah.weaponlib2.animation.AnimationModeProcessor;
 import com.paneedah.weaponlib2.animation.ClientValueRepo;
+import com.paneedah.weaponlib2.animation.MultipartRenderStateManager;
+import com.paneedah.weaponlib2.animation.ScreenShakingAnimationManager;
 import com.paneedah.weaponlib2.config.ModernConfigManager;
 import com.paneedah.weaponlib2.inventory.CustomPlayerInventory;
 import com.paneedah.weaponlib2.numerical.LissajousCurve;
@@ -345,7 +347,7 @@ public class Interceptors {
     	
    	nsm.applyWorld();
     	
-    	/*
+
     	if(weaponInstance != null) {
       		   ClientModContext context = (ClientModContext) weaponInstance.getWeapon().getModContext();
               MultipartRenderStateManager<RenderableState, Part, RenderContext<RenderableState>> stateManager = weaponInstance.getWeapon().getRenderer().getStateManager(player);
@@ -353,7 +355,7 @@ public class Interceptors {
               ScreenShakingAnimationManager yawPitchAnimationManager = context.getPlayerRawPitchAnimationManager();
               yawPitchAnimationManager.update(player, weaponInstance, stateManager != null ? stateManager.getLastState() : null);
          }
-    		*/
+
     	
     	
     	

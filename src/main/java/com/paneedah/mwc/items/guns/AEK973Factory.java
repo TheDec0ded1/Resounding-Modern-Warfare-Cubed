@@ -10,7 +10,7 @@ import com.paneedah.mwc.proxies.CommonProxy;
 import com.paneedah.mwc.weapons.Attachments;
 import com.paneedah.mwc.weapons.Attachments2;
 import com.paneedah.mwc.weapons.Attachments3;
-import com.paneedah.mwc.weapons.AuxiliaryAttachments;
+import com.paneedah.mwc.weapons.AKParts;
 import com.paneedah.mwc.weapons.Magazines;
 import com.paneedah.weaponlib2.*;
 import com.paneedah.weaponlib2.animation.Transform;
@@ -32,7 +32,7 @@ public class AEK973Factory {
         
         .withName("aek973")
 //        .withAmmoCapacity(30)
-        .withFireRate(0.8f)
+        .withFireRate(0.75f)
         .withRecoil(1f)
         .withZoom(0.9f)
         .withConfigGroup(GunConfigurationGroup.AR)
@@ -41,7 +41,7 @@ public class AEK973Factory {
         .withMuzzlePosition(new Vec3d(-0.16400000488758082, -1.0, -6.5))
         //.withMaxShots(5)
         .withShootSound("aek973")
-        .withSilencedShootSound("ak_silenced")
+        .withSilencedShootSound("ak74_silenced")
         .withReloadSound("ak_reload")
         .withUnloadSound("ak_unload")
         .withInspectSound("inspection")
@@ -60,23 +60,23 @@ public class AEK973Factory {
         .withCreativeTab(ModernWarfareMod.AssaultRiflesTab)
         .useNewSystem()
         .withRecoilParam(new RecoilParam(
-				// The weapon power
-				15.0,
-				// Muzzle climb divisor
-				15.75,
-				// "Stock Length"
-				50.0,
-				// Recovery rate from initial shot
-				0.4,
-				// Recovery rate @ "stock"
-				0.3125,
-				// Recoil rotation (Y)
-				0.0,
-				// Recoil rotation (Z)
-				0.0,
-				// Ads similarity divisor
-				1.0
-		))
+		// The weapon power
+		12.5,
+		// Muzzle climb divisor
+		20.25,
+		// "Stock Length"
+		55.00000000000001,
+		// Recovery rate from initial shot
+		0.55,
+		// Recovery rate @ "stock"
+		0.55,
+		// Recoil rotation (Y)
+		0.0,
+		// Recoil rotation (Z)
+		0.0,
+		// Ads similarity divisor
+		1.45
+))
         .withInformationProvider(stack -> Arrays.asList(
         "Type: Assault Rifle",
         "Damage: 6", 
@@ -99,42 +99,33 @@ public class AEK973Factory {
         
         .withUnremovableAttachmentCategories(AttachmentCategory.GUARD)
         .withUnremovableAttachmentCategories(AttachmentCategory.BACKGRIP)
-//        .withUnremovableAttachmentCategories(AttachmentCategory.RAILING)
- 
-        .withCompatibleAttachment(AuxiliaryAttachments.AEK971Action, true, (model) -> {
+        .withCompatibleAttachment(AKParts.AEK971Action, true, (model) -> {
         })
-        .withCompatibleAttachment(AuxiliaryAttachments.AKpart, true, (model) -> {
-            GL11.glTranslatef(-0.14F, -0.81F, -5.96F);
-            GL11.glScaled(0.5F, 0.5F, 3F);
+        .withCompatibleAttachment(AKParts.AEK971Handguard, true, (model) -> {
         })
-        .withCompatibleAttachment(Attachments.AKIron, true, (model) -> {
-            if(model instanceof AKiron3) {
-                GL11.glTranslatef(-0.195F, -1.06F, -5.96F);
-                GL11.glScaled(0.9F, 0.55F, 0.5F);
-            } else if(model instanceof AKMiron2) {
-                GL11.glTranslatef(-0.185F, -1.32F, -5.95F);
-                GL11.glScaled(0.55F, 0.55F, 0.68F);
-            }
+        .withCompatibleAttachment(AKParts.AEK971Stock, true, (model) -> {
+        })
+        .withCompatibleAttachment(AKParts.AEK971Grip, true, (model) -> {
+        })
+        .withCompatibleAttachment(AKParts.AEK971Muzzle, true, (model) -> {
+        })
+        .withCompatibleAttachment(AKParts.AEK971SStock, (model) -> {
+        })
+        .withCompatibleAttachment(AKParts.AEK971SGrip, (model) -> {
+        })
+        .withCompatibleAttachment(Magazines.AK15Mag762x39, (model) -> {
         })
         .withCompatibleAttachment(Magazines.AK15Mag, (model) -> {
         })
-        .withCompatibleAttachment(Magazines.AK47PMAGTan, (model) -> {
-        })
         .withCompatibleAttachment(Magazines.AK47Mag, (model) -> {
-//        	GL11.glTranslatef(0F, 2F, 0.2F);
-//            GL11.glRotatef(-10F, 1f, 0f, 0f);
         })
         .withCompatibleAttachment(Magazines.AKMMag, (model) -> {
-//        	GL11.glTranslatef(0F, 2F, 0.2F);
-//            GL11.glRotatef(-10F, 1f, 0f, 0f);
         })
         .withCompatibleAttachment(Magazines.AKMGreenMag, (model) -> {
-//        	GL11.glTranslatef(0F, 2F, 0.2F);
-//            GL11.glRotatef(-10F, 1f, 0f, 0f);
         })
         .withCompatibleAttachment(Magazines.AK103Mag, (model) -> {
-//        	GL11.glTranslatef(0F, 2F, 0.2F);
-//            GL11.glRotatef(-10F, 1f, 0f, 0f);
+        })
+        .withCompatibleAttachment(Magazines.AK47PMAGTan, (model) -> {
         })
         .withCompatibleAttachment(Magazines.AK50Mag, (model) -> {
             GL11.glRotatef(-20.000000f, 1f, 0f, 0f);
@@ -152,48 +143,6 @@ public class AEK973Factory {
         .withCompatibleAttachment(Attachments3.Silencer545x39, (model) -> {
           GL11.glTranslatef(-0.2F, -1.06F, -7.55F);
           GL11.glScaled(1F, 1F, 1F);
-        })
-        .withCompatibleAttachment(AuxiliaryAttachments.Extra, true, (model) -> {
-            if(model instanceof AKMiron1) {
-                GL11.glTranslatef(0.125F, -1.8F, -0.5F);
-                GL11.glScaled(0F, 0F, 0F);
-            } else if(model instanceof AKMiron2) {
-                GL11.glTranslatef(-0.185F, -1.32F, -5.95F);
-                GL11.glScaled(0F, 0F, 0F);
-            } else if(model instanceof AK47iron) {
-                GL11.glTranslatef(-0.25F, -1.65F, -3.05F);
-                GL11.glScaled(0.8F, 0.7F, 0.6F);
-            } else if(model instanceof M4Iron1) {
-                GL11.glTranslatef(0.155F, -1.74F, 1F);
-                GL11.glScaled(0F, 0F, 0F);
-            } else if(model instanceof M4Iron2) {
-                GL11.glTranslatef(0.26F, -1.55F, -2.35F);
-                GL11.glScaled(0F, 0F, 0F);
-            } else if(model instanceof P90iron) {
-                GL11.glTranslatef(0.26F, -1.55F, -2.35F);
-                GL11.glScaled(0F, 0F, 0F);
-            } else if(model instanceof G36CIron1) {
-                GL11.glTranslatef(-0.22F, -1.94F, 0.13F);
-                GL11.glScaled(0F, 0F, 0F);
-            } else if(model instanceof G36CIron2) {
-                GL11.glTranslatef(-0.205F, -1.9F, -3.15F);
-                GL11.glScaled(0F, 0F, 0F);
-            } else if(model instanceof ScarIron1) {
-                    GL11.glTranslatef(0.165F, -1.65F, 1F);
-                    GL11.glScaled(0F, 0F, 0F);
-            } else if(model instanceof ScarIron2) {
-                    GL11.glTranslatef(0.25F, -1.55F, -2F);
-                    GL11.glScaled(0F, 0F, 0F);
-            } else if(model instanceof FALIron) {
-                GL11.glTranslatef(0.129F, -1.63F, -2.08F);
-                GL11.glScaled(0F, 0F, 0F);
-            } else if(model instanceof M14Iron) {
-                GL11.glTranslatef(0.129F, -1.63F, -2.08F);
-                GL11.glScaled(0F, 0F, 0F);
-            } else if(model instanceof MP5Iron) {
-                GL11.glTranslatef(0.215F, -1.54F, 1.2F);
-                GL11.glScaled(0F, 0F, 0F);
-            }
         })
         .withCompatibleAttachment(Attachments3.PSO1, (player, stack) -> {
             
@@ -229,7 +178,7 @@ public class AEK973Factory {
         .withRenderer(new WeaponRenderer.Builder()
                 
                 .withModel(new AEK971())
-                .withActionPiece(AuxiliaryAttachments.AEK971Action)
+                .withActionPiece(AKParts.AEK971Action)
                 .withActionTransform(new Transform().withPosition(0, 0, 1))
                 .withADSBeizer(new Vec3d(0.2, 1.7, 0.5))
                 //.withTextureName("AK47")
@@ -279,23 +228,24 @@ public class AEK973Factory {
                     
                     )
                     
-                    .setupModernAnimations("ak47", AuxiliaryAttachments.AEK971Action)
+                    .setupModernAnimations("ak47", AKParts.AEK971Action)
                     .setupModernMagazineAnimations("ak47", 
-                		Magazines.AK47Mag, 
-                		Magazines.AKMMag,
-                		Magazines.AKMGreenMag,
-                		Magazines.AK103Mag,
-                		Magazines.AK15Mag, 
-                		Magazines.AK47PMAGTan,
-                		Magazines.AK50Mag,
-                		Magazines.AK75Mag,
-                		Magazines.AK100Mag)
+                    		Magazines.AK47Mag, 
+                    		Magazines.AKMMag,
+                    		Magazines.AKMGreenMag,
+                    		Magazines.AK103Mag,
+                    		Magazines.AK15Mag,
+                            Magazines.AK15Mag762x39,
+                    		Magazines.AK47PMAGTan,
+                    		Magazines.AK50Mag,
+                    		Magazines.AK75Mag,
+                    		Magazines.AK100Mag)
                 
-                .withFirstPersonPositioningCustomRecoiled(AuxiliaryAttachments.AEK971Action.getRenderablePart(), (renderContext) -> {
+                .withFirstPersonPositioningCustomRecoiled(AKParts.AEK971Action.getRenderablePart(), (renderContext) -> {
                     GL11.glTranslatef(0f, 0f, 1f);
                     })
                     
-                .withFirstPersonPositioningCustomZoomingRecoiled(AuxiliaryAttachments.AEK971Action.getRenderablePart(), (renderContext) -> {
+                .withFirstPersonPositioningCustomZoomingRecoiled(AKParts.AEK971Action.getRenderablePart(), (renderContext) -> {
                     GL11.glTranslatef(0f, 0f, 1f);
                     })
                         
@@ -374,7 +324,7 @@ public class AEK973Factory {
                 )
                 
                         
-                .withThirdPersonCustomPositioningReloading(AuxiliaryAttachments.AEK971Action.getRenderablePart(),
+                .withThirdPersonCustomPositioningReloading(AKParts.AEK971Action.getRenderablePart(),
 //                        new Transition((renderContext) -> {
 //                        }, 500, 1000),
                         new Transition((renderContext) -> {
@@ -726,7 +676,7 @@ public class AEK973Factory {
                         }, 300, 0))
                  
                 .build())
-            .withSpawnEntityDamage(6.6f)
+            .withSpawnEntityDamage(6f)
             .withSpawnEntityGravityVelocity(0.0118f)
                     
             .build(ModernWarfareMod.MOD_CONTEXT);

@@ -10,6 +10,7 @@ import com.paneedah.mwc.proxies.CommonProxy;
 import com.paneedah.mwc.weapons.Attachments;
 import com.paneedah.mwc.weapons.Attachments2;
 import com.paneedah.mwc.weapons.Attachments3;
+import com.paneedah.mwc.weapons.AKParts;
 import com.paneedah.mwc.weapons.AuxiliaryAttachments;
 import com.paneedah.mwc.weapons.Magazines;
 import com.paneedah.weaponlib2.*;
@@ -126,27 +127,27 @@ public class RPK16Factory {
                 GL11.glScaled(0.7F, 0.8F, 0.5F);
             } 
         })
-        .withCompatibleAttachment(Attachments2.AK15DustCover, true, (model) -> {
+        .withCompatibleAttachment(AKParts.AK15DustCover, true, (model) -> {
         })
         .withCompatibleAttachment(Attachments.CollapsableMOEStock, true, (model) -> {
             GL11.glTranslatef(0.02f, 0.2f, -0.2f);
             GL11.glScaled(1.2F, 1.2F, 1.2F);
         })
-        .withCompatibleAttachment(Attachments2.AK400Stock, (model) -> {
+        .withCompatibleAttachment(AKParts.AK400Stock, (model) -> {
         })
-        .withCompatibleAttachment(Attachments2.AK15StockLate, (model) -> {
+        .withCompatibleAttachment(AKParts.AK15StockLate, (model) -> {
         })
-        .withCompatibleAttachment(Attachments2.AK15StockEarly, (model) -> {
+        .withCompatibleAttachment(AKParts.AK15StockEarly, (model) -> {
         })
-        .withCompatibleAttachment(Attachments.AKErgoGripGreen, (model) -> {
+        .withCompatibleAttachment(AKParts.AKErgoGripGreen, (model) -> {
 //          GL11.glTranslatef(0.02f, 0.2f, -0.4f);
 //          GL11.glScaled(1.2F, 1.2F, 1.2F);
       })
-        .withCompatibleAttachment(Attachments.AK12GripTan, (model) -> {
+        .withCompatibleAttachment(AKParts.AK12GripTan, (model) -> {
 //          GL11.glTranslatef(0.02f, 0.2f, -0.4f);
 //          GL11.glScaled(1.2F, 1.2F, 1.2F);
       })
-        .withCompatibleAttachment(Attachments.AKErgoGrip, true, (model) -> {
+        .withCompatibleAttachment(AKParts.AKErgoGrip, true, (model) -> {
 //          GL11.glTranslatef(0.02f, 0.2f, -0.4f);
 //          GL11.glScaled(1.2F, 1.2F, 1.2F);
         })

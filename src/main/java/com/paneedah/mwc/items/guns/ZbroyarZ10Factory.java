@@ -4,10 +4,7 @@ import com.paneedah.mwc.ModernWarfareMod;
 import com.paneedah.mwc.init.MWCItems;
 import com.paneedah.mwc.models.*;
 import com.paneedah.mwc.proxies.CommonProxy;
-import com.paneedah.mwc.weapons.Attachments;
-import com.paneedah.mwc.weapons.Attachments3;
-import com.paneedah.mwc.weapons.AuxiliaryAttachments;
-import com.paneedah.mwc.weapons.Magazines;
+import com.paneedah.mwc.weapons.*;
 import com.paneedah.weaponlib2.*;
 import com.paneedah.weaponlib2.animation.Transform;
 import com.paneedah.weaponlib2.animation.Transition;
@@ -101,21 +98,16 @@ public class ZbroyarZ10Factory implements GunFactory {
             GL11.glTranslatef(-0.175F, -1.28F, -0.67F);
             GL11.glScaled(0.7F, 0.4F, 0.7F);
         })
-        .withCompatibleAttachment(Attachments.HK416Grip, true, (model) -> {
-            GL11.glTranslatef(0f, -0.025f, 0f);
-          })
-          .withCompatibleAttachment(Attachments.HK416GripTan, (model) -> {
-              GL11.glTranslatef(0f, -0.025f, 0f);
-            })
-          .withCompatibleAttachment(Attachments.M4Grip, (model) -> {
-          	GL11.glTranslatef(0f, -0.025f, 0f);
-          })
-          .withCompatibleAttachment(Attachments.M4GripTan, (model) -> {
-          	GL11.glTranslatef(0f, -0.025f, 0f);
-          })
-          .withCompatibleAttachment(Attachments.M4GripGray, (model) -> {
-          	GL11.glTranslatef(0f, -0.025f, 0f);
-          })
+        .withCompatibleAttachment(ARParts.M4PistolGrip, (model) -> {})
+        .withCompatibleAttachment(ARParts.M16PistolGrip, (model) -> {})
+        .withCompatibleAttachment(ARParts.M4GripTan, (model) -> {})
+        .withCompatibleAttachment(ARParts.M4GripGray, (model) -> {})
+        .withCompatibleAttachment(ARParts.CQGrip, (model) -> {})
+        .withCompatibleAttachment(ARParts.M110Grip, (model) -> {})
+        .withCompatibleAttachment(ARParts.HK416Grip, true, (model) -> {})
+        .withCompatibleAttachment(ARParts.HK416GripTan, (model) -> {})
+        .withCompatibleAttachment(ARParts.LMG68Grip, (model) -> {})
+        .withCompatibleAttachment(ARParts.DDGrip, (model) -> {})
         .withCompatibleAttachment(Attachments.Z10Handguard, true, (model) -> {
             if(model instanceof AKRail) {
             	GL11.glTranslatef(-0.2F, -1.32F, -5.2f);

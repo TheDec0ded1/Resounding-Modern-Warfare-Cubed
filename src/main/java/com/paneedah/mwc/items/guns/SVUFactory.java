@@ -55,23 +55,23 @@ public class SVUFactory {
         .withCreativeTab(ModernWarfareMod.PrecisionRiflesTab)
         .useNewSystem()
         .withRecoilParam(new RecoilParam(
-        		// The weapon power
-        		35.0,
-        		// Muzzle climb divisor
-        		25.0,
-        		// "Stock Length"
-        		50.0,
-        		// Recovery rate from initial shot
-        		0.5625,
-        		// Recovery rate @ "stock"
-        		0.2625,
-        		// Recoil rotation (Y)
-        		0.0,
-        		// Recoil rotation (Z)
-        		0.0,
-        		// Ads similarity divisor
-        		1.0
-        ))
+		// The weapon power
+		80.0,
+		// Muzzle climb divisor
+		23.25,
+		// "Stock Length"
+		72.5,
+		// Recovery rate from initial shot
+		0.5875,
+		// Recovery rate @ "stock"
+		0.5875,
+		// Recoil rotation (Y)
+		0.0,
+		// Recoil rotation (Z)
+		0.0,
+		// Ads similarity divisor
+		1.0
+))
         .withInformationProvider(stack -> Arrays.asList(
         "Type: Sniper Rifle",
         "Damage: 14", 

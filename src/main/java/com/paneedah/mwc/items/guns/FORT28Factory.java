@@ -39,7 +39,7 @@ public class FORT28Factory implements GunFactory {
                 .withShellType(ShellParticleSimulator.Shell.Type.PISTOL)
         .withMaxShots(1)
         .withShootSound("fort28")
-        .withSilencedShootSound("m9a1_silenced")
+        .withSilencedShootSound("p90_silenced")
         .withReloadSound("m9a1_reload")
         .withUnloadSound("pistol_unload")
         .withInspectSound("inspection")
@@ -57,23 +57,23 @@ public class FORT28Factory implements GunFactory {
         .withCreativeTab(ModernWarfareMod.PistolsTab)
         .useNewSystem()
         .withRecoilParam(new RecoilParam(
-        		// The weapon power
-        		45.0,
-        		// Muzzle climb divisor
-        		13.5,
-        		// "Stock Length"
-        		37.5,
-        		// Recovery rate from initial shot
-        		0.425,
-        		// Recovery rate @ "stock"
-        		0.2125,
-        		// Recoil rotation (Y)
-        		0.0,
-        		// Recoil rotation (Z)
-        		0.0,
-        		// Ads similarity divisor
-        		1.0
-        ))
+		// The weapon power
+		22.5,
+		// Muzzle climb divisor
+		2.625,
+		// "Stock Length"
+		86.25,
+		// Recovery rate from initial shot
+		0.35,
+		// Recovery rate @ "stock"
+		0.35,
+		// Recoil rotation (Y)
+		0.0,
+		// Recoil rotation (Z)
+		0.0,
+		// Ads similarity divisor
+		1.0
+		))
         .withInformationProvider(stack -> Arrays.asList(
         "Type: Double-Single Action Pistol", 
         "Damage: 5", 

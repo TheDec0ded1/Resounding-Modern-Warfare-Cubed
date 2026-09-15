@@ -50,24 +50,24 @@ public class CZ805BrenFactory implements GunFactory {
         .withShellCasingVerticalOffset(-0.03f)
         .withCreativeTab(ModernWarfareMod.AssaultRiflesTab)
         .useNewSystem()
-	.withRecoilParam(new RecoilParam(
-				// The weapon power
-				45.0,
-				// Muzzle climb divisor
-				25.0,
-				// "Stock Length"
-				50.0,
-				// Recovery rate from initial shot
-				1.0,
-				// Recovery rate @ "stock"
-				0.5625,
-				// Recoil rotation (Y)
-				0.0,
-				// Recoil rotation (Z)
-				0.0,
-				// Ads similarity divisor
-				1.5625
-		))
+		.withRecoilParam(new RecoilParam(
+		// The weapon power
+		37.5,
+		// Muzzle climb divisor
+		23.25,
+		// "Stock Length"
+		50.0,
+		// Recovery rate from initial shot
+		0.2125,
+		// Recovery rate @ "stock"
+		0.2125,
+		// Recoil rotation (Y)
+		0.0,
+		// Recoil rotation (Z)
+		0.0,
+		// Ads similarity divisor
+		1.0
+))
         .withCrafting(CraftingComplexity.MEDIUM,
                 MWCItems.gunmetalIngot,
                 MWCItems.gunmetalPlate)

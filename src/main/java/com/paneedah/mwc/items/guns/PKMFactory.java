@@ -9,6 +9,7 @@ import com.paneedah.mwc.models.*;
 import com.paneedah.mwc.proxies.CommonProxy;
 import com.paneedah.mwc.weapons.Attachments;
 import com.paneedah.mwc.weapons.Attachments2;
+import com.paneedah.mwc.weapons.AKParts;
 import com.paneedah.mwc.weapons.Attachments3;
 import com.paneedah.mwc.weapons.AuxiliaryAttachments;
 import com.paneedah.mwc.weapons.Magazines;
@@ -36,7 +37,7 @@ public class PKMFactory {
         .withZoom(0.9f)
         .withConfigGroup(GunConfigurationGroup.GPMG)
         .hasFlashPedals()
-        .withMaxShots(Integer.MAX_VALUE, 1)
+        .withMaxShots(Integer.MAX_VALUE)
         .withMuzzlePosition(new Vec3d(-0.11200000333786035, -1.0, -8.19600005054473))
         //.withMaxShots(5)
         .withShootSound("pkm")
@@ -56,23 +57,23 @@ public class PKMFactory {
         .withCreativeTab(ModernWarfareMod.LMGsTab)
         .useNewSystem()
         .withRecoilParam(new RecoilParam(
-				// The weapon power
-				15.0,
-				// Muzzle climb divisor
-				15.75,
-				// "Stock Length"
-				50.0,
-				// Recovery rate from initial shot
-				0.4,
-				// Recovery rate @ "stock"
-				0.3125,
-				// Recoil rotation (Y)
-				0.0,
-				// Recoil rotation (Z)
-				0.0,
-				// Ads similarity divisor
-				1.0
-		))
+		// The weapon power
+		70.0,
+		// Muzzle climb divisor
+		30.0,
+		// "Stock Length"
+		50.0,
+		// Recovery rate from initial shot
+		0.5875,
+		// Recovery rate @ "stock"
+		0.5875,
+		// Recoil rotation (Y)
+		0.0,
+		// Recoil rotation (Z)
+		0.0,
+		// Ads similarity divisor
+		1.0
+))
         .withInformationProvider(stack -> Arrays.asList(
         "Type: Assault rifle",
         "Damage: 6.6", 
@@ -101,41 +102,41 @@ public class PKMFactory {
         		CraftingEntry(MWCItems.gunmetalPlate, 12), new
         		CraftingEntry(MWCItems.steelIngot, 3))
 
-        .withCompatibleAttachment(Attachments2.MPIKMGrip, (model) -> {
+        .withCompatibleAttachment(AKParts.MPIKMGrip, (model) -> {
       })
-        .withCompatibleAttachment(Attachments2.AMD63Grip, (model) -> {
+        .withCompatibleAttachment(AKParts.AMD63Grip, (model) -> {
       })
-        .withCompatibleAttachment(Attachments2.AMD65Grip, (model) -> {
+        .withCompatibleAttachment(AKParts.AMD65Grip, (model) -> {
       })
-        .withCompatibleAttachment(Attachments2.AK47BlondeGrip, (model) -> {
+        .withCompatibleAttachment(AKParts.AK47BlondeGrip, (model) -> {
       })
-        .withCompatibleAttachment(Attachments2.Type562Grip, (model) -> {
+        .withCompatibleAttachment(AKParts.Type562Grip, (model) -> {
       })
-        .withCompatibleAttachment(Attachments2.Type562Grip2, (model) -> {
+        .withCompatibleAttachment(AKParts.Type562Grip2, (model) -> {
       })
         .withCompatibleAttachment(Attachments2.PKMGrip, true, (model) -> {
       })
-        .withCompatibleAttachment(Attachments.AK47Grip, (model) -> {
+        .withCompatibleAttachment(AKParts.AK47Grip, (model) -> {
 
         })
-        .withCompatibleAttachment(Attachments.TantalGrip, (model) -> {
+        .withCompatibleAttachment(AKParts.TantalGrip, (model) -> {
         })
-        .withCompatibleAttachment(Attachments.AK101Grip, (model) -> {
+        .withCompatibleAttachment(AKParts.AK101Grip, (model) -> {
         })
-        .withCompatibleAttachment(Attachments.AK101GreenGrip, (model) -> {
-        })        .withCompatibleAttachment(Attachments2.RK3Grip, (model) -> {
-        })        .withCompatibleAttachment(Attachments2.RK3GripTan, (model) -> {
-        })        .withCompatibleAttachment(Attachments2.RK3GripGreen, (model) -> {
+        .withCompatibleAttachment(AKParts.AK101GreenGrip, (model) -> {
+        })        .withCompatibleAttachment(AKParts.RK3Grip, (model) -> {
+        })        .withCompatibleAttachment(AKParts.RK3GripTan, (model) -> {
+        })        .withCompatibleAttachment(AKParts.RK3GripGreen, (model) -> {
         })
-        .withCompatibleAttachment(Attachments.AK101PearlGrip, (model) -> {
+        .withCompatibleAttachment(AKParts.AK101PearlGrip, (model) -> {
         })
-        .withCompatibleAttachment(Attachments.AK101PlumGrip, (model) -> {
+        .withCompatibleAttachment(AKParts.AK101PlumGrip, (model) -> {
         })
-        .withCompatibleAttachment(Attachments.AK101WhiteGrip, (model) -> {
+        .withCompatibleAttachment(AKParts.AK101WhiteGrip, (model) -> {
         })
-        .withCompatibleAttachment(Attachments.AKErgoGrip, (model) -> {
+        .withCompatibleAttachment(AKParts.AKErgoGrip, (model) -> {
         })
-        .withCompatibleAttachment(Attachments.AKErgoGripTan, (model) -> {
+        .withCompatibleAttachment(AKParts.AKErgoGripTan, (model) -> {
         })
         .withCompatibleAttachment(AuxiliaryAttachments.PKMAction, true, (model) -> {
         })

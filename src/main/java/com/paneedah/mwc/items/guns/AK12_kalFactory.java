@@ -8,7 +8,7 @@ import com.paneedah.mwc.init.MWCItems;
 import com.paneedah.mwc.models.*;
 import com.paneedah.mwc.proxies.CommonProxy;
 import com.paneedah.mwc.weapons.Attachments;
-import com.paneedah.mwc.weapons.Attachments2;
+import com.paneedah.mwc.weapons.AKParts;
 import com.paneedah.mwc.weapons.Attachments3;
 import com.paneedah.mwc.weapons.AuxiliaryAttachments;
 import com.paneedah.mwc.weapons.Magazines;
@@ -57,15 +57,15 @@ public class AK12_kalFactory {
         .useNewSystem()
         .withRecoilParam(new RecoilParam(
 		// The weapon power
-		45.0,
+		40.0,
 		// Muzzle climb divisor
-		20.25,
+		23.25,
 		// "Stock Length"
-		100.0,
+		72.5,
 		// Recovery rate from initial shot
-		0.525,
+		0.5875,
 		// Recovery rate @ "stock"
-		0.525,
+		0.5875,
 		// Recoil rotation (Y)
 		0.0,
 		// Recoil rotation (Z)
@@ -99,41 +99,41 @@ public class AK12_kalFactory {
         .withUnremovableAttachmentCategories(AttachmentCategory.RECEIVER)
         .withUnremovableAttachmentCategories(AttachmentCategory.RAILING)
         
-        .withCompatibleAttachment(Attachments2.AK15HandleGuard, true, (model) -> {
+        .withCompatibleAttachment(AKParts.AK15HandleGuard, true, (model) -> {
         })
-        .withCompatibleAttachment(Attachments2.AK15HandguardLong, (model) -> {
+        .withCompatibleAttachment(AKParts.AK15HandguardLong, (model) -> {
         })
-        .withCompatibleAttachment(Attachments2.AK400Handguard, (model) -> {
+        .withCompatibleAttachment(AKParts.AK400Handguard, (model) -> {
         })
-        .withCompatibleAttachment(Attachments2.AK400Handguard, (model) -> {
+        .withCompatibleAttachment(AKParts.AK400Handguard, (model) -> {
         })
-        .withCompatibleAttachment(Attachments2.AK308Handguard, (model) -> {
+        .withCompatibleAttachment(AKParts.AK308Handguard, (model) -> {
         })
-        .withCompatibleAttachment(Attachments2.AK400SKHandguard, (model) -> {
+        .withCompatibleAttachment(AKParts.AK400SKHandguard, (model) -> {
         })
-        .withCompatibleAttachment(Attachments2.AK400Barrel, true, (model) -> {
+        .withCompatibleAttachment(AKParts.AK400Barrel, true, (model) -> {
         })
-        .withCompatibleAttachment(Attachments2.AK400KBarrel, (model) -> {
+        .withCompatibleAttachment(AKParts.AK400KBarrel, (model) -> {
         })
-        .withCompatibleAttachment(Attachments2.AK400SKBarrel, (model) -> {
+        .withCompatibleAttachment(AKParts.AK400SKBarrel, (model) -> {
         })
-        .withCompatibleAttachment(Attachments2.AK15Barrel, (model) -> {
+        .withCompatibleAttachment(AKParts.AK15Barrel, (model) -> {
         })
-        .withCompatibleAttachment(Attachments2.AK15DustCover, true, (model) -> {
+        .withCompatibleAttachment(AKParts.AK15DustCover, true, (model) -> {
         })
-        .withCompatibleAttachment(Attachments2.AK400Stock, (model) -> {
+        .withCompatibleAttachment(AKParts.AK400Stock, (model) -> {
         })
-        .withCompatibleAttachment(Attachments2.AK400Dustcover, (model) -> {
+        .withCompatibleAttachment(AKParts.AK400Dustcover, (model) -> {
         })
-        .withCompatibleAttachment(Attachments2.AK15StockLate, true, (model) -> {
+        .withCompatibleAttachment(AKParts.AK15StockLate, true, (model) -> {
         })
-        .withCompatibleAttachment(Attachments2.AK15StockEarly, (model) -> {
+        .withCompatibleAttachment(AKParts.AK15StockEarly, (model) -> {
         })
-        .withCompatibleAttachment(Attachments2.AK15Grip, (model) -> {
+        .withCompatibleAttachment(AKParts.AK15Grip, (model) -> {
         })
-        .withCompatibleAttachment(Attachments2.AK400Grip, true, (model) -> {
+        .withCompatibleAttachment(AKParts.AK400Grip, true, (model) -> {
         })
-        .withCompatibleAttachment(Attachments2.AK400GripLate,  (model) -> {
+        .withCompatibleAttachment(AKParts.AK400GripLate,  (model) -> {
         })
 		.withCompatibleAttachment(Attachments3.Laser2, (p, s) -> {
 		    GL11.glTranslatef(-0.22F, -1.21F, -4F);

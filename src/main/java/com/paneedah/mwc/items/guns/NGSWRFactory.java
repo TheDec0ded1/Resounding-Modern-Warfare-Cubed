@@ -7,10 +7,7 @@ import com.paneedah.mwc.ModernWarfareMod;
 import com.paneedah.mwc.init.MWCItems;
 import com.paneedah.mwc.models.*;
 import com.paneedah.mwc.proxies.CommonProxy;
-import com.paneedah.mwc.weapons.Attachments;
-import com.paneedah.mwc.weapons.Attachments3;
-import com.paneedah.mwc.weapons.AuxiliaryAttachments;
-import com.paneedah.mwc.weapons.Magazines;
+import com.paneedah.mwc.weapons.*;
 import com.paneedah.weaponlib2.*;
 import com.paneedah.weaponlib2.animation.Transform;
 import com.paneedah.weaponlib2.animation.Transition;
@@ -58,23 +55,23 @@ public class NGSWRFactory implements GunFactory {
 		.withCreativeTab(ModernWarfareMod.AssaultRiflesTab)
 		.useNewSystem()
 		.withRecoilParam(new RecoilParam(
-				// The weapon power
-				15.0,
-				// Muzzle climb divisor
-				15.75,
-				// "Stock Length"
-				50.0,
-				// Recovery rate from initial shot
-				0.4,
-				// Recovery rate @ "stock"
-				0.3125,
-				// Recoil rotation (Y)
-				0.0,
-				// Recoil rotation (Z)
-				0.0,
-				// Ads similarity divisor
-				1.0
-		))
+		// The weapon power
+		55.00000000000001,
+		// Muzzle climb divisor
+		26.25,
+		// "Stock Length"
+		100.0,
+		// Recovery rate from initial shot
+		0.5875,
+		// Recovery rate @ "stock"
+		0.5875,
+		// Recoil rotation (Y)
+		0.0,
+		// Recoil rotation (Z)
+		0.0,
+		// Ads similarity divisor
+		1.0
+))
 		.withInformationProvider(stack -> Arrays.asList(
 		"Type: Assault Rifle", 
 		"Damage: 7", 
@@ -143,21 +140,16 @@ public class NGSWRFactory implements GunFactory {
                 GL11.glScaled(0.37F, 0.37F, 0.37F);
               }
         }, false, false)
-        .withCompatibleAttachment(Attachments.HK416Grip, (model) -> {
-          GL11.glTranslatef(0f, -0.075f, 0f);
-        })
-        .withCompatibleAttachment(Attachments.HK416GripTan, true, (model) -> {
-            GL11.glTranslatef(0f, -0.075f, 0f);
-          })
-        .withCompatibleAttachment(Attachments.M4Grip, (model) -> {
-        	GL11.glTranslatef(0f, -0.075f, 0f);
-        })
-        .withCompatibleAttachment(Attachments.M4GripTan, (model) -> {
-        	GL11.glTranslatef(0f, -0.075f, 0f);
-        })
-        .withCompatibleAttachment(Attachments.M4GripGray, (model) -> {
-        	GL11.glTranslatef(0f, -0.075f, 0f);
-        })
+        .withCompatibleAttachment(ARParts.M4PistolGrip, (model) -> {})
+        .withCompatibleAttachment(ARParts.M16PistolGrip, (model) -> {})
+        .withCompatibleAttachment(ARParts.M4GripTan, (model) -> {})
+        .withCompatibleAttachment(ARParts.M4GripGray, (model) -> {})
+        .withCompatibleAttachment(ARParts.CQGrip, (model) -> {})
+        .withCompatibleAttachment(ARParts.M110Grip, (model) -> {})
+        .withCompatibleAttachment(ARParts.HK416Grip, (model) -> {})
+        .withCompatibleAttachment(ARParts.HK416GripTan, (model) -> {})
+        .withCompatibleAttachment(ARParts.LMG68Grip, true, (model) -> {})
+        .withCompatibleAttachment(ARParts.DDGrip, (model) -> {})
         .withCompatibleAttachment(Attachments.CollapsableMOEStock, (model) -> {
         	GL11.glTranslatef(-0.02f, -0.47f, 0.5f);
             GL11.glScaled(0.85F, 0.85F, 0.85F);

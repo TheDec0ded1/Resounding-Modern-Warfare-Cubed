@@ -4,10 +4,7 @@ import com.paneedah.mwc.ModernWarfareMod;
 import com.paneedah.mwc.init.MWCItems;
 import com.paneedah.mwc.models.*;
 import com.paneedah.mwc.proxies.CommonProxy;
-import com.paneedah.mwc.weapons.Attachments;
-import com.paneedah.mwc.weapons.Attachments3;
-import com.paneedah.mwc.weapons.AuxiliaryAttachments;
-import com.paneedah.mwc.weapons.Magazines;
+import com.paneedah.mwc.weapons.*;
 import com.paneedah.weaponlib2.AttachmentCategory;
 import com.paneedah.weaponlib2.RenderableState;
 import com.paneedah.weaponlib2.Weapon;
@@ -106,18 +103,20 @@ public class M82Factory implements GunFactory {
 //            GL11.glTranslatef(0F, 0F, 1.5F);
         })
         .withCompatibleAttachment(Magazines.M82Mag, (model) -> {
-//            GL11.glTranslatef(-0.42F, 0.8F, -1.4F);
-//            GL11.glScaled(1.5F, 1.5F, 1.5F);
         })
-        .withCompatibleAttachment(Attachments.M4Grip, true, (model) -> {
-//            GL11.glTranslatef(0f, 0f, 1f);
+        .withCompatibleAttachment(Magazines.M82ShortMag, (model) -> {
         })
-        .withCompatibleAttachment(Attachments.M4GripTan, (model) -> {
-//            GL11.glTranslatef(0f, 0f, 1f);
-        })//50
-        .withCompatibleAttachment(Attachments.M4GripGray, (model) -> {
-//            GL11.glTranslatef(0f, 0f, 1f);
-        })
+        .withCompatibleAttachment(ARParts.M4PistolGrip, (model) -> {})
+        .withCompatibleAttachment(ARParts.M16PistolGrip, (model) -> {})
+        .withCompatibleAttachment(ARParts.M4GripTan, (model) -> {})
+        .withCompatibleAttachment(ARParts.M4GripGray, (model) -> {})
+        .withCompatibleAttachment(ARParts.CQGrip, (model) -> {})
+        .withCompatibleAttachment(ARParts.M110Grip, (model) -> {})
+        .withCompatibleAttachment(ARParts.HK416Grip, (model) -> {})
+        .withCompatibleAttachment(ARParts.HK416GripTan, (model) -> {})
+        .withCompatibleAttachment(ARParts.LMG68Grip, (model) -> {})
+        .withCompatibleAttachment(ARParts.DDGrip, (model) -> {})
+
         .withCompatibleAttachment(Attachments3.NightRaider, (player, stack) -> {
             GL11.glTranslatef(-0.22F, -1.58F, -2.5F);
             GL11.glScaled(0.9F, 0.9F, 0.9F);
@@ -327,7 +326,7 @@ public class M82Factory implements GunFactory {
                 
                 .setupModernAnimations("m82", AuxiliaryAttachments.M82Action)
                 .setupModernMagazineAnimations("m82", 
-                		Magazines.M82Mag)
+                		Magazines.M82Mag, Magazines.M82ShortMag)
             
             .withFirstPersonCustomPositioning(Magazines.M82Mag, (renderContext) -> {
 //           	 GL11.glTranslatef(0f, 0.8f, -0.3f);

@@ -39,7 +39,7 @@ public class MP510Factory {
         .withMaxShots(1, Integer.MAX_VALUE)
         //.withMaxShots(5)
         .withShootSound("mp510")
-        .withSilencedShootSound("mp5sd")
+        .withSilencedShootSound("mp5_silenced")
         .withReloadSound("mp5_reload")
         .withUnloadSound("mp5_unload")
         .withInspectSound("inspection")

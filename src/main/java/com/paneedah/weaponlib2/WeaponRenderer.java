@@ -1188,7 +1188,7 @@ public class WeaponRenderer extends ModelSourceRenderer implements IBakedModel {
 			return this;
 		}
 		
-		public Builder withFPSZooming(Transform zooming) {
+		public Builder withFirstPersonPositioningZooming(Transform zooming) {
 			this.firstPersonZoomingTransform = zooming;
 			this.firstPersonPositioningZooming = zooming.getAsPosition();
 			return this;
@@ -1442,9 +1442,9 @@ public class WeaponRenderer extends ModelSourceRenderer implements IBakedModel {
 			
 			
 			
-			AnimationData main = BBLoader.getAnimation(animationFile, BBLoader.KEY_EJECT_SPENT_ROUND, BBLoader.KEY_MAIN);
-			AnimationData left = BBLoader.getAnimation(animationFile, BBLoader.KEY_EJECT_SPENT_ROUND, "lefthand");
-			AnimationData right = BBLoader.getAnimation(animationFile, BBLoader.KEY_EJECT_SPENT_ROUND, "righthand");
+			AnimationData main = BBLoader.getAnimation(animationFile, BBLoader.KEY_EJECT_SPENT_ROUND_AIMED, BBLoader.KEY_MAIN);
+			AnimationData left = BBLoader.getAnimation(animationFile, BBLoader.KEY_EJECT_SPENT_ROUND_AIMED, "lefthand");
+			AnimationData right = BBLoader.getAnimation(animationFile, BBLoader.KEY_EJECT_SPENT_ROUND_AIMED, "righthand");
 						
 			checkDefaults();
 			
@@ -3216,7 +3216,7 @@ public class WeaponRenderer extends ModelSourceRenderer implements IBakedModel {
 		weaponItemStack.getItem();
 		
 		if(ClientEventHandler.muzzlePositioner && !OpenGLSelectionHelper.isInSelectionPass) {
-			//Bloom.bindBloomBuffer();
+			Bloom.bindBloomBuffer();
 			//System.out.println("yo");
 			GlStateManager.pushMatrix();
 			Vec3d deb = ClientEventHandler.debugmuzzlePosition;

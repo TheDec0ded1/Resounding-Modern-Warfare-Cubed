@@ -9,6 +9,7 @@ import com.paneedah.mwc.proxies.CommonProxy;
 import com.paneedah.mwc.weapons.Attachments;
 import com.paneedah.mwc.weapons.Attachments3;
 import com.paneedah.mwc.weapons.AuxiliaryAttachments;
+import com.paneedah.mwc.weapons.ARParts;
 import com.paneedah.mwc.weapons.Magazines;
 import com.paneedah.weaponlib2.*;
 import com.paneedah.weaponlib2.animation.Transform;
@@ -53,24 +54,24 @@ public class AACHoneyBadgerFactory implements GunFactory {
                 .withShellCasingVerticalOffset(-0.05f) // Shell casing vertical offset
                 .withCreativeTab(ModernWarfareMod.AssaultRiflesTab) // Creative tab
                 .useNewSystem() // Use new system
-                .withRecoilParam(new RecoilParam( // Recoil param
-                        // The weapon power
-                        15.0,
-                        // Muzzle climb divisor
-                        15.75,
-                        // "Stock Length"
-                        50.0,
-                        // Recovery rate from initial shot
-                        0.4,
-                        // Recovery rate @ "stock"
-                        0.3125,
-                        // Recoil rotation (Y)
-                        0.0,
-                        // Recoil rotation (Z)
-                        0.0,
-                        // Ads similarity divisor
-                        1.0
-                ))
+                .withRecoilParam(new RecoilParam(
+		// The weapon power
+		30.0,
+		// Muzzle climb divisor
+		24.0,
+		// "Stock Length"
+		50.0,
+		// Recovery rate from initial shot
+		0.2125,
+		// Recovery rate @ "stock"
+		0.2125,
+		// Recoil rotation (Y)
+		0.0,
+		// Recoil rotation (Z)
+		0.0,
+		// Ads similarity divisor
+		1.0
+))
                 .withInformationProvider(stack -> Arrays.asList( // Information provider
                         "Type: Personal Defense Weapon",  // Information
                         "Damage: 5.4", // Damage in Item Description
@@ -171,12 +172,12 @@ public class AACHoneyBadgerFactory implements GunFactory {
                 })
 
                 // Compatible attachment honeybadger M4 Grip Tan
-                .withCompatibleAttachment(Attachments.M4GripTan, (model) -> {
+                .withCompatibleAttachment(ARParts.M4GripTan, (model) -> {
                     GL11.glTranslatef(0.001f, 0f, 0f);
                 })
 
                 // Compatible attachment honeybadger M4 Grip Gray
-                .withCompatibleAttachment(Attachments.M4GripGray, (model) -> {
+                .withCompatibleAttachment(ARParts.M4GripGray, (model) -> {
                     GL11.glTranslatef(0.001f, 0f, 0f);
                 })
 

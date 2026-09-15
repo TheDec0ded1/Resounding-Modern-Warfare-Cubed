@@ -7,11 +7,7 @@ import com.paneedah.mwc.ModernWarfareMod;
 import com.paneedah.mwc.init.MWCItems;
 import com.paneedah.mwc.models.*;
 import com.paneedah.mwc.proxies.CommonProxy;
-import com.paneedah.mwc.weapons.Attachments;
-import com.paneedah.mwc.weapons.Attachments2;
-import com.paneedah.mwc.weapons.Attachments3;
-import com.paneedah.mwc.weapons.AuxiliaryAttachments;
-import com.paneedah.mwc.weapons.STANAGMagazines;
+import com.paneedah.mwc.weapons.*;
 import com.paneedah.weaponlib2.*;
 import com.paneedah.weaponlib2.animation.Transform;
 import com.paneedah.weaponlib2.animation.Transition;
@@ -59,21 +55,21 @@ public class ScarLFactory implements GunFactory {
         .useNewSystem()
 		.withRecoilParam(new RecoilParam(
 		// The weapon power
-		15.0,
+		37.5,
 		// Muzzle climb divisor
-		9.75,
+		23.25,
 		// "Stock Length"
 		50.0,
 		// Recovery rate from initial shot
-		0.4875,
+		0.2125,
 		// Recovery rate @ "stock"
-		0.95,
+		0.2125,
 		// Recoil rotation (Y)
 		0.0,
 		// Recoil rotation (Z)
 		0.0,
 		// Ads similarity divisor
-		1.45
+		1.0
 ))
         .withInformationProvider(stack -> Arrays.asList(
         "Type: Carbine", 
@@ -148,18 +144,16 @@ public class ScarLFactory implements GunFactory {
         .withCompatibleAttachment(Attachments2.ScarLBodyB, (model) -> {
 //          GL11.glTranslatef(0f, 0f, 1f);
         })
-        .withCompatibleAttachment(Attachments.M4Grip, (model) -> {
-        	 GL11.glTranslatef(0f, 0.04f, -0.08f);
-        })
-        .withCompatibleAttachment(Attachments.M4GripTan, (model) -> {
-        	 GL11.glTranslatef(0f, 0.04f, -0.08f);
-        })
-        .withCompatibleAttachment(Attachments.M4GripGray, (model) -> {
-        	 GL11.glTranslatef(0f, 0.04f, -0.08f);
-        })
-        .withCompatibleAttachment(Attachments.M110Grip, true, (model) -> {
-          GL11.glTranslatef(0f, 0.04f, -0.08f);
-      })
+        .withCompatibleAttachment(ARParts.M4PistolGrip, (model) -> {})
+        .withCompatibleAttachment(ARParts.M16PistolGrip, (model) -> {})
+        .withCompatibleAttachment(ARParts.M4GripTan, (model) -> {})
+        .withCompatibleAttachment(ARParts.M4GripGray, (model) -> {})
+        .withCompatibleAttachment(ARParts.CQGrip, (model) -> {})
+        .withCompatibleAttachment(ARParts.M110Grip, true, (model) -> {})
+        .withCompatibleAttachment(ARParts.HK416Grip, (model) -> {})
+        .withCompatibleAttachment(ARParts.HK416GripTan, (model) -> {})
+        .withCompatibleAttachment(ARParts.LMG68Grip, (model) -> {})
+        .withCompatibleAttachment(ARParts.DDGrip, (model) -> {})
         .withCompatibleAttachment(STANAGMagazines.M4A1Mag, (model) -> {
 		    GL11.glTranslatef(-0.335F, 0.4F, -1.4F);
             GL11.glScaled(1.04F, 1.25F, 1.25F);

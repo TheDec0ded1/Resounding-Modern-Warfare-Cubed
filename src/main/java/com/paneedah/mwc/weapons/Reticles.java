@@ -28,4 +28,5 @@ public class Reticles {
 	public static final Reticle RETICLE_NSPU = new Reticle("nspu");
 	public static final Reticle RETICLE_HKV = new Reticle("hkv");
 	public static final Reticle RETICLE_VUDU = new Reticle("vudu");
+	public static final Reticle RETICLE_YMA88 = new Reticle("yma88reticle");
 }

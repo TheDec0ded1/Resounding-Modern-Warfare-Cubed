@@ -41,7 +41,7 @@ public class QBZ03Factory {
         .withMuzzlePosition(new Vec3d(-0.16400000488758082, -1.0, -6.5))
         //.withMaxShots(5)
         .withShootSound("qbz03")
-        .withSilencedShootSound("qbz_silenced")
+        .withSilencedShootSound("qbz03_silenced")
         .withReloadSound("ak_reload")
         .withUnloadSound("ak_unload")
         .withInspectSound("inspection")
@@ -116,6 +116,10 @@ public class QBZ03Factory {
         .withCompatibleAttachment(Attachments2.QBZ03_556Upper, (model) -> {
         })
         .withCompatibleAttachment(Magazines.QBZ03Mag, (model) -> {
+        })
+        .withCompatibleAttachment(Attachments3.Silencer545x39, (model) -> {
+          GL11.glTranslatef(-0.2F, -1.06F, -7.55F);
+          GL11.glScaled(1F, 1F, 1F);
         })
        
         .withTextureNames("qbz03")

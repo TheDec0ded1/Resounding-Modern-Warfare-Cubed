@@ -49,23 +49,23 @@ public class DesertEagleFactory implements GunFactory {
         .withCreativeTab(ModernWarfareMod.PistolsTab)
         .useNewSystem()
         .withRecoilParam(new RecoilParam(
-        		// The weapon power
-        		45.0,
-        		// Muzzle climb divisor
-        		30.5,
-        		// "Stock Length"
-        		37.5,
-        		// Recovery rate from initial shot
-        		0.3,
-        		// Recovery rate @ "stock"
-        		0.2125,
-        		// Recoil rotation (Y)
-        		0.0,
-        		// Recoil rotation (Z)
-        		0.0,
-        		// Ads similarity divisor
-        		1.0
-        ))
+		// The weapon power
+		50.0,
+		// Muzzle climb divisor
+		1.125,
+		// "Stock Length"
+		100.0,
+		// Recovery rate from initial shot
+		0.0875,
+		// Recovery rate @ "stock"
+		0.0875,
+		// Recoil rotation (Y)
+		0.0,
+		// Recoil rotation (Z)
+		0.0,
+		// Ads similarity divisor
+		1.0
+))
          
         .withUnremovableAttachmentCategories(AttachmentCategory.GUARD)
         .withUnremovableAttachmentCategories(AttachmentCategory.RAILING)

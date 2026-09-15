@@ -56,23 +56,23 @@ public class SCCYCPX2Factory implements GunFactory {
         .withCreativeTab(ModernWarfareMod.PistolsTab)
         .useNewSystem()
         .withRecoilParam(new RecoilParam(
-        		// The weapon power
-        		45.0,
-        		// Muzzle climb divisor
-        		13.5,
-        		// "Stock Length"
-        		37.5,
-        		// Recovery rate from initial shot
-        		0.425,
-        		// Recovery rate @ "stock"
-        		0.2125,
-        		// Recoil rotation (Y)
-        		0.0,
-        		// Recoil rotation (Z)
-        		0.0,
-        		// Ads similarity divisor
-        		1.0
-        ))
+		// The weapon power
+		37.5,
+		// Muzzle climb divisor
+		2.625,
+		// "Stock Length"
+		86.25,
+		// Recovery rate from initial shot
+		0.35,
+		// Recovery rate @ "stock"
+		0.35,
+		// Recoil rotation (Y)
+		0.0,
+		// Recoil rotation (Z)
+		0.0,
+		// Ads similarity divisor
+		1.0
+		))
         .withInformationProvider(stack -> Arrays.asList(
         "Type: Pistol", 
         "Damage: 5", 

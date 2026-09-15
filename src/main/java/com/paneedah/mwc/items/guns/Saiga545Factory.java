@@ -10,6 +10,7 @@ import com.paneedah.mwc.proxies.CommonProxy;
 import com.paneedah.mwc.weapons.Attachments;
 import com.paneedah.mwc.weapons.Attachments2;
 import com.paneedah.mwc.weapons.Attachments3;
+import com.paneedah.mwc.weapons.AKParts;
 import com.paneedah.mwc.weapons.AuxiliaryAttachments;
 import com.paneedah.mwc.weapons.Magazines;
 import com.paneedah.weaponlib2.*;
@@ -60,23 +61,23 @@ public class Saiga545Factory {
         .withCreativeTab(ModernWarfareMod.AssaultRiflesTab)
         .useNewSystem()
         .withRecoilParam(new RecoilParam(
-				// The weapon power
-				15.0,
-				// Muzzle climb divisor
-				15.75,
-				// "Stock Length"
-				50.0,
-				// Recovery rate from initial shot
-				0.4,
-				// Recovery rate @ "stock"
-				0.3125,
-				// Recoil rotation (Y)
-				0.0,
-				// Recoil rotation (Z)
-				0.0,
-				// Ads similarity divisor
-				1.0
-		))
+		// The weapon power
+		40.0,
+		// Muzzle climb divisor
+		23.25,
+		// "Stock Length"
+		72.5,
+		// Recovery rate from initial shot
+		0.5875,
+		// Recovery rate @ "stock"
+		0.5875,
+		// Recoil rotation (Y)
+		0.0,
+		// Recoil rotation (Z)
+		0.0,
+		// Ads similarity divisor
+		1.0
+))
         .withInformationProvider(stack -> Arrays.asList(
         "Type: Assault Rifle",
         "Damage: 6", 
@@ -99,36 +100,36 @@ public class Saiga545Factory {
         
         .withUnremovableAttachmentCategories(AttachmentCategory.GUARD)
         .withUnremovableAttachmentCategories(AttachmentCategory.STOCK)
-        .withCompatibleAttachment(Attachments2.SaigaSporterPolymerStock, true, (model) -> {
+        .withCompatibleAttachment(AKParts.SaigaSporterPolymerStock, true, (model) -> {
       }) 
-       .withCompatibleAttachment(Attachments2.SaigaSporterWoodenStock, (model) -> {
+       .withCompatibleAttachment(AKParts.SaigaSporterWoodenStock, (model) -> {
       })
-        .withCompatibleAttachment(Attachments.AK47DustCover, (model) -> {
+        .withCompatibleAttachment(AKParts.AK47DustCover, (model) -> {
 //            GL11.glTranslatef(0f, 0f, 1f);
         })
-        .withCompatibleAttachment(Attachments.AKMDustCover, (model) -> {
+        .withCompatibleAttachment(AKParts.AKMDustCover, (model) -> {
 //          GL11.glTranslatef(0f, 0f, 1f);
         })
-  	.withCompatibleAttachment(Attachments2.SaigaSporterPolymerHG, true, (model) -> {
+  	.withCompatibleAttachment(AKParts.SaigaSporterPolymerHG, true, (model) -> {
 //            GL11.glTranslatef(0f, 0f, 1f);
         })
-  	.withCompatibleAttachment(Attachments2.SaigaSporterWoodenHG, (model) -> {
+  	.withCompatibleAttachment(AKParts.SaigaSporterWoodenHG, (model) -> {
 //            GL11.glTranslatef(0f, 0f, 1f);
         })
-        .withCompatibleAttachment(Attachments.AK101DustCover, (model) -> {
+        .withCompatibleAttachment(AKParts.AK101DustCover, (model) -> {
 //            GL11.glTranslatef(0f, 0f, 1f);
         })
-        .withCompatibleAttachment(Attachments2.SaigaSporterDC, true, (model) -> {
+        .withCompatibleAttachment(AKParts.SaigaSporterDC, true, (model) -> {
 //            GL11.glTranslatef(0f, 0f, 1f);
         })
-        .withCompatibleAttachment(Attachments.VeprDustCover, (model) -> {
+        .withCompatibleAttachment(AKParts.VeprDustCover, (model) -> {
             if(model instanceof VeprDustCover) {
                 GL11.glScaled(1F, 0.98F, 1);
             } else if(model instanceof AKRail) {
                 GL11.glTranslatef(-0.22F, -1.3F, -2.75f);
                 GL11.glScaled(0.7F, 0.8F, 1.1F);
             }
-        })        .withCompatibleAttachment(Attachments.AK200DustCover, (model) -> {
+        })        .withCompatibleAttachment(AKParts.AK200DustCover, (model) -> {
 
         })       
         .withCompatibleAttachment(AuxiliaryAttachments.SaigaSporterAction, true, (model) -> {

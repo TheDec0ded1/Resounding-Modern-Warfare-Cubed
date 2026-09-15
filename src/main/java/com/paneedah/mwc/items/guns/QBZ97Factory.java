@@ -4,11 +4,7 @@ import com.paneedah.mwc.ModernWarfareMod;
 import com.paneedah.mwc.init.MWCItems;
 import com.paneedah.mwc.models.*;
 import com.paneedah.mwc.proxies.CommonProxy;
-import com.paneedah.mwc.weapons.Attachments;
-import com.paneedah.mwc.weapons.Attachments2;
-import com.paneedah.mwc.weapons.Attachments3;
-import com.paneedah.mwc.weapons.AuxiliaryAttachments;
-import com.paneedah.mwc.weapons.STANAGMagazines;
+import com.paneedah.mwc.weapons.*;
 import com.paneedah.weaponlib2.AttachmentCategory;
 import com.paneedah.weaponlib2.RenderableState;
 import com.paneedah.weaponlib2.Weapon;
@@ -102,18 +98,13 @@ public class QBZ97Factory {
         })
 		.withCompatibleAttachment(Attachments2.QBZ97NSR_Body, (model) -> {
         })
-        .withCompatibleAttachment(Attachments.M4Grip, (model) -> {
-            GL11.glTranslatef(0f, 0f, 0.15f);
-        })
-        .withCompatibleAttachment(Attachments.C7Grip, (model) -> {
-            GL11.glTranslatef(0f, 0f, 0.15f);
-        })
-        .withCompatibleAttachment(Attachments.M4GripTan, (model) -> {
-            GL11.glTranslatef(0f, 0f, 0.15f);
-        })//50
-        .withCompatibleAttachment(Attachments.M4GripGray, (model) -> {
-            GL11.glTranslatef(0f, 0f, 0.15f);
-        })
+        .withCompatibleAttachment(ARParts.M4PistolGrip, (model) -> {})
+        .withCompatibleAttachment(ARParts.M16PistolGrip, (model) -> {})
+        .withCompatibleAttachment(ARParts.M4GripTan, (model) -> {})
+        .withCompatibleAttachment(ARParts.M4GripGray, (model) -> {})
+        .withCompatibleAttachment(ARParts.CQGrip, (model) -> {})
+        .withCompatibleAttachment(ARParts.M110Grip, (model) -> {})
+        .withCompatibleAttachment(ARParts.DDGrip, (model) -> {})
         .withCompatibleAttachment(Attachments2.QBZ95Dustcover, true, (model) -> {
         })
         .withCompatibleAttachment(Attachments2.QBZ95BDustcover, (model) -> {

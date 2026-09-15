@@ -1,18 +1,7 @@
 package com.paneedah.weaponlib2.render;
 
-import java.nio.IntBuffer;
-
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
-import org.lwjgl.opengl.GL11;
-import org.lwjgl.opengl.GL13;
-import org.lwjgl.opengl.GL14;
-import org.lwjgl.opengl.GL20;
-import org.lwjgl.opengl.GL30;
-
 import com.paneedah.weaponlib2.config.ModernConfigManager;
 import com.paneedah.weaponlib2.render.bgl.GLCompatible;
-
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.BufferBuilder;
 import net.minecraft.client.renderer.GlStateManager;
@@ -22,6 +11,11 @@ import net.minecraft.client.renderer.OpenGlHelper;
 import net.minecraft.client.renderer.Tessellator;
 import net.minecraft.client.renderer.vertex.DefaultVertexFormats;
 import net.minecraft.client.shader.Framebuffer;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+import org.lwjgl.opengl.*;
+
+import java.nio.IntBuffer;
 
 /**
  * Bloom implementation based on
@@ -205,6 +199,7 @@ public class Bloom {
 		renderFboTriangle(buf, buf.framebufferWidth, buf.framebufferHeight);
 	}
 
+	// Todo: Move to somewhere else
 	public static void renderFboTriangle(Framebuffer buf, int width, int height) {
 		GlStateManager.colorMask(true, true, true, false);
 		GlStateManager.disableDepth();

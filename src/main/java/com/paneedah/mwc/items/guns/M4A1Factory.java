@@ -4,10 +4,7 @@ import com.paneedah.mwc.ModernWarfareMod;
 import com.paneedah.mwc.init.MWCItems;
 import com.paneedah.mwc.models.*;
 import com.paneedah.mwc.proxies.CommonProxy;
-import com.paneedah.mwc.weapons.Attachments;
-import com.paneedah.mwc.weapons.Attachments3;
-import com.paneedah.mwc.weapons.AuxiliaryAttachments;
-import com.paneedah.mwc.weapons.STANAGMagazines;
+import com.paneedah.mwc.weapons.*;
 import com.paneedah.weaponlib2.*;
 import com.paneedah.weaponlib2.animation.Transform;
 import com.paneedah.weaponlib2.animation.Transition;
@@ -52,23 +49,23 @@ public class M4A1Factory implements GunFactory {
 		.withCreativeTab(ModernWarfareMod.AssaultRiflesTab)
 		.useNewSystem()
 		.withRecoilParam(new RecoilParam(
-				// The weapon power
-				15.0,
-				// Muzzle climb divisor
-				15.75,
-				// "Stock Length"
-				50.0,
-				// Recovery rate from initial shot
-				0.4,
-				// Recovery rate @ "stock"
-				0.3125,
-				// Recoil rotation (Y)
-				0.0,
-				// Recoil rotation (Z)
-				0.0,
-				// Ads similarity divisor
-				1.0
-		))
+		// The weapon power
+		30.0,
+		// Muzzle climb divisor
+		24.0,
+		// "Stock Length"
+		50.0,
+		// Recovery rate from initial shot
+		0.2125,
+		// Recovery rate @ "stock"
+		0.2125,
+		// Recoil rotation (Y)
+		0.0,
+		// Recoil rotation (Z)
+		0.0,
+		// Ads similarity divisor
+		1.0
+))
 		 
 		 .withModernRecipe( new
 	        		CraftingEntry(MWCItems.carbonComposite, 8), new
@@ -325,22 +322,6 @@ public class M4A1Factory implements GunFactory {
               GL11.glRotatef(180F, 0f, 0f, 1f);
           }
         })
-//        .withCompatibleAttachment(Attachments.AR57Handguard, (model) -> {
-//            if(model instanceof AKRail) {
-//                GL11.glTranslatef(0.1F, -1.155F, -3.7F);
-//                GL11.glScaled(0.6F, 0.6F, 0.75F);
-//                GL11.glRotatef(90F, 0f, 0f, 1f);
-//            }
-//            else if(model instanceof AKRail2) {
-//              GL11.glTranslatef(-0.03F, -0.85F, -3.55F);
-//              GL11.glScaled(0.6F, 0.6F, 0.7F);
-//              GL11.glRotatef(180F, 0f, 0f, 1f);
-//          } else if(model instanceof AKRail3) {
-//              GL11.glTranslatef(-0.35F, -0.985F, -3.7F);
-//              GL11.glScaled(0.6F, 0.6F, 0.75F);
-//              GL11.glRotatef(-90F, 0f, 0f, 1f);
-//          }
-//        })
         .withCompatibleAttachment(Attachments.Block2SOCOMHandguard, (model) -> {
         	if(model instanceof AKRail) {
                 GL11.glTranslatef(0.13F, -1.14F, -4.1F);
@@ -373,32 +354,23 @@ public class M4A1Factory implements GunFactory {
                 GL11.glScaled(0.6F, 0.8F, 0.78F);
             }
         })
-//        .withCompatibleAttachment(Attachments.AR57Receiver, (model) -> {
-//            if(model instanceof AR57Receiver) {
-//            } else if(model instanceof AKRail) {
-//                GL11.glTranslatef(-0.205F, -1.43F, -1.31f);
-//                GL11.glScaled(0.62F, 0.65F, 0.57F);
-//            }
-//        })
-        .withCompatibleAttachment(Attachments.HK416Grip, (model) -> {
-//          GL11.glTranslatef(0f, 0f, 1f);
-        })
         .withCompatibleAttachment(Attachments.M4Grip, true, (model) -> {
 //            GL11.glTranslatef(0f, 0f, 1f);
         })
         .withCompatibleAttachment(Attachments.C7Grip, (model) -> {
 //            GL11.glTranslatef(0f, 0f, 1f);
         })
-        .withCompatibleAttachment(Attachments.M4GripTan, (model) -> {
-//            GL11.glTranslatef(0f, 0f, 1f);
-        })//50
-        .withCompatibleAttachment(Attachments.M4GripGray, (model) -> {
-//            GL11.glTranslatef(0f, 0f, 1f);
-        })
         .withCompatibleAttachment(Attachments.HeraArmsGrip, (model) -> {
             GL11.glTranslatef(0F, -0.05F, 0F);
             GL11.glScaled(1F, 0.95F, 1F);
         })
+        .withCompatibleAttachment(ARParts.M4GripTan, (model) -> {})
+        .withCompatibleAttachment(ARParts.M4GripGray, (model) -> {})
+        .withCompatibleAttachment(ARParts.CQGrip, (model) -> {})
+        .withCompatibleAttachment(ARParts.M110Grip, (model) -> {})
+        .withCompatibleAttachment(ARParts.HK416Grip, (model) -> {})
+        .withCompatibleAttachment(ARParts.HK416GripTan, (model) -> {})
+        .withCompatibleAttachment(ARParts.LMG68Grip, (model) -> {})
         .withCompatibleAttachment(STANAGMagazines.M4A1Mag, (model) -> {
 		    GL11.glTranslatef(-0.335F, 0.4F, -1.25F);
             GL11.glScaled(1.05F, 1.2F, 1.15F);

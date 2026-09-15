@@ -33,7 +33,7 @@ public class M40A6Factory implements GunFactory {
         .withConfigGroup(GunConfigurationGroup.LONG_RANGE_RIFLES)
         .withMaxShots(1)
         .withShootSound("m40a6")
-        .withPumpTimeout(1000)
+        .withPumpTimeout(1500)
         .withSilencedShootSound("snipersilencer")
         .withReloadSound("m40a6_reload")
         .withUnloadSound("m40a6_unload")

@@ -3,10 +3,7 @@ package com.paneedah.mwc.items.guns;
 import com.paneedah.mwc.ModernWarfareMod;
 import com.paneedah.mwc.models.*;
 import com.paneedah.mwc.proxies.CommonProxy;
-import com.paneedah.mwc.weapons.Attachments;
-import com.paneedah.mwc.weapons.Attachments3;
-import com.paneedah.mwc.weapons.AuxiliaryAttachments;
-import com.paneedah.mwc.weapons.Magazines;
+import com.paneedah.mwc.weapons.*;
 import com.paneedah.weaponlib2.*;
 import com.paneedah.weaponlib2.animation.Transform;
 import com.paneedah.weaponlib2.animation.Transition;
@@ -247,19 +244,14 @@ public class HK417Factory implements GunFactory {
               GL11.glScaled(0.6F, 0.8F, 1F);
           }
         })
-        .withCompatibleAttachment(Attachments.HK416Grip, true, (model) -> {
-//          GL11.glTranslatef(0f, 0f, 1f);
-        })
-        .withCompatibleAttachment(Attachments.HK416GripTan, (model) -> {
-//          GL11.glTranslatef(0f, 0f, 1f);
-        })
+        .withCompatibleAttachment(ARParts.M4GripTan, (model) -> {})
+        .withCompatibleAttachment(ARParts.M4GripGray, (model) -> {})
+        .withCompatibleAttachment(ARParts.CQGrip, (model) -> {})
+        .withCompatibleAttachment(ARParts.M110Grip, (model) -> {})
+        .withCompatibleAttachment(ARParts.HK416Grip, (model) -> {})
+        .withCompatibleAttachment(ARParts.HK416GripTan, (model) -> {})
+        .withCompatibleAttachment(ARParts.LMG68Grip, (model) -> {})
         .withCompatibleAttachment(Attachments.M4Grip, (model) -> {
-//            GL11.glTranslatef(0f, 0f, 1f);
-        })
-        .withCompatibleAttachment(Attachments.M4GripTan, (model) -> {
-//            GL11.glTranslatef(0f, 0f, 1f);
-        })
-        .withCompatibleAttachment(Attachments.M4GripGray, (model) -> {
 //            GL11.glTranslatef(0f, 0f, 1f);
         })
 		.withCompatibleAttachment(Magazines.HK417Mag, (model) -> {
