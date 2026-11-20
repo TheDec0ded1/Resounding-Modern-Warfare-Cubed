@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Resounding Modern Warfare Cubed
 
 **Modern Warfare Cubed** is a fork of the popular [Vic's Modern Warfare Mod](https://www.curseforge.com/minecraft/mc-mods/vics-modern-warfare-mod) which is now discontinued aiming to improve and expand upon the experience.
