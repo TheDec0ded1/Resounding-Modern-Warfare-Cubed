@@ -17,7 +17,7 @@ public class CustomSpawnEggs {
                 .withItemName("turret")
                 .withEntitySpawnName("turret")
                 .withBlockPredicate(b -> b.getRegistryName().toString().equals(ID + ":turret_base"))
-                .withCreativeTab(MWC.WEAPONS_TAB)
+                .withCreativeTab(MWC.GadgetsTab)
                 .build();
 
         TURRETUPGRADED_EGG = new HighIQSpawnEgg.Builder()
@@ -25,7 +25,7 @@ public class CustomSpawnEggs {
                 .withItemName("turretupgraded")
                 .withEntitySpawnName("turretupgraded")
                 .withBlockPredicate(b -> b.getRegistryName().toString().equals(ID + ":turret_base"))
-                .withCreativeTab(MWC.WEAPONS_TAB)
+                .withCreativeTab(MWC.GadgetsTab)
                 .build();
 
         TURRETSILENCED_EGG = new HighIQSpawnEgg.Builder()
@@ -33,7 +33,7 @@ public class CustomSpawnEggs {
                 .withItemName("turretsilenced")
                 .withEntitySpawnName("turretsilenced")
                 .withBlockPredicate(b -> b.getRegistryName().toString().equals(ID + ":turret_base"))
-                .withCreativeTab(MWC.WEAPONS_TAB)
+                .withCreativeTab(MWC.GadgetsTab)
                 .build();
     }
 }

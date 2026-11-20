@@ -2,9 +2,8 @@ package com.paneedah.mwc.network.handlers;
 
 import com.paneedah.mwc.MWC;
 import com.paneedah.mwc.network.messages.BlockHitMessage;
-import dev.redstudio.redcore.math.vectors.Vector3D;
 import dev.redstudio.redcore.utils.NetworkUtil;
-import dev.redstudio.redcore.math.vectors.Vector3F;
+import io.redstudioragnarok.redcore.vectors.Vector3F;
 import net.minecraft.util.EnumParticleTypes;
 import net.minecraftforge.fml.common.network.simpleimpl.IMessage;
 import net.minecraftforge.fml.common.network.simpleimpl.IMessageHandler;
@@ -20,7 +19,7 @@ public final class BlockHitMessageHandler implements IMessageHandler<BlockHitMes
     @SideOnly(Side.CLIENT)
     public IMessage onMessage(final BlockHitMessage blockHitMessage, final MessageContext messageContext) {
         NetworkUtil.processMessage(messageContext, () -> {
-            final Vector3D position = blockHitMessage.getPosition();
+            final Vector3F position = blockHitMessage.getPosition();
 
             for (int i = 0; i < MWC.bulletHitParticleMult; i++) {
                 MC.effectRenderer.addBlockHitEffects(blockHitMessage.getBlockPos(), blockHitMessage.getEnumFacing());

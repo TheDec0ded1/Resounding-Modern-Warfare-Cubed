@@ -36,56 +36,56 @@ public class GunSkins {
     public static void init(Object mod) {
         GunSkins.WoodlandCamo = new ItemSkin.Builder()
                 .withTextureVariant("woodlandcamo")
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
+                .withCreativeTab(MWC.AttachmentsTab)
                 .withName("WoodlandCamo")
                 .build(MWC.modContext, ItemSkin.class);
         CommonRegistry.gunSkins.add(GunSkins.WoodlandCamo);
 
         GunSkins.PinkCamo = new ItemSkin.Builder()
                 .withTextureVariant("pinkcamo")
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
+                .withCreativeTab(MWC.AttachmentsTab)
                 .withName("PinkCamo")
                 .build(MWC.modContext, ItemSkin.class);
         CommonRegistry.gunSkins.add(GunSkins.PinkCamo);
 
         GunSkins.ArcticCamo = new ItemSkin.Builder()
                 .withTextureVariant("arcticcamo")
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
+                .withCreativeTab(MWC.AttachmentsTab)
                 .withName("ArcticCamo")
                 .build(MWC.modContext, ItemSkin.class);
         CommonRegistry.gunSkins.add(GunSkins.ArcticCamo);
 
         GunSkins.BlueCamo = new ItemSkin.Builder()
                 .withTextureVariant("bluecamo")
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
+                .withCreativeTab(MWC.AttachmentsTab)
                 .withName("BlueCamo")
                 .build(MWC.modContext, ItemSkin.class);
         CommonRegistry.gunSkins.add(GunSkins.BlueCamo);
 
         GunSkins.Unit01Camo = new ItemSkin.Builder()
                 .withTextureVariant("unit01camo")
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
+                .withCreativeTab(MWC.AttachmentsTab)
                 .withName("Unit01Camo")
                 .build(MWC.modContext, ItemSkin.class);
         CommonRegistry.gunSkins.add(GunSkins.Unit01Camo);
 
         GunSkins.BloodForestCamo = new ItemSkin.Builder()
                 .withTextureVariant("bloodforestcamo")
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
+                .withCreativeTab(MWC.AttachmentsTab)
                 .withName("BloodForestCamo")
                 .build(MWC.modContext, ItemSkin.class);
         CommonRegistry.gunSkins.add(GunSkins.BloodForestCamo);
 
         GunSkins.DiamondCamo = new ItemSkin.Builder()
                 .withTextureVariant("diamondcamo")
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
+                .withCreativeTab(MWC.AttachmentsTab)
                 .withName("DiamondCamo")
                 .build(MWC.modContext, ItemSkin.class);
         CommonRegistry.gunSkins.add(GunSkins.DiamondCamo);
 
         GunSkins.GoldCamo = new ItemSkin.Builder()
                 .withTextureVariant("goldcamo")
-                .withCreativeTab(MWC.ATTACHMENTS_TAB)
+                .withCreativeTab(MWC.AttachmentsTab)
                 .withName("GoldCamo")
                 .build(MWC.modContext, ItemSkin.class);
         CommonRegistry.gunSkins.add(GunSkins.GoldCamo);
@@ -114,7 +114,7 @@ public class GunSkins {
                     String skinName = element.getAsString().toLowerCase();
                     ItemSkin skin = new ItemSkin.Builder()
                             .withTextureVariant("customskin_" + skinName)
-                            .withCreativeTab(MWC.ATTACHMENTS_TAB)
+                            .withCreativeTab(MWC.AttachmentsTab)
                             .withName(skinName)
                             .build(MWC.modContext, ItemSkin.class);
                     CommonRegistry.gunSkins.add(skin);
@@ -153,7 +153,7 @@ public class GunSkins {
 
             ItemSkin skin = new ItemSkin.Builder()
                     .withTextureVariant("customskin_" + name.replace(".png", ""))
-                    .withCreativeTab(MWC.ATTACHMENTS_TAB)
+                    .withCreativeTab(MWC.AttachmentsTab)
                     .withName(name.replace(".png", ""))
                     .build(MWC.modContext, ItemSkin.class);
             CommonRegistry.gunSkins.add(skin);

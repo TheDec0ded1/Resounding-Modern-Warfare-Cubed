@@ -8,8 +8,7 @@ import com.paneedah.mwc.network.messages.ExplosionMessage;
 import com.paneedah.mwc.utils.MWCUtil;
 import com.paneedah.weaponlib.config.ModernConfigManager;
 import com.paneedah.weaponlib.particle.ExplosionSmokeFX;
-import dev.redstudio.redcore.math.vectors.Vector3D;
-import dev.redstudio.redcore.math.vectors.Vector3F;
+import io.redstudioragnarok.redcore.vectors.Vector3D;
 import lombok.Getter;
 import net.minecraft.block.Block;
 import net.minecraft.block.state.IBlockState;
@@ -51,7 +50,7 @@ public class Explosion {
     private final Entity exploder;
     private final float explosionStrength;
     private final List<BlockPos> affectedBlockPositions;
-    @Getter private final Map<EntityPlayer, Vector3F> playerKnockbackMap;
+    @Getter private final Map<EntityPlayer, Vector3D> playerKnockbackMap;
     private final float smokeParticleAgeCoefficient;
     private final float smokeParticleScaleCoefficient;
     private final String smokeParticleTextureName;
@@ -91,7 +90,7 @@ public class Explosion {
             }
 
             if (currentPlayer.getDistanceSq(position.x, position.y, position.z) < 4096) {
-                final Vector3F velocity = explosion.getPlayerKnockbackMap().get(currentPlayer);
+                final Vector3D velocity = explosion.getPlayerKnockbackMap().get(currentPlayer);
 
                 if (velocity == null) {
                     continue;
@@ -212,7 +211,7 @@ public class Explosion {
                             EntityPlayer entityplayer = (EntityPlayer) entity;
 
                             if (!entityplayer.isSpectator()) {
-                                this.playerKnockbackMap.put(entityplayer, new Vector3F((float) (d5 * d10), (float) (d7 * d10), (float) (d9 * d10)));
+                                this.playerKnockbackMap.put(entityplayer, new Vector3D(d5 * d10, d7 * d10, d9 * d10));
                             }
                         }
                     }

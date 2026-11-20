@@ -14,7 +14,7 @@ public class TurretBaseFactory {
                 .withName("turret_base")
                 .withModelClassName("com.paneedah.mwc.models.TurretBase")
                 .withTextureName("textures/models/turretbase.png")
-                .withCreativeTab(MWC.PROPS_TAB)
+                .withCreativeTab(MWC.PropsTab)
                 .withBoundingBox(0.0, 0, 0.0, 1, 0.2, 1)
                 .withPositioning(tileEntity -> {
 //            GL11.glScalef(0.5f, 0.5f, 0.5f);

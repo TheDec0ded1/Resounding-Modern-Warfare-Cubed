@@ -20,7 +20,7 @@ public class GasGrenadeFactory implements GrenadeFactory {
         return new ItemGrenade.Builder()
 
                 .withName("GasGrenade")
-                .withCreativeTab(MWC.THROWABLES_TAB)
+                .withCreativeTab(MWC.GrenadesTab)
                 .withTextureNames("gasgrenade")
                 .withExplosionStrength(0.4f)
                 .withType(Type.GAS)

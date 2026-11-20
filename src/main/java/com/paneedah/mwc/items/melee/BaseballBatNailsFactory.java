@@ -17,7 +17,7 @@ public class BaseballBatNailsFactory implements MeleeFactory {
         return new ItemMelee.Builder()
 
                 .withName("baseball_bat_nails")
-                .withCreativeTab(MWC.WEAPONS_TAB)
+                .withCreativeTab(MWC.GadgetsTab)
                 .withTextureNames("bat_nails")
                 .withAttackDamage(4f)
                 .withHeavyAttackDamage(12f)

@@ -35,7 +35,7 @@ public class ItemBelt extends ItemCarryable {
 
             ItemBelt itemBelt = new ItemBelt(size, validItemPredicate, guiTexture, this.guiTextureWidth, modelName, textureName);
 
-            itemBelt.setTranslationKey(LangUtil.format(name)).setCreativeTab(MWC.EQUIPMENT_TAB);
+            itemBelt.setTranslationKey(LangUtil.format(name)).setCreativeTab(MWC.ArmorTab);
 
             // Register hook
             CraftingRegistry.registerHook(itemBelt);

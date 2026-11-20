@@ -17,7 +17,7 @@ public class BaseballBatFactory implements MeleeFactory {
         return new ItemMelee.Builder()
 
                 .withName("baseball_bat")
-                .withCreativeTab(MWC.WEAPONS_TAB)
+                .withCreativeTab(MWC.GadgetsTab)
                 .withTextureNames("bat")
                 .withAttackDamage(3f)
                 .withHeavyAttackDamage(7f)

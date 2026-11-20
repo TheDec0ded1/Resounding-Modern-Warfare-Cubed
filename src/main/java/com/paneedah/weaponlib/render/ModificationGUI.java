@@ -60,31 +60,32 @@ public class ModificationGUI {
     private static final int[][] DEFAULT_POSITION = new int[][]{{-50, 50}, {120, 75}, {150, 0}, {100, -50},
             {145, 0}, {120, 50}, {-50, 50}, {0, -50}, {-100, -50}, {50, 100}, {50, 100}};
 
-    // Attachments tabs
-    private static final ModificationTab SCOPE_TAB = new ModificationTab(0, "Sight", AttachmentCategory.SCOPE, -50, 50,
-            ModificationGroup.ATTACHMENT);
-    private static final ModificationTab BARREL_TAB = new ModificationTab(1, "Muzzle", AttachmentCategory.SILENCER, 120, 75, ModificationGroup.ATTACHMENT);
-    private static final ModificationTab LASER_TAB = new ModificationTab(2, "Laser", AttachmentCategory.LASER, 150, 0,
-            ModificationGroup.ATTACHMENT);
-    private static final ModificationTab GRIP_TAB = new ModificationTab(3, "Grip", AttachmentCategory.GRIP, 100, -50,
-            ModificationGroup.ATTACHMENT);
+// Attachments tabs
+	private static final ModificationTab SCOPE_TAB = new ModificationTab(0, "Sight", AttachmentCategory.SCOPE, -50, 50, ModificationGroup.ATTACHMENT);
+	private static final ModificationTab MUZZLE_TAB = new ModificationTab(1, "Muzzle", AttachmentCategory.SILENCER, 120, 75, ModificationGroup.ATTACHMENT);
+	private static final ModificationTab LASER_TAB = new ModificationTab(2, "Laser", AttachmentCategory.LASER, 150, 0, ModificationGroup.ATTACHMENT);
+	private static final ModificationTab GRIP_TAB = new ModificationTab(3, "Grip", AttachmentCategory.GRIP, 100, -50, ModificationGroup.ATTACHMENT);
 
+	
+	// Modifications tabs
+	private static final ModificationTab HANDGUARD_TAB = new ModificationTab(4, "Handguard", AttachmentCategory.GUARD, 145, 0, ModificationGroup.CONFIGURATION);
+	private static final ModificationTab BARREL_TAB = new ModificationTab(5, "Barrel", AttachmentCategory.BARREL, 120, 50, ModificationGroup.CONFIGURATION);
+	private static final ModificationTab RECEIVER_TAB = new ModificationTab(6, "Receiver", AttachmentCategory.RECEIVER, -50, 50, ModificationGroup.CONFIGURATION);
+	private static final ModificationTab REAR_GRIP_TAB = new ModificationTab(7, "Rear Grip", AttachmentCategory.BACKGRIP, 0, -50, ModificationGroup.CONFIGURATION);
+	private static final ModificationTab STOCKADAPTER_TAB = new ModificationTab(8, "Stock Adapter", AttachmentCategory.STOCKADAPTER, -100, -50, ModificationGroup.CONFIGURATION);
+	private static final ModificationTab RECEIVER2_TAB = new ModificationTab(9, "Receiver", AttachmentCategory.RECEIVER2, 50, 100, ModificationGroup.CONFIGURATION);
 
-    // Modifications tabs
-    private static final ModificationTab HANDGUARD_TAB = new ModificationTab(4, "Handguard", AttachmentCategory.GUARD, 145, 0, ModificationGroup.MODIFICATION);
-    private static final ModificationTab FRONT_SIGHT_TAB = new ModificationTab(5, "Front Sight",
-            AttachmentCategory.FRONTSIGHT, 120, 50, ModificationGroup.MODIFICATION);
-    private static final ModificationTab RECEIVER_TAB = new ModificationTab(6, "Receiver", AttachmentCategory.RECEIVER,
-            -50, 50, ModificationGroup.MODIFICATION);
-    private static final ModificationTab REAR_GRIP_TAB = new ModificationTab(7, "Rear Grip", AttachmentCategory.BACKGRIP,
-            0, -50, ModificationGroup.MODIFICATION);
-    private static final ModificationTab STOCK_TAB = new ModificationTab(8, "Stock", AttachmentCategory.STOCK, -100, -50,
-            ModificationGroup.MODIFICATION);
-    private static final ModificationTab RAILING_TAB = new ModificationTab(9, "Railing", AttachmentCategory.RAILING, 50, 100,
-            ModificationGroup.MODIFICATION);
+	private static final ModificationTab FRONTSIGHT_TAB = new ModificationTab(4, "Front Sight", AttachmentCategory.FRONTSIGHT, 120, 50, ModificationGroup.MODIFICATION);
+	private static final ModificationTab REARSIGHT_TAB = new ModificationTab(5, "Rear Sight", AttachmentCategory.REARSIGHT, 150, 0, ModificationGroup.MODIFICATION);
+	private static final ModificationTab RAILING_TAB = new ModificationTab(6, "Railing", AttachmentCategory.RAILING, 0, -50, ModificationGroup.MODIFICATION);
+	private static final ModificationTab STOCK_TAB = new ModificationTab(7, "Stock", AttachmentCategory.STOCK, -100, -50, ModificationGroup.MODIFICATION);
+	private static final ModificationTab RAILADAPTER_TAB = new ModificationTab(9, "Rail Adapter", AttachmentCategory.RAILADAPTER, 50, 100, ModificationGroup.MODIFICATION);
 
-    private static final ModificationTab WEAPON_SKIN_TAB = new ModificationTab(10, "Skin", AttachmentCategory.SKIN, 50, 100,
-            ModificationGroup.CUSTOMIZATION);
+	private static final ModificationTab WEAPON_SKIN_TAB = new ModificationTab(8, "Skin", AttachmentCategory.SKIN, 50, 100, ModificationGroup.CUSTOMIZATION);
+	private static final ModificationTab ACTION_TAB = new ModificationTab(9, "Action", AttachmentCategory.ACTION, -50, 50, ModificationGroup.CUSTOMIZATION);
+	private static final ModificationTab HANDLE_TAB = new ModificationTab(5, "Handle", AttachmentCategory.HANDLE, 150, 0, ModificationGroup.CUSTOMIZATION);
+	private static final ModificationTab DECOR_TAB = new ModificationTab(6, "Decorative", AttachmentCategory.DECOR, 0, -50, ModificationGroup.CUSTOMIZATION);
+
 
 
     //
@@ -123,21 +124,29 @@ public class ModificationGUI {
     static {
 
         // attachment
-        tabList.add(SCOPE_TAB);
-        tabList.add(BARREL_TAB);
-        tabList.add(LASER_TAB);
-        tabList.add(GRIP_TAB);
+		tabList.add(SCOPE_TAB);
+		tabList.add(BARREL_TAB);
+		tabList.add(MUZZLE_TAB);
+		tabList.add(LASER_TAB);
+		tabList.add(GRIP_TAB);
 
-        // modification
-        tabList.add(HANDGUARD_TAB);
-        tabList.add(FRONT_SIGHT_TAB);
-        tabList.add(RECEIVER_TAB);
-        tabList.add(REAR_GRIP_TAB);
-        tabList.add(STOCK_TAB);
-        tabList.add(RAILING_TAB);
+		// modification
+		tabList.add(HANDGUARD_TAB);
+		tabList.add(FRONTSIGHT_TAB);
+		tabList.add(RECEIVER_TAB);
+		tabList.add(RECEIVER2_TAB);
+		tabList.add(REAR_GRIP_TAB);
+		tabList.add(STOCK_TAB);
+		tabList.add(STOCKADAPTER_TAB);
+		tabList.add(RAILING_TAB);
+		tabList.add(REARSIGHT_TAB);
+		tabList.add(RAILADAPTER_TAB);
 
-        // customization
-        tabList.add(WEAPON_SKIN_TAB);
+		// customization
+		tabList.add(WEAPON_SKIN_TAB);
+		tabList.add(DECOR_TAB);
+		tabList.add(ACTION_TAB);
+		tabList.add(HANDLE_TAB);
     }
 
     // Useful to see what tab has it's dropdown
@@ -184,7 +193,7 @@ public class ModificationGUI {
      * to provide easy string formatting capabilities
      */
     public enum ModificationGroup {
-        ATTACHMENT, MODIFICATION, CUSTOMIZATION;
+        ATTACHMENT, MODIFICATION, CUSTOMIZATION, CONFIGURATION;
 
         /**
          * Returns the modification group based on the ID
@@ -195,16 +204,18 @@ public class ModificationGUI {
          * @return Modification group
          */
         public static ModificationGroup fromID(int id) {
-            switch (id) {
-                case 0:
-                    return ATTACHMENT;
-                case 1:
-                    return MODIFICATION;
-                case 2:
-                    return CUSTOMIZATION;
-            }
-            return ATTACHMENT;
-        }
+			switch (id) {
+			case 0:
+				return ATTACHMENT;
+			case 1:
+				return MODIFICATION;
+			case 2:
+				return CUSTOMIZATION;
+			case 3:
+				return CONFIGURATION;
+			}
+			return ATTACHMENT;
+		}
 
         /**
          * While this is easy to do with string manipulation,
@@ -216,17 +227,19 @@ public class ModificationGUI {
          * @return String with first letter capatilized
          */
         public static String getName(int id) {
-            switch (id) {
-                case 0:
-                    return "Attachment";
-                case 1:
-                    return "Modification";
-                case 2:
-                    return "Customization";
-            }
-            return "";
-        }
-    }
+			switch(id) {
+			case 0:
+				return "Attachment";
+			case 1:
+				return "Modification";
+			case 2:
+				return "Customization";
+			case 3:
+				return "Configuration";
+			}
+			return "";
+		}
+	}
 
 
     /**
@@ -617,57 +630,56 @@ public class ModificationGUI {
         boolean nullHoverTab = false;
 
         clearRGB();
-        setAlpha(1.0f);
-        for (int groupID = 0; groupID < 3; ++groupID) {
-            GlStateManager.disableTexture2D();
-            GUIRenderHelper.drawColoredRectangle(scaledresolution.getScaledWidth_double() - 15,
-                    scaledresolution.getScaledHeight_double() - 75 - (18 * groupID), 15, 15, 0.5, 0x00000);
+		setAlpha(1.0f);
+		for (int groupID = 0; groupID < 4; ++groupID) {
+			GlStateManager.disableTexture2D();
+			GUIRenderHelper.drawColoredRectangle(scaledresolution.getScaledWidth_double() - 15,
+					scaledresolution.getScaledHeight_double() - 75 - (18 * groupID), 15, 15, 0.5, 0x00000);
 
-            MC.getTextureManager().bindTexture(MODIFICATION_GUI_TEXTURES);
+			MC.getTextureManager().bindTexture(MODIFICATION_GUI_TEXTURES);
 
-            GlStateManager.enableTexture2D();
-            TexturedRect groupSelector = new TexturedRect(scaledresolution.getScaledWidth_double() - 13,
-                    scaledresolution.getScaledHeight_double() - 73.5 - (18 * groupID), 413, 356, 46, 46, 768, 768,
-                    0.25);
+			GlStateManager.enableTexture2D();
+			TexturedRect groupSelector = new TexturedRect(scaledresolution.getScaledWidth_double() - 13,
+					scaledresolution.getScaledHeight_double() - 73.5 - (18 * groupID), 413, 356, 46, 46, 768, 768,
+					0.25);
 
-            groupSelector.render();
-            if (groupSelector.checkBounding(0, 0, mouseX, mouseY, 1.0)) {
-                nullHoverTab = true;
-                tabHovered = groupID;
-            }
-
-
-            if (groupSelector.checkBounding(0, 0, mouseX, mouseY, 1.0) || (tabHovered == -1 && ModificationGroup.fromID(groupID) == currentGroup)) {
+			groupSelector.render();
+			if(groupSelector.checkBounding(0, 0, mouseX, mouseY, 1.0)) {
+				nullHoverTab = true;
+				tabHovered = groupID;
+			}
 
 
-                TexturedRect groupSelector2 = new TexturedRect(scaledresolution.getScaledWidth_double() - 13,
-                        scaledresolution.getScaledHeight_double() - 73.5 - (18 * groupID), 413, 402, 46, 46, 768, 768,
-                        0.25);
-
-                groupSelector2.render();
-                String text = ModificationGroup.getName(groupID) + " Mode";
-                setAlpha(0.5f);
-                GUIRenderHelper.drawTexturedScaledRect(scaledresolution.getScaledWidth_double() - 134, scaledresolution.getScaledHeight_double() - 74.5 - (18 * groupID), 90, 624, 390, 45, 768, 768, 0.3);
-                setAlpha(1.0f);
+			if (groupSelector.checkBounding(0, 0, mouseX, mouseY, 1.0) || (tabHovered == -1 && ModificationGroup.fromID(groupID) == currentGroup)) {
 
 
-                GUIRenderHelper.drawAlignedString(text, StringAlignment.RIGHT, true, scaledresolution.getScaledWidth_double() - 18, scaledresolution.getScaledHeight_double() - 75 - (18 * groupID), SIDEBAR_SCALE, WHITE);
 
-                //System.out.println("hi ");
+				TexturedRect groupSelector2 = new TexturedRect(scaledresolution.getScaledWidth_double() - 13,
+						scaledresolution.getScaledHeight_double() - 73.5 - (18 * groupID), 413, 402, 46, 46, 768, 768,
+						0.25);
 
-                if (isInClick && groupSelector.checkBounding(0, 0, mouseX, mouseY, 1.0)) {
-                    // Click on a certain group
-                    currentGroup = ModificationGroup.fromID(groupID);
+				groupSelector2.render();
+				String text = ModificationGroup.getName(groupID) + " Mode";
+				setAlpha(0.5f);
+			    GUIRenderHelper.drawTexturedScaledRect(scaledresolution.getScaledWidth_double() - 134, scaledresolution.getScaledHeight_double() - 74.5 - (18 * groupID), 90, 624, 390, 45, 768, 768, 0.3);
+				setAlpha(1.0f);
 
-                    weaponInstance.setAltModificationModeEnabled(currentGroup == ModificationGroup.MODIFICATION);
 
-                    activeTab = null;
-                }
-            }
-        }
-        if (!nullHoverTab) {
-            tabHovered = -1;
-        }
+				GUIRenderHelper.drawAlignedString(text, StringAlignment.RIGHT, true, scaledresolution.getScaledWidth_double() - 18, scaledresolution.getScaledHeight_double() - 75 - (18 * groupID), SIDEBAR_SCALE, WHITE);
+
+				//System.out.println("hi ");
+
+				if(isInClick && groupSelector.checkBounding(0, 0, mouseX, mouseY, 1.0)) {
+					// Click on a certain group
+					currentGroup = ModificationGroup.fromID(groupID);
+
+					weaponInstance.setAltModificationModeEnabled(currentGroup == ModificationGroup.MODIFICATION);
+
+					activeTab = null;
+				}
+			}
+		}
+		if(!nullHoverTab) tabHovered = -1;
 
 
         // Reset click detection

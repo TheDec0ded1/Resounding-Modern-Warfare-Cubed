@@ -250,6 +250,12 @@ public class PlayerWeaponInstance extends PlayerItemInstance<WeaponState> implem
         return 9;
     }
 
+    public int getDura() {
+		EntityLivingBase player = this.getPlayer();
+		ItemStack stack = player.getHeldItemMainhand();
+		return stack.getItemDamage();
+	}
+
     public Weapon getWeapon() {
         return (Weapon) item;
     }

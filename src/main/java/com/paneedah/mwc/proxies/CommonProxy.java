@@ -70,10 +70,17 @@ public class CommonProxy {
         Armors.createEquipment(MWC.modContext);
 
         Attachments.init(mod);
+        Attachments2.init(mod);
+        AKParts.init(mod);
+		FALParts.init(mod);
+        ARParts.init(mod);
+		GlockParts.init(mod);
+        Attachments3.init(mod);
         AuxiliaryAttachments.init(mod);
         GunSkins.init(mod);
         Bullets.init(mod);
         Magazines.init(mod);
+        STANAGMagazines.init(mod);
         Guns.init(mod, this);
         Electronics.createEquipment(MWC.modContext);
         Grenades.init(mod, this);

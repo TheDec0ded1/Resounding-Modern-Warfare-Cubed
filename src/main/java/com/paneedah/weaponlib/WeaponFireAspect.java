@@ -4,17 +4,16 @@ import com.paneedah.mwc.instancing.PlayerWeaponInstance;
 import com.paneedah.mwc.instancing.Tags;
 import com.paneedah.mwc.network.NetworkPermitManager;
 import com.paneedah.mwc.network.messages.MuzzleFlashMessage;
+import com.paneedah.mwc.network.messages.RealisticSoundMessage;
 import com.paneedah.mwc.network.messages.ShellMessageClient;
 import com.paneedah.mwc.network.messages.TryFireMessage;
-import com.paneedah.mwc.utils.VectorUtil;
 import com.paneedah.weaponlib.animation.ClientValueRepo;
 import com.paneedah.weaponlib.config.BalancePackManager;
 import com.paneedah.weaponlib.config.ModernConfigManager;
 import com.paneedah.weaponlib.render.shells.ShellParticleSimulator.Shell;
 import com.paneedah.weaponlib.state.Aspect;
 import com.paneedah.weaponlib.state.StateManager;
-import dev.redstudio.redcore.math.vectors.Vector3D;
-import dev.redstudio.redcore.math.vectors.Vector3F;
+import io.redstudioragnarok.redcore.vectors.Vector3D;
 import net.minecraft.client.audio.PositionedSoundRecord;
 import net.minecraft.client.resources.I18n;
 import net.minecraft.entity.EntityLivingBase;
@@ -37,8 +36,8 @@ import java.util.function.BiFunction;
 import java.util.function.Predicate;
 
 import static com.paneedah.mwc.MWC.CHANNEL;
-import static com.paneedah.mwc.ProjectConstants.LOGGER;
 import static com.paneedah.mwc.proxies.ClientProxy.MC;
+import static com.paneedah.mwc.ProjectConstants.LOGGER;
 
 
 /*
@@ -76,6 +75,8 @@ public class WeaponFireAspect implements Aspect<WeaponState, PlayerWeaponInstanc
 
     private static final Predicate<PlayerWeaponInstance> hasAmmo = instance -> instance.getAmmo() > 0
             && Tags.getAmmo(instance.getItemStack()) > 0;
+
+    private static Predicate<PlayerWeaponInstance> hasDura= instance -> instance.getDura() < 4999;
 
     private static final Predicate<PlayerWeaponInstance> ejectSpentRoundRequired = instance -> instance.getWeapon().ejectSpentRoundRequired();
 
@@ -118,71 +119,76 @@ public class WeaponFireAspect implements Aspect<WeaponState, PlayerWeaponInstanc
 
         stateManager
 
-                .in(this).change(WeaponState.READY).to(WeaponState.ALERT)
-                .when(hasAmmo.negate())
-                .withAction(this::cannotFire)
-                .manual() // on start fire
+        .in(this).change(WeaponState.READY).to(WeaponState.ALERT)
+        .when(hasDura.negate()
+        .and(hasAmmo.negate()))
+        .withAction(this::cannotFire)
+        .manual() // on start fire
 
-                .in(this).change(WeaponState.ALERT).to(WeaponState.READY)
-                .when(alertTimeoutExpired)
-                .automatic() //
+        .in(this).change(WeaponState.ALERT).to(WeaponState.READY)
+        .when(alertTimeoutExpired)
+        .automatic() //
 
-                .in(this).change(WeaponState.READY).to(WeaponState.FIRING)
-                .when(hasAmmo.and(sprinting.negate()).and(readyToShootAccordingToFireRate))
-                .withAction(this::fire)
-                .manual() // on start fire
+        .in(this).change(WeaponState.READY).to(WeaponState.FIRING)
+        .when(hasAmmo
+        .and(sprinting.negate())
+        .and(hasDura
+        .and(readyToShootAccordingToFireRate)))
+        .withAction(this::fire)
+        .manual() // on start fire
 
-                .in(this).change(WeaponState.FIRING).to(WeaponState.RECOILED)
-                .automatic() // unconditional
+        .in(this).change(WeaponState.FIRING).to(WeaponState.RECOILED)
+        .automatic() // unconditional
 
-                .in(this).change(WeaponState.RECOILED).to(WeaponState.PAUSED)
-                .automatic() // unconditional
+        .in(this).change(WeaponState.RECOILED).to(WeaponState.PAUSED)
+        .automatic() // unconditional
 
-                .in(this).change(WeaponState.PAUSED).to(WeaponState.EJECT_REQUIRED)
-                .when(ejectSpentRoundRequired)
-                .manual() // on stop
+        .in(this).change(WeaponState.PAUSED).to(WeaponState.EJECT_REQUIRED)
+        .when(ejectSpentRoundRequired)
+        .manual() // on stop
 
-                .in(this).change(WeaponState.EJECT_REQUIRED).to(WeaponState.EJECTING)
-                .withAction(this::ejectSpentRound)
-                .manual() // on fire ?
+        .in(this).change(WeaponState.EJECT_REQUIRED).to(WeaponState.EJECTING)
+        .withAction(this::ejectSpentRound)
+        .manual() // on fire ?
 
-                .in(this).change(WeaponState.EJECTING).to(WeaponState.READY)
-                .when(ejectSpentRoundTimeoutExpired) // TODO: enforce it only if a trigger was released
-                .automatic() // on stop fire and eject animation completed
+        .in(this).change(WeaponState.EJECTING).to(WeaponState.READY)
+        .when(ejectSpentRoundTimeoutExpired) // TODO: enforce it only if a trigger was released
+        .automatic() // on stop fire and eject animation completed
 
-                .in(this).change(WeaponState.PAUSED).to(WeaponState.FIRING)
-                .when(hasAmmo
-                        .and(sprinting.negate())
-                        .and(readyToShootAccordingToFireMode)
-                        .and(readyToShootAccordingToFireRate)
+        .in(this).change(WeaponState.PAUSED).to(WeaponState.FIRING)
+        .when(hasAmmo
+                .and(hasDura)
+                .and(sprinting.negate())
+                .and(readyToShootAccordingToFireMode)
+                .and(readyToShootAccordingToFireRate)
                 )
-                .withAction(this::fire)
-                .manual() // on fire, requires fire button to be down
-
-                /// Applies
-                .in(this).change(WeaponState.PAUSED).to(WeaponState.FIRING)
-                .when(hasAmmo.and(sprinting.negate())
-                        .and(oneClickBurstEnabled)
-                        .and(readyToShootAccordingToFireMode)
-                        .and((readyToShootAccordingToFireRate))
+        .withAction(this::fire)
+        .manual() // on fire, requires fire button to be down
+        
+        /// Applies 
+        .in(this).change(WeaponState.PAUSED).to(WeaponState.FIRING)
+        .when(hasAmmo.and(sprinting.negate())
+                .and(oneClickBurstEnabled)
+                .and(readyToShootAccordingToFireMode)
+                .and((readyToShootAccordingToFireRate))
                 )
-                .withAction(this::fire)
-                .automatic() // on update
-
-                .in(this).change(WeaponState.PAUSED).to(WeaponState.READY)
-                .when(ejectSpentRoundRequired.negate()
-                        .and(oneClickBurstEnabled)
-                        .and(readyToShootAccordingToFireMode.negate().or(hasAmmo.negate()))
-                        .and(seriesResetAllowed)
-                        .and(postBurstTimeoutExpired)
+        .withAction(this::fire)
+        .automatic() // on update
+        
+        .in(this).change(WeaponState.PAUSED).to(WeaponState.READY)
+        .when(ejectSpentRoundRequired.negate()
+                .and(oneClickBurstEnabled)
+                .and(readyToShootAccordingToFireMode.negate().or(hasAmmo.negate().or(hasDura.negate())))
+                .and(seriesResetAllowed)
+                .and(postBurstTimeoutExpired)
                 )
-                .withAction(PlayerWeaponInstance::resetCurrentSeries)
-                .automatic() // on update
-
-                .in(this).change(WeaponState.PAUSED).to(WeaponState.READY)
-                .when(ejectSpentRoundRequired.negate().and(oneClickBurstEnabled.negate()))
-                .withAction(PlayerWeaponInstance::resetCurrentSeries)
-                .manual() // on stop
+        .withAction(PlayerWeaponInstance::resetCurrentSeries)
+        .automatic() // on update
+        
+        .in(this).change(WeaponState.PAUSED).to(WeaponState.READY)
+        .when(ejectSpentRoundRequired.negate().and(oneClickBurstEnabled.negate()))
+        .withAction(PlayerWeaponInstance::resetCurrentSeries)
+        .manual() // on stop
 
         ;
     }
@@ -214,7 +220,7 @@ public class WeaponFireAspect implements Aspect<WeaponState, PlayerWeaponInstanc
         if (weaponInstance.getAmmo() == 0 || Tags.getAmmo(weaponInstance.getItemStack()) == 0) {
             String message;
 
-            if (ModernConfigManager.enableStatusMessages) {
+            if(ModernConfigManager.enableStatusMessages){
                 if (weaponInstance.getWeapon().getAmmoCapacity() == 0 && modContext.getAttachmentAspect().getActiveAttachment(weaponInstance, AttachmentCategory.MAGAZINE) == null) {
                     message = I18n.format("gui.noMagazine");
                 } else {
@@ -287,11 +293,7 @@ public class WeaponFireAspect implements Aspect<WeaponState, PlayerWeaponInstanc
             // Should prevent sound from being one sided
 
             if (!FMLCommonHandler.instance().getSide().isServer()) {
-
-                //
-                PositionedSoundRecord psr = new PositionedSoundRecord(shootSound, SoundCategory.PLAYERS, silencerOn ? weapon.getSilencedShootSoundVolume() * 0.4f : weapon.getShootSoundVolume() * 0.4f, 1.0F, MC.player.getPosition().up(5));
-                playShootSound(psr);
-                //MC.getSoundHandler().playSound(psr);
+                CHANNEL.sendToServer(new RealisticSoundMessage(silencerOn, shootSound, player.getPosition(), player.getEntityWorld().getWorldType().getId()));
             }
 
 
@@ -303,11 +305,12 @@ public class WeaponFireAspect implements Aspect<WeaponState, PlayerWeaponInstanc
 
         int currentAmmo = weaponInstance.getAmmo();
         if (currentAmmo == 1 && weapon.getEndOfShootSound() != null && !FMLCommonHandler.instance().getSide().isServer()) {
-            PositionedSoundRecord psr = new PositionedSoundRecord(weapon.getEndOfShootSound(), SoundCategory.PLAYERS, 1.0F, 1.0F, MC.player.getPosition().up(5));
-            playShootSound(psr);
+            CHANNEL.sendToServer(new RealisticSoundMessage(silencerOn,weapon.getEndOfShootSound(), player.getPosition(), player.getEntityWorld().getWorldType().getId()));
+//        	PositionedSoundRecord psr = new PositionedSoundRecord(weapon.getEndOfShootSound(), SoundCategory.PLAYERS, 1.0F, 1.0F, MC.player.getPosition().up(5));
+//        	playShootSound(psr);
             //MC.getSoundHandler().playSound(psr);
         }
-
+        
         if (currentAmmo == 1) {
             weaponInstance.setSlideLock(true);
         }
@@ -339,33 +342,38 @@ public class WeaponFireAspect implements Aspect<WeaponState, PlayerWeaponInstanc
         }
 
         if (weapon.isShellCasingEjectEnabled()) {
-            float fovMult = MC.gameSettings.fovSetting < 70 ? (MC.gameSettings.fovSetting / 50) : -(MC.gameSettings.fovSetting / 200);
-            final Vector3F weaponDir = VectorUtil.convertToVector3F(new Vec3d(0, -0.1, 1 + fovMult).rotatePitch((float) Math.toRadians(-player.rotationPitch)).rotateYaw((float) Math.toRadians(-player.rotationYaw)));
-            final Vector3D position = new Vector3D(player.posX, player.posY + player.getEyeHeight(), player.posZ).add(weaponDir);
-            final Vector3F velocity = VectorUtil.convertToVector3F(new Vec3d(-0.3, 0.1, 0.0).rotateYaw((float) Math.toRadians(-player.rotationYaw)));
 
-            final Shell shell = new Shell(weapon.getShellType(), position.add(weaponDir), new Vector3F(-90, 0, 180 + player.rotationYaw), velocity);
+            float fovMult = MC.gameSettings.fovSetting < 70f ? (MC.gameSettings.fovSetting / 50) : -(MC.gameSettings.fovSetting / 200f);
+
+            // Panda: Replaced this with the above line, undo if it breaks anything for whatever reason.
+            //if (MC.gameSettings.fovSetting < 70f) fovMult = (MC.gameSettings.fovSetting/50);
+            //else fovMult = -(MC.gameSettings.fovSetting/200f);
+
+            Vec3d pos = player.getPositionEyes(1.0f);
+            Vec3d weaponDir = new Vec3d(0, -0.1, 1.0 + fovMult).rotatePitch((float) Math.toRadians(-player.rotationPitch)).rotateYaw((float) Math.toRadians(-player.rotationYaw));
+
+            Vec3d velocity = new Vec3d(-0.3, 0.1, 0.0);
+            velocity = velocity.rotateYaw((float) Math.toRadians(-player.rotationYaw));
+            Shell shell = new Shell(weapon.getShellType(), pos.add(weaponDir), new Vec3d(-90, 0, 180 + player.rotationYaw), velocity);
             ClientEventHandler.SHELL_MANAGER.enqueueShell(shell);
 
             //Shell
 
-            // ! TODO: What? - Luna Mira Lage (Desoroxxx) 2025-02-05
-        	
         	/*
         	// Change the raw position
         	Vec3d rawPosition = new Vec3d(ClientEventHandler.NEW_POS.get(0), ClientEventHandler.NEW_POS.get(1), ClientEventHandler.NEW_POS.get(2));
-        	
-        	
+
+
         	// Calculate the final position of the bullet spawn point
         	// by changing it's position along its own vector
         	double distance = 0.5;
 			Vec3d eyePos = MC.player.getPositionEyes(1.0f);
 			Vec3d finalPosition = rawPosition.subtract(eyePos).normalize().scale(distance).add(eyePos);
-			
+
         	// Calculate velocity as 90 degrees to player
 			Vec3d velocity = new Vec3d(-0.3, 0.1, 0.0);
     		velocity = velocity.rotateYaw((float) Math.toRadians(-MC.player.rotationYaw));
-    		
+
     		// Spawn in shell
     		Shell shell = new Shell(weaponInstance.getWeapon().getShellType(), new Vec3d(finalPosition.x, finalPosition.y, finalPosition.z), new Vec3d(90, 0, 90), velocity);
         	ClientEventHandler.shellManager.enqueueShell(shell);
@@ -390,7 +398,7 @@ public class WeaponFireAspect implements Aspect<WeaponState, PlayerWeaponInstanc
         player.playSound(weaponInstance.getWeapon().getEjectSpentRoundSound(), 1, 1);
     }
 
-    //(weapon, player) 
+    //(weapon, player)
     public void serverFire(EntityLivingBase player, boolean isBurst, boolean isAimed) {
         serverFire(player, player.getHeldItemMainhand(), null, isBurst, isAimed, 1.0f);
     }
@@ -414,13 +422,14 @@ public class WeaponFireAspect implements Aspect<WeaponState, PlayerWeaponInstanc
         }
 
         Tags.setAmmo(itemStack, --currentServerAmmo);
+        itemStack.damageItem(1, player);
 
         if (spawnEntityWith == null) {
             spawnEntityWith = weapon.builder.spawnEntityWith;
         }
 
         //System.out.println(isAimed);
-      
+
         /*
         int itemIndex = 0;
         EntityPlayer realPlayer = (EntityPlayer) player;
@@ -429,9 +438,9 @@ public class WeaponFireAspect implements Aspect<WeaponState, PlayerWeaponInstanc
         		itemIndex = i;
         	}
         }
-        
-        
-        
+
+
+
         PlayerWeaponInstance pwi = new PlayerWeaponInstance(itemIndex, player, itemStack);
         System.out.println(pwi.isAimed());
             	*/
@@ -472,11 +481,12 @@ public class WeaponFireAspect implements Aspect<WeaponState, PlayerWeaponInstanc
         PlayerWeaponInstance playerWeaponInstance = Tags.getInstance(itemStack, PlayerWeaponInstance.class);
 
         if (playerWeaponInstance != null) {
-            final Vector3F weaponDir = VectorUtil.convertToVector3F(new Vec3d(0, -0.1, 1).rotatePitch((float) Math.toRadians(-player.rotationPitch)).rotateYaw((float) Math.toRadians(-player.rotationYaw)));
-            final Vector3D position = new Vector3D(player.posX, player.posY + player.getEyeHeight(), player.posZ).add(weaponDir);
-            final Vector3F velocity = VectorUtil.convertToVector3F(new Vec3d(-0.3, 0.1, 0.0).rotateYaw((float) Math.toRadians(-player.rotationYaw)));
+            Vec3d pos = new Vec3d(player.posX, player.posY + player.getEyeHeight(), player.posZ);
+            Vec3d weaponDir = new Vec3d(0, -0.1, 1).rotatePitch((float) Math.toRadians(-player.rotationPitch)).rotateYaw((float) Math.toRadians(-player.rotationYaw));
 
-            CHANNEL.sendToAllAround(new ShellMessageClient(player.getEntityId(), playerWeaponInstance.getWeapon().getShellType(), position, velocity), tp);
+            Vec3d velocity = new Vec3d(-0.3, 0.1, 0.0);
+            velocity = velocity.rotateYaw((float) Math.toRadians(-player.rotationYaw));
+            CHANNEL.sendToAllAround(new ShellMessageClient(player.getEntityId(), playerWeaponInstance.getWeapon().getShellType(), new Vector3D(pos.add(weaponDir)), new Vector3D(velocity)), tp);
         }
 
 

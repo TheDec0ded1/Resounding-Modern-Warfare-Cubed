@@ -62,7 +62,6 @@ like knowing which weapon is better or whether an attachment will be useful to y
   - Added wiki
   - Added helper methods to avoid typing enums strings
   - Added more validations
-- New enableFancyRainDrops config, allows you to disable the raindrops that appear during rain
 
 ### Changed
 
@@ -92,19 +91,12 @@ like knowing which weapon is better or whether an attachment will be useful to y
 - Gas Detector's and some attachments won't unnecessarily hide your crosshair anymore
 - Reworked headers in the workbench (Workbench, Crafting, Inventory)
 - Improved the blending of the smoke grenades smoke
-- Adjusted configuration categories for all weapons
-  - SMG -> SUBMACHINE_GUN, RIFLES -> RIFLE, SIDEARM / REVOLVER -> HANDGUN 
-- Improved and cleaned up Blood particles (Now supports arbitrary sizes like 64x64)
-- Improved Fancy Rain
-  - Uses different textures based on rain intensity 
-  - Fades out closer to the ground 
-  - Supports recoloring Fog and Rain 
 
 ### Fixed
 
 - Fixed the default craftingmappings.json
 - Fixed the position of the RPG-7 and M202 projectiles
-- Fixed compatibility with GroovyScript 1.2+
+- Fixed compatiblity with GroovyScript 1.2+
 - Fixed certain sounds not being registered:
   - revolver_reload
   - revolverbullet
@@ -118,8 +110,6 @@ like knowing which weapon is better or whether an attachment will be useful to y
 - Fixed fire mode key not doing well with longer key names
 - Fixed open door HUD depending on the ammunition counter
 - Fixed crash when looking at a door while loading the world
-- Fixed Grid shader
-- Fixed positions of many things in the mod being glitchy when getting far away from world origin
 
 ### Removed
 
@@ -139,7 +129,7 @@ like knowing which weapon is better or whether an attachment will be useful to y
 - Made client sided mixins client side only
 - Cleaned up the `mcmod.info` file
 - Switched to [CurseUpdate](https://forge.curseupdate.com/) for update checking
-- Updated [RetroFuturaGradle](https://github.com/GTNewHorizons/RetroFuturaGradle) to version 1.4.2
+- Updated [RetroFuturaGradle](https://github.com/GTNewHorizons/RetroFuturaGradle) to version 1.4.1
 - Updated to [Gradle](https://gradle.org) 8.8
 - Set a minimum Gradle Daemon JVM version requirement
 - Updated the `gradle.properties` to the new Red Studio standard one
@@ -154,9 +144,9 @@ like knowing which weapon is better or whether an attachment will be useful to y
 - Updated [MixinBooter](https://www.curseforge.com/minecraft/mc-mods/mixin-booter) dependency to 10.2
 - Updated to [org.jetbrains.gradle.plugin.idea-ext](https://github.com/JetBrains/gradle-idea-ext-plugin) 1.1.9
 - Props now use Red Core `AABBUtil`
+- Updated [Red Core](https://www.curseforge.com/minecraft/mc-mods/red-core) dependency to 0.6-Dev-8
 - Lombokified most of the codebase
 - Updated [foojay-resolver](https://github.com/gradle/foojay-toolchains) to version 0.9.0
-- Updated [Red Core](https://www.curseforge.com/minecraft/mc-mods/red-core) dependency to 0.6
 
 ## Modern Warfare Cubed Version 0.1.9 Changelog - 2024-11-25
 

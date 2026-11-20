@@ -25,7 +25,7 @@ public class SmokeGrenadeFactory implements GrenadeFactory {
         return new ItemGrenade.Builder()
 
                 .withName("M18White")
-                .withCreativeTab(MWC.THROWABLES_TAB)
+                .withCreativeTab(MWC.GrenadesTab)
                 .withTextureNames("M18White")
                 .withExplosionStrength(0.4f)
                 .withType(Type.SMOKE)

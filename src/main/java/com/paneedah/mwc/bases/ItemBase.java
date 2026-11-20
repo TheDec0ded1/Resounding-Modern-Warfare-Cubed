@@ -16,7 +16,7 @@ public class ItemBase extends Item {
 
         setMaxStackSize(stackSize);
         // Might want to change that?
-        setCreativeTab(MWC.BLOCKS_AND_INGOTS_TAB);
+        setCreativeTab(MWC.BlocksTab);
     }
 
     public void setStackSize(int stackSize) {

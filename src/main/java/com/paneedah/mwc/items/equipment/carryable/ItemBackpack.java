@@ -31,7 +31,7 @@ public class ItemBackpack extends ItemCarryable {
 
             ItemBackpack itemBackpack = new ItemBackpack(size, validItemPredicate, guiTexture, this.guiTextureWidth, modelName, textureName);
 
-            itemBackpack.setTranslationKey(LangUtil.format(name)).setCreativeTab(MWC.EQUIPMENT_TAB);
+            itemBackpack.setTranslationKey(LangUtil.format(name)).setCreativeTab(MWC.ArmorTab);
 
             // Register hook
             CraftingRegistry.registerHook(itemBackpack);

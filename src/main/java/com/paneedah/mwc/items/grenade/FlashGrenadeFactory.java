@@ -25,7 +25,7 @@ public class FlashGrenadeFactory implements GrenadeFactory {
 
                 .withType(Type.FLASH)
                 .withName("Flash")
-                .withCreativeTab(MWC.THROWABLES_TAB)
+                .withCreativeTab(MWC.GrenadesTab)
                 .withTextureNames("flashgrenade")
                 .withExplosionStrength(0.1f)
                 .withExplosionTimeout(5000)

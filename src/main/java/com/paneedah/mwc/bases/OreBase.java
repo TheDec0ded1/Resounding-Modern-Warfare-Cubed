@@ -22,7 +22,7 @@ public class OreBase extends BlockOre {
         setHardness(6F);
         setResistance(15F);
         setHarvestLevel("pickaxe", harvestLevel);
-        setCreativeTab(MWC.BLOCKS_AND_INGOTS_TAB);
+        setCreativeTab(MWC.BlocksTab);
     }
 
     @Override

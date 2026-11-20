@@ -15,7 +15,7 @@ import com.paneedah.weaponlib.command.BalancePackCommand;
 import com.paneedah.weaponlib.command.CraftingFileCommand;
 import com.paneedah.weaponlib.command.DebugCommand;
 import com.paneedah.weaponlib.config.BalancePackManager;
-import dev.redstudio.redcore.utils.OptiNotFine;
+import io.redstudioragnarok.redcore.RedCore;
 import net.minecraft.block.material.Material;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraftforge.common.MinecraftForge;
@@ -48,13 +48,19 @@ public final class MWC {
 
     public static final SimpleNetworkWrapper CHANNEL = NetworkRegistry.INSTANCE.newSimpleChannel(ID);
 
-    public static final CreativeTabs EQUIPMENT_TAB = new ArmorTab(CreativeTabs.getNextID(), "equipment");
-    public static final CreativeTabs WEAPONS_TAB = new AssaultRiflesTab(CreativeTabs.getNextID(), "weapons");
-    public static final CreativeTabs AMMUNITION_AND_MAGAZINES_TAB = new AmmoTab(CreativeTabs.getNextID(), "ammunitionAndMagazines");
-    public static final CreativeTabs ATTACHMENTS_TAB = new AttachmentsTab(CreativeTabs.getNextID(), "attachments");
-    public static final CreativeTabs THROWABLES_TAB = new GrenadesTab(CreativeTabs.getNextID(), "throwables");
-    public static final CreativeTabs PROPS_TAB = new PropsTab(CreativeTabs.getNextID(), "props");
-    public static final CreativeTabs BLOCKS_AND_INGOTS_TAB = new BlocksTab(CreativeTabs.getNextID(), "blocksAndIngots");
+    public static final CreativeTabs ArmorTab = new ArmorTab(CreativeTabs.getNextID(), "ArmorTab");
+	public static final CreativeTabs AssaultRiflesTab = new AssaultRiflesTab(CreativeTabs.getNextID(), "AssaultRifles_tab");
+	public static final CreativeTabs SMGsTab = new SMGsTab(CreativeTabs.getNextID(), "SMGs_tab");
+	public static final CreativeTabs PistolsTab = new PistolsTab(CreativeTabs.getNextID(), "Pistols_tab");
+	public static final CreativeTabs PrecisionRiflesTab = new PrecisionRiflesTab(CreativeTabs.getNextID(), "PrecisionRifles_tab");
+	public static final CreativeTabs ShotgunsTab = new ShotgunsTab(CreativeTabs.getNextID(), "Shotguns_tab");
+	public static final CreativeTabs LMGsTab = new LMGsTab(CreativeTabs.getNextID(), "LMGs_tab");
+	public static final CreativeTabs AmmoTab = new AmmoTab(CreativeTabs.getNextID(), "AmmoTab");
+	public static final CreativeTabs AttachmentsTab = new AttachmentsTab(CreativeTabs.getNextID(), "AttachmentsTab");
+	public static final CreativeTabs GrenadesTab = new GrenadesTab(CreativeTabs.getNextID(), "GrenadesTab");
+	public static final CreativeTabs GadgetsTab = new GadgetsTab(CreativeTabs.getNextID(), "GadgetsTab");
+	public static final CreativeTabs PropsTab = new PropsTab(CreativeTabs.getNextID(), "props_tab");
+	public static final CreativeTabs BlocksTab = new BlocksTab(CreativeTabs.getNextID(), "BlocksTab");
 
     // Todo: Make this configurable via the future YAML config system from FBP, or Valkyrie integration, the later would be best.
     public static int bulletHitParticleMult = 6;
@@ -98,14 +104,13 @@ public final class MWC {
         modContext.setExplosionSound("grenadeexplosion");
         modContext.setFlashExplosionSound("flashbang");
 
-        modContext.setMaterialImpactSounds(Material.ROCK, 1.5f, "bullet_3_rock", "bullet_2_rock", "bullet_4_rock", "bullet_12_stone");
-        modContext.setMaterialImpactSounds(Material.WOOD, 1.5f, "bullet_3_rock", "bullet_2_rock", "bullet_4_rock", "bullet_12_stone", "bullet_10_snap");
-        modContext.setMaterialImpactSounds(Material.GRASS, 1.5f, "bullet_5_grass", "bullet_9_grass", "bullet_11_grass", "bullet_10_snap", "bullet_13_snap");
-        modContext.setMaterialImpactSounds(Material.GROUND, 1.5f, "bullet_5_grass", "bullet_9_grass", "bullet_11_grass", "bullet_10_snap", "bullet_13_snap");
-        modContext.setMaterialImpactSounds(Material.SAND, 1.5f, "bullet_5_grass", "bullet_9_grass", "bullet_11_grass", "bullet_10_snap", "bullet_13_snap");
-        modContext.setMaterialImpactSounds(Material.IRON, 1.5f, "bullet_6_iron", "bullet_7_iron", "bullet_8_iron");
-        modContext.setMaterialImpactSounds(Material.SNOW, 1.5f, "bullet_14_snow");
-        modContext.setMaterialImpactSounds(Material.CRAFTED_SNOW, 1.5f, "bullet_14_snow");
+        modContext.setMaterialImpactSounds(Material.ROCK, 1.5f, "impact_rock1", "impact_rock2", "impact_rock3");
+        modContext.setMaterialImpactSounds(Material.WOOD, 1.5f, "impact_wood1", "impact_wood2", "impact_wood3");
+        modContext.setMaterialImpactSounds(Material.GRASS, 1.5f, "impact_dirt1", "impact_dirt2", "impact_dirt3");
+        modContext.setMaterialImpactSounds(Material.GROUND, 1.5f, "impact_dirt1", "impact_dirt2", "impact_dirt3");
+        modContext.setMaterialImpactSounds(Material.SAND, 1.5f, "impact_dirt1", "impact_dirt2", "impact_dirt3");
+        modContext.setMaterialImpactSounds(Material.SNOW, 1.5f, "impact_dirt1", "impact_dirt2", "impact_dirt3");
+        modContext.setMaterialImpactSounds(Material.IRON, 1.5f, "impact_metal1", "impact_metal2", "impact_metal3");
 
         // Register channels for networking
         CHANNEL.registerMessage(new PermitMessageClientHandler((CommonModContext) modContext), PermitMessage.class, -1, Side.CLIENT);
@@ -123,6 +128,7 @@ public final class MWC {
         CHANNEL.registerMessage(new VehicleClientMessageHandler(), VehicleClientMessage.class, -13, Side.CLIENT);
         CHANNEL.registerMessage(new EntityInventorySyncMessageClientHandler(modContext), EntityInventorySyncMessage.class, -14, Side.CLIENT);
         CHANNEL.registerMessage(new ExposureMessageHandler(), ExposureMessage.class, -15, Side.CLIENT);
+        CHANNEL.registerMessage(new RealisticSoundClientHandler(), RealisticSoundClientMessage.class, -16, Side.CLIENT);
 
         CHANNEL.registerMessage(new TryFireMessageHandler(modContext.getWeaponFireAspect()), TryFireMessage.class, 1, Side.SERVER);
         CHANNEL.registerMessage(new PermitMessageServerHandler((CommonModContext) modContext), PermitMessage.class, 2, Side.SERVER);
@@ -137,6 +143,7 @@ public final class MWC {
         CHANNEL.registerMessage(new WorkbenchServerMessageHandler(), WorkbenchServerMessage.class, 11, Side.SERVER);
         CHANNEL.registerMessage(new CraftingServerMessageHandler(), CraftingServerMessage.class, 12, Side.SERVER);
         CHANNEL.registerMessage(new EntityPickupMessageHandler(), EntityPickupMessage.class, 13, Side.SERVER);
+        CHANNEL.registerMessage(new RealisticSoundHandler(), RealisticSoundMessage.class, 14, Side.SERVER);
     }
 
     @Mod.EventHandler
@@ -147,7 +154,7 @@ public final class MWC {
     @Mod.EventHandler
     @SideOnly(Side.CLIENT)
     public void postInitClient(FMLPostInitializationEvent postInitializationEvent) {
-        OptiNotFine.forceOptiFineFastRenderOff();
+        RedCore.forceOptiFineFastRenderOff();
     }
 
     @Mod.EventHandler

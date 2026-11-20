@@ -1,7 +1,6 @@
 package com.paneedah.weaponlib;
 
 import com.paneedah.mwc.network.UniversalObject;
-import dev.redstudio.redcore.math.ClampUtil;
 import io.netty.buffer.ByteBuf;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLivingBase;
@@ -34,15 +33,15 @@ public class SpreadableExposure extends UniversalObject implements Exposure {
         private final Random random = new Random();
 
         public float getProgress() {
-            return ClampUtil.clampMaxFirst((float) (System.currentTimeMillis() - startTime) / duration, 0f, 1f);
+            return MiscUtils.clamp((float) (System.currentTimeMillis() - startTime) / duration, 0f, 1f);
         }
 
         public float getEnterProgress() {
-            return ClampUtil.clampMaxFirst((float) (System.currentTimeMillis() - startTime) / enterDuration, 0f, 1f);
+            return MiscUtils.clamp((float) (System.currentTimeMillis() - startTime) / enterDuration, 0f, 1f);
         }
 
         public float getExitProgress() {
-            return ClampUtil.clampMaxFirst((float) (System.currentTimeMillis() - (startTime + duration - exitDuration)) / exitDuration, 0f, 1f);
+            return MiscUtils.clamp((float) (System.currentTimeMillis() - (startTime + duration - exitDuration)) / exitDuration, 0f, 1f);
         }
 
         public BlackoutPhase getPhase() {
@@ -258,7 +257,7 @@ public class SpreadableExposure extends UniversalObject implements Exposure {
 
         long worldTime = entityLiving.world.getTotalWorldTime();
 
-        if (totalDose > MIN_EFFECTIVE_TOTAL_DOSE && worldTime - lastApplyTimestamp >= /*TODO: convertToVector3D to world time? */20f / entityImpactRate) {
+        if (totalDose > MIN_EFFECTIVE_TOTAL_DOSE && worldTime - lastApplyTimestamp >= /*TODO: convert to world time? */20f / entityImpactRate) {
             // TODO: configure min total dose, possibly per entity?
             //TODO: is it possible to control health per entity type?
             boolean isCreative = false;

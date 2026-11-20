@@ -21,7 +21,7 @@ public class ImpactGrenadeFactory implements GrenadeFactory {
         return new ItemGrenade.Builder()
 
                 .withName("ImpactGrenade")
-                .withCreativeTab(MWC.THROWABLES_TAB)
+                .withCreativeTab(MWC.GrenadesTab)
                 .withTextureNames("ImpactGrenade")
                 .withExplosionSound("grenadeexplosion")
                 .withExplosionStrength(3f)

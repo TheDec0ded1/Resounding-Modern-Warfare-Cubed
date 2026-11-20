@@ -3,9 +3,8 @@ package com.paneedah.mwc.network.handlers;
 import com.paneedah.mwc.network.messages.BloodClientMessage;
 import com.paneedah.weaponlib.jim.util.RandomUtil;
 import com.paneedah.weaponlib.particle.ParticleBlood;
-import dev.redstudio.redcore.math.vectors.Vector3D;
 import dev.redstudio.redcore.utils.NetworkUtil;
-import dev.redstudio.redcore.math.vectors.Vector3F;
+import io.redstudioragnarok.redcore.vectors.Vector3F;
 import net.jafama.FastMath;
 import net.minecraftforge.fml.common.network.simpleimpl.IMessage;
 import net.minecraftforge.fml.common.network.simpleimpl.IMessageHandler;
@@ -24,7 +23,7 @@ public final class BloodClientMessageHandler implements IMessageHandler<BloodCli
     @SideOnly(Side.CLIENT)
     public IMessage onMessage(final BloodClientMessage bloodClientMessage, final MessageContext messageContext) {
         NetworkUtil.processMessage(messageContext, () -> {
-            final Vector3D position = bloodClientMessage.getPosition();
+            final Vector3F position = bloodClientMessage.getPosition();
             final Vector3F velocity = bloodClientMessage.getVelocity();
 
             final float length = (float) FastMath.sqrtQuick(velocity.x * velocity.x + velocity.y * velocity.y + velocity.z * velocity.z);

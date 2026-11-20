@@ -232,7 +232,7 @@ public class CommonModContext implements ModContext {
     public void preInitEnd(Object mod) {
         // Workbench
         GameRegistry.registerTileEntity(TileEntityWorkbench.class, ID + ":tileworkbench");
-        Block workbenchblock = new WorkbenchBlock(this, "weapon_workbench", Material.WOOD).setCreativeTab(MWC.BLOCKS_AND_INGOTS_TAB);
+        Block workbenchblock = new WorkbenchBlock(this, "weapon_workbench", Material.WOOD).setCreativeTab(MWC.BlocksTab);
         if (workbenchblock.getRegistryName() == null) {
             if (workbenchblock.getTranslationKey().length() < ID.length() + 2 + 5) {
                 throw new IllegalArgumentException("Unlocalize block name too short " + workbenchblock.getTranslationKey());
@@ -248,7 +248,7 @@ public class CommonModContext implements ModContext {
 
         // Ammo press
         GameRegistry.registerTileEntity(TileEntityAmmoPress.class, ID + ":tileammopress");
-        Block ammopressblock = new BlockAmmoPress(this, "ammo_press", Material.IRON).setCreativeTab(MWC.BLOCKS_AND_INGOTS_TAB);
+        Block ammopressblock = new BlockAmmoPress(this, "ammo_press", Material.IRON).setCreativeTab(MWC.BlocksTab);
 
         if (ammopressblock.getRegistryName() == null) {
             if (ammopressblock.getTranslationKey().length() < ID.length() + 2 + 5) {

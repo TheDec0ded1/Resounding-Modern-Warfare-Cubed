@@ -16,14 +16,13 @@ version = "0.2-Dev-4" // Versioning must follow Ragnarök versioning convention:
 val id = "mwc"
 val plugin = "${project.group}.${id}.asm.MWCPlugin"
 
-val redCoreVersion = "1.8-1.12-" + "0.6"
-
+val redCoreVersion = "0.6"
 val groovyScriptVersion = "1.2.0-hotfix1"
 val mixinBooterVersion = "10.2"
 
 minecraft {
     mcVersion = "1.12.2"
-    username = "Desoroxxx"
+    username = "Dec0ded1"
     extraRunJvmArguments = listOf("-Dforge.logging.console.level=debug", "-Dfml.coreMods.load=${plugin}", "-Dmixin.hotSwap=true", "-Dmixin.checks.mixininterfaces=true", "-Dmixin.debug.export=true")
 }
 
@@ -32,7 +31,6 @@ repositories {
         name = "Cleanroom"
         url = uri("https://repo.cleanroommc.com/releases")
     }
-
     listOf("release", "beta", "dev").forEach { repoType ->
         maven {
             name = "Red Studio - ${repoType.replaceFirstChar { it.uppercase() }}"
@@ -54,7 +52,8 @@ repositories {
 }
 
 dependencies {
-    implementation("dev.redstudio", "Red-Core-MC", redCoreVersion)
+    implementation("dev.redstudio:Red-Core-MC:1.8-1.12-$redCoreVersion")
+    implementation (localGroovy())
 
     compileOnly(rfg.deobf("curse.maven:techguns-244201:2958103"))
     compileOnly("com.cleanroommc", "groovyscript", groovyScriptVersion) {
@@ -113,7 +112,7 @@ tasks {
         inputs.properties(expandProperties)
 
         filesMatching("**/*.*") {
-            val exclusions = listOf(".png", "_at.cfg", ".refmap.json", ".obj", ".frag", ".ogg", "craftingmappings.json")
+            val exclusions = listOf(".png", "_at.cfg", ".refmap.json", ".obj", ".frag", ".ogg", ".json", ".lang", "craftingmappings.json")
             if (!exclusions.any { path.endsWith(it) })
                 expand(expandProperties)
         }

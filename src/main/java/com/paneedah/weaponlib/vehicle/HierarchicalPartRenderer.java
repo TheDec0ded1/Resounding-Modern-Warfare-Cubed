@@ -72,7 +72,7 @@ final class HierarchicalPartRenderer<Part, State> implements StatefulRenderer<St
          * This just tells the renderer to use an alternative texture
          * USE CASE: vehicle lights
          */
-        if (context.isShouldRenderAlternateTexture()) {
+        if (context.shouldRenderAlternateTexture()) {
             MC.getTextureManager().bindTexture(context.getAlternateTexture());
         } else {
             MC.getTextureManager().bindTexture(textureResource);

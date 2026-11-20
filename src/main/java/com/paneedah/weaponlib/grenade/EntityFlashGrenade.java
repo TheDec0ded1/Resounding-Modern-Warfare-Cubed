@@ -6,10 +6,9 @@ import com.paneedah.weaponlib.Explosion;
 import com.paneedah.weaponlib.LightExposure;
 import com.paneedah.weaponlib.ModContext;
 import com.paneedah.weaponlib.compatibility.CompatibleExposureCapability;
-import dev.redstudio.redcore.math.ClampUtil;
 import io.netty.buffer.ByteBuf;
-import dev.redstudio.redcore.math.MathUtil;
-import dev.redstudio.redcore.math.vectors.Vector3D;
+import io.redstudioragnarok.redcore.utils.MathUtil;
+import io.redstudioragnarok.redcore.vectors.Vector3D;
 import net.minecraft.block.Block;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.entity.Entity;
@@ -174,7 +173,7 @@ public class EntityFlashGrenade extends AbstractEntityGrenade {
                 continue;
             }
 
-            final float dose = ClampUtil.clampMinFirst(getMaxDose(nearbyEntity), 0, 1);
+            final float dose = MathUtil.clampMinFirst(getMaxDose(nearbyEntity), 0, 1);
 
             LightExposure exposure = CompatibleExposureCapability.getExposure(nearbyEntity, LightExposure.class);
 
@@ -183,7 +182,7 @@ public class EntityFlashGrenade extends AbstractEntityGrenade {
 
                 exposure = new LightExposure(nearbyEntity.world.getTotalWorldTime(), 4000, dose, 0.99f);
             } else {
-                final float totalDose = ClampUtil.clampMaxFirst(exposure.getTotalDose() + dose, 0, 1);
+                final float totalDose = MathUtil.clampMaxFirst(exposure.getTotalDose() + dose, 0, 1);
 
                 ProjectConstants.LOGGER.debug("Entity {} exposed to light dose {}", nearbyEntity, totalDose);
 
